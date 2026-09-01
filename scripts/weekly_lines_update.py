@@ -11,16 +11,21 @@ For every regular-season FBS week of the current season, pulls:
 ...and computes the model's projected spread and its pick against the
 market spread for every game. Results are merged into lines_data.json,
 keyed by CFBD gameId, so re-running this script is always safe:
-
-It also snapshots MPG's full ratings grid (every FBS team, not just
-teams playing that week) into ratings_history.json, one entry per
-season+week -- MPG's own site doesn't keep week-over-week history for
-the current season, so this is our own independent record of it.
   - games with no final score yet get their model line / vegas line / pick
     refreshed (since lines can move week to week and ratings update)
   - games that already have a final score AND were already graded are left
     alone, so we don't rewrite history when a stale re-run happens
   - games that just got a final score for the first time get graded
+
+FBS-vs-FCS games are dropped entirely -- MPG doesn't rate FCS teams, so
+there's no basis for a model spread against one. CFBD's own homeClassification
+/awayClassification fields are used to filter these out (the `division=fbs`
+query param only guarantees one side is FBS, not both).
+
+It also snapshots MPG's full ratings grid (every FBS team, not just teams
+playing that week) into ratings_history.json, one entry per season+week --
+MPG's own site doesn't keep week-over-week history for the current season,
+so this is our own independent record of it.
 
 MODEL:
   model_spread = (home_rating - away_rating) + HFA
@@ -152,7 +157,20 @@ def fetch_week_lines(year, week):
 
 
 def fetch_week_games(year, week):
-    return cfbd("/games", {"year": year, "week": week, "seasonType": "regular", "division": "fbs"})
+    games = cfbd("/games", {"year": year, "week": week, "seasonType": "regular", "division": "fbs"})
+    # division=fbs only guarantees at least one side is FBS -- an FBS team's
+    # game against an FCS opponent still comes back. MPG doesn't rate FCS
+    # teams, so there's no model spread to compute for those; drop them here
+    # rather than silently carrying a null-rating record downstream.
+    fbs_games = [
+        g for g in games
+        if (g.get("homeClassification") or "fbs").lower() == "fbs"
+        and (g.get("awayClassification") or "fbs").lower() == "fbs"
+    ]
+    dropped = len(games) - len(fbs_games)
+    if dropped:
+        print(f"    (dropped {dropped} FBS-vs-FCS game{'s' if dropped != 1 else ''} for week {week})")
+    return fbs_games
 
 
 def grade(home_score, away_score, vegas_spread):
