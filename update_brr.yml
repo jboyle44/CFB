@@ -1,0 +1,52 @@
+name: Update BRR Data
+
+on:
+  schedule:
+    # One-time: Tuesday, Sept 8, 2026 at 9am ET (13:00 UTC).
+    # Labor Day pushed Week 1's AP poll release to Tuesday this week only.
+    # Safe to delete this line after Sept 8 -- it won't fire again (month +
+    # day-of-month are both pinned, so it only ever matches Sept 8).
+    - cron: '0 13 8 9 *'
+
+    # Ongoing: every Monday at 9am ET (13:00 UTC), once the season's normal
+    # AP poll schedule resumes.
+    - cron: '0 13 * * 1'
+
+  # Lets you (or me, walking you through it) trigger a run manually from the
+  # Actions tab any time, without waiting for the schedule -- useful for
+  # testing.
+  workflow_dispatch: {}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run weekly update
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python scripts/weekly_update.py
+
+      - name: Commit and push if data changed
+        run: |
+          git config user.name "brr-bot"
+          git config user.email "actions@github.com"
+          git add brr_data.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Weekly BRR update - $(date -u +%Y-%m-%d)"
+            git push
+          fi
