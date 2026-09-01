@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BRR — Boyle Resume Ranking</title>
+<style>
+  :root{
+    --bg:#15161A; --panel:#1B1D22; --panel-2:#202329; --line:#2C2F36;
+    --text:#EDEAE2; --text-dim:#9CA0A8; --text-faint:#6B6F78;
+    --gold:#C9A227; --gold-dim:#8C7420;
+    --blue:#6FA8DC; --red:#D46A6A;
+    --green-bg:rgba(90,160,90,0.14); --red-bg:rgba(212,106,106,0.14);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--bg);}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+    padding:28px 20px 60px;
+  }
+  .wrap{max-width:980px;margin:0 auto;}
+
+  /* ---------- header ---------- */
+  .topbar{
+    display:flex; justify-content:space-between; align-items:flex-end;
+    flex-wrap:wrap; gap:16px;
+    padding-bottom:18px; margin-bottom:18px;
+    border-bottom:1px solid var(--line);
+  }
+  .brand{display:flex; align-items:baseline; gap:12px;}
+  .brand h1{
+    font-size:30px; font-weight:800; letter-spacing:-0.02em; margin:0;
+    color:var(--text);
+  }
+  .brand .sub{font-size:13px; color:var(--text-faint); letter-spacing:0.02em;}
+  .season-picker{display:flex; align-items:center; gap:8px;}
+  .season-picker label{font-size:12px; color:var(--text-faint);}
+  select{
+    background:var(--panel-2); color:var(--text); border:1px solid var(--line);
+    border-radius:6px; padding:7px 10px; font-size:14px; font-weight:600;
+    cursor:pointer;
+  }
+
+  /* ---------- stat chips ---------- */
+  .chips{display:flex; gap:0; margin-bottom:22px; border:1px solid var(--line); border-radius:10px; overflow:hidden;}
+  .chip{flex:1; padding:14px 16px; border-right:1px solid var(--line); background:var(--panel);}
+  .chip:last-child{border-right:none;}
+  .chip .num{font-size:20px; font-weight:700; font-variant-numeric:tabular-nums; color:var(--gold);}
+  .chip .lbl{font-size:11px; color:var(--text-faint); margin-top:2px;}
+
+  /* ---------- filter row ---------- */
+  .filters{display:flex; gap:10px; margin-bottom:14px; flex-wrap:wrap;}
+  .filters input[type=text]{
+    flex:1; min-width:180px;
+    background:var(--panel-2); color:var(--text); border:1px solid var(--line);
+    border-radius:6px; padding:9px 12px; font-size:14px;
+  }
+  .filters input::placeholder{color:var(--text-faint);}
+  button.dl{
+    background:transparent; color:var(--gold); border:1px solid var(--gold-dim);
+    border-radius:6px; padding:9px 14px; font-size:13px; font-weight:600; cursor:pointer;
+  }
+  button.dl:hover{background:rgba(201,162,39,0.08);}
+
+  /* ---------- table ---------- */
+  .table-wrap{border:1px solid var(--line); border-radius:10px; overflow:hidden;}
+  table{width:100%; border-collapse:collapse; font-size:14px;}
+  thead th{
+    text-align:left; font-size:11px; font-weight:600; color:var(--text-faint);
+    padding:11px 14px; background:var(--panel-2); border-bottom:1px solid var(--line);
+    cursor:pointer; user-select:none; white-space:nowrap;
+  }
+  thead th.num{text-align:right;}
+  thead th:hover{color:var(--text);}
+  thead th .arrow{font-size:10px; margin-left:3px; opacity:0.6;}
+  tbody td{padding:9px 14px; border-bottom:1px solid var(--line); vertical-align:middle;}
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr:hover{background:var(--panel-2);}
+  td.num{text-align:right; font-variant-numeric:tabular-nums; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:13.5px;}
+  td.team{font-weight:600;}
+  td.conf{color:var(--text-faint); font-size:12.5px;}
+  td.diff{font-weight:700;}
+  td.diff.pos{color:var(--blue);}
+  td.diff.neg{color:var(--red);}
+  td.diff.zero{color:var(--text-faint); font-weight:400;}
+  tr.big-miss{background:var(--red-bg);}
+  tr.close-match td.diff{background:transparent;}
+  tr.close-match{background:var(--green-bg);}
+  .empty{padding:40px; text-align:center; color:var(--text-faint);}
+
+  /* ---------- formula panel ---------- */
+  details{margin-top:22px; border:1px solid var(--line); border-radius:10px; background:var(--panel);}
+  summary{
+    padding:14px 16px; cursor:pointer; font-size:14px; font-weight:600;
+    list-style:none; display:flex; justify-content:space-between; align-items:center;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary .toggle{color:var(--text-faint); font-size:12px; font-weight:400;}
+  .formula-body{padding:0 18px 20px;}
+  .formula-line{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:14px; line-height:2; padding:14px; background:var(--panel-2);
+    border-radius:8px; margin-bottom:16px; overflow-x:auto; white-space:nowrap;
+  }
+  .formula-line .k{color:var(--text-faint);}
+  .formula-line .pos{color:var(--blue); font-weight:600;}
+  .formula-line .neg{color:var(--red); font-weight:600;}
+  .defs{display:grid; grid-template-columns:150px 1fr; gap:9px 14px; font-size:13px;}
+  .defs dt{font-weight:600; color:var(--text);}
+  .defs dd{margin:0; color:var(--text-dim); line-height:1.5;}
+  .foot-note{margin-top:16px; font-size:12px; color:var(--text-faint); line-height:1.6;}
+
+  @media (max-width:640px){
+    .chips{flex-direction:column;}
+    .chip{border-right:none; border-bottom:1px solid var(--line);}
+    .chip:last-child{border-bottom:none;}
+    .defs{grid-template-columns:1fr;}
+    thead th{padding:9px 8px; font-size:10px;}
+    tbody td{padding:8px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="brand">
+      <h1>BRR</h1>
+      <span class="sub">Boyle Resume Ranking &nbsp;·&nbsp; CFP committee vs. resume model, 2014–2025</span>
+    </div>
+    <div class="season-picker">
+      <label for="yearSelect">Season</label>
+      <select id="yearSelect"></select>
+      <a href="./lines.html" style="text-decoration:none; margin-left:6px; background:transparent; color:var(--gold); border:1px solid var(--gold-dim); border-radius:6px; padding:9px 14px; font-size:13px; font-weight:600; display:inline-block;">Model Lines →</a>
+    </div>
+  </div>
+
+  <div class="chips">
+    <div class="chip"><div class="num" id="statTeams">–</div><div class="lbl">Teams shown</div></div>
+    <div class="chip"><div class="num" id="statAvgDiff">–</div><div class="lbl">Avg. |rank diff|</div></div>
+    <div class="chip"><div class="num" id="statBiggest">–</div><div class="lbl">Biggest miss</div></div>
+    <div class="chip"><div class="num">0.814</div><div class="lbl">Model R²</div></div>
+  </div>
+
+  <div class="filters">
+    <input type="text" id="searchBox" placeholder="Search team…">
+    <select id="confSelect"><option value="">All conferences</option></select>
+    <button class="dl" id="downloadBtn">Download CSV</button>
+  </div>
+
+  <div class="table-wrap">
+    <table id="dataTable">
+      <thead>
+        <tr>
+          <th data-key="rank">Committee<span class="arrow"></span></th>
+          <th data-key="team">Team<span class="arrow"></span></th>
+          <th data-key="conf">Conf<span class="arrow"></span></th>
+          <th class="num" data-key="score">BRR Score<span class="arrow"></span></th>
+          <th class="num" data-key="brrRank">BRR Rank<span class="arrow"></span></th>
+          <th class="num" data-key="diff">Δ<span class="arrow"></span></th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+    <div class="empty" id="emptyState" style="display:none;">No teams match your filters.</div>
+  </div>
+
+  <details>
+    <summary>How BRR is calculated <span class="toggle">tap to expand</span></summary>
+    <div class="formula-body">
+      <div class="formula-line">
+        <span class="k">BRR = 14.40</span>
+        <span class="pos"> + 0.18</span><span class="k">×SP+</span>
+        <span class="pos"> + 0.86</span><span class="k">×RankedWins</span>
+        <span class="pos"> + 0.05</span><span class="k">×SPWeightedWins</span>
+        <span class="neg"> − 1.34</span><span class="k">×BadLosses</span>
+        <span class="pos"> + 0.60</span><span class="k">×CloseLosses</span>
+        <span class="neg"> − 2.99</span><span class="k">×Losses</span>
+      </div>
+      <dl class="defs">
+        <dt>SP+</dt><dd>Bill Connelly's SP+ overall power rating for the season (offense + defense + special teams in one number).</dd>
+        <dt>RankedWins</dt><dd>Wins against teams that finished in that year's final CFP top 25.</dd>
+        <dt>SPWeightedWins</dt><dd>Sum of the SP+ rating of every team beaten. Rewards quality of win on a sliding scale rather than a binary top-25 cutoff.</dd>
+        <dt>BadLosses</dt><dd>Losses to teams outside the final top 25 — the costliest category per occurrence in the formula.</dd>
+        <dt>CloseLosses</dt><dd>Losses decided by 8 points or fewer. Reads as "at least it was competitive" once total losses is already priced in.</dd>
+        <dt>Losses</dt><dd>Total regular-season losses, regardless of opponent quality — the single biggest lever in the formula.</dd>
+      </dl>
+      <div class="foot-note">
+        Fit on 275 CFP top-25 team-seasons, 2014–2025 (2020 excluded — uneven COVID-season schedules).
+        In-sample R² = 0.814, out-of-sample (leave-one-year-out) R² = 0.800, mean absolute rank error = 2.16 spots.
+        Deliberately excludes conference affiliation, even though a power-conference indicator improves raw fit,
+        so BRR reflects resume merit rather than the committee's demonstrated ~3.7-point bias toward power conferences.
+      </div>
+    </div>
+  </details>
+
+</div>
+
+<script>
+let DATA = [];
+
+async function loadData(){
+  const res = await fetch('brr_data.json?v=' + Date.now());
+  DATA = await res.json();
+  init();
+}
+
+let state = { year: null, search: "", conf: "", sortKey: "rank", sortDir: 1 };
+
+const yearSelect = document.getElementById("yearSelect");
+const confSelect = document.getElementById("confSelect");
+const searchBox = document.getElementById("searchBox");
+const tbody = document.getElementById("tbody");
+const emptyState = document.getElementById("emptyState");
+
+function init(){
+  const years = [...new Set(DATA.map(d => d.year))].sort((a,b) => b - a);
+  years.forEach(y => {
+    const opt = document.createElement("option");
+    opt.value = y; opt.textContent = y;
+    yearSelect.appendChild(opt);
+  });
+  state.year = years[0];
+  yearSelect.value = state.year;
+
+  const confs = [...new Set(DATA.map(d => d.conf))].sort();
+  confs.forEach(c => {
+    const opt = document.createElement("option");
+    opt.value = c; opt.textContent = c;
+    confSelect.appendChild(opt);
+  });
+
+  yearSelect.addEventListener("change", () => { state.year = Number(yearSelect.value); render(); });
+  confSelect.addEventListener("change", () => { state.conf = confSelect.value; render(); });
+  searchBox.addEventListener("input", () => { state.search = searchBox.value.toLowerCase(); render(); });
+  document.getElementById("downloadBtn").addEventListener("click", downloadCSV);
+
+  document.querySelectorAll("thead th").forEach(th => {
+    th.addEventListener("click", () => {
+      const key = th.dataset.key;
+      if (state.sortKey === key) state.sortDir *= -1;
+      else { state.sortKey = key; state.sortDir = 1; }
+      render();
+    });
+  });
+
+  render();
+}
+
+function getFiltered(){
+  return DATA.filter(d =>
+    d.year === state.year &&
+    (state.conf === "" || d.conf === state.conf) &&
+    (state.search === "" || d.team.toLowerCase().includes(state.search))
+  );
+}
+
+function render(){
+  let rows = getFiltered();
+
+  rows.sort((a,b) => {
+    const k = state.sortKey;
+    let av = a[k], bv = b[k];
+    if (typeof av === "string") { av = av.toLowerCase(); bv = bv.toLowerCase(); }
+    if (av < bv) return -1 * state.sortDir;
+    if (av > bv) return 1 * state.sortDir;
+    return 0;
+  });
+
+  document.querySelectorAll("thead th .arrow").forEach(a => a.textContent = "");
+  const activeTh = document.querySelector(`thead th[data-key="${state.sortKey}"] .arrow`);
+  if (activeTh) activeTh.textContent = state.sortDir === 1 ? "▲" : "▼";
+
+  tbody.innerHTML = "";
+  if (rows.length === 0){
+    emptyState.style.display = "block";
+  } else {
+    emptyState.style.display = "none";
+    rows.forEach(d => {
+      const tr = document.createElement("tr");
+      if (Math.abs(d.diff) >= 5) tr.classList.add("big-miss");
+      else if (Math.abs(d.diff) <= 1) tr.classList.add("close-match");
+
+      const diffClass = d.diff > 0 ? "pos" : d.diff < 0 ? "neg" : "zero";
+      const diffLabel = d.diff > 0 ? `+${d.diff}` : `${d.diff}`;
+
+      tr.innerHTML = `
+        <td class="num">${d.rank}</td>
+        <td class="team">${d.team}</td>
+        <td class="conf">${d.conf}</td>
+        <td class="num">${d.score.toFixed(2)}</td>
+        <td class="num">${d.brrRank}</td>
+        <td class="num diff ${diffClass}">${diffLabel}</td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
+
+  document.getElementById("statTeams").textContent = rows.length;
+  if (rows.length){
+    const avg = rows.reduce((s,d) => s + Math.abs(d.diff), 0) / rows.length;
+    document.getElementById("statAvgDiff").textContent = avg.toFixed(1);
+    const biggest = rows.reduce((m,d) => Math.abs(d.diff) > Math.abs(m.diff) ? d : m, rows[0]);
+    document.getElementById("statBiggest").textContent = `${biggest.team} (${biggest.diff > 0 ? "+" : ""}${biggest.diff})`;
+  } else {
+    document.getElementById("statAvgDiff").textContent = "–";
+    document.getElementById("statBiggest").textContent = "–";
+  }
+}
+
+function downloadCSV(){
+  const rows = getFiltered();
+  const header = ["Year","Committee Rank","Team","Conference","BRR Score","BRR Rank","Diff"];
+  const lines = [header.join(",")];
+  rows.forEach(d => {
+    lines.push([d.year, d.rank, `"${d.team}"`, `"${d.conf}"`, d.score.toFixed(2), d.brrRank, d.diff].join(","));
+  });
+  const blob = new Blob([lines.join("\n")], { type: "text/csv" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `brr_${state.year}.csv`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+// init() is called after loadData() resolves
+loadData();
+</script>
+</body>
+</html>
