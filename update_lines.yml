@@ -1,0 +1,51 @@
+name: Update CFB Lines
+
+on:
+  schedule:
+    # Sunday at noon ET. GitHub cron is fixed UTC (16:00), so this is
+    # noon ET during daylight saving and 11am ET the rest of the year --
+    # close enough for a weekly job. Catches Thu-Sat games as soon as
+    # they're final and gets the upcoming week's opening lines as early
+    # as possible.
+    - cron: '0 16 * * 0'
+
+    # Tuesday at 10am ET (14:00 UTC) -- a second pass to catch any Sunday/
+    # Monday games and pick up line movement, after BRR's own Monday update.
+    - cron: '0 14 * * 2'
+
+  # Trigger a run manually from the Actions tab any time.
+  workflow_dispatch: {}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run weekly lines update
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python scripts/weekly_lines_update.py
+
+      - name: Commit and push if data changed
+        run: |
+          git config user.name "brr-bot"
+          git config user.email "actions@github.com"
+          git add lines_data.json ratings_history.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "CFB lines/ratings update - $(date -u +%Y-%m-%d)"
+            git push
+          fi

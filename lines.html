@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BRR Lines — CFB Spread Tracker</title>
+<style>
+  :root{
+    --bg:#15161A; --panel:#1B1D22; --panel-2:#202329; --line:#2C2F36;
+    --text:#EDEAE2; --text-dim:#9CA0A8; --text-faint:#6B6F78;
+    --gold:#C9A227; --gold-dim:#8C7420;
+    --blue:#6FA8DC; --red:#D46A6A;
+    --green-bg:rgba(90,160,90,0.14); --red-bg:rgba(212,106,106,0.14);
+    --win:#7FB27F; --loss:#D46A6A; --push:#9CA0A8;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--bg);}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+    padding:28px 20px 60px;
+  }
+  .wrap{max-width:980px;margin:0 auto;}
+
+  .topbar{
+    display:flex; justify-content:space-between; align-items:flex-end;
+    flex-wrap:wrap; gap:16px;
+    padding-bottom:18px; margin-bottom:18px;
+    border-bottom:1px solid var(--line);
+  }
+  .brand{display:flex; align-items:baseline; gap:12px;}
+  .brand h1{font-size:30px; font-weight:800; letter-spacing:-0.02em; margin:0; color:var(--text);}
+  .brand .sub{font-size:13px; color:var(--text-faint); letter-spacing:0.02em;}
+  .back-link{font-size:13px; color:var(--gold); text-decoration:none; border:1px solid var(--gold-dim); border-radius:6px; padding:7px 12px;}
+  .back-link:hover{background:rgba(201,162,39,0.08);}
+
+  .status-row{display:flex; align-items:center; gap:8px; font-size:12px; color:var(--text-faint); margin-bottom:22px; flex-wrap:wrap;}
+  .dot{width:7px; height:7px; border-radius:50%; background:var(--text-faint); flex-shrink:0;}
+  .dot.ok{background:var(--win);}
+  .dot.warn{background:var(--gold);}
+
+  /* ---------- chips ---------- */
+  .chips{display:flex; gap:0; margin-bottom:22px; border:1px solid var(--line); border-radius:10px; overflow:hidden; flex-wrap:wrap;}
+  .chip{flex:1; min-width:110px; padding:14px 16px; border-right:1px solid var(--line); background:var(--panel);}
+  .chip:last-child{border-right:none;}
+  .chip .num{font-size:20px; font-weight:700; font-variant-numeric:tabular-nums; color:var(--gold);}
+  .chip .lbl{font-size:11px; color:var(--text-faint); margin-top:2px;}
+
+  /* ---------- panel ---------- */
+  .panel{border:1px solid var(--line); border-radius:10px; background:var(--panel); margin-bottom:22px; overflow:hidden;}
+  .panel h2{font-size:15px; font-weight:700; margin:0; padding:14px 18px; border-bottom:1px solid var(--line); background:var(--panel-2); display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap;}
+  .panel h2 .count{color:var(--text-faint); font-weight:400; font-size:12.5px;}
+  .panel-body{padding:18px;}
+  select.week-select{width:auto; min-width:120px;}
+
+  /* ---------- table ---------- */
+  .table-wrap{border:1px solid var(--line); border-radius:10px; overflow:hidden; overflow-x:auto;}
+  table{width:100%; border-collapse:collapse; font-size:14px;}
+  thead th{
+    text-align:left; font-size:11px; font-weight:600; color:var(--text-faint);
+    padding:11px 14px; background:var(--panel-2); border-bottom:1px solid var(--line);
+    white-space:nowrap;
+  }
+  thead th.num{text-align:right;}
+  thead th.ctr{text-align:center;}
+  tbody td{padding:9px 14px; border-bottom:1px solid var(--line); vertical-align:middle; white-space:nowrap;}
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr:hover{background:var(--panel-2);}
+  td.num{text-align:right; font-variant-numeric:tabular-nums; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:13.5px;}
+  td.ctr{text-align:center;}
+  td.matchup{font-weight:600;}
+  td.pick{font-weight:700; color:var(--gold);}
+  td.edge.pos{color:var(--win); font-weight:700;}
+  td.edge.neg{color:var(--loss); font-weight:700;}
+  .badge{display:inline-block; padding:2px 8px; border-radius:20px; font-size:11.5px; font-weight:700;}
+  .badge.win{background:var(--green-bg); color:var(--win);}
+  .badge.loss{background:var(--red-bg); color:var(--loss);}
+  .badge.push{background:rgba(156,160,168,0.14); color:var(--push);}
+  .badge.pending{background:rgba(156,160,168,0.1); color:var(--text-faint);}
+  .empty{padding:32px; text-align:center; color:var(--text-faint); font-size:13.5px;}
+
+  /* ---------- sparkline ---------- */
+  .trend-wrap{padding:18px;}
+  svg.trend{width:100%; height:120px; display:block;}
+  .trend-note{font-size:12px; color:var(--text-faint); margin-top:8px;}
+
+  input[type=text], select{
+    width:100%; background:var(--panel-2); color:var(--text); border:1px solid var(--line);
+    border-radius:6px; padding:9px 12px; font-size:14px;
+  }
+  input::placeholder{color:var(--text-faint);}
+  .filters{display:flex; gap:10px; margin-bottom:14px; flex-wrap:wrap;}
+  .filters input[type=text]{flex:1; min-width:180px;}
+
+  /* ---------- calculator (manual tools) ---------- */
+  .calc-row{display:grid; grid-template-columns:1fr auto 1fr; gap:12px; align-items:end; margin-bottom:14px;}
+  .calc-field label{display:block; font-size:11px; color:var(--text-faint); margin-bottom:6px;}
+  .calc-vs{text-align:center; color:var(--text-faint); font-size:13px; padding-bottom:11px; font-weight:600;}
+  .venue-row{display:flex; gap:8px; margin-bottom:14px; flex-wrap:wrap;}
+  .venue-btn{flex:1; min-width:100px; text-align:center; background:var(--panel-2); color:var(--text-dim); border:1px solid var(--line); border-radius:6px; padding:9px 10px; font-size:13px; cursor:pointer;}
+  .venue-btn.active{border-color:var(--gold-dim); color:var(--gold); background:rgba(201,162,39,0.08);}
+  button.primary{background:var(--gold); color:#15161A; border:none; border-radius:6px; padding:10px 18px; font-size:14px; font-weight:700; cursor:pointer;}
+  button.primary:hover{background:#DDB637;}
+  button.dl, button.ghost{background:transparent; color:var(--gold); border:1px solid var(--gold-dim); border-radius:6px; padding:9px 14px; font-size:13px; font-weight:600; cursor:pointer;}
+  button.dl:hover, button.ghost:hover{background:rgba(201,162,39,0.08);}
+  .result{margin-top:16px; padding:16px; background:var(--panel-2); border-radius:8px; display:none;}
+  .result.visible{display:block;}
+  .result-line{font-size:22px; font-weight:800; font-variant-numeric:tabular-nums; margin-bottom:4px;}
+  .result-sub{font-size:12.5px; color:var(--text-faint); line-height:1.6;}
+  .result.error .result-line{color:var(--red); font-size:15px; font-weight:600;}
+
+  details{border:1px solid var(--line); border-radius:10px; background:var(--panel); margin-bottom:22px;}
+  summary{padding:14px 18px; cursor:pointer; font-size:14px; font-weight:600; list-style:none; display:flex; justify-content:space-between; align-items:center;}
+  summary::-webkit-details-marker{display:none;}
+  summary .toggle{color:var(--text-faint); font-size:12px; font-weight:400;}
+  .formula-body{padding:0 18px 20px; font-size:13px; color:var(--text-dim); line-height:1.7;}
+  .formula-line{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:13.5px; line-height:1.9; padding:14px; background:var(--panel-2); border-radius:8px; margin:10px 0; overflow-x:auto; white-space:pre;}
+  .foot{margin-top:22px; font-size:12px; color:var(--text-faint); line-height:1.7;}
+  .foot a{color:var(--gold); text-decoration:none;}
+
+  @media (max-width:640px){
+    .calc-row{grid-template-columns:1fr;}
+    .calc-vs{padding-bottom:0;}
+    thead th{padding:9px 8px; font-size:10px;}
+    tbody td{padding:8px;}
+    .chips{flex-direction:column;}
+    .chip{border-right:none; border-bottom:1px solid var(--line);}
+    .chip:last-child{border-bottom:none;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="brand">
+      <h1>BRR Lines</h1>
+      <span class="sub">Weekly ATS tracker &nbsp;·&nbsp; MPG power ratings vs. the market &nbsp;·&nbsp; CFB only</span>
+    </div>
+    <a class="back-link" href="./index.html">← Back to BRR</a>
+  </div>
+
+  <div class="status-row">
+    <span class="dot" id="statusDot"></span>
+    <span id="statusText">Loading lines data…</span>
+  </div>
+
+  <div class="chips">
+    <div class="chip"><div class="num" id="statRecord">–</div><div class="lbl">Season ATS record</div></div>
+    <div class="chip"><div class="num" id="statPct">–</div><div class="lbl">Win %</div></div>
+    <div class="chip"><div class="num" id="statPushes">–</div><div class="lbl">Pushes</div></div>
+    <div class="chip"><div class="num" id="statBigEdge">–</div><div class="lbl">Biggest edge, this week</div></div>
+  </div>
+
+  <div class="panel">
+    <h2><span id="thisWeekTitle">This Week</span><span class="count" id="thisWeekCount"></span></h2>
+    <div class="panel-body">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Matchup</th>
+              <th class="num">Model line</th>
+              <th class="num">Vegas line</th>
+              <th class="num">Edge</th>
+              <th>Pick</th>
+              <th class="ctr">Result</th>
+            </tr>
+          </thead>
+          <tbody id="thisWeekBody">
+            <tr><td colspan="6" class="empty">Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Weekly Trend <span class="count" id="trendNote"></span></h2>
+    <div class="trend-wrap">
+      <svg class="trend" id="trendSvg" viewBox="0 0 600 120" preserveAspectRatio="none"></svg>
+      <div class="trend-note">Cumulative ATS win % by week (pushes excluded from the denominator).</div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>History <span class="count" id="historyCount"></span>
+      <select id="weekFilter" class="week-select"><option value="">All weeks</option></select>
+    </h2>
+    <div class="panel-body">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Wk</th>
+              <th>Matchup</th>
+              <th class="num">Model line</th>
+              <th class="num">Vegas line</th>
+              <th class="num">Edge</th>
+              <th>Pick</th>
+              <th class="num">Final</th>
+              <th class="ctr">Result</th>
+            </tr>
+          </thead>
+          <tbody id="historyBody">
+            <tr><td colspan="8" class="empty">Loading…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <details>
+    <summary>How this works <span class="toggle">tap to expand</span></summary>
+    <div class="formula-body">
+      <p>Every Tuesday, a script pulls that week's games, final scores, and market spreads from <a href="https://collegefootballdata.com" style="color:var(--gold);" target="_blank" rel="noopener">CollegeFootballData.com</a>, plus <a href="https://mpg000f.github.io/cbb_power_rating/#cfb" style="color:var(--gold);" target="_blank" rel="noopener">MPG's power ratings</a> for that week. It computes a model spread for every game and compares it to the market:</p>
+      <div class="formula-line">model_spread = (home_rating − away_rating) + HFA
+HFA = +3.0 pts for the home team, 0 on a neutral site
+edge = model_spread − vegas_spread
+pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
+      <p>Once a game is final, the pick is graded straight against the market line that was live when it was made — that line is then frozen, so results here don't get rewritten as future lines move. A push means the actual margin landed exactly on the spread and doesn't count for or against the record.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Manual matchup tool <span class="toggle">tap to expand</span></summary>
+    <div class="panel-body" style="padding-top:4px;">
+      <p style="font-size:12.5px; color:var(--text-faint); margin-top:0;">For a quick one-off line using the latest ratings — separate from the automated weekly tracker above.</p>
+      <div class="calc-row">
+        <div class="calc-field">
+          <label for="teamA">Team</label>
+          <input type="text" id="teamA" list="teamList" placeholder="e.g. Ohio State" autocomplete="off">
+        </div>
+        <div class="calc-vs">at</div>
+        <div class="calc-field">
+          <label for="teamB">Opponent</label>
+          <input type="text" id="teamB" list="teamList" placeholder="e.g. Michigan" autocomplete="off">
+        </div>
+      </div>
+      <datalist id="teamList"></datalist>
+      <label style="display:block; font-size:11px; color:var(--text-faint); margin-bottom:6px;">Venue</label>
+      <div class="venue-row">
+        <div class="venue-btn active" data-venue="a">Team hosts</div>
+        <div class="venue-btn" data-venue="neutral">Neutral site</div>
+        <div class="venue-btn" data-venue="b">Opponent hosts</div>
+      </div>
+      <div class="calc-actions">
+        <button class="primary" id="calcBtn">Calculate spread</button>
+      </div>
+      <div class="result" id="calcResult">
+        <div class="result-line" id="calcLine"></div>
+        <div class="result-sub" id="calcSub"></div>
+      </div>
+    </div>
+  </details>
+
+  <div class="panel">
+    <h2>Full Power Ratings <span class="count" id="rankCount"></span></h2>
+    <div class="panel-body">
+      <div class="filters">
+        <input type="text" id="searchBox" placeholder="Search team…">
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th class="num">Rank</th>
+              <th>Team</th>
+              <th class="num">Rating</th>
+              <th class="num">Adj. Off.</th>
+              <th class="num">Adj. Def.</th>
+            </tr>
+          </thead>
+          <tbody id="rankBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Power Ratings History <span class="count" id="historyRatingsNote"></span>
+      <select id="ratingsWeekSelect" class="week-select"></select>
+    </h2>
+    <div class="panel-body">
+      <p style="font-size:12.5px; color:var(--text-faint); margin-top:0;">Our own weekly snapshot of MPG's full grid, captured independently since their site only shows the current week.</p>
+      <div class="filters">
+        <input type="text" id="ratingsHistorySearch" placeholder="Search team…">
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th class="num">Rank</th>
+              <th>Team</th>
+              <th class="num">Rating</th>
+              <th class="num">Adj. Off.</th>
+              <th class="num">Adj. Def.</th>
+            </tr>
+          </thead>
+          <tbody id="ratingsHistoryBody">
+            <tr><td colspan="5" class="empty">No snapshots saved yet — the first weekly run will populate this.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    Market lines and final scores from <a href="https://collegefootballdata.com" target="_blank" rel="noopener">CollegeFootballData.com</a>. Power ratings from <a href="https://mpg000f.github.io/cbb_power_rating/#cfb" target="_blank" rel="noopener">mpg000f's CFB power rating model</a>. This is a model's output tracked for its own sake, not betting advice. Part of the <a href="./index.html">BRR</a> project.
+  </div>
+
+</div>
+
+<script>
+  const HFA = 3.0;
+  const MPG_LIVE_URL = 'https://mpg000f.github.io/cbb_power_rating/data/cfb/ratings_2026.json';
+  const LINES_DATA_URL = './lines_data.json';
+
+  let games = [];       // rows from lines_data.json
+  let ratings = [];      // live MPG ratings, for the manual tool
+
+  function fmtSpreadTeam(row, spread, whichTeam){
+    // whichTeam: 'home' or 'away'. spread is home-perspective (positive = home favored).
+    if(spread === null || spread === undefined) return '—';
+    const homeFav = spread > 0;
+    if (spread === 0) return "Pick'em";
+    const favTeam = homeFav ? row.homeTeam : row.awayTeam;
+    const dogTeam = homeFav ? row.awayTeam : row.homeTeam;
+    const mag = Math.abs(spread).toFixed(1);
+    return `${favTeam} -${mag}`;
+  }
+
+  function resultBadge(row){
+    if(row.status !== 'final') return `<span class="badge pending">—</span>`;
+    if(row.atsResult === 'push') return `<span class="badge push">Push</span>`;
+    if(row.modelCorrect === true) return `<span class="badge win">✓ Cover</span>`;
+    if(row.modelCorrect === false) return `<span class="badge loss">✗ Miss</span>`;
+    return `<span class="badge pending">—</span>`;
+  }
+
+  function edgeCell(row){
+    if(row.edge === null || row.edge === undefined) return '—';
+    const cls = row.edge > 0 ? 'pos' : row.edge < 0 ? 'neg' : '';
+    const lean = row.edge > 0 ? row.homeTeam : row.edge < 0 ? row.awayTeam : '';
+    return `<span class="edge ${cls}">${row.edge > 0 ? '+' : ''}${row.edge.toFixed(1)}${lean ? ' ' + lean : ''}</span>`;
+  }
+
+  function renderThisWeek(){
+    const scheduled = games.filter(g => g.status === 'scheduled');
+    let week, rows, title;
+    if(scheduled.length){
+      week = Math.min(...scheduled.map(g => g.week));
+      rows = games.filter(g => g.week === week);
+      title = `Week ${week}`;
+    } else if(games.length){
+      week = Math.max(...games.map(g => g.week));
+      rows = games.filter(g => g.week === week);
+      title = `Week ${week} results`;
+    } else {
+      rows = [];
+      title = 'This Week';
+    }
+    document.getElementById('thisWeekTitle').textContent = title;
+    document.getElementById('thisWeekCount').textContent = rows.length ? `${rows.length} games` : '';
+
+    const body = document.getElementById('thisWeekBody');
+    if(!rows.length){
+      body.innerHTML = `<tr><td colspan="6" class="empty">No games loaded yet — check back once the season's underway.</td></tr>`;
+      return;
+    }
+    rows.sort((a,b) => (a.startDate || '').localeCompare(b.startDate || ''));
+    body.innerHTML = rows.map(g => `
+      <tr>
+        <td class="matchup">${g.awayTeam} @ ${g.neutralSite ? '(N) ' : ''}${g.homeTeam}</td>
+        <td class="num">${fmtSpreadTeam(g, g.modelSpread)}</td>
+        <td class="num">${fmtSpreadTeam(g, g.vegasSpread)}</td>
+        <td class="num">${edgeCell(g)}</td>
+        <td class="pick">${g.pick || '—'}</td>
+        <td class="ctr">${resultBadge(g)}</td>
+      </tr>
+    `).join('');
+  }
+
+  function renderStats(){
+    const graded = games.filter(g => g.status === 'final' && g.modelCorrect !== null && g.modelCorrect !== undefined);
+    const wins = graded.filter(g => g.modelCorrect === true).length;
+    const losses = graded.filter(g => g.modelCorrect === false).length;
+    const pushes = games.filter(g => g.atsResult === 'push').length;
+    const pct = graded.length ? ((wins / graded.length) * 100).toFixed(1) + '%' : '–';
+
+    document.getElementById('statRecord').textContent = graded.length ? `${wins}-${losses}` : '–';
+    document.getElementById('statPct').textContent = pct;
+    document.getElementById('statPushes').textContent = pushes || '0';
+
+    const scheduled = games.filter(g => g.status === 'scheduled' && g.edge !== null && g.edge !== undefined);
+    if(scheduled.length){
+      const biggest = scheduled.reduce((a,b) => Math.abs(a.edge) > Math.abs(b.edge) ? a : b);
+      document.getElementById('statBigEdge').textContent = `${biggest.pick} +${Math.abs(biggest.edge).toFixed(1)}`;
+    } else {
+      document.getElementById('statBigEdge').textContent = '–';
+    }
+  }
+
+  function renderTrend(){
+    const svg = document.getElementById('trendSvg');
+    const weeks = [...new Set(games.filter(g => g.status === 'final').map(g => g.week))].sort((a,b) => a-b);
+    if(!weeks.length){
+      document.getElementById('trendNote').textContent = 'No graded games yet';
+      svg.innerHTML = '';
+      return;
+    }
+    let cumWins = 0, cumTotal = 0;
+    const points = [];
+    weeks.forEach(w => {
+      const wk = games.filter(g => g.week === w && g.status === 'final' && g.modelCorrect !== null && g.modelCorrect !== undefined);
+      wk.forEach(g => { cumTotal++; if(g.modelCorrect) cumWins++; });
+      points.push({ week: w, pct: cumTotal ? (cumWins / cumTotal) * 100 : 50 });
+    });
+    document.getElementById('trendNote').textContent = `${weeks.length} week${weeks.length===1?'':'s'} graded`;
+
+    const W = 600, H = 120, padX = 30, padY = 16;
+    const n = points.length;
+    const xAt = i => n === 1 ? W/2 : padX + (i / (n - 1)) * (W - padX*2);
+    const yAt = pct => H - padY - (pct/100) * (H - padY*2);
+
+    let svgParts = [];
+    svgParts.push(`<line x1="${padX}" y1="${yAt(50)}" x2="${W-padX}" y2="${yAt(50)}" stroke="#2C2F36" stroke-width="1" stroke-dasharray="4,4" />`);
+    const path = points.map((p,i) => `${i===0?'M':'L'} ${xAt(i).toFixed(1)} ${yAt(p.pct).toFixed(1)}`).join(' ');
+    svgParts.push(`<path d="${path}" fill="none" stroke="#C9A227" stroke-width="2.5" />`);
+    points.forEach((p,i) => {
+      svgParts.push(`<circle cx="${xAt(i).toFixed(1)}" cy="${yAt(p.pct).toFixed(1)}" r="3" fill="#C9A227" />`);
+    });
+    if(n <= 20){
+      points.forEach((p,i) => {
+        svgParts.push(`<text x="${xAt(i).toFixed(1)}" y="${H-2}" font-size="9" fill="#6B6F78" text-anchor="middle">W${p.week}</text>`);
+      });
+    }
+    svg.innerHTML = svgParts.join('');
+  }
+
+  function renderHistory(filterWeek){
+    const body = document.getElementById('historyBody');
+    let rows = games.slice();
+    if(filterWeek) rows = rows.filter(g => String(g.week) === String(filterWeek));
+    rows.sort((a,b) => (b.week - a.week) || (b.startDate || '').localeCompare(a.startDate || ''));
+    document.getElementById('historyCount').textContent = `${rows.length} games`;
+
+    if(!rows.length){
+      body.innerHTML = `<tr><td colspan="8" class="empty">No games to show.</td></tr>`;
+      return;
+    }
+    body.innerHTML = rows.map(g => `
+      <tr>
+        <td class="num">${g.week}</td>
+        <td class="matchup">${g.awayTeam} @ ${g.neutralSite ? '(N) ' : ''}${g.homeTeam}</td>
+        <td class="num">${fmtSpreadTeam(g, g.modelSpread)}</td>
+        <td class="num">${fmtSpreadTeam(g, g.vegasSpread)}</td>
+        <td class="num">${edgeCell(g)}</td>
+        <td class="pick">${g.pick || '—'}</td>
+        <td class="num">${g.status === 'final' ? `${g.awayScore}-${g.homeScore}` : '—'}</td>
+        <td class="ctr">${resultBadge(g)}</td>
+      </tr>
+    `).join('');
+  }
+
+  function populateWeekFilter(){
+    const sel = document.getElementById('weekFilter');
+    const weeks = [...new Set(games.map(g => g.week))].sort((a,b) => a-b);
+    sel.innerHTML = '<option value="">All weeks</option>' + weeks.map(w => `<option value="${w}">Week ${w}</option>`).join('');
+    sel.addEventListener('change', () => renderHistory(sel.value));
+  }
+
+  function loadLinesData(){
+    fetch(LINES_DATA_URL)
+      .then(r => { if(!r.ok) throw new Error('no data file yet'); return r.json(); })
+      .then(data => {
+        games = data.filter(g => !g.week || true); // CFB only file already
+        const dot = document.getElementById('statusDot');
+        const statusText = document.getElementById('statusText');
+        if(games.length){
+          dot.className = 'dot ok';
+          const seasons = [...new Set(games.map(g => g.season))];
+          statusText.textContent = `${games.length} games tracked · ${seasons.join(', ')} season · updates every Tuesday`;
+        } else {
+          dot.className = 'dot warn';
+          statusText.textContent = 'Data file loaded but empty — first weekly run hasn\'t populated it yet.';
+        }
+        renderThisWeek();
+        renderStats();
+        renderTrend();
+        populateWeekFilter();
+        renderHistory('');
+      })
+      .catch(() => {
+        const dot = document.getElementById('statusDot');
+        const statusText = document.getElementById('statusText');
+        dot.className = 'dot warn';
+        statusText.textContent = "Couldn't load lines_data.json yet — it's created by the weekly GitHub Action once the season starts.";
+        renderThisWeek();
+        renderStats();
+        renderTrend();
+      });
+  }
+
+  // ---------- manual matchup tool ----------
+  function findTeam(nameRaw){
+    const name = (nameRaw || '').toLowerCase().trim();
+    if(!name) return null;
+    return ratings.find(r => r.team.toLowerCase() === name)
+        || ratings.find(r => r.team.toLowerCase().startsWith(name))
+        || ratings.find(r => r.team.toLowerCase().includes(name))
+        || null;
+  }
+
+  function renderTeamList(){
+    document.getElementById('teamList').innerHTML = ratings.map(r => `<option value="${r.team}">`).join('');
+  }
+
+  function renderRankTable(filter){
+    const body = document.getElementById('rankBody');
+    const f = (filter || '').toLowerCase().trim();
+    const rows = ratings.filter(r => !f || r.team.toLowerCase().includes(f));
+    document.getElementById('rankCount').textContent = `${rows.length} of ${ratings.length} teams`;
+    if(!rows.length){
+      body.innerHTML = `<tr><td colspan="5" class="empty">No teams match "${filter}"</td></tr>`;
+      return;
+    }
+    body.innerHTML = rows.map(r => `
+      <tr>
+        <td class="num">${r.rank}</td>
+        <td class="matchup">${r.team}</td>
+        <td class="num">${r.rating > 0 ? '+' : ''}${r.rating.toFixed(1)}</td>
+        <td class="num">${r.adjO.toFixed(1)}</td>
+        <td class="num">${r.adjD.toFixed(1)}</td>
+      </tr>
+    `).join('');
+  }
+
+  let activeVenue = 'a';
+  document.querySelectorAll('.venue-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.venue-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeVenue = btn.dataset.venue;
+    });
+  });
+
+  document.getElementById('calcBtn').addEventListener('click', () => {
+    const resultDiv = document.getElementById('calcResult');
+    const lineDiv = document.getElementById('calcLine');
+    const subDiv = document.getElementById('calcSub');
+    const aVal = document.getElementById('teamA').value;
+    const bVal = document.getElementById('teamB').value;
+    const teamA = findTeam(aVal), teamB = findTeam(bVal);
+    resultDiv.classList.remove('error');
+    resultDiv.classList.add('visible');
+
+    if(!teamA || !teamB){
+      resultDiv.classList.add('error');
+      lineDiv.textContent = 'Team not found';
+      subDiv.textContent = !teamA ? `Couldn't match "${aVal}"` : `Couldn't match "${bVal}"`;
+      return;
+    }
+    if(teamA.team === teamB.team){
+      resultDiv.classList.add('error');
+      lineDiv.textContent = 'Pick two different teams';
+      subDiv.textContent = '';
+      return;
+    }
+    let home, away, neutral = false, venueLabel;
+    if(activeVenue === 'a'){ home = teamA; away = teamB; venueLabel = `at ${teamA.team}`; }
+    else if(activeVenue === 'b'){ home = teamB; away = teamA; venueLabel = `at ${teamB.team}`; }
+    else { home = teamA; away = teamB; neutral = true; venueLabel = 'Neutral site'; }
+
+    const spread = (home.rating - away.rating) + (neutral ? 0 : HFA);
+    const favorite = spread > 0 ? home.team : away.team;
+    const dog = spread > 0 ? away.team : home.team;
+    const margin = Math.abs(spread).toFixed(1);
+
+    lineDiv.textContent = spread === 0 ? `${teamA.team} vs ${teamB.team} — Pick'em` : `${favorite} -${margin}`;
+    subDiv.textContent = spread === 0
+      ? `${venueLabel} · ratings dead even after home field`
+      : `${venueLabel} · ${dog} +${margin} · ratings: ${teamA.team} ${teamA.rating > 0 ? '+' : ''}${teamA.rating.toFixed(1)}, ${teamB.team} ${teamB.rating > 0 ? '+' : ''}${teamB.rating.toFixed(1)}`;
+  });
+
+  document.getElementById('searchBox').addEventListener('input', e => renderRankTable(e.target.value));
+
+  function loadMpgRatings(){
+    fetch(MPG_LIVE_URL)
+      .then(r => { if(!r.ok) throw new Error('bad response'); return r.json(); })
+      .then(data => {
+        ratings = data.ratings.slice().sort((a,b) => a.rank - b.rank);
+        renderTeamList();
+        renderRankTable('');
+      })
+      .catch(() => {
+        document.getElementById('rankBody').innerHTML = `<tr><td colspan="5" class="empty">Couldn't load live power ratings right now.</td></tr>`;
+      });
+  }
+
+  // ---------- power ratings history (our own weekly snapshots) ----------
+  let ratingsHistory = []; // [{season, week, source, capturedAt, teams:[...]}]
+
+  function renderRatingsHistoryTable(filter){
+    const sel = document.getElementById('ratingsWeekSelect');
+    const body = document.getElementById('ratingsHistoryBody');
+    if(!ratingsHistory.length){
+      body.innerHTML = `<tr><td colspan="5" class="empty">No snapshots saved yet — the first weekly run will populate this.</td></tr>`;
+      return;
+    }
+    const week = parseInt(sel.value, 10);
+    const snap = ratingsHistory.find(h => h.week === week);
+    if(!snap){
+      body.innerHTML = `<tr><td colspan="5" class="empty">No snapshot for that week.</td></tr>`;
+      return;
+    }
+    const f = (filter || '').toLowerCase().trim();
+    const rows = snap.teams.filter(r => !f || r.team.toLowerCase().includes(f))
+                            .slice().sort((a,b) => (a.rank||999) - (b.rank||999));
+    document.getElementById('historyRatingsNote').textContent = `${snap.source || ''}`;
+    if(!rows.length){
+      body.innerHTML = `<tr><td colspan="5" class="empty">No teams match "${filter}"</td></tr>`;
+      return;
+    }
+    body.innerHTML = rows.map(r => `
+      <tr>
+        <td class="num">${r.rank ?? '—'}</td>
+        <td class="matchup">${r.team}</td>
+        <td class="num">${r.rating > 0 ? '+' : ''}${(r.rating ?? 0).toFixed(1)}</td>
+        <td class="num">${r.adjO != null ? r.adjO.toFixed(1) : '—'}</td>
+        <td class="num">${r.adjD != null ? r.adjD.toFixed(1) : '—'}</td>
+      </tr>
+    `).join('');
+  }
+
+  function loadRatingsHistory(){
+    fetch('./ratings_history.json')
+      .then(r => { if(!r.ok) throw new Error('no history file yet'); return r.json(); })
+      .then(data => {
+        ratingsHistory = data.slice().sort((a,b) => a.week - b.week);
+        const sel = document.getElementById('ratingsWeekSelect');
+        if(!ratingsHistory.length){
+          sel.innerHTML = '<option>No weeks yet</option>';
+          return;
+        }
+        sel.innerHTML = ratingsHistory.map(h => `<option value="${h.week}">Week ${h.week}</option>`).join('');
+        sel.value = ratingsHistory[ratingsHistory.length - 1].week;
+        sel.addEventListener('change', () => renderRatingsHistoryTable(document.getElementById('ratingsHistorySearch').value));
+        document.getElementById('ratingsHistorySearch').addEventListener('input', e => renderRatingsHistoryTable(e.target.value));
+        renderRatingsHistoryTable('');
+      })
+      .catch(() => {
+        document.getElementById('ratingsHistoryBody').innerHTML =
+          `<tr><td colspan="5" class="empty">No snapshots saved yet — the first weekly run will populate this.</td></tr>`;
+      });
+  }
+
+  loadLinesData();
+  loadMpgRatings();
+  loadRatingsHistory();
+</script>
+</body>
+</html>
