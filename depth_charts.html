@@ -162,24 +162,50 @@
 <script>
 let DATA = { team: null, rows: [] };
 
-// Formation rows. Each row: { cols: N, items: [...] }
-// items are either a plain position code (auto-centered across the row)
-// or {pos, col} to pin it at an exact grid column (1-indexed).
+// Formation rows use a double-resolution column grid so items can be centered
+// on gaps/boundaries precisely, not just the nearest whole column.
+// Each item: {pos, col, span} — col/span are 1-indexed grid-column values.
+const DEFENSE_COLS = 8; // unit width = 2 columns
 const DEFENSE_ROWS = [
-  { cols:5, items:["FS","SS"] },                      // deep secondary, centered
-  { cols:5, items:["LCB","WLB","MLB","NB","RCB"] },    // corners + backers + nickel, full width
-  { cols:5, items:["LDE","NT","DT","RDE"] }            // D-line, centered
-];
-const OFFENSE_ROWS = [
-  { cols:7, items:["WR-X","LT","LG","C","RG","RT","WR-Z"] }, // O-line + outside WRs, full 7 across
-  { cols:7, items:[
-      { pos:"WR-SL", col:2 },
-      { pos:"RB",    col:3 },
-      { pos:"QB",    col:4 },   // directly behind center
-      { pos:"TE",    col:6 }
+  { cols:DEFENSE_COLS, items:[
+      { pos:"FS", col:2, span:2 },
+      { pos:"NB", col:4, span:2 },   // nickel joins the safety row, centered between them
+      { pos:"SS", col:6, span:2 }
+    ]},
+  { cols:DEFENSE_COLS, items:[
+      { pos:"LCB", col:1, span:2 },  // corners on the true outside edges
+      { pos:"WLB", col:3, span:2 },
+      { pos:"MLB", col:5, span:2 },
+      { pos:"RCB", col:7, span:2 }
+    ]},
+  { cols:DEFENSE_COLS, items:[
+      { pos:"LDE", col:1, span:2 },
+      { pos:"NT",  col:3, span:2 },  // NT/DT boundary lands exactly on the row's centerline
+      { pos:"DT",  col:5, span:2 },
+      { pos:"RDE", col:7, span:2 }
     ]}
 ];
-const SPECIAL_ROW = { cols:7, items:["PT","PK","KO","LS","H","PR","KR"] };
+
+const OFFENSE_COLS = 14; // unit width = 2 columns
+const OFFENSE_ROWS = [
+  { cols:OFFENSE_COLS, items:[
+      { pos:"WR-X", col:1,  span:2 },
+      { pos:"LT",   col:3,  span:2 },
+      { pos:"LG",   col:5,  span:2 },
+      { pos:"C",    col:7,  span:2 },
+      { pos:"RG",   col:9,  span:2 },
+      { pos:"RT",   col:11, span:2 },
+      { pos:"WR-Z", col:13, span:2 }
+    ]},
+  { cols:OFFENSE_COLS, items:[
+      { pos:"WR-SL", col:2,  span:2 }, // sits in the gap between WR-X and LT
+      { pos:"RB",    col:4,  span:2 }, // sits in the gap between LT and LG
+      { pos:"QB",    col:7,  span:2 }, // directly behind center
+      { pos:"TE",    col:11, span:2 }  // behind RT
+    ]}
+];
+
+const SPECIAL_ROW = { cols:7, items:["PT","PK","KO","LS","H","PR","KR"].map((pos,i) => ({ pos, col:i+1, span:1 })) };
 
 async function loadData(){
   const res = await fetch('depth_chart_data.json?v=' + Date.now());
@@ -244,40 +270,29 @@ function slotHtml(r, isStarter){
     </div>`;
 }
 
-function posBoxHtml(pos, groups, gridColumn){
+function posBoxHtml(pos, groups, col, span){
   const list = groups[pos];
   if(!list || !list.length) return "";
   const slots = list.map((r,i) => slotHtml(r, i===0)).join('');
-  const style = gridColumn ? ` style="grid-column:${gridColumn} / span 1;"` : "";
-  return `<div class="posbox"${style}><div class="hd">${pos}</div>${slots}</div>`;
+  return `<div class="posbox" style="grid-column:${col} / span ${span};"><div class="hd">${pos}</div>${slots}</div>`;
 }
 
-function rowHtml(row, groups){
+function rowHtml(row){
   const { cols, items } = row;
-  // normalize: plain strings get auto-centered as a contiguous block; objects get pinned columns
-  const isExplicit = items.length && typeof items[0] === "object";
-  let placed;
-  if(isExplicit){
-    placed = items
-      .filter(it => groups[it.pos] && groups[it.pos].length)
-      .map(it => posBoxHtml(it.pos, groups, it.col));
-  } else {
-    const present = items.filter(pos => groups[pos] && groups[pos].length);
-    const start = Math.floor((cols - present.length) / 2) + 1;
-    placed = present.map((pos, i) => posBoxHtml(pos, groups, start + i));
-  }
-  const boxesHtml = placed.filter(Boolean).join('');
-  if(!boxesHtml) return "";
+  const boxesHtml = items.map(it => posBoxHtml(it.pos, groupsRef, it.col, it.span)).join('');
+  if(!boxesHtml.trim()) return "";
   return `<div class="formrow" style="grid-template-columns:repeat(${cols}, 1fr);">${boxesHtml}</div>`;
 }
 
-function sectionHtml(title, scheme, rows, groups){
-  const rowsHtml = rows.map(row => rowHtml(row, groups)).join('');
+function sectionHtml(title, scheme, rows){
+  const rowsHtml = rows.map(row => rowHtml(row)).join('');
   if(!rowsHtml.trim()) return "";
   return `
     <div class="section-head"><h2>${title}</h2><span class="scheme">${scheme}</span></div>
     ${rowsHtml}`;
 }
+
+let groupsRef = {};
 
 function render(){
   const q = state.search;
@@ -294,11 +309,12 @@ function render(){
 
   const groups = {};
   rows.forEach(r => { (groups[r.position] = groups[r.position] || []).push(r); });
+  groupsRef = groups;
 
   let html = "";
-  html += sectionHtml("Defense", "4-2-5", DEFENSE_ROWS, groups);
-  html += sectionHtml("Offense", "Spread Option", OFFENSE_ROWS, groups);
-  html += sectionHtml("Specialists", "", [SPECIAL_ROW], groups);
+  html += sectionHtml("Defense", "4-2-5", DEFENSE_ROWS);
+  html += sectionHtml("Offense", "Spread Option", OFFENSE_ROWS);
+  html += sectionHtml("Specialists", "", [SPECIAL_ROW]);
 
   container.innerHTML = html;
 }
