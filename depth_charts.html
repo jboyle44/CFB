@@ -226,13 +226,26 @@ const DEFENSE_ROWS = [
       { pos:"WLB", col:3, span:2 },
       { pos:"MLB", col:5, span:2 }
     ]},
-  { cols:DEFENSE_COLS, items:[                 // row 3: D-line, NT/DT split the true centerline
-      { pos:"LDE", col:1, span:2 },
-      { pos:"NT",  col:3, span:2 },
-      { pos:"DT",  col:5, span:2 },
-      { pos:"RDE", col:7, span:2 }
-    ]}
+  { cols:DEFENSE_COLS, dynamic:"dline" }  // row 3: D-line, position codes vary by team (see DLINE_CANDIDATES)
 ];
+
+// D-line naming varies across the conference:
+//   LDE/NT/DT/RDE   (Ohio State, Nebraska, Purdue, Rutgers, USC)
+//   LDE/LDT/RDT/RDE (Washington, Penn State, UCLA, Iowa, Maryland, Michigan, Michigan State, Northwestern)
+//   DE/NT/DT        (Illinois, Indiana, Minnesota, Oregon -- no left/right split)
+//   DT/NT           (Wisconsin -- no listed DE)
+// Rather than pin exact columns for one pattern, detect whichever codes are
+// present (in this rough left-to-right order) and center them dynamically.
+const DLINE_CANDIDATES = ["LDE","DE","NT","LDT","DT","RDT","RDE"];
+
+function dlineRowHtml(groups, cols){
+  const present = DLINE_CANDIDATES.filter(p => groups[p] && groups[p].length);
+  if(!present.length) return "";
+  const totalSpan = present.length * 2;
+  const start = Math.max(1, Math.floor((cols - totalSpan) / 2) + 1);
+  const boxesHtml = present.map((pos, i) => posBoxHtml(pos, groups, start + i * 2, 2)).join('');
+  return `<div class="formrow" style="grid-template-columns:repeat(${cols}, 1fr);">${boxesHtml}</div>`;
+}
 
 const OFFENSE_COLS = 14; // unit width = 2 columns
 const OFFENSE_ROWS = [
@@ -246,7 +259,7 @@ const OFFENSE_ROWS = [
       { pos:"WR-Z", col:13, span:2 }
     ]},
   { cols:OFFENSE_COLS, items:[
-      { pos:"WR-SL", col:2,  span:2 }, // sits in the gap between WR-X and LT
+      { pos:"WR-SL", alts:["WR-F"], col:2,  span:2 }, // sits in the gap between WR-X and LT
       { pos:"RB",    col:4,  span:2 }, // sits in the gap between LT and LG
       { pos:"QB",    col:7,  span:2 }, // directly behind center
       { pos:"TE",    col:11, span:2 }  // behind RT
@@ -380,9 +393,20 @@ function posBoxHtml(pos, groups, col, span){
   return `<div class="posbox${slimClass}" style="grid-column:${col} / span ${span};"><div class="hd">${pos}</div>${slots}</div>`;
 }
 
+function resolveItemPos(item, groups){
+  if(item.pos && groups[item.pos] && groups[item.pos].length) return item.pos;
+  if(item.alts){
+    for(const alt of item.alts){
+      if(groups[alt] && groups[alt].length) return alt;
+    }
+  }
+  return item.pos;
+}
+
 function rowHtml(row){
+  if(row.dynamic === "dline") return dlineRowHtml(groupsRef, row.cols);
   const { cols, items, id } = row;
-  const boxesHtml = items.map(it => posBoxHtml(it.pos, groupsRef, it.col, it.span)).join('');
+  const boxesHtml = items.map(it => posBoxHtml(resolveItemPos(it, groupsRef), groupsRef, it.col, it.span)).join('');
   if(!boxesHtml.trim()) return "";
   const idAttr = id ? ` id="${id}"` : "";
   return `<div class="formrow"${idAttr} style="grid-template-columns:repeat(${cols}, 1fr);">${boxesHtml}</div>`;
