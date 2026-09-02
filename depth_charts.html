@@ -624,22 +624,24 @@ function centerMikeLB(present){
   return others;
 }
 
-// LB row is anchored to the EXACT free zone left by the CB row -- starting right
-// after LCB + any nickel boxes (which always cluster on the left), ending right
-// before RCB. This must NOT use symmetric centering (width% + margin:auto):
-// since LCB/nickel take up more space on the left than RCB alone takes on the
-// right, the free zone isn't centered in the row -- centering it that way pulls
-// the LB row left, straight into the nickel box(es). Using the same 8-column
-// grid as the CB/NB row with explicit start/span keeps the two rows pixel-aligned.
+// LB boxes use the same standard width as every other row (2 of 8 units each) --
+// they should NOT stretch to fill the whole free zone, just center within it.
+// The free zone starts right after LCB + any nickel boxes (which cluster left)
+// and ends right before RCB. If more LB items exist than fit at standard width,
+// narrow them just enough to fit, same idea as the D-line's self-scaling.
 function lbRowHtml(groups, id){
   const present = centerMikeLB(LB_CANDIDATES.filter(p => groups[p] && groups[p].length));
   if(!present.length) return "";
   const nickelCount = NICKEL_CANDIDATES.filter(p => groups[p] && groups[p].length).length;
-  const startCol = 2 + nickelCount; // right after LCB(col1) + nickel box(es)
-  const span = 7 - startCol + 1;    // up to (not including) RCB at col8
-  const boxesHtml = present.map(pos => posBoxHtmlAuto(pos, groups)).join('');
+  const zoneStart = 2 + nickelCount;      // right after LCB + nickel box(es)
+  const zoneWidth = 7 - zoneStart + 1;    // up to (not including) RCB at col8
+  const standardSpan = present.length * 2;
+  const perBoxSpan = standardSpan <= zoneWidth ? 2 : Math.max(1, Math.floor(zoneWidth / present.length));
+  const actualSpan = perBoxSpan * present.length;
+  const start = zoneStart + Math.floor((zoneWidth - actualSpan) / 2);
+  const boxesHtml = present.map((pos, i) => posBoxHtml(pos, groups, start + i * perBoxSpan, perBoxSpan)).join('');
   const idAttr = id ? ` id="${id}"` : "";
-  return `<div class="formrow"${idAttr} style="grid-template-columns:repeat(8, 1fr);"><div style="grid-column:${startCol} / span ${span}; display:grid; grid-template-columns:repeat(${present.length}, 1fr); gap:8px;">${boxesHtml}</div></div>`;
+  return `<div class="formrow"${idAttr} style="grid-template-columns:repeat(8, 1fr);">${boxesHtml}</div>`;
 }
 
 function rowHtml(row){
