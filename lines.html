@@ -60,6 +60,28 @@
   .panel-body{padding:18px;}
   select.week-select{width:auto; min-width:120px;}
 
+  /* ---------- results & trends panel ---------- */
+  .trend-filters{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:16px;}
+  .trend-filters select{width:auto; min-width:150px; flex:1 1 150px;}
+  .trend-summary-box{padding:16px 18px; background:var(--panel-2); border-radius:8px; margin-bottom:18px; display:flex; align-items:baseline; gap:14px; flex-wrap:wrap;}
+  .trend-summary-record{font-size:26px; font-weight:800; font-variant-numeric:tabular-nums; color:var(--gold);}
+  .trend-summary-pct{font-size:16px; color:var(--text-dim); font-weight:600;}
+  .trend-summary-count{font-size:12.5px; color:var(--text-faint); width:100%;}
+  .trend-breakdown-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+  .trend-block{border:1px solid var(--line); border-radius:8px; overflow:hidden;}
+  .trend-block.full{grid-column:1/-1;}
+  .trend-block-title{font-size:11.5px; font-weight:700; color:var(--text-faint); padding:9px 12px; background:var(--panel-2); border-bottom:1px solid var(--line); text-transform:uppercase; letter-spacing:0.03em;}
+  .trend-row{display:flex; justify-content:space-between; align-items:center; gap:10px; padding:8px 12px; border-bottom:1px solid var(--line); cursor:pointer; font-size:13.5px;}
+  .trend-row:last-child{border-bottom:none;}
+  .trend-row:hover{background:var(--panel-2);}
+  .trend-row.active{background:rgba(201,162,39,0.12);}
+  .trend-row-label{font-weight:600; color:var(--text);}
+  .trend-row.active .trend-row-label{color:var(--gold);}
+  .trend-row-record{font-variant-numeric:tabular-nums; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:12.5px; color:var(--text-dim); white-space:nowrap;}
+  .trend-row.active .trend-row-record{color:var(--gold);}
+  .trend-conf-grid{max-height:280px; overflow-y:auto;}
+  @media (max-width:640px){ .trend-breakdown-grid{grid-template-columns:1fr;} .trend-filters select{flex:1 1 100%;} }
+
   /* ---------- table ---------- */
   .table-wrap{border:1px solid var(--line); border-radius:10px; overflow:hidden; overflow-x:auto;}
   table{width:100%; border-collapse:collapse; font-size:14px;}
@@ -218,6 +240,73 @@
             <tr><td colspan="9" class="empty">Loading…</td></tr>
           </tbody>
         </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2><span class="htitle"><span class="collapse-arrow">▾</span>Results &amp; Trends</span> <span class="count" id="trendsHeaderCount"></span></h2>
+    <div class="panel-body">
+      <p style="font-size:12.5px; color:var(--text-faint); margin-top:0;">Each breakdown reflects the model's picked team, not just the matchup — "Home" means the model backed the home side, "P4" means it backed a Power 4 team, etc. Filters combine (AND), so you can intersect any combo — e.g. P4 home favorites in the 7–9.5 range. Click any row to apply that filter; click it again to clear it.</p>
+
+      <div class="trend-filters">
+        <select id="trendSideSelect">
+          <option value="">Any side</option>
+          <option value="Home">Home</option>
+          <option value="Away">Away</option>
+        </select>
+        <select id="trendFavDogSelect">
+          <option value="">Any favorite/dog</option>
+          <option value="Favorite">Favorite</option>
+          <option value="Underdog">Underdog</option>
+          <option value="Even">Even (pick'em)</option>
+        </select>
+        <select id="trendTierSelect">
+          <option value="">Any tier</option>
+          <option value="P4">P4</option>
+          <option value="G6">G6</option>
+        </select>
+        <select id="trendConfSelect">
+          <option value="">Any conference</option>
+        </select>
+        <select id="trendBucketSelect">
+          <option value="">Any spread size</option>
+          <option value="0–2.5">0–2.5</option>
+          <option value="3–6.5">3–6.5</option>
+          <option value="7–9.5">7–9.5</option>
+          <option value="10–13.5">10–13.5</option>
+          <option value="14+">14+</option>
+        </select>
+        <button class="ghost" id="trendResetBtn">Reset filters</button>
+      </div>
+
+      <div class="trend-summary-box">
+        <span class="trend-summary-record" id="trendSummaryRecord">—</span>
+        <span class="trend-summary-pct" id="trendSummaryPct"></span>
+        <span class="trend-summary-count" id="trendSummaryCount"></span>
+      </div>
+
+      <div class="trend-breakdown-grid">
+        <div class="trend-block">
+          <div class="trend-block-title">Home / Away</div>
+          <div id="trendSideBody"></div>
+        </div>
+        <div class="trend-block">
+          <div class="trend-block-title">Favorite / Underdog</div>
+          <div id="trendFavDogBody"></div>
+        </div>
+        <div class="trend-block">
+          <div class="trend-block-title">P4 / G6</div>
+          <div id="trendTierBody"></div>
+        </div>
+        <div class="trend-block">
+          <div class="trend-block-title">Spread size</div>
+          <div id="trendBucketBody"></div>
+        </div>
+        <div class="trend-block full">
+          <div class="trend-block-title">Conference</div>
+          <div id="trendConfBody" class="trend-conf-grid"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -563,6 +652,157 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
     sel.addEventListener('change', () => renderHistory(sel.value));
   }
 
+  // ---------- results & trends ----------
+  const P4_CONFS = new Set(['SEC', 'Big Ten', 'ACC', 'Big 12']);
+  const BUCKET_ORDER = ['0–2.5', '3–6.5', '7–9.5', '10–13.5', '14+'];
+
+  function tierForConf(conf){
+    return conf && P4_CONFS.has(conf) ? 'P4' : 'G6';
+  }
+
+  function spreadBucket(spread){
+    if(spread === null || spread === undefined) return null;
+    const a = Math.abs(spread);
+    if(a <= 2.5) return '0–2.5';
+    if(a <= 6.5) return '3–6.5';
+    if(a <= 9.5) return '7–9.5';
+    if(a <= 13.5) return '10–13.5';
+    return '14+';
+  }
+
+  let trendRows = [];   // one derived entry per graded, picked game
+  const trendFilters = { side: '', favdog: '', tier: '', conf: '', bucket: '' };
+
+  function buildTrendRows(){
+    trendRows = games
+      .filter(g => g.status === 'final' && g.modelCorrect !== null && g.modelCorrect !== undefined && g.pick)
+      .map(g => {
+        const pickedHome = g.pick === g.homeTeam;
+        const pickConf = pickedHome ? g.homeConference : g.awayConference;
+        let favdog = null;
+        if(g.vegasSpread !== null && g.vegasSpread !== undefined){
+          if(g.vegasSpread === 0) favdog = 'Even';
+          else {
+            const homeIsFav = g.vegasSpread > 0;
+            favdog = (homeIsFav === pickedHome) ? 'Favorite' : 'Underdog';
+          }
+        }
+        return {
+          side: pickedHome ? 'Home' : 'Away',
+          favdog,
+          tier: pickConf ? tierForConf(pickConf) : null,
+          conf: pickConf || null,
+          bucket: spreadBucket(g.vegasSpread),
+          correct: g.modelCorrect
+        };
+      });
+  }
+
+  function computeRecord(rows){
+    const wins = rows.filter(r => r.correct === true).length;
+    const losses = rows.filter(r => r.correct === false).length;
+    const total = wins + losses;
+    return { wins, losses, total, pct: total ? (wins / total * 100) : null };
+  }
+
+  function fmtRecord(rec){
+    return rec.total ? `${rec.wins}-${rec.losses} (${rec.pct.toFixed(1)}%)` : '—';
+  }
+
+  function matchesFilters(r, excludeKey){
+    if(excludeKey !== 'side' && trendFilters.side && r.side !== trendFilters.side) return false;
+    if(excludeKey !== 'favdog' && trendFilters.favdog && r.favdog !== trendFilters.favdog) return false;
+    if(excludeKey !== 'tier' && trendFilters.tier && r.tier !== trendFilters.tier) return false;
+    if(excludeKey !== 'conf' && trendFilters.conf && r.conf !== trendFilters.conf) return false;
+    if(excludeKey !== 'bucket' && trendFilters.bucket && r.bucket !== trendFilters.bucket) return false;
+    return true;
+  }
+
+  function getFiltered(excludeKey){
+    return trendRows.filter(r => matchesFilters(r, excludeKey));
+  }
+
+  function renderTrendSummary(){
+    const rows = getFiltered(null);
+    const rec = computeRecord(rows);
+    document.getElementById('trendSummaryRecord').textContent = rec.total ? `${rec.wins}-${rec.losses}` : 'No matching picks';
+    document.getElementById('trendSummaryPct').textContent = rec.total ? `${rec.pct.toFixed(1)}% ATS` : '';
+    document.getElementById('trendSummaryCount').textContent = `${rows.length} graded pick${rows.length === 1 ? '' : 's'} match the current filters`;
+  }
+
+  function renderBreakdown(key, containerId, valueOrder){
+    const rows = getFiltered(key);  // apply every OTHER active filter, so this breaks down within that context
+    const byValue = {};
+    rows.forEach(r => {
+      const v = r[key];
+      if(v === null || v === undefined) return;
+      (byValue[v] = byValue[v] || []).push(r);
+    });
+    let values = valueOrder ? valueOrder.filter(v => byValue[v]) : Object.keys(byValue).sort();
+    if(valueOrder){
+      Object.keys(byValue).forEach(v => { if(!values.includes(v)) values.push(v); });
+    }
+    const container = document.getElementById(containerId);
+    if(!values.length){
+      container.innerHTML = `<div class="empty" style="padding:16px;">No matching picks.</div>`;
+      return;
+    }
+    container.innerHTML = values.map(v => {
+      const rec = computeRecord(byValue[v]);
+      const active = trendFilters[key] === v;
+      return `<div class="trend-row ${active ? 'active' : ''}" data-key="${key}" data-value="${v}">
+        <span class="trend-row-label">${v}</span>
+        <span class="trend-row-record">${fmtRecord(rec)}</span>
+      </div>`;
+    }).join('');
+    container.querySelectorAll('.trend-row').forEach(el => {
+      el.addEventListener('click', () => {
+        const k = el.dataset.key, v = el.dataset.value;
+        trendFilters[k] = (trendFilters[k] === v) ? '' : v;
+        syncTrendSelects();
+        renderAllTrends();
+      });
+    });
+  }
+
+  function renderAllTrends(){
+    renderTrendSummary();
+    renderBreakdown('side', 'trendSideBody', ['Home', 'Away']);
+    renderBreakdown('favdog', 'trendFavDogBody', ['Favorite', 'Underdog', 'Even']);
+    renderBreakdown('tier', 'trendTierBody', ['P4', 'G6']);
+    renderBreakdown('bucket', 'trendBucketBody', BUCKET_ORDER);
+    renderBreakdown('conf', 'trendConfBody', null);
+  }
+
+  function syncTrendSelects(){
+    document.getElementById('trendSideSelect').value = trendFilters.side;
+    document.getElementById('trendFavDogSelect').value = trendFilters.favdog;
+    document.getElementById('trendTierSelect').value = trendFilters.tier;
+    document.getElementById('trendConfSelect').value = trendFilters.conf;
+    document.getElementById('trendBucketSelect').value = trendFilters.bucket;
+  }
+
+  function populateTrendConfSelect(){
+    const sel = document.getElementById('trendConfSelect');
+    const confs = [...new Set(trendRows.map(r => r.conf).filter(Boolean))].sort();
+    const current = sel.value;
+    sel.innerHTML = '<option value="">Any conference</option>' + confs.map(c => `<option value="${c}">${c}</option>`).join('');
+    sel.value = current;
+  }
+
+  function initTrendFilterControls(){
+    document.getElementById('trendSideSelect').addEventListener('change', e => { trendFilters.side = e.target.value; renderAllTrends(); });
+    document.getElementById('trendFavDogSelect').addEventListener('change', e => { trendFilters.favdog = e.target.value; renderAllTrends(); });
+    document.getElementById('trendTierSelect').addEventListener('change', e => { trendFilters.tier = e.target.value; renderAllTrends(); });
+    document.getElementById('trendConfSelect').addEventListener('change', e => { trendFilters.conf = e.target.value; renderAllTrends(); });
+    document.getElementById('trendBucketSelect').addEventListener('change', e => { trendFilters.bucket = e.target.value; renderAllTrends(); });
+    document.getElementById('trendResetBtn').addEventListener('click', () => {
+      trendFilters.side = ''; trendFilters.favdog = ''; trendFilters.tier = ''; trendFilters.conf = ''; trendFilters.bucket = '';
+      syncTrendSelects();
+      renderAllTrends();
+    });
+  }
+
   function loadLinesData(){
     fetch(LINES_DATA_URL)
       .then(r => { if(!r.ok) throw new Error('no data file yet'); return r.json(); })
@@ -583,6 +823,10 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
         renderTrend();
         populateWeekFilter();
         renderHistory('');
+        buildTrendRows();
+        populateTrendConfSelect();
+        renderAllTrends();
+        document.getElementById('trendsHeaderCount').textContent = trendRows.length ? `${trendRows.length} graded picks` : '';
       })
       .catch(() => {
         const dot = document.getElementById('statusDot');
@@ -592,6 +836,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
         renderThisWeek();
         renderStats();
         renderTrend();
+        renderAllTrends();
       });
   }
 
@@ -761,6 +1006,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
 
   initCollapsiblePanels();
   initSortHandlers();
+  initTrendFilterControls();
   loadLinesData();
   loadMpgRatings();
   loadRatingsHistory();
