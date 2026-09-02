@@ -134,6 +134,19 @@
   .badge.tr{background:rgba(180,142,173,0.2); color:var(--purple);}
   .badge.fr{background:rgba(111,168,220,0.2); color:var(--blue);}
   .empty{padding:40px; text-align:center; color:var(--text-faint);}
+
+  details{margin-top:26px; border:1px solid var(--line); border-radius:10px; background:var(--panel);}
+  summary{
+    padding:14px 16px; cursor:pointer; font-size:14px; font-weight:600;
+    list-style:none; display:flex; justify-content:space-between; align-items:center;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary .toggle{color:var(--text-faint); font-size:12px; font-weight:400;}
+  .notes-body{padding:0 18px 20px;}
+  .notes-body dl{display:grid; grid-template-columns:130px 1fr; gap:10px 14px; font-size:13px; margin:0 0 14px;}
+  .notes-body dt{font-weight:600; color:var(--text);}
+  .notes-body dd{margin:0; color:var(--text-dim); line-height:1.55;}
+  .notes-body .foot-note{font-size:12px; color:var(--text-faint); line-height:1.6; margin-top:4px;}
 </style>
 </head>
 <body>
@@ -172,6 +185,27 @@
 
   <div id="chartBody"></div>
   <div class="empty" id="emptyState" style="display:none;">No players match your search.</div>
+
+  <details>
+    <summary>Where this data comes from <span class="toggle">tap to expand</span></summary>
+    <div class="notes-body">
+      <dl>
+        <dt>Depth Chart</dt>
+        <dd>Position, jersey number, and rank order pulled from Ourlads' team depth chart page. Ourlads also flags class year and transfer status per player.</dd>
+        <dt>Recruit:</dt>
+        <dd>The player's 247Sports Composite score — an industry-aggregated rating (247Sports, ESPN, Rivals, On3) assigned when the player was a high school recruit. National and position rank shown when available. This number doesn't change after high school, even for transfers.</dd>
+        <dt>Transfer:</dt>
+        <dd>Shown only for players tagged as transfers. This is a separate 247Sports ranking assigned specifically when the player entered the transfer portal — an independent evaluation of their college performance, not their original recruiting rank.</dd>
+        <dt>PFF</dt>
+        <dd>PFF College grade for the player, from a PFF Elite subscription export. Not yet wired in — shows "—" until that data is added.</dd>
+        <dt>Color scale</dt>
+        <dd>Composite score and PFF grade are colored on a sliding red → yellow → green scale, low to high, so you can scan a formation and spot the strongest/weakest spots at a glance.</dd>
+      </dl>
+      <div class="foot-note">
+        Depth chart and recruiting/transfer data refresh on the same weekly cadence as the rest of the site. PFF grades require a manual weekly export from PFF Elite since PFF's data isn't publicly scrapable.
+      </div>
+    </div>
+  </details>
 
 </div>
 
@@ -271,23 +305,28 @@ function slotHtml(r, isStarter){
   const badge = r.isTransfer ? '<span class="badge tr">TR</span>'
               : (r.class && r.class.toUpperCase() === 'FR') ? '<span class="badge fr">FR</span>' : '';
   const compositeHtml = gradeSpan(r.compositeScore, 65, 100);
-  let rankLine;
-  if(r.isTransfer){
-    rankLine = r.transferRank != null
-      ? `247: ${compositeHtml} · Transfer #${r.transferRank} (POS #${r.transferPosRank ?? '—'})`
-      : `247: ${compositeHtml} · transfer rank pending`;
-  } else {
-    rankLine = r.hsNationalRank != null
-      ? `247: ${compositeHtml} · #${r.hsNationalRank} natl (POS #${r.hsPositionRank ?? '—'})`
-      : `247: ${compositeHtml}`;
+
+  let recruitLine = `Recruit: ${compositeHtml}`;
+  if(r.hsNationalRank != null){
+    recruitLine += ` (#${r.hsNationalRank} natl, POS #${r.hsPositionRank ?? '—'})`;
   }
+
+  let transferLine = '';
+  if(r.isTransfer){
+    transferLine = r.transferRank != null
+      ? `Transfer: #${r.transferRank} overall (POS #${r.transferPosRank ?? '—'})`
+      : `Transfer: rank pending`;
+  }
+
   const pffHtml = r.pffGrade != null
     ? `PFF: ${gradeSpan(r.pffGrade, 40, 95, 1)}`
     : `<span class="pff">PFF: —</span>`;
+
   return `
     <div class="slot ${isStarter ? 'starter' : ''}">
       <div class="l1"><span class="num">${r.jersey || ''}</span> ${r.player}${badge}</div>
-      <div class="l2">${r.class || ''} · ${rankLine}</div>
+      <div class="l2">${r.class || ''} · ${recruitLine}</div>
+      ${transferLine ? `<div class="l2">${transferLine}</div>` : ''}
       <div class="l3">${pffHtml}</div>
     </div>`;
 }
