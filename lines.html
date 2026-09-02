@@ -127,6 +127,7 @@
   td.matchup{font-weight:600;}
   td.pick{font-weight:700; color:var(--gold);}
   .edge{color:var(--gold); font-weight:700; font-variant-numeric:tabular-nums;}
+  .stars{color:var(--gold); letter-spacing:1px; font-size:13px;}
   .badge{display:inline-block; padding:2px 8px; border-radius:20px; font-size:11.5px; font-weight:700;}
   .badge.win{background:var(--green-bg); color:var(--win);}
   .badge.loss{background:var(--red-bg); color:var(--loss);}
@@ -222,12 +223,13 @@
               <th class="num" data-key="modelSpread">DFI Line<span class="arrow"></span></th>
               <th class="num" data-key="vegasSpread">Vegas line<span class="arrow"></span></th>
               <th class="num" data-key="edge">Edge<span class="arrow"></span></th>
+              <th class="ctr" data-key="stars">Stars<span class="arrow"></span></th>
               <th data-key="pick">Pick<span class="arrow"></span></th>
               <th class="ctr">Result</th>
             </tr>
           </thead>
           <tbody id="thisWeekBody">
-            <tr><td colspan="7" class="empty">Loading…</td></tr>
+            <tr><td colspan="8" class="empty">Loading…</td></tr>
           </tbody>
         </table>
       </div>
@@ -270,6 +272,14 @@
           <option value="10–13.5">10–13.5</option>
           <option value="14+">14+</option>
         </select>
+        <select id="trendStarsSelect">
+          <option value="">Any stars</option>
+          <option value="1">★☆☆☆☆ (1)</option>
+          <option value="2">★★☆☆☆ (2)</option>
+          <option value="3">★★★☆☆ (3)</option>
+          <option value="4">★★★★☆ (4)</option>
+          <option value="5">★★★★★ (5)</option>
+        </select>
         <button class="ghost" id="trendResetBtn">Reset filters</button>
       </div>
 
@@ -296,6 +306,10 @@
           <div class="trend-block-title">Spread size</div>
           <div id="trendBucketBody"></div>
         </div>
+        <div class="trend-block">
+          <div class="trend-block-title">Confidence (Stars)</div>
+          <div id="trendStarsBody"></div>
+        </div>
         <div class="trend-block full">
           <div class="trend-block-title">Conference</div>
           <div id="trendConfBody" class="trend-conf-grid"></div>
@@ -314,6 +328,7 @@
                 <th class="num">Model line</th>
                 <th class="num">Vegas line</th>
                 <th class="num">Edge</th>
+                <th class="ctr">Stars</th>
                 <th>Pick</th>
                 <th class="num">Final</th>
                 <th class="ctr">Result</th>
@@ -372,13 +387,14 @@
               <th class="num" data-key="modelSpread">DFI Line<span class="arrow"></span></th>
               <th class="num" data-key="vegasSpread">Vegas line<span class="arrow"></span></th>
               <th class="num" data-key="edge">Edge<span class="arrow"></span></th>
+              <th class="ctr" data-key="stars">Stars<span class="arrow"></span></th>
               <th data-key="pick">Pick<span class="arrow"></span></th>
               <th class="num" data-key="final">Final<span class="arrow"></span></th>
               <th class="ctr">Result</th>
             </tr>
           </thead>
           <tbody id="historyBody">
-            <tr><td colspan="9" class="empty">Loading…</td></tr>
+            <tr><td colspan="10" class="empty">Loading…</td></tr>
           </tbody>
         </table>
       </div>
@@ -525,6 +541,27 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
     return `<span class="edge">+${Math.abs(row.edge).toFixed(1)} ${team}</span>`;
   }
 
+  // ---------- confidence stars ----------
+  // A star rating derived purely from |edge| -- since edge is frozen at
+  // kickoff, stars are automatically frozen too (no separate storage
+  // needed). Thresholds are calibrated to CFB's own edge distribution
+  // (median ~3.4, p90 ~8.0), not a generic scale, since CFB's market is
+  // less efficiently priced than the NFL's -- the NFL page uses its own
+  // tighter thresholds.
+  function starsForEdge(absEdge){
+    if(absEdge >= 8.0) return 5;
+    if(absEdge >= 5.5) return 4;
+    if(absEdge >= 3.5) return 3;
+    if(absEdge >= 2.0) return 2;
+    return 1;
+  }
+
+  function starsCell(row){
+    if(row.edge === null || row.edge === undefined) return '—';
+    const n = starsForEdge(Math.abs(row.edge));
+    return `<span class="stars" title="${n}/5 confidence">${'★'.repeat(n)}${'☆'.repeat(5 - n)}</span>`;
+  }
+
   // ---------- generic column sorting (shared by This Week + History tables) ----------
   function getSortValue(g, key){
     switch(key){
@@ -538,6 +575,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
       case 'modelSpread': return (g.modelSpread === null || g.modelSpread === undefined) ? null : Math.abs(g.modelSpread);
       case 'vegasSpread': return (g.vegasSpread === null || g.vegasSpread === undefined) ? null : Math.abs(g.vegasSpread);
       case 'edge': return (g.edge === null || g.edge === undefined) ? null : Math.abs(g.edge);
+      case 'stars': return (g.edge === null || g.edge === undefined) ? null : starsForEdge(Math.abs(g.edge));
       case 'pick': return g.pick ? g.pick.toLowerCase() : null;
       case 'week': return g.week;
       case 'final':
@@ -598,7 +636,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
     const thead = document.querySelector('#thisWeekBody').closest('table').querySelector('thead');
     const body = document.getElementById('thisWeekBody');
     if(!rows.length){
-      body.innerHTML = `<tr><td colspan="7" class="empty">No games loaded yet — check back once the season's underway.</td></tr>`;
+      body.innerHTML = `<tr><td colspan="8" class="empty">No games loaded yet — check back once the season's underway.</td></tr>`;
       updateSortArrows(thead, sortState.thisWeek);
       return;
     }
@@ -610,6 +648,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
         <td class="num">${fmtSpreadTeam(g, g.modelSpread)}</td>
         <td class="num">${fmtSpreadTeam(g, g.vegasSpread)}</td>
         <td class="num">${edgeCell(g)}</td>
+        <td class="ctr">${starsCell(g)}</td>
         <td class="pick">${pickDisplay(g)}</td>
         <td class="ctr">${resultBadge(g)}</td>
       </tr>
@@ -682,7 +721,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
     document.getElementById('historyCount').textContent = `${rows.length} games`;
 
     if(!rows.length){
-      body.innerHTML = `<tr><td colspan="9" class="empty">No games to show.</td></tr>`;
+      body.innerHTML = `<tr><td colspan="10" class="empty">No games to show.</td></tr>`;
       updateSortArrows(thead, sortState.history);
       return;
     }
@@ -695,6 +734,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
         <td class="num">${fmtSpreadTeam(g, g.modelSpread)}</td>
         <td class="num">${fmtSpreadTeam(g, g.vegasSpread)}</td>
         <td class="num">${edgeCell(g)}</td>
+        <td class="ctr">${starsCell(g)}</td>
         <td class="pick">${pickDisplay(g)}</td>
         <td class="num">${g.status === 'final' ? `${g.awayScore}-${g.homeScore}` : '—'}</td>
         <td class="ctr">${resultBadge(g)}</td>
@@ -736,7 +776,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
   }
 
   let trendRows = [];   // one derived entry per graded, picked game
-  const trendFilters = { week: '', side: '', favdog: '', tier: '', conf: '', bucket: '' };
+  const trendFilters = { week: '', side: '', favdog: '', tier: '', conf: '', bucket: '', stars: '' };
 
   function buildTrendRows(){
     trendRows = games
@@ -759,6 +799,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
           tier: pickConf ? tierForConf(pickConf) : null,
           conf: pickConf || null,
           bucket: spreadBucket(g.vegasSpread),
+          stars: (g.edge !== null && g.edge !== undefined) ? String(starsForEdge(Math.abs(g.edge))) : null,
           correct: g.modelCorrect,
           game: g   // keep the original record so the games list can render full details
         };
@@ -783,6 +824,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
     if(excludeKey !== 'tier' && trendFilters.tier && r.tier !== trendFilters.tier) return false;
     if(excludeKey !== 'conf' && trendFilters.conf && r.conf !== trendFilters.conf) return false;
     if(excludeKey !== 'bucket' && trendFilters.bucket && r.bucket !== trendFilters.bucket) return false;
+    if(excludeKey !== 'stars' && trendFilters.stars && r.stars !== trendFilters.stars) return false;
     return true;
   }
 
@@ -798,7 +840,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
     document.getElementById('trendSummaryCount').textContent = `${rows.length} graded pick${rows.length === 1 ? '' : 's'} match the current filters`;
   }
 
-  function renderBreakdown(key, containerId, valueOrder){
+  function renderBreakdown(key, containerId, valueOrder, labelFn){
     const rows = getFiltered(key);  // apply every OTHER active filter, so this breaks down within that context
     const byValue = {};
     rows.forEach(r => {
@@ -819,7 +861,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
       const rec = computeRecord(byValue[v]);
       const active = trendFilters[key] === v;
       return `<div class="trend-row ${active ? 'active' : ''}" data-key="${key}" data-value="${v}">
-        <span class="trend-row-label">${v}</span>
+        <span class="trend-row-label">${labelFn ? labelFn(v) : v}</span>
         <span class="trend-row-record">${fmtRecord(rec)}</span>
       </div>`;
     }).join('');
@@ -838,7 +880,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
     const body = document.getElementById('trendGamesBody');
     document.getElementById('trendGamesCount').textContent = rows.length ? `${rows.length} game${rows.length === 1 ? '' : 's'}` : '';
     if(!rows.length){
-      body.innerHTML = `<tr><td colspan="9" class="empty">No games match the current filters.</td></tr>`;
+      body.innerHTML = `<tr><td colspan="10" class="empty">No games match the current filters.</td></tr>`;
       return;
     }
     const sorted = rows.slice().sort((a, b) => (b.game.startDate || '').localeCompare(a.game.startDate || ''));
@@ -852,11 +894,17 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
           <td class="num">${fmtSpreadTeam(g, g.modelSpread)}</td>
           <td class="num">${fmtSpreadTeam(g, g.vegasSpread)}</td>
           <td class="num">${edgeCell(g)}</td>
+          <td class="ctr">${starsCell(g)}</td>
           <td class="pick">${pickDisplay(g)}</td>
           <td class="num">${g.awayScore}-${g.homeScore}</td>
           <td class="ctr">${resultBadge(g)}</td>
         </tr>`;
     }).join('');
+  }
+
+  function starLabel(n){
+    const num = parseInt(n, 10);
+    return '★'.repeat(num) + '☆'.repeat(5 - num);
   }
 
   function renderAllTrends(){
@@ -865,6 +913,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
     renderBreakdown('favdog', 'trendFavDogBody', ['Favorite', 'Underdog', 'Even']);
     renderBreakdown('tier', 'trendTierBody', ['P4', 'G6']);
     renderBreakdown('bucket', 'trendBucketBody', BUCKET_ORDER);
+    renderBreakdown('stars', 'trendStarsBody', ['5', '4', '3', '2', '1'], starLabel);
     renderBreakdown('conf', 'trendConfBody', null);
     renderTrendGames();
   }
@@ -876,6 +925,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
     document.getElementById('trendTierSelect').value = trendFilters.tier;
     document.getElementById('trendConfSelect').value = trendFilters.conf;
     document.getElementById('trendBucketSelect').value = trendFilters.bucket;
+    document.getElementById('trendStarsSelect').value = trendFilters.stars;
   }
 
   function populateTrendConfSelect(){
@@ -901,8 +951,9 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
     document.getElementById('trendTierSelect').addEventListener('change', e => { trendFilters.tier = e.target.value; renderAllTrends(); });
     document.getElementById('trendConfSelect').addEventListener('change', e => { trendFilters.conf = e.target.value; renderAllTrends(); });
     document.getElementById('trendBucketSelect').addEventListener('change', e => { trendFilters.bucket = e.target.value; renderAllTrends(); });
+    document.getElementById('trendStarsSelect').addEventListener('change', e => { trendFilters.stars = e.target.value; renderAllTrends(); });
     document.getElementById('trendResetBtn').addEventListener('click', () => {
-      trendFilters.week = ''; trendFilters.side = ''; trendFilters.favdog = ''; trendFilters.tier = ''; trendFilters.conf = ''; trendFilters.bucket = '';
+      trendFilters.week = ''; trendFilters.side = ''; trendFilters.favdog = ''; trendFilters.tier = ''; trendFilters.conf = ''; trendFilters.bucket = ''; trendFilters.stars = '';
       syncTrendSelects();
       renderAllTrends();
     });
