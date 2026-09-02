@@ -222,29 +222,29 @@ const DEFENSE_ROWS = [
       { pos:"NB",  col:2, span:1 },             // adjacent to LCB
       { pos:"RCB", col:8, span:1 }              // right edge, alone
     ]},
-  { cols:DEFENSE_COLS, id:"row-lb", items:[    // row 2: linebackers, directly behind NT/DT
-      { pos:"WLB", col:3, span:2 },
-      { pos:"MLB", col:5, span:2 }
-    ]},
-  { cols:DEFENSE_COLS, dynamic:"dline" }  // row 3: D-line, position codes vary by team (see DLINE_CANDIDATES)
+  { cols:DEFENSE_COLS, dynamic:"lb", id:"row-lb" },   // row 2: linebackers/hybrids, position codes vary widely by team
+  { cols:DEFENSE_COLS, dynamic:"dline" }               // row 3: D-line, position codes vary by team (see DLINE_CANDIDATES)
 ];
 
-// D-line naming varies across the conference:
-//   LDE/NT/DT/RDE   (Ohio State, Nebraska, Purdue, Rutgers, USC)
-//   LDE/LDT/RDT/RDE (Washington, Penn State, UCLA, Iowa, Maryland, Michigan, Michigan State, Northwestern)
-//   DE/NT/DT        (Illinois, Indiana, Minnesota, Oregon -- no left/right split)
-//   DT/NT           (Wisconsin -- no listed DE)
-// Rather than pin exact columns for one pattern, detect whichever codes are
-// present (in this rough left-to-right order) and center them dynamically.
+// Full position-code audit across all 18 Big Ten teams (Sept 2026):
+// D-line: LDE/NT/DT/RDE, LDE/LDT/RDT/RDE, DE/NT/DT, or DT/NT only (Wisconsin runs a
+// true 2-lineman front). LB/hybrid front-seven roles vary even more -- most teams use
+// WLB/MLB, but Wisconsin lists 5 separate codes (LOLB/SLB/WLB/MLB/ROLB), Oregon uses
+// entirely different names (JACK/MAC/MONEY), and Minnesota/Rutgers/Indiana/Iowa each
+// have one-off hybrid edge/nickel roles (RUSH/STUD/CASH). Centering dynamically from
+// a broad candidate list, rather than assuming Ohio State's WLB/MLB pair, is the only
+// way this doesn't silently drop players for teams with different terminology.
 const DLINE_CANDIDATES = ["LDE","DE","NT","LDT","DT","RDT","RDE"];
+const LB_CANDIDATES = ["LOLB","STUD","JACK","SLB","WLB","MAC","MLB","MONEY","CASH","RUSH","ROLB"];
 
-function dlineRowHtml(groups, cols){
-  const present = DLINE_CANDIDATES.filter(p => groups[p] && groups[p].length);
+function dynamicCenteredRowHtml(candidates, groups, cols, id){
+  const present = candidates.filter(p => groups[p] && groups[p].length);
   if(!present.length) return "";
   const totalSpan = present.length * 2;
   const start = Math.max(1, Math.floor((cols - totalSpan) / 2) + 1);
   const boxesHtml = present.map((pos, i) => posBoxHtml(pos, groups, start + i * 2, 2)).join('');
-  return `<div class="formrow" style="grid-template-columns:repeat(${cols}, 1fr);">${boxesHtml}</div>`;
+  const idAttr = id ? ` id="${id}"` : "";
+  return `<div class="formrow"${idAttr} style="grid-template-columns:repeat(${cols}, 1fr);">${boxesHtml}</div>`;
 }
 
 const OFFENSE_COLS = 14; // unit width = 2 columns
@@ -261,6 +261,7 @@ const OFFENSE_ROWS = [
   { cols:OFFENSE_COLS, items:[
       { pos:"WR-SL", alts:["WR-F"], col:2,  span:2 }, // sits in the gap between WR-X and LT
       { pos:"RB",    col:4,  span:2 }, // sits in the gap between LT and LG
+      { pos:"FB",    col:9,  span:2 }, // only present for teams that carry one
       { pos:"QB",    col:7,  span:2 }, // directly behind center
       { pos:"TE",    col:11, span:2 }  // behind RT
     ]}
@@ -404,7 +405,8 @@ function resolveItemPos(item, groups){
 }
 
 function rowHtml(row){
-  if(row.dynamic === "dline") return dlineRowHtml(groupsRef, row.cols);
+  if(row.dynamic === "dline") return dynamicCenteredRowHtml(DLINE_CANDIDATES, groupsRef, row.cols, row.id);
+  if(row.dynamic === "lb") return dynamicCenteredRowHtml(LB_CANDIDATES, groupsRef, row.cols, row.id);
   const { cols, items, id } = row;
   const boxesHtml = items.map(it => posBoxHtml(resolveItemPos(it, groupsRef), groupsRef, it.col, it.span)).join('');
   if(!boxesHtml.trim()) return "";
