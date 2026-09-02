@@ -456,11 +456,24 @@ function dynamicCenteredRowHtml(candidates, groups, baseCols, id){
   return { html };
 }
 
+// Mike-type linebackers belong in the physical middle of the row, flanked by
+// outside backers -- not wherever they fall in candidate-list order.
+function centerMikeLB(present){
+  const mikeTypes = ["MLB"];
+  const mikeIdx = present.findIndex(p => mikeTypes.includes(p));
+  if(mikeIdx === -1 || present.length < 3) return present;
+  const mike = present[mikeIdx];
+  const others = present.filter((_, i) => i !== mikeIdx);
+  const mid = Math.floor(others.length / 2);
+  others.splice(mid, 0, mike);
+  return others;
+}
+
 // LB row narrows to exactly fill whichever gap the CB row leaves open, using a
 // width-percentage container instead of matching grid-column counts between rows.
 // Always safe to overlap since it's constructed to fit inside the gap by design.
 function lbRowHtml(groups, id){
-  const present = LB_CANDIDATES.filter(p => groups[p] && groups[p].length);
+  const present = centerMikeLB(LB_CANDIDATES.filter(p => groups[p] && groups[p].length));
   if(!present.length) return "";
   const hasNB = groups["NB"] && groups["NB"].length;
   const widthPct = hasNB ? 62.5 : 75;
