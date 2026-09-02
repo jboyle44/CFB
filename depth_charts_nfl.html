@@ -10,6 +10,7 @@
     --text:#EDEAE2; --text-dim:#9CA0A8; --text-faint:#6B6F78;
     --gold:#C9A227; --gold-dim:#8C7420;
     --blue:#6FA8DC; --red:#D46A6A; --purple:#B48EAD;
+    --teal:#3FBFAD; --teal-dim:#2A8577;
     --box-header:#101114;
   }
   *{box-sizing:border-box;}
@@ -35,6 +36,7 @@
     -webkit-text-fill-color:transparent !important; color:transparent !important;
     border-color:#E63946 !important;
   }
+  .btn-depth{ color:var(--teal) !important; border-color:var(--teal-dim) !important; }
   html,body{margin:0;padding:0;background:var(--bg);}
   body{
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
@@ -70,7 +72,7 @@
   }
   .filters input::placeholder{color:var(--text-faint);}
 
-  .legend{display:flex; gap:16px; font-size:11px; color:var(--text-faint); margin-bottom:20px; flex-wrap:wrap; align-items:center;}
+  .legend{display:flex; gap:16px; font-size:11px; color:var(--text-faint); margin-bottom:20px; flex-wrap:wrap;}
   .legend span.sw{display:inline-block; width:9px; height:9px; border-radius:2px; margin-right:5px; vertical-align:middle;}
   .sw.new{background:var(--blue);}
   .grade-legend{display:flex; align-items:center; gap:6px;}
@@ -85,10 +87,10 @@
     margin:26px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--line);
   }
   .section-head h2{font-size:19px; margin:0; letter-spacing:0.02em;}
+  .section-head .scheme{font-size:12px; color:var(--text-faint); font-weight:600;}
 
-  .formgrid{
-    display:grid; grid-template-columns:repeat(auto-fill, minmax(115px, 1fr));
-    gap:8px; margin-bottom:8px;
+  .formrow{
+    display:grid; gap:8px; margin-bottom:8px;
   }
 
   .posbox{
@@ -105,14 +107,22 @@
   .slot.starter{background:rgba(201,162,39,0.06);}
   .slot .l1{
     font-size:11.5px; font-weight:700; display:flex; align-items:center; gap:4px;
-    flex-wrap:wrap; line-height:1.25;
+    flex-wrap:wrap; line-height:1.25; white-space:normal; overflow:visible; text-overflow:clip;
   }
   .slot.starter .l1{font-size:12px;}
   .slot:not(.starter) .l1{font-weight:600; color:var(--text-dim); font-size:11px;}
   .slot .num{color:var(--text-faint); font-weight:600; font-variant-numeric:tabular-nums;}
-  .slot .l2{font-size:9px; color:var(--text-faint); margin-top:1px; line-height:1.3;}
+  .slot .l2{font-size:9px; color:var(--text-faint); margin-top:1px; line-height:1.3; overflow:visible; text-overflow:clip; white-space:normal;}
   .slot .l3{font-size:9px; color:var(--text-faint); margin-top:0; line-height:1.3;}
   .slot .pff{color:var(--text-faint); font-style:italic;}
+
+  .posbox.slim .hd{font-size:9px; padding:3px 2px;}
+  .posbox.slim .slot{padding:2px 4px;}
+  .posbox.slim .slot .l1{font-size:9.5px; gap:2px; line-height:1.2;}
+  .posbox.slim .slot.starter .l1{font-size:10px;}
+  .posbox.slim .slot .num{font-size:9px;}
+  .posbox.slim .slot .l2, .posbox.slim .slot .l3{font-size:7.5px;}
+  .posbox.slim .badge{font-size:7px; padding:0 3px;}
   .badge{
     display:inline-block; font-size:8.5px; font-weight:800; padding:1px 5px;
     border-radius:3px; vertical-align:middle;
@@ -147,7 +157,7 @@
       <a href="./index.html" class="nav-btn" style="color:var(--gold);">BRR</a>
       <a href="./lines.html" class="nav-btn btn-cfb">DF<span class="serif-i">I</span>-CFB</a>
       <a href="./lines_nfl.html" class="nav-btn btn-nfl">DF<span class="serif-i">I</span>-NFL</a>
-      <a href="./depth_charts.html" class="nav-btn" style="color:var(--gold);">CFB Depth Charts</a>
+      <a href="./depth_charts.html" class="nav-btn btn-depth">Depth Chart-CFB</a>
     </div>
   </div>
 
@@ -178,14 +188,14 @@
         <dt>Depth Chart</dt>
         <dd>Position, jersey number, and rank order pulled from Ourlads' NFL team depth chart page.</dd>
         <dt>Acquisition code</dt>
-        <dd>Ourlads' shorthand for how a player joined the roster -- a draft year/round like "20/1" (2020, round 1), a street/college free agent signing like "SF23"/"CF26" (original signing year), or an inter-team move like "T/Pit" (traded from Pittsburgh), "U/Den" (waived, claimed from Denver). Inter-team moves are flagged with the blue "NEW" badge.</dd>
+        <dd>Ourlads' shorthand for how a player joined the roster — a draft year/round like "20/1" (2020, round 1), a street/college free agent signing like "SF23"/"CF26" (original signing year), or an inter-team move like "T/Pit" (traded from Pittsburgh), "U/Den" (waived, claimed from Denver). Inter-team moves are flagged with the blue "NEW" badge.</dd>
         <dt>PFF</dt>
-        <dd>PFF grade for the player. Not wired in yet -- shows "—" until added.</dd>
+        <dd>PFF grade for the player. Not wired in yet — shows "—" until added.</dd>
         <dt>Color scale</dt>
-        <dd>Once PFF grades are added, they'll color on a sliding red → yellow → green scale, low to high.</dd>
+        <dd>Once PFF grades are added, they'll color on a sliding red → yellow → green scale, low to high, so you can scan a formation and spot the strongest/weakest spots at a glance.</dd>
       </dl>
       <div class="foot-note">
-        Depth chart data refreshes automatically on the same weekly cadence as the rest of the site.
+        Depth chart data refreshes automatically on the same weekly cadence as the rest of the site. Front-seven position codes vary by team scheme (3-4 vs 4-3), so linebacker/D-line rows detect and center whichever codes each team actually uses.
       </div>
     </div>
   </details>
@@ -195,6 +205,53 @@
 <script>
 let DATA = { team: null, rows: [] };
 
+// Same double-resolution column grid as the CFB page, so gaps/boundaries can be
+// centered precisely rather than snapped to the nearest whole column.
+const DEFENSE_COLS = 8;
+const OFFENSE_COLS = 14;
+
+// D-line and LB naming is consistent across NFC East right now (DE/NT/DT and
+// LOLB/WLB/MLB/ROLB for all 4 teams), but centering dynamically from a broader
+// candidate list -- rather than pinning exact columns -- means this keeps working
+// without edits as more teams (with different scheme terminology) get added.
+const DLINE_CANDIDATES = ["LDE","DE","NT","LDT","DT","RDT","RDE"];
+const LB_CANDIDATES = ["LOLB","SLB","WLB","MLB","ROLB"];
+
+const DEFENSE_ROWS = [
+  { cols:DEFENSE_COLS, items:[                 // row 1: safeties
+      { pos:"FS", col:3, span:2 },
+      { pos:"SS", col:5, span:2 }
+    ]},
+  { cols:DEFENSE_COLS, id:"row-cbnb", items:[  // row 1.5: CBs + NB, slimmer boxes, between safeties and LBs
+      { pos:"LCB", col:1, span:1 },
+      { pos:"NB",  col:2, span:1 },
+      { pos:"RCB", col:8, span:1 }
+    ]},
+  { cols:DEFENSE_COLS, dynamic:"lb", id:"row-lb" },  // row 2: linebackers
+  { cols:DEFENSE_COLS, dynamic:"dline" }              // row 3: D-line
+];
+
+const OFFENSE_ROWS = [
+  { cols:OFFENSE_COLS, items:[
+      { pos:"LWR", col:1,  span:2 },
+      { pos:"LT",  col:3,  span:2 },
+      { pos:"LG",  col:5,  span:2 },
+      { pos:"C",   col:7,  span:2 },
+      { pos:"RG",  col:9,  span:2 },
+      { pos:"RT",  col:11, span:2 },
+      { pos:"RWR", col:13, span:2 }
+    ]},
+  { cols:OFFENSE_COLS, items:[
+      { pos:"SWR", col:2,  span:2 }, // gap between LWR and LT
+      { pos:"RB",  col:4,  span:2 }, // gap between LT and LG
+      { pos:"FB",  col:9,  span:2 }, // only present for teams that carry one
+      { pos:"QB",  col:7,  span:2 }, // directly behind center
+      { pos:"TE",  col:11, span:2 }  // behind RT
+    ]}
+];
+
+const SPECIAL_ROW = { cols:7, items:["PT","PK","KO","LS","H","PR","KR"].map((pos,i) => ({ pos, col:i+1, span:1 })) };
+
 const TEAM_LIST = [
   { key: "dal", name: "Dallas Cowboys" },
   { key: "nyg", name: "New York Giants" },
@@ -202,12 +259,6 @@ const TEAM_LIST = [
   { key: "was", name: "Washington Commanders" },
 ];
 const DEFAULT_TEAM = "dal";
-
-// Preferred left-to-right/top-to-bottom order; anything not listed (scheme-specific
-// codes like SLB/LE/RE for a 4-3 team) falls in after, alphabetically.
-const OFFENSE_ORDER = ["LWR","RWR","SWR","LT","LG","C","RG","RT","TE","QB","RB","FB"];
-const DEFENSE_ORDER = ["DE","LDE","RDE","NT","DT","LOLB","WLB","MLB","ROLB","SLB","LCB","RCB","SS","FS","NB"];
-const SPECIAL_ORDER = ["PT","PK","KO","LS","H","PR","KR"];
 
 function currentTeamKey(){
   return new URLSearchParams(window.location.search).get('team') || DEFAULT_TEAM;
@@ -301,26 +352,43 @@ function slotHtml(r, isStarter){
     </div>`;
 }
 
-function posBoxHtml(pos, groups){
+function posBoxHtml(pos, groups, col, span){
   const list = groups[pos];
   if(!list || !list.length) return "";
   const slots = list.map((r,i) => slotHtml(r, i===0)).join('');
-  return `<div class="posbox"><div class="hd">${pos}</div>${slots}</div>`;
+  const slimClass = span === 1 ? ' slim' : '';
+  return `<div class="posbox${slimClass}" style="grid-column:${col} / span ${span};"><div class="hd">${pos}</div>${slots}</div>`;
 }
 
-function orderedPositions(present, preferredOrder){
-  const inOrder = preferredOrder.filter(p => present.includes(p));
-  const extras = present.filter(p => !preferredOrder.includes(p)).sort();
-  return [...inOrder, ...extras];
+function dynamicCenteredRowHtml(candidates, groups, cols, id){
+  const present = candidates.filter(p => groups[p] && groups[p].length);
+  if(!present.length) return "";
+  const totalSpan = present.length * 2;
+  const start = Math.max(1, Math.floor((cols - totalSpan) / 2) + 1);
+  const boxesHtml = present.map((pos, i) => posBoxHtml(pos, groups, start + i * 2, 2)).join('');
+  const idAttr = id ? ` id="${id}"` : "";
+  return `<div class="formrow"${idAttr} style="grid-template-columns:repeat(${cols}, 1fr);">${boxesHtml}</div>`;
 }
 
-function sectionHtml(title, positions, groups){
-  if(!positions.length) return "";
-  const boxes = positions.map(pos => posBoxHtml(pos, groups)).join('');
+function rowHtml(row){
+  if(row.dynamic === "dline") return dynamicCenteredRowHtml(DLINE_CANDIDATES, groupsRef, row.cols, row.id);
+  if(row.dynamic === "lb") return dynamicCenteredRowHtml(LB_CANDIDATES, groupsRef, row.cols, row.id);
+  const { cols, items, id } = row;
+  const boxesHtml = items.map(it => posBoxHtml(it.pos, groupsRef, it.col, it.span)).join('');
+  if(!boxesHtml.trim()) return "";
+  const idAttr = id ? ` id="${id}"` : "";
+  return `<div class="formrow"${idAttr} style="grid-template-columns:repeat(${cols}, 1fr);">${boxesHtml}</div>`;
+}
+
+function sectionHtml(title, rows){
+  const rowsHtml = rows.map(row => rowHtml(row)).join('');
+  if(!rowsHtml.trim()) return "";
   return `
     <div class="section-head"><h2>${title}</h2></div>
-    <div class="formgrid">${boxes}</div>`;
+    ${rowsHtml}`;
 }
+
+let groupsRef = {};
 
 function render(){
   const q = state.search;
@@ -337,26 +405,28 @@ function render(){
 
   const groups = {};
   rows.forEach(r => { (groups[r.position] = groups[r.position] || []).push(r); });
-  const present = Object.keys(groups);
-
-  const offense = orderedPositions(present.filter(p => OFFENSE_ORDER.includes(p)), OFFENSE_ORDER);
-  const defense = orderedPositions(present.filter(p => DEFENSE_ORDER.includes(p)), DEFENSE_ORDER);
-  const special = orderedPositions(present.filter(p => SPECIAL_ORDER.includes(p)), SPECIAL_ORDER);
-  // anything left over (unrecognized position code) still needs to show up somewhere
-  const classified = new Set([...offense, ...defense, ...special]);
-  const other = present.filter(p => !classified.has(p)).sort();
+  groupsRef = groups;
 
   let html = "";
-  html += sectionHtml("Offense", offense, groups);
-  html += sectionHtml("Defense", defense, groups);
-  html += sectionHtml("Specialists", special, groups);
-  if(other.length) html += sectionHtml("Other", other, groups);
+  html += sectionHtml("Defense", DEFENSE_ROWS);
+  html += sectionHtml("Offense", OFFENSE_ROWS);
+  html += sectionHtml("Specialists", [SPECIAL_ROW]);
 
   container.innerHTML = html;
+  overlapLbRow();
+}
+
+function overlapLbRow(){
+  const cbnbRow = document.getElementById('row-cbnb');
+  const lbRow = document.getElementById('row-lb');
+  if(!cbnbRow || !lbRow) return;
+  const h = cbnbRow.getBoundingClientRect().height;
+  lbRow.style.marginTop = `-${(h / 2)}px`;
 }
 
 searchBox.addEventListener("input", () => { state.search = searchBox.value.toLowerCase(); render(); });
 loadData(currentTeamKey());
+window.addEventListener('resize', () => overlapLbRow());
 </script>
 </body>
 </html>
