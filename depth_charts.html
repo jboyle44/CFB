@@ -171,14 +171,14 @@ const DEFENSE_ROWS = [
       { pos:"FS", col:3, span:2 },
       { pos:"SS", col:5, span:2 }
     ]},
-  { cols:DEFENSE_COLS, items:[                 // row 1.5: CBs + NB, slimmer boxes, between safeties and LBs
+  { cols:DEFENSE_COLS, id:"row-cbnb", items:[  // row 1.5: CBs + NB, slimmer boxes, between safeties and LBs
       { pos:"LCB", col:1, span:1 },             // left edge
       { pos:"NB",  col:2, span:1 },             // adjacent to LCB
       { pos:"RCB", col:8, span:1 }              // right edge, alone
     ]},
-  { cols:DEFENSE_COLS, items:[                 // row 2: linebackers, starting about midway of NB and RCB
-      { pos:"WLB", col:4, span:2 },
-      { pos:"MLB", col:6, span:2 }
+  { cols:DEFENSE_COLS, id:"row-lb", items:[    // row 2: linebackers, directly behind NT/DT
+      { pos:"WLB", col:3, span:2 },
+      { pos:"MLB", col:5, span:2 }
     ]},
   { cols:DEFENSE_COLS, items:[                 // row 3: D-line, NT/DT split the true centerline
       { pos:"LDE", col:1, span:2 },
@@ -280,10 +280,11 @@ function posBoxHtml(pos, groups, col, span){
 }
 
 function rowHtml(row){
-  const { cols, items } = row;
+  const { cols, items, id } = row;
   const boxesHtml = items.map(it => posBoxHtml(it.pos, groupsRef, it.col, it.span)).join('');
   if(!boxesHtml.trim()) return "";
-  return `<div class="formrow" style="grid-template-columns:repeat(${cols}, 1fr);">${boxesHtml}</div>`;
+  const idAttr = id ? ` id="${id}"` : "";
+  return `<div class="formrow"${idAttr} style="grid-template-columns:repeat(${cols}, 1fr);">${boxesHtml}</div>`;
 }
 
 function sectionHtml(title, scheme, rows){
@@ -319,9 +320,20 @@ function render(){
   html += sectionHtml("Specialists", "", [SPECIAL_ROW]);
 
   container.innerHTML = html;
+  overlapLbRow();
+}
+
+function overlapLbRow(){
+  const cbnbRow = document.getElementById('row-cbnb');
+  const lbRow = document.getElementById('row-lb');
+  if(!cbnbRow || !lbRow) return;
+  const h = cbnbRow.getBoundingClientRect().height;
+  // pull LB row up so its top starts at the vertical midpoint of the CB/NB row
+  lbRow.style.marginTop = `-${(h / 2)}px`;
 }
 
 loadData();
+window.addEventListener('resize', () => overlapLbRow());
 </script>
 </body>
 </html>
