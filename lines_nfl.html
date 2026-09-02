@@ -167,7 +167,7 @@
   <div class="topbar">
     <div class="brand">
       <h1>DFI NFL</h1>
-      <span class="sub">NFL &nbsp;·&nbsp; Dog Food Index vs. the market &nbsp;·&nbsp; weekly ATS tracker coming soon</span>
+      <span class="sub">NFL &nbsp;·&nbsp; Dog Food Index vs. the market &nbsp;·&nbsp; weekly ATS tracker</span>
     </div>
     <a class="back-link" href="./lines.html">← DFI College Football</a>
   </div>
@@ -314,12 +314,12 @@
   <details>
     <summary>How this works <span class="toggle">tap to expand</span></summary>
     <div class="formula-body">
-      <p><b>Weekly ATS tracking isn't live yet for the NFL version.</b> The College Football DFI grades its picks automatically because <a href="https://collegefootballdata.com" style="color:var(--gold);" target="_blank" rel="noopener">CollegeFootballData.com</a> provides free CFB schedules, market lines, and final scores in one place — there isn't yet an equivalent data source wired up for the NFL. The formula itself works the same way once that's connected:</p>
-      <div class="formula-line">dfi_line = (home_rating − away_rating) + HFA
-HFA = +2.0 pts for the home team, 0 on a neutral site
-edge = dfi_line − vegas_spread
+      <p>Twice a week, a script pulls upcoming NFL games and market spreads from <a href="https://the-odds-api.com" style="color:var(--gold);" target="_blank" rel="noopener">the-odds-api.com</a>, plus <a href="https://mpg000f.github.io/cbb_power_rating/#nfl" style="color:var(--gold);" target="_blank" rel="noopener">MPG's NFL power ratings</a>. It computes a DFI line for every game and compares it to the market:</p>
+      <div class="formula-line">model_spread = (home_rating − away_rating) + HFA
+HFA = +2.0 pts for the home team
+edge = model_spread − vegas_spread
 pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
-      <p>The Dog Food Index ratings below are already live and update from <a href="https://mpg000f.github.io/cbb_power_rating/#nfl" style="color:var(--gold);" target="_blank" rel="noopener">MPG's NFL power ratings</a> in real time — only the automated weekly grading against Vegas lines is pending a data source.</p>
+      <p>Once a game is final, the pick is graded against the market line that was live when it was made — that line is then frozen, so results don't get rewritten as future lines move. A push doesn't count for or against the record. One limitation worth knowing: the free odds API only returns scores for games completed in the last 3 days, so this only catches results if the script runs at least that often (it's scheduled for twice a week).</p>
     </div>
   </details>
 
@@ -407,7 +407,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
   </div>
 
   <div class="foot">
-    Dog Food Index ratings from <a href="https://mpg000f.github.io/cbb_power_rating/#nfl" target="_blank" rel="noopener">mpg000f's NFL power rating model</a>. Weekly ATS tracking against Vegas lines is not yet automated for the NFL — see "How this works" above. This is a model's output tracked for its own sake, not betting advice. Sibling to the <a href="./lines.html">DFI for College Football</a>.
+    Market lines and final scores from <a href="https://the-odds-api.com" target="_blank" rel="noopener">the-odds-api.com</a>. Power ratings from <a href="https://mpg000f.github.io/cbb_power_rating/#nfl" target="_blank" rel="noopener">mpg000f's NFL power rating model</a>. This is a model's output tracked for its own sake, not betting advice. Sibling to the <a href="./lines.html">DFI for College Football</a>.
   </div>
 
 </div>
@@ -832,7 +832,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
         const dot = document.getElementById('statusDot');
         const statusText = document.getElementById('statusText');
         dot.className = 'dot warn';
-        statusText.textContent = "Weekly ATS tracking isn't set up yet for the NFL — the Dog Food Index ratings below are live, this part is pending.";
+        statusText.textContent = "Couldn't load lines_data_nfl.json yet — it's created by the weekly GitHub Action.";
         renderThisWeek();
         renderStats();
         renderTrend();
