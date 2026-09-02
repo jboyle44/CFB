@@ -83,13 +83,12 @@
   .section-head .scheme{font-size:12px; color:var(--text-faint); font-weight:600;}
 
   .formrow{
-    display:flex; gap:8px; justify-content:center; margin-bottom:8px; flex-wrap:wrap;
+    display:grid; gap:8px; margin-bottom:8px;
   }
 
   .posbox{
     background:var(--panel); border:1px solid var(--line); border-radius:6px;
     overflow:hidden; min-width:0;
-    flex:0 0 calc((100% - 48px) / 7);
   }
   .posbox .hd{
     background:var(--box-header); color:var(--gold); text-align:center;
@@ -163,18 +162,24 @@
 <script>
 let DATA = { team: null, rows: [] };
 
-// Formation rows, each sized/centered to match a 7-across O-line/secondary row.
-// Row width is fixed (1/7 per box) so shorter rows visually center under the wide row.
+// Formation rows. Each row: { cols: N, items: [...] }
+// items are either a plain position code (auto-centered across the row)
+// or {pos, col} to pin it at an exact grid column (1-indexed).
 const DEFENSE_ROWS = [
-  ["FS","SS"],                    // deep secondary, centered top like FS/ROVER
-  ["LCB","WLB","MLB","NB","RCB"], // corners + backers + nickel
-  ["LDE","NT","DT","RDE"]         // D-line
+  { cols:5, items:["FS","SS"] },                      // deep secondary, centered
+  { cols:5, items:["LCB","WLB","MLB","NB","RCB"] },    // corners + backers + nickel, full width
+  { cols:5, items:["LDE","NT","DT","RDE"] }            // D-line, centered
 ];
 const OFFENSE_ROWS = [
-  ["WR-X","LT","LG","C","RG","RT","WR-Z"], // O-line + outside WRs, full 7 across
-  ["WR-SL","RB","QB","TE"]                  // slot/backfield, centered under the line
+  { cols:7, items:["WR-X","LT","LG","C","RG","RT","WR-Z"] }, // O-line + outside WRs, full 7 across
+  { cols:7, items:[
+      { pos:"WR-SL", col:2 },
+      { pos:"RB",    col:3 },
+      { pos:"QB",    col:4 },   // directly behind center
+      { pos:"TE",    col:6 }
+    ]}
 ];
-const SPECIAL_ROW = ["PT","PK","KO","LS","H","PR","KR"];
+const SPECIAL_ROW = { cols:7, items:["PT","PK","KO","LS","H","PR","KR"] };
 
 async function loadData(){
   const res = await fetch('depth_chart_data.json?v=' + Date.now());
@@ -239,18 +244,35 @@ function slotHtml(r, isStarter){
     </div>`;
 }
 
-function posBoxHtml(pos, groups){
+function posBoxHtml(pos, groups, gridColumn){
   const list = groups[pos];
   if(!list || !list.length) return "";
   const slots = list.map((r,i) => slotHtml(r, i===0)).join('');
-  return `<div class="posbox"><div class="hd">${pos}</div>${slots}</div>`;
+  const style = gridColumn ? ` style="grid-column:${gridColumn} / span 1;"` : "";
+  return `<div class="posbox"${style}><div class="hd">${pos}</div>${slots}</div>`;
+}
+
+function rowHtml(row, groups){
+  const { cols, items } = row;
+  // normalize: plain strings get auto-centered as a contiguous block; objects get pinned columns
+  const isExplicit = items.length && typeof items[0] === "object";
+  let placed;
+  if(isExplicit){
+    placed = items
+      .filter(it => groups[it.pos] && groups[it.pos].length)
+      .map(it => posBoxHtml(it.pos, groups, it.col));
+  } else {
+    const present = items.filter(pos => groups[pos] && groups[pos].length);
+    const start = Math.floor((cols - present.length) / 2) + 1;
+    placed = present.map((pos, i) => posBoxHtml(pos, groups, start + i));
+  }
+  const boxesHtml = placed.filter(Boolean).join('');
+  if(!boxesHtml) return "";
+  return `<div class="formrow" style="grid-template-columns:repeat(${cols}, 1fr);">${boxesHtml}</div>`;
 }
 
 function sectionHtml(title, scheme, rows, groups){
-  const rowsHtml = rows.map(posList => {
-    const boxes = posList.map(pos => posBoxHtml(pos, groups)).join('');
-    return boxes ? `<div class="formrow">${boxes}</div>` : '';
-  }).join('');
+  const rowsHtml = rows.map(row => rowHtml(row, groups)).join('');
   if(!rowsHtml.trim()) return "";
   return `
     <div class="section-head"><h2>${title}</h2><span class="scheme">${scheme}</span></div>
