@@ -275,11 +275,12 @@ const OFFENSE_ROWS = [
       { pos:"WR-Z", col:13, span:2 }
     ]},
   { cols:OFFENSE_COLS, items:[
+      { pos:"TE-H",  col:1,  span:2 }, // only present for teams with a distinct H-back TE role alongside TE-Y (e.g. Texas)
       { pos:"WR-SL", alts:["WR-F","WR-H"], col:2,  span:2 }, // left: sits in the gap between WR-X and LT
       { pos:"RB",    col:4,  span:2 }, // left: sits in the gap between LT and LG
       { pos:"QB",    col:7,  span:2 }, // directly behind center
       { pos:"FB",    col:10, span:2 }, // right: mirrors RB -- gap between RG and RT
-      { pos:"TE",    alts:["TE-Y","TE-H"], col:12, span:2 }  // right: mirrors WR-SL -- gap between RT and WR-Z
+      { pos:"TE",    alts:["TE-Y"], col:12, span:2 }  // right: mirrors WR-SL -- gap between RT and WR-Z; TE-Y as alt since some teams only list that
     ]}
 ];
 
