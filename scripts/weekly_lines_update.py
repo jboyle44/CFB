@@ -402,8 +402,15 @@ def main():
     all_rows = kept_other_years + list(updated.values())
     all_rows.sort(key=lambda r: (r["season"], r["week"], r.get("startDate") or ""))
 
+    # Wrapped in an object with a generation timestamp -- not a bare array
+    # -- so the front end can show an accurate "data last refreshed at"
+    # time instead of a hardcoded schedule description that goes stale
+    # the next time the cron schedule changes.
     with open(DATA_FILE, "w") as f:
-        json.dump(all_rows, f, separators=(",", ":"))
+        json.dump({
+            "generatedAt": datetime.now(timezone.utc).isoformat(),
+            "games": all_rows,
+        }, f, separators=(",", ":"))
 
     all_history = kept_other_years_history + list(history_by_week.values())
     all_history.sort(key=lambda h: (h["season"], h["week"]))
