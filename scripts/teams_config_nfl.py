@@ -8,4 +8,8 @@ NFL_TEAMS = {
     "nyg": {"display_name": "New York Giants", "ourlads_abbr": "NYG"},
     "phi": {"display_name": "Philadelphia Eagles", "ourlads_abbr": "PHI"},
     "was": {"display_name": "Washington Commanders", "ourlads_abbr": "WAS"},
+    "buf": {"display_name": "Buffalo Bills", "ourlads_abbr": "BUF"},
+    "mia": {"display_name": "Miami Dolphins", "ourlads_abbr": "MIA"},
+    "ne":  {"display_name": "New England Patriots", "ourlads_abbr": "NE"},
+    "nyj": {"display_name": "New York Jets", "ourlads_abbr": "NYJ"},
 }
