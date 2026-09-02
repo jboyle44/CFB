@@ -438,6 +438,13 @@ HFA = +2.0 pts for the home team
 edge = model_spread − vegas_spread
 pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
       <p>Once a game is final, the pick is graded against the market line that was live when it was made — that line is then frozen, so results don't get rewritten as future lines move. A push doesn't count for or against the record. One limitation worth knowing: the free odds API only returns scores for games completed in the last 3 days, so this only catches results if the script runs at least that often (it's scheduled for twice a week).</p>
+      <p style="margin-top:16px;"><b>Confidence stars.</b> Every pick also gets a 1–5 star rating, based purely on the size of the edge (how far the model's line sits from the market's):</p>
+      <div class="formula-line">stars = 5  if |edge| ≥ 4.0
+stars = 4  if |edge| ≥ 2.75
+stars = 3  if |edge| ≥ 1.6
+stars = 2  if |edge| ≥ 0.8
+stars = 1  otherwise</div>
+      <p>These cutoffs are set from the NFL's own edge distribution so far this season (median edge 1.6 points, 90th percentile 4.1 points) — noticeably tighter than college football's, since the NFL market is sharper and more efficiently priced. The thresholds are picked to roughly split picks into quintiles rather than piling everything into one rating. As of the last check, the real spread across a full slate of graded picks was 67 one-star, 66 two-star, 62 three-star, 48 four-star, and 29 five-star — a genuine bell-shaped spread. Since a star rating is only ever computed from the edge, and the edge is frozen the moment a game kicks off, the star shown for a past pick can't drift or get revised after the fact either — it's a permanent record of how confident the model actually was at the time. The College Football page uses its own, wider thresholds tuned to that market's larger edges.</p>
     </div>
   </details>
 
