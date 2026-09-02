@@ -8,8 +8,17 @@ on:
     # day-of-month are both pinned, so it only ever matches Sept 8).
     - cron: '0 13 8 9 *'
 
-    # Ongoing: every Monday at 9am ET (13:00 UTC).
-    - cron: '0 13 * * 1'
+    # Ongoing: two runs a week, timed around when the actual ranking
+    # sources update --
+    #   - AP Poll releases Sundays ~2pm ET -> Sunday 5pm ET (21:00 UTC)
+    #     gives a 3-hour buffer for any delay.
+    #   - SP+ (Bill Connelly, ESPN) updates Tuesday mornings, and the CFP
+    #     committee's own ranking (once released, ~week 10-13 onward)
+    #     drops Tuesday nights ~7pm ET -- one late-Tuesday run catches
+    #     both. Wednesday 01:00 UTC = Tuesday 9pm EDT / 8pm EST, a
+    #     2-3 hour buffer after the committee's release.
+    - cron: '0 21 * * 0'
+    - cron: '0 1 * * 3'
 
   # Lets you (or me, walking you through it) trigger a run manually from the
   # Actions tab any time, without waiting for the schedule -- useful for
