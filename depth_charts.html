@@ -456,8 +456,8 @@ function render(){
   groupsRef = groups;
 
   let html = "";
-  html += sectionHtml("Defense", "4-2-5", DEFENSE_ROWS);
-  html += sectionHtml("Offense", "Spread Option", OFFENSE_ROWS);
+  html += sectionHtml("Defense", DATA.defenseScheme || "", DEFENSE_ROWS);
+  html += sectionHtml("Offense", DATA.offenseScheme || "", OFFENSE_ROWS);
   html += sectionHtml("Specialists", "", [SPECIAL_ROW]);
 
   container.innerHTML = html;
