@@ -171,7 +171,7 @@
   </div>
 
   <div class="legend">
-    <span><span class="sw new"></span>Trade / Waiver / New Signing</span>
+    <span><span class="sw new"></span>Acquired via trade/waiver/FA (not originally drafted/signed here)</span>
     <span class="grade-legend">PFF Grade:
       <span class="grade-bar"></span>
       <span>Lower → Higher</span>
@@ -188,7 +188,7 @@
         <dt>Depth Chart</dt>
         <dd>Position, jersey number, and rank order pulled from Ourlads' NFL team depth chart page.</dd>
         <dt>Acquisition code</dt>
-        <dd>Ourlads' shorthand for how a player joined the roster — a draft year/round like "20/1" (2020, round 1), a street/college free agent signing like "SF23"/"CF26" (original signing year), or an inter-team move like "T/Pit" (traded from Pittsburgh), "U/Den" (waived, claimed from Denver). Inter-team moves are flagged with the blue "NEW" badge.</dd>
+        <dd>Ourlads' shorthand for how a player originally joined the roster — a draft year/round like "20/1" (2020, round 1), a street/college free agent signing like "SF23"/"CF26" (original signing year), or an inter-team move like "T/Pit" (traded from Pittsburgh), "U/Den" (waived, claimed from Denver). This reflects how they arrived, however long ago — it isn't a "recently happened" flag, so a player can show a trade/waiver/FA code from a year or more back. Those inter-team paths are flagged with the blue "ACQ" badge, distinguishing them from players drafted or originally signed by this team.</dd>
         <dt>PFF</dt>
         <dd>PFF grade for the player. Not wired in yet — shows "—" until added.</dd>
         <dt>Color scale</dt>
@@ -339,8 +339,8 @@ function gradeSpan(value, min, max, digits){
 }
 
 function slotHtml(r, isStarter){
-  const badge = r.isAcquired ? '<span class="badge new">NEW</span>' : '';
-  const codeLine = r.code ? `Acquired: ${r.code}` : '';
+  const badge = r.isAcquired ? '<span class="badge new">ACQ</span>' : '';
+  const codeLine = r.code ? `Origin: ${r.code}` : '';
   const pffHtml = r.pffGrade != null
     ? `PFF: ${gradeSpan(r.pffGrade, 40, 95, 1)}`
     : `<span class="pff">PFF: —</span>`;
