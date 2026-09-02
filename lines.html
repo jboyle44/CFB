@@ -108,8 +108,7 @@
   td.ctr{text-align:center;}
   td.matchup{font-weight:600;}
   td.pick{font-weight:700; color:var(--gold);}
-  td.edge.pos{color:var(--win); font-weight:700;}
-  td.edge.neg{color:var(--loss); font-weight:700;}
+  .edge{color:var(--gold); font-weight:700; font-variant-numeric:tabular-nums;}
   .badge{display:inline-block; padding:2px 8px; border-radius:20px; font-size:11.5px; font-weight:700;}
   .badge.win{background:var(--green-bg); color:var(--win);}
   .badge.loss{background:var(--red-bg); color:var(--loss);}
@@ -460,13 +459,24 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
     history: { key: 'datetime', dir: -1 }    // most recent first by default
   };
 
+  function teamAbbr(row, whichTeam){
+    // Falls back to the full team name when no abbreviation field exists
+    // (CFB data has none, NFL data has homeAbbr/awayAbbr).
+    if(whichTeam === 'home') return row.homeAbbr || row.homeTeam;
+    return row.awayAbbr || row.awayTeam;
+  }
+
+  function pickDisplay(row){
+    if(!row.pick) return '—';
+    return (row.pick === row.homeTeam) ? teamAbbr(row, 'home') : teamAbbr(row, 'away');
+  }
+
   function fmtSpreadTeam(row, spread, whichTeam){
     // whichTeam: 'home' or 'away'. spread is home-perspective (positive = home favored).
     if(spread === null || spread === undefined) return '—';
     const homeFav = spread > 0;
     if (spread === 0) return "Pick'em";
-    const favTeam = homeFav ? row.homeTeam : row.awayTeam;
-    const dogTeam = homeFav ? row.awayTeam : row.homeTeam;
+    const favTeam = homeFav ? teamAbbr(row, 'home') : teamAbbr(row, 'away');
     const mag = Math.abs(spread).toFixed(1);
     return `${favTeam} -${mag}`;
   }
@@ -489,10 +499,13 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
   }
 
   function edgeCell(row){
+    // Always shown as a positive magnitude next to the team it favors --
+    // the raw signed value (positive = home, negative = away) is an
+    // internal convention, not something a reader should have to decode.
     if(row.edge === null || row.edge === undefined) return '—';
-    const cls = row.edge > 0 ? 'pos' : row.edge < 0 ? 'neg' : '';
-    const lean = row.edge > 0 ? row.homeTeam : row.edge < 0 ? row.awayTeam : '';
-    return `<span class="edge ${cls}">${row.edge > 0 ? '+' : ''}${row.edge.toFixed(1)}${lean ? ' ' + lean : ''}</span>`;
+    if(row.edge === 0) return `<span class="edge">Even</span>`;
+    const team = row.edge > 0 ? teamAbbr(row, 'home') : teamAbbr(row, 'away');
+    return `<span class="edge">+${Math.abs(row.edge).toFixed(1)} ${team}</span>`;
   }
 
   // ---------- generic column sorting (shared by This Week + History tables) ----------
@@ -580,7 +593,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
         <td class="num">${fmtSpreadTeam(g, g.modelSpread)}</td>
         <td class="num">${fmtSpreadTeam(g, g.vegasSpread)}</td>
         <td class="num">${edgeCell(g)}</td>
-        <td class="pick">${g.pick || '—'}</td>
+        <td class="pick">${pickDisplay(g)}</td>
         <td class="ctr">${resultBadge(g)}</td>
       </tr>
     `).join('');
@@ -665,7 +678,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
         <td class="num">${fmtSpreadTeam(g, g.modelSpread)}</td>
         <td class="num">${fmtSpreadTeam(g, g.vegasSpread)}</td>
         <td class="num">${edgeCell(g)}</td>
-        <td class="pick">${g.pick || '—'}</td>
+        <td class="pick">${pickDisplay(g)}</td>
         <td class="num">${g.status === 'final' ? `${g.awayScore}-${g.homeScore}` : '—'}</td>
         <td class="ctr">${resultBadge(g)}</td>
       </tr>
@@ -822,7 +835,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
           <td class="num">${fmtSpreadTeam(g, g.modelSpread)}</td>
           <td class="num">${fmtSpreadTeam(g, g.vegasSpread)}</td>
           <td class="num">${edgeCell(g)}</td>
-          <td class="pick">${g.pick || '—'}</td>
+          <td class="pick">${pickDisplay(g)}</td>
           <td class="num">${g.awayScore}-${g.homeScore}</td>
           <td class="ctr">${resultBadge(g)}</td>
         </tr>`;
