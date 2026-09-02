@@ -16,9 +16,21 @@
   *{box-sizing:border-box;}
   .serif-i{font-family:Georgia,'Times New Roman',Times,serif;}
   .nfl-accent{
+    font-size:30px; font-weight:800; letter-spacing:-0.02em;
     background:linear-gradient(90deg, #4A90D9, #E63946);
     -webkit-background-clip:text; background-clip:text;
     -webkit-text-fill-color:transparent; color:transparent;
+  }
+  .btn-cfb{
+    background:linear-gradient(90deg, #4CAF50, #8E44AD) !important;
+    -webkit-background-clip:text !important; background-clip:text !important;
+    -webkit-text-fill-color:transparent !important; color:transparent !important;
+    border-color:#8E44AD !important;
+  }
+  .btn-brr{
+    color:#F4D03F !important;
+    text-shadow:1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    border-color:#F4D03F !important;
   }
   html,body{margin:0;padding:0;background:var(--bg);}
   body{
@@ -181,8 +193,8 @@
       <span class="sub">NFL &nbsp;·&nbsp; Dog Food Index vs. the market &nbsp;·&nbsp; weekly ATS tracker</span>
     </div>
     <div style="display:flex; gap:8px; align-items:center;">
-      <a class="back-link" href="./lines.html">DF<span class="serif-i">I</span>-CFB</a>
-      <a class="back-link" href="./index.html">BRR</a>
+      <a class="back-link btn-cfb" href="./lines.html">DF<span class="serif-i">I</span>-CFB</a>
+      <a class="back-link btn-brr" href="./index.html">BRR</a>
     </div>
   </div>
 
