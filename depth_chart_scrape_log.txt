@@ -1,6 +1,126 @@
+=== illinois ===
+Scraping Ourlads depth chart for Illinois...
+  92 depth chart rows
+Scraping 247Sports roster for Illinois...
+  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Wrote ../depth_chart_data/illinois.json
+exit_code=0
+=== indiana ===
+Scraping Ourlads depth chart for Indiana...
+  76 depth chart rows
+Scraping 247Sports roster for Indiana...
+  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Wrote ../depth_chart_data/indiana.json
+exit_code=0
+=== iowa ===
+Scraping Ourlads depth chart for Iowa...
+  58 depth chart rows
+Scraping 247Sports roster for Iowa...
+  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Wrote ../depth_chart_data/iowa.json
+exit_code=0
+=== maryland ===
+Scraping Ourlads depth chart for Maryland...
+  68 depth chart rows
+Scraping 247Sports roster for Maryland...
+  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Wrote ../depth_chart_data/maryland.json
+exit_code=0
+=== michigan ===
+Scraping Ourlads depth chart for Michigan...
+  99 depth chart rows
+Scraping 247Sports roster for Michigan...
+  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Wrote ../depth_chart_data/michigan.json
+exit_code=0
+=== michigan-state ===
+Scraping Ourlads depth chart for Michigan State...
+  67 depth chart rows
+Scraping 247Sports roster for Michigan State...
+  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Wrote ../depth_chart_data/michigan-state.json
+exit_code=0
+=== minnesota ===
+Scraping Ourlads depth chart for Minnesota...
+  79 depth chart rows
+Scraping 247Sports roster for Minnesota...
+  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Wrote ../depth_chart_data/minnesota.json
+exit_code=0
+=== nebraska ===
+Scraping Ourlads depth chart for Nebraska...
+  75 depth chart rows
+Scraping 247Sports roster for Nebraska...
+  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Wrote ../depth_chart_data/nebraska.json
+exit_code=0
+=== northwestern ===
+Scraping Ourlads depth chart for Northwestern...
+  72 depth chart rows
+Scraping 247Sports roster for Northwestern...
+  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Wrote ../depth_chart_data/northwestern.json
+exit_code=0
+=== ohio-state ===
 Scraping Ourlads depth chart for Ohio State...
   77 depth chart rows
 Scraping 247Sports roster for Ohio State...
   247Sports roster scrape failed (403 Client Error: Forbidden for url: https://247sports.com/team/ohio-state-buckeyes-football-79/Roster/); falling back to previously-saved composite/transfer data for this run.
-Wrote ../depth_chart_data.json
+Wrote ../depth_chart_data/ohio-state.json
+exit_code=0
+=== oregon ===
+Scraping Ourlads depth chart for Oregon...
+  85 depth chart rows
+Scraping 247Sports roster for Oregon...
+  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Wrote ../depth_chart_data/oregon.json
+exit_code=0
+=== penn-state ===
+Scraping Ourlads depth chart for Penn State...
+  85 depth chart rows
+Scraping 247Sports roster for Penn State...
+  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Wrote ../depth_chart_data/penn-state.json
+exit_code=0
+=== purdue ===
+Scraping Ourlads depth chart for Purdue...
+  83 depth chart rows
+Scraping 247Sports roster for Purdue...
+  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Wrote ../depth_chart_data/purdue.json
+exit_code=0
+=== rutgers ===
+Scraping Ourlads depth chart for Rutgers...
+  71 depth chart rows
+Scraping 247Sports roster for Rutgers...
+  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Wrote ../depth_chart_data/rutgers.json
+exit_code=0
+=== ucla ===
+Scraping Ourlads depth chart for UCLA...
+  76 depth chart rows
+Scraping 247Sports roster for UCLA...
+  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Wrote ../depth_chart_data/ucla.json
+exit_code=0
+=== usc ===
+Scraping Ourlads depth chart for USC...
+  73 depth chart rows
+Scraping 247Sports roster for USC...
+  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Wrote ../depth_chart_data/usc.json
+exit_code=0
+=== washington ===
+Scraping Ourlads depth chart for Washington...
+  59 depth chart rows
+Scraping 247Sports roster for Washington...
+  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Wrote ../depth_chart_data/washington.json
+exit_code=0
+=== wisconsin ===
+Scraping Ourlads depth chart for Wisconsin...
+  92 depth chart rows
+Scraping 247Sports roster for Wisconsin...
+  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Wrote ../depth_chart_data/wisconsin.json
 exit_code=0
