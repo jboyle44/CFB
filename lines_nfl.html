@@ -373,6 +373,34 @@
     </div>
   </div>
 
+  <div class="panel collapsed">
+    <h2><span class="htitle"><span class="collapse-arrow">▾</span>Dog Food Index History</span> <span class="count" id="historyRatingsNote"></span>
+      <select id="ratingsWeekSelect" class="week-select"></select>
+    </h2>
+    <div class="panel-body">
+      <p style="font-size:12.5px; color:var(--text-faint); margin-top:0;">Our own weekly snapshot of MPG's full grid, captured independently since their site doesn't keep week-over-week history for the NFL yet.</p>
+      <div class="filters">
+        <input type="text" id="ratingsHistorySearch" placeholder="Search team…">
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th class="num">Rank</th>
+              <th>Team</th>
+              <th class="num">Rating</th>
+              <th class="num">Adj. Off. EPA</th>
+              <th class="num">Adj. Def. EPA</th>
+            </tr>
+          </thead>
+          <tbody id="ratingsHistoryBody">
+            <tr><td colspan="5" class="empty">No snapshots saved yet — the first weekly run will populate this.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
   <details>
     <summary>How this works <span class="toggle">tap to expand</span></summary>
     <div class="formula-body">
@@ -1001,6 +1029,63 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
       });
   }
 
+  // ---------- power ratings history (our own weekly snapshots) ----------
+  let ratingsHistory = []; // [{season, week, source, capturedAt, teams:[...]}]
+
+  function renderRatingsHistoryTable(filter){
+    const sel = document.getElementById('ratingsWeekSelect');
+    const body = document.getElementById('ratingsHistoryBody');
+    if(!ratingsHistory.length){
+      body.innerHTML = `<tr><td colspan="5" class="empty">No snapshots saved yet — the first weekly run will populate this.</td></tr>`;
+      return;
+    }
+    const week = parseInt(sel.value, 10);
+    const snap = ratingsHistory.find(h => h.week === week);
+    if(!snap){
+      body.innerHTML = `<tr><td colspan="5" class="empty">No snapshot for that week.</td></tr>`;
+      return;
+    }
+    const f = (filter || '').toLowerCase().trim();
+    const rows = snap.teams.filter(r => !f || r.team.toLowerCase().includes(f))
+                            .slice().sort((a,b) => (a.rank||999) - (b.rank||999));
+    document.getElementById('historyRatingsNote').textContent = `${snap.source || ''}`;
+    if(!rows.length){
+      body.innerHTML = `<tr><td colspan="5" class="empty">No teams match "${filter}"</td></tr>`;
+      return;
+    }
+    body.innerHTML = rows.map(r => `
+      <tr>
+        <td class="num">${r.rank ?? '—'}</td>
+        <td class="matchup">${r.team}</td>
+        <td class="num">${r.rating > 0 ? '+' : ''}${(r.rating ?? 0).toFixed(1)}</td>
+        <td class="num">${r.adjOffEpa != null ? r.adjOffEpa.toFixed(3) : '—'}</td>
+        <td class="num">${r.adjDefEpa != null ? r.adjDefEpa.toFixed(3) : '—'}</td>
+      </tr>
+    `).join('');
+  }
+
+  function loadRatingsHistory(){
+    fetch('./ratings_history_nfl.json')
+      .then(r => { if(!r.ok) throw new Error('no history file yet'); return r.json(); })
+      .then(data => {
+        ratingsHistory = data.slice().sort((a,b) => a.week - b.week);
+        const sel = document.getElementById('ratingsWeekSelect');
+        if(!ratingsHistory.length){
+          sel.innerHTML = '<option>No weeks yet</option>';
+          return;
+        }
+        sel.innerHTML = ratingsHistory.map(h => `<option value="${h.week}">Week ${h.week}</option>`).join('');
+        sel.value = ratingsHistory[ratingsHistory.length - 1].week;
+        sel.addEventListener('change', () => renderRatingsHistoryTable(document.getElementById('ratingsHistorySearch').value));
+        document.getElementById('ratingsHistorySearch').addEventListener('input', e => renderRatingsHistoryTable(e.target.value));
+        renderRatingsHistoryTable('');
+      })
+      .catch(() => {
+        document.getElementById('ratingsHistoryBody').innerHTML =
+          `<tr><td colspan="5" class="empty">No snapshots saved yet — the first weekly run will populate this.</td></tr>`;
+      });
+  }
+
   function initCollapsiblePanels(){
     document.querySelectorAll('.panel > h2').forEach(h2 => {
       h2.addEventListener('click', (e) => {
@@ -1017,6 +1102,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
   initTrendFilterControls();
   loadLinesData();
   loadMpgRatings();
+  loadRatingsHistory();
 </script>
 </body>
 </html>
