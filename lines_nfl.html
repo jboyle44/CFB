@@ -493,6 +493,7 @@ stars = 1  otherwise</div>
 
   let games = [];       // rows from lines_data.json
   let ratings = [];      // live MPG ratings, for the manual tool
+  let thisWeekNumber = null;   // the week currently shown in the "This Week" table, set by renderThisWeek()
 
   const sortState = {
     thisWeek: { key: 'datetime', dir: 1 },   // chronological by default
@@ -635,6 +636,7 @@ stars = 1  otherwise</div>
       rows = [];
       title = 'This Week';
     }
+    thisWeekNumber = (rows.length || scheduled.length || games.length) ? week : null;
     document.getElementById('thisWeekTitle').textContent = title;
     document.getElementById('thisWeekCount').textContent = rows.length ? `${rows.length} games` : '';
 
@@ -672,7 +674,7 @@ stars = 1  otherwise</div>
     document.getElementById('statPct').textContent = pct;
     document.getElementById('statPushes').textContent = pushes || '0';
 
-    const scheduled = games.filter(g => g.status === 'scheduled' && g.edge !== null && g.edge !== undefined);
+    const scheduled = games.filter(g => g.status === 'scheduled' && g.edge !== null && g.edge !== undefined && g.week === thisWeekNumber);
     if(scheduled.length){
       const biggest = scheduled.reduce((a,b) => Math.abs(a.edge) > Math.abs(b.edge) ? a : b);
       document.getElementById('statBigEdge').textContent = `${biggest.pick} +${Math.abs(biggest.edge).toFixed(1)}`;
