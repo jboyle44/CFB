@@ -108,8 +108,7 @@
   td.ctr{text-align:center;}
   td.matchup{font-weight:600;}
   td.pick{font-weight:700; color:var(--gold);}
-  td.edge.pos{color:var(--win); font-weight:700;}
-  td.edge.neg{color:var(--loss); font-weight:700;}
+  .edge{color:var(--gold); font-weight:700; font-variant-numeric:tabular-nums;}
   .badge{display:inline-block; padding:2px 8px; border-radius:20px; font-size:11.5px; font-weight:700;}
   .badge.win{background:var(--green-bg); color:var(--win);}
   .badge.loss{background:var(--red-bg); color:var(--loss);}
@@ -199,8 +198,8 @@
             <tr>
               <th data-key="datetime">Date/Time<span class="arrow"></span></th>
               <th data-key="matchup">Matchup<span class="arrow"></span></th>
-              <th class="num" data-key="modelSpread">DFI Line<span class="arrow"></span></th>
-              <th class="num" data-key="vegasSpread">Vegas line<span class="arrow"></span></th>
+              <th class="num" data-key="modelSpread">DFI<span class="arrow"></span></th>
+              <th class="num" data-key="vegasSpread">Vegas<span class="arrow"></span></th>
               <th class="num" data-key="edge">Edge<span class="arrow"></span></th>
               <th data-key="pick">Pick<span class="arrow"></span></th>
               <th class="ctr">Result</th>
@@ -253,7 +252,7 @@
   <div class="panel">
     <h2><span class="htitle"><span class="collapse-arrow">▾</span>Results &amp; Trends</span> <span class="count" id="trendsHeaderCount"></span></h2>
     <div class="panel-body">
-      <p style="font-size:12.5px; color:var(--text-faint); margin-top:0;">Each breakdown reflects the model's picked team, not just the matchup — "Home" means the model backed the home side, "P4" means it backed a Power 4 team, etc. Filters combine (AND), so you can intersect any combo — e.g. P4 home favorites in the 7–9.5 range. Click any row to apply that filter; click it again to clear it.</p>
+      <p style="font-size:12.5px; color:var(--text-faint); margin-top:0;">Each breakdown reflects the model's picked team, not just the matchup — "Home" means the model backed the home side, "AFC" means it backed an AFC team, etc. Filters combine (AND), so you can intersect any combo — e.g. AFC home favorites in the 7–9.5 range. Click any row to apply that filter; click it again to clear it.</p>
 
       <div class="trend-filters">
         <select id="trendWeekSelect">
@@ -271,12 +270,12 @@
           <option value="Even">Even (pick'em)</option>
         </select>
         <select id="trendTierSelect">
-          <option value="">Any tier</option>
-          <option value="P4">P4</option>
-          <option value="G6">G6</option>
+          <option value="">Any conference</option>
+          <option value="AFC">AFC</option>
+          <option value="NFC">NFC</option>
         </select>
         <select id="trendConfSelect">
-          <option value="">Any conference</option>
+          <option value="">Any division</option>
         </select>
         <select id="trendBucketSelect">
           <option value="">Any spread size</option>
@@ -305,7 +304,7 @@
           <div id="trendFavDogBody"></div>
         </div>
         <div class="trend-block">
-          <div class="trend-block-title">P4 / G6</div>
+          <div class="trend-block-title">AFC / NFC</div>
           <div id="trendTierBody"></div>
         </div>
         <div class="trend-block">
@@ -313,7 +312,7 @@
           <div id="trendBucketBody"></div>
         </div>
         <div class="trend-block full">
-          <div class="trend-block-title">Conference</div>
+          <div class="trend-block-title">Division</div>
           <div id="trendConfBody" class="trend-conf-grid"></div>
         </div>
       </div>
@@ -410,34 +409,6 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
     </div>
   </div>
 
-  <div class="panel">
-    <h2><span class="htitle"><span class="collapse-arrow">▾</span>Dog Food Index History</span> <span class="count" id="historyRatingsNote"></span>
-      <select id="ratingsWeekSelect" class="week-select"></select>
-    </h2>
-    <div class="panel-body">
-      <p style="font-size:12.5px; color:var(--text-faint); margin-top:0;">Our own weekly snapshot of MPG's full grid, captured independently since their site only shows the current week.</p>
-      <div class="filters">
-        <input type="text" id="ratingsHistorySearch" placeholder="Search team…">
-      </div>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th class="num">Rank</th>
-              <th>Team</th>
-              <th class="num">Rating</th>
-              <th class="num">Adj. Off. EPA</th>
-              <th class="num">Adj. Def. EPA</th>
-            </tr>
-          </thead>
-          <tbody id="ratingsHistoryBody">
-            <tr><td colspan="5" class="empty">No snapshots saved yet — the first weekly run will populate this.</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-
   <div class="foot">
     Market lines and final scores from <a href="https://the-odds-api.com" target="_blank" rel="noopener">the-odds-api.com</a>. Power ratings from <a href="https://mpg000f.github.io/cbb_power_rating/#nfl" target="_blank" rel="noopener">mpg000f's NFL power rating model</a>. This is a model's output tracked for its own sake, not betting advice. Sibling to the <a href="./lines.html">DFI for College Football</a>.
   </div>
@@ -457,13 +428,24 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
     history: { key: 'datetime', dir: -1 }    // most recent first by default
   };
 
+  function teamAbbr(row, whichTeam){
+    // Falls back to the full team name when no abbreviation field exists
+    // (CFB data has none, NFL data has homeAbbr/awayAbbr).
+    if(whichTeam === 'home') return row.homeAbbr || row.homeTeam;
+    return row.awayAbbr || row.awayTeam;
+  }
+
+  function pickDisplay(row){
+    if(!row.pick) return '—';
+    return (row.pick === row.homeTeam) ? teamAbbr(row, 'home') : teamAbbr(row, 'away');
+  }
+
   function fmtSpreadTeam(row, spread, whichTeam){
     // whichTeam: 'home' or 'away'. spread is home-perspective (positive = home favored).
     if(spread === null || spread === undefined) return '—';
     const homeFav = spread > 0;
     if (spread === 0) return "Pick'em";
-    const favTeam = homeFav ? row.homeTeam : row.awayTeam;
-    const dogTeam = homeFav ? row.awayTeam : row.homeTeam;
+    const favTeam = homeFav ? teamAbbr(row, 'home') : teamAbbr(row, 'away');
     const mag = Math.abs(spread).toFixed(1);
     return `${favTeam} -${mag}`;
   }
@@ -486,10 +468,13 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
   }
 
   function edgeCell(row){
+    // Always shown as a positive magnitude next to the team it favors --
+    // the raw signed value (positive = home, negative = away) is an
+    // internal convention, not something a reader should have to decode.
     if(row.edge === null || row.edge === undefined) return '—';
-    const cls = row.edge > 0 ? 'pos' : row.edge < 0 ? 'neg' : '';
-    const lean = row.edge > 0 ? row.homeTeam : row.edge < 0 ? row.awayTeam : '';
-    return `<span class="edge ${cls}">${row.edge > 0 ? '+' : ''}${row.edge.toFixed(1)}${lean ? ' ' + lean : ''}</span>`;
+    if(row.edge === 0) return `<span class="edge">Even</span>`;
+    const team = row.edge > 0 ? teamAbbr(row, 'home') : teamAbbr(row, 'away');
+    return `<span class="edge">+${Math.abs(row.edge).toFixed(1)} ${team}</span>`;
   }
 
   // ---------- generic column sorting (shared by This Week + History tables) ----------
@@ -577,7 +562,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
         <td class="num">${fmtSpreadTeam(g, g.modelSpread)}</td>
         <td class="num">${fmtSpreadTeam(g, g.vegasSpread)}</td>
         <td class="num">${edgeCell(g)}</td>
-        <td class="pick">${g.pick || '—'}</td>
+        <td class="pick">${pickDisplay(g)}</td>
         <td class="ctr">${resultBadge(g)}</td>
       </tr>
     `).join('');
@@ -662,7 +647,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
         <td class="num">${fmtSpreadTeam(g, g.modelSpread)}</td>
         <td class="num">${fmtSpreadTeam(g, g.vegasSpread)}</td>
         <td class="num">${edgeCell(g)}</td>
-        <td class="pick">${g.pick || '—'}</td>
+        <td class="pick">${pickDisplay(g)}</td>
         <td class="num">${g.status === 'final' ? `${g.awayScore}-${g.homeScore}` : '—'}</td>
         <td class="ctr">${resultBadge(g)}</td>
       </tr>
@@ -685,12 +670,10 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
   }
 
   // ---------- results & trends ----------
-  const P4_CONFS = new Set(['SEC', 'Big Ten', 'ACC', 'Big 12']);
+  // NFL has no P4/G6 or multi-conference concept like CFB -- "tier" is
+  // AFC/NFC directly, and "conf" (labeled "Division" in the UI) is the
+  // 8-way division breakdown instead.
   const BUCKET_ORDER = ['0–2.5', '3–6.5', '7–9.5', '10–13.5', '14+'];
-
-  function tierForConf(conf){
-    return conf && P4_CONFS.has(conf) ? 'P4' : 'G6';
-  }
 
   function spreadBucket(spread){
     if(spread === null || spread === undefined) return null;
@@ -710,7 +693,8 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
       .filter(g => g.status === 'final' && g.modelCorrect !== null && g.modelCorrect !== undefined && g.pick)
       .map(g => {
         const pickedHome = g.pick === g.homeTeam;
-        const pickConf = pickedHome ? g.homeConference : g.awayConference;
+        const pickConf = pickedHome ? g.homeConference : g.awayConference;     // "AFC"/"NFC"
+        const pickDiv = pickedHome ? g.homeDivision : g.awayDivision;           // e.g. "AFC East"
         let favdog = null;
         if(g.vegasSpread !== null && g.vegasSpread !== undefined){
           if(g.vegasSpread === 0) favdog = 'Even';
@@ -723,8 +707,8 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
           week: g.week,
           side: pickedHome ? 'Home' : 'Away',
           favdog,
-          tier: pickConf ? tierForConf(pickConf) : null,
-          conf: pickConf || null,
+          tier: pickConf || null,
+          conf: pickDiv || null,
           bucket: spreadBucket(g.vegasSpread),
           correct: g.modelCorrect,
           game: g   // keep the original record so the games list can render full details
@@ -819,7 +803,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
           <td class="num">${fmtSpreadTeam(g, g.modelSpread)}</td>
           <td class="num">${fmtSpreadTeam(g, g.vegasSpread)}</td>
           <td class="num">${edgeCell(g)}</td>
-          <td class="pick">${g.pick || '—'}</td>
+          <td class="pick">${pickDisplay(g)}</td>
           <td class="num">${g.awayScore}-${g.homeScore}</td>
           <td class="ctr">${resultBadge(g)}</td>
         </tr>`;
@@ -830,7 +814,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
     renderTrendSummary();
     renderBreakdown('side', 'trendSideBody', ['Home', 'Away']);
     renderBreakdown('favdog', 'trendFavDogBody', ['Favorite', 'Underdog', 'Even']);
-    renderBreakdown('tier', 'trendTierBody', ['P4', 'G6']);
+    renderBreakdown('tier', 'trendTierBody', ['AFC', 'NFC']);
     renderBreakdown('bucket', 'trendBucketBody', BUCKET_ORDER);
     renderBreakdown('conf', 'trendConfBody', null);
     renderTrendGames();
@@ -849,7 +833,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
     const sel = document.getElementById('trendConfSelect');
     const confs = [...new Set(trendRows.map(r => r.conf).filter(Boolean))].sort();
     const current = sel.value;
-    sel.innerHTML = '<option value="">Any conference</option>' + confs.map(c => `<option value="${c}">${c}</option>`).join('');
+    sel.innerHTML = '<option value="">Any division</option>' + confs.map(c => `<option value="${c}">${c}</option>`).join('');
     sel.value = current;
   }
 
@@ -1009,68 +993,11 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
       });
   }
 
-  // ---------- power ratings history (our own weekly snapshots) ----------
-  let ratingsHistory = []; // [{season, week, source, capturedAt, teams:[...]}]
-
-  function renderRatingsHistoryTable(filter){
-    const sel = document.getElementById('ratingsWeekSelect');
-    const body = document.getElementById('ratingsHistoryBody');
-    if(!ratingsHistory.length){
-      body.innerHTML = `<tr><td colspan="5" class="empty">No snapshots saved yet — the first weekly run will populate this.</td></tr>`;
-      return;
-    }
-    const week = parseInt(sel.value, 10);
-    const snap = ratingsHistory.find(h => h.week === week);
-    if(!snap){
-      body.innerHTML = `<tr><td colspan="5" class="empty">No snapshot for that week.</td></tr>`;
-      return;
-    }
-    const f = (filter || '').toLowerCase().trim();
-    const rows = snap.teams.filter(r => !f || r.team.toLowerCase().includes(f))
-                            .slice().sort((a,b) => (a.rank||999) - (b.rank||999));
-    document.getElementById('historyRatingsNote').textContent = `${snap.source || ''}`;
-    if(!rows.length){
-      body.innerHTML = `<tr><td colspan="5" class="empty">No teams match "${filter}"</td></tr>`;
-      return;
-    }
-    body.innerHTML = rows.map(r => `
-      <tr>
-        <td class="num">${r.rank ?? '—'}</td>
-        <td class="matchup">${r.team}</td>
-        <td class="num">${r.rating > 0 ? '+' : ''}${(r.rating ?? 0).toFixed(1)}</td>
-        <td class="num">${r.adjOffEpa != null ? r.adjOffEpa.toFixed(3) : '—'}</td>
-        <td class="num">${r.adjDefEpa != null ? r.adjDefEpa.toFixed(3) : '—'}</td>
-      </tr>
-    `).join('');
-  }
-
-  function loadRatingsHistory(){
-    fetch('./ratings_history.json')
-      .then(r => { if(!r.ok) throw new Error('no history file yet'); return r.json(); })
-      .then(data => {
-        ratingsHistory = data.slice().sort((a,b) => a.week - b.week);
-        const sel = document.getElementById('ratingsWeekSelect');
-        if(!ratingsHistory.length){
-          sel.innerHTML = '<option>No weeks yet</option>';
-          return;
-        }
-        sel.innerHTML = ratingsHistory.map(h => `<option value="${h.week}">Week ${h.week}</option>`).join('');
-        sel.value = ratingsHistory[ratingsHistory.length - 1].week;
-        sel.addEventListener('change', () => renderRatingsHistoryTable(document.getElementById('ratingsHistorySearch').value));
-        document.getElementById('ratingsHistorySearch').addEventListener('input', e => renderRatingsHistoryTable(e.target.value));
-        renderRatingsHistoryTable('');
-      })
-      .catch(() => {
-        document.getElementById('ratingsHistoryBody').innerHTML =
-          `<tr><td colspan="5" class="empty">No snapshots saved yet — the first weekly run will populate this.</td></tr>`;
-      });
-  }
-
   function initCollapsiblePanels(){
     document.querySelectorAll('.panel > h2').forEach(h2 => {
       h2.addEventListener('click', (e) => {
         // Don't toggle collapse when the click is on a filter dropdown
-        // living inside the header (History / Power Ratings History).
+        // living inside the header (e.g. History's week filter).
         if(e.target.tagName === 'SELECT' || e.target.closest('select')) return;
         h2.parentElement.classList.toggle('collapsed');
       });
@@ -1082,7 +1009,6 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
   initTrendFilterControls();
   loadLinesData();
   loadMpgRatings();
-  loadRatingsHistory();
 </script>
 </body>
 </html>
