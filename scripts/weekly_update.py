@@ -180,15 +180,22 @@ def main():
 
     try:
         with open(DATA_FILE) as f:
-            existing = json.load(f)
+            existing_data = json.load(f)
+        existing = existing_data.get("rows", []) if isinstance(existing_data, dict) else existing_data
     except FileNotFoundError:
         existing = []
 
     existing = [r for r in existing if r["year"] != year]
     existing.extend(rows)
 
+    # Wrapped in an object with a generation timestamp -- not a bare array
+    # -- so the front end can show an accurate "data last refreshed at"
+    # time instead of just describing the schedule in prose.
     with open(DATA_FILE, "w") as f:
-        json.dump(existing, f, separators=(",", ":"))
+        json.dump({
+            "generatedAt": datetime.now(timezone.utc).isoformat(),
+            "rows": existing,
+        }, f, separators=(",", ":"))
 
     print(f"Wrote {len(rows)} rows for {year} (week {week}). Total rows in file: {len(existing)}")
 
