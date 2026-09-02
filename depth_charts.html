@@ -590,8 +590,10 @@ function resolveItemPos(item, groups){
 
 // CBs always sit at the true outside edges (col1/col8), same idea as the D-line's
 // outer positions. NB and any other nickel-type hybrid a team lists (STING, HUSKY,
-// STAR, CASH, SPUR, BAN, MONEY -- Virginia actually lists two, BAN and SPUR)
-// fill the middle as slim boxes, evenly divided.
+// STAR, CASH, SPUR, BAN, MONEY -- Virginia lists two, BAN and SPUR) get their own
+// slim box each, clustered next to LCB -- same width as NB always had. They must
+// NOT stretch to fill the whole middle gap, or the LB row's overlap-up would
+// collide with them.
 function cbnbRowHtml(groups, id){
   const lcbKey = resolveFirst(["LCB","FCB"], groups);
   const rcbKey = resolveFirst(["RCB","BCB"], groups);
@@ -600,30 +602,38 @@ function cbnbRowHtml(groups, id){
 
   const lcbHtml = lcbKey ? posBoxHtml(lcbKey, groups, 1, 1) : "";
   const rcbHtml = rcbKey ? posBoxHtml(rcbKey, groups, 8, 1) : "";
-  let middleHtml = "";
-  if(nickelPresent.length){
-    const boxesHtml = nickelPresent.map(pos => posBoxHtmlAutoSlim(pos, groups)).join('');
-    middleHtml = `<div style="grid-column:2 / span 6; display:grid; grid-template-columns:repeat(${nickelPresent.length}, 1fr); gap:8px;">${boxesHtml}</div>`;
-  }
+  const nickelHtml = nickelPresent.map((pos, i) => posBoxHtml(pos, groups, 2 + i, 1)).join('');
 
-  const boxesHtml = lcbHtml + middleHtml + rcbHtml;
+  const boxesHtml = lcbHtml + nickelHtml + rcbHtml;
   if(!boxesHtml.trim()) return "";
   return `<div class="formrow"${idAttr} style="grid-template-columns:repeat(8, 1fr);">${boxesHtml}</div>`;
 }
 
-// LB row narrows to exactly fill whichever gap the CB row leaves open (columns
-// 3-7 when nickel hybrids occupy column 2's area; columns 2-7 when there are
-// none), using a width-percentage container instead of trying to match
-// grid-column counts between the two independently-sized rows. Any item count
-// (2, 3, 4+) divides evenly across that width -- same idea as narrowing the
-// D-line boxes to fit when there are 4 of them, just driven by width% instead
-// of column count. Because the row is always sized to fit inside the gap by
-// construction, the overlap effect is always geometrically safe.
+// Mike-type linebackers (MLB, or Oregon's MAC) belong in the physical middle of
+// the row, flanked by outside backers (SLB/WLB) -- not wherever they happen to
+// fall in the candidate list order. Only reorders when there's an actual "middle"
+// to put them in (3+ boxes); for the common 2-box case, order doesn't matter.
+function centerMikeLB(present){
+  const mikeTypes = ["MLB","MAC"];
+  const mikeIdx = present.findIndex(p => mikeTypes.includes(p));
+  if(mikeIdx === -1 || present.length < 3) return present;
+  const mike = present[mikeIdx];
+  const others = present.filter((_, i) => i !== mikeIdx);
+  const mid = Math.floor(others.length / 2);
+  others.splice(mid, 0, mike);
+  return others;
+}
+
+// LB row narrows to exactly fill whichever gap the CB row leaves open. The width
+// is computed from the actual number of slim boxes the CB row used (1 for LCB,
+// 1 for RCB, 1 per nickel hybrid) rather than a hardcoded guess, so it's exactly
+// right whether a team has zero nickel hybrids, one (most teams), or two
+// (Virginia's BAN+SPUR) -- and therefore never overlaps them.
 function lbRowHtml(groups, id){
-  const present = LB_CANDIDATES.filter(p => groups[p] && groups[p].length);
+  const present = centerMikeLB(LB_CANDIDATES.filter(p => groups[p] && groups[p].length));
   if(!present.length) return "";
-  const hasNickel = NICKEL_CANDIDATES.some(p => groups[p] && groups[p].length);
-  const widthPct = hasNickel ? 62.5 : 75; // cols3-7 (5/8) with nickel hybrids, cols2-7 (6/8) without
+  const nickelCount = NICKEL_CANDIDATES.filter(p => groups[p] && groups[p].length).length;
+  const widthPct = (6 - nickelCount) / 8 * 100; // 8 cols total, minus LCB(1), RCB(1), nickel(N)
   const boxesHtml = present.map(pos => posBoxHtmlAuto(pos, groups)).join('');
   const idAttr = id ? ` id="${id}"` : "";
   return `<div class="formrow"${idAttr} style="width:${widthPct}%; margin:0 auto; grid-template-columns:repeat(${present.length}, 1fr);">${boxesHtml}</div>`;
