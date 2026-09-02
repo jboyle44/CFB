@@ -219,9 +219,12 @@ const DEFENSE_ROWS = [
       { pos:"FS", col:3, span:2 },
       { pos:"SS", alts:["BS"], col:5, span:2 }
     ]},
-  { cols:DEFENSE_COLS, dynamic:"cbnb", id:"row-cbnb" },  // row 1.5: CBs + NB when present; falls back to
-                                                           // centered LCB/RCB (no big empty gap) when a team
-                                                           // doesn't list a separate NB (Rutgers, Alabama, etc.)
+  { cols:DEFENSE_COLS, id:"row-cbnb", items:[  // row 1.5: CBs always at the outside edges (like DL's outer
+                                                 // positions); NB shown in between when a team lists one
+      { pos:"LCB", alts:["FCB"], col:1, span:1 },
+      { pos:"NB",  col:2, span:1 },
+      { pos:"RCB", alts:["BCB"], col:8, span:1 }
+    ]},
   { cols:DEFENSE_COLS, dynamic:"lb", id:"row-lb" },   // row 2: linebackers/hybrids, position codes vary widely by team
   { cols:DEFENSE_COLS, dynamic:"dline" }               // row 3: D-line, position codes vary by team (see DLINE_CANDIDATES)
 ];
@@ -547,6 +550,13 @@ function posBoxHtml(pos, groups, col, span){
   return `<div class="posbox${slimClass}" style="grid-column:${col} / span ${span};"><div class="hd">${pos}</div>${slots}</div>`;
 }
 
+function posBoxHtmlAuto(pos, groups){
+  const list = groups[pos];
+  if(!list || !list.length) return "";
+  const slots = list.map((r,i) => slotHtml(r, i===0)).join('');
+  return `<div class="posbox"><div class="hd">${pos}</div>${slots}</div>`;
+}
+
 function resolveItemPos(item, groups){
   if(item.pos && groups[item.pos] && groups[item.pos].length) return item.pos;
   if(item.alts){
@@ -557,65 +567,27 @@ function resolveItemPos(item, groups){
   return item.pos;
 }
 
-function resolveFirst(candidates, groups){
-  for(const c of candidates){
-    if(groups[c] && groups[c].length) return c;
-  }
-  return null;
-}
-
-// Row 1.5: corners + nickel. Most teams list a separate NB, giving the intentional
-// clustered look (LCB+NB slim boxes on the left, RCB alone on the right). Some teams
-// (Rutgers, Alabama, LSU, Oklahoma, Louisville, Pittsburgh, Virginia) don't list a
-// separate NB at all -- for those, the old fixed layout left LCB isolated at the far
-// left with a huge empty gap before RCB at the far right. Falling back to two
-// normal-width centered boxes (same treatment as the safeties row) fixes that.
-function cbnbRowHtml(groups, cols, id){
-  const lcbKey = resolveFirst(["LCB","FCB"], groups);
-  const rcbKey = resolveFirst(["RCB","BCB"], groups);
+// LB row narrows to exactly fill whichever gap the CB row leaves open (columns
+// 3-7 when NB is present and occupying column 2; columns 2-7 when it isn't), using
+// a width-percentage container instead of trying to match grid-column counts
+// between the two independently-sized rows. Any item count (2, 3, 4+) divides
+// evenly across that width -- same idea as narrowing the D-line boxes to fit when
+// there are 4 of them, just driven by width% instead of column count. Because the
+// row is always sized to fit inside the gap by construction, the overlap effect is
+// always geometrically safe, not just for the 2-item WLB/MLB case.
+function lbRowHtml(groups, id){
+  const present = LB_CANDIDATES.filter(p => groups[p] && groups[p].length);
+  if(!present.length) return "";
   const hasNB = groups["NB"] && groups["NB"].length;
+  const widthPct = hasNB ? 62.5 : 75; // cols3-7 (5/8) with NB, cols2-7 (6/8) without
+  const boxesHtml = present.map(pos => posBoxHtmlAuto(pos, groups)).join('');
   const idAttr = id ? ` id="${id}"` : "";
-
-  if(hasNB){
-    const boxesHtml = [
-      lcbKey ? posBoxHtml(lcbKey, groups, 1, 1) : "",
-      posBoxHtml("NB", groups, 2, 1),
-      rcbKey ? posBoxHtml(rcbKey, groups, 8, 1) : ""
-    ].join('');
-    if(!boxesHtml.trim()) return { html: "", clustered: false };
-    return {
-      html: `<div class="formrow"${idAttr} style="grid-template-columns:repeat(${cols}, 1fr);">${boxesHtml}</div>`,
-      clustered: true
-    };
-  }
-
-  const present = [lcbKey, rcbKey].filter(Boolean);
-  if(!present.length) return { html: "", clustered: false };
-  const totalSpan = present.length * 2;
-  const c = Math.max(cols, totalSpan);
-  const start = Math.max(1, Math.floor((c - totalSpan) / 2) + 1);
-  const boxesHtml = present.map((pos, i) => posBoxHtml(pos, groups, start + i * 2, 2)).join('');
-  return {
-    html: `<div class="formrow"${idAttr} style="grid-template-columns:repeat(${c}, 1fr);">${boxesHtml}</div>`,
-    clustered: false
-  };
+  return `<div class="formrow"${idAttr} style="width:${widthPct}%; margin:0 auto; grid-template-columns:repeat(${present.length}, 1fr);">${boxesHtml}</div>`;
 }
-
-let lbOverlapSafe = false;
-let cbnbClustered = false;
 
 function rowHtml(row){
   if(row.dynamic === "dline") return dynamicCenteredRowHtml(DLINE_CANDIDATES, groupsRef, row.cols, row.id).html;
-  if(row.dynamic === "lb"){
-    const result = dynamicCenteredRowHtml(LB_CANDIDATES, groupsRef, row.cols, row.id);
-    lbOverlapSafe = result.safeToOverlap;
-    return result.html;
-  }
-  if(row.dynamic === "cbnb"){
-    const result = cbnbRowHtml(groupsRef, row.cols, row.id);
-    cbnbClustered = result.clustered;
-    return result.html;
-  }
+  if(row.dynamic === "lb") return lbRowHtml(groupsRef, row.id);
   const { cols, items, id } = row;
   const boxesHtml = items.map(it => posBoxHtml(resolveItemPos(it, groupsRef), groupsRef, it.col, it.span)).join('');
   if(!boxesHtml.trim()) return "";
@@ -666,8 +638,6 @@ function render(){
   rows.forEach(r => { (groups[r.position] = groups[r.position] || []).push(r); });
   groupsRef = groups;
 
-  lbOverlapSafe = false; // reset before rendering; set by rowHtml() if the LB row qualifies
-  cbnbClustered = false; // reset; set by rowHtml() if the CB/NB row used its clustered layout
   let html = "";
   html += sectionHtml("Defense", DATA.defenseScheme || "", DEFENSE_ROWS);
   html += sectionHtml("Offense", DATA.offenseScheme || "", OFFENSE_ROWS);
@@ -681,20 +651,11 @@ function applyLbSpacing(){
   const cbnbRow = document.getElementById('row-cbnb');
   const lbRow = document.getElementById('row-lb');
   if(!cbnbRow || !lbRow) return;
-  if(lbOverlapSafe && cbnbClustered){
-    // Best case: 2-item LB row (WLB/MLB) + clustered CB/NB row above -- pull LB row
-    // up to the vertical midpoint of the CB/NB row, matching column geometry exactly
-    // so nothing collides.
-    const h = cbnbRow.getBoundingClientRect().height;
-    lbRow.style.marginTop = `-${(h / 2)}px`;
-  } else {
-    // Most teams have 3+ LB/hybrid codes (wider row) or use the CB/NB fallback
-    // layout, so the full pull-up isn't geometrically safe to do without risking
-    // a collision. A small fixed nudge still closes up the excess default gap
-    // for these teams without touching any box, so spacing reads consistently
-    // across every team instead of only looking tight for the 2-item-LB minority.
-    lbRow.style.marginTop = `-6px`;
-  }
+  // LB row is always width-constrained to fit inside whatever gap the CB row
+  // leaves open, so pulling it up to the CB row's vertical midpoint is always
+  // safe now, regardless of how many LB/hybrid codes a team lists.
+  const h = cbnbRow.getBoundingClientRect().height;
+  lbRow.style.marginTop = `-${(h / 2)}px`;
 }
 
 searchBox.addEventListener("input", () => { state.search = searchBox.value.toLowerCase(); render(); });
