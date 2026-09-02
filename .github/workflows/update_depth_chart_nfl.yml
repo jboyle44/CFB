@@ -1,0 +1,53 @@
+name: Update NFL Depth Chart Data
+
+on:
+  schedule:
+    # NFL rosters/depth charts move fastest around final cuts and waivers early
+    # in the week; same Tuesday/Sunday cadence as the rest of the site for now.
+    - cron: '0 16 * * 0'
+    - cron: '0 14 * * 2'
+
+  workflow_dispatch: {}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Run NFL depth chart scraper for every configured team
+        working-directory: scripts
+        run: |
+          set +e
+          mkdir -p ../depth_chart_data_nfl
+          : > ../depth_chart_scrape_log_nfl.txt
+          TEAMS=$(python3 -c "from teams_config_nfl import NFL_TEAMS; print(' '.join(NFL_TEAMS.keys()))")
+          for team in $TEAMS; do
+            echo "=== $team ===" >> ../depth_chart_scrape_log_nfl.txt
+            python build_depth_chart_nfl.py "$team" "../depth_chart_data_nfl/${team}.json" >> ../depth_chart_scrape_log_nfl.txt 2>&1
+            echo "exit_code=$?" >> ../depth_chart_scrape_log_nfl.txt
+          done
+          cat ../depth_chart_scrape_log_nfl.txt
+
+      - name: Commit and push if data changed
+        run: |
+          git config user.name "depth-chart-bot"
+          git config user.email "actions@github.com"
+          git add depth_chart_data_nfl/ depth_chart_scrape_log_nfl.txt
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Weekly NFL depth chart update - $(date -u +%Y-%m-%d)"
+            git push
+          fi
