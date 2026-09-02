@@ -7,13 +7,23 @@ grading logic, different data sources:
     no NFL coverage, so this uses a different provider)
   - MPG's NFL power ratings (https://mpg000f.github.io/cbb_power_rating/#nfl)
 
+FREEZING: a game's model line, vegas line, edge, and pick are locked in as
+soon as its kickoff time passes -- not just once it's graded. This matters
+because grading depends on the-odds-api.com's free /scores endpoint, which
+only looks back 3 days; if a run is ever missed and a game's score rolls
+off that window before we catch it, this still guarantees its pre-game
+line/pick snapshot never gets silently recomputed with whatever ratings or
+market line happen to be current on a later run. Only fields filled in
+after kickoff (score, status, atsResult, modelCorrect) are still writable
+once a game is underway or done -- the pick itself is locked.
+
 KNOWN LIMITATIONS (free-tier the-odds-api.com, unlike the CFBD-backed CFB
 script):
   - /scores only returns games completed in the last 3 days. If this script
     doesn't run for more than ~3 days during the season, any games that
     finished and rolled off that window before the next run will never get
     graded -- there's no historical backfill on the free tier. Practically,
-    running twice a week (Sun/Tue) comfortably covers every Thu-Mon slate.
+    running twice a week comfortably covers every slate.
   - the-odds-api.com doesn't label games as neutral-site (e.g. international
     games), so NEUTRAL_SITE_GAMES below is a manually maintained list of the
     2026 International Series games -- HFA is skipped for those. This list
@@ -23,7 +33,9 @@ script):
     NFL_WEEK1_START below). This needs updating each season.
   - MPG's NFL ratings don't have a per-week snapshot file (yet) the way CFB
     does, so every week uses the same season-level ratings file until/unless
-    MPG adds one.
+    MPG adds one -- but we snapshot it ourselves into ratings_history_nfl.json
+    each run, same as the CFB script, so week-over-week history exists
+    regardless of what MPG's own site shows.
 
 MODEL: identical to the CFB script.
   model_spread = (home_rating - away_rating) + HFA   (HFA = +2.0 for NFL)
@@ -45,6 +57,7 @@ SPORT = "americanfootball_nfl"
 MPG_BASE = "https://mpg000f.github.io/cbb_power_rating"
 
 DATA_FILE = "lines_data_nfl.json"
+RATINGS_HISTORY_FILE = "ratings_history_nfl.json"
 HFA = 2.0
 SEASON = 2026
 
@@ -253,7 +266,9 @@ def main():
     print(f"  {len(ratings_by_abbr)} teams rated ({ratings_source})")
 
     # 1. Upcoming/live games + current lines -- refresh line/pick for any
-    #    game that isn't already frozen (graded).
+    #    game whose kickoff hasn't happened yet. Once kickoff passes, the
+    #    line/pick is frozen even if we haven't graded it yet (see the
+    #    FREEZING note at the top of this file).
     try:
         odds_games = fetch_odds()
     except requests.HTTPError as e:
@@ -261,11 +276,15 @@ def main():
         odds_games = []
     print(f"  {len(odds_games)} upcoming/live games with odds")
 
+    now = datetime.now(timezone.utc)
     for g in odds_games:
         gid = g["id"]
         prior = existing_by_id.get(gid)
         if prior and prior.get("status") == "final":
             continue  # already graded and frozen
+        commence = datetime.fromisoformat(g["commence_time"].replace("Z", "+00:00"))
+        if prior and commence <= now:
+            continue  # kickoff has passed -- freeze the pre-game snapshot even if not graded yet
         home_spread, provider = best_spread_for_home(g)
         record = build_record(g, ratings_by_abbr, ratings_source, existing_by_id, home_spread, provider)
         existing_by_id[gid] = record
@@ -313,9 +332,39 @@ def main():
     with open(DATA_FILE, "w") as f:
         json.dump(all_rows, f, separators=(",", ":"))
 
+    # Snapshot the full ratings grid for this week, independent of MPG's own
+    # site (it doesn't keep week-over-week history, and doesn't even have a
+    # per-week file for NFL yet). Overwritten each run with whatever's
+    # current, so a week's snapshot upgrades automatically once MPG
+    # eventually publishes real weekly files.
+    if ratings_rows:
+        try:
+            with open(RATINGS_HISTORY_FILE) as f:
+                history = json.load(f)
+        except FileNotFoundError:
+            history = []
+        current_week = week_for(datetime.now(timezone.utc).isoformat())
+        history = [h for h in history if h.get("week") != current_week]
+        history.append({
+            "season": SEASON,
+            "week": current_week,
+            "source": ratings_source,
+            "capturedAt": datetime.now(timezone.utc).isoformat(),
+            "teams": [
+                {"rank": r.get("rank"), "team": r.get("team"), "rating": r.get("rating"),
+                 "adjOffEpa": r.get("adjOffEpa"), "adjDefEpa": r.get("adjDefEpa"), "games": r.get("games")}
+                for r in ratings_rows
+            ],
+        })
+        history.sort(key=lambda h: h["week"])
+        with open(RATINGS_HISTORY_FILE, "w") as f:
+            json.dump(history, f, separators=(",", ":"))
+
     graded = [r for r in all_rows if r.get("modelCorrect") is not None]
     correct = sum(1 for r in graded if r["modelCorrect"])
     print(f"Wrote {len(all_rows)} game rows to {DATA_FILE}.")
+    if ratings_rows:
+        print(f"Wrote ratings snapshot for week {current_week} to {RATINGS_HISTORY_FILE}.")
     print(f"Graded so far this season: {correct}-{len(graded) - correct} ATS.")
 
 
