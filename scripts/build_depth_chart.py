@@ -46,13 +46,18 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
     print(f"  {len(depth_chart)} depth chart rows", file=sys.stderr)
 
     print(f"Scraping 247Sports roster for {team['display_name']}...", file=sys.stderr)
-    try:
-        roster = scrape_247_roster(team["sports247_slug"])
-        print(f"  {len(roster)} roster entries", file=sys.stderr)
-    except Exception as e:
-        print(f"  247Sports roster scrape failed ({e}); falling back to previously-saved "
-              f"composite/transfer data for this run.", file=sys.stderr)
+    if not team.get("sports247_slug"):
+        print(f"  No sports247_slug configured for this team yet; skipping 247 data "
+              f"(Ourlads depth chart data still populates normally).", file=sys.stderr)
         roster = {}
+    else:
+        try:
+            roster = scrape_247_roster(team["sports247_slug"])
+            print(f"  {len(roster)} roster entries", file=sys.stderr)
+        except Exception as e:
+            print(f"  247Sports roster scrape failed ({e}); falling back to previously-saved "
+                  f"composite/transfer data for this run.", file=sys.stderr)
+            roster = {}
     roster_by_norm_name = {normalize_name(k): v for k, v in roster.items()}
     previous_by_norm_name = load_previous_247_data(output_path)
 
