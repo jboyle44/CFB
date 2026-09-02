@@ -66,6 +66,10 @@
   }
 
   /* ---------- stat chips ---------- */
+  .status-row{display:flex; align-items:center; gap:8px; font-size:12px; color:var(--text-faint); margin-bottom:22px; flex-wrap:wrap;}
+  .dot{width:7px; height:7px; border-radius:50%; background:var(--text-faint); flex-shrink:0;}
+  .dot.ok{background:#7FB27F;}
+  .dot.warn{background:var(--gold);}
   .chips{display:flex; gap:0; margin-bottom:22px; border:1px solid var(--line); border-radius:10px; overflow:hidden;}
   .chip{flex:1; padding:14px 16px; border-right:1px solid var(--line); background:var(--panel);}
   .chip:last-child{border-right:none;}
@@ -160,6 +164,11 @@
     </div>
   </div>
 
+  <div class="status-row">
+    <span class="dot" id="statusDot"></span>
+    <span id="statusText">Loading…</span>
+  </div>
+
   <div class="chips">
     <div class="chip"><div class="num" id="statTeams">–</div><div class="lbl">Teams shown</div></div>
     <div class="chip"><div class="num" id="statAvgDiff">–</div><div class="lbl">Avg. |rank diff|</div></div>
@@ -227,8 +236,47 @@ let DATA = [];
 
 async function loadData(){
   const res = await fetch('brr_data.json?v=' + Date.now());
-  DATA = await res.json();
+  const raw = await res.json();
+  let generatedAt = null;
+  if(Array.isArray(raw)){
+    DATA = raw;               // backward-compat: old flat-array format
+  } else {
+    DATA = raw.rows || [];
+    generatedAt = raw.generatedAt || null;
+  }
   init();
+  renderStatus(generatedAt);
+}
+
+function fmtTimestamp(iso){
+  if(!iso) return null;
+  const d = new Date(iso);
+  if(isNaN(d.getTime())) return null;
+  const datePart = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  const timePart = d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+  return `${datePart}, ${timePart}`;
+}
+
+function renderStatus(generatedAt){
+  const dot = document.getElementById('statusDot');
+  const statusText = document.getElementById('statusText');
+  if(!DATA.length){
+    dot.className = 'dot warn';
+    statusText.textContent = 'No data loaded yet.';
+    return;
+  }
+  dot.className = 'dot ok';
+  const years = [...new Set(DATA.map(d => d.year))].sort((a,b) => b - a);
+  const latestYear = years[0];
+  const latestRows = DATA.filter(d => d.year === latestYear);
+  const source = latestRows[0] && latestRows[0].rankSource;
+  const sourceLabel = source === 'committee' ? 'CFP Committee Rankings' : source === 'AP' ? 'AP Poll' : null;
+
+  const parts = [`${latestRows.length} teams tracked · ${latestYear} season`, 'refreshes Sun ~5pm ET & Tue ~9pm ET'];
+  const ts = fmtTimestamp(generatedAt);
+  if(ts) parts.push(`rankings as of ${ts}`);
+  if(sourceLabel) parts.push(`using ${sourceLabel}`);
+  statusText.textContent = parts.join(' · ');
 }
 
 let state = { year: null, search: "", conf: "", sortKey: "rank", sortDir: 1 };
