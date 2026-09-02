@@ -64,6 +64,9 @@
   }
   thead th.num{text-align:right;}
   thead th.ctr{text-align:center;}
+  thead th[data-key]{cursor:pointer; user-select:none;}
+  thead th[data-key]:hover{color:var(--text);}
+  thead th .arrow{font-size:10px; margin-left:3px; opacity:0.7;}
   tbody td{padding:9px 14px; border-bottom:1px solid var(--line); vertical-align:middle; white-space:nowrap;}
   tbody tr:last-child td{border-bottom:none;}
   tbody tr:hover{background:var(--panel-2);}
@@ -160,16 +163,17 @@
         <table>
           <thead>
             <tr>
-              <th>Matchup</th>
-              <th class="num">Model line</th>
-              <th class="num">Vegas line</th>
-              <th class="num">Edge</th>
-              <th>Pick</th>
+              <th data-key="datetime">Date/Time<span class="arrow"></span></th>
+              <th data-key="matchup">Matchup<span class="arrow"></span></th>
+              <th class="num" data-key="modelSpread">Model line<span class="arrow"></span></th>
+              <th class="num" data-key="vegasSpread">Vegas line<span class="arrow"></span></th>
+              <th class="num" data-key="edge">Edge<span class="arrow"></span></th>
+              <th data-key="pick">Pick<span class="arrow"></span></th>
               <th class="ctr">Result</th>
             </tr>
           </thead>
           <tbody id="thisWeekBody">
-            <tr><td colspan="6" class="empty">Loading…</td></tr>
+            <tr><td colspan="7" class="empty">Loading…</td></tr>
           </tbody>
         </table>
       </div>
@@ -193,18 +197,19 @@
         <table>
           <thead>
             <tr>
-              <th>Wk</th>
-              <th>Matchup</th>
-              <th class="num">Model line</th>
-              <th class="num">Vegas line</th>
-              <th class="num">Edge</th>
-              <th>Pick</th>
-              <th class="num">Final</th>
+              <th class="num" data-key="week">Wk<span class="arrow"></span></th>
+              <th data-key="datetime">Date/Time<span class="arrow"></span></th>
+              <th data-key="matchup">Matchup<span class="arrow"></span></th>
+              <th class="num" data-key="modelSpread">Model line<span class="arrow"></span></th>
+              <th class="num" data-key="vegasSpread">Vegas line<span class="arrow"></span></th>
+              <th class="num" data-key="edge">Edge<span class="arrow"></span></th>
+              <th data-key="pick">Pick<span class="arrow"></span></th>
+              <th class="num" data-key="final">Final<span class="arrow"></span></th>
               <th class="ctr">Result</th>
             </tr>
           </thead>
           <tbody id="historyBody">
-            <tr><td colspan="8" class="empty">Loading…</td></tr>
+            <tr><td colspan="9" class="empty">Loading…</td></tr>
           </tbody>
         </table>
       </div>
@@ -320,6 +325,11 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
   let games = [];       // rows from lines_data.json
   let ratings = [];      // live MPG ratings, for the manual tool
 
+  const sortState = {
+    thisWeek: { key: 'datetime', dir: 1 },   // chronological by default
+    history: { key: 'datetime', dir: -1 }    // most recent first by default
+  };
+
   function fmtSpreadTeam(row, spread, whichTeam){
     // whichTeam: 'home' or 'away'. spread is home-perspective (positive = home favored).
     if(spread === null || spread === undefined) return '—';
@@ -329,6 +339,15 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
     const dogTeam = homeFav ? row.awayTeam : row.homeTeam;
     const mag = Math.abs(spread).toFixed(1);
     return `${favTeam} -${mag}`;
+  }
+
+  function fmtDateTime(iso){
+    if(!iso) return '—';
+    const d = new Date(iso);
+    if(isNaN(d.getTime())) return '—';
+    const datePart = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    const timePart = d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+    return `${datePart}, ${timePart}`;
   }
 
   function resultBadge(row){
@@ -344,6 +363,53 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
     const cls = row.edge > 0 ? 'pos' : row.edge < 0 ? 'neg' : '';
     const lean = row.edge > 0 ? row.homeTeam : row.edge < 0 ? row.awayTeam : '';
     return `<span class="edge ${cls}">${row.edge > 0 ? '+' : ''}${row.edge.toFixed(1)}${lean ? ' ' + lean : ''}</span>`;
+  }
+
+  // ---------- generic column sorting (shared by This Week + History tables) ----------
+  function getSortValue(g, key){
+    switch(key){
+      case 'datetime': return g.startDate || '';
+      case 'matchup': return `${g.awayTeam} @ ${g.homeTeam}`.toLowerCase();
+      case 'modelSpread': return g.modelSpread;
+      case 'vegasSpread': return g.vegasSpread;
+      case 'edge': return g.edge;
+      case 'pick': return g.pick ? g.pick.toLowerCase() : null;
+      case 'week': return g.week;
+      case 'final':
+        if(g.status !== 'final') return null;
+        return (g.actualMargin !== null && g.actualMargin !== undefined) ? g.actualMargin : (g.homeScore - g.awayScore);
+      default: return null;
+    }
+  }
+
+  function sortRows(rows, key, dir){
+    return rows.slice().sort((a, b) => {
+      const av = getSortValue(a, key), bv = getSortValue(b, key);
+      const aNull = av === null || av === undefined || av === '';
+      const bNull = bv === null || bv === undefined || bv === '';
+      if(aNull && bNull) return 0;
+      if(aNull) return 1;   // rows with no value for this column always sort last
+      if(bNull) return -1;
+      if(typeof av === 'string' && typeof bv === 'string') return av.localeCompare(bv) * dir;
+      return (av - bv) * dir;
+    });
+  }
+
+  function updateSortArrows(theadEl, state){
+    theadEl.querySelectorAll('.arrow').forEach(a => a.textContent = '');
+    const activeTh = theadEl.querySelector(`th[data-key="${state.key}"] .arrow`);
+    if(activeTh) activeTh.textContent = state.dir === 1 ? '▲' : '▼';
+  }
+
+  function attachSortHandlers(theadEl, state, renderFn){
+    theadEl.querySelectorAll('th[data-key]').forEach(th => {
+      th.addEventListener('click', () => {
+        const key = th.dataset.key;
+        if(state.key === key) state.dir *= -1;
+        else { state.key = key; state.dir = 1; }
+        renderFn();
+      });
+    });
   }
 
   function renderThisWeek(){
@@ -364,14 +430,17 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
     document.getElementById('thisWeekTitle').textContent = title;
     document.getElementById('thisWeekCount').textContent = rows.length ? `${rows.length} games` : '';
 
+    const thead = document.querySelector('#thisWeekBody').closest('table').querySelector('thead');
     const body = document.getElementById('thisWeekBody');
     if(!rows.length){
-      body.innerHTML = `<tr><td colspan="6" class="empty">No games loaded yet — check back once the season's underway.</td></tr>`;
+      body.innerHTML = `<tr><td colspan="7" class="empty">No games loaded yet — check back once the season's underway.</td></tr>`;
+      updateSortArrows(thead, sortState.thisWeek);
       return;
     }
-    rows.sort((a,b) => (a.startDate || '').localeCompare(b.startDate || ''));
+    rows = sortRows(rows, sortState.thisWeek.key, sortState.thisWeek.dir);
     body.innerHTML = rows.map(g => `
       <tr>
+        <td class="num">${fmtDateTime(g.startDate)}</td>
         <td class="matchup">${g.awayTeam} @ ${g.neutralSite ? '(N) ' : ''}${g.homeTeam}</td>
         <td class="num">${fmtSpreadTeam(g, g.modelSpread)}</td>
         <td class="num">${fmtSpreadTeam(g, g.vegasSpread)}</td>
@@ -380,6 +449,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
         <td class="ctr">${resultBadge(g)}</td>
       </tr>
     `).join('');
+    updateSortArrows(thead, sortState.thisWeek);
   }
 
   function renderStats(){
@@ -440,19 +510,22 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
   }
 
   function renderHistory(filterWeek){
+    const thead = document.querySelector('#historyBody').closest('table').querySelector('thead');
     const body = document.getElementById('historyBody');
     let rows = games.slice();
     if(filterWeek) rows = rows.filter(g => String(g.week) === String(filterWeek));
-    rows.sort((a,b) => (b.week - a.week) || (b.startDate || '').localeCompare(a.startDate || ''));
     document.getElementById('historyCount').textContent = `${rows.length} games`;
 
     if(!rows.length){
-      body.innerHTML = `<tr><td colspan="8" class="empty">No games to show.</td></tr>`;
+      body.innerHTML = `<tr><td colspan="9" class="empty">No games to show.</td></tr>`;
+      updateSortArrows(thead, sortState.history);
       return;
     }
+    rows = sortRows(rows, sortState.history.key, sortState.history.dir);
     body.innerHTML = rows.map(g => `
       <tr>
         <td class="num">${g.week}</td>
+        <td class="num">${fmtDateTime(g.startDate)}</td>
         <td class="matchup">${g.awayTeam} @ ${g.neutralSite ? '(N) ' : ''}${g.homeTeam}</td>
         <td class="num">${fmtSpreadTeam(g, g.modelSpread)}</td>
         <td class="num">${fmtSpreadTeam(g, g.vegasSpread)}</td>
@@ -462,6 +535,14 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
         <td class="ctr">${resultBadge(g)}</td>
       </tr>
     `).join('');
+    updateSortArrows(thead, sortState.history);
+  }
+
+  function initSortHandlers(){
+    const thisWeekThead = document.querySelector('#thisWeekBody').closest('table').querySelector('thead');
+    const historyThead = document.querySelector('#historyBody').closest('table').querySelector('thead');
+    attachSortHandlers(thisWeekThead, sortState.thisWeek, renderThisWeek);
+    attachSortHandlers(historyThead, sortState.history, () => renderHistory(document.getElementById('weekFilter').value));
   }
 
   function populateWeekFilter(){
@@ -656,6 +737,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
       });
   }
 
+  initSortHandlers();
   loadLinesData();
   loadMpgRatings();
   loadRatingsHistory();
