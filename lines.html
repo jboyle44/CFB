@@ -370,9 +370,14 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
     switch(key){
       case 'datetime': return g.startDate || '';
       case 'matchup': return `${g.awayTeam} @ ${g.homeTeam}`.toLowerCase();
-      case 'modelSpread': return g.modelSpread;
-      case 'vegasSpread': return g.vegasSpread;
-      case 'edge': return g.edge;
+      // Sort by magnitude, not raw signed value -- modelSpread/vegasSpread are
+      // home-perspective (negative just means the away team is favored), so
+      // sorting on the raw number mixes "closest game" and "biggest blowout"
+      // depending on which side is favored. abs() sorts by how lopsided the
+      // game actually is, matching how it's displayed ("Team -margin").
+      case 'modelSpread': return (g.modelSpread === null || g.modelSpread === undefined) ? null : Math.abs(g.modelSpread);
+      case 'vegasSpread': return (g.vegasSpread === null || g.vegasSpread === undefined) ? null : Math.abs(g.vegasSpread);
+      case 'edge': return (g.edge === null || g.edge === undefined) ? null : Math.abs(g.edge);
       case 'pick': return g.pick ? g.pick.toLowerCase() : null;
       case 'week': return g.week;
       case 'final':
