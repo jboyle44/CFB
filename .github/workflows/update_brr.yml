@@ -8,9 +8,13 @@ on:
     # day-of-month are both pinned, so it only ever matches Sept 8).
     - cron: '0 13 8 9 *'
 
-    # Ongoing: every Monday at 9am ET (13:00 UTC), once the season's normal
-    # AP poll schedule resumes.
-    - cron: '0 13 * * 1'
+    # Ongoing: Sunday at 3pm ET (19:00 UTC) and Thursday at 9am ET (13:00
+    # UTC), once the season's normal weekly rhythm resumes. Sunday afternoon
+    # catches that week's AP poll (or CFP committee ranking, once those
+    # start) shortly after release; Thursday gives a second refresh partway
+    # through the week.
+    - cron: '0 19 * * 0'
+    - cron: '0 13 * * 4'
 
   # Lets you (or me, walking you through it) trigger a run manually from the
   # Actions tab any time, without waiting for the schedule -- useful for
