@@ -254,11 +254,45 @@ const OFFENSE_ROWS = [
 
 const SPECIAL_ROW = { cols:7, items:["PT","PK","KO","LS","H","PR","KR"].map((pos,i) => ({ pos, col:i+1, span:1 })) };
 
-async function loadData(){
-  const res = await fetch('depth_chart_data.json?v=' + Date.now());
-  const raw = await res.json();
-  DATA = raw;
-  init();
+// Keep in sync with scripts/teams_config.py
+const TEAM_LIST = [
+  { key: "illinois", name: "Illinois" },
+  { key: "indiana", name: "Indiana" },
+  { key: "iowa", name: "Iowa" },
+  { key: "maryland", name: "Maryland" },
+  { key: "michigan", name: "Michigan" },
+  { key: "michigan-state", name: "Michigan State" },
+  { key: "minnesota", name: "Minnesota" },
+  { key: "nebraska", name: "Nebraska" },
+  { key: "northwestern", name: "Northwestern" },
+  { key: "ohio-state", name: "Ohio State" },
+  { key: "oregon", name: "Oregon" },
+  { key: "penn-state", name: "Penn State" },
+  { key: "purdue", name: "Purdue" },
+  { key: "rutgers", name: "Rutgers" },
+  { key: "ucla", name: "UCLA" },
+  { key: "usc", name: "USC" },
+  { key: "washington", name: "Washington" },
+  { key: "wisconsin", name: "Wisconsin" },
+];
+const DEFAULT_TEAM = "ohio-state";
+
+function currentTeamKey(){
+  return new URLSearchParams(window.location.search).get('team') || DEFAULT_TEAM;
+}
+
+async function loadData(teamKey){
+  const container = document.getElementById("chartBody");
+  container.innerHTML = '<div class="empty">Loading…</div>';
+  try {
+    const res = await fetch(`depth_chart_data/${teamKey}.json?v=` + Date.now());
+    if(!res.ok) throw new Error(`HTTP ${res.status}`);
+    DATA = await res.json();
+  } catch (e) {
+    DATA = { team: null, rows: [] };
+    container.innerHTML = `<div class="empty">No data yet for this team.</div>`;
+  }
+  init(teamKey);
 }
 
 function fmtTimestamp(iso){
@@ -288,11 +322,22 @@ function renderStatus(){
 let state = { search: "" };
 const searchBox = document.getElementById("searchBox");
 
-function init(){
+function init(teamKey){
   renderStatus();
   const teamSelect = document.getElementById('teamSelect');
-  teamSelect.innerHTML = `<option>${DATA.team || 'Team'}</option>`;
-  searchBox.addEventListener("input", () => { state.search = searchBox.value.toLowerCase(); render(); });
+  if(!teamSelect.dataset.populated){
+    teamSelect.innerHTML = TEAM_LIST.map(t => `<option value="${t.key}">${t.name}</option>`).join('');
+    teamSelect.dataset.populated = "1";
+    teamSelect.addEventListener('change', () => {
+      const url = new URL(window.location);
+      url.searchParams.set('team', teamSelect.value);
+      window.history.replaceState({}, '', url);
+      loadData(teamSelect.value);
+    });
+  }
+  teamSelect.value = teamKey;
+  state.search = "";
+  searchBox.value = "";
   render();
 }
 
@@ -403,7 +448,8 @@ function overlapLbRow(){
   lbRow.style.marginTop = `-${(h / 2)}px`;
 }
 
-loadData();
+searchBox.addEventListener("input", () => { state.search = searchBox.value.toLowerCase(); render(); });
+loadData(currentTeamKey());
 window.addEventListener('resize', () => overlapLbRow());
 </script>
 </body>
