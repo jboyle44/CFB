@@ -633,22 +633,59 @@ const TEAM_COLORS = {
   'Wyoming': { primary:'#492F24', secondary:'#FFC425' },
 };
 
-// Text on this page sits on a dark background, unlike the depth chart boxes where
-// team colors are backgrounds. Pick whichever of primary/secondary has higher
-// luminance so the team name stays readable even for teams whose primary is
-// black or navy (e.g. Iowa, Purdue, Jacksonville).
-function luminance(hex){
-  const rgb = hex.replace('#','').match(/.{2}/g).map(x => parseInt(x,16)/255);
-  const [r,g,b] = rgb.map(c => c <= 0.03928 ? c/12.92 : Math.pow((c+0.055)/1.055, 2.4));
-  return 0.2126*r + 0.7152*g + 0.0722*b;
+// Text on this page sits on a dark background. Use BOTH team colors: whichever
+// reads as more genuinely vivid fills the letters (matches real brand identity --
+// e.g. Michigan's maize, not its near-black navy; Ohio State's scarlet, not its
+// gray trim), the other traces a thin outline around them. "Vivid" weights
+// saturation against how close to black/white the color is, since raw HSL
+// saturation alone over-rates very dark colors. Anything too dark or washed-out
+// to read on its own gets lightened (preserving hue) rather than dropped.
+function hexToHsl(hex){
+  const r = parseInt(hex.slice(1,3),16)/255, g = parseInt(hex.slice(3,5),16)/255, b = parseInt(hex.slice(5,7),16)/255;
+  const max = Math.max(r,g,b), min = Math.min(r,g,b);
+  let h, s, l = (max+min)/2;
+  if(max === min){ h = s = 0; }
+  else{
+    const d = max-min;
+    s = l > 0.5 ? d/(2-max-min) : d/(max+min);
+    switch(max){
+      case r: h = (g-b)/d + (g<b?6:0); break;
+      case g: h = (b-r)/d + 2; break;
+      case b: h = (r-g)/d + 4; break;
+    }
+    h /= 6;
+  }
+  return [h*360, s*100, l*100];
+}
+function hslToHex(h, s, l){
+  s/=100; l/=100;
+  const k = n => (n + h/30) % 12;
+  const a = s * Math.min(l, 1-l);
+  const f = n => l - a * Math.max(-1, Math.min(k(n)-3, Math.min(9-k(n), 1)));
+  const toHex = x => Math.round(255*Math.max(0,Math.min(1,x))).toString(16).padStart(2,'0');
+  return `#${toHex(f(0))}${toHex(f(8))}${toHex(f(4))}`;
+}
+function vividness(hex){
+  const [,s,l] = hexToHsl(hex);
+  return s * (1 - Math.abs(l-50)/50);
+}
+function ensureReadable(hex, minLightness){
+  const [h,s,l] = hexToHsl(hex);
+  if(l < minLightness) return hslToHex(h, Math.max(s,35), minLightness);
+  return hex;
 }
 
 function teamSpan(name){
   const c = TEAM_COLORS[name];
   if(!c) return name;
-  const color = luminance(c.primary) > luminance(c.secondary) ? c.primary : c.secondary;
-  return `<span style="color:${color}; font-weight:700;">${name}</span>`;
+  const primaryMoreVivid = vividness(c.primary) >= vividness(c.secondary);
+  const fillRaw = primaryMoreVivid ? c.primary : c.secondary;
+  const strokeRaw = primaryMoreVivid ? c.secondary : c.primary;
+  const fill = ensureReadable(fillRaw, 58);
+  const stroke = ensureReadable(strokeRaw, 22);
+  return `<span style="color:${fill}; -webkit-text-stroke:0.6px ${stroke}; text-shadow:-0.6px -0.6px 0 ${stroke}, 0.6px -0.6px 0 ${stroke}, -0.6px 0.6px 0 ${stroke}, 0.6px 0.6px 0 ${stroke}; font-weight:800;">${name}</span>`;
 }
+
 
 
   let games = [];       // rows from lines_data.json
