@@ -201,6 +201,26 @@ def build_record(game, ratings_by_team, ratings_source, existing_by_id):
         prior["awayScore"] = away_score
         return prior
 
+    # Also freeze at kickoff even if we haven't graded it yet -- CFBD
+    # sometimes lags in posting a final score, and without this a game that
+    # already started would keep recomputing its model line against
+    # updated ratings on every run until the score finally lands. This
+    # mirrors the NFL script's identical protection.
+    start_date = game.get("startDate")
+    started = False
+    if start_date:
+        try:
+            commence = datetime.fromisoformat(start_date.replace("Z", "+00:00"))
+            started = commence <= datetime.now(timezone.utc)
+        except ValueError:
+            pass
+    if prior and started:
+        prior["homeScore"] = home_score
+        prior["awayScore"] = away_score
+        if is_final:
+            prior["status"] = "final"
+        return prior
+
     home_rating = ratings_by_team.get(home)
     away_rating = ratings_by_team.get(away)
     neutral = bool(game.get("neutralSite"))
@@ -240,6 +260,23 @@ def build_record(game, ratings_by_team, ratings_source, existing_by_id):
 def apply_line_and_grade(record, line_game):
     if record["status"] == "final" and record.get("atsResult") is not None:
         return record  # already fully graded and frozen
+
+    # Same kickoff freeze as build_record, but for the vegas line/edge/pick
+    # specifically: apply_line_and_grade runs on every record regardless of
+    # whether build_record just froze it, so without this the line could
+    # keep drifting after kickoff even though the model spread is already
+    # locked. Only skip if we've actually captured a line already -- if
+    # kickoff passed before any line was ever posted, still take this one
+    # grab so we're not left with nothing.
+    started = False
+    if record.get("startDate"):
+        try:
+            commence = datetime.fromisoformat(record["startDate"].replace("Z", "+00:00"))
+            started = commence <= datetime.now(timezone.utc)
+        except ValueError:
+            pass
+    if started and record.get("vegasSpread") is not None:
+        return record
 
     best = pick_best_line((line_game or {}).get("lines", []))
     vegas = vegas_home_spread(best, record["homeTeam"], record["awayTeam"]) if best else None
