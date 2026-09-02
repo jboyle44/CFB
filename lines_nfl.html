@@ -80,6 +80,12 @@
   .trend-row-record{font-variant-numeric:tabular-nums; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:12.5px; color:var(--text-dim); white-space:nowrap;}
   .trend-row.active .trend-row-record{color:var(--gold);}
   .trend-conf-grid{max-height:280px; overflow-y:auto;}
+  .trend-games-wrap{margin-top:18px; border:1px solid var(--line); border-radius:8px; overflow:hidden;}
+  .trend-games-wrap .trend-block-title{display:flex; justify-content:space-between; align-items:center;}
+  .trend-games-wrap .trend-block-title .count{text-transform:none; letter-spacing:normal; font-weight:400; color:var(--text-faint);}
+  .trend-games-scroll{max-height:420px; overflow-y:auto; overflow-x:auto;}
+  .trend-games-scroll table{font-size:13px;}
+  .trend-games-scroll thead th{position:sticky; top:0; z-index:1;}
   @media (max-width:640px){ .trend-breakdown-grid{grid-template-columns:1fr;} .trend-filters select{flex:1 1 100%;} }
 
   /* ---------- table ---------- */
@@ -250,6 +256,9 @@
       <p style="font-size:12.5px; color:var(--text-faint); margin-top:0;">Each breakdown reflects the model's picked team, not just the matchup — "Home" means the model backed the home side, "P4" means it backed a Power 4 team, etc. Filters combine (AND), so you can intersect any combo — e.g. P4 home favorites in the 7–9.5 range. Click any row to apply that filter; click it again to clear it.</p>
 
       <div class="trend-filters">
+        <select id="trendWeekSelect">
+          <option value="">Any week</option>
+        </select>
         <select id="trendSideSelect">
           <option value="">Any side</option>
           <option value="Home">Home</option>
@@ -308,8 +317,31 @@
           <div id="trendConfBody" class="trend-conf-grid"></div>
         </div>
       </div>
+
+      <div class="trend-games-wrap">
+        <div class="trend-block-title">Matching Games <span class="count" id="trendGamesCount"></span></div>
+        <div class="trend-games-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th class="num">Wk</th>
+                <th>Date</th>
+                <th>Matchup</th>
+                <th class="num">Model line</th>
+                <th class="num">Vegas line</th>
+                <th class="num">Edge</th>
+                <th>Pick</th>
+                <th class="num">Final</th>
+                <th class="ctr">Result</th>
+              </tr>
+            </thead>
+            <tbody id="trendGamesBody"></tbody>
+          </table>
+        </div>
+      </div>
     </div>
   </div>
+
 
   <details>
     <summary>How this works <span class="toggle">tap to expand</span></summary>
@@ -671,7 +703,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
   }
 
   let trendRows = [];   // one derived entry per graded, picked game
-  const trendFilters = { side: '', favdog: '', tier: '', conf: '', bucket: '' };
+  const trendFilters = { week: '', side: '', favdog: '', tier: '', conf: '', bucket: '' };
 
   function buildTrendRows(){
     trendRows = games
@@ -688,12 +720,14 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
           }
         }
         return {
+          week: g.week,
           side: pickedHome ? 'Home' : 'Away',
           favdog,
           tier: pickConf ? tierForConf(pickConf) : null,
           conf: pickConf || null,
           bucket: spreadBucket(g.vegasSpread),
-          correct: g.modelCorrect
+          correct: g.modelCorrect,
+          game: g   // keep the original record so the games list can render full details
         };
       });
   }
@@ -710,6 +744,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
   }
 
   function matchesFilters(r, excludeKey){
+    if(excludeKey !== 'week' && trendFilters.week && String(r.week) !== String(trendFilters.week)) return false;
     if(excludeKey !== 'side' && trendFilters.side && r.side !== trendFilters.side) return false;
     if(excludeKey !== 'favdog' && trendFilters.favdog && r.favdog !== trendFilters.favdog) return false;
     if(excludeKey !== 'tier' && trendFilters.tier && r.tier !== trendFilters.tier) return false;
@@ -765,6 +800,32 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
     });
   }
 
+  function renderTrendGames(){
+    const rows = getFiltered(null);
+    const body = document.getElementById('trendGamesBody');
+    document.getElementById('trendGamesCount').textContent = rows.length ? `${rows.length} game${rows.length === 1 ? '' : 's'}` : '';
+    if(!rows.length){
+      body.innerHTML = `<tr><td colspan="9" class="empty">No games match the current filters.</td></tr>`;
+      return;
+    }
+    const sorted = rows.slice().sort((a, b) => (b.game.startDate || '').localeCompare(a.game.startDate || ''));
+    body.innerHTML = sorted.map(r => {
+      const g = r.game;
+      return `
+        <tr>
+          <td class="num">${g.week}</td>
+          <td class="num">${fmtDateTime(g.startDate)}</td>
+          <td class="matchup">${g.awayTeam} @ ${g.neutralSite ? '(N) ' : ''}${g.homeTeam}</td>
+          <td class="num">${fmtSpreadTeam(g, g.modelSpread)}</td>
+          <td class="num">${fmtSpreadTeam(g, g.vegasSpread)}</td>
+          <td class="num">${edgeCell(g)}</td>
+          <td class="pick">${g.pick || '—'}</td>
+          <td class="num">${g.awayScore}-${g.homeScore}</td>
+          <td class="ctr">${resultBadge(g)}</td>
+        </tr>`;
+    }).join('');
+  }
+
   function renderAllTrends(){
     renderTrendSummary();
     renderBreakdown('side', 'trendSideBody', ['Home', 'Away']);
@@ -772,9 +833,11 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
     renderBreakdown('tier', 'trendTierBody', ['P4', 'G6']);
     renderBreakdown('bucket', 'trendBucketBody', BUCKET_ORDER);
     renderBreakdown('conf', 'trendConfBody', null);
+    renderTrendGames();
   }
 
   function syncTrendSelects(){
+    document.getElementById('trendWeekSelect').value = trendFilters.week;
     document.getElementById('trendSideSelect').value = trendFilters.side;
     document.getElementById('trendFavDogSelect').value = trendFilters.favdog;
     document.getElementById('trendTierSelect').value = trendFilters.tier;
@@ -790,14 +853,23 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
     sel.value = current;
   }
 
+  function populateTrendWeekSelect(){
+    const sel = document.getElementById('trendWeekSelect');
+    const weeks = [...new Set(trendRows.map(r => r.week))].sort((a, b) => a - b);
+    const current = sel.value;
+    sel.innerHTML = '<option value="">Any week</option>' + weeks.map(w => `<option value="${w}">Week ${w}</option>`).join('');
+    sel.value = current;
+  }
+
   function initTrendFilterControls(){
+    document.getElementById('trendWeekSelect').addEventListener('change', e => { trendFilters.week = e.target.value; renderAllTrends(); });
     document.getElementById('trendSideSelect').addEventListener('change', e => { trendFilters.side = e.target.value; renderAllTrends(); });
     document.getElementById('trendFavDogSelect').addEventListener('change', e => { trendFilters.favdog = e.target.value; renderAllTrends(); });
     document.getElementById('trendTierSelect').addEventListener('change', e => { trendFilters.tier = e.target.value; renderAllTrends(); });
     document.getElementById('trendConfSelect').addEventListener('change', e => { trendFilters.conf = e.target.value; renderAllTrends(); });
     document.getElementById('trendBucketSelect').addEventListener('change', e => { trendFilters.bucket = e.target.value; renderAllTrends(); });
     document.getElementById('trendResetBtn').addEventListener('click', () => {
-      trendFilters.side = ''; trendFilters.favdog = ''; trendFilters.tier = ''; trendFilters.conf = ''; trendFilters.bucket = '';
+      trendFilters.week = ''; trendFilters.side = ''; trendFilters.favdog = ''; trendFilters.tier = ''; trendFilters.conf = ''; trendFilters.bucket = '';
       syncTrendSelects();
       renderAllTrends();
     });
@@ -825,6 +897,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
         renderHistory('');
         buildTrendRows();
         populateTrendConfSelect();
+        populateTrendWeekSelect();
         renderAllTrends();
         document.getElementById('trendsHeaderCount').textContent = trendRows.length ? `${trendRows.length} graded picks` : '';
       })
