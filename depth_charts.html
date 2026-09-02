@@ -287,24 +287,40 @@ const SPECIAL_ROW = { cols:7, items:["PT","PK","KO","LS","H","PR","KR"].map((pos
 
 // Keep in sync with scripts/teams_config.py
 const TEAM_LIST = [
-  { key: "illinois", name: "Illinois" },
-  { key: "indiana", name: "Indiana" },
-  { key: "iowa", name: "Iowa" },
-  { key: "maryland", name: "Maryland" },
-  { key: "michigan", name: "Michigan" },
-  { key: "michigan-state", name: "Michigan State" },
-  { key: "minnesota", name: "Minnesota" },
-  { key: "nebraska", name: "Nebraska" },
-  { key: "northwestern", name: "Northwestern" },
-  { key: "ohio-state", name: "Ohio State" },
-  { key: "oregon", name: "Oregon" },
-  { key: "penn-state", name: "Penn State" },
-  { key: "purdue", name: "Purdue" },
-  { key: "rutgers", name: "Rutgers" },
-  { key: "ucla", name: "UCLA" },
-  { key: "usc", name: "USC" },
-  { key: "washington", name: "Washington" },
-  { key: "wisconsin", name: "Wisconsin" },
+  { key: "illinois", name: "Illinois", group: "Big Ten" },
+  { key: "indiana", name: "Indiana", group: "Big Ten" },
+  { key: "iowa", name: "Iowa", group: "Big Ten" },
+  { key: "maryland", name: "Maryland", group: "Big Ten" },
+  { key: "michigan", name: "Michigan", group: "Big Ten" },
+  { key: "michigan-state", name: "Michigan State", group: "Big Ten" },
+  { key: "minnesota", name: "Minnesota", group: "Big Ten" },
+  { key: "nebraska", name: "Nebraska", group: "Big Ten" },
+  { key: "northwestern", name: "Northwestern", group: "Big Ten" },
+  { key: "ohio-state", name: "Ohio State", group: "Big Ten" },
+  { key: "oregon", name: "Oregon", group: "Big Ten" },
+  { key: "penn-state", name: "Penn State", group: "Big Ten" },
+  { key: "purdue", name: "Purdue", group: "Big Ten" },
+  { key: "rutgers", name: "Rutgers", group: "Big Ten" },
+  { key: "ucla", name: "UCLA", group: "Big Ten" },
+  { key: "usc", name: "USC", group: "Big Ten" },
+  { key: "washington", name: "Washington", group: "Big Ten" },
+  { key: "wisconsin", name: "Wisconsin", group: "Big Ten" },
+  { key: "alabama", name: "Alabama", group: "SEC" },
+  { key: "arkansas", name: "Arkansas", group: "SEC" },
+  { key: "auburn", name: "Auburn", group: "SEC" },
+  { key: "florida", name: "Florida", group: "SEC" },
+  { key: "georgia", name: "Georgia", group: "SEC" },
+  { key: "kentucky", name: "Kentucky", group: "SEC" },
+  { key: "lsu", name: "LSU", group: "SEC" },
+  { key: "ole-miss", name: "Ole Miss", group: "SEC" },
+  { key: "mississippi-state", name: "Mississippi State", group: "SEC" },
+  { key: "missouri", name: "Missouri", group: "SEC" },
+  { key: "oklahoma", name: "Oklahoma", group: "SEC" },
+  { key: "south-carolina", name: "South Carolina", group: "SEC" },
+  { key: "tennessee", name: "Tennessee", group: "SEC" },
+  { key: "texas", name: "Texas", group: "SEC" },
+  { key: "texas-am", name: "Texas A&M", group: "SEC" },
+  { key: "vanderbilt", name: "Vanderbilt", group: "SEC" },
 ];
 const DEFAULT_TEAM = "ohio-state";
 
@@ -329,6 +345,22 @@ const TEAM_COLORS = {
   "usc":            { primary:"#990000", secondary:"#FFC72C" },
   "washington":     { primary:"#4B2E83", secondary:"#B7A57A" },
   "wisconsin":      { primary:"#C5050C", secondary:"#FFFFFF" },
+  "alabama":          { primary:"#9E1B32", secondary:"#FFFFFF" },
+  "arkansas":         { primary:"#9D2235", secondary:"#FFFFFF" },
+  "auburn":           { primary:"#0C2340", secondary:"#E87722" },
+  "florida":          { primary:"#0021A5", secondary:"#FA4616" },
+  "georgia":          { primary:"#BA0C2F", secondary:"#000000" },
+  "kentucky":         { primary:"#0033A0", secondary:"#FFFFFF" },
+  "lsu":              { primary:"#461D7C", secondary:"#FDD023" },
+  "ole-miss":         { primary:"#14213D", secondary:"#CE1126" },
+  "mississippi-state":{ primary:"#660000", secondary:"#FFFFFF" },
+  "missouri":         { primary:"#000000", secondary:"#F1B82D" },
+  "oklahoma":         { primary:"#841617", secondary:"#FDF9D8" },
+  "south-carolina":   { primary:"#73000A", secondary:"#000000" },
+  "tennessee":        { primary:"#FF8200", secondary:"#FFFFFF" },
+  "texas":            { primary:"#BF5700", secondary:"#FFFFFF" },
+  "texas-am":         { primary:"#500000", secondary:"#FFFFFF" },
+  "vanderbilt":       { primary:"#000000", secondary:"#CFAE70" },
 };
 
 function applyTeamColors(teamKey){
@@ -393,7 +425,11 @@ function init(teamKey){
   renderStatus();
   const teamSelect = document.getElementById('teamSelect');
   if(!teamSelect.dataset.populated){
-    teamSelect.innerHTML = TEAM_LIST.map(t => `<option value="${t.key}">${t.name}</option>`).join('');
+    const groups = [...new Set(TEAM_LIST.map(t => t.group))];
+    teamSelect.innerHTML = groups.map(g => `
+      <optgroup label="${g}">
+        ${TEAM_LIST.filter(t => t.group === g).map(t => `<option value="${t.key}">${t.name}</option>`).join('')}
+      </optgroup>`).join('');
     teamSelect.dataset.populated = "1";
     teamSelect.addEventListener('change', () => {
       const url = new URL(window.location);
