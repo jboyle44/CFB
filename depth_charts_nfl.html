@@ -98,13 +98,14 @@
     overflow:hidden; min-width:0;
   }
   .posbox .hd{
-    background:var(--box-header); color:var(--gold); text-align:center;
+    background:var(--team-primary, var(--box-header)); color:#fff; text-align:center;
     font-weight:800; font-size:11px; letter-spacing:0.03em; padding:4px 4px;
-    border-bottom:1px solid var(--line);
+    border-bottom:2px solid var(--team-secondary, var(--line));
+    text-shadow:0 1px 2px rgba(0,0,0,0.4);
   }
   .slot{padding:3px 6px; border-bottom:1px solid var(--line);}
   .slot:last-child{border-bottom:none;}
-  .slot.starter{background:rgba(201,162,39,0.06);}
+  .slot.starter{background:color-mix(in srgb, var(--team-primary, var(--gold)) 12%, transparent);}
   .slot .l1{
     font-size:11.5px; font-weight:700; display:flex; align-items:center; gap:4px;
     flex-wrap:wrap; line-height:1.25; white-space:normal; overflow:visible; text-overflow:clip;
@@ -259,11 +260,31 @@ const TEAM_LIST = [
 ];
 const DEFAULT_TEAM = "dal";
 
+const TEAM_COLORS = {
+  "dal": { primary:"#041E42", secondary:"#869397" },
+  "nyg": { primary:"#0B2265", secondary:"#A71930" },
+  "phi": { primary:"#004C54", secondary:"#A5ACAF" },
+  "was": { primary:"#5A1414", secondary:"#FFB612" },
+};
+
+function applyTeamColors(teamKey){
+  const colors = TEAM_COLORS[teamKey];
+  const root = document.documentElement.style;
+  if(colors){
+    root.setProperty('--team-primary', colors.primary);
+    root.setProperty('--team-secondary', colors.secondary);
+  } else {
+    root.removeProperty('--team-primary');
+    root.removeProperty('--team-secondary');
+  }
+}
+
 function currentTeamKey(){
   return new URLSearchParams(window.location.search).get('team') || DEFAULT_TEAM;
 }
 
 async function loadData(teamKey){
+  applyTeamColors(teamKey);
   const container = document.getElementById("chartBody");
   container.innerHTML = '<div class="empty">Loading…</div>';
   try {
