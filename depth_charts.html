@@ -155,6 +155,7 @@
     </div>
     <div class="nav-row">
       <select id="teamSelect"></select>
+      <select id="conferenceSelect"></select>
       <a href="./index.html" class="nav-btn" style="color:var(--gold);">BRR</a>
       <a href="./lines.html" class="nav-btn btn-cfb">DF<span class="serif-i">I</span>-CFB</a>
       <a href="./lines_nfl.html" class="nav-btn btn-nfl">DF<span class="serif-i">I</span>-NFL</a>
@@ -422,22 +423,51 @@ function renderStatus(){
 let state = { search: "" };
 const searchBox = document.getElementById("searchBox");
 
+function groupForTeam(teamKey){
+  const t = TEAM_LIST.find(t => t.key === teamKey);
+  return t ? t.group : TEAM_LIST[0].group;
+}
+
+function populateTeamSelect(group, selectedKey){
+  const teamSelect = document.getElementById('teamSelect');
+  const teamsInGroup = TEAM_LIST.filter(t => t.group === group);
+  teamSelect.innerHTML = teamsInGroup.map(t => `<option value="${t.key}">${t.name}</option>`).join('');
+  const stillPresent = selectedKey && teamsInGroup.some(t => t.key === selectedKey);
+  teamSelect.value = stillPresent ? selectedKey : teamsInGroup[0].key;
+  teamSelect.dataset.group = group;
+}
+
 function init(teamKey){
   renderStatus();
   const teamSelect = document.getElementById('teamSelect');
-  if(!teamSelect.dataset.populated){
-    const groups = [...new Set(TEAM_LIST.map(t => t.group))];
-    teamSelect.innerHTML = groups.map(g => `
-      <optgroup label="${g}">
-        ${TEAM_LIST.filter(t => t.group === g).map(t => `<option value="${t.key}">${t.name}</option>`).join('')}
-      </optgroup>`).join('');
-    teamSelect.dataset.populated = "1";
+  const conferenceSelect = document.getElementById('conferenceSelect');
+  const group = groupForTeam(teamKey);
+
+  if(!conferenceSelect.dataset.populated){
+    const allGroups = [...new Set(TEAM_LIST.map(t => t.group))];
+    conferenceSelect.innerHTML = allGroups.map(g => `<option value="${g}">${g}</option>`).join('');
+    conferenceSelect.dataset.populated = "1";
+    conferenceSelect.addEventListener('change', () => {
+      populateTeamSelect(conferenceSelect.value);
+      const url = new URL(window.location);
+      url.searchParams.set('team', teamSelect.value);
+      window.history.replaceState({}, '', url);
+      loadData(teamSelect.value);
+    });
+  }
+  conferenceSelect.value = group;
+
+  if(!teamSelect.dataset.listenerAdded){
     teamSelect.addEventListener('change', () => {
       const url = new URL(window.location);
       url.searchParams.set('team', teamSelect.value);
       window.history.replaceState({}, '', url);
       loadData(teamSelect.value);
     });
+    teamSelect.dataset.listenerAdded = "1";
+  }
+  if(teamSelect.dataset.group !== group){
+    populateTeamSelect(group, teamKey);
   }
   teamSelect.value = teamKey;
   state.search = "";
