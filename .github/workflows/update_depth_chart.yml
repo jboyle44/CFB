@@ -31,7 +31,23 @@ jobs:
 
       - name: Run depth chart scraper
         working-directory: scripts
-        run: python build_depth_chart.py ohio-state ../depth_chart_data.json
+        run: |
+          set +e
+          python build_depth_chart.py ohio-state ../depth_chart_data.json > ../depth_chart_scrape_log.txt 2>&1
+          echo "exit_code=$?" >> ../depth_chart_scrape_log.txt
+          cat ../depth_chart_scrape_log.txt
+
+      - name: Always commit the scrape log (even on failure, for debugging)
+        run: |
+          git config user.name "depth-chart-bot"
+          git config user.email "actions@github.com"
+          git add depth_chart_scrape_log.txt
+          if git diff --staged --quiet; then
+            echo "No log changes to commit."
+          else
+            git commit -m "Depth chart scrape log - $(date -u +%Y-%m-%d)"
+            git push
+          fi
 
       - name: Commit and push if data changed
         run: |
