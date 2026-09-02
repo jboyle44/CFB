@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NFL Depth Charts</title>
+<style>
+  :root{
+    --bg:#15161A; --panel:#1B1D22; --panel-2:#202329; --line:#2C2F36;
+    --text:#EDEAE2; --text-dim:#9CA0A8; --text-faint:#6B6F78;
+    --gold:#C9A227; --gold-dim:#8C7420;
+    --blue:#6FA8DC; --red:#D46A6A; --purple:#B48EAD;
+    --box-header:#101114;
+  }
+  *{box-sizing:border-box;}
+  .serif-i{font-family:Georgia,'Times New Roman',Times,serif;}
+  .dc-accent{
+    color:#F4D03F;
+    text-shadow:1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  }
+  .nav-btn{
+    text-decoration:none; margin-left:6px; background:transparent;
+    border:1px solid var(--gold-dim); border-radius:6px; padding:9px 14px;
+    font-size:13px; font-weight:600; display:inline-block; color:var(--gold);
+  }
+  .btn-cfb{
+    background:linear-gradient(90deg, #4CAF50, #8E44AD) !important;
+    -webkit-background-clip:text !important; background-clip:text !important;
+    -webkit-text-fill-color:transparent !important; color:transparent !important;
+    border-color:#8E44AD !important;
+  }
+  .btn-nfl{
+    background:linear-gradient(90deg, #4A90D9, #E63946) !important;
+    -webkit-background-clip:text !important; background-clip:text !important;
+    -webkit-text-fill-color:transparent !important; color:transparent !important;
+    border-color:#E63946 !important;
+  }
+  html,body{margin:0;padding:0;background:var(--bg);}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+    padding:28px 20px 60px;
+  }
+  .wrap{max-width:1100px;margin:0 auto;}
+  .topbar{
+    display:flex; justify-content:space-between; align-items:flex-end;
+    flex-wrap:wrap; gap:16px;
+    padding-bottom:18px; margin-bottom:18px;
+    border-bottom:1px solid var(--line);
+  }
+  .brand{display:flex; align-items:baseline; gap:12px;}
+  .brand h1{font-size:24px; font-weight:800; letter-spacing:-0.02em; margin:0; color:var(--text);}
+  .brand .sub{font-size:12.5px; color:var(--text-faint); letter-spacing:0.02em;}
+  .nav-row{display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
+  select{
+    background:var(--panel-2); color:var(--text); border:1px solid var(--line);
+    border-radius:6px; padding:8px 10px; font-size:13px; font-weight:600; cursor:pointer;
+  }
+  .status-row{display:flex; align-items:center; gap:8px; font-size:12px; color:var(--text-faint); margin-bottom:16px; flex-wrap:wrap;}
+  .dot{width:7px; height:7px; border-radius:50%; background:var(--text-faint); flex-shrink:0;}
+  .dot.ok{background:#7FB27F;}
+  .dot.warn{background:var(--gold);}
+
+  .filters{margin-bottom:18px;}
+  .filters input[type=text]{
+    width:100%; max-width:320px;
+    background:var(--panel-2); color:var(--text); border:1px solid var(--line);
+    border-radius:6px; padding:9px 12px; font-size:14px;
+  }
+  .filters input::placeholder{color:var(--text-faint);}
+
+  .legend{display:flex; gap:16px; font-size:11px; color:var(--text-faint); margin-bottom:20px; flex-wrap:wrap; align-items:center;}
+  .legend span.sw{display:inline-block; width:9px; height:9px; border-radius:2px; margin-right:5px; vertical-align:middle;}
+  .sw.new{background:var(--blue);}
+  .grade-legend{display:flex; align-items:center; gap:6px;}
+  .grade-bar{
+    display:inline-block; width:70px; height:8px; border-radius:4px;
+    background:linear-gradient(90deg, hsl(0,70%,50%), hsl(60,70%,50%), hsl(120,70%,50%));
+    vertical-align:middle;
+  }
+
+  .section-head{
+    display:flex; align-items:center; justify-content:space-between;
+    margin:26px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--line);
+  }
+  .section-head h2{font-size:19px; margin:0; letter-spacing:0.02em;}
+
+  .formgrid{
+    display:grid; grid-template-columns:repeat(auto-fill, minmax(115px, 1fr));
+    gap:8px; margin-bottom:8px;
+  }
+
+  .posbox{
+    background:var(--panel); border:1px solid var(--line); border-radius:6px;
+    overflow:hidden; min-width:0;
+  }
+  .posbox .hd{
+    background:var(--box-header); color:var(--gold); text-align:center;
+    font-weight:800; font-size:11px; letter-spacing:0.03em; padding:4px 4px;
+    border-bottom:1px solid var(--line);
+  }
+  .slot{padding:3px 6px; border-bottom:1px solid var(--line);}
+  .slot:last-child{border-bottom:none;}
+  .slot.starter{background:rgba(201,162,39,0.06);}
+  .slot .l1{
+    font-size:11.5px; font-weight:700; display:flex; align-items:center; gap:4px;
+    flex-wrap:wrap; line-height:1.25;
+  }
+  .slot.starter .l1{font-size:12px;}
+  .slot:not(.starter) .l1{font-weight:600; color:var(--text-dim); font-size:11px;}
+  .slot .num{color:var(--text-faint); font-weight:600; font-variant-numeric:tabular-nums;}
+  .slot .l2{font-size:9px; color:var(--text-faint); margin-top:1px; line-height:1.3;}
+  .slot .l3{font-size:9px; color:var(--text-faint); margin-top:0; line-height:1.3;}
+  .slot .pff{color:var(--text-faint); font-style:italic;}
+  .badge{
+    display:inline-block; font-size:8.5px; font-weight:800; padding:1px 5px;
+    border-radius:3px; vertical-align:middle;
+  }
+  .badge.new{background:rgba(111,168,220,0.2); color:var(--blue);}
+  .empty{padding:40px; text-align:center; color:var(--text-faint);}
+
+  details{margin-top:26px; border:1px solid var(--line); border-radius:10px; background:var(--panel);}
+  summary{
+    padding:14px 16px; cursor:pointer; font-size:14px; font-weight:600;
+    list-style:none; display:flex; justify-content:space-between; align-items:center;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary .toggle{color:var(--text-faint); font-size:12px; font-weight:400;}
+  .notes-body{padding:0 18px 20px;}
+  .notes-body dl{display:grid; grid-template-columns:130px 1fr; gap:10px 14px; font-size:13px; margin:0 0 14px;}
+  .notes-body dt{font-weight:600; color:var(--text);}
+  .notes-body dd{margin:0; color:var(--text-dim); line-height:1.55;}
+  .notes-body .foot-note{font-size:12px; color:var(--text-faint); line-height:1.6; margin-top:4px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <div class="brand">
+      <h1>NFL Depth <span class="dc-accent">Charts</span></h1>
+      <span class="sub">Ourlads depth chart &nbsp;·&nbsp; PFF grade (add your own) &nbsp;·&nbsp; NFC East</span>
+    </div>
+    <div class="nav-row">
+      <select id="teamSelect"></select>
+      <a href="./index.html" class="nav-btn" style="color:var(--gold);">BRR</a>
+      <a href="./lines.html" class="nav-btn btn-cfb">DF<span class="serif-i">I</span>-CFB</a>
+      <a href="./lines_nfl.html" class="nav-btn btn-nfl">DF<span class="serif-i">I</span>-NFL</a>
+      <a href="./depth_charts.html" class="nav-btn" style="color:var(--gold);">CFB Depth Charts</a>
+    </div>
+  </div>
+
+  <div class="status-row">
+    <span class="dot" id="statusDot"></span>
+    <span id="statusText">Loading…</span>
+  </div>
+
+  <div class="filters">
+    <input type="text" id="searchBox" placeholder="Search player…">
+  </div>
+
+  <div class="legend">
+    <span><span class="sw new"></span>Trade / Waiver / New Signing</span>
+    <span class="grade-legend">PFF Grade:
+      <span class="grade-bar"></span>
+      <span>Lower → Higher</span>
+    </span>
+  </div>
+
+  <div id="chartBody"></div>
+  <div class="empty" id="emptyState" style="display:none;">No players match your search.</div>
+
+  <details>
+    <summary>Where this data comes from <span class="toggle">tap to expand</span></summary>
+    <div class="notes-body">
+      <dl>
+        <dt>Depth Chart</dt>
+        <dd>Position, jersey number, and rank order pulled from Ourlads' NFL team depth chart page.</dd>
+        <dt>Acquisition code</dt>
+        <dd>Ourlads' shorthand for how a player joined the roster -- a draft year/round like "20/1" (2020, round 1), a street/college free agent signing like "SF23"/"CF26" (original signing year), or an inter-team move like "T/Pit" (traded from Pittsburgh), "U/Den" (waived, claimed from Denver). Inter-team moves are flagged with the blue "NEW" badge.</dd>
+        <dt>PFF</dt>
+        <dd>PFF grade for the player. Not wired in yet -- shows "—" until added.</dd>
+        <dt>Color scale</dt>
+        <dd>Once PFF grades are added, they'll color on a sliding red → yellow → green scale, low to high.</dd>
+      </dl>
+      <div class="foot-note">
+        Depth chart data refreshes automatically on the same weekly cadence as the rest of the site.
+      </div>
+    </div>
+  </details>
+
+</div>
+
+<script>
+let DATA = { team: null, rows: [] };
+
+const TEAM_LIST = [
+  { key: "dal", name: "Dallas Cowboys" },
+  { key: "nyg", name: "New York Giants" },
+  { key: "phi", name: "Philadelphia Eagles" },
+  { key: "was", name: "Washington Commanders" },
+];
+const DEFAULT_TEAM = "dal";
+
+// Preferred left-to-right/top-to-bottom order; anything not listed (scheme-specific
+// codes like SLB/LE/RE for a 4-3 team) falls in after, alphabetically.
+const OFFENSE_ORDER = ["LWR","RWR","SWR","LT","LG","C","RG","RT","TE","QB","RB","FB"];
+const DEFENSE_ORDER = ["DE","LDE","RDE","NT","DT","LOLB","WLB","MLB","ROLB","SLB","LCB","RCB","SS","FS","NB"];
+const SPECIAL_ORDER = ["PT","PK","KO","LS","H","PR","KR"];
+
+function currentTeamKey(){
+  return new URLSearchParams(window.location.search).get('team') || DEFAULT_TEAM;
+}
+
+async function loadData(teamKey){
+  const container = document.getElementById("chartBody");
+  container.innerHTML = '<div class="empty">Loading…</div>';
+  try {
+    const res = await fetch(`depth_chart_data_nfl/${teamKey}.json?v=` + Date.now());
+    if(!res.ok) throw new Error(`HTTP ${res.status}`);
+    DATA = await res.json();
+  } catch (e) {
+    DATA = { team: null, rows: [] };
+    container.innerHTML = `<div class="empty">No data yet for this team.</div>`;
+  }
+  init(teamKey);
+}
+
+function fmtTimestamp(iso){
+  if(!iso) return null;
+  const d = new Date(iso);
+  if(isNaN(d.getTime())) return null;
+  const datePart = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  const timePart = d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+  return `${datePart}, ${timePart}`;
+}
+
+function renderStatus(){
+  const dot = document.getElementById('statusDot');
+  const statusText = document.getElementById('statusText');
+  if(!DATA.rows || !DATA.rows.length){
+    dot.className = 'dot warn';
+    statusText.textContent = 'No data loaded yet.';
+    return;
+  }
+  dot.className = 'dot ok';
+  const ts = fmtTimestamp(DATA.generatedAt);
+  const parts = [`${DATA.team || 'Team'} · ${DATA.rows.length} depth chart spots`];
+  if(ts) parts.push(`updated ${ts}`);
+  statusText.textContent = parts.join(' · ');
+}
+
+let state = { search: "" };
+const searchBox = document.getElementById("searchBox");
+
+function init(teamKey){
+  renderStatus();
+  const teamSelect = document.getElementById('teamSelect');
+  if(!teamSelect.dataset.populated){
+    teamSelect.innerHTML = TEAM_LIST.map(t => `<option value="${t.key}">${t.name}</option>`).join('');
+    teamSelect.dataset.populated = "1";
+    teamSelect.addEventListener('change', () => {
+      const url = new URL(window.location);
+      url.searchParams.set('team', teamSelect.value);
+      window.history.replaceState({}, '', url);
+      loadData(teamSelect.value);
+    });
+  }
+  teamSelect.value = teamKey;
+  state.search = "";
+  searchBox.value = "";
+  render();
+}
+
+function gradeColor(value, min, max){
+  if(value == null || isNaN(value)) return null;
+  const t = Math.max(0, Math.min(1, (value - min) / (max - min)));
+  const hue = t * 120;
+  return `hsl(${hue}, 70%, 50%)`;
+}
+
+function gradeSpan(value, min, max, digits){
+  const color = gradeColor(value, min, max);
+  const label = value == null ? '—' : (digits ? Number(value).toFixed(digits) : value);
+  const style = color ? ` style="color:${color}; font-weight:700;"` : '';
+  return `<span${style}>${label}</span>`;
+}
+
+function slotHtml(r, isStarter){
+  const badge = r.isAcquired ? '<span class="badge new">NEW</span>' : '';
+  const codeLine = r.code ? `Acquired: ${r.code}` : '';
+  const pffHtml = r.pffGrade != null
+    ? `PFF: ${gradeSpan(r.pffGrade, 40, 95, 1)}`
+    : `<span class="pff">PFF: —</span>`;
+  return `
+    <div class="slot ${isStarter ? 'starter' : ''}">
+      <div class="l1"><span class="num">${r.jersey || ''}</span> ${r.player}${badge}</div>
+      ${codeLine ? `<div class="l2">${codeLine}</div>` : ''}
+      <div class="l3">${pffHtml}</div>
+    </div>`;
+}
+
+function posBoxHtml(pos, groups){
+  const list = groups[pos];
+  if(!list || !list.length) return "";
+  const slots = list.map((r,i) => slotHtml(r, i===0)).join('');
+  return `<div class="posbox"><div class="hd">${pos}</div>${slots}</div>`;
+}
+
+function orderedPositions(present, preferredOrder){
+  const inOrder = preferredOrder.filter(p => present.includes(p));
+  const extras = present.filter(p => !preferredOrder.includes(p)).sort();
+  return [...inOrder, ...extras];
+}
+
+function sectionHtml(title, positions, groups){
+  if(!positions.length) return "";
+  const boxes = positions.map(pos => posBoxHtml(pos, groups)).join('');
+  return `
+    <div class="section-head"><h2>${title}</h2></div>
+    <div class="formgrid">${boxes}</div>`;
+}
+
+function render(){
+  const q = state.search;
+  const rows = DATA.rows.filter(r => !q || r.player.toLowerCase().includes(q));
+  const container = document.getElementById("chartBody");
+  const emptyState = document.getElementById("emptyState");
+
+  if(!rows.length){
+    container.innerHTML = "";
+    emptyState.style.display = "block";
+    return;
+  }
+  emptyState.style.display = "none";
+
+  const groups = {};
+  rows.forEach(r => { (groups[r.position] = groups[r.position] || []).push(r); });
+  const present = Object.keys(groups);
+
+  const offense = orderedPositions(present.filter(p => OFFENSE_ORDER.includes(p)), OFFENSE_ORDER);
+  const defense = orderedPositions(present.filter(p => DEFENSE_ORDER.includes(p)), DEFENSE_ORDER);
+  const special = orderedPositions(present.filter(p => SPECIAL_ORDER.includes(p)), SPECIAL_ORDER);
+  // anything left over (unrecognized position code) still needs to show up somewhere
+  const classified = new Set([...offense, ...defense, ...special]);
+  const other = present.filter(p => !classified.has(p)).sort();
+
+  let html = "";
+  html += sectionHtml("Offense", offense, groups);
+  html += sectionHtml("Defense", defense, groups);
+  html += sectionHtml("Specialists", special, groups);
+  if(other.length) html += sectionHtml("Other", other, groups);
+
+  container.innerHTML = html;
+}
+
+searchBox.addEventListener("input", () => { state.search = searchBox.value.toLowerCase(); render(); });
+loadData(currentTeamKey());
+</script>
+</body>
+</html>
