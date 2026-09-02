@@ -45,7 +45,11 @@ def parse_player_cell(text):
 
 
 def scrape_ourlads_depth_chart(ourlads_slug, ourlads_id, delay=1.5):
-    """Returns a list of dicts: {position, player, jersey, class, isTransfer}"""
+    """Returns (rows, schemes) where rows is a list of
+    {position, player, jersey, class, isTransfer} and schemes is
+    {"offense": "Spread Option"|None, "defense": "4-2-5"|None} pulled from
+    each table's heading -- this varies team to team, so it's read from the
+    page rather than assumed."""
     url = f"https://www.ourlads.com/ncaa-football-depth-charts/depth-chart/{ourlads_slug}/{ourlads_id}"
     resp = requests.get(url, headers=HEADERS, timeout=20)
     resp.raise_for_status()
@@ -53,11 +57,25 @@ def scrape_ourlads_depth_chart(ourlads_slug, ourlads_id, delay=1.5):
 
     soup = BeautifulSoup(resp.text, "html.parser")
     rows_out = []
+    schemes = {"offense": None, "defense": None}
 
     for table in soup.find_all("table"):
         header_cells = [th.get_text(strip=True) for th in table.find_all("th")]
         if not header_cells or not header_cells[0].lower().startswith("pos"):
             continue  # skip tables that aren't depth chart tables
+
+        # Heading looks like "Offense Spread Option" or "Defense 4-2-5" --
+        # the unit name is the first word, the scheme is whatever follows.
+        heading = table.find_previous(["h1", "h2", "h3"])
+        if heading:
+            heading_text = heading.get_text(strip=True)
+            lower = heading_text.lower()
+            if lower.startswith("offense"):
+                scheme = heading_text[len("offense"):].strip()
+                schemes["offense"] = scheme or None
+            elif lower.startswith("defense"):
+                scheme = heading_text[len("defense"):].strip()
+                schemes["defense"] = scheme or None
 
         for tr in table.find_all("tr"):
             cells = tr.find_all("td")
@@ -89,7 +107,7 @@ def scrape_ourlads_depth_chart(ourlads_slug, ourlads_id, delay=1.5):
                     "isTransfer": is_transfer,
                 })
 
-    return rows_out
+    return rows_out, schemes
 
 
 if __name__ == "__main__":
@@ -97,6 +115,6 @@ if __name__ == "__main__":
     import sys
     slug = sys.argv[1] if len(sys.argv) > 1 else "ohio-state"
     tid = sys.argv[2] if len(sys.argv) > 2 else "91533"
-    data = scrape_ourlads_depth_chart(slug, tid)
-    print(json.dumps(data, indent=2))
+    data, schemes = scrape_ourlads_depth_chart(slug, tid)
+    print(json.dumps({"schemes": schemes, "rows": data}, indent=2))
     print(f"\n{len(data)} depth chart rows scraped", file=sys.stderr)
