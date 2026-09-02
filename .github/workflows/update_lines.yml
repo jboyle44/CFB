@@ -2,16 +2,9 @@ name: Update CFB Lines
 
 on:
   schedule:
-    # Sunday at noon ET. GitHub cron is fixed UTC (16:00), so this is
-    # noon ET during daylight saving and 11am ET the rest of the year --
-    # close enough for a weekly job. Catches Thu-Sat games as soon as
-    # they're final and gets the upcoming week's opening lines as early
-    # as possible.
-    - cron: '0 16 * * 0'
-
-    # Tuesday at 10am ET (14:00 UTC) -- a second pass to catch any Sunday/
-    # Monday games and pick up line movement, after BRR's own Monday update.
-    - cron: '0 14 * * 2'
+    # Sunday at 3pm ET (19:00 UTC) and Thursday at 9am ET (13:00 UTC).
+    - cron: '0 19 * * 0'
+    - cron: '0 13 * * 4'
 
   # Trigger a run manually from the Actions tab any time.
   workflow_dispatch: {}
