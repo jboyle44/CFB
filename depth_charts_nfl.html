@@ -214,8 +214,8 @@ const OFFENSE_COLS = 14;
 // LOLB/WLB/MLB/ROLB for all 4 teams), but centering dynamically from a broader
 // candidate list -- rather than pinning exact columns -- means this keeps working
 // without edits as more teams (with different scheme terminology) get added.
-const DLINE_CANDIDATES = ["LDE","DE","NT","LDT","DT","RDT","RDE"];
-const LB_CANDIDATES = ["LOLB","SLB","WLB","MLB","ROLB"];
+const DLINE_CANDIDATES = ["LOLB","LDE","DE","NT","LDT","DT","RDT","RDE","ROLB"];
+const LB_CANDIDATES = ["SLB","WLB","MLB"];
 
 const DEFENSE_ROWS = [
   { cols:DEFENSE_COLS, items:[                 // row 1: safeties
@@ -242,11 +242,11 @@ const OFFENSE_ROWS = [
       { pos:"RWR", col:13, span:2 }
     ]},
   { cols:OFFENSE_COLS, items:[
-      { pos:"SWR", col:2,  span:2 }, // gap between LWR and LT
-      { pos:"RB",  col:4,  span:2 }, // gap between LT and LG
-      { pos:"FB",  col:9,  span:2 }, // only present for teams that carry one
+      { pos:"SWR", col:2,  span:2 }, // left: gap between LWR and LT
+      { pos:"RB",  col:4,  span:2 }, // left: gap between LT and LG
       { pos:"QB",  col:7,  span:2 }, // directly behind center
-      { pos:"TE",  col:11, span:2 }  // behind RT
+      { pos:"FB",  col:10, span:2 }, // right: mirrors RB -- gap between RG and RT
+      { pos:"TE",  col:12, span:2 }  // right: mirrors SWR -- gap between RT and RWR
     ]}
 ];
 
@@ -360,10 +360,11 @@ function posBoxHtml(pos, groups, col, span){
   return `<div class="posbox${slimClass}" style="grid-column:${col} / span ${span};"><div class="hd">${pos}</div>${slots}</div>`;
 }
 
-function dynamicCenteredRowHtml(candidates, groups, cols, id){
+function dynamicCenteredRowHtml(candidates, groups, baseCols, id){
   const present = candidates.filter(p => groups[p] && groups[p].length);
   if(!present.length) return "";
   const totalSpan = present.length * 2;
+  const cols = Math.max(baseCols, totalSpan);
   const start = Math.max(1, Math.floor((cols - totalSpan) / 2) + 1);
   const boxesHtml = present.map((pos, i) => posBoxHtml(pos, groups, start + i * 2, 2)).join('');
   const idAttr = id ? ` id="${id}"` : "";
@@ -413,20 +414,10 @@ function render(){
   html += sectionHtml("Specialists", [SPECIAL_ROW]);
 
   container.innerHTML = html;
-  overlapLbRow();
-}
-
-function overlapLbRow(){
-  const cbnbRow = document.getElementById('row-cbnb');
-  const lbRow = document.getElementById('row-lb');
-  if(!cbnbRow || !lbRow) return;
-  const h = cbnbRow.getBoundingClientRect().height;
-  lbRow.style.marginTop = `-${(h / 2)}px`;
 }
 
 searchBox.addEventListener("input", () => { state.search = searchBox.value.toLowerCase(); render(); });
 loadData(currentTeamKey());
-window.addEventListener('resize', () => overlapLbRow());
 </script>
 </body>
 </html>
