@@ -83,12 +83,13 @@
   .section-head .scheme{font-size:12px; color:var(--text-faint); font-weight:600;}
 
   .formrow{
-    display:grid; grid-template-columns:repeat(7, 1fr); gap:8px; margin-bottom:8px;
+    display:flex; gap:8px; justify-content:center; margin-bottom:8px; flex-wrap:wrap;
   }
 
   .posbox{
     background:var(--panel); border:1px solid var(--line); border-radius:6px;
     overflow:hidden; min-width:0;
+    flex:0 0 calc((100% - 48px) / 7);
   }
   .posbox .hd{
     background:var(--box-header); color:var(--gold); text-align:center;
@@ -162,17 +163,18 @@
 <script>
 let DATA = { team: null, rows: [] };
 
-// Formation layout: flat position order, wraps into a 7-column grid.
-// Order still mirrors distance from LOS: defense secondary->LB->line, offense line->backfield.
-const DEFENSE_ORDER = ["LCB","FS","SS","RCB","NB","WLB","MLB","LDE","NT","DT","RDE"];
-const OFFENSE_ORDER = ["WR-X","LT","LG","C","RG","RT","WR-Z","WR-SL","RB","QB","TE"];
-const SPECIAL_ORDER = ["PT","PK","KO","LS","H","PR","KR"];
-
-function chunk7(arr){
-  const out = [];
-  for(let i=0; i<arr.length; i+=7) out.push(arr.slice(i, i+7));
-  return out;
-}
+// Formation rows, each sized/centered to match a 7-across O-line/secondary row.
+// Row width is fixed (1/7 per box) so shorter rows visually center under the wide row.
+const DEFENSE_ROWS = [
+  ["FS","SS"],                    // deep secondary, centered top like FS/ROVER
+  ["LCB","WLB","MLB","NB","RCB"], // corners + backers + nickel
+  ["LDE","NT","DT","RDE"]         // D-line
+];
+const OFFENSE_ROWS = [
+  ["WR-X","LT","LG","C","RG","RT","WR-Z"], // O-line + outside WRs, full 7 across
+  ["WR-SL","RB","QB","TE"]                  // slot/backfield, centered under the line
+];
+const SPECIAL_ROW = ["PT","PK","KO","LS","H","PR","KR"];
 
 async function loadData(){
   const res = await fetch('depth_chart_data.json?v=' + Date.now());
@@ -239,18 +241,17 @@ function slotHtml(r, isStarter){
 
 function posBoxHtml(pos, groups){
   const list = groups[pos];
-  if(!list || !list.length) return `<div class="posbox"></div>`;
+  if(!list || !list.length) return "";
   const slots = list.map((r,i) => slotHtml(r, i===0)).join('');
   return `<div class="posbox"><div class="hd">${pos}</div>${slots}</div>`;
 }
 
-function sectionHtml(title, scheme, order, groups){
-  const present = order.filter(pos => groups[pos] && groups[pos].length);
-  if(!present.length) return "";
-  const rowsHtml = chunk7(present).map(posList => {
+function sectionHtml(title, scheme, rows, groups){
+  const rowsHtml = rows.map(posList => {
     const boxes = posList.map(pos => posBoxHtml(pos, groups)).join('');
-    return `<div class="formrow">${boxes}</div>`;
+    return boxes ? `<div class="formrow">${boxes}</div>` : '';
   }).join('');
+  if(!rowsHtml.trim()) return "";
   return `
     <div class="section-head"><h2>${title}</h2><span class="scheme">${scheme}</span></div>
     ${rowsHtml}`;
@@ -273,9 +274,9 @@ function render(){
   rows.forEach(r => { (groups[r.position] = groups[r.position] || []).push(r); });
 
   let html = "";
-  html += sectionHtml("Defense", "4-2-5", DEFENSE_ORDER, groups);
-  html += sectionHtml("Offense", "Spread Option", OFFENSE_ORDER, groups);
-  html += sectionHtml("Specialists", "", SPECIAL_ORDER, groups);
+  html += sectionHtml("Defense", "4-2-5", DEFENSE_ROWS, groups);
+  html += sectionHtml("Offense", "Spread Option", OFFENSE_ROWS, groups);
+  html += sectionHtml("Specialists", "", [SPECIAL_ROW], groups);
 
   container.innerHTML = html;
 }
