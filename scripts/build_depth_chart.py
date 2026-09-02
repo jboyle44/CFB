@@ -23,7 +23,7 @@ def normalize_name(name):
     return name.lower().strip()
 
 
-def build(team_key, output_path=None, fetch_transfer_detail=True):
+def build(team_key, output_path=None, fetch_detail_for_all=False):
     if team_key not in TEAMS:
         raise ValueError(f"Unknown team key '{team_key}'. Add it to teams_config.py first.")
     team = TEAMS[team_key]
@@ -39,8 +39,9 @@ def build(team_key, output_path=None, fetch_transfer_detail=True):
 
     output_rows = []
     profile_cache = {}  # avoid re-fetching the same profile twice
+    total = len(depth_chart)
 
-    for row in depth_chart:
+    for i, row in enumerate(depth_chart, 1):
         norm = normalize_name(row["player"])
         roster_match = roster_by_norm_name.get(norm)
 
@@ -60,10 +61,11 @@ def build(team_key, output_path=None, fetch_transfer_detail=True):
             "pffGrade": None,  # populated separately from a manual PFF Elite export
         }
 
-        if row["isTransfer"] and fetch_transfer_detail and out_row["profileUrl"]:
+        should_fetch = out_row["profileUrl"] and (row["isTransfer"] or fetch_detail_for_all)
+        if should_fetch:
             url = out_row["profileUrl"]
             if url not in profile_cache:
-                print(f"  Fetching transfer/HS detail for {row['player']}...", file=sys.stderr)
+                print(f"  [{i}/{total}] Fetching detail for {row['player']}...", file=sys.stderr)
                 try:
                     profile_cache[url] = scrape_247_player_profile(url)
                 except Exception as e:
@@ -71,10 +73,6 @@ def build(team_key, output_path=None, fetch_transfer_detail=True):
                     profile_cache[url] = {}
             detail = profile_cache[url]
             out_row.update({k: v for k, v in detail.items() if v is not None})
-        elif not row["isTransfer"] and out_row["profileUrl"]:
-            # non-transfers: still worth pulling HS rank if we want it displayed;
-            # comment this block out if you want to keep to composite-score-only for speed
-            pass
 
         output_rows.append(out_row)
 
@@ -94,8 +92,14 @@ def build(team_key, output_path=None, fetch_transfer_detail=True):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python build_depth_chart.py <team_key> [output_path]", file=sys.stderr)
+        print("Usage: python build_depth_chart.py <team_key> [output_path] [--full]", file=sys.stderr)
+        print("  --full  fetch HS/transfer detail for every player, not just transfers", file=sys.stderr)
+        print("          (this makes ~70-80 requests to 247Sports for a full roster --", file=sys.stderr)
+        print("          expect it to take a few minutes)", file=sys.stderr)
         sys.exit(1)
     team_key = sys.argv[1]
-    out_path = sys.argv[2] if len(sys.argv) > 2 else "depth_chart_data.json"
-    build(team_key, out_path)
+    remaining = sys.argv[2:]
+    full = "--full" in remaining
+    remaining = [a for a in remaining if a != "--full"]
+    out_path = remaining[0] if remaining else "depth_chart_data.json"
+    build(team_key, out_path, fetch_detail_for_all=full)
