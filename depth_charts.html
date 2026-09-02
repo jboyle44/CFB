@@ -674,21 +674,32 @@ function render(){
   html += sectionHtml("Specialists", "", [SPECIAL_ROW]);
 
   container.innerHTML = html;
-  if(lbOverlapSafe && cbnbClustered) overlapLbRow();
+  applyLbSpacing();
 }
 
-function overlapLbRow(){
+function applyLbSpacing(){
   const cbnbRow = document.getElementById('row-cbnb');
   const lbRow = document.getElementById('row-lb');
   if(!cbnbRow || !lbRow) return;
-  const h = cbnbRow.getBoundingClientRect().height;
-  // pull LB row up so its top starts at the vertical midpoint of the CB/NB row
-  lbRow.style.marginTop = `-${(h / 2)}px`;
+  if(lbOverlapSafe && cbnbClustered){
+    // Best case: 2-item LB row (WLB/MLB) + clustered CB/NB row above -- pull LB row
+    // up to the vertical midpoint of the CB/NB row, matching column geometry exactly
+    // so nothing collides.
+    const h = cbnbRow.getBoundingClientRect().height;
+    lbRow.style.marginTop = `-${(h / 2)}px`;
+  } else {
+    // Most teams have 3+ LB/hybrid codes (wider row) or use the CB/NB fallback
+    // layout, so the full pull-up isn't geometrically safe to do without risking
+    // a collision. A small fixed nudge still closes up the excess default gap
+    // for these teams without touching any box, so spacing reads consistently
+    // across every team instead of only looking tight for the 2-item-LB minority.
+    lbRow.style.marginTop = `-6px`;
+  }
 }
 
 searchBox.addEventListener("input", () => { state.search = searchBox.value.toLowerCase(); render(); });
 loadData(currentTeamKey());
-window.addEventListener('resize', () => { if(lbOverlapSafe && cbnbClustered) overlapLbRow(); });
+window.addEventListener('resize', () => applyLbSpacing());
 </script>
 </body>
 </html>
