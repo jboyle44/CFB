@@ -42,7 +42,7 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
     team = TEAMS[team_key]
 
     print(f"Scraping Ourlads depth chart for {team['display_name']}...", file=sys.stderr)
-    depth_chart = scrape_ourlads_depth_chart(team["ourlads_slug"], team["ourlads_id"])
+    depth_chart, schemes = scrape_ourlads_depth_chart(team["ourlads_slug"], team["ourlads_id"])
     print(f"  {len(depth_chart)} depth chart rows", file=sys.stderr)
 
     print(f"Scraping 247Sports roster for {team['display_name']}...", file=sys.stderr)
@@ -113,6 +113,8 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
     wrapped = {
         "generatedAt": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "team": team["display_name"],
+        "offenseScheme": schemes.get("offense"),
+        "defenseScheme": schemes.get("defense"),
         "rows": output_rows,
     }
 
