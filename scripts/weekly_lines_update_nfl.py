@@ -15,9 +15,9 @@ script):
     graded -- there's no historical backfill on the free tier. Practically,
     running twice a week (Sun/Tue) comfortably covers every Thu-Mon slate.
   - the-odds-api.com doesn't label games as neutral-site (e.g. international
-    games). Every game is treated as a normal home/away game; HFA is applied
-    to the nominal "home" team regardless of actual venue. Worth revisiting
-    if the DFI's accuracy on those specific games starts to look off.
+    games), so NEUTRAL_SITE_GAMES below is a manually maintained list of the
+    2026 International Series games -- HFA is skipped for those. This list
+    needs updating every season.
   - There's no "week number" in the API response, so week is computed from
     the game's date relative to the season's Week 1 start (see
     NFL_WEEK1_START below). This needs updating each season.
@@ -45,7 +45,6 @@ SPORT = "americanfootball_nfl"
 MPG_BASE = "https://mpg000f.github.io/cbb_power_rating"
 
 DATA_FILE = "lines_data_nfl.json"
-RATINGS_HISTORY_FILE = "ratings_history_nfl.json"
 HFA = 2.0
 SEASON = 2026
 
@@ -71,6 +70,38 @@ ABBR_TO_NAME = {
     "TEN": "Tennessee Titans", "WAS": "Washington Commanders",
 }
 NAME_TO_ABBR = {v: k for k, v in ABBR_TO_NAME.items()}
+
+
+# 2026 NFL International Series -- these are neutral-site games, so home
+# field advantage shouldn't apply. the-odds-api.com doesn't flag this, so
+# it's tracked manually here. Matched by (home_team, away_team, week) as
+# confirmed against real API responses -- update this each season.
+NEUTRAL_SITE_GAMES = {
+    ("Los Angeles Rams", "San Francisco 49ers", 1),      # Melbourne, Australia
+    ("Dallas Cowboys", "Baltimore Ravens", 3),           # Rio de Janeiro, Brazil
+    ("Washington Commanders", "Indianapolis Colts", 4),  # London (Tottenham)
+    ("Jacksonville Jaguars", "Philadelphia Eagles", 5),  # London (Tottenham)
+    ("Jacksonville Jaguars", "Houston Texans", 6),       # London (Wembley)
+    ("New Orleans Saints", "Pittsburgh Steelers", 7),    # Paris, France
+    ("Atlanta Falcons", "Cincinnati Bengals", 9),        # Madrid, Spain
+    ("Detroit Lions", "New England Patriots", 10),       # Munich, Germany
+    ("San Francisco 49ers", "Minnesota Vikings", 11),    # Mexico City, Mexico
+}
+
+# Standard NFL conference/division alignment (stable year to year barring
+# realignment). Used for the Results & Trends AFC/NFC and division
+# breakdowns -- NFL has no equivalent of CFB's P4/G6 or conference concept,
+# so this replaces both.
+DIVISION_BY_ABBR = {
+    "BUF": "AFC East", "MIA": "AFC East", "NE": "AFC East", "NYJ": "AFC East",
+    "BAL": "AFC North", "CIN": "AFC North", "CLE": "AFC North", "PIT": "AFC North",
+    "HOU": "AFC South", "IND": "AFC South", "JAX": "AFC South", "TEN": "AFC South",
+    "DEN": "AFC West", "KC": "AFC West", "LV": "AFC West", "LAC": "AFC West",
+    "DAL": "NFC East", "NYG": "NFC East", "PHI": "NFC East", "WAS": "NFC East",
+    "CHI": "NFC North", "DET": "NFC North", "GB": "NFC North", "MIN": "NFC North",
+    "ATL": "NFC South", "CAR": "NFC South", "NO": "NFC South", "TB": "NFC South",
+    "ARI": "NFC West", "LA": "NFC West", "SF": "NFC West", "SEA": "NFC West",
+}
 
 
 def get(url, params=None):
@@ -148,13 +179,17 @@ def build_record(game, ratings_by_abbr, ratings_source, existing_by_id, home_spr
     home_name, away_name = game["home_team"], game["away_team"]
     home_abbr = NAME_TO_ABBR.get(home_name)
     away_abbr = NAME_TO_ABBR.get(away_name)
+    week = week_for(game["commence_time"])
 
     home_rating = ratings_by_abbr.get(home_abbr) if home_abbr else None
     away_rating = ratings_by_abbr.get(away_abbr) if away_abbr else None
 
+    neutral = (home_name, away_name, week) in NEUTRAL_SITE_GAMES
+    home_hfa = 0 if neutral else HFA
+
     model_spread = None
     if home_rating is not None and away_rating is not None:
-        model_spread = round((home_rating - away_rating) + HFA, 1)
+        model_spread = round((home_rating - away_rating) + home_hfa, 1)
 
     edge = pick = pick_margin = None
     if model_spread is not None and home_spread is not None:
@@ -165,16 +200,23 @@ def build_record(game, ratings_by_abbr, ratings_source, existing_by_id, home_spr
             pick = away_name
         pick_margin = abs(edge)
 
+    home_division = DIVISION_BY_ABBR.get(home_abbr)
+    away_division = DIVISION_BY_ABBR.get(away_abbr)
+
     return {
         "gameId": gid,
         "season": SEASON,
-        "week": week_for(game["commence_time"]),
+        "week": week,
         "startDate": game["commence_time"],
-        "neutralSite": False,  # not detectable from this API; see caveats
+        "neutralSite": neutral,
         "homeTeam": home_name,
         "awayTeam": away_name,
         "homeAbbr": home_abbr,
         "awayAbbr": away_abbr,
+        "homeConference": home_division.split(" ")[0] if home_division else None,  # "AFC"/"NFC"
+        "awayConference": away_division.split(" ")[0] if away_division else None,
+        "homeDivision": home_division,   # e.g. "AFC East"
+        "awayDivision": away_division,
         "homeRating": home_rating,
         "awayRating": away_rating,
         "ratingsSource": ratings_source,
@@ -270,35 +312,6 @@ def main():
     all_rows = sorted(existing_by_id.values(), key=lambda r: (r["season"], r["week"], r.get("startDate") or ""))
     with open(DATA_FILE, "w") as f:
         json.dump(all_rows, f, separators=(",", ":"))
-
-    # Ratings history snapshot -- same idea as the CFB script, keyed by the
-    # current week number since we don't have a true "week" from the API
-    # until we compute one from games; use the max week seen this run.
-    if ratings_rows:
-        try:
-            with open(RATINGS_HISTORY_FILE) as f:
-                history = json.load(f)
-        except FileNotFoundError:
-            history = []
-        # Use the actual current date to figure out "this week" -- not the
-        # max week number in the data, since /odds returns the whole
-        # remaining season in one shot, not just the upcoming week.
-        current_week = week_for(datetime.now(timezone.utc).isoformat())
-        history = [h for h in history if h.get("week") != current_week]
-        history.append({
-            "season": SEASON,
-            "week": current_week,
-            "source": ratings_source,
-            "capturedAt": datetime.now(timezone.utc).isoformat(),
-            "teams": [
-                {"rank": r.get("rank"), "team": r.get("team"), "rating": r.get("rating"),
-                 "adjOffEpa": r.get("adjOffEpa"), "adjDefEpa": r.get("adjDefEpa"), "games": r.get("games")}
-                for r in ratings_rows
-            ],
-        })
-        history.sort(key=lambda h: h["week"])
-        with open(RATINGS_HISTORY_FILE, "w") as f:
-            json.dump(history, f, separators=(",", ":"))
 
     graded = [r for r in all_rows if r.get("modelCorrect") is not None]
     correct = sum(1 for r in graded if r["modelCorrect"])
