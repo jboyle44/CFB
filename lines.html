@@ -49,8 +49,14 @@
 
   /* ---------- panel ---------- */
   .panel{border:1px solid var(--line); border-radius:10px; background:var(--panel); margin-bottom:22px; overflow:hidden;}
-  .panel h2{font-size:15px; font-weight:700; margin:0; padding:14px 18px; border-bottom:1px solid var(--line); background:var(--panel-2); display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap;}
+  .panel h2{font-size:15px; font-weight:700; margin:0; padding:14px 18px; border-bottom:1px solid var(--line); background:var(--panel-2); display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap; cursor:pointer; user-select:none;}
+  .panel h2:hover{background:#252830;}
   .panel h2 .count{color:var(--text-faint); font-weight:400; font-size:12.5px;}
+  .panel h2 .htitle{display:flex; align-items:center; gap:10px;}
+  .collapse-arrow{display:inline-block; font-size:11px; color:var(--text-faint); transition:transform 0.15s ease; flex-shrink:0;}
+  .panel.collapsed h2{border-bottom:none;}
+  .panel.collapsed .collapse-arrow{transform:rotate(-90deg);}
+  .panel.collapsed > *:not(h2){display:none;}
   .panel-body{padding:18px;}
   select.week-select{width:auto; min-width:120px;}
 
@@ -157,7 +163,7 @@
   </div>
 
   <div class="panel">
-    <h2><span id="thisWeekTitle">This Week</span><span class="count" id="thisWeekCount"></span></h2>
+    <h2><span class="htitle"><span class="collapse-arrow">▾</span><span id="thisWeekTitle">This Week</span></span><span class="count" id="thisWeekCount"></span></h2>
     <div class="panel-body">
       <div class="table-wrap">
         <table>
@@ -181,7 +187,7 @@
   </div>
 
   <div class="panel">
-    <h2>Weekly Trend <span class="count" id="trendNote"></span></h2>
+    <h2><span class="htitle"><span class="collapse-arrow">▾</span>Weekly Trend</span> <span class="count" id="trendNote"></span></h2>
     <div class="trend-wrap">
       <svg class="trend" id="trendSvg" viewBox="0 0 600 120" preserveAspectRatio="none"></svg>
       <div class="trend-note">Cumulative ATS win % by week (pushes excluded from the denominator).</div>
@@ -189,7 +195,7 @@
   </div>
 
   <div class="panel">
-    <h2>History <span class="count" id="historyCount"></span>
+    <h2><span class="htitle"><span class="collapse-arrow">▾</span>History</span> <span class="count" id="historyCount"></span>
       <select id="weekFilter" class="week-select"><option value="">All weeks</option></select>
     </h2>
     <div class="panel-body">
@@ -261,7 +267,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
   </details>
 
   <div class="panel">
-    <h2>Full Power Ratings <span class="count" id="rankCount"></span></h2>
+    <h2><span class="htitle"><span class="collapse-arrow">▾</span>Full Power Ratings</span> <span class="count" id="rankCount"></span></h2>
     <div class="panel-body">
       <div class="filters">
         <input type="text" id="searchBox" placeholder="Search team…">
@@ -284,7 +290,7 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
   </div>
 
   <div class="panel">
-    <h2>Power Ratings History <span class="count" id="historyRatingsNote"></span>
+    <h2><span class="htitle"><span class="collapse-arrow">▾</span>Power Ratings History</span> <span class="count" id="historyRatingsNote"></span>
       <select id="ratingsWeekSelect" class="week-select"></select>
     </h2>
     <div class="panel-body">
@@ -742,6 +748,18 @@ pick = home team if edge &gt; 0, away team if edge &lt; 0</div>
       });
   }
 
+  function initCollapsiblePanels(){
+    document.querySelectorAll('.panel > h2').forEach(h2 => {
+      h2.addEventListener('click', (e) => {
+        // Don't toggle collapse when the click is on a filter dropdown
+        // living inside the header (History / Power Ratings History).
+        if(e.target.tagName === 'SELECT' || e.target.closest('select')) return;
+        h2.parentElement.classList.toggle('collapsed');
+      });
+    });
+  }
+
+  initCollapsiblePanels();
   initSortHandlers();
   loadLinesData();
   loadMpgRatings();
