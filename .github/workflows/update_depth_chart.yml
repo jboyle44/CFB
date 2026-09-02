@@ -1,0 +1,46 @@
+name: Update Depth Chart Data
+
+on:
+  schedule:
+    # Ourlads and 247Sports both update rolling through the week rather than on
+    # one fixed day, so this runs on the same cadence as the DFI-CFB scripts:
+    # Sunday ~noon ET (16:00 UTC) and Tuesday ~10am ET (14:00 UTC).
+    - cron: '0 16 * * 0'
+    - cron: '0 14 * * 2'
+
+  # Trigger a run manually from the Actions tab any time, without waiting for
+  # the schedule -- useful for testing after changes to the scraper.
+  workflow_dispatch: {}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Run depth chart scraper
+        working-directory: scripts
+        run: python build_depth_chart.py ohio-state ../depth_chart_data.json
+
+      - name: Commit and push if data changed
+        run: |
+          git config user.name "depth-chart-bot"
+          git config user.email "actions@github.com"
+          git add depth_chart_data.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Weekly depth chart update - $(date -u +%Y-%m-%d)"
+            git push
+          fi
