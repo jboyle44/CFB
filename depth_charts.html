@@ -219,11 +219,9 @@ const DEFENSE_ROWS = [
       { pos:"FS", col:3, span:2 },
       { pos:"SS", alts:["BS"], col:5, span:2 }
     ]},
-  { cols:DEFENSE_COLS, id:"row-cbnb", items:[  // row 1.5: CBs + NB, slimmer boxes, between safeties and LBs
-      { pos:"LCB", alts:["FCB"], col:1, span:1 },             // left edge
-      { pos:"NB",  col:2, span:1 },             // adjacent to LCB
-      { pos:"RCB", alts:["BCB"], col:8, span:1 }              // right edge, alone
-    ]},
+  { cols:DEFENSE_COLS, dynamic:"cbnb", id:"row-cbnb" },  // row 1.5: CBs + NB when present; falls back to
+                                                           // centered LCB/RCB (no big empty gap) when a team
+                                                           // doesn't list a separate NB (Rutgers, Alabama, etc.)
   { cols:DEFENSE_COLS, dynamic:"lb", id:"row-lb" },   // row 2: linebackers/hybrids, position codes vary widely by team
   { cols:DEFENSE_COLS, dynamic:"dline" }               // row 3: D-line, position codes vary by team (see DLINE_CANDIDATES)
 ];
@@ -559,13 +557,63 @@ function resolveItemPos(item, groups){
   return item.pos;
 }
 
+function resolveFirst(candidates, groups){
+  for(const c of candidates){
+    if(groups[c] && groups[c].length) return c;
+  }
+  return null;
+}
+
+// Row 1.5: corners + nickel. Most teams list a separate NB, giving the intentional
+// clustered look (LCB+NB slim boxes on the left, RCB alone on the right). Some teams
+// (Rutgers, Alabama, LSU, Oklahoma, Louisville, Pittsburgh, Virginia) don't list a
+// separate NB at all -- for those, the old fixed layout left LCB isolated at the far
+// left with a huge empty gap before RCB at the far right. Falling back to two
+// normal-width centered boxes (same treatment as the safeties row) fixes that.
+function cbnbRowHtml(groups, cols, id){
+  const lcbKey = resolveFirst(["LCB","FCB"], groups);
+  const rcbKey = resolveFirst(["RCB","BCB"], groups);
+  const hasNB = groups["NB"] && groups["NB"].length;
+  const idAttr = id ? ` id="${id}"` : "";
+
+  if(hasNB){
+    const boxesHtml = [
+      lcbKey ? posBoxHtml(lcbKey, groups, 1, 1) : "",
+      posBoxHtml("NB", groups, 2, 1),
+      rcbKey ? posBoxHtml(rcbKey, groups, 8, 1) : ""
+    ].join('');
+    if(!boxesHtml.trim()) return { html: "", clustered: false };
+    return {
+      html: `<div class="formrow"${idAttr} style="grid-template-columns:repeat(${cols}, 1fr);">${boxesHtml}</div>`,
+      clustered: true
+    };
+  }
+
+  const present = [lcbKey, rcbKey].filter(Boolean);
+  if(!present.length) return { html: "", clustered: false };
+  const totalSpan = present.length * 2;
+  const c = Math.max(cols, totalSpan);
+  const start = Math.max(1, Math.floor((c - totalSpan) / 2) + 1);
+  const boxesHtml = present.map((pos, i) => posBoxHtml(pos, groups, start + i * 2, 2)).join('');
+  return {
+    html: `<div class="formrow"${idAttr} style="grid-template-columns:repeat(${c}, 1fr);">${boxesHtml}</div>`,
+    clustered: false
+  };
+}
+
 let lbOverlapSafe = false;
+let cbnbClustered = false;
 
 function rowHtml(row){
   if(row.dynamic === "dline") return dynamicCenteredRowHtml(DLINE_CANDIDATES, groupsRef, row.cols, row.id).html;
   if(row.dynamic === "lb"){
     const result = dynamicCenteredRowHtml(LB_CANDIDATES, groupsRef, row.cols, row.id);
     lbOverlapSafe = result.safeToOverlap;
+    return result.html;
+  }
+  if(row.dynamic === "cbnb"){
+    const result = cbnbRowHtml(groupsRef, row.cols, row.id);
+    cbnbClustered = result.clustered;
     return result.html;
   }
   const { cols, items, id } = row;
@@ -619,13 +667,14 @@ function render(){
   groupsRef = groups;
 
   lbOverlapSafe = false; // reset before rendering; set by rowHtml() if the LB row qualifies
+  cbnbClustered = false; // reset; set by rowHtml() if the CB/NB row used its clustered layout
   let html = "";
   html += sectionHtml("Defense", DATA.defenseScheme || "", DEFENSE_ROWS);
   html += sectionHtml("Offense", DATA.offenseScheme || "", OFFENSE_ROWS);
   html += sectionHtml("Specialists", "", [SPECIAL_ROW]);
 
   container.innerHTML = html;
-  if(lbOverlapSafe) overlapLbRow();
+  if(lbOverlapSafe && cbnbClustered) overlapLbRow();
 }
 
 function overlapLbRow(){
@@ -639,7 +688,7 @@ function overlapLbRow(){
 
 searchBox.addEventListener("input", () => { state.search = searchBox.value.toLowerCase(); render(); });
 loadData(currentTeamKey());
-window.addEventListener('resize', () => { if(lbOverlapSafe) overlapLbRow(); });
+window.addEventListener('resize', () => { if(lbOverlapSafe && cbnbClustered) overlapLbRow(); });
 </script>
 </body>
 </html>
