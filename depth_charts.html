@@ -624,19 +624,22 @@ function centerMikeLB(present){
   return others;
 }
 
-// LB row narrows to exactly fill whichever gap the CB row leaves open. The width
-// is computed from the actual number of slim boxes the CB row used (1 for LCB,
-// 1 for RCB, 1 per nickel hybrid) rather than a hardcoded guess, so it's exactly
-// right whether a team has zero nickel hybrids, one (most teams), or two
-// (Virginia's BAN+SPUR) -- and therefore never overlaps them.
+// LB row is anchored to the EXACT free zone left by the CB row -- starting right
+// after LCB + any nickel boxes (which always cluster on the left), ending right
+// before RCB. This must NOT use symmetric centering (width% + margin:auto):
+// since LCB/nickel take up more space on the left than RCB alone takes on the
+// right, the free zone isn't centered in the row -- centering it that way pulls
+// the LB row left, straight into the nickel box(es). Using the same 8-column
+// grid as the CB/NB row with explicit start/span keeps the two rows pixel-aligned.
 function lbRowHtml(groups, id){
   const present = centerMikeLB(LB_CANDIDATES.filter(p => groups[p] && groups[p].length));
   if(!present.length) return "";
   const nickelCount = NICKEL_CANDIDATES.filter(p => groups[p] && groups[p].length).length;
-  const widthPct = (6 - nickelCount) / 8 * 100; // 8 cols total, minus LCB(1), RCB(1), nickel(N)
+  const startCol = 2 + nickelCount; // right after LCB(col1) + nickel box(es)
+  const span = 7 - startCol + 1;    // up to (not including) RCB at col8
   const boxesHtml = present.map(pos => posBoxHtmlAuto(pos, groups)).join('');
   const idAttr = id ? ` id="${id}"` : "";
-  return `<div class="formrow"${idAttr} style="width:${widthPct}%; margin:0 auto; grid-template-columns:repeat(${present.length}, 1fr);">${boxesHtml}</div>`;
+  return `<div class="formrow"${idAttr} style="grid-template-columns:repeat(8, 1fr);"><div style="grid-column:${startCol} / span ${span}; display:grid; grid-template-columns:repeat(${present.length}, 1fr); gap:8px;">${boxesHtml}</div></div>`;
 }
 
 function rowHtml(row){
