@@ -1,0 +1,44 @@
+name: Update NFL DFI Lines
+
+on:
+  schedule:
+    # Sunday at noon ET (16:00 UTC) and Tuesday 10am ET (14:00 UTC) -- same
+    # cadence as the CFB lines workflow.
+    - cron: '0 16 * * 0'
+    - cron: '0 14 * * 2'
+
+  workflow_dispatch: {}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run weekly NFL DFI update
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python scripts/weekly_lines_update_nfl.py
+
+      - name: Commit and push if data changed
+        run: |
+          git config user.name "brr-bot"
+          git config user.email "actions@github.com"
+          git add lines_data_nfl.json ratings_history_nfl.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "NFL DFI lines update - $(date -u +%Y-%m-%d)"
+            git push
+          fi
