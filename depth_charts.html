@@ -171,14 +171,14 @@ const DEFENSE_ROWS = [
       { pos:"FS", col:3, span:2 },
       { pos:"SS", col:5, span:2 }
     ]},
-  { cols:DEFENSE_COLS, items:[                 // row 1.5: CBs + NB, between safeties and LBs
-      { pos:"LCB", col:1, span:2 },             // left cluster
-      { pos:"NB",  col:3, span:2 },
-      { pos:"RCB", col:7, span:2 }              // right side, alone
+  { cols:DEFENSE_COLS, items:[                 // row 1.5: CBs + NB, slimmer boxes, between safeties and LBs
+      { pos:"LCB", col:1, span:1 },             // left edge
+      { pos:"NB",  col:2, span:1 },             // adjacent to LCB
+      { pos:"RCB", col:8, span:1 }              // right edge, alone
     ]},
-  { cols:DEFENSE_COLS, items:[                 // row 2: linebackers
-      { pos:"WLB", col:3, span:2 },
-      { pos:"MLB", col:5, span:2 }
+  { cols:DEFENSE_COLS, items:[                 // row 2: linebackers, starting about midway of NB and RCB
+      { pos:"WLB", col:4, span:2 },
+      { pos:"MLB", col:6, span:2 }
     ]},
   { cols:DEFENSE_COLS, items:[                 // row 3: D-line, NT/DT split the true centerline
       { pos:"LDE", col:1, span:2 },
