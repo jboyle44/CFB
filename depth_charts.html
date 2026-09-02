@@ -240,8 +240,8 @@ const DEFENSE_ROWS = [
 // LOLB/ROLB can play with a hand in the dirt on passing downs, and putting them at
 // the edges of the D-line row (rather than crowding the LB row) both reflects that
 // and thins out the LB row for teams that list a lot of backer/hybrid codes.
-const DLINE_CANDIDATES = ["LOLB","LDE","DE","NT","LDT","DT","RDT","RDE","ROLB"];
-const LB_CANDIDATES = ["STUD","JACK","SLB","WLB","MAC","MLB","MONEY","CASH","RUSH","STING","HUSKY","WOLF","BUCK","STAR","CHEETAH","CHEET","LEO","BAN","SPUR"];
+const DLINE_CANDIDATES = ["LOLB","LDE","DE","JACK","NT","LDT","DT","RDT","RDE","ROLB"];
+const LB_CANDIDATES = ["STUD","SLB","WLB","MAC","MLB","MONEY","CASH","RUSH","STING","HUSKY","WOLF","BUCK","STAR","CHEETAH","CHEET","LEO","BAN","SPUR"];
 
 function dynamicCenteredRowHtml(candidates, groups, baseCols, id){
   const present = candidates.filter(p => groups[p] && groups[p].length);
@@ -277,11 +277,10 @@ const OFFENSE_ROWS = [
       { pos:"WR-Z", col:13, span:2 }
     ]},
   { cols:OFFENSE_COLS, items:[
-      { pos:"TE-H",  col:1,  span:2 }, // only present for teams with a distinct H-back TE role alongside TE-Y (e.g. Texas)
       { pos:"WR-SL", alts:["WR-F","WR-H"], col:2,  span:2 }, // left: sits in the gap between WR-X and LT
       { pos:"RB",    col:4,  span:2 }, // left: sits in the gap between LT and LG
       { pos:"QB",    col:7,  span:2 }, // directly behind center
-      { pos:"FB",    col:10, span:2 }, // right: mirrors RB -- gap between RG and RT
+      { pos:"FB",    alts:["TE-H"], col:10, span:2 }, // right: mirrors RB -- gap between RG and RT; TE-H shares this slot for teams that use it as a blocking H-back instead of a true FB
       { pos:"TE",    alts:["TE-Y"], col:12, span:2 }  // right: mirrors WR-SL -- gap between RT and WR-Z; TE-Y as alt since some teams only list that
     ]}
 ];
