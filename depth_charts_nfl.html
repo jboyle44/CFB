@@ -253,10 +253,14 @@ const OFFENSE_ROWS = [
 const SPECIAL_ROW = { cols:7, items:["PT","PK","KO","LS","H","PR","KR"].map((pos,i) => ({ pos, col:i+1, span:1 })) };
 
 const TEAM_LIST = [
-  { key: "dal", name: "Dallas Cowboys" },
-  { key: "nyg", name: "New York Giants" },
-  { key: "phi", name: "Philadelphia Eagles" },
-  { key: "was", name: "Washington Commanders" },
+  { key: "dal", name: "Dallas Cowboys", group: "NFC East" },
+  { key: "nyg", name: "New York Giants", group: "NFC East" },
+  { key: "phi", name: "Philadelphia Eagles", group: "NFC East" },
+  { key: "was", name: "Washington Commanders", group: "NFC East" },
+  { key: "buf", name: "Buffalo Bills", group: "AFC East" },
+  { key: "mia", name: "Miami Dolphins", group: "AFC East" },
+  { key: "ne",  name: "New England Patriots", group: "AFC East" },
+  { key: "nyj", name: "New York Jets", group: "AFC East" },
 ];
 const DEFAULT_TEAM = "dal";
 
@@ -265,6 +269,10 @@ const TEAM_COLORS = {
   "nyg": { primary:"#0B2265", secondary:"#A71930" },
   "phi": { primary:"#004C54", secondary:"#A5ACAF" },
   "was": { primary:"#5A1414", secondary:"#FFB612" },
+  "buf": { primary:"#00338D", secondary:"#C60C30" },
+  "mia": { primary:"#008E97", secondary:"#FC4C02" },
+  "ne":  { primary:"#002244", secondary:"#C60C30" },
+  "nyj": { primary:"#125740", secondary:"#FFFFFF" },
 };
 
 function applyTeamColors(teamKey){
@@ -329,7 +337,11 @@ function init(teamKey){
   renderStatus();
   const teamSelect = document.getElementById('teamSelect');
   if(!teamSelect.dataset.populated){
-    teamSelect.innerHTML = TEAM_LIST.map(t => `<option value="${t.key}">${t.name}</option>`).join('');
+    const groups = [...new Set(TEAM_LIST.map(t => t.group))];
+    teamSelect.innerHTML = groups.map(g => `
+      <optgroup label="${g}">
+        ${TEAM_LIST.filter(t => t.group === g).map(t => `<option value="${t.key}">${t.name}</option>`).join('')}
+      </optgroup>`).join('');
     teamSelect.dataset.populated = "1";
     teamSelect.addEventListener('change', () => {
       const url = new URL(window.location);
