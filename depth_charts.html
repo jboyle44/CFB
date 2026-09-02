@@ -10,7 +10,7 @@
     --text:#EDEAE2; --text-dim:#9CA0A8; --text-faint:#6B6F78;
     --gold:#C9A227; --gold-dim:#8C7420;
     --blue:#6FA8DC; --red:#D46A6A; --purple:#B48EAD;
-    --green-bg:rgba(90,160,90,0.14); --red-bg:rgba(212,106,106,0.14);
+    --box-header:#101114;
   }
   *{box-sizing:border-box;}
   .serif-i{font-family:Georgia,'Times New Roman',Times,serif;}
@@ -35,7 +35,6 @@
     -webkit-text-fill-color:transparent !important; color:transparent !important;
     border-color:#E63946 !important;
   }
-  .btn-brr{ color:var(--gold); }
   html,body{margin:0;padding:0;background:var(--bg);}
   body{
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
@@ -43,7 +42,7 @@
     -webkit-font-smoothing:antialiased;
     padding:28px 20px 60px;
   }
-  .wrap{max-width:1040px;margin:0 auto;}
+  .wrap{max-width:1100px;margin:0 auto;}
   .topbar{
     display:flex; justify-content:space-between; align-items:flex-end;
     flex-wrap:wrap; gap:16px;
@@ -51,62 +50,72 @@
     border-bottom:1px solid var(--line);
   }
   .brand{display:flex; align-items:baseline; gap:12px;}
-  .brand h1{font-size:26px; font-weight:800; letter-spacing:-0.02em; margin:0; color:var(--text);}
-  .brand .sub{font-size:13px; color:var(--text-faint); letter-spacing:0.02em;}
+  .brand h1{font-size:24px; font-weight:800; letter-spacing:-0.02em; margin:0; color:var(--text);}
+  .brand .sub{font-size:12.5px; color:var(--text-faint); letter-spacing:0.02em;}
   .nav-row{display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
   select{
     background:var(--panel-2); color:var(--text); border:1px solid var(--line);
     border-radius:6px; padding:8px 10px; font-size:13px; font-weight:600; cursor:pointer;
   }
-  .status-row{display:flex; align-items:center; gap:8px; font-size:12px; color:var(--text-faint); margin-bottom:18px; flex-wrap:wrap;}
+  .status-row{display:flex; align-items:center; gap:8px; font-size:12px; color:var(--text-faint); margin-bottom:16px; flex-wrap:wrap;}
   .dot{width:7px; height:7px; border-radius:50%; background:var(--text-faint); flex-shrink:0;}
   .dot.ok{background:#7FB27F;}
   .dot.warn{background:var(--gold);}
 
-  .filters{display:flex; gap:10px; margin-bottom:16px; flex-wrap:wrap;}
+  .filters{margin-bottom:18px;}
   .filters input[type=text]{
-    flex:1; min-width:180px;
+    width:100%; max-width:320px;
     background:var(--panel-2); color:var(--text); border:1px solid var(--line);
     border-radius:6px; padding:9px 12px; font-size:14px;
   }
   .filters input::placeholder{color:var(--text-faint);}
-  .legend{display:flex; gap:14px; font-size:11.5px; color:var(--text-faint); margin-bottom:16px; flex-wrap:wrap;}
+
+  .legend{display:flex; gap:16px; font-size:11px; color:var(--text-faint); margin-bottom:20px; flex-wrap:wrap;}
   .legend span.sw{display:inline-block; width:9px; height:9px; border-radius:2px; margin-right:5px; vertical-align:middle;}
   .sw.tr{background:var(--purple);}
   .sw.fr{background:var(--blue);}
 
-  .pos-group{margin-bottom:22px; border:1px solid var(--line); border-radius:10px; overflow:hidden;}
-  .pos-group h3{
-    margin:0; padding:12px 16px; background:var(--panel-2); font-size:14px;
-    color:var(--gold); border-bottom:1px solid var(--line); letter-spacing:0.02em;
+  .section-head{
+    display:flex; align-items:center; justify-content:space-between;
+    margin:26px 0 12px; padding-bottom:8px; border-bottom:2px solid var(--line);
   }
-  table{width:100%; border-collapse:collapse; font-size:13.5px;}
-  thead th{
-    text-align:left; font-size:10.5px; font-weight:600; color:var(--text-faint);
-    padding:9px 12px; background:var(--panel); border-bottom:1px solid var(--line);
-    white-space:nowrap; text-transform:uppercase; letter-spacing:0.03em;
+  .section-head h2{font-size:19px; margin:0; letter-spacing:0.02em;}
+  .section-head .scheme{font-size:12px; color:var(--text-faint); font-weight:600;}
+
+  .formrow{display:flex; gap:10px; flex-wrap:wrap; justify-content:center; margin-bottom:12px;}
+
+  .posbox{
+    background:var(--panel); border:1px solid var(--line); border-radius:7px;
+    width:150px; overflow:hidden; flex-shrink:0;
   }
-  thead th.num{text-align:right;}
-  tbody td{padding:9px 12px; border-bottom:1px solid var(--line); vertical-align:middle; background:var(--panel);}
-  tbody tr:last-child td{border-bottom:none;}
-  tbody tr:hover td{background:var(--panel-2);}
-  td.num{text-align:right; font-variant-numeric:tabular-nums; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:13px;}
-  td.player{font-weight:600;}
-  td.player a{color:var(--text); text-decoration:none;}
-  td.player a:hover{color:var(--gold);}
+  .posbox .hd{
+    background:var(--box-header); color:var(--gold); text-align:center;
+    font-weight:800; font-size:12.5px; letter-spacing:0.03em; padding:7px 4px;
+    border-bottom:1px solid var(--line);
+  }
+  .slot{padding:7px 9px; border-bottom:1px solid var(--line);}
+  .slot:last-child{border-bottom:none;}
+  .slot.starter{background:rgba(201,162,39,0.06);}
+  .slot .l1{font-size:13px; font-weight:700; display:flex; align-items:center; gap:5px; flex-wrap:wrap;}
+  .slot.starter .l1{font-size:13.5px;}
+  .slot:not(.starter) .l1{font-weight:600; color:var(--text-dim); font-size:12.5px;}
+  .slot .num{color:var(--text-faint); font-weight:600; font-variant-numeric:tabular-nums;}
+  .slot .l2{font-size:10.5px; color:var(--text-faint); margin-top:2px; line-height:1.5;}
+  .slot .l3{font-size:10.5px; color:var(--text-faint); margin-top:1px; line-height:1.5;}
+  .slot .pff{color:var(--text-faint); font-style:italic;}
   .badge{
-    display:inline-block; font-size:9.5px; font-weight:700; padding:2px 6px;
-    border-radius:4px; margin-left:6px; vertical-align:middle;
+    display:inline-block; font-size:8.5px; font-weight:800; padding:1px 5px;
+    border-radius:3px; vertical-align:middle;
   }
-  .badge.tr{background:rgba(180,142,173,0.18); color:var(--purple);}
-  .badge.fr{background:rgba(111,168,220,0.18); color:var(--blue);}
-  .rank-slot{color:var(--text-faint); font-size:11px;}
-  .pending{color:var(--text-faint); font-style:italic; font-size:12px;}
+  .badge.tr{background:rgba(180,142,173,0.2); color:var(--purple);}
+  .badge.fr{background:rgba(111,168,220,0.2); color:var(--blue);}
   .empty{padding:40px; text-align:center; color:var(--text-faint);}
 
   @media (max-width:640px){
-    thead th{padding:7px 6px; font-size:9.5px;}
-    tbody td{padding:7px 6px; font-size:12.5px;}
+    .posbox{width:104px;}
+    .slot{padding:6px 6px;}
+    .slot .l1{font-size:11.5px;}
+    .slot .l2, .slot .l3{font-size:9px;}
   }
 </style>
 </head>
@@ -116,11 +125,11 @@
   <div class="topbar">
     <div class="brand">
       <h1>CFB Depth <span class="dc-accent">Charts</span></h1>
-      <span class="sub">Ourlads depth chart &nbsp;·&nbsp; 247Sports recruiting &amp; transfer ranks &nbsp;·&nbsp; PFF grades (coming soon)</span>
+      <span class="sub">Ourlads depth chart &nbsp;·&nbsp; 247Sports recruiting/transfer &nbsp;·&nbsp; PFF grade (coming soon)</span>
     </div>
     <div class="nav-row">
       <select id="teamSelect"></select>
-      <a href="./index.html" class="nav-btn btn-brr">BRR</a>
+      <a href="./index.html" class="nav-btn" style="color:var(--gold);">BRR</a>
       <a href="./lines.html" class="nav-btn btn-cfb">DF<span class="serif-i">I</span>-CFB</a>
       <a href="./lines_nfl.html" class="nav-btn btn-nfl">DF<span class="serif-i">I</span>-NFL</a>
     </div>
@@ -147,9 +156,18 @@
 
 <script>
 let DATA = { team: null, rows: [] };
-const POS_ORDER = ["WR-X","WR-Z","WR-SL","LT","LG","C","RG","RT","TE","QB","RB",
-  "LDE","NT","DT","RDE","WLB","MLB","LCB","SS","FS","RCB","NB",
-  "PT","PK","KO","LS","H","PR","KR"];
+
+// Formation layout: rows of position codes, top-to-bottom mirrors distance from LOS
+const DEFENSE_ROWS = [
+  ["LCB","FS","SS","RCB","NB"],
+  ["WLB","MLB"],
+  ["LDE","NT","DT","RDE"]
+];
+const OFFENSE_ROWS = [
+  ["WR-X","LT","LG","C","RG","RT","WR-Z"],
+  ["WR-SL","RB","QB","TE"]
+];
+const SPECIAL_ROW = ["PT","PK","KO","LS","H","PR","KR"];
 
 async function loadData(){
   const res = await fetch('depth_chart_data.json?v=' + Date.now());
@@ -187,22 +205,48 @@ const searchBox = document.getElementById("searchBox");
 
 function init(){
   renderStatus();
+  const teamSelect = document.getElementById('teamSelect');
+  teamSelect.innerHTML = `<option>${DATA.team || 'Team'}</option>`;
   searchBox.addEventListener("input", () => { state.search = searchBox.value.toLowerCase(); render(); });
   render();
 }
 
-function rankCell(row){
-  if(row.isTransfer){
-    if(row.transferRank != null){
-      return `<div>Transfer <span class="num" style="font-weight:700;">#${row.transferRank}</span> <span class="rank-slot">(POS #${row.transferPosRank ?? '—'})</span></div>
-              <div class="rank-slot">HS: #${row.hsNationalRank ?? '—'} natl</div>`;
-    }
-    return `<span class="pending">transfer rank pending update</span>`;
+function slotHtml(r, isStarter){
+  const badge = r.isTransfer ? '<span class="badge tr">TR</span>'
+              : (r.class && r.class.toUpperCase() === 'FR') ? '<span class="badge fr">FR</span>' : '';
+  let rankLine;
+  if(r.isTransfer){
+    rankLine = r.transferRank != null
+      ? `247: ${r.compositeScore ?? '—'} · Transfer #${r.transferRank} (POS #${r.transferPosRank ?? '—'})`
+      : `247: ${r.compositeScore ?? '—'} · transfer rank pending`;
+  } else {
+    rankLine = r.hsNationalRank != null
+      ? `247: ${r.compositeScore ?? '—'} · #${r.hsNationalRank} natl (POS #${r.hsPositionRank ?? '—'})`
+      : `247: ${r.compositeScore ?? '—'}`;
   }
-  if(row.hsNationalRank != null){
-    return `<div>#${row.hsNationalRank} natl <span class="rank-slot">(POS #${row.hsPositionRank ?? '—'}, ${row.hsStateRank ? '#'+row.hsStateRank+' state' : ''})</span></div>`;
-  }
-  return `<span class="rank-slot">—</span>`;
+  return `
+    <div class="slot ${isStarter ? 'starter' : ''}">
+      <div class="l1"><span class="num">${r.jersey || ''}</span> ${r.player}${badge}</div>
+      <div class="l2">${r.class || ''} · ${rankLine}</div>
+      <div class="l3 pff">PFF: —</div>
+    </div>`;
+}
+
+function posBoxHtml(pos, groups){
+  const list = groups[pos];
+  if(!list || !list.length) return `<div class="posbox"><div class="hd">${pos}</div><div class="slot"><div class="l2">no data</div></div></div>`;
+  const slots = list.map((r,i) => slotHtml(r, i===0)).join('');
+  return `<div class="posbox"><div class="hd">${pos}</div>${slots}</div>`;
+}
+
+function sectionHtml(title, scheme, rows, groups){
+  const rowsHtml = rows.map(posList => {
+    const boxes = posList.map(pos => posBoxHtml(pos, groups)).join('');
+    return `<div class="formrow">${boxes}</div>`;
+  }).join('');
+  return `
+    <div class="section-head"><h2>${title}</h2><span class="scheme">${scheme}</span></div>
+    ${rowsHtml}`;
 }
 
 function render(){
@@ -221,47 +265,16 @@ function render(){
   const groups = {};
   rows.forEach(r => { (groups[r.position] = groups[r.position] || []).push(r); });
 
-  const orderedPositions = Object.keys(groups).sort((a,b) => {
-    const ai = POS_ORDER.indexOf(a), bi = POS_ORDER.indexOf(b);
-    return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
-  });
+  let html = "";
+  html += sectionHtml("Defense", "4-2-5", DEFENSE_ROWS, groups);
+  html += sectionHtml("Offense", "Spread Option", OFFENSE_ROWS, groups);
 
-  container.innerHTML = orderedPositions.map(pos => {
-    const list = groups[pos];
-    const rowsHtml = list.map(r => {
-      const badge = r.isTransfer ? '<span class="badge tr">TR</span>'
-                  : r.class && r.class.toUpperCase() === 'FR' ? '<span class="badge fr">FR</span>' : '';
-      const nameCell = r.profileUrl
-        ? `<a href="${r.profileUrl}" target="_blank" rel="noopener">${r.player}</a>`
-        : r.player;
-      return `
-        <tr>
-          <td class="num">${r.jersey || ''}</td>
-          <td class="player">${nameCell}${badge}</td>
-          <td>${r.class || ''}</td>
-          <td class="num">${r.compositeScore ?? '—'}</td>
-          <td>${rankCell(r)}</td>
-          <td class="pending">pending PFF export</td>
-        </tr>`;
-    }).join('');
-    return `
-      <div class="pos-group">
-        <h3>${pos}</h3>
-        <table>
-          <thead>
-            <tr>
-              <th class="num">No.</th>
-              <th>Player</th>
-              <th>Class</th>
-              <th class="num">247 Composite</th>
-              <th>Recruiting / Transfer Rank</th>
-              <th>PFF Grade</th>
-            </tr>
-          </thead>
-          <tbody>${rowsHtml}</tbody>
-        </table>
-      </div>`;
-  }).join('');
+  const specialGroups = SPECIAL_ROW.filter(p => groups[p] && groups[p].length);
+  if(specialGroups.length){
+    html += sectionHtml("Specialists", "", [specialGroups], groups);
+  }
+
+  container.innerHTML = html;
 }
 
 loadData();
