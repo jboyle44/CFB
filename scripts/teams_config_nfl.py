@@ -12,4 +12,12 @@ NFL_TEAMS = {
     "mia": {"display_name": "Miami Dolphins", "ourlads_abbr": "MIA"},
     "ne":  {"display_name": "New England Patriots", "ourlads_abbr": "NE"},
     "nyj": {"display_name": "New York Jets", "ourlads_abbr": "NYJ"},
+    "bal": {"display_name": "Baltimore Ravens", "ourlads_abbr": "BAL"},
+    "cin": {"display_name": "Cincinnati Bengals", "ourlads_abbr": "CIN"},
+    "cle": {"display_name": "Cleveland Browns", "ourlads_abbr": "CLE"},
+    "pit": {"display_name": "Pittsburgh Steelers", "ourlads_abbr": "PIT"},
+    "chi": {"display_name": "Chicago Bears", "ourlads_abbr": "CHI"},
+    "det": {"display_name": "Detroit Lions", "ourlads_abbr": "DET"},
+    "gb":  {"display_name": "Green Bay Packers", "ourlads_abbr": "GB"},
+    "min": {"display_name": "Minnesota Vikings", "ourlads_abbr": "MIN"},
 }
