@@ -23,6 +23,19 @@ def normalize_name(name):
     return name.lower().strip()
 
 
+def load_previous_247_data(output_path):
+    """If a previous output file exists, index it by normalized player name so we can
+    carry forward composite/transfer/HS data on runs where 247Sports blocks the request."""
+    if not output_path:
+        return {}
+    try:
+        with open(output_path) as f:
+            prev = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+    return {normalize_name(r["player"]): r for r in prev.get("rows", [])}
+
+
 def build(team_key, output_path=None, fetch_detail_for_all=False):
     if team_key not in TEAMS:
         raise ValueError(f"Unknown team key '{team_key}'. Add it to teams_config.py first.")
@@ -33,9 +46,15 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
     print(f"  {len(depth_chart)} depth chart rows", file=sys.stderr)
 
     print(f"Scraping 247Sports roster for {team['display_name']}...", file=sys.stderr)
-    roster = scrape_247_roster(team["sports247_slug"])
-    print(f"  {len(roster)} roster entries", file=sys.stderr)
+    try:
+        roster = scrape_247_roster(team["sports247_slug"])
+        print(f"  {len(roster)} roster entries", file=sys.stderr)
+    except Exception as e:
+        print(f"  247Sports roster scrape failed ({e}); falling back to previously-saved "
+              f"composite/transfer data for this run.", file=sys.stderr)
+        roster = {}
     roster_by_norm_name = {normalize_name(k): v for k, v in roster.items()}
+    previous_by_norm_name = load_previous_247_data(output_path)
 
     output_rows = []
     profile_cache = {}  # avoid re-fetching the same profile twice
@@ -44,6 +63,7 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
     for i, row in enumerate(depth_chart, 1):
         norm = normalize_name(row["player"])
         roster_match = roster_by_norm_name.get(norm)
+        prev_match = previous_by_norm_name.get(norm)
 
         out_row = {
             "position": row["position"],
@@ -51,8 +71,8 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
             "jersey": row["jersey"],
             "class": row["class"],
             "isTransfer": row["isTransfer"],
-            "compositeScore": roster_match["compositeScore"] if roster_match else None,
-            "profileUrl": roster_match["profileUrl"] if roster_match else None,
+            "compositeScore": None,
+            "profileUrl": None,
             "transferRank": None,
             "transferPosRank": None,
             "hsNationalRank": None,
@@ -61,7 +81,16 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
             "pffGrade": None,  # populated separately from a manual PFF Elite export
         }
 
-        should_fetch = out_row["profileUrl"] and (row["isTransfer"] or fetch_detail_for_all)
+        if roster_match:
+            out_row["compositeScore"] = roster_match["compositeScore"]
+            out_row["profileUrl"] = roster_match["profileUrl"]
+        elif prev_match:
+            # 247 scrape failed/skipped this run -- carry forward last known values
+            for k in ("compositeScore", "profileUrl", "transferRank", "transferPosRank",
+                      "hsNationalRank", "hsPositionRank", "hsStateRank", "pffGrade"):
+                out_row[k] = prev_match.get(k)
+
+        should_fetch = roster_match and out_row["profileUrl"] and (row["isTransfer"] or fetch_detail_for_all)
         if should_fetch:
             url = out_row["profileUrl"]
             if url not in profile_cache:
