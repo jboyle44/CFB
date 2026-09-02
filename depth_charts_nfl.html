@@ -223,10 +223,10 @@ const DEFENSE_ROWS = [
       { pos:"FS", col:3, span:2 },
       { pos:"SS", col:5, span:2 }
     ]},
-  { cols:DEFENSE_COLS, id:"row-cbnb", items:[  // row 1.5: CBs + NB, slimmer boxes, between safeties and LBs
+  { cols:DEFENSE_COLS, id:"row-cbnb", items:[  // row 1.5: CBs + NB; RCB gets standard width to balance LCB+NB's combined weight
       { pos:"LCB", col:1, span:1 },
       { pos:"NB",  col:2, span:1 },
-      { pos:"RCB", col:8, span:1 }
+      { pos:"RCB", col:7, span:2 }
     ]},
   { cols:DEFENSE_COLS, dynamic:"lb", id:"row-lb" },  // row 2: linebackers
   { cols:DEFENSE_COLS, dynamic:"dline" }              // row 3: D-line
@@ -476,7 +476,7 @@ function lbRowHtml(groups, id){
   if(!present.length) return "";
   const hasNB = groups["NB"] && groups["NB"].length;
   const zoneStart = hasNB ? 3 : 2;
-  const zoneWidth = 7 - zoneStart + 1;
+  const zoneWidth = 6 - zoneStart + 1;
   const standardSpan = present.length * 2;
   const perBoxSpan = standardSpan <= zoneWidth ? 2 : Math.max(1, Math.floor(zoneWidth / present.length));
   const actualSpan = perBoxSpan * present.length;
