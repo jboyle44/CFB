@@ -494,6 +494,55 @@ stars = 1  otherwise</div>
   const MPG_LIVE_URL = 'https://mpg000f.github.io/cbb_power_rating/data/nfl/ratings_2026.json';
   const LINES_DATA_URL = './lines_data_nfl.json';
 
+const TEAM_COLORS = {
+  'Dallas Cowboys': { primary:'#041E42', secondary:'#869397' },
+  'New York Giants': { primary:'#0B2265', secondary:'#A71930' },
+  'Philadelphia Eagles': { primary:'#004C54', secondary:'#A5ACAF' },
+  'Washington Commanders': { primary:'#5A1414', secondary:'#FFB612' },
+  'Buffalo Bills': { primary:'#00338D', secondary:'#C60C30' },
+  'Miami Dolphins': { primary:'#008E97', secondary:'#FC4C02' },
+  'New England Patriots': { primary:'#002244', secondary:'#C60C30' },
+  'New York Jets': { primary:'#125740', secondary:'#FFFFFF' },
+  'Baltimore Ravens': { primary:'#241773', secondary:'#000000' },
+  'Cincinnati Bengals': { primary:'#FB4F14', secondary:'#000000' },
+  'Cleveland Browns': { primary:'#311D00', secondary:'#FF3C00' },
+  'Pittsburgh Steelers': { primary:'#000000', secondary:'#FFB612' },
+  'Chicago Bears': { primary:'#0B162A', secondary:'#C83803' },
+  'Detroit Lions': { primary:'#0076B6', secondary:'#B0B7BC' },
+  'Green Bay Packers': { primary:'#203731', secondary:'#FFB612' },
+  'Minnesota Vikings': { primary:'#4F2683', secondary:'#FFC62F' },
+  'Arizona Cardinals': { primary:'#97233F', secondary:'#000000' },
+  'Atlanta Falcons': { primary:'#A71930', secondary:'#000000' },
+  'Carolina Panthers': { primary:'#0085CA', secondary:'#000000' },
+  'Denver Broncos': { primary:'#FB4F14', secondary:'#002244' },
+  'Houston Texans': { primary:'#03202F', secondary:'#A71930' },
+  'Indianapolis Colts': { primary:'#002C5F', secondary:'#FFFFFF' },
+  'Jacksonville Jaguars': { primary:'#006778', secondary:'#000000' },
+  'Kansas City Chiefs': { primary:'#E31837', secondary:'#FFB81C' },
+  'Las Vegas Raiders': { primary:'#000000', secondary:'#A5ACAF' },
+  'Los Angeles Chargers': { primary:'#0080C6', secondary:'#FFC20E' },
+  'Los Angeles Rams': { primary:'#003594', secondary:'#FFA300' },
+  'New Orleans Saints': { primary:'#000000', secondary:'#D3BC8D' },
+  'San Francisco 49ers': { primary:'#AA0000', secondary:'#B3995D' },
+  'Seattle Seahawks': { primary:'#002244', secondary:'#69BE28' },
+  'Tampa Bay Buccaneers': { primary:'#D50A0A', secondary:'#34302B' },
+  'Tennessee Titans': { primary:'#0C2340', secondary:'#C60C30' },
+};
+
+function luminance(hex){
+  const rgb = hex.replace('#','').match(/.{2}/g).map(x => parseInt(x,16)/255);
+  const [r,g,b] = rgb.map(c => c <= 0.03928 ? c/12.92 : Math.pow((c+0.055)/1.055, 2.4));
+  return 0.2126*r + 0.7152*g + 0.0722*b;
+}
+
+function teamSpan(name){
+  const c = TEAM_COLORS[name];
+  if(!c) return name;
+  const color = luminance(c.primary) > luminance(c.secondary) ? c.primary : c.secondary;
+  return `<span style="color:${color}; font-weight:700;">${name}</span>`;
+}
+
+
   let games = [];       // rows from lines_data.json
   let ratings = [];      // live MPG ratings, for the manual tool
   let thisWeekNumber = null;   // the week currently shown in the "This Week" table, set by renderThisWeek()
@@ -677,7 +726,7 @@ stars = 1  otherwise</div>
     body.innerHTML = rows.map(g => `
       <tr>
         <td class="num">${fmtDateTime(g.startDate)}</td>
-        <td class="matchup">${g.awayTeam} @ ${g.neutralSite ? '(N) ' : ''}${g.homeTeam}</td>
+        <td class="matchup">${teamSpan(g.awayTeam)} @ ${g.neutralSite ? '(N) ' : ''}${teamSpan(g.homeTeam)}</td>
         <td class="num">${fmtSpreadTeam(g, g.modelSpread)}</td>
         <td class="num">${fmtSpreadTeam(g, g.vegasSpread)}</td>
         <td class="num">${edgeCell(g)}</td>
@@ -763,7 +812,7 @@ stars = 1  otherwise</div>
       <tr>
         <td class="num">${g.week}</td>
         <td class="num">${fmtDateTime(g.startDate)}</td>
-        <td class="matchup">${g.awayTeam} @ ${g.neutralSite ? '(N) ' : ''}${g.homeTeam}</td>
+        <td class="matchup">${teamSpan(g.awayTeam)} @ ${g.neutralSite ? '(N) ' : ''}${teamSpan(g.homeTeam)}</td>
         <td class="num">${fmtSpreadTeam(g, g.modelSpread)}</td>
         <td class="num">${fmtSpreadTeam(g, g.vegasSpread)}</td>
         <td class="num">${edgeCell(g)}</td>
@@ -922,7 +971,7 @@ stars = 1  otherwise</div>
         <tr>
           <td class="num">${g.week}</td>
           <td class="num">${fmtDateTime(g.startDate)}</td>
-          <td class="matchup">${g.awayTeam} @ ${g.neutralSite ? '(N) ' : ''}${g.homeTeam}</td>
+          <td class="matchup">${teamSpan(g.awayTeam)} @ ${g.neutralSite ? '(N) ' : ''}${teamSpan(g.homeTeam)}</td>
           <td class="num">${fmtSpreadTeam(g, g.modelSpread)}</td>
           <td class="num">${fmtSpreadTeam(g, g.vegasSpread)}</td>
           <td class="num">${edgeCell(g)}</td>
@@ -1061,7 +1110,7 @@ stars = 1  otherwise</div>
     body.innerHTML = rows.map(r => `
       <tr>
         <td class="num">${r.rank}</td>
-        <td class="matchup">${r.team}</td>
+        <td class="matchup">${teamSpan(r.team)}</td>
         <td class="num">${r.rating > 0 ? '+' : ''}${r.rating.toFixed(1)}</td>
         <td class="num">${r.adjOffEpa != null ? r.adjOffEpa.toFixed(3) : '—'}</td>
         <td class="num">${r.adjDefEpa != null ? r.adjDefEpa.toFixed(3) : '—'}</td>
@@ -1160,7 +1209,7 @@ stars = 1  otherwise</div>
     body.innerHTML = rows.map(r => `
       <tr>
         <td class="num">${r.rank ?? '—'}</td>
-        <td class="matchup">${r.team}</td>
+        <td class="matchup">${teamSpan(r.team)}</td>
         <td class="num">${r.rating > 0 ? '+' : ''}${(r.rating ?? 0).toFixed(1)}</td>
         <td class="num">${r.adjOffEpa != null ? r.adjOffEpa.toFixed(3) : '—'}</td>
         <td class="num">${r.adjDefEpa != null ? r.adjDefEpa.toFixed(3) : '—'}</td>
