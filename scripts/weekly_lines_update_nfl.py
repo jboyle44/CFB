@@ -280,7 +280,10 @@ def main():
                 history = json.load(f)
         except FileNotFoundError:
             history = []
-        current_week = max([r["week"] for r in all_rows if r["week"] > 0], default=1)
+        # Use the actual current date to figure out "this week" -- not the
+        # max week number in the data, since /odds returns the whole
+        # remaining season in one shot, not just the upcoming week.
+        current_week = week_for(datetime.now(timezone.utc).isoformat())
         history = [h for h in history if h.get("week") != current_week]
         history.append({
             "season": SEASON,
