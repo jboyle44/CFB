@@ -495,6 +495,29 @@ stars = 1  otherwise</div>
   let games = [];       // rows from lines_data.json
   let ratings = [];      // live MPG ratings, for the manual tool
   let thisWeekNumber = null;   // the week currently shown in the "This Week" table, set by renderThisWeek()
+  let gamesGeneratedAt = null;   // when the games/lines data was last refreshed
+  let ratingsLastUpdated = null; // when MPG's power ratings were last refreshed
+  const REFRESH_SCHEDULE_TEXT = 'refreshes Sun ~12pm ET & Tue ~10am ET';
+
+  function fmtTimestamp(iso){
+    if(!iso) return null;
+    const d = new Date(iso);
+    if(isNaN(d.getTime())) return null;
+    const datePart = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    const timePart = d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+    return `${datePart}, ${timePart}`;
+  }
+
+  function renderStatusLine(){
+    if(!games.length) return; // empty/error states set their own message directly
+    const seasons = [...new Set(games.map(g => g.season))];
+    const parts = [`${games.length} games tracked · ${seasons.join(', ')} season`, REFRESH_SCHEDULE_TEXT];
+    const gamesTs = fmtTimestamp(gamesGeneratedAt);
+    if(gamesTs) parts.push(`lines/scores as of ${gamesTs}`);
+    const ratingsTs = fmtTimestamp(ratingsLastUpdated);
+    if(ratingsTs) parts.push(`power ratings as of ${ratingsTs}`);
+    document.getElementById('statusText').textContent = parts.join(' · ');
+  }
 
   const sortState = {
     thisWeek: { key: 'datetime', dir: 1 },   // chronological by default
@@ -973,16 +996,22 @@ stars = 1  otherwise</div>
     fetch(LINES_DATA_URL)
       .then(r => { if(!r.ok) throw new Error('no data file yet'); return r.json(); })
       .then(data => {
-        games = data.filter(g => !g.week || true); // CFB only file already
+        // Current format: {generatedAt, games: [...]}. Falls back to the
+        // old flat-array format in case a stale cached copy is ever seen.
+        if(Array.isArray(data)){
+          games = data;
+          gamesGeneratedAt = null;
+        } else {
+          games = data.games || [];
+          gamesGeneratedAt = data.generatedAt || null;
+        }
         const dot = document.getElementById('statusDot');
-        const statusText = document.getElementById('statusText');
         if(games.length){
           dot.className = 'dot ok';
-          const seasons = [...new Set(games.map(g => g.season))];
-          statusText.textContent = `${games.length} games tracked · ${seasons.join(', ')} season · updates every Tuesday`;
+          renderStatusLine();
         } else {
           dot.className = 'dot warn';
-          statusText.textContent = 'Data file loaded but empty — first weekly run hasn\'t populated it yet.';
+          document.getElementById('statusText').textContent = 'Data file loaded but empty — first weekly run hasn\'t populated it yet.';
         }
         renderThisWeek();
         renderStats();
@@ -1095,6 +1124,8 @@ stars = 1  otherwise</div>
       .then(r => { if(!r.ok) throw new Error('bad response'); return r.json(); })
       .then(data => {
         ratings = data.ratings.slice().sort((a,b) => a.rank - b.rank);
+        ratingsLastUpdated = data.lastUpdated || null;
+        renderStatusLine();
         renderTeamList();
         renderRankTable('');
       })
