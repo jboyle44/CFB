@@ -1,0 +1,20 @@
+=== dal ===
+Scraping Ourlads depth chart for Dallas Cowboys...
+  60 depth chart rows
+Wrote ../depth_chart_data_nfl/dal.json
+exit_code=0
+=== nyg ===
+Scraping Ourlads depth chart for New York Giants...
+  57 depth chart rows
+Wrote ../depth_chart_data_nfl/nyg.json
+exit_code=0
+=== phi ===
+Scraping Ourlads depth chart for Philadelphia Eagles...
+  60 depth chart rows
+Wrote ../depth_chart_data_nfl/phi.json
+exit_code=0
+=== was ===
+Scraping Ourlads depth chart for Washington Commanders...
+  62 depth chart rows
+Wrote ../depth_chart_data_nfl/was.json
+exit_code=0
