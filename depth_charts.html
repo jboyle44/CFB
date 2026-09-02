@@ -242,16 +242,24 @@ const LB_CANDIDATES = ["STUD","JACK","SLB","WLB","MAC","MLB","MONEY","CASH","RUS
 
 function dynamicCenteredRowHtml(candidates, groups, baseCols, id){
   const present = candidates.filter(p => groups[p] && groups[p].length);
-  if(!present.length) return "";
+  if(!present.length) return { html: "", safeToOverlap: false };
   const totalSpan = present.length * 2;
   // widen the row's own column count if there are more items than the base grid
   // fits, so a team with an unusually large group (e.g. 5 LB codes) never overflows
   // or gets squeezed -- each box just gets proportionally narrower instead.
   const cols = Math.max(baseCols, totalSpan);
   const start = Math.max(1, Math.floor((cols - totalSpan) / 2) + 1);
+  const end = start + totalSpan - 1;
   const boxesHtml = present.map((pos, i) => posBoxHtml(pos, groups, start + i * 2, 2)).join('');
   const idAttr = id ? ` id="${id}"` : "";
-  return `<div class="formrow"${idAttr} style="grid-template-columns:repeat(${cols}, 1fr);">${boxesHtml}</div>`;
+  const html = `<div class="formrow"${idAttr} style="grid-template-columns:repeat(${cols}, 1fr);">${boxesHtml}</div>`;
+  // The compact vertical overlap onto the CB/NB row above is only safe when this
+  // row's columns land entirely in the middle gap (not touching LCB/NB at columns
+  // 1-2 or RCB at column 8) -- otherwise the boxes would collide and hide text.
+  // Most teams (2-item WLB/MLB) fit safely; a few unusually large groups don't,
+  // and just get normal (slightly taller) spacing instead.
+  const safeToOverlap = (cols === baseCols) && start > 2 && end < baseCols;
+  return { html, safeToOverlap };
 }
 
 const OFFENSE_COLS = 14; // unit width = 2 columns
@@ -411,9 +419,15 @@ function resolveItemPos(item, groups){
   return item.pos;
 }
 
+let lbOverlapSafe = false;
+
 function rowHtml(row){
-  if(row.dynamic === "dline") return dynamicCenteredRowHtml(DLINE_CANDIDATES, groupsRef, row.cols, row.id);
-  if(row.dynamic === "lb") return dynamicCenteredRowHtml(LB_CANDIDATES, groupsRef, row.cols, row.id);
+  if(row.dynamic === "dline") return dynamicCenteredRowHtml(DLINE_CANDIDATES, groupsRef, row.cols, row.id).html;
+  if(row.dynamic === "lb"){
+    const result = dynamicCenteredRowHtml(LB_CANDIDATES, groupsRef, row.cols, row.id);
+    lbOverlapSafe = result.safeToOverlap;
+    return result.html;
+  }
   const { cols, items, id } = row;
   const boxesHtml = items.map(it => posBoxHtml(resolveItemPos(it, groupsRef), groupsRef, it.col, it.span)).join('');
   if(!boxesHtml.trim()) return "";
@@ -464,16 +478,28 @@ function render(){
   rows.forEach(r => { (groups[r.position] = groups[r.position] || []).push(r); });
   groupsRef = groups;
 
+  lbOverlapSafe = false; // reset before rendering; set by rowHtml() if the LB row qualifies
   let html = "";
   html += sectionHtml("Defense", DATA.defenseScheme || "", DEFENSE_ROWS);
   html += sectionHtml("Offense", DATA.offenseScheme || "", OFFENSE_ROWS);
   html += sectionHtml("Specialists", "", [SPECIAL_ROW]);
 
   container.innerHTML = html;
+  if(lbOverlapSafe) overlapLbRow();
+}
+
+function overlapLbRow(){
+  const cbnbRow = document.getElementById('row-cbnb');
+  const lbRow = document.getElementById('row-lb');
+  if(!cbnbRow || !lbRow) return;
+  const h = cbnbRow.getBoundingClientRect().height;
+  // pull LB row up so its top starts at the vertical midpoint of the CB/NB row
+  lbRow.style.marginTop = `-${(h / 2)}px`;
 }
 
 searchBox.addEventListener("input", () => { state.search = searchBox.value.toLowerCase(); render(); });
 loadData(currentTeamKey());
+window.addEventListener('resize', () => { if(lbOverlapSafe) overlapLbRow(); });
 </script>
 </body>
 </html>
