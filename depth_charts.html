@@ -217,12 +217,12 @@ const DEFENSE_COLS = 8; // unit width = 2 columns
 const DEFENSE_ROWS = [
   { cols:DEFENSE_COLS, items:[                 // row 1: safeties
       { pos:"FS", col:3, span:2 },
-      { pos:"SS", col:5, span:2 }
+      { pos:"SS", alts:["BS"], col:5, span:2 }
     ]},
   { cols:DEFENSE_COLS, id:"row-cbnb", items:[  // row 1.5: CBs + NB, slimmer boxes, between safeties and LBs
-      { pos:"LCB", col:1, span:1 },             // left edge
+      { pos:"LCB", alts:["FCB"], col:1, span:1 },             // left edge
       { pos:"NB",  col:2, span:1 },             // adjacent to LCB
-      { pos:"RCB", col:8, span:1 }              // right edge, alone
+      { pos:"RCB", alts:["BCB"], col:8, span:1 }              // right edge, alone
     ]},
   { cols:DEFENSE_COLS, dynamic:"lb", id:"row-lb" },   // row 2: linebackers/hybrids, position codes vary widely by team
   { cols:DEFENSE_COLS, dynamic:"dline" }               // row 3: D-line, position codes vary by team (see DLINE_CANDIDATES)
@@ -240,7 +240,7 @@ const DEFENSE_ROWS = [
 // the edges of the D-line row (rather than crowding the LB row) both reflects that
 // and thins out the LB row for teams that list a lot of backer/hybrid codes.
 const DLINE_CANDIDATES = ["LOLB","LDE","DE","NT","LDT","DT","RDT","RDE","ROLB"];
-const LB_CANDIDATES = ["STUD","JACK","SLB","WLB","MAC","MLB","MONEY","CASH","RUSH","STING","HUSKY","WOLF","BUCK","STAR","CHEETAH","CHEET","LEO"];
+const LB_CANDIDATES = ["STUD","JACK","SLB","WLB","MAC","MLB","MONEY","CASH","RUSH","STING","HUSKY","WOLF","BUCK","STAR","CHEETAH","CHEET","LEO","BAN","SPUR"];
 
 function dynamicCenteredRowHtml(candidates, groups, baseCols, id){
   const present = candidates.filter(p => groups[p] && groups[p].length);
