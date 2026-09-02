@@ -319,10 +319,23 @@ def main():
         print(f"  Week {week}: {len(games)} games, {week_final} final, "
               f"{len(ratings_by_team)} teams rated ({ratings_source}), {len(line_games)} with lines")
 
+        dropped_no_rating = 0
         for g in games:
             record = build_record(g, ratings_by_team, ratings_source, existing_by_id)
             record = apply_line_and_grade(record, line_games.get(g["id"]))
+            # Belt-and-suspenders on top of the classification filter in
+            # fetch_week_games(): a team can be tagged 'fbs' by CFBD (e.g.
+            # mid-transition programs like Sacramento State or North Dakota
+            # State) while MPG still has no rating history for it. No
+            # rating on either side means no basis for a model spread, so
+            # drop the game entirely rather than carrying nulls through.
+            if record.get("homeRating") is None or record.get("awayRating") is None:
+                dropped_no_rating += 1
+                continue
             updated[g["id"]] = record
+        if dropped_no_rating:
+            print(f"    (dropped {dropped_no_rating} game{'s' if dropped_no_rating != 1 else ''} "
+                  f"with no MPG rating on one side for week {week})")
 
         # Snapshot the full ratings grid for this week, independent of MPG's
         # own site (it doesn't keep week-over-week history for the current
