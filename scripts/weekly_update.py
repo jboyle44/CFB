@@ -1,20 +1,21 @@
 """
-Runs weekly via GitHub Actions. Pulls the current season's AP poll (proxy for
-the CFP committee poll, which doesn't start until later in the year), current
-SP+ ratings, and games played so far, recomputes BRR for every currently
-ranked team, and replaces that season's rows in brr_data.json -- leaving all
-other years untouched.
+Runs weekly via GitHub Actions. Pulls the current season's ranking -- the
+CFP committee's poll once it starts releasing (~week 10-13 each year), the
+AP poll as a proxy before that -- plus current SP+ ratings and games played
+so far, recomputes BRR for every currently ranked team, and replaces that
+season's rows in brr_data.json -- leaving all other years untouched.
 
 IMPORTANT CAVEAT (read this if something looks wrong after a run):
 "Ranked win / ranked loss / bad loss" here are tagged using each opponent's
-rank in the MOST RECENT AP poll, recomputed fresh every run -- not the
-opponent's rank at the time the game was actually played. This means a win
-over a team that was ranked in September but has since fallen out of the
-poll will stop counting as a "ranked win" later in the season. This is a
-simplification made for a live in-season display; the historical model
-(2014-2025) uses each opponent's FINAL season rank instead, which is why
-in-season BRR numbers won't be perfectly apples-to-apples with prior years
-until the season is complete and final rankings are out.
+rank in the MOST RECENT ranking (committee poll if out, AP poll otherwise),
+recomputed fresh every run -- not the opponent's rank at the time the game
+was actually played. This means a win over a team that was ranked in
+September but has since fallen out of the poll will stop counting as a
+"ranked win" later in the season. This is a simplification made for a live
+in-season display; the historical model (2014-2025) uses each opponent's
+FINAL season rank instead, which is why in-season BRR numbers won't be
+perfectly apples-to-apples with prior years until the season is complete
+and final rankings are out.
 """
 
 import os
@@ -51,18 +52,33 @@ def current_season_year():
     return now.year if now.month >= 7 else now.year - 1
 
 
-def fetch_latest_ap_poll(year):
+def fetch_latest_poll(year, keyword):
+    """Generic helper: find the most recent week that has a poll whose name
+    contains `keyword`, and return its rankings."""
     data = get("/rankings", {"year": year, "seasonType": "regular"})
-    ap_weeks = [
+    weeks = [
         w for w in data
-        if any("AP" in p.get("poll", "") for p in w.get("polls", []))
+        if any(keyword in p.get("poll", "") for p in w.get("polls", []))
     ]
-    if not ap_weeks:
+    if not weeks:
         return None, None
-    latest = max(ap_weeks, key=lambda w: w["week"])
-    poll = next(p for p in latest["polls"] if "AP" in p["poll"])
+    latest = max(weeks, key=lambda w: w["week"])
+    poll = next(p for p in latest["polls"] if keyword in p["poll"])
     ranks = {team["school"]: team["rank"] for team in poll["ranks"]}
     return ranks, latest["week"]
+
+
+def fetch_latest_ranking(year):
+    """Prefer the official CFP committee ranking once it starts releasing
+    each season; fall back to the AP poll before that. Returns
+    (ranks, week, source_label)."""
+    ranks, week = fetch_latest_poll(year, "Playoff Committee")
+    if ranks:
+        return ranks, week, "committee"
+    ranks, week = fetch_latest_poll(year, "AP")
+    if ranks:
+        return ranks, week, "AP"
+    return None, None, None
 
 
 def fetch_sp_ratings(year):
@@ -79,7 +95,7 @@ def fetch_games(year):
     return get("/games", {"year": year, "seasonType": "regular", "division": "fbs"})
 
 
-def compute_features(year, ap_ranks, sp_ratings, games):
+def compute_features(year, ranks, sp_ratings, games):
     per_team = {}
 
     def bucket(team):
@@ -98,7 +114,7 @@ def compute_features(year, ap_ranks, sp_ratings, games):
             b = bucket(team)
             win = m > 0
             close = abs(m) <= CLOSE_GAME_MARGIN
-            opp_rank = ap_ranks.get(opp)
+            opp_rank = ranks.get(opp)
             opp_sp = sp_ratings.get(opp, 0) or 0
             if win:
                 b["w"] += 1
@@ -131,21 +147,21 @@ def main():
     year = current_season_year()
     print(f"Updating BRR for season {year}...")
 
-    ap_ranks, week = fetch_latest_ap_poll(year)
-    if ap_ranks is None:
-        print(f"No AP poll found yet for {year} -- likely too early in the season. Skipping update.")
+    ranks, week, source = fetch_latest_ranking(year)
+    if ranks is None:
+        print(f"No ranking found yet for {year} -- likely too early in the season. Skipping update.")
         return
-    print(f"Latest AP poll: week {week}, {len(ap_ranks)} ranked teams")
+    print(f"Latest ranking: {source} poll, week {week}, {len(ranks)} ranked teams")
 
     sp_ratings = fetch_sp_ratings(year)
     conferences = fetch_records(year)
     games = fetch_games(year)
     print(f"Pulled {len(games)} games, {len(sp_ratings)} SP+ ratings")
 
-    features = compute_features(year, ap_ranks, sp_ratings, games)
+    features = compute_features(year, ranks, sp_ratings, games)
 
     rows = []
-    for team, rank in ap_ranks.items():
+    for team, rank in ranks.items():
         f = features.get(team, dict(w=0, l=0, rw=0, rl=0, bl=0, cl=0, spw=0.0))
         sp = sp_ratings.get(team, 0) or 0
         score = brr_score(sp, f["rw"], f["spw"], f["bl"], f["cl"], f["l"])
@@ -154,7 +170,7 @@ def main():
             "conf": conferences.get(team, "Unknown"),
             "sp": round(sp, 1), "rw": f["rw"], "spw": round(f["spw"], 1),
             "bl": f["bl"], "cl": f["cl"], "l": f["l"], "w": f["w"],
-            "score": round(score, 2),
+            "score": round(score, 2), "rankSource": source,
         })
 
     rows.sort(key=lambda r: -r["score"])
@@ -179,3 +195,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
