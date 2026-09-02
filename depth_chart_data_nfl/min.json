@@ -1,0 +1,486 @@
+{
+  "generatedAt": "2026-09-02T22:48:59.792124+00:00",
+  "team": "Minnesota Vikings",
+  "rows": [
+    {
+      "position": "LWR",
+      "player": "Justin Jefferson",
+      "jersey": "18",
+      "code": "20/1",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "LWR",
+      "player": "Tai Felton",
+      "jersey": "13",
+      "code": "25/3",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "RWR",
+      "player": "Jordan Addison",
+      "jersey": "3",
+      "code": "23/1",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "SWR",
+      "player": "Jauan Jennings",
+      "jersey": "14",
+      "code": "U/SF",
+      "isAcquired": true,
+      "pffGrade": null
+    },
+    {
+      "position": "SWR",
+      "player": "Myles Price",
+      "jersey": "4",
+      "code": "CF25",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "LT",
+      "player": "Christian Darrisaw",
+      "jersey": "71",
+      "code": "21/1",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "LT",
+      "player": "Ryan Van Demark",
+      "jersey": "72",
+      "code": "R/Buf",
+      "isAcquired": true,
+      "pffGrade": null
+    },
+    {
+      "position": "LG",
+      "player": "Donovan Jackson",
+      "jersey": "74",
+      "code": "25/1",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "LG",
+      "player": "Trevor Keegan",
+      "jersey": "",
+      "code": "W/Dal",
+      "isAcquired": true,
+      "pffGrade": null
+    },
+    {
+      "position": "C",
+      "player": "Blake Brandel",
+      "jersey": "64",
+      "code": "20/6",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "C",
+      "player": "Nick Samac",
+      "jersey": "",
+      "code": "W/Car",
+      "isAcquired": true,
+      "pffGrade": null
+    },
+    {
+      "position": "RG",
+      "player": "Will Fries",
+      "jersey": "76",
+      "code": "U/Ind",
+      "isAcquired": true,
+      "pffGrade": null
+    },
+    {
+      "position": "RG",
+      "player": "Joe Huber",
+      "jersey": "60",
+      "code": "CF25",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "RT",
+      "player": "Brian O'Neill",
+      "jersey": "75",
+      "code": "18/2",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "RT",
+      "player": "Caleb Tiernan",
+      "jersey": "78",
+      "code": "26/3",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "TE",
+      "player": "T.J. Hockenson",
+      "jersey": "87",
+      "code": "T/Det",
+      "isAcquired": true,
+      "pffGrade": null
+    },
+    {
+      "position": "TE",
+      "player": "Josh Oliver",
+      "jersey": "84",
+      "code": "U/Bal",
+      "isAcquired": true,
+      "pffGrade": null
+    },
+    {
+      "position": "TE",
+      "player": "Ben Yurosek",
+      "jersey": "85",
+      "code": "CF25",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "TE",
+      "player": "Gavin Bartholomew",
+      "jersey": "86",
+      "code": "25/6",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "QB",
+      "player": "Kyler Murray",
+      "jersey": "1",
+      "code": "CC/Arz",
+      "isAcquired": true,
+      "pffGrade": null
+    },
+    {
+      "position": "QB",
+      "player": "Carson Wentz",
+      "jersey": "11",
+      "code": "U/KC",
+      "isAcquired": true,
+      "pffGrade": null
+    },
+    {
+      "position": "QB",
+      "player": "J.J. McCarthy",
+      "jersey": "9",
+      "code": "24/1",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "RB",
+      "player": "Aaron Jones Sr.",
+      "jersey": "33",
+      "code": "CC/GB",
+      "isAcquired": true,
+      "pffGrade": null
+    },
+    {
+      "position": "RB",
+      "player": "Jordan Mason",
+      "jersey": "27",
+      "code": "T/SF",
+      "isAcquired": true,
+      "pffGrade": null
+    },
+    {
+      "position": "RB",
+      "player": "Demond Claiborne",
+      "jersey": "21",
+      "code": "26/6",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "FB",
+      "player": "Max Bredeson",
+      "jersey": "45",
+      "code": "26/5",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "DE",
+      "player": "Tyrion Ingram-Dawkins",
+      "jersey": "90",
+      "code": "25/5",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "DE",
+      "player": "Caleb Banks",
+      "jersey": "95",
+      "code": "26/1",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "NT",
+      "player": "Levi Drake Rodriguez",
+      "jersey": "50",
+      "code": "24/7",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "NT",
+      "player": "Domonique Orange",
+      "jersey": "97",
+      "code": "26/3",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "DT",
+      "player": "Jalen Redmond",
+      "jersey": "61",
+      "code": "SF24",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "DT",
+      "player": "Elijah Williams",
+      "jersey": "99",
+      "code": "CF25",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "LOLB",
+      "player": "Dallas Turner",
+      "jersey": "15",
+      "code": "24/1",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "LOLB",
+      "player": "Chaz Chambliss",
+      "jersey": "40",
+      "code": "CF25",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "WLB",
+      "player": "Eric Wilson",
+      "jersey": "55",
+      "code": "U/GB",
+      "isAcquired": true,
+      "pffGrade": null
+    },
+    {
+      "position": "WLB",
+      "player": "Jake Golday",
+      "jersey": "41",
+      "code": "26/2",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "MLB",
+      "player": "Blake Cashman",
+      "jersey": "51",
+      "code": "U/Hou",
+      "isAcquired": true,
+      "pffGrade": null
+    },
+    {
+      "position": "MLB",
+      "player": "Ivan Pace Jr.",
+      "jersey": "0",
+      "code": "CF23",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "ROLB",
+      "player": "Andrew Van Ginkel",
+      "jersey": "43",
+      "code": "U/Mia",
+      "isAcquired": true,
+      "pffGrade": null
+    },
+    {
+      "position": "ROLB",
+      "player": "Bo Richter",
+      "jersey": "98",
+      "code": "CF24",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "LCB",
+      "player": "Byron Murphy Jr.",
+      "jersey": "7",
+      "code": "U/Arz",
+      "isAcquired": true,
+      "pffGrade": null
+    },
+    {
+      "position": "LCB",
+      "player": "James Pierre",
+      "jersey": "23",
+      "code": "U/Pit",
+      "isAcquired": true,
+      "pffGrade": null
+    },
+    {
+      "position": "LCB",
+      "player": "Zemaiah Vaughn",
+      "jersey": "34",
+      "code": "CF25",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "SS",
+      "player": "Joshua Metellus",
+      "jersey": "44",
+      "code": "20/6",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "SS",
+      "player": "Jakobe Thomas",
+      "jersey": "8",
+      "code": "26/3",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "FS",
+      "player": "Theo Jackson",
+      "jersey": "26",
+      "code": "P/Ten",
+      "isAcquired": true,
+      "pffGrade": null
+    },
+    {
+      "position": "FS",
+      "player": "Jacob Thomas",
+      "jersey": "39",
+      "code": "CF26",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "RCB",
+      "player": "Isaiah Rodgers",
+      "jersey": "2",
+      "code": "U/Phi",
+      "isAcquired": true,
+      "pffGrade": null
+    },
+    {
+      "position": "RCB",
+      "player": "Charles Demmings",
+      "jersey": "20",
+      "code": "26/5",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "NB",
+      "player": "Jay Ward",
+      "jersey": "24",
+      "code": "23/4",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "PT",
+      "player": "Brett Thorson",
+      "jersey": "47",
+      "code": "CF26",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "PK",
+      "player": "Will Reichard",
+      "jersey": "16",
+      "code": "24/6",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "LS",
+      "player": "Andrew Depaola",
+      "jersey": "42",
+      "code": "SF20",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "H",
+      "player": "Brett Thorson",
+      "jersey": "47",
+      "code": "CF26",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "KO",
+      "player": "Will Reichard",
+      "jersey": "16",
+      "code": "24/6",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "PR",
+      "player": "Myles Price",
+      "jersey": "4",
+      "code": "CF25",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "PR",
+      "player": "Tai Felton",
+      "jersey": "13",
+      "code": "25/3",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "KR",
+      "player": "Myles Price",
+      "jersey": "4",
+      "code": "CF25",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "KR",
+      "player": "Demond Claiborne",
+      "jersey": "21",
+      "code": "26/6",
+      "isAcquired": false,
+      "pffGrade": null
+    },
+    {
+      "position": "KR",
+      "player": "Tai Felton",
+      "jersey": "13",
+      "code": "25/3",
+      "isAcquired": false,
+      "pffGrade": null
+    }
+  ]
+}
