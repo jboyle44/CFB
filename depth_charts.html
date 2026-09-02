@@ -234,13 +234,20 @@ const DEFENSE_ROWS = [
 // have one-off hybrid edge/nickel roles (RUSH/STUD/CASH). Centering dynamically from
 // a broad candidate list, rather than assuming Ohio State's WLB/MLB pair, is the only
 // way this doesn't silently drop players for teams with different terminology.
-const DLINE_CANDIDATES = ["LDE","DE","NT","LDT","DT","RDT","RDE"];
-const LB_CANDIDATES = ["LOLB","STUD","JACK","SLB","WLB","MAC","MLB","MONEY","CASH","RUSH","ROLB"];
+// LOLB/ROLB can play with a hand in the dirt on passing downs, and putting them at
+// the edges of the D-line row (rather than crowding the LB row) both reflects that
+// and thins out the LB row for teams that list a lot of backer/hybrid codes.
+const DLINE_CANDIDATES = ["LOLB","LDE","DE","NT","LDT","DT","RDT","RDE","ROLB"];
+const LB_CANDIDATES = ["STUD","JACK","SLB","WLB","MAC","MLB","MONEY","CASH","RUSH"];
 
-function dynamicCenteredRowHtml(candidates, groups, cols, id){
+function dynamicCenteredRowHtml(candidates, groups, baseCols, id){
   const present = candidates.filter(p => groups[p] && groups[p].length);
   if(!present.length) return "";
   const totalSpan = present.length * 2;
+  // widen the row's own column count if there are more items than the base grid
+  // fits, so a team with an unusually large group (e.g. 5 LB codes) never overflows
+  // or gets squeezed -- each box just gets proportionally narrower instead.
+  const cols = Math.max(baseCols, totalSpan);
   const start = Math.max(1, Math.floor((cols - totalSpan) / 2) + 1);
   const boxesHtml = present.map((pos, i) => posBoxHtml(pos, groups, start + i * 2, 2)).join('');
   const idAttr = id ? ` id="${id}"` : "";
@@ -259,11 +266,11 @@ const OFFENSE_ROWS = [
       { pos:"WR-Z", col:13, span:2 }
     ]},
   { cols:OFFENSE_COLS, items:[
-      { pos:"WR-SL", alts:["WR-F"], col:2,  span:2 }, // sits in the gap between WR-X and LT
-      { pos:"RB",    col:4,  span:2 }, // sits in the gap between LT and LG
-      { pos:"FB",    col:9,  span:2 }, // only present for teams that carry one
+      { pos:"WR-SL", alts:["WR-F"], col:2,  span:2 }, // left: sits in the gap between WR-X and LT
+      { pos:"RB",    col:4,  span:2 }, // left: sits in the gap between LT and LG
       { pos:"QB",    col:7,  span:2 }, // directly behind center
-      { pos:"TE",    col:11, span:2 }  // behind RT
+      { pos:"FB",    col:10, span:2 }, // right: mirrors RB -- gap between RG and RT
+      { pos:"TE",    col:12, span:2 }  // right: mirrors WR-SL -- gap between RT and WR-Z
     ]}
 ];
 
@@ -463,21 +470,10 @@ function render(){
   html += sectionHtml("Specialists", "", [SPECIAL_ROW]);
 
   container.innerHTML = html;
-  overlapLbRow();
-}
-
-function overlapLbRow(){
-  const cbnbRow = document.getElementById('row-cbnb');
-  const lbRow = document.getElementById('row-lb');
-  if(!cbnbRow || !lbRow) return;
-  const h = cbnbRow.getBoundingClientRect().height;
-  // pull LB row up so its top starts at the vertical midpoint of the CB/NB row
-  lbRow.style.marginTop = `-${(h / 2)}px`;
 }
 
 searchBox.addEventListener("input", () => { state.search = searchBox.value.toLowerCase(); render(); });
 loadData(currentTeamKey());
-window.addEventListener('resize', () => overlapLbRow());
 </script>
 </body>
 </html>
