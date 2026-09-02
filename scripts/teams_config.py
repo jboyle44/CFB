@@ -116,8 +116,6 @@ TEAMS = {
     },
     "wisconsin": {
         "display_name": "Wisconsin",
-    "wisconsin": {
-        "display_name": "Wisconsin",
         "ourlads_slug": "wisconsin",
         "ourlads_id": "92545",
         "sports247_slug": None,
