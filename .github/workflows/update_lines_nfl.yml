@@ -2,10 +2,13 @@ name: Update NFL DFI Lines
 
 on:
   schedule:
-    # Sunday at noon ET (16:00 UTC) and Tuesday 10am ET (14:00 UTC) -- same
-    # cadence as the CFB lines workflow.
-    - cron: '0 16 * * 0'
-    - cron: '0 14 * * 2'
+    # Tuesday and Friday at 9am ET (13:00 UTC) -- catches early-week lines
+    # and the pre-weekend line moves (injury reports, etc.) that the old
+    # Sun/Tue schedule missed. Every game still falls inside the free
+    # scores API's 3-day lookback: Thursday-night games get graded by the
+    # Friday run, Sun/Mon games by the following Tuesday run.
+    - cron: '0 13 * * 2'
+    - cron: '0 13 * * 5'
 
   workflow_dispatch: {}
 
