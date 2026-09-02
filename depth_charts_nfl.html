@@ -469,17 +469,17 @@ function centerMikeLB(present){
   return others;
 }
 
-// LB row narrows to exactly fill whichever gap the CB row leaves open, using a
-// width-percentage container instead of matching grid-column counts between rows.
-// Always safe to overlap since it's constructed to fit inside the gap by design.
+// LB row is anchored to the EXACT free zone left by the CB row -- see CFB page
+// for full explanation of why symmetric width%+margin:auto centering was wrong.
 function lbRowHtml(groups, id){
   const present = centerMikeLB(LB_CANDIDATES.filter(p => groups[p] && groups[p].length));
   if(!present.length) return "";
   const hasNB = groups["NB"] && groups["NB"].length;
-  const widthPct = hasNB ? 62.5 : 75;
+  const startCol = hasNB ? 3 : 2;
+  const span = 7 - startCol + 1;
   const boxesHtml = present.map(pos => posBoxHtmlAuto(pos, groups)).join('');
   const idAttr = id ? ` id="${id}"` : "";
-  return `<div class="formrow"${idAttr} style="width:${widthPct}%; margin:0 auto; grid-template-columns:repeat(${present.length}, 1fr);">${boxesHtml}</div>`;
+  return `<div class="formrow"${idAttr} style="grid-template-columns:repeat(8, 1fr);"><div style="grid-column:${startCol} / span ${span}; display:grid; grid-template-columns:repeat(${present.length}, 1fr); gap:8px;">${boxesHtml}</div></div>`;
 }
 
 function rowHtml(row){
