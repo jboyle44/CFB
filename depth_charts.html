@@ -74,6 +74,12 @@
   .legend span.sw{display:inline-block; width:9px; height:9px; border-radius:2px; margin-right:5px; vertical-align:middle;}
   .sw.tr{background:var(--purple);}
   .sw.fr{background:var(--blue);}
+  .grade-legend{display:flex; align-items:center; gap:6px;}
+  .grade-bar{
+    display:inline-block; width:70px; height:8px; border-radius:4px;
+    background:linear-gradient(90deg, hsl(0,70%,50%), hsl(60,70%,50%), hsl(120,70%,50%));
+    vertical-align:middle;
+  }
 
   .section-head{
     display:flex; align-items:center; justify-content:space-between;
@@ -111,10 +117,15 @@
 
   .posbox.slim .hd{font-size:9px; padding:3px 2px;}
   .posbox.slim .slot{padding:2px 4px;}
-  .posbox.slim .slot .l1{font-size:9.5px; gap:2px;}
+  .posbox.slim .slot .l1{
+    font-size:9.5px; gap:2px; white-space:normal; overflow:visible;
+    text-overflow:clip; line-height:1.2;
+  }
   .posbox.slim .slot.starter .l1{font-size:10px;}
   .posbox.slim .slot .num{font-size:9px;}
-  .posbox.slim .slot .l2, .posbox.slim .slot .l3{font-size:7.5px;}
+  .posbox.slim .slot .l2, .posbox.slim .slot .l3{
+    font-size:7.5px; white-space:normal; overflow:visible; text-overflow:clip;
+  }
   .posbox.slim .badge{font-size:7px; padding:0 3px;}
   .badge{
     display:inline-block; font-size:8.5px; font-weight:800; padding:1px 5px;
@@ -153,6 +164,10 @@
   <div class="legend">
     <span><span class="sw tr"></span>Transfer</span>
     <span><span class="sw fr"></span>True Freshman</span>
+    <span class="grade-legend">Rating:
+      <span class="grade-bar"></span>
+      <span class="grade-label-lo">Lower</span> → <span class="grade-label-hi">Higher</span>
+    </span>
   </div>
 
   <div id="chartBody"></div>
@@ -255,21 +270,25 @@ function init(){
 function slotHtml(r, isStarter){
   const badge = r.isTransfer ? '<span class="badge tr">TR</span>'
               : (r.class && r.class.toUpperCase() === 'FR') ? '<span class="badge fr">FR</span>' : '';
+  const compositeHtml = gradeSpan(r.compositeScore, 65, 100);
   let rankLine;
   if(r.isTransfer){
     rankLine = r.transferRank != null
-      ? `247: ${r.compositeScore ?? '—'} · Transfer #${r.transferRank} (POS #${r.transferPosRank ?? '—'})`
-      : `247: ${r.compositeScore ?? '—'} · transfer rank pending`;
+      ? `247: ${compositeHtml} · Transfer #${r.transferRank} (POS #${r.transferPosRank ?? '—'})`
+      : `247: ${compositeHtml} · transfer rank pending`;
   } else {
     rankLine = r.hsNationalRank != null
-      ? `247: ${r.compositeScore ?? '—'} · #${r.hsNationalRank} natl (POS #${r.hsPositionRank ?? '—'})`
-      : `247: ${r.compositeScore ?? '—'}`;
+      ? `247: ${compositeHtml} · #${r.hsNationalRank} natl (POS #${r.hsPositionRank ?? '—'})`
+      : `247: ${compositeHtml}`;
   }
+  const pffHtml = r.pffGrade != null
+    ? `PFF: ${gradeSpan(r.pffGrade, 40, 95, 1)}`
+    : `<span class="pff">PFF: —</span>`;
   return `
     <div class="slot ${isStarter ? 'starter' : ''}">
       <div class="l1"><span class="num">${r.jersey || ''}</span> ${r.player}${badge}</div>
       <div class="l2">${r.class || ''} · ${rankLine}</div>
-      <div class="l3 pff">PFF: —</div>
+      <div class="l3">${pffHtml}</div>
     </div>`;
 }
 
@@ -295,6 +314,22 @@ function sectionHtml(title, scheme, rows){
   return `
     <div class="section-head"><h2>${title}</h2><span class="scheme">${scheme}</span></div>
     ${rowsHtml}`;
+}
+
+// Sliding red -> yellow -> green scale for any 0-100-ish grade/rating.
+// min/max are tuned per stat since composite scores and PFF grades sit in different ranges.
+function gradeColor(value, min, max){
+  if(value == null || isNaN(value)) return null;
+  const t = Math.max(0, Math.min(1, (value - min) / (max - min)));
+  const hue = t * 120; // 0 = red, 60 = yellow, 120 = green
+  return `hsl(${hue}, 70%, 50%)`;
+}
+
+function gradeSpan(value, min, max, digits){
+  const color = gradeColor(value, min, max);
+  const label = value == null ? '—' : (digits ? Number(value).toFixed(digits) : value);
+  const style = color ? ` style="color:${color}; font-weight:700;"` : '';
+  return `<span${style}>${label}</span>`;
 }
 
 let groupsRef = {};
