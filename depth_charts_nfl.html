@@ -469,17 +469,21 @@ function centerMikeLB(present){
   return others;
 }
 
-// LB row is anchored to the EXACT free zone left by the CB row -- see CFB page
-// for full explanation of why symmetric width%+margin:auto centering was wrong.
+// LB boxes use the same standard width as every other row -- see CFB page for
+// full explanation.
 function lbRowHtml(groups, id){
   const present = centerMikeLB(LB_CANDIDATES.filter(p => groups[p] && groups[p].length));
   if(!present.length) return "";
   const hasNB = groups["NB"] && groups["NB"].length;
-  const startCol = hasNB ? 3 : 2;
-  const span = 7 - startCol + 1;
-  const boxesHtml = present.map(pos => posBoxHtmlAuto(pos, groups)).join('');
+  const zoneStart = hasNB ? 3 : 2;
+  const zoneWidth = 7 - zoneStart + 1;
+  const standardSpan = present.length * 2;
+  const perBoxSpan = standardSpan <= zoneWidth ? 2 : Math.max(1, Math.floor(zoneWidth / present.length));
+  const actualSpan = perBoxSpan * present.length;
+  const start = zoneStart + Math.floor((zoneWidth - actualSpan) / 2);
+  const boxesHtml = present.map((pos, i) => posBoxHtml(pos, groups, start + i * perBoxSpan, perBoxSpan)).join('');
   const idAttr = id ? ` id="${id}"` : "";
-  return `<div class="formrow"${idAttr} style="grid-template-columns:repeat(8, 1fr);"><div style="grid-column:${startCol} / span ${span}; display:grid; grid-template-columns:repeat(${present.length}, 1fr); gap:8px;">${boxesHtml}</div></div>`;
+  return `<div class="formrow"${idAttr} style="grid-template-columns:repeat(8, 1fr);">${boxesHtml}</div>`;
 }
 
 function rowHtml(row){
