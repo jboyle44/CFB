@@ -330,7 +330,10 @@ def main():
 
     all_rows = sorted(existing_by_id.values(), key=lambda r: (r["season"], r["week"], r.get("startDate") or ""))
     with open(DATA_FILE, "w") as f:
-        json.dump(all_rows, f, separators=(",", ":"))
+        json.dump({
+            "generatedAt": datetime.now(timezone.utc).isoformat(),
+            "games": all_rows,
+        }, f, separators=(",", ":"))
 
     # Snapshot the full ratings grid for this week, independent of MPG's own
     # site (it doesn't keep week-over-week history, and doesn't even have a
