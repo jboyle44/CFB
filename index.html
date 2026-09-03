@@ -159,6 +159,8 @@
     <div class="season-picker">
       <label for="yearSelect">Season</label>
       <select id="yearSelect"></select>
+      <label for="weekSelect">Week</label>
+      <select id="weekSelect"><option value="latest">Latest</option></select>
       <a href="./lines.html" class="nav-btn btn-cfb">DF<span class="serif-i">I</span>-CFB</a>
       <a href="./lines_nfl.html" class="nav-btn btn-nfl">DF<span class="serif-i">I</span>-NFL</a>
       <a href="./depth_charts.html" class="nav-btn" style="color:#3FBFAD; border-color:#2A8577;">Depth Chart-CFB</a>
@@ -235,6 +237,8 @@
 
 <script>
 let DATA = [];
+let HISTORY = [];
+let LAST_GENERATED_AT = null;
 
 const TEAM_COLORS = {
   'Air Force': { primary:'#003087', secondary:'#8A8D8F' },
@@ -399,7 +403,16 @@ async function loadData(){
     DATA = raw.rows || [];
     generatedAt = raw.generatedAt || null;
   }
+
+  try {
+    const histRes = await fetch('brr_history.json?v=' + Date.now());
+    HISTORY = histRes.ok ? await histRes.json() : [];
+  } catch (e) {
+    HISTORY = [];
+  }
+
   init();
+  LAST_GENERATED_AT = generatedAt;
   renderStatus(generatedAt);
 }
 
@@ -434,13 +447,29 @@ function renderStatus(generatedAt){
   statusText.textContent = parts.join(' · ');
 }
 
-let state = { year: null, search: "", conf: "", sortKey: "rank", sortDir: 1 };
+let state = { year: null, week: "latest", search: "", conf: "", sortKey: "rank", sortDir: 1 };
 
 const yearSelect = document.getElementById("yearSelect");
+const weekSelect = document.getElementById("weekSelect");
 const confSelect = document.getElementById("confSelect");
 const searchBox = document.getElementById("searchBox");
 const tbody = document.getElementById("tbody");
 const emptyState = document.getElementById("emptyState");
+
+function populateWeekOptions(){
+  weekSelect.innerHTML = '<option value="latest">Latest</option>';
+  const weeksForYear = HISTORY
+    .filter(h => h.year === state.year)
+    .map(h => h.week)
+    .sort((a,b) => b - a);
+  weeksForYear.forEach(w => {
+    const opt = document.createElement("option");
+    opt.value = w; opt.textContent = `Week ${w}`;
+    weekSelect.appendChild(opt);
+  });
+  weekSelect.value = "latest";
+  state.week = "latest";
+}
 
 function init(){
   const years = [...new Set(DATA.map(d => d.year))].sort((a,b) => b - a);
@@ -451,6 +480,7 @@ function init(){
   });
   state.year = years[0];
   yearSelect.value = state.year;
+  populateWeekOptions();
 
   const confs = [...new Set(DATA.map(d => d.conf))].sort();
   confs.forEach(c => {
@@ -459,7 +489,15 @@ function init(){
     confSelect.appendChild(opt);
   });
 
-  yearSelect.addEventListener("change", () => { state.year = Number(yearSelect.value); render(); });
+  yearSelect.addEventListener("change", () => {
+    state.year = Number(yearSelect.value);
+    populateWeekOptions();
+    render();
+  });
+  weekSelect.addEventListener("change", () => {
+    state.week = weekSelect.value === "latest" ? "latest" : Number(weekSelect.value);
+    render();
+  });
   confSelect.addEventListener("change", () => { state.conf = confSelect.value; render(); });
   searchBox.addEventListener("input", () => { state.search = searchBox.value.toLowerCase(); render(); });
   document.getElementById("downloadBtn").addEventListener("click", downloadCSV);
@@ -477,8 +515,14 @@ function init(){
 }
 
 function getFiltered(){
-  return DATA.filter(d =>
-    d.year === state.year &&
+  let base;
+  if(state.week === "latest"){
+    base = DATA.filter(d => d.year === state.year);
+  } else {
+    const snapshot = HISTORY.find(h => h.year === state.year && h.week === state.week);
+    base = snapshot ? snapshot.rows : [];
+  }
+  return base.filter(d =>
     (state.conf === "" || d.conf === state.conf) &&
     (state.search === "" || d.team.toLowerCase().includes(state.search))
   );
@@ -486,6 +530,21 @@ function getFiltered(){
 
 function render(){
   let rows = getFiltered();
+
+  const statusText = document.getElementById('statusText');
+  if(state.week !== "latest" && statusText){
+    const snapshot = HISTORY.find(h => h.year === state.year && h.week === state.week);
+    const capturedTs = snapshot ? fmtTimestamp(snapshot.capturedAt) : null;
+    const sourceLabel = snapshot && snapshot.rankSource === 'committee' ? 'CFP Committee Rankings'
+                       : snapshot && snapshot.rankSource === 'AP' ? 'AP Poll' : null;
+    const parts = [`Viewing archived Week ${state.week}, ${state.year} snapshot`];
+    if(capturedTs) parts.push(`captured ${capturedTs}`);
+    if(sourceLabel) parts.push(`using ${sourceLabel}`);
+    statusText.textContent = parts.join(' · ');
+    document.getElementById('statusDot').className = 'dot warn';
+  } else {
+    renderStatus(LAST_GENERATED_AT);
+  }
 
   rows.sort((a,b) => {
     const k = state.sortKey;
