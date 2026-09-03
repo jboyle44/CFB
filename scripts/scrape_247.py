@@ -23,10 +23,38 @@ HEADERS = {
                   "(KHTML, like Gecko) Chrome/124.0 Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.9",
+    "Accept-Encoding": "gzip, deflate, br",
     "Referer": "https://247sports.com/",
     "Connection": "keep-alive",
     "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "sec-ch-ua": '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": '"Windows"',
+    "DNT": "1",
 }
+
+# A single shared session so cookies picked up from the homepage (session ID,
+# any bot-check clearance cookie, etc.) carry over to the roster request --
+# hitting a deep URL cold, with no prior visit to the site, is itself a common
+# bot-detection signal.
+_session = requests.Session()
+_session.headers.update(HEADERS)
+_warmed_up = False
+
+def _warm_up_session():
+    global _warmed_up
+    if _warmed_up:
+        return
+    try:
+        _session.get("https://247sports.com/", timeout=20)
+        time.sleep(1.0)
+    except requests.RequestException:
+        pass
+    _warmed_up = True
 
 RANK_PAIR_PATTERN = re.compile(r"\*\*([A-Za-z.]{2,5})\*\*\s*\[\*\*(\d+)\*\*\]")
 SCORE_YEAR_PATTERN = re.compile(r"(\d{2,3})\s*\((\d{4})\)")
@@ -34,8 +62,9 @@ SCORE_YEAR_PATTERN = re.compile(r"(\d{2,3})\s*\((\d{4})\)")
 
 def scrape_247_roster(sports247_slug, delay=1.5):
     """Returns {player_name: {"profileUrl": str|None, "compositeScore": int|None}}"""
+    _warm_up_session()
     url = f"https://247sports.com/team/{sports247_slug}/Roster/"
-    resp = requests.get(url, headers=HEADERS, timeout=20)
+    resp = _session.get(url, timeout=20)
     resp.raise_for_status()
     time.sleep(delay)
 
@@ -94,7 +123,8 @@ def scrape_247_player_profile(profile_url, delay=1.5):
       "transferRank": int|None, "transferPosRank": int|None
     }
     """
-    resp = requests.get(profile_url, headers=HEADERS, timeout=20)
+    _warm_up_session()
+    resp = _session.get(profile_url, timeout=20)
     resp.raise_for_status()
     time.sleep(delay)
 
