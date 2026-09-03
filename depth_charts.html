@@ -92,6 +92,16 @@
     display:grid; gap:8px; margin-bottom:8px;
   }
 
+  /* Compacts vertical space between the CB/NB row and the LB row below it.
+     This is a fixed, blind offset -- NOT coordinated with CB row geometry
+     (nickel count, LCB span) the way an earlier version was. That coupling
+     was the source of repeated collision bugs for teams with unusual
+     configurations; a fixed amount avoids it entirely since it never needs
+     to know anything about what's in the row above. */
+  #row-lb{
+    margin-top:-22px;
+  }
+
   .posbox{
     background:var(--panel); border:1px solid var(--line); border-radius:6px;
     overflow:hidden; min-width:0;
@@ -564,7 +574,7 @@ function init(teamKey){
   const group = groupForTeam(teamKey);
 
   if(!conferenceSelect.dataset.populated){
-    const allGroups = [...new Set(TEAM_LIST.map(t => t.group))];
+    const allGroups = [...new Set(TEAM_LIST.map(t => t.group))].sort();
     conferenceSelect.innerHTML = allGroups.map(g => `<option value="${g}">${g}</option>`).join('');
     conferenceSelect.dataset.populated = "1";
     conferenceSelect.addEventListener('change', () => {
