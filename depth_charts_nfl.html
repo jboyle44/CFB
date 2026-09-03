@@ -483,7 +483,7 @@ function slotHtml(r, isStarter){
     : '';
   let madden27Html = '';
   if(r.madden27Rating != null){
-    madden27Html = `M27: ${gradeSpan(r.madden27Rating, 60, 99)}${r.madden27Dev ? ' ' + r.madden27Dev : ''}`;
+    madden27Html = `M27: ${gradeSpan(r.madden27Rating, 60, 99)}`;
   }
   return `
     <div class="slot ${isStarter ? 'starter' : ''}">
