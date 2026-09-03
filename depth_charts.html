@@ -194,13 +194,13 @@
         <dt>Depth Chart</dt>
         <dd>Position, jersey number, and rank order pulled from Ourlads' team depth chart page. Ourlads also flags class year and transfer status per player.</dd>
         <dt>Recruit:</dt>
-        <dd>The player's 247Sports Composite score — an industry-aggregated rating (247Sports, ESPN, Rivals, On3) assigned when the player was a high school recruit. National and position rank shown when available. This number doesn't change after high school, even for transfers.</dd>
+        <dd>Star rating from CollegeFootballData.com's composite recruiting data, shown for both the player's original high school recruiting class ("Recruit") and, for transfers, their separate transfer portal evaluation ("TR") — these are two different ratings from two different points in a player's career, so both show when both exist.</dd>
         <dt>Transfer:</dt>
         <dd>Shown only for players tagged as transfers. This is a separate 247Sports ranking assigned specifically when the player entered the transfer portal — an independent evaluation of their college performance, not their original recruiting rank.</dd>
         <dt>PFF</dt>
         <dd>2025 season overall PFF College grade (color-coded red → yellow → green, low to high), from a PFF Elite data export. Below it, "Ranked Xth of Y [position]" shows where that grade ranks nationally among every graded FBS player at the same position. Transfers are matched to their 2025 grade regardless of which school they played for then. True freshmen show "FRESHMAN" instead of a dash, since they have no prior college snaps to grade.</dd>
         <dt>Color scale</dt>
-        <dd>Composite score and PFF grade are colored on a sliding red → yellow → green scale, low to high, so you can scan a formation and spot the strongest/weakest spots at a glance.</dd>
+        <dd>PFF grade is colored on a sliding red → yellow → green scale, low to high, so you can scan a formation and spot the strongest/weakest spots at a glance.</dd>
       </dl>
       <div class="foot-note">
         Depth chart and recruiting/transfer data refresh on the same weekly cadence as the rest of the site. PFF grades require a manual weekly export from PFF Elite since PFF's data isn't publicly scrapable.
@@ -602,19 +602,14 @@ function starsForComposite(score){
 function slotHtml(r, isStarter){
   const badge = r.isTransfer ? '<span class="badge tr">TR</span>'
               : (r.class && r.class.toUpperCase() === 'FR') ? '<span class="badge fr">FR</span>' : '';
-  const compositeHtml = gradeSpan(r.compositeScore, 65, 100);
-  const starsHtml = starsForComposite(r.compositeScore);
 
-  let recruitLine = `Recruit: ${compositeHtml} ${starsHtml}`;
-  if(r.hsNationalRank != null){
-    recruitLine += ` (#${r.hsNationalRank} natl, POS #${r.hsPositionRank ?? '—'})`;
-  }
+  const recruitStars = starsForComposite(r.compositeScore);
+  const recruitLine = `Recruit: ${recruitStars || '—'}`;
 
   let transferLine = '';
   if(r.isTransfer){
-    transferLine = r.transferRank != null
-      ? `Transfer: #${r.transferRank} overall (POS #${r.transferPosRank ?? '—'})`
-      : `Transfer: rank pending`;
+    const transferStars = starsForComposite(r.transferScore);
+    transferLine = `TR: ${transferStars || '—'}`;
   }
 
   let pffHtml;
@@ -632,8 +627,8 @@ function slotHtml(r, isStarter){
   return `
     <div class="slot ${isStarter ? 'starter' : ''}">
       <div class="l1"><span class="num">${r.jersey || ''}</span> ${r.player}${badge}</div>
-      <div class="l2">${r.class || ''} · ${recruitLine}</div>
       ${transferLine ? `<div class="l2">${transferLine}</div>` : ''}
+      <div class="l2">${r.class || ''} · ${recruitLine}</div>
       <div class="l3">${pffHtml}</div>
       ${rankLine ? `<div class="l3 pff-rank">${rankLine}</div>` : ''}
     </div>`;
