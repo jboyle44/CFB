@@ -19,8 +19,7 @@
       "player": "Laquon Treadwell",
       "jersey": "13",
       "code": "SF24",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RWR",
@@ -63,8 +62,7 @@
       "player": "Deion Burks",
       "jersey": "80",
       "code": "26/7",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LT",
@@ -143,8 +141,7 @@
       "player": "Jalen Farmer",
       "jersey": "62",
       "code": "26/4",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RT",
@@ -247,8 +244,7 @@
       "player": "Seth McGowan",
       "jersey": "20",
       "code": "26/7",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RB",
@@ -279,16 +275,14 @@
       "player": "Jaylahn Tuimoloau",
       "jersey": "91",
       "code": "25/2",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LDE",
       "player": "George Gumbs Jr.",
       "jersey": "52",
       "code": "26/5",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "NT",
@@ -307,8 +301,7 @@
       "player": "Tim Smith",
       "jersey": "93",
       "code": "25/6",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "DT",
@@ -375,8 +368,7 @@
       "player": "Caden Curry",
       "jersey": "55",
       "code": "26/6",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "WLB",
@@ -395,8 +387,7 @@
       "player": "Bryce Boettcher",
       "jersey": "50",
       "code": "26/4",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "WLB",
@@ -415,8 +406,7 @@
       "player": "Cj Allen",
       "jersey": "53",
       "code": "26/2",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "MLB",
@@ -435,8 +425,7 @@
       "player": "Tahj Chambers",
       "jersey": "44",
       "code": "CF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LCB",
@@ -467,24 +456,21 @@
       "player": "Aj Haulcy",
       "jersey": "25",
       "code": "26/3",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "SS",
       "player": "Hunter Wohler",
       "jersey": "30",
       "code": "25/7",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "FS",
       "player": "Cam Bynum",
       "jersey": "0",
       "code": "U/Min",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "FS",
@@ -527,16 +513,14 @@
       "player": "Justin Walley",
       "jersey": "27",
       "code": "25/3",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "NB",
       "player": "Kapena Gushiken",
       "jersey": "34",
       "code": "W/Phi",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "PT",
@@ -567,8 +551,7 @@
       "player": "Luke Rhodes",
       "jersey": "46",
       "code": "SF16",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "H",
@@ -599,40 +582,28 @@
       "player": "Deion Burks",
       "jersey": "80",
       "code": "26/7",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "PR",
       "player": "Josh Downs",
       "jersey": "2",
       "code": "23/3",
-      "isAcquired": false,
-      "pffGrade": 77.1,
-      "pffPositionRank": 32,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Deion Burks",
       "jersey": "80",
       "code": "26/7",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Ashton Dulin",
       "jersey": "16",
       "code": "CF19",
-      "isAcquired": false,
-      "pffGrade": 62.8,
-      "pffPositionRank": 115,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     }
   ]
 }
