@@ -22,11 +22,14 @@ jobs:
       - name: Run draft prospects scraper
         working-directory: scripts
         run: python3 build_draft_prospects.py ../draft_prospects.json
+      - name: Merge draft ranks into depth chart data
+        working-directory: scripts
+        run: python3 merge_draft_ranks.py ../draft_prospects.json ../depth_chart_data
       - name: Commit and push if data changed
         run: |
           git config user.name "draft-prospects-bot"
           git config user.email "actions@github.com"
-          git add draft_prospects.json
+          git add draft_prospects.json depth_chart_data/
           if git diff --staged --quiet; then
             echo "No changes to commit."
             exit 0
