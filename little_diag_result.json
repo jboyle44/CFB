@@ -1,0 +1,157 @@
+{
+  "alabama_2022_little": [
+    {
+      "id": "113649",
+      "athleteId": "4685437",
+      "recruitType": "HighSchool",
+      "year": 2022,
+      "ranking": 106,
+      "name": "Earl Little Jr.",
+      "school": "American Heritage",
+      "committedTo": "Alabama",
+      "position": "CB",
+      "height": 72,
+      "weight": 175,
+      "stars": 4,
+      "rating": 0.9552,
+      "city": "Fort Lauderdale",
+      "stateProvince": "FL",
+      "country": "USA",
+      "hometownInfo": {
+        "latitude": 26.1223084,
+        "longitude": -80.1433786,
+        "fipsCode": "12011"
+      }
+    }
+  ],
+  "portal_search": {
+    "2023": [
+      {
+        "season": 2023,
+        "firstName": "Desmond",
+        "lastName": "Little",
+        "position": "EDGE",
+        "origin": "LSU",
+        "destination": null,
+        "transferDate": "2022-12-08T15:32:00.000Z",
+        "rating": null,
+        "stars": 3,
+        "eligibility": "Immediate"
+      }
+    ],
+    "2024": [
+      {
+        "season": 2024,
+        "firstName": "Earl",
+        "lastName": "Little II",
+        "position": "CB",
+        "origin": "Alabama",
+        "destination": "Florida State",
+        "transferDate": "2024-01-03T21:51:00.000Z",
+        "rating": 0.9,
+        "stars": 4,
+        "eligibility": "Immediate"
+      },
+      {
+        "season": 2024,
+        "firstName": "Antwain",
+        "lastName": "Littleton II",
+        "position": "RB",
+        "origin": "Maryland",
+        "destination": "Temple",
+        "transferDate": "2023-12-22T00:50:00.000Z",
+        "rating": 0.86,
+        "stars": 3,
+        "eligibility": "Immediate"
+      }
+    ],
+    "2025": [
+      {
+        "season": 2025,
+        "firstName": "Brayshawn",
+        "lastName": "Littlejohn",
+        "position": "LB",
+        "origin": "Missouri",
+        "destination": "App State",
+        "transferDate": "2025-01-13T06:00:00.000Z",
+        "rating": 0.85,
+        "stars": 3,
+        "eligibility": "Immediate"
+      },
+      {
+        "season": 2025,
+        "firstName": "Matthew",
+        "lastName": "Littlejohn",
+        "position": "S",
+        "origin": "California",
+        "destination": null,
+        "transferDate": "2025-01-30T21:37:00.000Z",
+        "rating": null,
+        "stars": 3,
+        "eligibility": "Withdrawn"
+      },
+      {
+        "season": 2025,
+        "firstName": "Antwain",
+        "lastName": "Littleton II",
+        "position": "RB",
+        "origin": "Temple",
+        "destination": "Rhode Island",
+        "transferDate": "2025-01-20T22:01:00.000Z",
+        "rating": 0.85,
+        "stars": 3,
+        "eligibility": "Immediate"
+      }
+    ],
+    "2026": [
+      {
+        "season": 2026,
+        "firstName": "Brayshawn",
+        "lastName": "Littlejohn",
+        "position": "LB",
+        "origin": "App State",
+        "destination": "Florida International",
+        "transferDate": "2026-01-10T16:05:00.000Z",
+        "rating": 0.85,
+        "stars": 3,
+        "eligibility": "Immediate"
+      },
+      {
+        "season": 2026,
+        "firstName": "A.J.",
+        "lastName": "Little",
+        "position": "WR",
+        "origin": "Chattanooga",
+        "destination": "Southern Miss",
+        "transferDate": "2026-01-22T18:30:00.000Z",
+        "rating": 0.84,
+        "stars": 3,
+        "eligibility": "Immediate"
+      },
+      {
+        "season": 2026,
+        "firstName": "Emazon",
+        "lastName": "Littlejohn",
+        "position": "WR",
+        "origin": "South Carolina",
+        "destination": "Western Michigan",
+        "transferDate": "2026-01-05T17:37:00.000Z",
+        "rating": null,
+        "stars": null,
+        "eligibility": "Immediate"
+      },
+      {
+        "season": 2026,
+        "firstName": "Earl",
+        "lastName": "Little Jr.",
+        "position": "S",
+        "origin": "Florida State",
+        "destination": "Ohio State",
+        "transferDate": "2026-01-11T19:34:00.000Z",
+        "rating": 0.93,
+        "stars": 4,
+        "eligibility": "Immediate"
+      }
+    ]
+  }
+}
