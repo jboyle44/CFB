@@ -14,8 +14,28 @@ from madden27_team_ids import MADDEN27_TEAM_IDS
 from scrape_teamcrafters import get_madden27_ratings
 
 
+SUFFIXES = {"jr", "sr", "ii", "iii", "iv", "v", "vi", "vii"}
+
+
 def normalize_name(name):
-    return name.lower().strip()
+    # Strip periods too -- confirmed real mismatch: our site stores "Jr."
+    # (with period) while teamcrafters.net's own scrape never includes one
+    # ("Jr"), so "Paris Johnson Jr." vs "paris johnson jr" never matched on
+    # exact string comparison despite being the same person.
+    return name.lower().strip().replace(".", "")
+
+
+def strip_suffix(name_norm):
+    """Removes a trailing suffix token entirely, for matching names where
+    one source has the suffix and the other doesn't. Confirmed real case:
+    our site has "Gardner Minshew II" but teamcrafters.net lists him under
+    this same team as just "Gardner Minshew" (no suffix at all) -- a
+    missing suffix, not a formatting difference, so period-stripping alone
+    doesn't help; the whole token needs to be droppable on either side."""
+    parts = name_norm.split()
+    if parts and parts[-1] in SUFFIXES:
+        return " ".join(parts[:-1])
+    return name_norm
 
 
 def update_team(team_key, output_dir):
@@ -37,12 +57,23 @@ def update_team(team_key, output_dir):
         print(f"  fetch failed for {team_key}: {e}", file=sys.stderr)
         return
 
-    # Exact-name matching only -- see update_video_game_ratings.py for why
-    # a last-name fallback isn't used here without a position signal to gate it.
+    # Suffix-stripped index for the fallback -- only keep an entry if it's
+    # unambiguous (exactly one player on this team's roster reduces to that
+    # stripped name), same safety pattern used elsewhere in this project.
+    stripped_candidates = {}
+    for name, info in ratings.items():
+        key = strip_suffix(name)
+        stripped_candidates.setdefault(key, []).append(info)
+    ratings_by_stripped = {k: v[0] for k, v in stripped_candidates.items() if len(v) == 1}
+
+    # Exact-name matching first; last-name-only fallback isn't used here
+    # without a position signal to gate it (see update_video_game_ratings.py).
     matched = 0
     for row in data.get("rows", []):
         norm = normalize_name(row["player"])
         info = ratings.get(norm)
+        if not info:
+            info = ratings_by_stripped.get(strip_suffix(norm))
         if info:
             row["madden27Rating"] = info["ovr"]
             row["madden27Dev"] = info["dev"]
