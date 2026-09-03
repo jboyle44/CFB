@@ -828,6 +828,7 @@ function adjustLbRowOverlap(){
   const cbnbHeight = cbnbRow.offsetHeight;
   if(!cbnbHeight) return;
   lbRow.style.marginTop = `-${Math.round(cbnbHeight / 2)}px`;
+}
 
 searchBox.addEventListener("input", () => { state.search = searchBox.value.toLowerCase(); render(); });
 loadData(currentTeamKey());
