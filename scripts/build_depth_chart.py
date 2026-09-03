@@ -214,6 +214,11 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
             norm_name = normalize_name(r["player"])
             match = transfers_in.get(norm_name)
             school = true_origin_school(norm_name, match) or team_name
+            if "little" in norm_name:
+                print(f"DEBUG: norm_name={norm_name!r} match={match} school={school!r} yr={yr}", file=sys.stderr)
+                print(f"DEBUG: exact history = {portal_history_by_name.get(norm_name)}", file=sys.stderr)
+                print(f"DEBUG: stripped key = {strip_suffix(norm_name)!r}", file=sys.stderr)
+                print(f"DEBUG: stripped history = {portal_history_by_stripped_name.get(strip_suffix(norm_name))}", file=sys.stderr)
         else:
             school = team_name
         needed_school_years.add((school, yr))
