@@ -12,7 +12,9 @@
       "pffPositionRank": 6,
       "pffPositionTotal": 223,
       "pffPositionLabel": "WR",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 92,
+      "madden27Dev": "Superstar"
     },
     {
       "position": "RWR",
@@ -24,14 +26,18 @@
       "pffPositionRank": 183,
       "pffPositionTotal": 223,
       "pffPositionLabel": "WR",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 73,
+      "madden27Dev": "Normal"
     },
     {
       "position": "RWR",
       "player": "Chris Blair",
       "jersey": "19",
       "code": "SF23",
-      "isAcquired": false
+      "isAcquired": false,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "SWR",
@@ -43,14 +49,18 @@
       "pffPositionRank": 185,
       "pffPositionTotal": 223,
       "pffPositionLabel": "WR",
-      "pffTied": true
+      "pffTied": true,
+      "madden27Rating": 73,
+      "madden27Dev": "Normal"
     },
     {
       "position": "SWR",
       "player": "Zachariah Branch",
       "jersey": "17",
       "code": "26/3",
-      "isAcquired": false
+      "isAcquired": false,
+      "madden27Rating": 73,
+      "madden27Dev": "Star"
     },
     {
       "position": "LT",
@@ -62,14 +72,18 @@
       "pffPositionRank": 47,
       "pffPositionTotal": 134,
       "pffPositionLabel": "T",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 89,
+      "madden27Dev": "Star"
     },
     {
       "position": "LT",
       "player": "Michael Jerrell",
       "jersey": "72",
       "code": "T/Sea",
-      "isAcquired": true
+      "isAcquired": true,
+      "madden27Rating": 65,
+      "madden27Dev": "Normal"
     },
     {
       "position": "LG",
@@ -81,7 +95,9 @@
       "pffPositionRank": 31,
       "pffPositionTotal": 138,
       "pffPositionLabel": "G",
-      "pffTied": true
+      "pffTied": true,
+      "madden27Rating": 76,
+      "madden27Dev": "Star"
     },
     {
       "position": "LG",
@@ -93,7 +109,9 @@
       "pffPositionRank": 95,
       "pffPositionTotal": 138,
       "pffPositionLabel": "G",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 63,
+      "madden27Dev": "Normal"
     },
     {
       "position": "C",
@@ -105,7 +123,9 @@
       "pffPositionRank": 6,
       "pffPositionTotal": 59,
       "pffPositionLabel": "C",
-      "pffTied": true
+      "pffTied": true,
+      "madden27Rating": 82,
+      "madden27Dev": "Normal"
     },
     {
       "position": "C",
@@ -117,7 +137,9 @@
       "pffPositionRank": 10,
       "pffPositionTotal": 59,
       "pffPositionLabel": "C",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 64,
+      "madden27Dev": "Normal"
     },
     {
       "position": "RG",
@@ -129,14 +151,18 @@
       "pffPositionRank": 2,
       "pffPositionTotal": 138,
       "pffPositionLabel": "G",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 93,
+      "madden27Dev": "Superstar"
     },
     {
       "position": "RG",
       "player": "Ethan Onianwa",
       "jersey": "75",
       "code": "26/7",
-      "isAcquired": false
+      "isAcquired": false,
+      "madden27Rating": 67,
+      "madden27Dev": "Normal"
     },
     {
       "position": "RT",
@@ -148,7 +174,9 @@
       "pffPositionRank": 112,
       "pffPositionTotal": 134,
       "pffPositionLabel": "T",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 75,
+      "madden27Dev": "Normal"
     },
     {
       "position": "RT",
@@ -160,7 +188,9 @@
       "pffPositionRank": 51,
       "pffPositionTotal": 134,
       "pffPositionLabel": "T",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "TE",
@@ -172,7 +202,9 @@
       "pffPositionRank": 20,
       "pffPositionTotal": 125,
       "pffPositionLabel": "TE",
-      "pffTied": true
+      "pffTied": true,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "TE",
@@ -184,7 +216,9 @@
       "pffPositionRank": 81,
       "pffPositionTotal": 125,
       "pffPositionLabel": "TE",
-      "pffTied": true
+      "pffTied": true,
+      "madden27Rating": 65,
+      "madden27Dev": "Normal"
     },
     {
       "position": "TE",
@@ -196,7 +230,9 @@
       "pffPositionRank": 34,
       "pffPositionTotal": 125,
       "pffPositionLabel": "TE",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 74,
+      "madden27Dev": "Normal"
     },
     {
       "position": "QB",
@@ -208,7 +244,9 @@
       "pffPositionRank": 54,
       "pffPositionTotal": 76,
       "pffPositionLabel": "QB",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "QB",
@@ -220,7 +258,9 @@
       "pffPositionRank": 40,
       "pffPositionTotal": 76,
       "pffPositionLabel": "QB",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 74,
+      "madden27Dev": "Normal"
     },
     {
       "position": "QB",
@@ -232,14 +272,18 @@
       "pffPositionRank": 49,
       "pffPositionTotal": 76,
       "pffPositionLabel": "QB",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 65,
+      "madden27Dev": "Normal"
     },
     {
       "position": "QB",
       "player": "Jack Strand",
       "jersey": "18",
       "code": "CF26",
-      "isAcquired": false
+      "isAcquired": false,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RB",
@@ -251,7 +295,9 @@
       "pffPositionRank": 3,
       "pffPositionTotal": 136,
       "pffPositionLabel": "HB",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 95,
+      "madden27Dev": "X-Factor"
     },
     {
       "position": "RB",
@@ -263,7 +309,9 @@
       "pffPositionRank": 49,
       "pffPositionTotal": 136,
       "pffPositionLabel": "HB",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "DE",
@@ -275,7 +323,9 @@
       "pffPositionRank": 60,
       "pffPositionTotal": 225,
       "pffPositionLabel": "DI",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 73,
+      "madden27Dev": "Normal"
     },
     {
       "position": "DE",
@@ -287,7 +337,9 @@
       "pffPositionRank": 89,
       "pffPositionTotal": 225,
       "pffPositionLabel": "DI",
-      "pffTied": true
+      "pffTied": true,
+      "madden27Rating": 74,
+      "madden27Dev": "Normal"
     },
     {
       "position": "NT",
@@ -299,7 +351,9 @@
       "pffPositionRank": 150,
       "pffPositionTotal": 225,
       "pffPositionLabel": "DI",
-      "pffTied": true
+      "pffTied": true,
+      "madden27Rating": 69,
+      "madden27Dev": "Normal"
     },
     {
       "position": "NT",
@@ -311,7 +365,9 @@
       "pffPositionRank": 35,
       "pffPositionTotal": 225,
       "pffPositionLabel": "DI",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 68,
+      "madden27Dev": "Normal"
     },
     {
       "position": "DT",
@@ -323,7 +379,9 @@
       "pffPositionRank": 102,
       "pffPositionTotal": 225,
       "pffPositionLabel": "DI",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LOLB",
@@ -335,7 +393,9 @@
       "pffPositionRank": 85,
       "pffPositionTotal": 206,
       "pffPositionLabel": "ED",
-      "pffTied": true
+      "pffTied": true,
+      "madden27Rating": 76,
+      "madden27Dev": "Normal"
     },
     {
       "position": "LOLB",
@@ -347,7 +407,9 @@
       "pffPositionRank": 167,
       "pffPositionTotal": 206,
       "pffPositionLabel": "ED",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LILB",
@@ -359,14 +421,18 @@
       "pffPositionRank": 124,
       "pffPositionTotal": 186,
       "pffPositionLabel": "LB",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 72,
+      "madden27Dev": "Normal"
     },
     {
       "position": "LILB",
       "player": "Kendal Daniels",
       "jersey": "53",
       "code": "26/4",
-      "isAcquired": false
+      "isAcquired": false,
+      "madden27Rating": 69,
+      "madden27Dev": "Normal"
     },
     {
       "position": "LILB",
@@ -378,7 +444,9 @@
       "pffPositionRank": 80,
       "pffPositionTotal": 186,
       "pffPositionLabel": "LB",
-      "pffTied": true
+      "pffTied": true,
+      "madden27Rating": 62,
+      "madden27Dev": "Normal"
     },
     {
       "position": "RILB",
@@ -390,14 +458,18 @@
       "pffPositionRank": 21,
       "pffPositionTotal": 186,
       "pffPositionLabel": "LB",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 81,
+      "madden27Dev": "Normal"
     },
     {
       "position": "RILB",
       "player": "Harold Perkins Jr.",
       "jersey": "56",
       "code": "26/6",
-      "isAcquired": false
+      "isAcquired": false,
+      "madden27Rating": 64,
+      "madden27Dev": "Normal"
     },
     {
       "position": "ROLB",
@@ -409,7 +481,9 @@
       "pffPositionRank": 24,
       "pffPositionTotal": 206,
       "pffPositionLabel": "ED",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 75,
+      "madden27Dev": "Star"
     },
     {
       "position": "ROLB",
@@ -421,14 +495,18 @@
       "pffPositionRank": 70,
       "pffPositionTotal": 206,
       "pffPositionLabel": "ED",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 70,
+      "madden27Dev": "Normal"
     },
     {
       "position": "ROLB",
       "player": "Yasir Abdullah",
       "jersey": "22",
       "code": "W/Jax",
-      "isAcquired": true
+      "isAcquired": true,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LCB",
@@ -440,7 +518,9 @@
       "pffPositionRank": 124,
       "pffPositionTotal": 217,
       "pffPositionLabel": "CB",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 75,
+      "madden27Dev": "Normal"
     },
     {
       "position": "LCB",
@@ -452,7 +532,9 @@
       "pffPositionRank": 94,
       "pffPositionTotal": 217,
       "pffPositionLabel": "CB",
-      "pffTied": true
+      "pffTied": true,
+      "madden27Rating": 70,
+      "madden27Dev": "Normal"
     },
     {
       "position": "SS",
@@ -464,7 +546,9 @@
       "pffPositionRank": 76,
       "pffPositionTotal": 179,
       "pffPositionLabel": "S",
-      "pffTied": true
+      "pffTied": true,
+      "madden27Rating": 94,
+      "madden27Dev": "X-Factor"
     },
     {
       "position": "SS",
@@ -476,7 +560,9 @@
       "pffPositionRank": 108,
       "pffPositionTotal": 179,
       "pffPositionLabel": "S",
-      "pffTied": true
+      "pffTied": true,
+      "madden27Rating": 72,
+      "madden27Dev": "Normal"
     },
     {
       "position": "FS",
@@ -488,7 +574,9 @@
       "pffPositionRank": 31,
       "pffPositionTotal": 179,
       "pffPositionLabel": "S",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 79,
+      "madden27Dev": "Star"
     },
     {
       "position": "FS",
@@ -500,7 +588,9 @@
       "pffPositionRank": 179,
       "pffPositionTotal": 179,
       "pffPositionLabel": "S",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 69,
+      "madden27Dev": "Normal"
     },
     {
       "position": "RCB",
@@ -512,14 +602,18 @@
       "pffPositionRank": 133,
       "pffPositionTotal": 217,
       "pffPositionLabel": "CB",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RCB",
       "player": "Malcolm DeWalt IV",
       "jersey": "36",
       "code": "CF26",
-      "isAcquired": false
+      "isAcquired": false,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "NB",
@@ -531,21 +625,27 @@
       "pffPositionRank": 188,
       "pffPositionTotal": 217,
       "pffPositionLabel": "CB",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "NB",
       "player": "Avieon Terrell",
       "jersey": "12",
       "code": "26/2",
-      "isAcquired": false
+      "isAcquired": false,
+      "madden27Rating": 75,
+      "madden27Dev": "Star"
     },
     {
       "position": "NB",
       "player": "Mike Ford Jr.",
       "jersey": "28",
       "code": "U/Cle",
-      "isAcquired": true
+      "isAcquired": true,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "PT",
@@ -557,7 +657,9 @@
       "pffPositionRank": 12,
       "pffPositionTotal": 36,
       "pffPositionLabel": "P",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 78,
+      "madden27Dev": "Normal"
     },
     {
       "position": "PK",
@@ -569,14 +671,18 @@
       "pffPositionRank": 7,
       "pffPositionTotal": 42,
       "pffPositionLabel": "K",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 85,
+      "madden27Dev": "Normal"
     },
     {
       "position": "LS",
       "player": "Liam McCullough",
       "jersey": "49",
       "code": "SF22",
-      "isAcquired": false
+      "isAcquired": false,
+      "madden27Rating": 64,
+      "madden27Dev": "Normal"
     },
     {
       "position": "H",
@@ -588,7 +694,9 @@
       "pffPositionRank": 12,
       "pffPositionTotal": 36,
       "pffPositionLabel": "P",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 78,
+      "madden27Dev": "Normal"
     },
     {
       "position": "KO",
@@ -600,35 +708,45 @@
       "pffPositionRank": 7,
       "pffPositionTotal": 42,
       "pffPositionLabel": "K",
-      "pffTied": false
+      "pffTied": false,
+      "madden27Rating": 85,
+      "madden27Dev": "Normal"
     },
     {
       "position": "PR",
       "player": "Zachariah Branch",
       "jersey": "17",
       "code": "26/3",
-      "isAcquired": false
+      "isAcquired": false,
+      "madden27Rating": 73,
+      "madden27Dev": "Star"
     },
     {
       "position": "PR",
       "player": "Olamide Zaccheaus",
       "jersey": "14",
       "code": "U/Chi",
-      "isAcquired": true
+      "isAcquired": true,
+      "madden27Rating": 73,
+      "madden27Dev": "Normal"
     },
     {
       "position": "KR",
       "player": "Zachariah Branch",
       "jersey": "17",
       "code": "26/3",
-      "isAcquired": false
+      "isAcquired": false,
+      "madden27Rating": 73,
+      "madden27Dev": "Star"
     },
     {
       "position": "KR",
       "player": "Olamide Zaccheaus",
       "jersey": "14",
       "code": "U/Chi",
-      "isAcquired": true
+      "isAcquired": true,
+      "madden27Rating": 73,
+      "madden27Dev": "Normal"
     }
   ]
 }
