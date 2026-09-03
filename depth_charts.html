@@ -627,7 +627,7 @@ function slotHtml(r, isStarter){
 
   let cfb27Html = '';
   if(r.cfb27Rating != null){
-    cfb27Html = `CFB27: ${gradeSpan(r.cfb27Rating, 60, 99)}${r.cfb27Dev ? ' ' + r.cfb27Dev : ''}`;
+    cfb27Html = `CFB27: ${gradeSpan(r.cfb27Rating, 60, 99)}`;
   }
 
   return `
