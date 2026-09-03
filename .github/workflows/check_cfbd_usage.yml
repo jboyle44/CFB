@@ -6,11 +6,22 @@ on:
 jobs:
   check-usage:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
+      - uses: actions/checkout@v4
       - name: Query CFBD /info endpoint
         env:
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
         run: |
           curl -s "https://api.collegefootballdata.com/info" \
             -H "Authorization: Bearer ${CFBD_API_KEY}" \
-            -H "Accept: application/json" | tee cfbd_info.json
+            -H "Accept: application/json" > cfbd_usage_result.json
+          echo "Checked at: $(date -u)" >> cfbd_usage_result.json
+      - name: Commit result
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add cfbd_usage_result.json
+          git commit -m "CFBD usage check result" || echo "no changes"
+          git push
