@@ -193,7 +193,7 @@
         <dt>Acquisition code</dt>
         <dd>Ourlads' shorthand for how a player originally joined the roster — a draft year/round like "20/1" (2020, round 1), a street/college free agent signing like "SF23"/"CF26" (original signing year), or an inter-team move like "T/Pit" (traded from Pittsburgh), "U/Den" (waived, claimed from Denver). This reflects how they arrived, however long ago — it isn't a "recently happened" flag, so a player can show a trade/waiver/FA code from a year or more back.</dd>
         <dt>PFF</dt>
-        <dd>2025 season overall PFF grade (color-coded red → yellow → green, low to high), from a PFF Elite data export. Below it, "Ranked Xth of Y [position]" shows where that grade ranks league-wide among every graded player at the same position — "(T)" means a tie. Players without a shown grade are usually rookies or depth players who didn't log enough 2025 snaps to be graded, or joined the league after that season.</dd>
+        <dd>2025 season overall PFF grade (color-coded red → yellow → green, low to high), from a PFF Elite data export. Below it, "Ranked Xth of Y [position]" shows where that grade ranks league-wide among every graded player at the same position. Players without a shown grade are usually rookies or depth players who didn't log enough 2025 snaps to be graded, or joined the league after that season.</dd>
         <dt>Color scale</dt>
         <dd>Once PFF grades are added, they'll color on a sliding red → yellow → green scale, low to high, so you can scan a formation and spot the strongest/weakest spots at a glance.</dd>
       </dl>
@@ -478,7 +478,7 @@ function slotHtml(r, isStarter){
     pffHtml = `<span class="pff">PFF: —</span>`;
   }
   const rankLine = (r.pffPositionRank != null)
-    ? `Ranked ${ordinal(r.pffPositionRank)}${r.pffTied ? ' (T)' : ''} of ${r.pffPositionTotal} ${r.pffPositionLabel}`
+    ? `Ranked ${ordinal(r.pffPositionRank)} of ${r.pffPositionTotal} ${r.pffPositionLabel}`
     : '';
   return `
     <div class="slot ${isStarter ? 'starter' : ''}">
