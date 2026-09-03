@@ -11,9 +11,35 @@ Two endpoints:
   GET /player/portal       -- transfer portal data (stars, rating, origin/dest)
 """
 import os
+import time
 import requests
 
 BASE_URL = "https://api.collegefootballdata.com"
+
+# Minimum gap enforced between consecutive CFBD requests, to stay under
+# CFBD's short-term (per-minute) rate limit -- separate from the monthly
+# quota. Confirmed real case: a rollout making dozens of back-to-back
+# requests with no pacing tripped 429s well before the monthly quota was
+# anywhere close to exhausted.
+_MIN_REQUEST_GAP_SECONDS = 0.6
+_last_request_time = [0.0]
+
+
+def _paced_get(url, headers, params, timeout=20, max_retries=3):
+    for attempt in range(max_retries):
+        elapsed = time.time() - _last_request_time[0]
+        if elapsed < _MIN_REQUEST_GAP_SECONDS:
+            time.sleep(_MIN_REQUEST_GAP_SECONDS - elapsed)
+        resp = requests.get(url, headers=headers, params=params, timeout=timeout)
+        _last_request_time[0] = time.time()
+        if resp.status_code == 429:
+            backoff = 2 ** attempt * 2  # 2s, 4s, 8s
+            print(f"  429 rate limited, backing off {backoff}s (attempt {attempt+1}/{max_retries})")
+            time.sleep(backoff)
+            continue
+        return resp
+    resp.raise_for_status()  # exhausted retries, raise the last 429
+    return resp
 
 
 def _auth_headers():
@@ -34,7 +60,7 @@ def get_recruiting_players(team_display_name, year):
         nickname (e.g. "Trey Reddick") for the same person -- when there's
         no ambiguity, matching on last name alone safely recovers these.
     """
-    resp = requests.get(
+    resp = _paced_get(
         f"{BASE_URL}/recruiting/players",
         headers=_auth_headers(),
         params={"year": year, "team": team_display_name},
@@ -73,7 +99,7 @@ def get_transfer_portal(year):
     an equivalent "#N transfer overall" and "#N at position" the same way
     247Sports displays it.
     """
-    resp = requests.get(
+    resp = _paced_get(
         f"{BASE_URL}/player/portal",
         headers=_auth_headers(),
         params={"year": year},
