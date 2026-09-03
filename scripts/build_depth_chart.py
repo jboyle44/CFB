@@ -243,7 +243,13 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
             school = true_origin_school(norm_name, match) or team_name
         else:
             school = team_name
+        # Also check one year earlier than the formula's estimate -- players
+        # with extended eligibility (medical redshirt, injury waiver, etc.)
+        # signed one year before what the standard class-label formula
+        # assumes. Confirmed real case: a player listed "RS SR" whose true
+        # signing class was a full year earlier than the formula predicted.
         needed_school_years.add((school, yr))
+        needed_school_years.add((school, yr - 1))
 
     recruiting_by_name = {}
     recruiting_by_last_name = {}
