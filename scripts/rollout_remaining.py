@@ -7,14 +7,13 @@ sys.path.insert(0, '.')
 from build_depth_chart import build
 from teams_config import TEAMS
 
-STOP_FLOOR = 2800
+STOP_FLOOR = 25000  # generous sanity floor under the new 30k/month tier
 SAFETY_BUFFER = 100  # stop at 2900 remaining, not right at 2800, to avoid overshooting
 DELAY_BETWEEN_TEAMS_SECONDS = 3
 
-already_done = {"ohio-state", "oregon", "texas", "indiana", "illinois", "iowa", "maryland",
-                 "michigan", "michigan-state", "minnesota", "nebraska", "northwestern",
-                 "penn-state", "purdue"}
-remaining_teams = [t for t in TEAMS if t not in already_done]
+final_10 = {"colorado", "houston", "iowa-state", "kansas", "kansas-state",
+            "oklahoma-state", "tcu", "texas-tech", "utah", "west-virginia"}
+remaining_teams = [t for t in TEAMS if t in final_10]
 
 def check_remaining(max_retries=4):
     """A 429 here means we're transiently rate-limited, NOT that we're
