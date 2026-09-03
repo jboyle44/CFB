@@ -584,11 +584,15 @@ function ordinal(n){
 // deliberately distinct from the red/yellow/green PFF grade scale so the two
 // grading systems (recruiting talent vs. actual on-field performance) are easy
 // to tell apart at a glance.
+// Thresholds verified directly against real 247Sports pages (Sept 2026):
+// rating 98-100 confirmed 5-star, rating 90 confirmed 4-star, rating 89 down
+// through 81 confirmed 3-star. The 2-star/1-star boundary below that is still
+// the general industry-convention estimate, not independently verified.
 function starsForComposite(score){
   if(score == null) return '';
   let stars;
   if(score >= 98) stars = 5;
-  else if(score >= 89) stars = 4;
+  else if(score >= 90) stars = 4;
   else if(score >= 80) stars = 3;
   else if(score >= 70) stars = 2;
   else stars = 1;
