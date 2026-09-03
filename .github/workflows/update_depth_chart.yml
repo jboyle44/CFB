@@ -2,12 +2,10 @@ name: Update Depth Chart Data
 
 on:
   schedule:
-    # Ourlads and CollegeFootballData.com both update rolling through the week
-    # rather than on one fixed day, so this runs on the same cadence as the
-    # DFI-CFB scripts:
-    # Sunday ~noon ET (16:00 UTC) and Tuesday ~10am ET (14:00 UTC).
-    - cron: '0 16 * * 0'
-    - cron: '0 14 * * 2'
+    # Tuesday and Friday 9am ET (13:00 UTC during EDT/daylight saving; will
+    # read as 8am ET once clocks fall back to EST in November unless updated).
+    - cron: '0 13 * * 2'
+    - cron: '0 13 * * 5'
 
   # Trigger a run manually from the Actions tab any time, without waiting for
   # the schedule -- useful for testing after changes to the scraper.
