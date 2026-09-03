@@ -116,6 +116,7 @@
   .slot .l2{font-size:9px; color:var(--text-faint); margin-top:1px; line-height:1.3; overflow:visible; text-overflow:clip; white-space:normal;}
   .slot .l3{font-size:9px; color:var(--text-faint); margin-top:0; line-height:1.3;}
   .slot .pff{color:var(--text-faint); font-style:italic;}
+  .slot .pff-rank{color:var(--text-faint); font-size:8.5px; margin-top:1px;}
 
   .posbox.slim .hd{font-size:9px; padding:3px 2px;}
   .posbox.slim .slot{padding:2px 4px;}
@@ -191,7 +192,7 @@
         <dt>Acquisition code</dt>
         <dd>Ourlads' shorthand for how a player originally joined the roster — a draft year/round like "20/1" (2020, round 1), a street/college free agent signing like "SF23"/"CF26" (original signing year), or an inter-team move like "T/Pit" (traded from Pittsburgh), "U/Den" (waived, claimed from Denver). This reflects how they arrived, however long ago — it isn't a "recently happened" flag, so a player can show a trade/waiver/FA code from a year or more back.</dd>
         <dt>PFF</dt>
-        <dd>PFF grade for the player. Not wired in yet — shows "—" until added.</dd>
+        <dd>2025 season overall PFF grade (color-coded red → yellow → green, low to high), from a PFF Elite data export. Below it, "Ranked Xth of Y [position]" shows where that grade ranks league-wide among every graded player at the same position — "(T)" means a tie. Players without a shown grade are usually rookies or depth players who didn't log enough 2025 snaps to be graded, or joined the league after that season.</dd>
         <dt>Color scale</dt>
         <dd>Once PFF grades are added, they'll color on a sliding red → yellow → green scale, low to high, so you can scan a formation and spot the strongest/weakest spots at a glance.</dd>
       </dl>
@@ -448,16 +449,26 @@ function gradeSpan(value, min, max, digits){
   return `<span${style}>${label}</span>`;
 }
 
+function ordinal(n){
+  const s = ["th","st","nd","rd"];
+  const v = n % 100;
+  return n + (s[(v-20)%10] || s[v] || s[0]);
+}
+
 function slotHtml(r, isStarter){
   const codeLine = r.code ? `Origin: ${r.code}` : '';
   const pffHtml = r.pffGrade != null
     ? `PFF: ${gradeSpan(r.pffGrade, 40, 95, 1)}`
     : `<span class="pff">PFF: —</span>`;
+  const rankLine = (r.pffPositionRank != null)
+    ? `Ranked ${ordinal(r.pffPositionRank)}${r.pffTied ? ' (T)' : ''} of ${r.pffPositionTotal} ${r.pffPositionLabel}`
+    : '';
   return `
     <div class="slot ${isStarter ? 'starter' : ''}">
       <div class="l1"><span class="num">${r.jersey || ''}</span> ${r.player}</div>
       ${codeLine ? `<div class="l2">${codeLine}</div>` : ''}
       <div class="l3">${pffHtml}</div>
+      ${rankLine ? `<div class="l3 pff-rank">${rankLine}</div>` : ''}
     </div>`;
 }
 
