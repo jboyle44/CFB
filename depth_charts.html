@@ -588,20 +588,20 @@ function resolveItemPos(item, groups){
   return item.pos;
 }
 
-// CBs sit at the true outside edges. LCB stays slim/narrow since it's paired
-// with NB right next to it, but RCB (alone on the right, no partner) gets
-// standard box width instead so the two sides carry similar visual weight.
-// Nickel hybrids (NB, STING, HUSKY, etc -- Virginia lists two, BAN and SPUR)
-// get their own slim box each, clustered next to LCB.
+// CBs sit at the true outside edges. LCB stays slim/narrow ONLY when it has a
+// nickel box (NB or equivalent) clustered right next to it -- for the two teams
+// with zero nickel entries (Rutgers, Oklahoma), LCB has no partner, so it widens
+// to standard box width matching RCB, keeping both edges symmetric.
 function cbnbRowHtml(groups, id){
   const lcbKey = resolveFirst(["LCB","FCB"], groups);
   const rcbKey = resolveFirst(["RCB","BCB"], groups);
   const nickelPresent = NICKEL_CANDIDATES.filter(p => groups[p] && groups[p].length);
   const idAttr = id ? ` id="${id}"` : "";
 
-  const lcbHtml = lcbKey ? posBoxHtml(lcbKey, groups, 1, 1) : "";
+  const lcbSpan = nickelPresent.length > 0 ? 1 : 2;
+  const lcbHtml = lcbKey ? posBoxHtml(lcbKey, groups, 1, lcbSpan) : "";
   const rcbHtml = rcbKey ? posBoxHtml(rcbKey, groups, 7, 2) : "";
-  const nickelHtml = nickelPresent.map((pos, i) => posBoxHtml(pos, groups, 2 + i, 1)).join('');
+  const nickelHtml = nickelPresent.map((pos, i) => posBoxHtml(pos, groups, 1 + lcbSpan + i, 1)).join('');
 
   const boxesHtml = lcbHtml + nickelHtml + rcbHtml;
   if(!boxesHtml.trim()) return "";
@@ -625,16 +625,16 @@ function centerMikeLB(present){
 
 // LB boxes use the same standard width as every other row (2 of 8 units each) --
 // they should NOT stretch to fill the whole free zone, just center within it.
-// The free zone starts right after LCB + any nickel boxes (which cluster left)
-// and ends right before RCB (now cols7-8 since RCB is wider). If more LB items
-// exist than fit at standard width, narrow them just enough to fit, same idea
-// as the D-line's self-scaling.
+// The free zone starts right after LCB (which may be span1 or span2, see above)
+// plus any nickel boxes, and ends right before RCB (cols7-8). If more LB items
+// exist than fit at standard width, narrow them just enough to fit.
 function lbRowHtml(groups, id){
   const present = centerMikeLB(LB_CANDIDATES.filter(p => groups[p] && groups[p].length));
   if(!present.length) return "";
   const nickelCount = NICKEL_CANDIDATES.filter(p => groups[p] && groups[p].length).length;
-  const zoneStart = 2 + nickelCount;      // right after LCB + nickel box(es)
-  const zoneWidth = 6 - zoneStart + 1;    // up to (not including) RCB, now at col7
+  const lcbSpan = nickelCount > 0 ? 1 : 2;
+  const zoneStart = 1 + lcbSpan + nickelCount; // right after LCB + nickel box(es)
+  const zoneWidth = 6 - zoneStart + 1;         // up to (not including) RCB at col7
   const standardSpan = present.length * 2;
   const perBoxSpan = standardSpan <= zoneWidth ? 2 : Math.max(1, Math.floor(zoneWidth / present.length));
   const actualSpan = perBoxSpan * present.length;
