@@ -84,6 +84,14 @@ def scrape_ourlads_depth_chart(ourlads_slug, ourlads_id, delay=1.5):
             position = cells[0].get_text(strip=True)
             if not position:
                 continue
+            # Ourlads includes an "Injured"/"Suspended" list, formatted with
+            # the exact same table structure (Pos | No | Player...) as the
+            # real depth chart, just with "INJ"/"SUS" in the position column
+            # instead of a real position code. These aren't part of the
+            # active depth chart -- skip them entirely rather than let them
+            # silently fail to render anywhere in the formation display.
+            if position in ("INJ", "SUS"):
+                continue
 
             # Remaining cells alternate: jersey_number, player_link, jersey_number, player_link, ...
             slot_cells = cells[1:]
