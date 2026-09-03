@@ -1,0 +1,16 @@
+name: Check CFBD Usage
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check-usage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Query CFBD /info endpoint
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: |
+          curl -s "https://api.collegefootballdata.com/info" \
+            -H "Authorization: Bearer ${CFBD_API_KEY}" \
+            -H "Accept: application/json" | tee cfbd_info.json
