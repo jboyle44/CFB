@@ -91,16 +91,14 @@
       "player": "Keylan Rutledge",
       "jersey": "66",
       "code": "26/1",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LG",
       "player": "Febechi Nwaiwu",
       "jersey": "64",
       "code": "26/4",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "C",
@@ -203,8 +201,7 @@
       "player": "Marlin Klein",
       "jersey": "83",
       "code": "26/2",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "TE",
@@ -223,8 +220,7 @@
       "player": "Brevin Jordan",
       "jersey": "9",
       "code": "21/5",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "QB",
@@ -315,8 +311,7 @@
       "player": "Sabastian Harsh",
       "jersey": "54",
       "code": "CF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LDT",
@@ -335,8 +330,7 @@
       "player": "Kayden McDonald",
       "jersey": "93",
       "code": "26/2",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RDT",
@@ -427,8 +421,7 @@
       "player": "Wade Woodaz",
       "jersey": "30",
       "code": "26/4",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "MLB",
@@ -459,8 +452,7 @@
       "player": "Aiden Fisher",
       "jersey": "59",
       "code": "26/7",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LCB",
@@ -491,8 +483,7 @@
       "player": "Collin Wright",
       "jersey": "37",
       "code": "CF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "SS",
@@ -523,8 +514,7 @@
       "player": "Kamari Ramsey",
       "jersey": "27",
       "code": "26/5",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RCB",
@@ -591,8 +581,7 @@
       "player": "Austin Brinkman",
       "jersey": "40",
       "code": "CF25",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "H",
@@ -623,72 +612,42 @@
       "player": "Jaylin Noel",
       "jersey": "13",
       "code": "25/3",
-      "isAcquired": false,
-      "pffGrade": 68.8,
-      "pffPositionRank": 72,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "PR",
       "player": "Tremon Smith",
       "jersey": "11",
       "code": "U/Den",
-      "isAcquired": true,
-      "pffGrade": 54.5,
-      "pffPositionRank": 158,
-      "pffPositionTotal": 217,
-      "pffPositionLabel": "CB",
-      "pffTied": false
+      "isAcquired": true
     },
     {
       "position": "KR",
       "player": "Jaylin Noel",
       "jersey": "13",
       "code": "25/3",
-      "isAcquired": false,
-      "pffGrade": 68.8,
-      "pffPositionRank": 72,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Tremon Smith",
       "jersey": "11",
       "code": "U/Den",
-      "isAcquired": true,
-      "pffGrade": 54.5,
-      "pffPositionRank": 158,
-      "pffPositionTotal": 217,
-      "pffPositionLabel": "CB",
-      "pffTied": false
+      "isAcquired": true
     },
     {
       "position": "KR",
       "player": "Woody Marks",
       "jersey": "4",
       "code": "25/4",
-      "isAcquired": false,
-      "pffGrade": 68.8,
-      "pffPositionRank": 58,
-      "pffPositionTotal": 136,
-      "pffPositionLabel": "HB",
-      "pffTied": true
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Xavier Hutchinson",
       "jersey": "19",
       "code": "23/6",
-      "isAcquired": false,
-      "pffGrade": 64.0,
-      "pffPositionRank": 105,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "isAcquired": false
     }
   ]
 }
