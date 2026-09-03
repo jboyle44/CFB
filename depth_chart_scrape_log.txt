@@ -1,973 +1,2328 @@
 === illinois ===
 Scraping Ourlads depth chart for Illinois...
   92 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Illinois)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Illinois)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Illinois)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Illinois)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Illinois)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  73 transfers in from CFBD
+Fetching CFBD recruiting data for 34 (school, year) pairs...
+  Arkansas 2022: 27 players
+  Arkansas 2023: 27 players
+  Chowan 2021: 0 players
+  Chowan 2022: 0 players
+  Cincinnati 2021: 24 players
+  Cincinnati 2022: 20 players
+  Colorado 2021: 19 players
+  Colorado 2022: 24 players
+  Colorado State 2022: 16 players
+  Colorado State 2023: 27 players
+  East Texas A&M 2021: 0 players
+  East Texas A&M 2022: 1 players
+  Georgia State 2021: 16 players
+  Georgia State 2022: 10 players
+  Illinois 2021: 18 players
+  Illinois 2022: 25 players
+  Illinois 2023: 22 players
+  Illinois 2024: 18 players
+  Illinois 2025: 21 players
+  Illinois 2026: 31 players
+  Illinois State 2021: 0 players
+  Illinois State 2022: 6 players
+  Jacksonville State 2021: 6 players
+  Jacksonville State 2022: 14 players
+  Pennsylvania 2021: 12 players
+  Pennsylvania 2022: 14 players
+  South Dakota State 2022: 7 players
+  South Dakota State 2023: 7 players
+  Texas State 2023: 8 players
+  Texas State 2024: 15 players
+  Utah State 2023: 13 players
+  Utah State 2024: 8 players
+  West Virginia 2021: 20 players
+  West Virginia 2022: 18 players
 Wrote ../depth_chart_data/illinois.json
 exit_code=0
 === indiana ===
 Scraping Ourlads depth chart for Indiana...
   76 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Indiana)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Indiana)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Indiana)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Indiana)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  114 transfers in from CFBD
+Fetching CFBD recruiting data for 25 (school, year) pairs...
+  Buffalo 2023: 14 players
+  Buffalo 2024: 22 players
+  Georgia State 2022: 10 players
+  Georgia State 2023: 14 players
+  Hawai'i 2024: 18 players
+  Hawai'i 2025: 11 players
+  Indiana 2022: 25 players
+  Indiana 2023: 14 players
+  Indiana 2024: 17 players
+  Iowa State 2021: 20 players
+  Iowa State 2022: 20 players
+  James Madison 2021: 9 players
+  James Madison 2022: 14 players
+  Navy 2021: 32 players
+  Navy 2022: 28 players
+  Old Dominion 2021: 20 players
+  Old Dominion 2022: 14 players
+  Troy 2021: 14 players
+  Troy 2022: 9 players
+  Tulsa 2021: 10 players
+  Tulsa 2022: 14 players
+  UAB 2021: 13 players
+  UAB 2022: 8 players
+  Wisconsin 2021: 21 players
+  Wisconsin 2022: 20 players
 Wrote ../depth_chart_data/indiana.json
 exit_code=0
 === iowa ===
 Scraping Ourlads depth chart for Iowa...
   58 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Iowa)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Iowa)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Iowa)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Iowa)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Iowa)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  37 transfers in from CFBD
+Fetching CFBD recruiting data for 22 (school, year) pairs...
+  Elon 2023: 0 players
+  Elon 2024: 0 players
+  Iowa 2021: 19 players
+  Iowa 2022: 21 players
+  Iowa 2023: 25 players
+  Iowa 2024: 28 players
+  Iowa 2025: 18 players
+  Iowa 2026: 19 players
+  Louisiana 2023: 20 players
+  Louisiana 2024: 14 players
+  North Dakota State 2022: 17 players
+  North Dakota State 2023: 16 players
+  Robert Morris 2023: 0 players
+  Robert Morris 2024: 4 players
+  Simpson College 2023: 0 players
+  Simpson College 2024: 0 players
+  South Dakota 2022: 13 players
+  South Dakota 2023: 8 players
+  Texas-Rio Grande Valley 2023: 0 players
+  Texas-Rio Grande Valley 2024: 0 players
+  Villanova 2023: 8 players
+  Villanova 2024: 6 players
 Wrote ../depth_chart_data/iowa.json
 exit_code=0
 === maryland ===
 Scraping Ourlads depth chart for Maryland...
   68 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Maryland)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Maryland)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Maryland)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Maryland)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Maryland)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  53 transfers in from CFBD
+Fetching CFBD recruiting data for 19 (school, year) pairs...
+  Austin Peay 2022: 18 players
+  Austin Peay 2023: 14 players
+  Central Connecticut 2021: 0 players
+  Central Connecticut 2022: 0 players
+  Elon 2021: 8 players
+  Elon 2022: 0 players
+  Florida State 2022: 19 players
+  Florida State 2023: 17 players
+  Maryland 2022: 21 players
+  Maryland 2023: 25 players
+  Maryland 2024: 24 players
+  Maryland 2025: 21 players
+  Maryland 2026: 19 players
+  Old Dominion 2023: 21 players
+  Old Dominion 2024: 17 players
+  Rutgers 2021: 22 players
+  Rutgers 2022: 27 players
+  Saint Francis (PA) 2022: 0 players
+  Saint Francis (PA) 2023: 0 players
 Wrote ../depth_chart_data/maryland.json
 exit_code=0
 === michigan ===
 Scraping Ourlads depth chart for Michigan...
   99 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Michigan)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Michigan)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Michigan)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Michigan)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Michigan)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  58 transfers in from CFBD
+Fetching CFBD recruiting data for 14 (school, year) pairs...
+  BYU 2022: 27 players
+  BYU 2023: 21 players
+  Marshall 2024: 18 players
+  Marshall 2025: 18 players
+  Michigan 2021: 22 players
+  Michigan 2022: 27 players
+  Michigan 2023: 27 players
+  Michigan 2024: 26 players
+  Michigan 2025: 25 players
+  Michigan 2026: 24 players
+  North Dakota State 2021: 0 players
+  North Dakota State 2022: 17 players
+  UNLV 2024: 23 players
+  UNLV 2025: 13 players
 Wrote ../depth_chart_data/michigan.json
 exit_code=0
 === michigan-state ===
 Scraping Ourlads depth chart for Michigan State...
   67 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Michigan+State)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Michigan+State)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Michigan+State)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Michigan+State)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  112 transfers in from CFBD
+Fetching CFBD recruiting data for 46 (school, year) pairs...
+  Albany 2022: 0 players
+  Albany 2023: 0 players
+  Bemidji State 2022: 0 players
+  Bemidji State 2023: 0 players
+  Eastern Illinois 2021: 0 players
+  Eastern Illinois 2022: 8 players
+  Ferris State 2021: 0 players
+  Ferris State 2022: 0 players
+  Georgia Southern 2022: 22 players
+  Georgia Southern 2023: 21 players
+  Houston Christian 2023: 6 players
+  Houston Christian 2024: 13 players
+  Indiana State 2021: 0 players
+  Indiana State 2022: 3 players
+  Lindenwood 2021: 0 players
+  Lindenwood 2022: 0 players
+  Maine 2022: 0 players
+  Maine 2023: 6 players
+  Marshall 2021: 14 players
+  Marshall 2022: 26 players
+  Michigan State 2021: 18 players
+  Michigan State 2022: 27 players
+  Michigan State 2024: 26 players
+  Michigan State 2025: 20 players
+  Montana State 2021: 15 players
+  Montana State 2022: 14 players
+  Nebraska 2022: 17 players
+  Nebraska 2023: 32 players
+  North Carolina 2021: 24 players
+  North Carolina 2022: 26 players
+  Northern Arizona 2024: 6 players
+  Northern Arizona 2025: 25 players
+  Oregon 2022: 21 players
+  Oregon 2023: 33 players
+  Southeast Missouri State 2023: 8 players
+  Southeast Missouri State 2024: 7 players
+  UCF 2022: 17 players
+  UCF 2023: 15 players
+  UConn 2021: 15 players
+  UConn 2022: 15 players
+  Valdosta State 2021: 0 players
+  Valdosta State 2022: 0 players
+  Wake Forest 2021: 20 players
+  Wake Forest 2022: 15 players
+  Wisconsin 2021: 21 players
+  Wisconsin 2022: 20 players
 Wrote ../depth_chart_data/michigan-state.json
 exit_code=0
 === minnesota ===
 Scraping Ourlads depth chart for Minnesota...
   79 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Minnesota)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Minnesota)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Minnesota)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Minnesota)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  77 transfers in from CFBD
+Fetching CFBD recruiting data for 21 (school, year) pairs...
+  California (PA) 2022: 0 players
+  California (PA) 2023: 0 players
+  Cincinnati 2022: 20 players
+  Cincinnati 2023: 12 players
+  Elon 2023: 0 players
+  Elon 2024: 0 players
+  Florida International 2022: 18 players
+  Florida International 2023: 19 players
+  Lehigh 2023: 0 players
+  Lehigh 2024: 6 players
+  Michigan 2021: 22 players
+  Michigan 2022: 27 players
+  Minnesota 2021: 18 players
+  Minnesota 2022: 21 players
+  Minnesota 2023: 26 players
+  Minnesota 2024: 25 players
+  Minnesota 2025: 22 players
+  Ouachita Baptist 2022: 0 players
+  Ouachita Baptist 2023: 0 players
+  Utah State 2024: 8 players
+  Utah State 2025: 28 players
 Wrote ../depth_chart_data/minnesota.json
 exit_code=0
 === nebraska ===
 Scraping Ourlads depth chart for Nebraska...
   75 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Nebraska)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Nebraska)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Nebraska)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Nebraska)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Nebraska)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  72 transfers in from CFBD
+Fetching CFBD recruiting data for 14 (school, year) pairs...
+  Boston College 2021: 28 players
+  Boston College 2022: 23 players
+  California 2022: 17 players
+  California 2023: 14 players
+  Idaho 2021: 20 players
+  Idaho 2022: 14 players
+  Nebraska 2021: 20 players
+  Nebraska 2022: 17 players
+  Nebraska 2023: 32 players
+  Nebraska 2024: 37 players
+  Nebraska 2025: 20 players
+  Nebraska 2026: 12 players
+  Saint Francis (PA) 2022: 0 players
+  Saint Francis (PA) 2023: 0 players
 Wrote ../depth_chart_data/nebraska.json
 exit_code=0
 === northwestern ===
 Scraping Ourlads depth chart for Northwestern...
   72 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Northwestern)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Northwestern)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Northwestern)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  53 transfers in from CFBD
+Fetching CFBD recruiting data for 24 (school, year) pairs...
+  Ball State 2022: 17 players
+  Ball State 2023: 19 players
+  Iowa 2021: 19 players
+  Iowa 2022: 21 players
+  Michigan 2021: 22 players
+  Michigan 2022: 27 players
+  Minnesota Duluth 2023: 0 players
+  Minnesota Duluth 2024: 0 players
+  Northwestern 2021: 16 players
+  Northwestern 2022: 16 players
+  Northwestern 2023: 19 players
+  Northwestern 2024: 18 players
+  Sacred Heart 2022: 0 players
+  Sacred Heart 2023: 0 players
+  Saginaw Valley State 2022: 0 players
+  Saginaw Valley State 2023: 0 players
+  South Dakota State 2022: 7 players
+  South Dakota State 2023: 7 players
+  UConn 2021: 15 players
+  UConn 2022: 15 players
+  Utah State 2021: 7 players
+  Utah State 2022: 24 players
+  Weber State 2021: 0 players
+  Weber State 2022: 14 players
 Wrote ../depth_chart_data/northwestern.json
 exit_code=0
 === ohio-state ===
 Scraping Ourlads depth chart for Ohio State...
   77 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Ohio+State)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Ohio+State)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Ohio+State)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Ohio+State)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  47 transfers in from CFBD
+Fetching CFBD recruiting data for 10 (school, year) pairs...
+  Alabama 2022: 26 players
+  Alabama 2023: 27 players
+  BYU 2021: 17 players
+  BYU 2022: 27 players
+  Northwestern 2021: 16 players
+  Northwestern 2022: 16 players
+  Ohio State 2021: 26 players
+  Ohio State 2022: 21 players
+  Ohio State 2023: 24 players
+  Ohio State 2024: 25 players
 Wrote ../depth_chart_data/ohio-state.json
 exit_code=0
 === oregon ===
 Scraping Ourlads depth chart for Oregon...
   85 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Oregon)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Oregon)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Oregon)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Oregon)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Oregon)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  65 transfers in from CFBD
+Fetching CFBD recruiting data for 18 (school, year) pairs...
+  Mississippi State 2021: 20 players
+  Mississippi State 2022: 21 players
+  Nevada 2023: 15 players
+  Nevada 2024: 17 players
+  Oregon 2021: 24 players
+  Oregon 2022: 21 players
+  Oregon 2023: 33 players
+  Oregon 2024: 31 players
+  Oregon 2025: 21 players
+  Oregon 2026: 25 players
+  Texas 2021: 23 players
+  Texas 2022: 30 players
+  UL Monroe 2021: 15 players
+  UL Monroe 2022: 3 players
+  Washington 2023: 27 players
+  Washington 2024: 16 players
+  Yale 2021: 16 players
+  Yale 2022: 8 players
 Wrote ../depth_chart_data/oregon.json
 exit_code=0
 === penn-state ===
 Scraping Ourlads depth chart for Penn State...
   85 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Penn+State)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Penn+State)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Penn+State)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Penn+State)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  67 transfers in from CFBD
+Fetching CFBD recruiting data for 23 (school, year) pairs...
+  Christopher Newport 2021: 0 players
+  Christopher Newport 2022: 0 players
+  Iowa State 2021: 20 players
+  Iowa State 2022: 20 players
+  Iowa State 2023: 26 players
+  Iowa State 2024: 23 players
+  Iowa State 2025: 21 players
+  James Madison 2021: 9 players
+  James Madison 2022: 14 players
+  Mississippi State 2024: 19 players
+  Mississippi State 2025: 18 players
+  Oregon 2021: 24 players
+  Oregon 2022: 21 players
+  Penn State 2021: 18 players
+  Penn State 2022: 24 players
+  Penn State 2023: 24 players
+  Penn State 2024: 26 players
+  UCLA 2021: 18 players
+  UCLA 2022: 13 players
+  Utah 2023: 20 players
+  Utah 2024: 16 players
+  Western Michigan 2023: 17 players
+  Western Michigan 2024: 25 players
 Wrote ../depth_chart_data/penn-state.json
 exit_code=0
 === purdue ===
 Scraping Ourlads depth chart for Purdue...
   83 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Purdue)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Purdue)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Purdue)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  131 transfers in from CFBD
+Fetching CFBD recruiting data for 67 (school, year) pairs...
+  Arkansas 2023: 27 players
+  Arkansas 2024: 17 players
+  Army 2022: 30 players
+  Army 2023: 39 players
+  Buffalo 2023: 14 players
+  Buffalo 2024: 22 players
+  Georgia State 2021: 16 players
+  Georgia State 2022: 10 players
+  Jackson State 2023: 12 players
+  Jackson State 2024: 14 players
+  Kentucky 2021: 19 players
+  Kentucky 2022: 20 players
+  LIU Post 2022: 0 players
+  LIU Post 2023: 0 players
+  North Carolina 2022: 26 players
+  North Carolina 2023: 22 players
+  North Carolina Central 2021: 0 players
+  North Carolina Central 2022: 7 players
+  Notre Dame 2021: 27 players
+  Notre Dame 2022: 23 players
+  Ohio State 2021: 26 players
+  Ohio State 2022: 21 players
+  Oklahoma State 2023: 19 players
+  Oklahoma State 2024: 20 players
+  Penn State 2023: 24 players
+  Penn State 2024: 26 players
+  Pennsylvania 2021: 12 players
+  Pennsylvania 2022: 14 players
+  Purdue 2021: 16 players
+  Purdue 2022: 22 players
+  Purdue 2023: 18 players
+  Purdue 2024: 25 players
+  Samford 2022: 0 players
+  Samford 2023: 0 players
+  South Carolina 2022: 24 players
+  South Carolina 2023: 25 players
+  Syracuse 2023: 14 players
+  Syracuse 2024: 25 players
+  Tennessee 2022: 23 players
+  Tennessee 2023: 26 players
+  Texas 2023: 26 players
+  Texas 2024: 23 players
+  Troy 2021: 14 players
+  Troy 2022: 9 players
+  Tulane 2022: 17 players
+  Tulane 2023: 20 players
+  Tulsa 2023: 21 players
+  Tulsa 2024: 28 players
+  UCF 2021: 15 players
+  UCF 2022: 17 players
+  UCF 2023: 15 players
+  UCF 2024: 17 players
+  UNLV 2023: 15 players
+  UNLV 2024: 23 players
+  USC 2022: 10 players
+  USC 2023: 27 players
+  USC 2024: 25 players
+  Utah 2021: 18 players
+  Utah 2022: 18 players
+  Virginia Tech 2021: 30 players
+  Virginia Tech 2022: 24 players
+  Wake Forest 2023: 22 players
+  Wake Forest 2024: 22 players
+  Washington State 2023: 33 players
+  Washington State 2024: 30 players
+  Wisconsin 2021: 21 players
+  Wisconsin 2022: 20 players
 Wrote ../depth_chart_data/purdue.json
 exit_code=0
 === rutgers ===
 Scraping Ourlads depth chart for Rutgers...
   71 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Rutgers)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Rutgers)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Rutgers)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Rutgers)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  61 transfers in from CFBD
+Fetching CFBD recruiting data for 28 (school, year) pairs...
+  Delaware State 2021: 0 players
+  Delaware State 2022: 0 players
+  Drake 2021: 0 players
+  Drake 2022: 0 players
+  LIU Post 2022: 0 players
+  LIU Post 2023: 0 players
+  Lafayette 2021: 5 players
+  Lafayette 2022: 1 players
+  Louisiana Tech 2021: 10 players
+  Louisiana Tech 2022: 12 players
+  Louisiana Tech 2023: 21 players
+  Maine 2023: 6 players
+  Maine 2024: 0 players
+  Mercer 2022: 8 players
+  Mercer 2023: 0 players
+  Rutgers 2021: 22 players
+  Rutgers 2022: 27 players
+  Rutgers 2023: 21 players
+  Rutgers 2024: 25 players
+  Rutgers 2025: 30 players
+  South Carolina 2021: 10 players
+  South Carolina 2022: 24 players
+  South Dakota 2023: 8 players
+  South Dakota 2024: 8 players
+  TCU 2021: 16 players
+  TCU 2022: 13 players
+  The Citadel 2022: 1 players
+  The Citadel 2023: 4 players
 Wrote ../depth_chart_data/rutgers.json
 exit_code=0
 === ucla ===
 Scraping Ourlads depth chart for UCLA...
   76 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=UCLA)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=UCLA)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=UCLA)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=UCLA)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=UCLA)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  129 transfers in from CFBD
+Fetching CFBD recruiting data for 25 (school, year) pairs...
+  California 2022: 17 players
+  California 2023: 14 players
+  Georgia Tech 2021: 16 players
+  Georgia Tech 2022: 15 players
+  James Madison 2021: 9 players
+  James Madison 2022: 14 players
+  James Madison 2023: 18 players
+  James Madison 2024: 18 players
+  Oregon State 2024: 16 players
+  Oregon State 2025: 20 players
+  Purdue 2022: 22 players
+  Purdue 2023: 18 players
+  Richmond 2022: 7 players
+  Richmond 2023: 0 players
+  Sam Houston 2024: 11 players
+  Sam Houston 2025: 12 players
+  South Carolina 2021: 10 players
+  South Carolina 2022: 24 players
+  Texas 2021: 23 players
+  Texas 2022: 30 players
+  UCLA 2021: 18 players
+  UCLA 2022: 13 players
+  UCLA 2024: 11 players
+  UCLA 2025: 22 players
+  UCLA 2026: 18 players
 Wrote ../depth_chart_data/ucla.json
 exit_code=0
 === usc ===
 Scraping Ourlads depth chart for USC...
   73 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=USC)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=USC)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=USC)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=USC)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  85 transfers in from CFBD
+Fetching CFBD recruiting data for 13 (school, year) pairs...
+  Memphis 2024: 16 players
+  Memphis 2025: 19 players
+  Oregon State 2021: 14 players
+  Oregon State 2022: 19 players
+  Penn State 2021: 18 players
+  Penn State 2022: 24 players
+  USC 2021: 23 players
+  USC 2022: 10 players
+  USC 2023: 27 players
+  USC 2024: 25 players
+  USC 2025: 28 players
+  Washington 2021: 18 players
+  Washington 2022: 14 players
 Wrote ../depth_chart_data/usc.json
 exit_code=0
 === washington ===
 Scraping Ourlads depth chart for Washington...
   59 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Washington)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Washington)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Washington)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Washington)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  82 transfers in from CFBD
+Fetching CFBD recruiting data for 25 (school, year) pairs...
+  Alabama 2023: 27 players
+  Alabama 2024: 28 players
+  Eastern Washington 2024: 16 players
+  Eastern Washington 2025: 22 players
+  Florida International 2021: 18 players
+  Florida International 2022: 18 players
+  Georgia Tech 2021: 16 players
+  Georgia Tech 2022: 15 players
+  Idaho State 2022: 14 players
+  Idaho State 2023: 9 players
+  Miami 2022: 14 players
+  Miami 2023: 25 players
+  Oregon 2022: 21 players
+  Oregon 2023: 33 players
+  USC 2022: 10 players
+  USC 2023: 27 players
+  Utah Tech 2021: 0 players
+  Utah Tech 2022: 6 players
+  Virginia Tech 2021: 30 players
+  Virginia Tech 2022: 24 players
+  Virginia Tech 2023: 29 players
+  Washington 2021: 18 players
+  Washington 2022: 14 players
+  Washington 2023: 27 players
+  Washington 2024: 16 players
 Wrote ../depth_chart_data/washington.json
 exit_code=0
 === wisconsin ===
 Scraping Ourlads depth chart for Wisconsin...
   92 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Wisconsin)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Wisconsin)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Wisconsin)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Wisconsin)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Wisconsin)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  89 transfers in from CFBD
+Fetching CFBD recruiting data for 32 (school, year) pairs...
+  Augustana 2023: 0 players
+  Augustana 2024: 0 players
+  Bethel 2021: 0 players
+  Bethel 2022: 0 players
+  Charlotte 2022: 16 players
+  Charlotte 2023: 15 players
+  Florida 2021: 21 players
+  Florida 2022: 22 players
+  Hope  2021: 0 players
+  Hope  2022: 0 players
+  Illinois State 2021: 0 players
+  Illinois State 2022: 6 players
+  Richmond 2022: 7 players
+  Richmond 2023: 0 players
+  Southeastern Louisiana 2022: 5 players
+  Southeastern Louisiana 2023: 0 players
+  Toledo 2023: 17 players
+  Toledo 2024: 22 players
+  UT Martin 2021: 3 players
+  UT Martin 2022: 3 players
+  Virginia Tech 2023: 29 players
+  Virginia Tech 2024: 15 players
+  West Virginia 2021: 20 players
+  West Virginia 2022: 18 players
+  Wisconsin 2021: 21 players
+  Wisconsin 2022: 20 players
+  Wisconsin 2023: 16 players
+  Wisconsin 2024: 26 players
+  Wisconsin 2025: 22 players
+  Wisconsin 2026: 14 players
+  Wisconsin La Crosse 2022: 0 players
+  Wisconsin La Crosse 2023: 0 players
 Wrote ../depth_chart_data/wisconsin.json
 exit_code=0
 === alabama ===
 Scraping Ourlads depth chart for Alabama...
   97 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Alabama)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Alabama)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Alabama)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Alabama)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Alabama)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  56 transfers in from CFBD
+Fetching CFBD recruiting data for 14 (school, year) pairs...
+  Alabama 2021: 26 players
+  Alabama 2022: 26 players
+  Alabama 2023: 27 players
+  Alabama 2024: 28 players
+  Alabama 2025: 20 players
+  Alabama 2026: 26 players
+  Marshall 2024: 18 players
+  Marshall 2025: 18 players
+  Maryland 2022: 21 players
+  Maryland 2023: 25 players
+  Mercer 2023: 0 players
+  Mercer 2024: 7 players
+  North Carolina 2021: 24 players
+  North Carolina 2022: 26 players
 Wrote ../depth_chart_data/alabama.json
 exit_code=0
 === arkansas ===
 Scraping Ourlads depth chart for Arkansas...
   100 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Arkansas)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Arkansas)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Arkansas)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Arkansas)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Arkansas)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  126 transfers in from CFBD
+Fetching CFBD recruiting data for 28 (school, year) pairs...
+  Angelo State 2021: 0 players
+  Angelo State 2022: 0 players
+  Arkansas 2021: 23 players
+  Arkansas 2022: 27 players
+  Arkansas 2023: 27 players
+  Arkansas 2024: 17 players
+  Arkansas 2025: 21 players
+  Arkansas 2026: 20 players
+  Clemson 2024: 23 players
+  Clemson 2025: 15 players
+  Fresno State 2021: 22 players
+  Fresno State 2022: 17 players
+  Howard 2023: 5 players
+  Howard 2024: 9 players
+  Memphis 2022: 13 players
+  Memphis 2023: 19 players
+  Ouachita Baptist 2023: 0 players
+  Ouachita Baptist 2024: 0 players
+  Southern Illinois 2021: 10 players
+  Southern Illinois 2022: 8 players
+  Temple 2023: 27 players
+  Temple 2024: 16 players
+  Tennessee 2022: 23 players
+  Tennessee 2023: 26 players
+  Vanderbilt 2021: 23 players
+  Vanderbilt 2022: 27 players
+  West Georgia 2021: 0 players
+  West Georgia 2022: 0 players
 Wrote ../depth_chart_data/arkansas.json
 exit_code=0
 === auburn ===
 Scraping Ourlads depth chart for Auburn...
   116 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Auburn)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Auburn)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Auburn)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Auburn)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Auburn)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  116 transfers in from CFBD
+Fetching CFBD recruiting data for 27 (school, year) pairs...
+  Auburn 2021: 17 players
+  Auburn 2022: 15 players
+  Auburn 2023: 19 players
+  Auburn 2024: 22 players
+  Auburn 2025: 26 players
+  Auburn 2026: 20 players
+  Chattanooga 2024: 5 players
+  Chattanooga 2025: 7 players
+  Hampton 2022: 0 players
+  Hampton 2023: 0 players
+  James Madison 2021: 9 players
+  James Madison 2022: 14 players
+  Oklahoma 2022: 22 players
+  Oklahoma 2023: 26 players
+  South Florida 2021: 21 players
+  South Florida 2022: 12 players
+  South Florida 2023: 17 players
+  Stanford 2021: 19 players
+  Stanford 2022: 25 players
+  TCU 2021: 16 players
+  TCU 2022: 13 players
+  Texas A&M 2021: 22 players
+  Texas A&M 2022: 30 players
+  Utah 2022: 18 players
+  Utah 2023: 20 players
+  West Alabama 2021: 0 players
+  West Alabama 2022: 0 players
 Wrote ../depth_chart_data/auburn.json
 exit_code=0
 === florida ===
 Scraping Ourlads depth chart for Florida...
   69 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Florida)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Florida)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Florida)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Florida)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Florida)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  78 transfers in from CFBD
+Fetching CFBD recruiting data for 18 (school, year) pairs...
+  Charlotte 2022: 16 players
+  Charlotte 2023: 15 players
+  Exeter 2023: 0 players
+  Exeter 2024: 0 players
+  Florida 2021: 21 players
+  Florida 2022: 22 players
+  Florida 2023: 21 players
+  Florida 2024: 19 players
+  Florida 2025: 27 players
+  Florida 2026: 19 players
+  Ohio State 2021: 26 players
+  Ohio State 2022: 21 players
+  Southern Miss 2022: 15 players
+  Southern Miss 2023: 20 players
+  Texas A&M 2023: 20 players
+  Texas A&M 2024: 17 players
+  Tulane 2023: 20 players
+  Tulane 2024: 18 players
 Wrote ../depth_chart_data/florida.json
 exit_code=0
 === georgia ===
 Scraping Ourlads depth chart for Georgia...
-  91 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Georgia)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Georgia)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Georgia)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Georgia)
-Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  90 depth chart rows
+No new transfers needing portal data -- skipping CFBD portal call this run.
+Fetching CFBD recruiting data for 5 (school, year) pairs...
+  Georgia 2021: 22 players
+  Georgia 2022: 31 players
+  Georgia 2023: 26 players
+  Georgia 2024: 32 players
+  Georgia 2025: 29 players
 Wrote ../depth_chart_data/georgia.json
 exit_code=0
 === kentucky ===
 Scraping Ourlads depth chart for Kentucky...
   84 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Kentucky)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Kentucky)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Kentucky)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Kentucky)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Kentucky)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  94 transfers in from CFBD
+Fetching CFBD recruiting data for 26 (school, year) pairs...
+  Boston College 2021: 28 players
+  Boston College 2022: 23 players
+  Florida Atlantic 2022: 11 players
+  Florida Atlantic 2023: 20 players
+  Jacksonville State 2022: 14 players
+  Jacksonville State 2023: 13 players
+  Kentucky 2021: 19 players
+  Kentucky 2022: 20 players
+  Kentucky 2023: 18 players
+  Kentucky 2024: 25 players
+  Kentucky 2025: 24 players
+  Kentucky 2026: 17 players
+  South Alabama 2021: 8 players
+  South Alabama 2022: 11 players
+  South Dakota 2021: 10 players
+  South Dakota 2022: 13 players
+  South Florida 2022: 12 players
+  South Florida 2023: 17 players
+  Southeastern 2023: 0 players
+  Southeastern 2024: 0 players
+  Southern Utah 2023: 7 players
+  Southern Utah 2024: 6 players
+  UAB 2022: 8 players
+  UAB 2023: 24 players
+  UCLA 2022: 13 players
+  UCLA 2023: 17 players
 Wrote ../depth_chart_data/kentucky.json
 exit_code=0
 === lsu ===
 Scraping Ourlads depth chart for LSU...
-  87 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=LSU)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=LSU)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=LSU)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=LSU)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=LSU)
+  89 depth chart rows
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  103 transfers in from CFBD
+Fetching CFBD recruiting data for 29 (school, year) pairs...
+  Baylor 2022: 23 players
+  Baylor 2023: 21 players
+  Elon 2023: 0 players
+  Elon 2024: 0 players
+  Florida 2024: 19 players
+  Florida 2025: 27 players
+  Georgia Tech 2023: 21 players
+  Georgia Tech 2024: 23 players
+  LSU 2022: 15 players
+  LSU 2023: 28 players
+  LSU 2024: 28 players
+  LSU 2025: 24 players
+  LSU 2026: 16 players
+  Middle Tennessee 2021: 10 players
+  Middle Tennessee 2022: 8 players
+  North Carolina Central 2022: 7 players
+  North Carolina Central 2023: 0 players
+  Notre Dame 2022: 23 players
+  Notre Dame 2023: 24 players
+  Old Dominion 2022: 14 players
+  Old Dominion 2023: 21 players
+  Ole Miss 2021: 25 players
+  Ole Miss 2022: 18 players
+  Oregon 2022: 21 players
+  Oregon 2023: 33 players
+  Troy 2022: 9 players
+  Troy 2023: 19 players
+  Virginia Tech 2023: 29 players
+  Virginia Tech 2024: 15 players
 Wrote ../depth_chart_data/lsu.json
 exit_code=0
 === ole-miss ===
 Scraping Ourlads depth chart for Ole Miss...
   76 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Ole+Miss)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Ole+Miss)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Ole+Miss)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Ole+Miss)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Ole+Miss)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  125 transfers in from CFBD
+Fetching CFBD recruiting data for 28 (school, year) pairs...
+  App State 2021: 22 players
+  App State 2022: 16 players
+  Auburn 2023: 19 players
+  Auburn 2024: 22 players
+  Baylor 2021: 20 players
+  Baylor 2022: 23 players
+  Ferris State 2021: 0 players
+  Ferris State 2022: 0 players
+  Ole Miss 2021: 25 players
+  Ole Miss 2022: 18 players
+  Ole Miss 2023: 17 players
+  Ole Miss 2024: 18 players
+  Ole Miss 2025: 22 players
+  Ole Miss 2026: 22 players
+  Pittsburgh 2023: 19 players
+  Pittsburgh 2024: 23 players
+  Southern Illinois 2021: 10 players
+  Southern Illinois 2022: 8 players
+  Syracuse 2022: 17 players
+  Syracuse 2023: 14 players
+  Tennessee 2024: 23 players
+  Tennessee 2025: 25 players
+  UTEP 2022: 9 players
+  UTEP 2023: 12 players
+  Wake Forest 2021: 20 players
+  Wake Forest 2022: 15 players
+  Washington 2022: 14 players
+  Washington 2023: 27 players
 Wrote ../depth_chart_data/ole-miss.json
 exit_code=0
 === mississippi-state ===
 Scraping Ourlads depth chart for Mississippi State...
-  84 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Mississippi+State)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Mississippi+State)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Mississippi+State)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Mississippi+State)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Mississippi+State)
+  71 depth chart rows
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  109 transfers in from CFBD
+Fetching CFBD recruiting data for 20 (school, year) pairs...
+  App State 2021: 22 players
+  App State 2022: 16 players
+  Coastal Carolina 2021: 18 players
+  Coastal Carolina 2022: 19 players
+  Florida 2023: 21 players
+  Florida 2024: 19 players
+  Iowa State 2023: 26 players
+  Iowa State 2024: 23 players
+  Mercer 2021: 0 players
+  Mercer 2022: 8 players
+  Mississippi State 2021: 20 players
+  Mississippi State 2022: 21 players
+  Mississippi State 2023: 23 players
+  Mississippi State 2024: 19 players
+  Mississippi State 2025: 18 players
+  Mississippi State 2026: 28 players
+  Oklahoma 2021: 16 players
+  Oklahoma 2022: 22 players
+  Texas A&M 2021: 22 players
+  Texas A&M 2022: 30 players
 Wrote ../depth_chart_data/mississippi-state.json
 exit_code=0
 === missouri ===
 Scraping Ourlads depth chart for Missouri...
   70 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Missouri)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Missouri)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Missouri)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Missouri)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  92 transfers in from CFBD
+Fetching CFBD recruiting data for 18 (school, year) pairs...
+  Charleston Southern 2023: 0 players
+  Charleston Southern 2024: 0 players
+  Colorado State 2022: 16 players
+  Colorado State 2023: 27 players
+  Hawai'i 2021: 12 players
+  Hawai'i 2022: 16 players
+  Michigan 2021: 22 players
+  Michigan 2022: 27 players
+  Missouri 2022: 19 players
+  Missouri 2023: 19 players
+  Missouri 2024: 23 players
+  Missouri 2025: 17 players
+  Northwest Missouri State 2022: 0 players
+  Northwest Missouri State 2023: 0 players
+  Ole Miss 2021: 25 players
+  Ole Miss 2022: 18 players
+  Oregon 2021: 24 players
+  Oregon 2022: 21 players
 Wrote ../depth_chart_data/missouri.json
 exit_code=0
 === oklahoma ===
 Scraping Ourlads depth chart for Oklahoma...
   81 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Oklahoma)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Oklahoma)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Oklahoma)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Oklahoma)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  96 transfers in from CFBD
+Fetching CFBD recruiting data for 19 (school, year) pairs...
+  Arkansas 2021: 23 players
+  Arkansas 2022: 27 players
+  Florida International 2021: 18 players
+  Florida International 2022: 18 players
+  Kennesaw State 2022: 0 players
+  Kennesaw State 2023: 9 players
+  McNeese 2022: 0 players
+  McNeese 2023: 4 players
+  Mercer 2023: 0 players
+  Mercer 2024: 7 players
+  Oklahoma 2021: 16 players
+  Oklahoma 2022: 22 players
+  Oklahoma 2023: 26 players
+  Oklahoma 2024: 30 players
+  Oklahoma 2025: 18 players
+  UTSA 2023: 14 players
+  UTSA 2024: 13 players
+  Virginia Tech 2022: 24 players
+  Virginia Tech 2023: 29 players
 Wrote ../depth_chart_data/oklahoma.json
 exit_code=0
 === south-carolina ===
 Scraping Ourlads depth chart for South Carolina...
   84 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=South+Carolina)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=South+Carolina)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=South+Carolina)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=South+Carolina)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  93 transfers in from CFBD
+Fetching CFBD recruiting data for 37 (school, year) pairs...
+  Alabama 2021: 26 players
+  Alabama 2022: 26 players
+  Ball State 2021: 23 players
+  Ball State 2022: 17 players
+  Bowling Green 2022: 10 players
+  Bowling Green 2023: 16 players
+  East Carolina 2021: 12 players
+  East Carolina 2022: 14 players
+  Ferris State 2021: 0 players
+  Ferris State 2022: 0 players
+  Florida State 2021: 17 players
+  Florida State 2022: 19 players
+  Holy Cross 2022: 6 players
+  Holy Cross 2023: 13 players
+  Incarnate Word 2021: 14 players
+  Incarnate Word 2022: 0 players
+  James Madison 2021: 9 players
+  James Madison 2022: 14 players
+  Limestone University 2021: 0 players
+  Limestone University 2022: 0 players
+  Marshall 2021: 14 players
+  Marshall 2022: 26 players
+  Missouri State 2022: 10 players
+  Missouri State 2023: 13 players
+  New Mexico State 2021: 13 players
+  New Mexico State 2022: 22 players
+  South Carolina 2021: 10 players
+  South Carolina 2022: 24 players
+  South Carolina 2023: 25 players
+  South Carolina 2024: 17 players
+  South Carolina 2025: 25 players
+  South Carolina State 2022: 9 players
+  South Carolina State 2023: 0 players
+  Tennessee Tech 2021: 6 players
+  Tennessee Tech 2022: 4 players
+  Western Carolina 2022: 20 players
+  Western Carolina 2023: 21 players
 Wrote ../depth_chart_data/south-carolina.json
 exit_code=0
 === tennessee ===
 Scraping Ourlads depth chart for Tennessee...
   87 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Tennessee)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Tennessee)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Tennessee)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Tennessee)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  63 transfers in from CFBD
+Fetching CFBD recruiting data for 12 (school, year) pairs...
+  Austin Peay 2021: 24 players
+  Austin Peay 2022: 18 players
+  Eastern Kentucky 2022: 6 players
+  Eastern Kentucky 2023: 6 players
+  Louisville 2023: 19 players
+  Louisville 2024: 18 players
+  Tennessee 2021: 14 players
+  Tennessee 2022: 23 players
+  Tennessee 2024: 23 players
+  Tennessee 2025: 25 players
+  West Georgia 2022: 0 players
+  West Georgia 2023: 0 players
 Wrote ../depth_chart_data/tennessee.json
 exit_code=0
 === texas ===
 Scraping Ourlads depth chart for Texas...
   96 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Texas)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Texas)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Texas)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Texas)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  63 transfers in from CFBD
+Fetching CFBD recruiting data for 27 (school, year) pairs...
+  Akron 2024: 13 players
+  Akron 2025: 11 players
+  Arkansas 2022: 27 players
+  Arkansas 2023: 27 players
+  Florida State 2021: 17 players
+  Florida State 2022: 19 players
+  Florida State 2023: 17 players
+  Michigan State 2021: 18 players
+  Michigan State 2022: 27 players
+  North Carolina A&T 2021: 17 players
+  North Carolina A&T 2022: 6 players
+  South Florida 2022: 12 players
+  South Florida 2023: 17 players
+  Stanford 2023: 23 players
+  Stanford 2024: 28 players
+  Syracuse 2023: 14 players
+  Syracuse 2024: 25 players
+  Temple 2022: 12 players
+  Temple 2023: 27 players
+  Texas 2023: 26 players
+  Texas 2024: 23 players
+  Texas A&M 2024: 17 players
+  Texas A&M 2025: 25 players
+  USC 2021: 23 players
+  USC 2022: 10 players
+  Western Kentucky 2021: 6 players
+  Western Kentucky 2022: 22 players
 Wrote ../depth_chart_data/texas.json
 exit_code=0
 === texas-am ===
 Scraping Ourlads depth chart for Texas A&M...
   87 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Texas+A%26M)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Texas+A%26M)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Texas+A%26M)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Texas+A%26M)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  74 transfers in from CFBD
+Fetching CFBD recruiting data for 12 (school, year) pairs...
+  Fresno State 2022: 17 players
+  Fresno State 2023: 14 players
+  Georgia 2021: 22 players
+  Georgia 2022: 31 players
+  Oklahoma State 2022: 17 players
+  Oklahoma State 2023: 19 players
+  South Carolina 2021: 10 players
+  South Carolina 2022: 24 players
+  Texas A&M 2023: 20 players
+  Texas A&M 2024: 17 players
+  Texas A&M 2025: 25 players
+  Texas A&M 2026: 27 players
 Wrote ../depth_chart_data/texas-am.json
 exit_code=0
 === vanderbilt ===
 Scraping Ourlads depth chart for Vanderbilt...
   80 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Vanderbilt)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Vanderbilt)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Vanderbilt)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Vanderbilt)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  74 transfers in from CFBD
+Fetching CFBD recruiting data for 33 (school, year) pairs...
+  Jacksonville State 2023: 13 players
+  Jacksonville State 2024: 20 players
+  James Madison 2021: 9 players
+  James Madison 2022: 14 players
+  Morehouse 2022: 0 players
+  Morehouse 2023: 0 players
+  NC State 2021: 18 players
+  NC State 2022: 12 players
+  New Mexico State 2022: 22 players
+  New Mexico State 2023: 20 players
+  Northern Arizona 2023: 12 players
+  Northern Arizona 2024: 6 players
+  Oklahoma 2021: 16 players
+  Oklahoma 2022: 22 players
+  Oklahoma State 2021: 18 players
+  Oklahoma State 2022: 17 players
+  Old Dominion 2022: 14 players
+  Old Dominion 2023: 21 players
+  Oregon 2021: 24 players
+  Oregon 2022: 21 players
+  Pittsburgh 2023: 19 players
+  Pittsburgh 2024: 23 players
+  Sam Houston 2021: 19 players
+  Sam Houston 2022: 15 players
+  South Dakota 2021: 10 players
+  South Dakota 2022: 13 players
+  Southeast Missouri State 2022: 5 players
+  Southeast Missouri State 2023: 8 players
+  Vanderbilt 2021: 23 players
+  Vanderbilt 2022: 27 players
+  Vanderbilt 2023: 23 players
+  Vanderbilt 2024: 20 players
+  Vanderbilt 2025: 14 players
 Wrote ../depth_chart_data/vanderbilt.json
 exit_code=0
 === boston-college ===
 Scraping Ourlads depth chart for Boston College...
   105 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Boston+College)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Boston+College)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Boston+College)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Boston+College)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  70 transfers in from CFBD
+Fetching CFBD recruiting data for 37 (school, year) pairs...
+  Barton 2023: 0 players
+  Barton 2024: 0 players
+  Boston College 2021: 28 players
+  Boston College 2022: 23 players
+  Boston College 2023: 18 players
+  Boston College 2024: 12 players
+  Buffalo 2023: 14 players
+  Buffalo 2024: 22 players
+  Campbell 2021: 8 players
+  Campbell 2022: 15 players
+  Charlotte 2022: 16 players
+  Charlotte 2023: 15 players
+  Colgate 2022: 6 players
+  Colgate 2023: 6 players
+  Colorado State 2021: 23 players
+  Colorado State 2022: 16 players
+  Elon 2021: 8 players
+  Elon 2022: 0 players
+  Florida 2022: 22 players
+  Florida 2023: 21 players
+  Jacksonville State 2022: 14 players
+  Jacksonville State 2023: 13 players
+  Merrimack 2022: 0 players
+  Merrimack 2023: 0 players
+  Merrimack 2024: 0 players
+  North Carolina Central 2021: 0 players
+  North Carolina Central 2022: 7 players
+  Ohio State 2021: 26 players
+  Ohio State 2022: 21 players
+  Saginaw Valley State 2022: 0 players
+  Saginaw Valley State 2023: 0 players
+  Tennessee State 2023: 7 players
+  Tennessee State 2024: 13 players
+  Valparaiso 2021: 0 players
+  Valparaiso 2022: 0 players
+  Virginia Tech 2021: 30 players
+  Virginia Tech 2022: 24 players
 Wrote ../depth_chart_data/boston-college.json
 exit_code=0
 === california ===
 Scraping Ourlads depth chart for California...
   76 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=California)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=California)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=California)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=California)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  119 transfers in from CFBD
+Fetching CFBD recruiting data for 22 (school, year) pairs...
+  Alabama 2022: 26 players
+  Alabama 2023: 27 players
+  California 2021: 19 players
+  California 2022: 17 players
+  California 2023: 14 players
+  California 2024: 20 players
+  California 2025: 15 players
+  Mississippi State 2021: 20 players
+  Mississippi State 2022: 21 players
+  Norfolk State 2021: 0 players
+  Norfolk State 2022: 0 players
+  Northern Arizona 2021: 20 players
+  Northern Arizona 2022: 16 players
+  Tennessee 2023: 26 players
+  Tennessee 2024: 23 players
+  Tulsa 2021: 10 players
+  Tulsa 2022: 14 players
+  Tulsa 2023: 21 players
+  USC 2023: 27 players
+  USC 2024: 25 players
+  Virginia Tech 2021: 30 players
+  Virginia Tech 2022: 24 players
 Wrote ../depth_chart_data/california.json
 exit_code=0
 === clemson ===
 Scraping Ourlads depth chart for Clemson...
   79 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Clemson)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Clemson)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Clemson)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Clemson)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  17 transfers in from CFBD
+Fetching CFBD recruiting data for 12 (school, year) pairs...
+  Clemson 2021: 21 players
+  Clemson 2022: 22 players
+  Clemson 2023: 26 players
+  Clemson 2024: 23 players
+  Howard 2021: 22 players
+  Howard 2022: 8 players
+  Southeast Missouri State 2022: 5 players
+  Southeast Missouri State 2023: 8 players
+  West Georgia 2023: 0 players
+  West Georgia 2024: 9 players
+  Wingate 2022: 0 players
+  Wingate 2023: 0 players
 Wrote ../depth_chart_data/clemson.json
 exit_code=0
 === duke ===
 Scraping Ourlads depth chart for Duke...
   77 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Duke)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Duke)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Duke)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Duke)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  68 transfers in from CFBD
+Fetching CFBD recruiting data for 23 (school, year) pairs...
+  Cornell 2021: 0 players
+  Cornell 2022: 5 players
+  Duke 2021: 18 players
+  Duke 2022: 18 players
+  Duke 2023: 26 players
+  Duke 2024: 18 players
+  Duke 2025: 28 players
+  Florida State 2021: 17 players
+  Florida State 2022: 19 players
+  LSU 2021: 24 players
+  LSU 2022: 15 players
+  Pennsylvania 2021: 12 players
+  Pennsylvania 2022: 14 players
+  San José State 2021: 10 players
+  San José State 2022: 22 players
+  South Dakota 2021: 10 players
+  South Dakota 2022: 13 players
+  Southern Utah 2021: 24 players
+  Southern Utah 2022: 4 players
+  Stanford 2022: 25 players
+  Stanford 2023: 23 players
+  Yale 2021: 16 players
+  Yale 2022: 8 players
 Wrote ../depth_chart_data/duke.json
 exit_code=0
 === florida-state ===
 Scraping Ourlads depth chart for Florida State...
   67 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Florida+State)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Florida+State)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Florida+State)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Florida+State)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  97 transfers in from CFBD
+Fetching CFBD recruiting data for 25 (school, year) pairs...
+  Bowling Green 2021: 23 players
+  Bowling Green 2022: 10 players
+  Florida State 2021: 17 players
+  Florida State 2022: 19 players
+  Florida State 2023: 17 players
+  Florida State 2024: 25 players
+  Florida State 2025: 23 players
+  Idaho State 2021: 0 players
+  Idaho State 2022: 14 players
+  Illinois State 2023: 8 players
+  Illinois State 2024: 6 players
+  Louisville 2023: 19 players
+  Louisville 2024: 18 players
+  Missouri 2021: 20 players
+  Missouri 2022: 19 players
+  Nevada 2023: 15 players
+  Nevada 2024: 17 players
+  New Mexico 2022: 19 players
+  New Mexico 2023: 14 players
+  Quincy 2024: 0 players
+  Quincy 2025: 0 players
+  Stephen F. Austin 2022: 10 players
+  Stephen F. Austin 2023: 16 players
+  Youngstown State 2021: 3 players
+  Youngstown State 2022: 14 players
 Wrote ../depth_chart_data/florida-state.json
 exit_code=0
 === georgia-tech ===
 Scraping Ourlads depth chart for Georgia Tech...
   86 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Georgia+Tech)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Georgia+Tech)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Georgia+Tech)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Georgia+Tech)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  98 transfers in from CFBD
+Fetching CFBD recruiting data for 35 (school, year) pairs...
+  App State 2021: 22 players
+  App State 2022: 16 players
+  Auburn 2023: 19 players
+  Auburn 2024: 22 players
+  Bowling Green 2021: 23 players
+  Bowling Green 2022: 10 players
+  Central Michigan 2022: 19 players
+  Central Michigan 2023: 22 players
+  Chattanooga 2021: 5 players
+  Chattanooga 2022: 6 players
+  Dartmouth 2021: 0 players
+  Dartmouth 2022: 13 players
+  Elon 2023: 0 players
+  Elon 2024: 0 players
+  Georgia 2021: 22 players
+  Georgia 2022: 31 players
+  Georgia Tech 2021: 16 players
+  Georgia Tech 2022: 15 players
+  Georgia Tech 2023: 21 players
+  Georgia Tech 2024: 23 players
+  Georgia Tech 2025: 24 players
+  Mercer 2022: 8 players
+  Mercer 2023: 0 players
+  Miami 2021: 24 players
+  Miami 2022: 14 players
+  Pennsylvania 2022: 14 players
+  Pennsylvania 2023: 10 players
+  Princeton 2021: 18 players
+  Princeton 2022: 12 players
+  Tennessee Tech 2022: 4 players
+  Tennessee Tech 2023: 9 players
+  UConn 2022: 15 players
+  UConn 2023: 15 players
+  Yale 2022: 8 players
+  Yale 2023: 12 players
 Wrote ../depth_chart_data/georgia-tech.json
 exit_code=0
 === louisville ===
 Scraping Ourlads depth chart for Louisville...
   84 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Louisville)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Louisville)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Louisville)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Louisville)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  136 transfers in from CFBD
+Fetching CFBD recruiting data for 35 (school, year) pairs...
+  Coastal Carolina 2021: 18 players
+  Coastal Carolina 2022: 19 players
+  Delaware 2022: 0 players
+  Delaware 2023: 10 players
+  Eastern Illinois 2021: 0 players
+  Eastern Illinois 2022: 8 players
+  Eastern Kentucky 2022: 6 players
+  Eastern Kentucky 2023: 6 players
+  Elon 2023: 0 players
+  Elon 2024: 0 players
+  Georgia Southern 2021: 22 players
+  Georgia Southern 2022: 22 players
+  Kansas State 2021: 18 players
+  Kansas State 2022: 17 players
+  Liberty 2023: 14 players
+  Liberty 2024: 19 players
+  Louisville 2021: 26 players
+  Louisville 2022: 16 players
+  Louisville 2023: 19 players
+  Louisville 2024: 18 players
+  Louisville 2025: 17 players
+  New Mexico State 2021: 13 players
+  New Mexico State 2022: 22 players
+  Toledo 2022: 14 players
+  Toledo 2023: 17 players
+  Troy 2021: 14 players
+  Troy 2022: 9 players
+  USC 2021: 23 players
+  USC 2022: 10 players
+  Weber State 2021: 0 players
+  Weber State 2022: 14 players
+  West Georgia 2021: 0 players
+  West Georgia 2022: 0 players
+  West Virginia 2023: 21 players
+  West Virginia 2024: 25 players
 Wrote ../depth_chart_data/louisville.json
 exit_code=0
 === miami-fl ===
 Scraping Ourlads depth chart for Miami...
   72 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Miami)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Miami)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Miami)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Miami)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Miami)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  74 transfers in from CFBD
+Fetching CFBD recruiting data for 14 (school, year) pairs...
+  Arizona 2021: 20 players
+  Arizona 2022: 30 players
+  Jacksonville State 2022: 14 players
+  Jacksonville State 2023: 13 players
+  Miami 2021: 24 players
+  Miami 2022: 14 players
+  Miami 2023: 25 players
+  Miami 2024: 27 players
+  Miami 2025: 21 players
+  Miami 2026: 30 players
+  Northern Illinois 2021: 27 players
+  Northern Illinois 2022: 23 players
+  Northwestern 2021: 16 players
+  Northwestern 2022: 16 players
 Wrote ../depth_chart_data/miami-fl.json
 exit_code=0
 === north-carolina ===
 Scraping Ourlads depth chart for North Carolina...
   80 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=North+Carolina)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=North+Carolina)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=North+Carolina)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=North+Carolina)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=North+Carolina)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  82 transfers in from CFBD
+Fetching CFBD recruiting data for 30 (school, year) pairs...
+  Charleston Southern 2022: 0 players
+  Charleston Southern 2023: 0 players
+  Colorado State 2023: 27 players
+  Colorado State 2024: 20 players
+  Eastern Illinois 2022: 8 players
+  Eastern Illinois 2023: 4 players
+  Florida 2022: 22 players
+  Florida 2023: 21 players
+  Fresno State 2021: 22 players
+  Fresno State 2022: 17 players
+  Holy Cross 2021: 8 players
+  Holy Cross 2022: 6 players
+  Lehigh 2022: 7 players
+  Lehigh 2023: 0 players
+  Liberty 2022: 11 players
+  Liberty 2023: 14 players
+  North Carolina 2021: 24 players
+  North Carolina 2022: 26 players
+  North Carolina 2023: 22 players
+  North Carolina 2024: 31 players
+  North Carolina 2025: 30 players
+  North Carolina 2026: 40 players
+  Richmond 2021: 5 players
+  Richmond 2022: 7 players
+  Richmond 2023: 0 players
+  Richmond 2024: 0 players
+  Tennessee 2022: 23 players
+  Tennessee 2023: 26 players
+  Wake Forest 2021: 20 players
+  Wake Forest 2022: 15 players
 Wrote ../depth_chart_data/north-carolina.json
 exit_code=0
 === nc-state ===
 Scraping Ourlads depth chart for NC State...
   68 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=NC+State)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=NC+State)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=NC+State)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=NC+State)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=NC+State)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  65 transfers in from CFBD
+Fetching CFBD recruiting data for 24 (school, year) pairs...
+  Alcorn State 2022: 0 players
+  Alcorn State 2023: 6 players
+  Buffalo 2021: 18 players
+  Buffalo 2022: 12 players
+  Colorado 2021: 19 players
+  Colorado 2022: 24 players
+  East Carolina 2022: 14 players
+  East Carolina 2023: 21 players
+  Miami 2022: 14 players
+  Miami 2023: 25 players
+  NC State 2021: 18 players
+  NC State 2022: 12 players
+  NC State 2023: 15 players
+  NC State 2024: 23 players
+  NC State 2025: 23 players
+  NC State 2026: 26 players
+  Norfolk State 2022: 0 players
+  Norfolk State 2023: 0 players
+  Penn State 2022: 24 players
+  Penn State 2023: 24 players
+  SMU 2023: 17 players
+  SMU 2024: 13 players
+  Tulane 2021: 17 players
+  Tulane 2022: 17 players
 Wrote ../depth_chart_data/nc-state.json
 exit_code=0
 === pittsburgh ===
 Scraping Ourlads depth chart for Pittsburgh...
   63 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Pittsburgh)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Pittsburgh)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Pittsburgh)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Pittsburgh)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  63 transfers in from CFBD
+Fetching CFBD recruiting data for 28 (school, year) pairs...
+  Auburn 2022: 15 players
+  Auburn 2023: 19 players
+  California (PA) 2021: 0 players
+  California (PA) 2022: 0 players
+  Kennesaw State 2021: 11 players
+  Kennesaw State 2022: 0 players
+  Kentucky 2021: 19 players
+  Kentucky 2022: 20 players
+  Liberty 2022: 11 players
+  Liberty 2023: 14 players
+  Miami (OH) 2022: 18 players
+  Miami (OH) 2023: 16 players
+  Northern Arizona 2023: 12 players
+  Northern Arizona 2024: 6 players
+  Pennsylvania 2021: 12 players
+  Pennsylvania 2022: 14 players
+  Pittsburgh 2021: 24 players
+  Pittsburgh 2022: 11 players
+  Pittsburgh 2024: 23 players
+  Pittsburgh 2025: 25 players
+  Richmond 2021: 5 players
+  Richmond 2022: 7 players
+  Slippery Rock 2021: 0 players
+  Slippery Rock 2022: 0 players
+  UAB 2022: 8 players
+  UAB 2023: 24 players
+  Western Carolina 2021: 5 players
+  Western Carolina 2022: 20 players
 Wrote ../depth_chart_data/pittsburgh.json
 exit_code=0
 === smu ===
 Scraping Ourlads depth chart for SMU...
   78 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=SMU)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=SMU)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=SMU)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=SMU)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  110 transfers in from CFBD
+Fetching CFBD recruiting data for 22 (school, year) pairs...
+  Bowling Green 2023: 16 players
+  Bowling Green 2024: 21 players
+  Georgia 2021: 22 players
+  Georgia 2022: 31 players
+  James Madison 2022: 14 players
+  James Madison 2023: 18 players
+  Kansas State 2021: 18 players
+  Kansas State 2022: 17 players
+  Liberty 2021: 11 players
+  Liberty 2022: 11 players
+  Massachusetts 2021: 15 players
+  Massachusetts 2022: 12 players
+  SMU 2021: 17 players
+  SMU 2022: 13 players
+  SMU 2023: 17 players
+  SMU 2024: 13 players
+  SMU 2025: 20 players
+  SMU 2026: 21 players
+  South Florida 2023: 17 players
+  South Florida 2024: 27 players
+  Stanford 2021: 19 players
+  Stanford 2022: 25 players
 Wrote ../depth_chart_data/smu.json
 exit_code=0
 === stanford ===
 Scraping Ourlads depth chart for Stanford...
   84 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Stanford)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Stanford)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Stanford)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Stanford)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  33 transfers in from CFBD
+Fetching CFBD recruiting data for 16 (school, year) pairs...
+  Michigan 2021: 22 players
+  Michigan 2022: 27 players
+  South Carolina State 2022: 9 players
+  South Carolina State 2023: 0 players
+  Stanford 2021: 19 players
+  Stanford 2022: 25 players
+  Stanford 2023: 23 players
+  Stanford 2024: 28 players
+  Stanford 2025: 17 players
+  Stanford 2026: 23 players
+  UCLA 2021: 18 players
+  UCLA 2022: 13 players
+  Washington 2021: 18 players
+  Washington 2022: 14 players
+  Yale 2021: 16 players
+  Yale 2022: 8 players
 Wrote ../depth_chart_data/stanford.json
 exit_code=0
 === syracuse ===
 Scraping Ourlads depth chart for Syracuse...
   70 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Syracuse)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Syracuse)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Syracuse)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Syracuse)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Syracuse)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  73 transfers in from CFBD
+Fetching CFBD recruiting data for 25 (school, year) pairs...
+  Iowa State 2021: 20 players
+  Iowa State 2022: 20 players
+  Kennesaw State 2022: 0 players
+  Kennesaw State 2023: 9 players
+  Miami (OH) 2022: 18 players
+  Miami (OH) 2023: 16 players
+  Saint Francis (PA) 2022: 0 players
+  Saint Francis (PA) 2023: 0 players
+  Syracuse 2021: 20 players
+  Syracuse 2022: 17 players
+  Syracuse 2023: 14 players
+  Syracuse 2024: 25 players
+  Syracuse 2025: 35 players
+  Syracuse 2026: 26 players
+  Texas A&M 2021: 22 players
+  Texas A&M 2022: 30 players
+  Toledo 2022: 14 players
+  Toledo 2023: 17 players
+  UL Monroe 2022: 3 players
+  UL Monroe 2023: 11 players
+  USC 2021: 23 players
+  USC 2022: 10 players
+  Western Kentucky 2021: 6 players
+  Western Kentucky 2022: 22 players
+  Western Kentucky 2023: 8 players
 Wrote ../depth_chart_data/syracuse.json
 exit_code=0
 === virginia ===
 Scraping Ourlads depth chart for Virginia...
   74 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Virginia)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Virginia)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Virginia)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Virginia)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  99 transfers in from CFBD
+Fetching CFBD recruiting data for 34 (school, year) pairs...
+  Arkansas State 2021: 15 players
+  Arkansas State 2022: 18 players
+  Army 2021: 50 players
+  Army 2022: 30 players
+  Central Michigan 2021: 25 players
+  Central Michigan 2022: 19 players
+  Eastern Kentucky 2022: 6 players
+  Eastern Kentucky 2023: 6 players
+  Middle Tennessee 2022: 8 players
+  Middle Tennessee 2023: 14 players
+  Navy 2023: 21 players
+  Navy 2024: 28 players
+  New Hampshire 2023: 6 players
+  New Hampshire 2024: 4 players
+  Notre Dame 2021: 27 players
+  Notre Dame 2022: 23 players
+  Ohio State 2021: 26 players
+  Ohio State 2022: 21 players
+  Oklahoma State 2021: 18 players
+  Oklahoma State 2022: 17 players
+  Robert Morris 2021: 0 players
+  Robert Morris 2022: 4 players
+  Stanford 2021: 19 players
+  Stanford 2022: 25 players
+  UCF 2021: 15 players
+  UCF 2022: 17 players
+  UConn 2022: 15 players
+  UConn 2023: 15 players
+  UTSA 2021: 14 players
+  UTSA 2022: 13 players
+  Virginia 2021: 25 players
+  Virginia 2022: 16 players
+  Virginia 2023: 20 players
+  Virginia 2024: 16 players
 Wrote ../depth_chart_data/virginia.json
 exit_code=0
 === virginia-tech ===
 Scraping Ourlads depth chart for Virginia Tech...
   82 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Virginia+Tech)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Virginia+Tech)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Virginia+Tech)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Virginia+Tech)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  87 transfers in from CFBD
+Fetching CFBD recruiting data for 23 (school, year) pairs...
+  Central Missouri State 2021: 0 players
+  Central Missouri State 2022: 0 players
+  Clemson 2021: 21 players
+  Clemson 2022: 22 players
+  Georgia Southern 2021: 22 players
+  Georgia Southern 2022: 22 players
+  Georgia State 2021: 16 players
+  Georgia State 2022: 10 players
+  Louisiana Tech 2021: 10 players
+  Louisiana Tech 2022: 12 players
+  Marshall 2022: 26 players
+  Marshall 2023: 18 players
+  Temple 2021: 13 players
+  Temple 2022: 12 players
+  Troy 2022: 9 players
+  Troy 2023: 19 players
+  Virginia Tech 2021: 30 players
+  Virginia Tech 2022: 24 players
+  Virginia Tech 2023: 29 players
+  Virginia Tech 2024: 15 players
+  Virginia Tech 2025: 20 players
+  Wisconsin 2023: 16 players
+  Wisconsin 2024: 26 players
 Wrote ../depth_chart_data/virginia-tech.json
 exit_code=0
 === wake-forest ===
 Scraping Ourlads depth chart for Wake Forest...
   80 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Wake+Forest)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Wake+Forest)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Wake+Forest)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Wake+Forest)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Wake+Forest)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  75 transfers in from CFBD
+Fetching CFBD recruiting data for 36 (school, year) pairs...
+  Bucknell 2021: 0 players
+  Bucknell 2022: 7 players
+  Colorado State 2022: 16 players
+  Colorado State 2023: 27 players
+  Dayton 2022: 3 players
+  Dayton 2023: 0 players
+  Iowa State 2024: 23 players
+  Iowa State 2025: 21 players
+  LSU 2023: 28 players
+  LSU 2024: 28 players
+  New Hampshire 2021: 0 players
+  New Hampshire 2022: 5 players
+  New Hampshire 2023: 6 players
+  New Hampshire 2024: 4 players
+  North Alabama 2021: 0 players
+  North Alabama 2022: 1 players
+  Syracuse 2021: 20 players
+  Syracuse 2022: 17 players
+  Tuskegee 2021: 0 players
+  Tuskegee 2022: 0 players
+  UAB 2022: 8 players
+  UAB 2023: 24 players
+  Wake Forest 2021: 20 players
+  Wake Forest 2022: 15 players
+  Wake Forest 2023: 22 players
+  Wake Forest 2024: 22 players
+  Wake Forest 2025: 24 players
+  Wake Forest 2026: 31 players
+  Washington State 2023: 33 players
+  Washington State 2024: 30 players
+  Weber State 2022: 14 players
+  Weber State 2023: 11 players
+  William & Mary 2022: 0 players
+  William & Mary 2023: 0 players
+  Wisconsin 2021: 21 players
+  Wisconsin 2022: 20 players
 Wrote ../depth_chart_data/wake-forest.json
 exit_code=0
 === notre-dame ===
 Scraping Ourlads depth chart for Notre Dame...
   81 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Notre+Dame)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Notre+Dame)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Notre+Dame)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Notre+Dame)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  38 transfers in from CFBD
+Fetching CFBD recruiting data for 3 (school, year) pairs...
+  Notre Dame 2022: 23 players
+  Notre Dame 2023: 24 players
+  Notre Dame 2024: 23 players
 Wrote ../depth_chart_data/notre-dame.json
 exit_code=0
 === arizona ===
 Scraping Ourlads depth chart for Arizona...
   89 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Arizona)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Arizona)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Arizona)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Arizona)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Arizona)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  107 transfers in from CFBD
+Fetching CFBD recruiting data for 39 (school, year) pairs...
+  Arizona 2021: 20 players
+  Arizona 2022: 30 players
+  Arizona 2023: 27 players
+  Arizona 2024: 15 players
+  Arizona 2025: 25 players
+  Arizona 2026: 20 players
+  Arizona State 2022: 8 players
+  Arizona State 2023: 19 players
+  BYU 2022: 27 players
+  BYU 2023: 21 players
+  Eastern Michigan 2021: 22 players
+  Eastern Michigan 2022: 5 players
+  Georgetown 2022: 9 players
+  Georgetown 2023: 6 players
+  Houston Christian 2022: 11 players
+  Houston Christian 2023: 6 players
+  Howard 2023: 5 players
+  Howard 2024: 9 players
+  Kansas State 2022: 17 players
+  Kansas State 2023: 23 players
+  Louisville 2022: 16 players
+  Louisville 2023: 19 players
+  Memphis 2023: 19 players
+  Memphis 2024: 16 players
+  Michigan 2021: 22 players
+  Michigan 2022: 27 players
+  Nebraska 2021: 20 players
+  Nebraska 2022: 17 players
+  Northern Colorado 2023: 4 players
+  Northern Colorado 2024: 5 players
+  San José State 2021: 10 players
+  San José State 2022: 22 players
+  San José State 2023: 14 players
+  UL Monroe 2022: 3 players
+  UL Monroe 2023: 11 players
+  Washington 2022: 14 players
+  Washington 2023: 27 players
+  Wisconsin 2021: 21 players
+  Wisconsin 2022: 20 players
 Wrote ../depth_chart_data/arizona.json
 exit_code=0
 === arizona-state ===
 Scraping Ourlads depth chart for Arizona State...
   102 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Arizona+State)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Arizona+State)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Arizona+State)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Arizona+State)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Arizona+State)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  117 transfers in from CFBD
+Fetching CFBD recruiting data for 22 (school, year) pairs...
+  Arizona State 2021: 14 players
+  Arizona State 2022: 8 players
+  Arizona State 2023: 19 players
+  Arizona State 2024: 21 players
+  Arizona State 2025: 22 players
+  Arizona State 2026: 17 players
+  Colorado 2022: 24 players
+  Colorado 2023: 18 players
+  Delaware State 2021: 0 players
+  Delaware State 2022: 0 players
+  Northern Arizona 2021: 20 players
+  Northern Arizona 2022: 16 players
+  Ohio State 2023: 24 players
+  Ohio State 2024: 25 players
+  Oklahoma 2021: 16 players
+  Oklahoma 2022: 22 players
+  Oklahoma State 2021: 18 players
+  Oklahoma State 2022: 17 players
+  UCF 2021: 15 players
+  UCF 2022: 17 players
+  Washington 2021: 18 players
+  Washington 2022: 14 players
 Wrote ../depth_chart_data/arizona-state.json
 exit_code=0
 === baylor ===
 Scraping Ourlads depth chart for Baylor...
   59 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Baylor)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Baylor)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Baylor)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  92 transfers in from CFBD
+Fetching CFBD recruiting data for 27 (school, year) pairs...
+  Baylor 2022: 23 players
+  Baylor 2023: 21 players
+  Baylor 2024: 13 players
+  Coastal Carolina 2021: 18 players
+  Coastal Carolina 2022: 19 players
+  Delaware 2022: 0 players
+  Delaware 2023: 10 players
+  Florida 2022: 22 players
+  Florida 2023: 21 players
+  Florida International 2021: failed (HTTPSConnectionPool(host='api.collegefootballdata.com', port=443): Read timed out. (read timeout=20))
+  Florida International 2022: 18 players
+  Georgia State 2021: 16 players
+  Georgia State 2022: 10 players
+  Incarnate Word 2022: 0 players
+  Incarnate Word 2023: 14 players
+  Kansas State 2021: 18 players
+  Kansas State 2022: 17 players
+  Sam Houston 2021: 19 players
+  Sam Houston 2022: 15 players
+  South Carolina 2022: 24 players
+  South Carolina 2023: 25 players
+  Southern Miss 2021: 11 players
+  Southern Miss 2022: 15 players
+  UAB 2022: 8 players
+  UAB 2023: 24 players
+  Western Kentucky 2021: 6 players
+  Western Kentucky 2022: 22 players
 Wrote ../depth_chart_data/baylor.json
 exit_code=0
 === byu ===
 Scraping Ourlads depth chart for BYU...
   83 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=BYU)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=BYU)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=BYU)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=BYU)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=BYU)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  60 transfers in from CFBD
+Fetching CFBD recruiting data for 24 (school, year) pairs...
+  BYU 2021: 17 players
+  BYU 2022: 27 players
+  BYU 2023: 21 players
+  BYU 2024: 25 players
+  BYU 2025: 24 players
+  BYU 2026: 21 players
+  Kansas State 2023: 23 players
+  Kansas State 2024: 18 players
+  Kennesaw State 2021: 11 players
+  Kennesaw State 2022: 0 players
+  Michigan 2021: 22 players
+  Michigan 2022: 27 players
+  New Mexico 2021: 24 players
+  New Mexico 2022: 19 players
+  Oregon 2022: 21 players
+  Oregon 2023: 33 players
+  Southern Utah 2021: 24 players
+  Southern Utah 2022: 4 players
+  USC 2023: 27 players
+  USC 2024: 25 players
+  Utah 2021: 18 players
+  Utah 2022: 18 players
+  Utah Tech 2021: 0 players
+  Utah Tech 2022: 6 players
 Wrote ../depth_chart_data/byu.json
 exit_code=0
 === ucf ===
 Scraping Ourlads depth chart for UCF...
   80 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=UCF)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=UCF)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=UCF)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=UCF)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  136 transfers in from CFBD
+Fetching CFBD recruiting data for 39 (school, year) pairs...
+  Bethune-Cookman 2022: 2 players
+  Bethune-Cookman 2023: 5 players
+  Buffalo 2022: 12 players
+  Buffalo 2023: 14 players
+  Colgate 2022: 6 players
+  Colgate 2023: 6 players
+  Eastern Kentucky 2021: 0 players
+  Eastern Kentucky 2022: 6 players
+  Grand Valley State 2021: 0 players
+  Grand Valley State 2022: 21 players
+  Harvard 2021: 15 players
+  Harvard 2022: 12 players
+  Idaho 2023: 32 players
+  Idaho 2024: 27 players
+  Kansas State 2021: 18 players
+  Kansas State 2022: 17 players
+  Limestone 2022: 0 players
+  Limestone 2023: 0 players
+  Massachusetts 2022: 12 players
+  Massachusetts 2023: 7 players
+  Missouri 2021: 20 players
+  Missouri 2022: 19 players
+  Monmouth 2022: 4 players
+  Monmouth 2023: 5 players
+  Old Dominion 2021: 20 players
+  Old Dominion 2022: 14 players
+  Tennessee State 2023: 7 players
+  Tennessee State 2024: 13 players
+  UCF 2021: 15 players
+  UCF 2022: 17 players
+  UCF 2023: 15 players
+  UCF 2024: 17 players
+  UCF 2025: 14 players
+  USC 2021: 23 players
+  USC 2022: 10 players
+  Virginia Union 2022: 0 players
+  Virginia Union 2023: 0 players
+  Wayne State College 2023: 0 players
+  Wayne State College 2024: 0 players
 Wrote ../depth_chart_data/ucf.json
 exit_code=0
 === cincinnati ===
 Scraping Ourlads depth chart for Cincinnati...
   72 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Cincinnati)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Cincinnati)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Cincinnati)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Cincinnati)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  96 transfers in from CFBD
+Fetching CFBD recruiting data for 39 (school, year) pairs...
+  Albany 2022: 0 players
+  Albany 2023: 0 players
+  Arkansas-Pine Bluff 2021: 0 players
+  Arkansas-Pine Bluff 2022: 3 players
+  Central Arkansas 2022: 16 players
+  Central Arkansas 2023: 7 players
+  Charlotte 2021: 24 players
+  Charlotte 2022: 16 players
+  Cincinnati 2021: 24 players
+  Cincinnati 2022: 20 players
+  Cincinnati 2023: 12 players
+  Cincinnati 2024: 24 players
+  Cincinnati 2025: 20 players
+  Colorado School of Mines 2021: 0 players
+  Colorado School of Mines 2022: 0 players
+  Fresno State 2023: 14 players
+  Fresno State 2024: 17 players
+  Illinois State 2022: 6 players
+  Illinois State 2023: 8 players
+  Louisiana 2021: 19 players
+  Louisiana 2022: 12 players
+  Maine 2022: 0 players
+  Maine 2023: 6 players
+  North Carolina Central 2021: 0 players
+  North Carolina Central 2022: 7 players
+  Northern Illinois 2022: 23 players
+  Northern Illinois 2023: 23 players
+  Oklahoma 2021: 16 players
+  Oklahoma 2022: 22 players
+  Pennsylvania 2021: 12 players
+  Pennsylvania 2022: 14 players
+  South Dakota 2021: 10 players
+  South Dakota 2022: 13 players
+  Southern Illinois 2022: 8 players
+  Southern Illinois 2023: 9 players
+  Syracuse 2021: 20 players
+  Syracuse 2022: 17 players
+  UTSA 2021: 14 players
+  UTSA 2022: 13 players
 Wrote ../depth_chart_data/cincinnati.json
 exit_code=0
 === colorado ===
 Scraping Ourlads depth chart for Colorado...
   75 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Colorado)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Colorado)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Colorado)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Colorado)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  175 transfers in from CFBD
+Fetching CFBD recruiting data for 52 (school, year) pairs...
+  Alabama A&M 2022: 3 players
+  Alabama A&M 2023: 1 players
+  Central Michigan 2022: 19 players
+  Central Michigan 2023: 22 players
+  Charleston Southern 2023: 0 players
+  Charleston Southern 2024: 0 players
+  Charlotte 2023: 15 players
+  Charlotte 2024: 16 players
+  Coastal Carolina 2023: 17 players
+  Coastal Carolina 2024: 22 players
+  Colorado 2021: 19 players
+  Colorado 2022: 24 players
+  Colorado 2023: 18 players
+  Colorado 2024: 12 players
+  Colorado 2025: 16 players
+  Dayton 2021: 0 players
+  Dayton 2022: 3 players
+  Florida International 2021: 18 players
+  Florida International 2022: 18 players
+  Incarnate Word 2021: 14 players
+  Incarnate Word 2022: 0 players
+  James Madison 2021: 9 players
+  James Madison 2022: 14 players
+  James Madison 2023: 18 players
+  James Madison 2024: 18 players
+  Kansas 2022: 7 players
+  Kansas 2023: 16 players
+  Lafayette 2023: 0 players
+  Lafayette 2024: 5 players
+  Lamar 2022: 10 players
+  Lamar 2023: 0 players
+  Miami (OH) 2021: 23 players
+  Miami (OH) 2022: 18 players
+  Mississippi State 2021: 20 players
+  Mississippi State 2022: 21 players
+  Missouri 2021: 20 players
+  Missouri 2022: 19 players
+  Monmouth 2023: 5 players
+  Monmouth 2024: 6 players
+  New Mexico State 2021: 13 players
+  New Mexico State 2022: 22 players
+  New Mexico State 2023: 20 players
+  North Dakota State 2021: 0 players
+  North Dakota State 2022: 17 players
+  Northwest Missouri State 2021: 0 players
+  Northwest Missouri State 2022: 0 players
+  Temple 2021: 13 players
+  Temple 2022: 12 players
+  Tennessee 2021: 14 players
+  Tennessee 2022: 23 players
+  Utah 2021: 18 players
+  Utah 2022: 18 players
 Wrote ../depth_chart_data/colorado.json
 exit_code=0
 === houston ===
 Scraping Ourlads depth chart for Houston...
   70 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Houston)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Houston)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Houston)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Houston)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  113 transfers in from CFBD
+Fetching CFBD recruiting data for 32 (school, year) pairs...
+  Auburn 2021: 17 players
+  Auburn 2022: 15 players
+  Florida A&M 2021: 6 players
+  Florida A&M 2022: 6 players
+  Houston 2021: 10 players
+  Houston 2022: 14 players
+  Houston 2023: 18 players
+  Houston 2024: 14 players
+  New Mexico 2021: 24 players
+  New Mexico 2022: 19 players
+  Notre Dame 2021: 27 players
+  Notre Dame 2022: 23 players
+  Ole Miss 2021: 25 players
+  Ole Miss 2022: 18 players
+  Oregon State 2021: 14 players
+  Oregon State 2022: 19 players
+  Samford 2022: 0 players
+  Samford 2023: 0 players
+  Tennessee 2021: 14 players
+  Tennessee 2022: 23 players
+  Tennessee Tech 2023: 9 players
+  Tennessee Tech 2024: 1 players
+  Tulane 2021: 17 players
+  Tulane 2022: 17 players
+  Tulsa 2022: 14 players
+  Tulsa 2023: 21 players
+  Utah 2022: 18 players
+  Utah 2023: 20 players
+  Western Kentucky 2023: 8 players
+  Western Kentucky 2024: 16 players
+  Yale 2021: 16 players
+  Yale 2022: 8 players
 Wrote ../depth_chart_data/houston.json
 exit_code=0
 === iowa-state ===
 Scraping Ourlads depth chart for Iowa State...
   69 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Iowa+State)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Iowa+State)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Iowa+State)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Iowa+State)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  71 transfers in from CFBD
+Fetching CFBD recruiting data for 40 (school, year) pairs...
+  Akron 2022: 11 players
+  Akron 2023: 21 players
+  Arkansas State 2022: 18 players
+  Arkansas State 2023: 22 players
+  BYU 2021: 17 players
+  BYU 2022: 27 players
+  Florida Atlantic 2021: 19 players
+  Florida Atlantic 2022: 11 players
+  Hampton 2022: 0 players
+  Hampton 2023: 0 players
+  Iowa State 2021: 20 players
+  Iowa State 2022: 20 players
+  Iowa State 2023: 26 players
+  Iowa State 2024: 23 players
+  Iowa State 2025: 21 players
+  Louisville 2023: 19 players
+  Louisville 2024: 18 players
+  Minot State 2023: 0 players
+  Minot State 2024: 0 players
+  Montana State 2023: 12 players
+  Montana State 2024: 16 players
+  Oklahoma 2021: 16 players
+  Oklahoma 2022: 22 players
+  Oklahoma State 2023: 19 players
+  Oklahoma State 2024: 20 players
+  Sioux Falls 2021: 0 players
+  Sioux Falls 2022: 0 players
+  South Dakota State 2021: 0 players
+  South Dakota State 2022: 7 players
+  Texas-Permian Basin 2022: 0 players
+  Texas-Permian Basin 2023: 0 players
+  Vanderbilt 2021: 23 players
+  Vanderbilt 2022: 27 players
+  Washington State 2021: 19 players
+  Washington State 2022: 31 players
+  Washington State 2023: 33 players
+  West Virginia 2022: 18 players
+  West Virginia 2023: 21 players
+  Western Kentucky 2023: 8 players
+  Western Kentucky 2024: 16 players
 Wrote ../depth_chart_data/iowa-state.json
 exit_code=0
 === kansas ===
 Scraping Ourlads depth chart for Kansas...
   75 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Kansas)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Kansas)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Kansas)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Kansas)
-  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Kansas)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  108 transfers in from CFBD
+Fetching CFBD recruiting data for 35 (school, year) pairs...
+  Air Force 2022: 44 players
+  Air Force 2023: 47 players
+  Albany 2021: 0 players
+  Albany 2022: 0 players
+  Baylor 2021: 20 players
+  Baylor 2022: 23 players
+  Boston College 2021: 28 players
+  Boston College 2022: 23 players
+  Bucknell 2021: 0 players
+  Bucknell 2022: 7 players
+  California 2022: 17 players
+  California 2023: 14 players
+  Fort Hays 2021: 0 players
+  Fort Hays 2022: 0 players
+  Georgia Tech 2022: 15 players
+  Georgia Tech 2023: 21 players
+  Grand Valley State 2022: 21 players
+  Grand Valley State 2023: 20 players
+  Jacksonville State 2021: 6 players
+  Jacksonville State 2022: 14 players
+  Kansas 2022: 7 players
+  Kansas 2023: 16 players
+  Kansas 2024: 17 players
+  Kansas 2025: 15 players
+  Kansas 2026: 18 players
+  Middle Tennessee 2022: 8 players
+  Middle Tennessee 2023: 14 players
+  Northwest Missouri State 2023: 0 players
+  Northwest Missouri State 2024: 0 players
+  Old Dominion 2021: 20 players
+  Old Dominion 2022: 14 players
+  Rhode Island 2021: 6 players
+  Rhode Island 2022: 4 players
+  Wayne State 2024: 0 players
+  Wayne State 2025: 0 players
 Wrote ../depth_chart_data/kansas.json
 exit_code=0
 === kansas-state ===
 Scraping Ourlads depth chart for Kansas State...
   80 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Kansas+State)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Kansas+State)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Kansas+State)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Kansas+State)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  73 transfers in from CFBD
+Fetching CFBD recruiting data for 31 (school, year) pairs...
+  Akron 2022: 11 players
+  Akron 2023: 21 players
+  Alabama State 2021: 0 players
+  Alabama State 2022: 0 players
+  Austin Peay 2022: 18 players
+  Austin Peay 2023: 14 players
+  Cal Poly 2023: 17 players
+  Cal Poly 2024: 20 players
+  Coastal Carolina 2023: 17 players
+  Coastal Carolina 2024: 22 players
+  Emporia State 2023: 0 players
+  Emporia State 2024: 0 players
+  Florida Atlantic 2022: 11 players
+  Florida Atlantic 2023: 20 players
+  Illinois 2021: 18 players
+  Illinois 2022: 25 players
+  Kansas State 2021: 18 players
+  Kansas State 2022: 17 players
+  Kansas State 2023: 23 players
+  Kansas State 2024: 18 players
+  Kansas State 2025: 25 players
+  Kennesaw State 2024: 17 players
+  Kennesaw State 2025: 15 players
+  Missouri 2022: 19 players
+  Missouri 2023: 19 players
+  Morgan State 2022: 7 players
+  Morgan State 2023: 8 players
+  Northwest Missouri State 2021: 0 players
+  Northwest Missouri State 2022: 0 players
+  Texas 2022: 30 players
+  Texas 2023: 26 players
 Wrote ../depth_chart_data/kansas-state.json
 exit_code=0
 === oklahoma-state ===
 Scraping Ourlads depth chart for Oklahoma State...
   79 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Oklahoma+State)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Oklahoma+State)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Oklahoma+State)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Oklahoma+State)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  126 transfers in from CFBD
+Fetching CFBD recruiting data for 38 (school, year) pairs...
+  Abilene Christian 2022: 3 players
+  Abilene Christian 2023: 1 players
+  BYU 2021: 17 players
+  BYU 2022: 27 players
+  Central Oklahoma 2021: 0 players
+  Central Oklahoma 2022: 0 players
+  Coastal Carolina 2022: 19 players
+  Coastal Carolina 2023: 17 players
+  Eastern Illinois 2021: 0 players
+  Eastern Illinois 2022: 8 players
+  Indiana State 2023: 14 players
+  Indiana State 2024: 4 players
+  Nebraska 2021: 20 players
+  Nebraska 2022: 17 players
+  North Texas 2021: 18 players
+  North Texas 2022: 10 players
+  North Texas 2023: 13 players
+  North Texas 2024: 30 players
+  Oklahoma State 2021: 18 players
+  Oklahoma State 2022: 17 players
+  Oklahoma State 2023: 19 players
+  Oregon State 2023: 19 players
+  Oregon State 2024: 16 players
+  SMU 2023: 17 players
+  SMU 2024: 13 players
+  SMU 2025: 20 players
+  Stephen F. Austin 2024: 13 players
+  Stephen F. Austin 2025: 10 players
+  Tarleton State 2023: 0 players
+  Tarleton State 2024: 1 players
+  Texas Tech 2021: 13 players
+  Texas Tech 2022: 18 players
+  West Georgia 2021: 0 players
+  West Georgia 2022: 0 players
+  Western Michigan 2021: 21 players
+  Western Michigan 2022: 14 players
+  Yale 2021: 16 players
+  Yale 2022: 8 players
 Wrote ../depth_chart_data/oklahoma-state.json
 exit_code=0
 === tcu ===
 Scraping Ourlads depth chart for TCU...
   76 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=TCU)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=TCU)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=TCU)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=TCU)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  77 transfers in from CFBD
+Fetching CFBD recruiting data for 17 (school, year) pairs...
+  Abilene Christian 2021: 0 players
+  Abilene Christian 2022: 3 players
+  Colorado School of Mines 2021: 0 players
+  Colorado School of Mines 2022: 0 players
+  Harvard 2021: 15 players
+  Harvard 2022: 12 players
+  Louisiana Tech 2023: 21 players
+  Louisiana Tech 2024: 12 players
+  Missouri State 2022: 10 players
+  Missouri State 2023: 13 players
+  Oklahoma State 2021: 18 players
+  Oklahoma State 2022: 17 players
+  TCU 2021: 16 players
+  TCU 2022: 13 players
+  TCU 2023: 21 players
+  TCU 2024: 21 players
+  TCU 2025: 27 players
 Wrote ../depth_chart_data/tcu.json
 exit_code=0
 === texas-tech ===
 Scraping Ourlads depth chart for Texas Tech...
   82 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Texas+Tech)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Texas+Tech)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Texas+Tech)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  92 transfers in from CFBD
+Fetching CFBD recruiting data for 31 (school, year) pairs...
+  Akron 2021: 18 players
+  Akron 2022: 11 players
+  Alabama State 2022: 0 players
+  Alabama State 2023: 6 players
+  Arizona State 2021: 14 players
+  Arizona State 2022: 8 players
+  Colorado 2023: 18 players
+  Colorado 2024: 12 players
+  Florida State 2022: 19 players
+  Florida State 2023: 17 players
+  Georgetown 2021: 13 players
+  Georgetown 2022: 9 players
+  Illinois State 2021: 0 players
+  Illinois State 2022: 6 players
+  Nevada 2021: 22 players
+  Nevada 2022: 14 players
+  Notre Dame 2022: 23 players
+  Notre Dame 2023: 24 players
+  Ohio 2021: 19 players
+  Ohio 2022: 7 players
+  Shaw 2021: 0 players
+  Shaw 2022: 0 players
+  Texas Tech 2021: 13 players
+  Texas Tech 2022: 18 players
+  Texas Tech 2023: 29 players
+  Texas Tech 2024: 22 players
+  Tulane 2021: 17 players
+  Tulane 2022: 17 players
+  Tulane 2023: 20 players
+  Tulsa 2022: 14 players
+  Tulsa 2023: 21 players
 Wrote ../depth_chart_data/texas-tech.json
 exit_code=0
 === utah ===
 Scraping Ourlads depth chart for Utah...
   65 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Utah)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Utah)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Utah)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Utah)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  70 transfers in from CFBD
+Fetching CFBD recruiting data for 23 (school, year) pairs...
+  Missouri 2022: 19 players
+  Missouri 2023: 19 players
+  Montana State 2022: 14 players
+  Montana State 2023: 12 players
+  Ohio State 2024: 25 players
+  Ohio State 2025: 28 players
+  San José State 2021: 10 players
+  San José State 2022: 22 players
+  Stanford 2024: 28 players
+  Stanford 2025: 17 players
+  Tennessee 2021: 14 players
+  Tennessee 2022: 23 players
+  UNLV 2023: 15 players
+  UNLV 2024: 23 players
+  Utah 2021: 18 players
+  Utah 2022: 18 players
+  Utah 2023: 20 players
+  Utah 2024: 16 players
+  Utah 2025: 25 players
+  Weber State 2021: 0 players
+  Weber State 2022: 14 players
+  Wyoming 2021: 18 players
+  Wyoming 2022: 17 players
 Wrote ../depth_chart_data/utah.json
 exit_code=0
 === west-virginia ===
 Scraping Ourlads depth chart for West Virginia...
   76 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
-  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=West+Virginia)
-  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=West+Virginia)
-  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=West+Virginia)
-  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=West+Virginia)
 Fetching CFBD transfer portal data for new transfers...
-  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
-  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
-  0 transfers in from CFBD
+  125 transfers in from CFBD
+Fetching CFBD recruiting data for 39 (school, year) pairs...
+  Boise State 2022: 24 players
+  Boise State 2023: 25 players
+  Bowling Green 2022: 10 players
+  Bowling Green 2023: 16 players
+  Coastal Carolina 2021: 18 players
+  Coastal Carolina 2022: 19 players
+  Colorado State 2021: 23 players
+  Colorado State 2022: 16 players
+  Georgia State 2021: 16 players
+  Georgia State 2022: 10 players
+  Jacksonville State 2022: 14 players
+  Jacksonville State 2023: 13 players
+  Mississippi State 2021: 20 players
+  Mississippi State 2022: 21 players
+  Missouri State 2022: 10 players
+  Missouri State 2023: 13 players
+  Montana State 2022: 14 players
+  Montana State 2023: 12 players
+  Oklahoma State 2021: 18 players
+  Oklahoma State 2022: 17 players
+  Stephen F. Austin 2023: 16 players
+  Stephen F. Austin 2024: 13 players
+  Texas-Permian Basin 2023: 0 players
+  Texas-Permian Basin 2024: 0 players
+  Troy 2021: 14 players
+  Troy 2022: 9 players
+  UConn 2022: 15 players
+  UConn 2023: 15 players
+  West Virginia 2021: 20 players
+  West Virginia 2022: 18 players
+  West Virginia 2023: 21 players
+  West Virginia 2024: 25 players
+  West Virginia 2025: 25 players
+  Western Kentucky 2021: 6 players
+  Western Kentucky 2022: 22 players
+  Western Michigan 2022: 14 players
+  Western Michigan 2023: 17 players
+  Youngstown State 2022: 14 players
+  Youngstown State 2023: 10 players
 Wrote ../depth_chart_data/west-virginia.json
 exit_code=0

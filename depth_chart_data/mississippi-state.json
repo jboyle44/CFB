@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T12:19:27.624258+00:00",
-  "ourladsUpdatedAt": "2026-09-03T12:19:27.624258+00:00",
-  "cfbdUpdatedAt": "2026-09-03T12:19:27.624258+00:00",
+  "generatedAt": "2026-09-03T13:45:54.979911+00:00",
+  "ourladsUpdatedAt": "2026-09-03T13:45:54.979911+00:00",
+  "cfbdUpdatedAt": "2026-09-03T13:45:54.979911+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:37:11.545837+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Mississippi State",
@@ -132,7 +132,13 @@
       "hsNationalRank": 508,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": null
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "WR-SL",
@@ -192,7 +198,13 @@
       "hsNationalRank": 1174,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": null
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "LT",
@@ -310,12 +322,12 @@
       "jersey": "72",
       "class": "GR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 86,
       "transferScore": null,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 937,
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": 65.5,
@@ -340,7 +352,13 @@
       "hsNationalRank": 704,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": null
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RG",
@@ -862,7 +880,13 @@
       "hsNationalRank": 706,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": null
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "WLB",
@@ -1024,12 +1048,12 @@
       "jersey": "5",
       "class": "GR",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 91,
       "transferScore": 86,
       "profileUrl": null,
       "transferRank": 1035,
       "transferPosRank": 94,
-      "hsNationalRank": null,
+      "hsNationalRank": 258,
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": 61.4,
