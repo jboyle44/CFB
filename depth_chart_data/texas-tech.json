@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T15:04:14.186875+00:00",
-  "ourladsUpdatedAt": "2026-09-03T15:04:14.186875+00:00",
-  "cfbdUpdatedAt": "2026-09-03T15:04:14.186875+00:00",
+  "generatedAt": "2026-09-03T16:43:41.743563+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:43:41.743563+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:43:41.743563+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:38:01.359029+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Texas Tech",
@@ -1789,6 +1789,15 @@
       "pffTied": null,
       "cfb27Rating": 82,
       "cfb27Dev": "Elite"
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Jayden Cofield",
+      "jersey": "51",
+      "class": "RS JR",
+      "isTransfer": false
     }
   ]
 }

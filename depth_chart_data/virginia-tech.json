@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:53:03.460415+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:53:03.460415+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:53:03.460415+00:00",
+  "generatedAt": "2026-09-03T16:32:45.015489+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:32:45.015489+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:32:45.015489+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:37:40.893381+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Virginia Tech",
@@ -1789,6 +1789,15 @@
       "pffTied": null,
       "cfb27Rating": null,
       "cfb27Dev": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Emmett Laws",
+      "jersey": "99",
+      "class": "RS SO",
+      "isTransfer": false
     }
   ]
 }

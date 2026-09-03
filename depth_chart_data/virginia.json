@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:52:39.796259+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:52:39.796259+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:52:39.796259+00:00",
+  "generatedAt": "2026-09-03T16:32:12.966795+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:32:12.966795+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:32:12.966795+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:37:39.604190+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Virginia",
@@ -1613,6 +1613,15 @@
       "pffTied": null,
       "cfb27Rating": 79,
       "cfb27Dev": "Normal"
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Rico Flores Jr.",
+      "jersey": "11",
+      "class": "GR",
+      "isTransfer": true
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:59:08.322450+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:59:08.322450+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:59:08.322450+00:00",
+  "generatedAt": "2026-09-03T16:39:13.896054+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:39:13.896054+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:39:13.896054+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:37:53.661980+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Houston",
@@ -1525,6 +1525,15 @@
       "pffTied": null,
       "cfb27Rating": 79,
       "cfb27Dev": "Normal"
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Luke McGary",
+      "jersey": "87",
+      "class": "SR",
+      "isTransfer": true
     }
   ]
 }

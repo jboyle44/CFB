@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:54:42.648711+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:54:42.648711+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:54:42.648711+00:00",
+  "generatedAt": "2026-09-03T16:34:46.868298+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:34:46.868298+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:34:46.868298+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:37:46.025457+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Arizona State",
@@ -2229,6 +2229,15 @@
       "pffTied": null,
       "cfb27Rating": 79,
       "cfb27Dev": "Star"
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "MyKeil Gardner",
+      "jersey": "93",
+      "class": "RS JR",
+      "isTransfer": true
     }
   ]
 }

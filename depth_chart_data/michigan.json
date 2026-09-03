@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:34:06.237996+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:34:06.237996+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:34:06.237996+00:00",
+  "generatedAt": "2026-09-03T15:59:45.309733+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:59:45.309733+00:00",
+  "cfbdUpdatedAt": "2026-09-03T15:59:45.309733+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:36:43.412699+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Michigan",
@@ -2163,6 +2163,15 @@
       "pffTied": null,
       "cfb27Rating": 88,
       "cfb27Dev": "Elite"
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Andrew Babalola",
+      "jersey": "65",
+      "class": "RS FR",
+      "isTransfer": false
     }
   ]
 }

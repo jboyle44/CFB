@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:43:37.578593+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:43:37.578593+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:43:37.578593+00:00",
+  "generatedAt": "2026-09-03T16:17:26.052025+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:17:26.052025+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:17:26.052025+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:37:12.854078+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Missouri",
@@ -1459,6 +1459,36 @@
       "pffTied": null,
       "cfb27Rating": 85,
       "cfb27Dev": "Star"
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Josh Atkins",
+      "jersey": "54",
+      "class": "RS SR",
+      "isTransfer": true
+    },
+    {
+      "status": "Injured",
+      "player": "Elias Williams",
+      "jersey": "91",
+      "class": "RS SO",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "Ahmad Hardy",
+      "jersey": "29",
+      "class": "JR",
+      "isTransfer": true
+    },
+    {
+      "status": "Injured",
+      "player": "Logan Reichert",
+      "jersey": "66",
+      "class": "RS JR",
+      "isTransfer": false
     }
   ]
 }

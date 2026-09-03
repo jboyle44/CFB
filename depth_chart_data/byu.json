@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:56:00.473732+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:56:00.473732+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:56:00.473732+00:00",
+  "generatedAt": "2026-09-03T16:35:58.041165+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:35:58.041165+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:35:58.041165+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:37:48.585242+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "BYU",
@@ -1789,6 +1789,22 @@
       "pffTied": null,
       "cfb27Rating": 67,
       "cfb27Dev": "Normal"
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Jovesa Damuni",
+      "jersey": "28",
+      "class": "RS SO",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "Jonathan Kabeya",
+      "jersey": "2",
+      "class": "JR",
+      "isTransfer": false
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:33:15.995889+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:33:15.995889+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:33:15.995889+00:00",
+  "generatedAt": "2026-09-03T15:58:40.291021+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:58:40.291021+00:00",
+  "cfbdUpdatedAt": "2026-09-03T15:58:40.291021+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:36:40.896087+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Iowa",
@@ -1261,6 +1261,15 @@
       "pffTied": null,
       "cfb27Rating": 77,
       "cfb27Dev": "Impact"
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Tyler Brown",
+      "jersey": "2",
+      "class": "JR",
+      "isTransfer": true
     }
   ]
 }

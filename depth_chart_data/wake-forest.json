@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:53:32.829869+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:53:32.829869+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:53:32.829869+00:00",
+  "generatedAt": "2026-09-03T16:33:23.736785+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:33:23.736785+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:33:23.736785+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:37:42.179913+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Wake Forest",
@@ -1745,6 +1745,15 @@
       "pffTied": null,
       "cfb27Rating": 71,
       "cfb27Dev": "Normal"
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Bernard Causey",
+      "jersey": "3",
+      "class": "RS SO",
+      "isTransfer": true
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T15:06:04.996571+00:00",
-  "ourladsUpdatedAt": "2026-09-03T15:06:04.996571+00:00",
-  "cfbdUpdatedAt": "2026-09-03T15:06:04.996571+00:00",
+  "generatedAt": "2026-09-03T16:45:08.539387+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:45:08.539387+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:45:08.539387+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:38:03.909970+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "West Virginia",
@@ -1657,6 +1657,15 @@
       "pffTied": null,
       "cfb27Rating": 75,
       "cfb27Dev": "Impact"
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Prince Strachan",
+      "jersey": "17",
+      "class": "RS JR",
+      "isTransfer": true
     }
   ]
 }

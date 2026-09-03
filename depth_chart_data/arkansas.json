@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:40:36.541620+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:40:36.541620+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:40:36.541620+00:00",
+  "generatedAt": "2026-09-03T16:13:06.008018+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:13:06.008018+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:13:06.008018+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:37:02.618571+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Arkansas",
@@ -2185,6 +2185,15 @@
       "pffTied": null,
       "cfb27Rating": 85,
       "cfb27Dev": "Star"
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Connor Smith",
+      "jersey": "41",
+      "class": "FR",
+      "isTransfer": false
     }
   ]
 }

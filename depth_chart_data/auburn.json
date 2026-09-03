@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:40:59.198146+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:40:59.198146+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:40:59.198146+00:00",
+  "generatedAt": "2026-09-03T16:13:34.615811+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:13:34.615811+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:13:34.615811+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:37:03.909064+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Auburn",
@@ -2493,6 +2493,29 @@
       "pffTied": null,
       "cfb27Rating": 75,
       "cfb27Dev": "Impact"
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Devin Williams",
+      "jersey": "27",
+      "class": "RS FR",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "Tai Buster",
+      "jersey": "71",
+      "class": "RS FR",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "J.J. Faulk",
+      "jersey": "18",
+      "class": "RS FR",
+      "isTransfer": false
     }
   ]
 }

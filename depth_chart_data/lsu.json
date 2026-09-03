@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:42:23.772844+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:42:23.772844+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:42:23.772844+00:00",
+  "generatedAt": "2026-09-03T16:15:40.413782+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:15:40.413782+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:15:40.413782+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:37:09.026785+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "LSU",
@@ -1921,6 +1921,22 @@
       "pffTied": true,
       "cfb27Rating": 86,
       "cfb27Dev": "Star"
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Gabriel Reliford",
+      "jersey": "19",
+      "class": "JR",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "Aidan Anding",
+      "jersey": "23",
+      "class": "SO",
+      "isTransfer": false
     }
   ]
 }

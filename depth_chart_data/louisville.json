@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:49:24.155272+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:49:24.155272+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:49:24.155272+00:00",
+  "generatedAt": "2026-09-03T16:26:28.162182+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:26:28.162182+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:26:28.162182+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:37:29.409152+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Louisville",
@@ -1789,6 +1789,29 @@
       "pffTied": null,
       "cfb27Rating": 87,
       "cfb27Dev": "Impact"
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Kris Hughes",
+      "jersey": "14",
+      "class": "RS JR",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "Montavin Quisenberry",
+      "jersey": "82",
+      "class": "RS FR",
+      "isTransfer": true
+    },
+    {
+      "status": "Injured",
+      "player": "Tommy Ziesmer",
+      "jersey": "96",
+      "class": "RS JR",
+      "isTransfer": true
     }
   ]
 }

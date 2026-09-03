@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:53:41.456274+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:53:41.456274+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:53:41.456274+00:00",
+  "generatedAt": "2026-09-03T16:33:35.562043+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:33:35.562043+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:33:35.562043+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:37:43.482679+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Notre Dame",
@@ -1679,6 +1679,43 @@
       "pffTied": null,
       "cfb27Rating": 81,
       "cfb27Dev": "Star"
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Quincy Porter",
+      "jersey": "0",
+      "class": "RS FR",
+      "isTransfer": true
+    },
+    {
+      "status": "Injured",
+      "player": "Charles Jagusah",
+      "jersey": "56",
+      "class": "RS JR",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "Matty Augustine",
+      "jersey": "58",
+      "class": "RS FR",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "Blake Hebert",
+      "jersey": "12",
+      "class": "RS FR",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "Chaz Smith",
+      "jersey": "26",
+      "class": "FR",
+      "isTransfer": false
     }
   ]
 }

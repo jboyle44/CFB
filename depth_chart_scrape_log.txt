@@ -586,7 +586,7 @@ Scraping Ourlads depth chart for Auburn...
   113 depth chart rows
 Fetching CFBD transfer portal data for new transfers...
   116 transfers in from CFBD
-Fetching CFBD recruiting data for 20 (school, year) pairs...
+Fetching CFBD recruiting data for 18 (school, year) pairs...
   Auburn 2021: 17 players
   Auburn 2022: 15 players
   Auburn 2023: 19 players
@@ -603,8 +603,6 @@ Fetching CFBD recruiting data for 20 (school, year) pairs...
   Oklahoma 2023: 26 players
   South Florida 2022: 12 players
   South Florida 2023: 17 players
-  Texas A&M 2021: 22 players
-  Texas A&M 2022: 30 players
   West Alabama 2021: 0 players
   West Alabama 2022: 0 players
 Wrote ../depth_chart_data/auburn.json
@@ -1204,7 +1202,7 @@ Scraping Ourlads depth chart for North Carolina...
   78 depth chart rows
 Fetching CFBD transfer portal data for new transfers...
   82 transfers in from CFBD
-Fetching CFBD recruiting data for 25 (school, year) pairs...
+Fetching CFBD recruiting data for 23 (school, year) pairs...
   Charleston Southern 2022: 0 players
   Charleston Southern 2023: 0 players
   Eastern Illinois 2022: 8 players
@@ -1217,8 +1215,6 @@ Fetching CFBD recruiting data for 25 (school, year) pairs...
   Holy Cross 2022: 6 players
   Lehigh 2022: 7 players
   Lehigh 2023: 0 players
-  Liberty 2022: 11 players
-  Liberty 2023: 14 players
   North Carolina 2021: 24 players
   North Carolina 2022: 26 players
   North Carolina 2023: 22 players
@@ -1352,7 +1348,7 @@ Fetching CFBD recruiting data for 19 (school, year) pairs...
   Miami (OH) 2023: 16 players
   Saint Francis (PA) 2022: 0 players
   Saint Francis (PA) 2023: 0 players
-  Syracuse 2023: 14 players
+  Syracuse 2023: failed (HTTPSConnectionPool(host='api.collegefootballdata.com', port=443): Read timed out. (read timeout=20))
   Syracuse 2024: 25 players
   Syracuse 2025: 35 players
   Syracuse 2026: 26 players

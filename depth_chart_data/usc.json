@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:38:57.223748+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:38:57.223748+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:38:57.223748+00:00",
+  "generatedAt": "2026-09-03T16:10:50.338032+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:10:50.338032+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:10:50.338032+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:36:57.451883+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "USC",
@@ -1547,6 +1547,29 @@
       "pffTied": null,
       "cfb27Rating": 79,
       "cfb27Dev": "Normal"
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Terrell Anderson",
+      "jersey": "9",
+      "class": "JR",
+      "isTransfer": true
+    },
+    {
+      "status": "Injured",
+      "player": "Jahkeem Stewart",
+      "jersey": "4",
+      "class": "SO",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "Braylan Shelby",
+      "jersey": "10",
+      "class": "SR",
+      "isTransfer": false
     }
   ]
 }

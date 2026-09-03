@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:44:01.892215+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:44:01.892215+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:44:01.892215+00:00",
+  "generatedAt": "2026-09-03T16:18:04.143907+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:18:04.143907+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:18:04.143907+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:37:14.112359+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Oklahoma",
@@ -1767,6 +1767,15 @@
       "pffTied": null,
       "cfb27Rating": 78,
       "cfb27Dev": "Impact"
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Jake Maikkula",
+      "jersey": "69",
+      "class": "RS SR",
+      "isTransfer": true
     }
   ]
 }

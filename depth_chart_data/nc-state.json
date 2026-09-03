@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:50:45.192016+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:50:45.192016+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:50:45.192016+00:00",
+  "generatedAt": "2026-09-03T16:28:03.182672+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:28:03.182672+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:28:03.182672+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:37:33.235638+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "NC State",
@@ -1349,6 +1349,57 @@
       "pffTied": null,
       "cfb27Rating": null,
       "cfb27Dev": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Isaiah Crowell",
+      "jersey": "8",
+      "class": "RS SR",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "Teddy Hoffmann",
+      "jersey": "12",
+      "class": "SO",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "Gus Ritchey",
+      "jersey": "44",
+      "class": "RS FR",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "Rylan Vann",
+      "jersey": "55",
+      "class": "RS SR",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "Tyreek Copper",
+      "jersey": "85",
+      "class": "FR",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "Carmelo McKenzie",
+      "jersey": "93",
+      "class": "FR",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "JJ Ferguson Jr.",
+      "jersey": "95",
+      "class": "FR",
+      "isTransfer": false
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:47:31.310967+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:47:31.310967+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:47:31.310967+00:00",
+  "generatedAt": "2026-09-03T16:23:09.792142+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:23:09.792142+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:23:09.792142+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:37:24.302485+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Clemson",
@@ -1701,6 +1701,22 @@
       "pffTied": null,
       "cfb27Rating": null,
       "cfb27Dev": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Kourtney Kelly",
+      "jersey": "44",
+      "class": "RS SO",
+      "isTransfer": true
+    },
+    {
+      "status": "Suspended",
+      "player": "Vic Burley",
+      "jersey": "45",
+      "class": "RS JR",
+      "isTransfer": false
     }
   ]
 }

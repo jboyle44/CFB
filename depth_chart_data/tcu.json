@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T15:03:33.003601+00:00",
-  "ourladsUpdatedAt": "2026-09-03T15:03:33.003601+00:00",
-  "cfbdUpdatedAt": "2026-09-03T15:03:33.003601+00:00",
+  "generatedAt": "2026-09-03T16:43:02.295821+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:43:02.295821+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:43:02.295821+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:38:00.091330+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "TCU",
@@ -1613,6 +1613,29 @@
       "pffTied": null,
       "cfb27Rating": 75,
       "cfb27Dev": "Impact"
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Jordan Dwyer",
+      "jersey": "7",
+      "class": "RS SR",
+      "isTransfer": true
+    },
+    {
+      "status": "Injured",
+      "player": "Dozie Ezukanma",
+      "jersey": "0",
+      "class": "RS SO",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "Zach Chapman",
+      "jersey": "0",
+      "class": "RS JR",
+      "isTransfer": false
     }
   ]
 }

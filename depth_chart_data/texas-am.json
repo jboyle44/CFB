@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:45:33.222498+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:45:33.222498+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:45:33.222498+00:00",
+  "generatedAt": "2026-09-03T16:20:19.761890+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:20:19.761890+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:20:19.761890+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:37:19.207310+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Texas A&M",
@@ -1855,6 +1855,29 @@
       "pffTied": null,
       "cfb27Rating": 81,
       "cfb27Dev": "Star"
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Tiger Riden Jr.",
+      "jersey": "5",
+      "class": "RS FR",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "Chace Sims",
+      "jersey": "59",
+      "class": "RS FR",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "Bryce Anderson",
+      "jersey": "1",
+      "class": "RS JR",
+      "isTransfer": false
     }
   ]
 }

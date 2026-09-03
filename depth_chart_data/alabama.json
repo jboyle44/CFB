@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:40:05.210860+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:40:05.210860+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:40:05.210860+00:00",
+  "generatedAt": "2026-09-03T16:12:27.615716+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:12:27.615716+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:12:27.615716+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:37:01.316021+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Alabama",
@@ -2053,6 +2053,36 @@
       "pffTied": null,
       "cfb27Rating": 74,
       "cfb27Dev": "Impact"
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Noah Rogers",
+      "jersey": "5",
+      "class": "RS JR",
+      "isTransfer": true
+    },
+    {
+      "status": "Injured",
+      "player": "AK Dear",
+      "jersey": "0",
+      "class": "RS FR",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "Jeremiah Beaman",
+      "jersey": "92",
+      "class": "RS SO",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "Jireh Edwards",
+      "jersey": "10",
+      "class": "FR",
+      "isTransfer": false
     }
   ]
 }

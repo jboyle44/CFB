@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:51:47.875474+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:51:47.875474+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:51:47.875474+00:00",
+  "generatedAt": "2026-09-03T16:29:32.583858+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:29:32.583858+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:29:32.583858+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:37:37.035303+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Stanford",
@@ -1723,6 +1723,50 @@
       "pffTied": null,
       "cfb27Rating": null,
       "cfb27Dev": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Caden High",
+      "jersey": "0",
+      "class": "SR",
+      "isTransfer": true
+    },
+    {
+      "status": "Injured",
+      "player": "Niki Prongos",
+      "jersey": "66",
+      "class": "RS SR",
+      "isTransfer": true
+    },
+    {
+      "status": "Injured",
+      "player": "Nick Fattig",
+      "jersey": "60",
+      "class": "RS JR",
+      "isTransfer": true
+    },
+    {
+      "status": "Injured",
+      "player": "Simione Pale",
+      "jersey": "55",
+      "class": "RS JR",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "Aaron Morris",
+      "jersey": "31",
+      "class": "RS JR",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "Carter Shaw",
+      "jersey": "15",
+      "class": "RS JR",
+      "isTransfer": true
     }
   ]
 }

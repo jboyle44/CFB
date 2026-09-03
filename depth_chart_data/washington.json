@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:39:18.564686+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:39:18.564686+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:39:18.564686+00:00",
+  "generatedAt": "2026-09-03T16:11:30.698341+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:11:30.698341+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:11:30.698341+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:36:58.752582+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Washington",
@@ -1239,6 +1239,29 @@
       "pffTied": null,
       "cfb27Rating": 79,
       "cfb27Dev": "Impact"
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "CJ Christian",
+      "jersey": "4",
+      "class": "RS SR",
+      "isTransfer": true
+    },
+    {
+      "status": "Injured",
+      "player": "Jordan Washington",
+      "jersey": "4",
+      "class": "RS SO",
+      "isTransfer": false
+    },
+    {
+      "status": "Injured",
+      "player": "Landen Hatchett",
+      "jersey": "66",
+      "class": "SR",
+      "isTransfer": false
     }
   ]
 }

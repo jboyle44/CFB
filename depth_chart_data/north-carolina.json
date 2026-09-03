@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T14:50:12.644174+00:00",
-  "ourladsUpdatedAt": "2026-09-03T14:50:12.644174+00:00",
-  "cfbdUpdatedAt": "2026-09-03T14:50:12.644174+00:00",
+  "generatedAt": "2026-09-03T16:27:27.173065+00:00",
+  "ourladsUpdatedAt": "2026-09-03T16:27:27.173065+00:00",
+  "cfbdUpdatedAt": "2026-09-03T16:27:27.173065+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:37:31.985045+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "North Carolina",
@@ -1723,6 +1723,22 @@
       "pffTied": null,
       "cfb27Rating": null,
       "cfb27Dev": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "Injured",
+      "player": "Jaxxon Warren",
+      "jersey": "19",
+      "class": "RS SO",
+      "isTransfer": true
+    },
+    {
+      "status": "Injured",
+      "player": "Jordan Washington",
+      "jersey": "80",
+      "class": "RS SO",
+      "isTransfer": true
     }
   ]
 }
