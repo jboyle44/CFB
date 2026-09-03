@@ -91,15 +91,24 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
         if not already_has_recruit_data(r)
     })
     recruiting_by_name = {}
+    recruiting_by_last_name = {}
     if needed_years:
         print(f"Fetching CFBD recruiting data for new players, class years: {needed_years}...", file=sys.stderr)
         for yr in needed_years:
             try:
-                players = get_recruiting_players(team_name, yr)
-                recruiting_by_name.update(players)
-                print(f"  {yr}: {len(players)} players", file=sys.stderr)
+                by_full, by_last = get_recruiting_players(team_name, yr)
+                recruiting_by_name.update(by_full)
+                # Only keep a last-name fallback entry if it's unambiguous across
+                # ALL years merged too, not just within one year's class.
+                for last, info in by_last.items():
+                    if last in recruiting_by_last_name and recruiting_by_last_name[last] != info:
+                        recruiting_by_last_name[last] = None  # now ambiguous, drop it
+                    elif last not in recruiting_by_last_name:
+                        recruiting_by_last_name[last] = info
+                print(f"  {yr}: {len(by_full)} players", file=sys.stderr)
             except Exception as e:
                 print(f"  {yr}: failed ({e})", file=sys.stderr)
+        recruiting_by_last_name = {k: v for k, v in recruiting_by_last_name.items() if v is not None}
     else:
         print("No new players needing recruiting data -- skipping CFBD recruiting call this run.", file=sys.stderr)
 
@@ -125,6 +134,10 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
     for row in depth_chart:
         norm = normalize_name(row["player"])
         recruit_match = recruiting_by_name.get(norm)
+        if not recruit_match:
+            last = norm.split()[-1] if norm.split() else None
+            if last:
+                recruit_match = recruiting_by_last_name.get(last)
         transfer_match = transfers_in.get(norm)
         prev_match = previous_by_norm_name.get(norm)
 
