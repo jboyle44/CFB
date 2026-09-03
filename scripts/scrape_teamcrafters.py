@@ -39,21 +39,16 @@ def _scrape_team_page(url, delay=1.0):
         cells = row.find_all("td")
         if len(cells) < 3:
             continue
-        # First cell contains the player link + position/class/archetype text
+        # First cell contains the player link + position/class/archetype text.
+        # get_text needs a separator, or names split across nested tags in
+        # the markup collapse together with no space (e.g. "JeremiahSmith").
         link = cells[0].find("a")
         if not link:
             continue
-        name = link.get_text(strip=True)
+        name = link.get_text(" ", strip=True)
+        name = re.sub(r"\s+", " ", name).strip()
         if not name:
             continue
-        # Position is embedded in the cell's remaining text, formatted like
-        # "WR#4•6'3" 223lbs•JR•Contested Specialist" -- grab the token right
-        # after the name, split on the bullet character.
-        full_cell_text = cells[0].get_text(" ", strip=True)
-        position = None
-        m = re.search(r"([A-Z]{1,3})#\d+", full_cell_text)
-        if m:
-            position = m.group(1)
 
         try:
             ovr = int(cells[1].get_text(strip=True))
@@ -62,7 +57,7 @@ def _scrape_team_page(url, delay=1.0):
         dev = cells[2].get_text(strip=True) if len(cells) > 2 else None
 
         norm_name = name.replace("*", "").strip().lower()
-        out[norm_name] = {"ovr": ovr, "dev": dev, "position": position}
+        out[norm_name] = {"ovr": ovr, "dev": dev}
 
     return out
 
