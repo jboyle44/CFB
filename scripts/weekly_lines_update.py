@@ -319,7 +319,8 @@ def main():
 
     try:
         with open(DATA_FILE) as f:
-            existing = json.load(f)
+            raw = json.load(f)
+        existing = raw.get("games", []) if isinstance(raw, dict) else raw
     except FileNotFoundError:
         existing = []
     existing_by_id = {r["gameId"]: r for r in existing if r.get("season") == year}
