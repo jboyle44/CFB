@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-03T16:34:21.178183+00:00",
   "ourladsUpdatedAt": "2026-09-03T16:34:21.178183+00:00",
   "cfbdUpdatedAt": "2026-09-03T16:34:21.178183+00:00",
-  "cfb27UpdatedAt": "2026-09-03T17:13:46.801879+00:00",
+  "cfb27UpdatedAt": "2026-09-03T18:27:42.798679+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Arizona",
   "offenseScheme": "Up-tempo Spread",
@@ -115,8 +115,8 @@
       "pffPositionTotal": 569,
       "pffPositionLabel": "WR",
       "pffTied": true,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 76,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "WR-Z",
@@ -797,8 +797,8 @@
       "pffPositionTotal": 341,
       "pffPositionLabel": "HB",
       "pffTied": true,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 81,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RB",
@@ -1369,8 +1369,8 @@
       "pffPositionTotal": 524,
       "pffPositionLabel": "CB",
       "pffTied": true,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 78,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "LCB",
@@ -1677,8 +1677,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "S",
       "pffTied": false,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 82,
+      "cfb27Dev": "Star"
     },
     {
       "position": "NB",

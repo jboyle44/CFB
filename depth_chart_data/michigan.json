@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-03T17:04:53.592486+00:00",
   "ourladsUpdatedAt": "2026-09-03T17:04:53.592486+00:00",
   "cfbdUpdatedAt": "2026-09-03T17:04:53.592486+00:00",
-  "cfb27UpdatedAt": "2026-09-03T17:12:47.550247+00:00",
+  "cfb27UpdatedAt": "2026-09-03T18:26:43.368686+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Michigan",
   "offenseScheme": "Spread Option",
@@ -149,8 +149,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "WR",
       "pffTied": false,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 81,
+      "cfb27Dev": "Star"
     },
     {
       "position": "WR-Z",
@@ -989,8 +989,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "ED",
       "pffTied": false,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 75,
+      "cfb27Dev": "Star"
     },
     {
       "position": "LDE",
@@ -1685,8 +1685,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "S",
       "pffTied": false,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 90,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "FS",

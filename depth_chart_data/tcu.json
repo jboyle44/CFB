@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-03T16:43:02.295821+00:00",
   "ourladsUpdatedAt": "2026-09-03T16:43:02.295821+00:00",
   "cfbdUpdatedAt": "2026-09-03T16:43:02.295821+00:00",
-  "cfb27UpdatedAt": "2026-09-03T17:14:01.510280+00:00",
+  "cfb27UpdatedAt": "2026-09-03T18:27:57.641620+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "TCU",
   "offenseScheme": "Air Raid",
@@ -973,8 +973,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "LB",
       "pffTied": false,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 70,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "WLB",
@@ -1061,8 +1061,8 @@
       "pffPositionTotal": 524,
       "pffPositionLabel": "CB",
       "pffTied": true,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 75,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "LCB",
@@ -1237,8 +1237,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "CB",
       "pffTied": false,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 72,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RCB",
