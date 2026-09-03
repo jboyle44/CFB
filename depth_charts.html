@@ -251,6 +251,25 @@ const NICKEL_CANDIDATES = ["NB","HUSKY","STAR","CASH","SPUR","BAN","MONEY"];
 // True off-ball linebackers only.
 const LB_CANDIDATES = ["SLB","WLB","STING","MAC","MLB"];
 
+// Some position codes mean different things at different programs (MONEY is
+// used by Georgia, Oregon, and Pittsburgh, but only Georgia's is confirmed to
+// play like a linebacker) -- these overrides move a code between the LB and
+// nickel/DB candidate lists for one specific team only, not globally.
+const TEAM_POSITION_OVERRIDES = {
+  "georgia": { toLB: ["MONEY"] },
+};
+
+function effectiveLBCandidates(teamKey){
+  const override = TEAM_POSITION_OVERRIDES[teamKey];
+  const toLB = override?.toLB || [];
+  return [...LB_CANDIDATES, ...toLB];
+}
+function effectiveNickelCandidates(teamKey){
+  const override = TEAM_POSITION_OVERRIDES[teamKey];
+  const toLB = new Set(override?.toLB || []);
+  return NICKEL_CANDIDATES.filter(p => !toLB.has(p));
+}
+
 function dynamicCenteredRowHtml(candidates, groups, baseCols, id, reorderFn){
   let present = candidates.filter(p => groups[p] && groups[p].length);
   if(reorderFn) present = reorderFn(present);
@@ -596,7 +615,7 @@ function resolveItemPos(item, groups){
 function cbnbRowHtml(groups, id){
   const lcbKey = resolveFirst(["LCB","FCB"], groups);
   const rcbKey = resolveFirst(["RCB","BCB"], groups);
-  const nickelPresent = NICKEL_CANDIDATES.filter(p => groups[p] && groups[p].length);
+  const nickelPresent = effectiveNickelCandidates(currentRenderTeam).filter(p => groups[p] && groups[p].length);
   const idAttr = id ? ` id="${id}"` : "";
 
   const lcbSpan = nickelPresent.length > 0 ? 1 : 2;
@@ -628,7 +647,7 @@ function centerMikeLB(present){
 
 function rowHtml(row){
   if(row.dynamic === "dline") return dynamicCenteredRowHtml(DLINE_CANDIDATES, groupsRef, row.cols, row.id).html;
-  if(row.dynamic === "lb") return dynamicCenteredRowHtml(LB_CANDIDATES, groupsRef, row.cols, row.id, centerMikeLB).html;
+  if(row.dynamic === "lb") return dynamicCenteredRowHtml(effectiveLBCandidates(currentRenderTeam), groupsRef, row.cols, row.id, centerMikeLB).html;
   if(row.dynamic === "cbnb") return cbnbRowHtml(groupsRef, row.id);
   const { cols, items, id } = row;
   const boxesHtml = items.map(it => posBoxHtml(resolveItemPos(it, groupsRef), groupsRef, it.col, it.span)).join('');
@@ -662,6 +681,7 @@ function gradeSpan(value, min, max, digits){
 }
 
 let groupsRef = {};
+let currentRenderTeam = null;
 
 function render(){
   const q = state.search;
@@ -679,6 +699,7 @@ function render(){
   const groups = {};
   rows.forEach(r => { (groups[r.position] = groups[r.position] || []).push(r); });
   groupsRef = groups;
+  currentRenderTeam = currentTeamKey();
 
   let html = "";
   html += sectionHtml("Defense", DATA.defenseScheme || "", DEFENSE_ROWS);
