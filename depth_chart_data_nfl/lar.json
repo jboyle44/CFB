@@ -55,8 +55,7 @@
       "player": "Cj Daniels",
       "jersey": "6",
       "code": "26/6",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "SWR",
@@ -123,8 +122,7 @@
       "player": "Bill Murray",
       "jersey": "66",
       "code": "SF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "C",
@@ -143,8 +141,7 @@
       "player": "Dylan McMahon",
       "jersey": "63",
       "code": "P/Phi",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "RG",
@@ -235,8 +232,7 @@
       "player": "Max Klare",
       "jersey": "86",
       "code": "26/2",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "QB",
@@ -255,16 +251,14 @@
       "player": "Stetson Bennett IV",
       "jersey": "13",
       "code": "23/4",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "QB",
       "player": "Ty Simpson",
       "jersey": "15",
       "code": "26/1",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RB",
@@ -307,8 +301,7 @@
       "player": "Aaron Donald",
       "jersey": "99",
       "code": "14/1",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "DE",
@@ -399,8 +392,7 @@
       "player": "Wesley Bailey",
       "jersey": "47",
       "code": "CF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LILB",
@@ -491,8 +483,7 @@
       "player": "Kam Curl",
       "jersey": "3",
       "code": "U/Was",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "SS",
@@ -595,8 +586,7 @@
       "player": "Joe Cardona",
       "jersey": "49",
       "code": "U/Mia",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "H",
@@ -627,48 +617,28 @@
       "player": "Xavier Smith",
       "jersey": "19",
       "code": "CF23",
-      "isAcquired": false,
-      "pffGrade": 73.7,
-      "pffPositionRank": 43,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "PR",
       "player": "Kyren Williams",
       "jersey": "23",
       "code": "22/5",
-      "isAcquired": false,
-      "pffGrade": 83.5,
-      "pffPositionRank": 7,
-      "pffPositionTotal": 136,
-      "pffPositionLabel": "HB",
-      "pffTied": true
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Ronnie Rivers",
       "jersey": "20",
       "code": "SF22",
-      "isAcquired": false,
-      "pffGrade": 80.2,
-      "pffPositionRank": 17,
-      "pffPositionTotal": 136,
-      "pffPositionLabel": "HB",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Jordan Whittington",
       "jersey": "88",
       "code": "24/6",
-      "isAcquired": false,
-      "pffGrade": 54.5,
-      "pffPositionRank": 188,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     }
   ]
 }
