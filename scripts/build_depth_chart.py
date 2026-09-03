@@ -133,6 +133,7 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
     needs_transfer_lookup = any(
         row["isTransfer"] and not already_has_transfer_data(row) for row in depth_chart
     )
+    print(f"DEBUG: needs_transfer_lookup = {needs_transfer_lookup}", file=sys.stderr)
     transfers_in = {}
     # Full multi-year portal history per player (NOT filtered by destination)
     # -- needed to trace a multi-hop transfer (e.g. Alabama -> Florida State
@@ -288,9 +289,14 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
             last = norm.split()[-1] if norm.split() else None
             if last:
                 candidate = transfers_in_by_last_name.get(last)
+                if "sanks" in norm:
+                    print(f"DEBUG: norm={norm!r} last={last!r} candidate={candidate}", file=sys.stderr)
+                    print(f"DEBUG: transfers_in_by_last_name_candidates for sanks = {transfers_in_by_last_name_candidates.get(last)}", file=sys.stderr)
                 if candidate:
                     site_bucket = site_position_bucket(row["position"])
                     cand_bucket = cfbd_position_bucket(candidate.get("position"))
+                    if "sanks" in norm:
+                        print(f"DEBUG: site_bucket={site_bucket!r} cand_bucket={cand_bucket!r}", file=sys.stderr)
                     if site_bucket and cand_bucket and site_bucket == cand_bucket:
                         transfer_match = candidate
                     # else: same last name, different role -- almost certainly
