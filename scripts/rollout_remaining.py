@@ -1,5 +1,6 @@
 import sys
 import os
+import subprocess
 import requests
 sys.path.insert(0, '.')
 from build_depth_chart import build
@@ -16,6 +17,24 @@ def check_remaining():
     headers = {"Authorization": f"Bearer {api_key}", "Accept": "application/json"}
     resp = requests.get("https://api.collegefootballdata.com/teams/fbs", headers=headers, timeout=20)
     return int(resp.headers.get("X-CallLimit-Remaining", -1))
+
+def commit_and_push(team_key):
+    """Commit after every team so progress survives even if the job fails
+    or times out partway through a long rollout."""
+    subprocess.run(["git", "config", "user.name", "rollout-bot"], cwd="..")
+    subprocess.run(["git", "config", "user.email", "actions@github.com"], cwd="..")
+    subprocess.run(["git", "add", f"depth_chart_data/{team_key}.json"], cwd="..")
+    result = subprocess.run(["git", "commit", "-m", f"Rollout multi-hop fix: {team_key}"],
+                             cwd="..", capture_output=True, text=True)
+    if result.returncode != 0 and "nothing to commit" not in result.stdout:
+        print(f"  commit warning: {result.stdout} {result.stderr}", file=sys.stderr)
+        return
+    for attempt in range(3):
+        push = subprocess.run(["git", "push"], cwd="..", capture_output=True, text=True)
+        if push.returncode == 0:
+            return
+        subprocess.run(["git", "pull", "--rebase", "origin", "main"], cwd="..")
+    print(f"  WARNING: push failed after retries for {team_key}", file=sys.stderr)
 
 completed = []
 skipped = []
@@ -36,6 +55,7 @@ for i, team_key in enumerate(remaining_teams):
 
     try:
         build(team_key, f"../depth_chart_data/{team_key}.json")
+        commit_and_push(team_key)
         completed.append(team_key)
     except Exception as e:
         print(f"  FAILED for {team_key}: {e}", file=sys.stderr)
