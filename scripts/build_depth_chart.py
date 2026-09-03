@@ -95,6 +95,18 @@ def load_previous_data(output_path):
     return {normalize_name(r["player"]): r for r in prev.get("rows", [])}
 
 
+def load_previous_metadata(output_path):
+    """Top-level fields from the previous run (used to carry forward
+    cfbdUpdatedAt on runs where no fresh CFBD fetch happens)."""
+    if not output_path:
+        return {}
+    try:
+        with open(output_path) as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+
 def build(team_key, output_path=None, fetch_detail_for_all=False):
     if team_key not in TEAMS:
         raise ValueError(f"Unknown team key '{team_key}'. Add it to teams_config.py first.")
@@ -106,6 +118,7 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
     print(f"  {len(depth_chart)} depth chart rows", file=sys.stderr)
 
     previous_by_norm_name = load_previous_data(output_path)
+    previous_metadata = load_previous_metadata(output_path)
 
     # Recruiting composite scores and transfer rankings never change once
     # assigned (they're historical/fixed), so on a steady-state week where the
@@ -216,17 +229,29 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
             out_row["transferPosRank"] = transfer_match.get("positionRank")
 
         # Fill any still-missing fields from last known-good data (e.g. walk-ons
-        # with no CFBD recruiting profile at all).
+        # with no CFBD recruiting profile at all). cfb27Rating/cfb27Dev are set
+        # by a separate script (update_video_game_ratings.py) that doesn't run
+        # every time this one does -- must always carry these forward or the
+        # next depth-chart-only refresh silently erases them.
         if prev_match:
             for k in ("compositeScore", "transferScore", "profileUrl", "transferRank", "transferPosRank",
-                      "hsNationalRank", "hsPositionRank", "hsStateRank", "pffGrade"):
+                      "hsNationalRank", "hsPositionRank", "hsStateRank", "pffGrade",
+                      "cfb27Rating", "cfb27Dev"):
                 if out_row.get(k) is None:
                     out_row[k] = prev_match.get(k)
 
         output_rows.append(out_row)
 
+    now_iso = datetime.datetime.now(datetime.timezone.utc).isoformat()
+    cfbd_fetched_this_run = bool(needed_years) or needs_transfer_lookup
+    cfbd_updated_at = now_iso if cfbd_fetched_this_run else previous_metadata.get("cfbdUpdatedAt", now_iso)
+
     wrapped = {
-        "generatedAt": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "generatedAt": now_iso,
+        "ourladsUpdatedAt": now_iso,
+        "cfbdUpdatedAt": cfbd_updated_at,
+        "cfb27UpdatedAt": previous_metadata.get("cfb27UpdatedAt"),
+        "pffUpdatedAt": previous_metadata.get("pffUpdatedAt"),
         "team": team_name,
         "offenseScheme": schemes.get("offense"),
         "defenseScheme": schemes.get("defense"),
