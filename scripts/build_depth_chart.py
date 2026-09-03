@@ -236,6 +236,7 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
         if prev_match:
             for k in ("compositeScore", "transferScore", "profileUrl", "transferRank", "transferPosRank",
                       "hsNationalRank", "hsPositionRank", "hsStateRank", "pffGrade",
+                      "pffPositionRank", "pffPositionTotal", "pffPositionLabel", "pffTied",
                       "cfb27Rating", "cfb27Dev"):
                 if out_row.get(k) is None:
                     out_row[k] = prev_match.get(k)
