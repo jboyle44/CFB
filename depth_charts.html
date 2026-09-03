@@ -247,9 +247,9 @@ const DLINE_CANDIDATES = ["LOLB","LDE","JACK","WOLF","BUCK","LEO","CHEETAH","CHE
 // an off-ball linebacker, even though some programs' codes don't make that
 // obvious: STING/HUSKY/STAR/CASH/SPUR/BAN/MONEY. Rendered in the CB/NB row's
 // middle section alongside (or instead of) NB, not in the LB row.
-const NICKEL_CANDIDATES = ["NB","STING","HUSKY","STAR","CASH","SPUR","BAN","MONEY"];
+const NICKEL_CANDIDATES = ["NB","HUSKY","STAR","CASH","SPUR","BAN","MONEY"];
 // True off-ball linebackers only.
-const LB_CANDIDATES = ["SLB","WLB","MAC","MLB"];
+const LB_CANDIDATES = ["SLB","WLB","STING","MAC","MLB"];
 
 function dynamicCenteredRowHtml(candidates, groups, baseCols, id, reorderFn){
   let present = candidates.filter(p => groups[p] && groups[p].length);
