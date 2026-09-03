@@ -1,11 +1,13 @@
 """
 Fetches Madden 27 player ratings from teamcrafters.net and merges them into
 the existing depth_chart_data_nfl/{team}.json files by player name. Adds two
-new fields per row: madden27Rating (OVR) and madden27Dev (dev trait).
+new fields per row: madden27Rating (OVR) and madden27Dev (dev trait), plus a
+top-level madden27UpdatedAt timestamp.
 """
 import sys
 import json
 import os
+import datetime
 
 sys.path.insert(0, os.path.dirname(__file__))
 from madden27_team_ids import MADDEN27_TEAM_IDS
@@ -49,6 +51,7 @@ def update_team(team_key, output_dir):
             row["madden27Rating"] = row.get("madden27Rating")
             row["madden27Dev"] = row.get("madden27Dev")
 
+    data["madden27UpdatedAt"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
     with open(path, "w") as f:
         json.dump(data, f, indent=2)
     print(f"  {team_key}: {matched}/{len(data.get('rows', []))} matched", file=sys.stderr)
