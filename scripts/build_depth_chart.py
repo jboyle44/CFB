@@ -140,7 +140,21 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
     # recent portal entry's "origin" is only their immediately-previous stop,
     # not necessarily where they were originally recruited -- their earliest
     # portal entry's origin is.
+    #
+    # Indexed BOTH by exact normalized name and by a suffix-stripped version,
+    # because CFBD itself isn't consistent about suffix formatting across
+    # different portal-year snapshots for the same person -- confirmed real
+    # case: one year lists him as "Little II", another as "Little Jr." for
+    # the same player. Exact-name matching alone would silently fail to link
+    # these as the same person's history.
+    SUFFIXES = {"jr", "sr", "ii", "iii", "iv", "v"}
+
+    def strip_suffix(name_norm):
+        parts = [p for p in name_norm.split() if p.rstrip(".") not in SUFFIXES]
+        return " ".join(parts)
+
     portal_history_by_name = {}
+    portal_history_by_stripped_name = {}
     if needs_transfer_lookup:
         print(f"Fetching CFBD transfer portal data for new transfers...", file=sys.stderr)
         # 6 years covers a player's full realistic eligibility window (up to
@@ -151,6 +165,7 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
                 portal = get_transfer_portal(yr)
                 for name, info in portal.items():
                     portal_history_by_name.setdefault(name, []).append(info)
+                    portal_history_by_stripped_name.setdefault(strip_suffix(name), []).append(info)
                     if info.get("destination") == team_name:
                         transfers_in[name] = info
             except Exception as e:
@@ -162,7 +177,8 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
     def true_origin_school(player_name_norm, fallback_match):
         """The origin of a transfer's EARLIEST portal entry -- their real
         original signing school, not just their most recent previous stop."""
-        history = portal_history_by_name.get(player_name_norm)
+        history = (portal_history_by_name.get(player_name_norm)
+                   or portal_history_by_stripped_name.get(strip_suffix(player_name_norm)))
         if not history:
             return fallback_match["origin"] if fallback_match and fallback_match.get("origin") else None
         dated = [h for h in history if h.get("transferDate")]
