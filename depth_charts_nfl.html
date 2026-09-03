@@ -608,9 +608,27 @@ function render(){
   html += sectionHtml("Defense", DATA.defenseScheme || "", DEFENSE_ROWS);
   html += sectionHtml("Offense", DATA.offenseScheme || "", OFFENSE_ROWS);
   html += sectionHtml("Specialists", "", [SPECIAL_ROW]);
+  html += injuriesTableHtml(DATA.reserves || []);
 
   container.innerHTML = html;
   adjustLbRowOverlap();
+}
+
+function injuriesTableHtml(reserves){
+  if(!reserves.length) return "";
+  const rowsHtml = reserves.map(r => `
+    <tr>
+      <td>${r.player}</td>
+      <td>${r.jersey || "—"}</td>
+      <td>${r.position || "—"}</td>
+      <td><span class="badge status">${r.status || "—"}</span></td>
+    </tr>`).join("");
+  return `
+    <div class="section-head"><h2>Injuries / Reserves</h2></div>
+    <table class="injuries-table">
+      <thead><tr><th>Player</th><th>No.</th><th>Pos</th><th>Status</th></tr></thead>
+      <tbody>${rowsHtml}</tbody>
+    </table>`;
 }
 
 // Pulls the LB row up to overlap roughly half of the CB row's ACTUAL
