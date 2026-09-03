@@ -25,10 +25,14 @@ def _auth_headers():
 
 def get_recruiting_players(team_display_name, year):
     """
-    Returns {player_name_lower: {"stars": int, "rating": float, "ranking": int}}
-    for a team's high-school recruiting class in a given year. Call once per
-    relevant recruiting class year and merge results if you need multiple
-    classes (current roster spans several recruiting years).
+    Returns (by_full_name, by_last_name) where:
+      by_full_name: {full_name_lower: {"stars","rating","ranking","position"}}
+      by_last_name: {last_name_lower: {...}} -- ONLY included when exactly one
+        player on this team/year has that last name. This exists because
+        recruiting databases sometimes use a player's legal first name (e.g.
+        "Anthony Reddick") while the roster/depth chart uses a family
+        nickname (e.g. "Trey Reddick") for the same person -- when there's
+        no ambiguity, matching on last name alone safely recovers these.
     """
     resp = requests.get(
         f"{BASE_URL}/recruiting/players",
@@ -37,18 +41,28 @@ def get_recruiting_players(team_display_name, year):
         timeout=20,
     )
     resp.raise_for_status()
-    out = {}
+    by_full_name = {}
+    by_last_name_candidates = {}
     for r in resp.json():
         name = (r.get("name") or "").strip().lower()
         if not name:
             continue
-        out[name] = {
+        info = {
             "stars": r.get("stars"),
             "rating": r.get("rating"),
             "ranking": r.get("ranking"),
             "position": r.get("position"),
         }
-    return out
+        by_full_name[name] = info
+        last = name.split()[-1] if name.split() else None
+        if last:
+            by_last_name_candidates.setdefault(last, []).append(info)
+
+    by_last_name = {
+        last: candidates[0] for last, candidates in by_last_name_candidates.items()
+        if len(candidates) == 1
+    }
+    return by_full_name, by_last_name
 
 
 def get_transfer_portal(year):
