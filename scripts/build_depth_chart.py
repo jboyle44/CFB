@@ -155,6 +155,7 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
 
     portal_history_by_name = {}
     portal_history_by_stripped_name = {}
+    transfers_in_by_last_name_candidates = {}
     if needs_transfer_lookup:
         print(f"Fetching CFBD transfer portal data for new transfers...", file=sys.stderr)
         # 6 years covers a player's full realistic eligibility window (up to
@@ -168,11 +169,22 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
                     portal_history_by_stripped_name.setdefault(strip_suffix(name), []).append(info)
                     if info.get("destination") == team_name:
                         transfers_in[name] = info
+                        last = name.split()[-1] if name.split() else None
+                        if last:
+                            transfers_in_by_last_name_candidates.setdefault(last, []).append(info)
             except Exception as e:
                 print(f"  {yr} portal fetch failed: {e}", file=sys.stderr)
         print(f"  {len(transfers_in)} transfers in from CFBD", file=sys.stderr)
     else:
         print("No new transfers needing portal data -- skipping CFBD portal call this run.", file=sys.stderr)
+
+    # Only keep a last-name fallback entry if it's unambiguous -- exactly one
+    # transfer destined for this team has that last name. Mirrors the same
+    # safeguard already used for recruiting matching.
+    transfers_in_by_last_name = {
+        last: candidates[0] for last, candidates in transfers_in_by_last_name_candidates.items()
+        if len(candidates) == 1
+    }
 
     def true_origin_school(player_name_norm, fallback_match):
         """The origin of a transfer's EARLIEST portal entry -- their real
@@ -219,6 +231,15 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
         if r["isTransfer"]:
             norm_name = normalize_name(r["player"])
             match = transfers_in.get(norm_name)
+            if not match:
+                last = norm_name.split()[-1] if norm_name.split() else None
+                if last:
+                    candidate = transfers_in_by_last_name.get(last)
+                    if candidate:
+                        site_bucket = site_position_bucket(r["position"])
+                        cand_bucket = cfbd_position_bucket(candidate.get("position"))
+                        if site_bucket and cand_bucket and site_bucket == cand_bucket:
+                            match = candidate
             school = true_origin_school(norm_name, match) or team_name
         else:
             school = team_name
@@ -263,6 +284,17 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
                     # else: same last name, different role -- almost certainly
                     # a different person, don't risk a wrong match
         transfer_match = transfers_in.get(norm)
+        if not transfer_match and row["isTransfer"]:
+            last = norm.split()[-1] if norm.split() else None
+            if last:
+                candidate = transfers_in_by_last_name.get(last)
+                if candidate:
+                    site_bucket = site_position_bucket(row["position"])
+                    cand_bucket = cfbd_position_bucket(candidate.get("position"))
+                    if site_bucket and cand_bucket and site_bucket == cand_bucket:
+                        transfer_match = candidate
+                    # else: same last name, different role -- almost certainly
+                    # a different person, don't risk a wrong match
         prev_match = previous_by_norm_name.get(norm)
 
         out_row = {
