@@ -92,19 +92,17 @@
     display:grid; gap:8px; margin-bottom:8px;
   }
 
-  /* Compacts vertical space between the CB/NB row and the LB row below it,
-     pulling the LB row up roughly halfway into the CB/NB row's typical
-     height. This is a fixed, blind offset -- NOT coordinated with CB row
-     geometry (nickel count, LCB span, or exact player count per box) the
-     way an earlier version was. That coupling was the source of repeated
-     collision bugs for teams with unusual configurations; a fixed amount
-     avoids it entirely since it never needs to know anything about what's
-     in the row above. Because box height varies with player count (2 vs 3
-     backups shown) this is an approximation of "halfway", not exact for
-     every team -- CB boxes with 3 players will have a bit more clearance
-     than CB boxes with 2. */
+  /* Safe conservative default -- the real overlap amount is computed
+     dynamically in JS (adjustLbRowOverlap) after each render, measuring the
+     actual rendered height of the CB/NB row so it correctly halves whatever
+     that team's specific box heights are (1, 2, or 3 players per box). This
+     static value only applies briefly before JS runs, or as a fallback if
+     something prevents the JS from executing. A fixed guess here previously
+     caused real overlap bugs for teams with 3-player boxes (Texas, San
+     Francisco) since box height varies with player count -- a value tuned
+     for a 1-2-player box overlaps too far and collides for a 3-player one. */
   #row-lb{
-    margin-top:-75px;
+    margin-top:-22px;
   }
 
   .posbox{
@@ -814,7 +812,22 @@ function render(){
   html += sectionHtml("Specialists", "", [SPECIAL_ROW]);
 
   container.innerHTML = html;
+  adjustLbRowOverlap();
 }
+
+// Pulls the LB row up to overlap roughly half of the CB/NB row's ACTUAL
+// rendered height, measured live instead of guessed with a fixed pixel
+// value. A static guess broke for teams with 3-player CB/NB or LB boxes
+// (confirmed real cases: Texas, San Francisco) since box height varies with
+// how many backups are listed -- a fixed offset that looks right for a
+// 1-2-player box overlaps too far and collides for a 3-player box.
+function adjustLbRowOverlap(){
+  const cbnbRow = document.getElementById("row-cbnb");
+  const lbRow = document.getElementById("row-lb");
+  if(!cbnbRow || !lbRow) return;
+  const cbnbHeight = cbnbRow.offsetHeight;
+  if(!cbnbHeight) return;
+  lbRow.style.marginTop = `-${Math.round(cbnbHeight / 2)}px`;
 
 searchBox.addEventListener("input", () => { state.search = searchBox.value.toLowerCase(); render(); });
 loadData(currentTeamKey());
