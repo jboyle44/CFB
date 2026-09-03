@@ -56,6 +56,21 @@ def build(team_key, output_path=None):
     previous_by_norm_name = load_previous_data(output_path)
     previous_metadata = load_previous_metadata(output_path)
 
+    # Merge reserves into the same list as active rows so they get the same
+    # pffGrade/madden27Rating carry-forward logic below -- no separate,
+    # parallel enrichment path to maintain. NFL reserves already have a real
+    # position (unlike CFB's), just no acquisition code since that's not
+    # shown in Ourlads' Reserves section.
+    for row in depth_chart:
+        row["isReserve"] = False
+        row["reserveStatus"] = None
+    for r in reserves:
+        r["isReserve"] = True
+        r["reserveStatus"] = r.pop("status", None)
+        r["code"] = ""
+        r["isAcquired"] = False
+    depth_chart = depth_chart + reserves
+
     output_rows = []
     for row in depth_chart:
         prev_match = previous_by_norm_name.get(normalize_name(row["player"]))
@@ -65,6 +80,8 @@ def build(team_key, output_path=None):
             "jersey": row["jersey"],
             "code": row["code"],
             "isAcquired": row["isAcquired"],
+            "isReserve": row.get("isReserve", False),
+            "reserveStatus": row.get("reserveStatus"),
             "pffGrade": None,
             "madden27Rating": None,
             "madden27Dev": None,
@@ -86,7 +103,6 @@ def build(team_key, output_path=None):
         "offenseScheme": schemes.get("offense"),
         "defenseScheme": schemes.get("defense"),
         "rows": output_rows,
-        "reserves": reserves,
     }
 
     if output_path:
