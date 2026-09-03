@@ -609,6 +609,21 @@ function render(){
   html += sectionHtml("Specialists", "", [SPECIAL_ROW]);
 
   container.innerHTML = html;
+  adjustLbRowOverlap();
+}
+
+// Pulls the LB row up to overlap roughly half of the CB row's ACTUAL
+// rendered height, measured live instead of guessed with a fixed pixel
+// value. A static guess broke for teams with 3-player CB or LB boxes
+// (confirmed real case: San Francisco) since box height varies with how
+// many backups are listed.
+function adjustLbRowOverlap(){
+  const cbnbRow = document.getElementById("row-cbnb");
+  const lbRow = document.getElementById("row-lb");
+  if(!cbnbRow || !lbRow) return;
+  const cbnbHeight = cbnbRow.offsetHeight;
+  if(!cbnbHeight) return;
+  lbRow.style.marginTop = `-${Math.round(cbnbHeight / 2)}px`;
 }
 
 searchBox.addEventListener("input", () => { state.search = searchBox.value.toLowerCase(); render(); });
