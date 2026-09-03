@@ -1,20 +1,22 @@
 name: Test Tankathon Scraper
-
 on:
   workflow_dispatch: {}
-
 jobs:
   test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Check out repo
-        uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install dependencies
-        run: pip install requests beautifulsoup4
-      - name: Test scraper
-        working-directory: scripts
-        run: python3 scrape_tankathon.py
+      - run: pip install requests beautifulsoup4
+      - working-directory: scripts
+        run: python3 scrape_tankathon.py > ../tankathon_test_result.txt 2>&1
+      - run: |
+          git config user.name "test-bot"
+          git config user.email "actions@github.com"
+          git add tankathon_test_result.txt
+          git commit -m "Test result" || echo "nothing to commit"
+          git push
