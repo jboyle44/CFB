@@ -675,26 +675,38 @@ function ensureReadable(hex, minLightness){
   return hex;
 }
 
-// Caps overly bright colors too, not just overly dark ones -- many teams have
-// pure white as a secondary color, and using it at full brightness for the
-// outline/stroke created a harsh glowing effect around every letter. Dimming
-// it toward a softer neutral tone keeps the two-tone effect without the glare.
 function capBrightness(hex, maxLightness){
   const [h,s,l] = hexToHsl(hex);
   if(l > maxLightness) return hslToHex(h, Math.max(s,20), maxLightness);
   return hex;
 }
 
+function isNearWhite(hex){
+  const [,,l] = hexToHsl(hex);
+  return l >= 90;
+}
+
 function teamSpan(name){
   const c = TEAM_COLORS[name];
   if(!c) return name;
-  const primaryMoreVivid = vividness(c.primary) >= vividness(c.secondary);
-  const fillRaw = primaryMoreVivid ? c.primary : c.secondary;
-  const strokeRaw = primaryMoreVivid ? c.secondary : c.primary;
-  const fill = capBrightness(ensureReadable(fillRaw, 50), 78);
+  let fill, strokeRaw;
+  if(isNearWhite(c.primary) || isNearWhite(c.secondary)){
+    // One of the two colors is white -- use white as the fill (calm, standard
+    // readable text) and the other color as the outline/trim, rather than making
+    // a saturated color the large fill (which read as too intense/bright at
+    // this scale even after brightness-capping).
+    fill = "#FFFFFF";
+    strokeRaw = isNearWhite(c.primary) ? c.secondary : c.primary;
+  } else {
+    const primaryMoreVivid = vividness(c.primary) >= vividness(c.secondary);
+    const fillRaw = primaryMoreVivid ? c.primary : c.secondary;
+    strokeRaw = primaryMoreVivid ? c.secondary : c.primary;
+    fill = capBrightness(ensureReadable(fillRaw, 50), 78);
+  }
   const stroke = capBrightness(ensureReadable(strokeRaw, 22), 50);
   return `<span style="color:${fill}; -webkit-text-stroke:0.5px ${stroke}; text-shadow:-0.5px -0.5px 0 ${stroke}, 0.5px -0.5px 0 ${stroke}, -0.5px 0.5px 0 ${stroke}, 0.5px 0.5px 0 ${stroke}; font-weight:700;">${name}</span>`;
 }
+
 
 
 
