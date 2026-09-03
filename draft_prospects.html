@@ -106,6 +106,7 @@
           <th>Player</th>
           <th>Pos</th>
           <th>School</th>
+          <th>Class</th>
           <th>Height</th>
           <th>Weight</th>
         </tr>
@@ -337,6 +338,7 @@ function render(){
       <td>${coloredName(p.name, p.school)}</td>
       <td class="pos">${p.position || '—'}</td>
       <td>${p.school || '—'}</td>
+      <td>${p.class || '—'}</td>
       <td>${p.height || '—'}</td>
       <td>${p.weight ? p.weight + ' lbs' : '—'}</td>
     </tr>`).join('');
