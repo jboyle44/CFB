@@ -146,6 +146,19 @@
   }
   .badge.tr{background:rgba(180,142,173,0.2); color:var(--purple);}
   .badge.fr{background:rgba(111,168,220,0.2); color:var(--blue);}
+  .badge.status{background:rgba(212,106,106,0.2); color:var(--red);}
+
+  .injuries-table{
+    width:100%; border-collapse:collapse; margin-top:8px; font-size:12px;
+  }
+  .injuries-table th{
+    text-align:left; padding:6px 8px; color:var(--text-faint); font-weight:600;
+    font-size:11px; border-bottom:1px solid var(--line);
+  }
+  .injuries-table td{
+    padding:6px 8px; border-bottom:1px solid var(--line); color:var(--text);
+  }
+  .injuries-table tr:last-child td{border-bottom:none;}
   .empty{padding:40px; text-align:center; color:var(--text-faint);}
 
   details{margin-top:26px; border:1px solid var(--line); border-radius:10px; background:var(--panel);}
@@ -810,9 +823,27 @@ function render(){
   html += sectionHtml("Defense", DATA.defenseScheme || "", DEFENSE_ROWS);
   html += sectionHtml("Offense", DATA.offenseScheme || "", OFFENSE_ROWS);
   html += sectionHtml("Specialists", "", [SPECIAL_ROW]);
+  html += injuriesTableHtml(DATA.reserves || []);
 
   container.innerHTML = html;
   adjustLbRowOverlap();
+}
+
+function injuriesTableHtml(reserves){
+  if(!reserves.length) return "";
+  const rowsHtml = reserves.map(r => `
+    <tr>
+      <td>${r.player}</td>
+      <td>${r.jersey || "—"}</td>
+      <td>${r.class || "—"}</td>
+      <td><span class="badge status">${r.status || "—"}</span></td>
+    </tr>`).join("");
+  return `
+    <div class="section-head"><h2>Injuries / Suspensions</h2></div>
+    <table class="injuries-table">
+      <thead><tr><th>Player</th><th>No.</th><th>Class</th><th>Status</th></tr></thead>
+      <tbody>${rowsHtml}</tbody>
+    </table>`;
 }
 
 // Pulls the LB row up to overlap roughly half of the CB/NB row's ACTUAL
