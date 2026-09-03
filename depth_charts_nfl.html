@@ -567,11 +567,11 @@ function rowHtml(row){
   return `<div class="formrow"${idAttr} style="grid-template-columns:repeat(${cols}, 1fr);">${boxesHtml}</div>`;
 }
 
-function sectionHtml(title, rows){
+function sectionHtml(title, scheme, rows){
   const rowsHtml = rows.map(row => rowHtml(row)).join('');
   if(!rowsHtml.trim()) return "";
   return `
-    <div class="section-head"><h2>${title}</h2></div>
+    <div class="section-head"><h2>${title}</h2><span class="scheme">${scheme || ''}</span></div>
     ${rowsHtml}`;
 }
 
@@ -595,9 +595,9 @@ function render(){
   groupsRef = groups;
 
   let html = "";
-  html += sectionHtml("Defense", DEFENSE_ROWS);
-  html += sectionHtml("Offense", OFFENSE_ROWS);
-  html += sectionHtml("Specialists", [SPECIAL_ROW]);
+  html += sectionHtml("Defense", DATA.defenseScheme || "", DEFENSE_ROWS);
+  html += sectionHtml("Offense", DATA.offenseScheme || "", OFFENSE_ROWS);
+  html += sectionHtml("Specialists", "", [SPECIAL_ROW]);
 
   container.innerHTML = html;
 }
