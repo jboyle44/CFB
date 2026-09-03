@@ -40,10 +40,22 @@ ACQUIRED_PATTERN = re.compile(r"^[A-Za-z]{1,2}/[A-Za-z]")
 SKIP_TABLE_TITLES = {"practice squad"}
 
 
+ROMAN_NUMERAL_SUFFIXES = {"ii", "iii", "iv", "v", "vi", "vii"}
+
+
 def _smart_case(s):
     """Title-case only if the source was ALL CAPS -- leaves already-correct
-    mixed case (CeeDee, DeMarvion, DaRon, etc.) untouched."""
-    return s.title() if s.isupper() else s
+    mixed case (CeeDee, DeMarvion, DaRon, etc.) untouched. Roman numeral
+    suffixes (II, III, IV...) need special handling afterward, since
+    Python's .title() treats them as ordinary words and produces "Ii"/"Iii"
+    instead of preserving the numeral -- confirmed real case: "MINSHEW II"
+    became "Minshew Ii" instead of "Minshew II"."""
+    if not s.isupper():
+        return s
+    titled = s.title()
+    words = titled.split()
+    fixed = [w.upper() if w.lower() in ROMAN_NUMERAL_SUFFIXES else w for w in words]
+    return " ".join(fixed)
 
 
 def parse_player_cell(text):
