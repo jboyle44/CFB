@@ -18,8 +18,26 @@ from cfb27_team_ids import CFB27_TEAM_IDS
 from scrape_teamcrafters import get_cfb27_ratings
 
 
+SUFFIXES = {"jr", "sr", "ii", "iii", "iv", "v", "vi", "vii"}
+
+
 def normalize_name(name):
-    return name.lower().strip()
+    # Strip periods too -- confirmed real mismatch: our site stores "Jr."
+    # (with period) while teamcrafters.net's own scrape never includes one
+    # ("Jr"), so exact string comparison never matched despite being the
+    # same person.
+    return name.lower().strip().replace(".", "")
+
+
+def strip_suffix(name_norm):
+    """Removes a trailing suffix token entirely, for matching names where
+    one source has the suffix and the other doesn't -- a missing suffix,
+    not just a formatting difference, so period-stripping alone doesn't
+    help; the whole token needs to be droppable on either side."""
+    parts = name_norm.split()
+    if parts and parts[-1] in SUFFIXES:
+        return " ".join(parts[:-1])
+    return name_norm
 
 
 def update_team(team_key, output_dir):
@@ -41,7 +59,16 @@ def update_team(team_key, output_dir):
         print(f"  fetch failed for {team_key}: {e}", file=sys.stderr)
         return
 
-    # Exact-name matching only. A last-name-only fallback would carry the same
+    # Suffix-stripped index for the fallback -- only keep an entry if it's
+    # unambiguous (exactly one player on this team's roster reduces to that
+    # stripped name), same safety pattern used elsewhere in this project.
+    stripped_candidates = {}
+    for name, info in ratings.items():
+        key = strip_suffix(name)
+        stripped_candidates.setdefault(key, []).append(info)
+    ratings_by_stripped = {k: v[0] for k, v in stripped_candidates.items() if len(v) == 1}
+
+    # Exact-name matching first. A last-name-only fallback would carry the same
     # risk already found and fixed for CFBD matching (misattributing a
     # different same-surnamed player's data) -- but there's no position
     # signal here to safely gate that fallback the way CFBD's matching does,
@@ -51,6 +78,8 @@ def update_team(team_key, output_dir):
     for row in data.get("rows", []):
         norm = normalize_name(row["player"])
         info = ratings.get(norm)
+        if not info:
+            info = ratings_by_stripped.get(strip_suffix(norm))
         if info:
             row["cfb27Rating"] = info["ovr"]
             row["cfb27Dev"] = info["dev"]
