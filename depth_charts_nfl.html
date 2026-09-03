@@ -93,12 +93,13 @@
     display:grid; gap:8px; margin-bottom:8px;
   }
 
-  /* Compacts vertical space between the CB row and the LB row below it,
-     pulling the LB row up roughly halfway into the CB row's typical height.
-     Fixed, blind offset -- not coordinated with CB row geometry, to avoid
-     collision bugs across teams with different backup counts per box. */
+  /* Safe conservative default -- the real overlap amount is computed
+     dynamically in JS (adjustLbRowOverlap) after each render, measuring the
+     actual rendered CB row height so it correctly halves whatever that
+     team's specific box heights are. A fixed guess here caused a real
+     overlap bug for San Francisco (3-player boxes). */
   #row-lb{
-    margin-top:-75px;
+    margin-top:-22px;
   }
 
   .posbox{
