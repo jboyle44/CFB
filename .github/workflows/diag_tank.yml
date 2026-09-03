@@ -1,29 +1,22 @@
-name: Diagnostic Tankathon
-
+name: Diagnostic Tankathon 2
 on:
   workflow_dispatch: {}
-
 jobs:
   test:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - name: Check out repo
-        uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install dependencies
-        run: pip install requests beautifulsoup4
-      - name: Run diagnostic
-        working-directory: scripts
+      - run: pip install requests beautifulsoup4
+      - working-directory: scripts
         run: python3 diag_tankathon.py
-      - name: Commit result
-        run: |
+      - run: |
           git config user.name "test-bot"
           git config user.email "actions@github.com"
-          git add tankathon_diag.txt
-          git commit -m "Diagnostic result" || echo "nothing to commit"
+          git add tankathon_diag2.txt
+          git commit -m "Diagnostic 2" || echo "nothing to commit"
           git push
