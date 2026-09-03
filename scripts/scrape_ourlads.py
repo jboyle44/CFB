@@ -45,11 +45,13 @@ def parse_player_cell(text):
 
 
 def scrape_ourlads_depth_chart(ourlads_slug, ourlads_id, delay=1.5):
-    """Returns (rows, schemes) where rows is a list of
-    {position, player, jersey, class, isTransfer} and schemes is
+    """Returns (rows, schemes, reserves) where rows is a list of
+    {position, player, jersey, class, isTransfer}, schemes is
     {"offense": "Spread Option"|None, "defense": "4-2-5"|None} pulled from
-    each table's heading -- this varies team to team, so it's read from the
-    page rather than assumed."""
+    each table's heading, and reserves is a list of
+    {status, player, jersey, class, isTransfer} for Ourlads' "Reserves"
+    list (players marked INJ/SUS) -- these don't have a real position in
+    Ourlads' own data for this section, just name/jersey/class/status."""
     url = f"https://www.ourlads.com/ncaa-football-depth-charts/depth-chart/{ourlads_slug}/{ourlads_id}"
     resp = requests.get(url, headers=HEADERS, timeout=20)
     resp.raise_for_status()
@@ -57,6 +59,7 @@ def scrape_ourlads_depth_chart(ourlads_slug, ourlads_id, delay=1.5):
 
     soup = BeautifulSoup(resp.text, "html.parser")
     rows_out = []
+    reserves_out = []
     schemes = {"offense": None, "defense": None}
 
     for table in soup.find_all("table"):
@@ -84,14 +87,16 @@ def scrape_ourlads_depth_chart(ourlads_slug, ourlads_id, delay=1.5):
             position = cells[0].get_text(strip=True)
             if not position:
                 continue
-            # Ourlads includes an "Injured"/"Suspended" list, formatted with
-            # the exact same table structure (Pos | No | Player...) as the
-            # real depth chart, just with "INJ"/"SUS" in the position column
-            # instead of a real position code. These aren't part of the
-            # active depth chart -- skip them entirely rather than let them
-            # silently fail to render anywhere in the formation display.
-            if position in ("INJ", "SUS"):
-                continue
+            # Ourlads includes an "Injured"/"Suspended" list ("Reserves"),
+            # formatted with the exact same table structure (Pos | No |
+            # Player...) as the real depth chart, just with "INJ"/"SUS" in
+            # the position column instead of a real position code. These
+            # aren't part of the active depth chart formation -- route them
+            # into a separate reserves list instead of the main rows, since
+            # "INJ"/"SUS" isn't a real field position and would silently
+            # fail to render anywhere in the formation display.
+            is_reserve = position in ("INJ", "SUS")
+            status_label = "Injured" if position == "INJ" else "Suspended" if position == "SUS" else None
 
             # Remaining cells alternate: jersey_number, player_link, jersey_number, player_link, ...
             slot_cells = cells[1:]
@@ -107,15 +112,24 @@ def scrape_ourlads_depth_chart(ourlads_slug, ourlads_id, delay=1.5):
                 if not parsed:
                     continue
                 name, cls, is_transfer = parsed
-                rows_out.append({
-                    "position": position,
-                    "player": name,
-                    "jersey": jersey,
-                    "class": cls,
-                    "isTransfer": is_transfer,
-                })
+                if is_reserve:
+                    reserves_out.append({
+                        "status": status_label,
+                        "player": name,
+                        "jersey": jersey,
+                        "class": cls,
+                        "isTransfer": is_transfer,
+                    })
+                else:
+                    rows_out.append({
+                        "position": position,
+                        "player": name,
+                        "jersey": jersey,
+                        "class": cls,
+                        "isTransfer": is_transfer,
+                    })
 
-    return rows_out, schemes
+    return rows_out, schemes, reserves_out
 
 
 if __name__ == "__main__":
@@ -123,6 +137,6 @@ if __name__ == "__main__":
     import sys
     slug = sys.argv[1] if len(sys.argv) > 1 else "ohio-state"
     tid = sys.argv[2] if len(sys.argv) > 2 else "91533"
-    data, schemes = scrape_ourlads_depth_chart(slug, tid)
-    print(json.dumps({"schemes": schemes, "rows": data}, indent=2))
-    print(f"\n{len(data)} depth chart rows scraped", file=sys.stderr)
+    data, schemes, reserves = scrape_ourlads_depth_chart(slug, tid)
+    print(json.dumps({"schemes": schemes, "rows": data, "reserves": reserves}, indent=2))
+    print(f"\n{len(data)} depth chart rows, {len(reserves)} reserves scraped", file=sys.stderr)
