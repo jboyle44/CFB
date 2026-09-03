@@ -19,8 +19,7 @@
       "player": "Ted Hurst III",
       "jersey": "17",
       "code": "26/3",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RWR",
@@ -159,8 +158,7 @@
       "player": "Billy Schrauth",
       "jersey": "75",
       "code": "26/5",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RT",
@@ -179,8 +177,7 @@
       "player": "Benjamin Chukwuma",
       "jersey": "70",
       "code": "CF25",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "TE",
@@ -211,16 +208,14 @@
       "player": "Ko Kieft",
       "jersey": "41",
       "code": "22/6",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "TE",
       "player": "Bauer Sharp",
       "jersey": "84",
       "code": "26/6",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "QB",
@@ -239,8 +234,7 @@
       "player": "Jalon Daniels",
       "jersey": "10",
       "code": "CF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RB",
@@ -259,8 +253,7 @@
       "player": "Kenny Gainwell",
       "jersey": "1",
       "code": "U/Pit",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "RB",
@@ -315,8 +308,7 @@
       "player": "DeMonte Capehart",
       "jersey": "90",
       "code": "26/5",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "NT",
@@ -359,8 +351,7 @@
       "player": "Rueben Bain Jr.",
       "jersey": "3",
       "code": "26/1",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LOLB",
@@ -403,8 +394,7 @@
       "player": "Josiah Trotter",
       "jersey": "45",
       "code": "26/2",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "MLB",
@@ -435,8 +425,7 @@
       "player": "David Walker",
       "jersey": "51",
       "code": "25/4",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "ROLB",
@@ -467,8 +456,7 @@
       "player": "Ayden Garnes",
       "jersey": "24",
       "code": "CF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "SS",
@@ -499,8 +487,7 @@
       "player": "Miles Killebrew",
       "jersey": "29",
       "code": "U/Pit",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "RCB",
@@ -531,8 +518,7 @@
       "player": "Keionte Scott",
       "jersey": "22",
       "code": "26/4",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "NB",
@@ -575,8 +561,7 @@
       "player": "Evan Deckers",
       "jersey": "86",
       "code": "CF23",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "H",
@@ -607,56 +592,35 @@
       "player": "Kameron Johnson",
       "jersey": "19",
       "code": "CF24",
-      "isAcquired": false,
-      "pffGrade": 56.1,
-      "pffPositionRank": 176,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "PR",
       "player": "Tez Johnson",
       "jersey": "15",
       "code": "25/7",
-      "isAcquired": false,
-      "pffGrade": 63.5,
-      "pffPositionRank": 109,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Sean Tucker",
       "jersey": "44",
       "code": "CF23",
-      "isAcquired": false,
-      "pffGrade": 66.1,
-      "pffPositionRank": 73,
-      "pffPositionTotal": 136,
-      "pffPositionLabel": "HB",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Kenny Gainwell",
       "jersey": "1",
       "code": "U/Pit",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "KR",
       "player": "Kameron Johnson",
       "jersey": "19",
       "code": "CF24",
-      "isAcquired": false,
-      "pffGrade": 56.1,
-      "pffPositionRank": 176,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     }
   ]
 }
