@@ -99,7 +99,7 @@
      team's specific box heights are. A fixed guess here caused a real
      overlap bug for San Francisco (3-player boxes). */
   #row-lb{
-    margin-top:-22px;
+    margin-top:0;
   }
 
   .posbox{
@@ -619,12 +619,13 @@ function render(){
 // (confirmed real case: San Francisco) since box height varies with how
 // many backups are listed.
 function adjustLbRowOverlap(){
-  const cbnbRow = document.getElementById("row-cbnb");
-  const lbRow = document.getElementById("row-lb");
-  if(!cbnbRow || !lbRow) return;
-  const cbnbHeight = cbnbRow.offsetHeight;
-  if(!cbnbHeight) return;
-  lbRow.style.marginTop = `-${Math.round(cbnbHeight / 2)}px`;
+  // Overlap approach removed entirely -- pulling the LB row up via negative
+  // margin means it visually covers whatever CB/NB content is underneath it
+  // (confirmed real case: San Francisco's "Prysock" was hidden behind the
+  // LB boxes), not just tightening whitespace. No amount of more precise
+  // height calculation fixes this, since the fundamental technique (one
+  // row rendering on top of another) always hides something when there's
+  // real overlap. Rows now stack normally with no negative margin.
 }
 
 searchBox.addEventListener("input", () => { state.search = searchBox.value.toLowerCase(); render(); });
