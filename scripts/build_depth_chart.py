@@ -43,7 +43,7 @@ def site_position_bucket(pos):
     if pos in ("LT","RT","QT","ST","LG","RG","QG","SG","C"): return "OL"
     if pos in ("LOLB","LDE","JACK","WOLF","BUCK","LEO","CHEETAH","CHEET","RUSH","STUD",
                "DE","NT","LDT","DT","RDT","RDE","ROLB"): return "FRONT7"
-    if pos in ("SLB","WLB","STING","MAC","MLB","MONEY","DOG"): return "FRONT7"
+    if pos in ("SLB","WLB","STING","MAC","MLB","MONEY","DOG","SAM","MACK"): return "FRONT7"
     if pos in ("NB","HUSKY","STAR","CASH","SPUR","BAN","ROVER","CAT",
                "LCB","RCB","FCB","BCB","FS","SS","BS"): return "DB"
     if pos in ("PT","PK","KO","LS","H","PR","KR"): return "ST"
