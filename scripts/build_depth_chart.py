@@ -164,18 +164,22 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
     needs_transfer_lookup = any(
         row["isTransfer"] and not already_has_transfer_data(row) for row in depth_chart
     )
+    print(f"DEBUG: needs_transfer_lookup = {needs_transfer_lookup}", file=sys.stderr)
     transfers_in = {}
     if needs_transfer_lookup:
         print(f"Fetching CFBD transfer portal data for new transfers...", file=sys.stderr)
         for yr in (CURRENT_YEAR, CURRENT_YEAR - 1):
             try:
                 portal = get_transfer_portal(yr)
+                print(f"DEBUG: year {yr} portal has {len(portal)} total entries", file=sys.stderr)
                 for name, info in portal.items():
                     if info.get("destination") == team_name:
                         transfers_in[name] = info
             except Exception as e:
                 print(f"  {yr} portal fetch failed: {e}", file=sys.stderr)
         print(f"  {len(transfers_in)} transfers in from CFBD", file=sys.stderr)
+        print(f"DEBUG: 'earl little jr.' in transfers_in = {'earl little jr.' in transfers_in}", file=sys.stderr)
+        print(f"DEBUG: transfers_in.get('earl little jr.') = {transfers_in.get('earl little jr.')}", file=sys.stderr)
     else:
         print("No new transfers needing portal data -- skipping CFBD portal call this run.", file=sys.stderr)
 
@@ -196,6 +200,8 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
                     # a different person, don't risk a wrong match
         transfer_match = transfers_in.get(norm)
         prev_match = previous_by_norm_name.get(norm)
+        if "little" in norm:
+            print(f"DEBUG ROW: norm='{norm}' isTransfer={row['isTransfer']} transfer_match={transfer_match}", file=sys.stderr)
 
         out_row = {
             "position": row["position"],
