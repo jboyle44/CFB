@@ -1,16 +1,17 @@
 """
 Fetches CFB27 player ratings from teamcrafters.net and merges them into the
 existing depth_chart_data/{team}.json files by player name. Adds two new
-fields per row: cfb27Rating (OVR) and cfb27Dev (dev trait).
+fields per row: cfb27Rating (OVR) and cfb27Dev (dev trait), plus a top-level
+cfb27UpdatedAt timestamp.
 
-Uses the same last-name fallback + position-compatibility safeguard pattern
-established for CFBD recruiting matching, since roster name formatting
-(nicknames, suffixes) can differ between Ourlads and teamcrafters.net.
+Exact-name matching only -- see inline comment in update_team() for why a
+last-name fallback isn't used here.
 """
 import sys
 import json
 import glob
 import os
+import datetime
 
 sys.path.insert(0, os.path.dirname(__file__))
 from cfb27_team_ids import CFB27_TEAM_IDS
@@ -58,6 +59,7 @@ def update_team(team_key, output_dir):
             row["cfb27Rating"] = row.get("cfb27Rating")  # preserve if present
             row["cfb27Dev"] = row.get("cfb27Dev")
 
+    data["cfb27UpdatedAt"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
     with open(path, "w") as f:
         json.dump(data, f, indent=2)
     print(f"  {team_key}: {matched}/{len(data.get('rows', []))} matched", file=sys.stderr)
