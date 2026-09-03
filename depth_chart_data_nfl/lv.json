@@ -1,5 +1,8 @@
 {
-  "generatedAt": "2026-09-03T00:28:25.747785+00:00",
+  "generatedAt": "2026-09-03T03:32:26.400980+00:00",
+  "ourladsUpdatedAt": "2026-09-03T03:32:26.400980+00:00",
+  "madden27UpdatedAt": null,
+  "pffUpdatedAt": null,
   "team": "Las Vegas Raiders",
   "rows": [
     {
@@ -8,11 +11,7 @@
       "jersey": "1",
       "code": "23/3",
       "isAcquired": false,
-      "pffGrade": 65.9,
-      "pffPositionRank": 96,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false,
+      "pffGrade": null,
       "madden27Rating": 78,
       "madden27Dev": "Normal"
     },
@@ -23,10 +22,6 @@
       "code": "U/Min",
       "isAcquired": true,
       "pffGrade": 66.3,
-      "pffPositionRank": 90,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": true,
       "madden27Rating": 77,
       "madden27Dev": "Normal"
     },
@@ -36,6 +31,7 @@
       "jersey": "19",
       "code": "26/6",
       "isAcquired": false,
+      "pffGrade": null,
       "madden27Rating": 69,
       "madden27Dev": "Normal"
     },
@@ -46,10 +42,6 @@
       "code": "25/2",
       "isAcquired": false,
       "pffGrade": 59.9,
-      "pffPositionRank": 144,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false,
       "madden27Rating": 72,
       "madden27Dev": "Normal"
     },
@@ -60,10 +52,6 @@
       "code": "U/Sea",
       "isAcquired": true,
       "pffGrade": 72.3,
-      "pffPositionRank": 50,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false,
       "madden27Rating": 66,
       "madden27Dev": "Normal"
     },
@@ -74,10 +62,6 @@
       "code": "18/1",
       "isAcquired": false,
       "pffGrade": 86.5,
-      "pffPositionRank": 6,
-      "pffPositionTotal": 134,
-      "pffPositionLabel": "T",
-      "pffTied": false,
       "madden27Rating": 91,
       "madden27Dev": "Star"
     },
@@ -88,10 +72,6 @@
       "code": "25/3",
       "isAcquired": false,
       "pffGrade": 70.1,
-      "pffPositionRank": 43,
-      "pffPositionTotal": 134,
-      "pffPositionLabel": "T",
-      "pffTied": true,
       "madden27Rating": 70,
       "madden27Dev": "Normal"
     },
@@ -102,10 +82,6 @@
       "code": "U/SF",
       "isAcquired": true,
       "pffGrade": 58.9,
-      "pffPositionRank": 76,
-      "pffPositionTotal": 138,
-      "pffPositionLabel": "G",
-      "pffTied": false,
       "madden27Rating": 69,
       "madden27Dev": "Normal"
     },
@@ -116,10 +92,6 @@
       "code": "SF25",
       "isAcquired": false,
       "pffGrade": 52.1,
-      "pffPositionRank": 103,
-      "pffPositionTotal": 138,
-      "pffPositionLabel": "G",
-      "pffTied": true,
       "madden27Rating": 62,
       "madden27Dev": "Normal"
     },
@@ -130,10 +102,6 @@
       "code": "U/Bal",
       "isAcquired": true,
       "pffGrade": 79.8,
-      "pffPositionRank": 5,
-      "pffPositionTotal": 59,
-      "pffPositionLabel": "C",
-      "pffTied": false,
       "madden27Rating": 88,
       "madden27Dev": "Star"
     },
@@ -143,6 +111,7 @@
       "jersey": "66",
       "code": "26/3",
       "isAcquired": false,
+      "pffGrade": null,
       "madden27Rating": 73,
       "madden27Dev": "Star"
     },
@@ -153,10 +122,6 @@
       "code": "24/2",
       "isAcquired": false,
       "pffGrade": 63.8,
-      "pffPositionRank": 53,
-      "pffPositionTotal": 138,
-      "pffPositionLabel": "G",
-      "pffTied": false,
       "madden27Rating": 78,
       "madden27Dev": "Normal"
     },
@@ -167,10 +132,6 @@
       "code": "25/3",
       "isAcquired": false,
       "pffGrade": 59.6,
-      "pffPositionRank": 70,
-      "pffPositionTotal": 138,
-      "pffPositionLabel": "G",
-      "pffTied": true,
       "madden27Rating": 70,
       "madden27Dev": "Normal"
     },
@@ -181,10 +142,6 @@
       "code": "24/3",
       "isAcquired": false,
       "pffGrade": 60.6,
-      "pffPositionRank": 80,
-      "pffPositionTotal": 134,
-      "pffPositionLabel": "T",
-      "pffTied": true,
       "madden27Rating": 72,
       "madden27Dev": "Normal"
     },
@@ -195,10 +152,6 @@
       "code": "24/1",
       "isAcquired": false,
       "pffGrade": 78.8,
-      "pffPositionRank": 10,
-      "pffPositionTotal": 125,
-      "pffPositionLabel": "TE",
-      "pffTied": false,
       "madden27Rating": 93,
       "madden27Dev": "X-Factor"
     },
@@ -209,10 +162,6 @@
       "code": "23/2",
       "isAcquired": false,
       "pffGrade": 64.6,
-      "pffPositionRank": 47,
-      "pffPositionTotal": 125,
-      "pffPositionLabel": "TE",
-      "pffTied": false,
       "madden27Rating": 72,
       "madden27Dev": "Normal"
     },
@@ -223,10 +172,6 @@
       "code": "U/Car",
       "isAcquired": true,
       "pffGrade": 63.8,
-      "pffPositionRank": 50,
-      "pffPositionTotal": 125,
-      "pffPositionLabel": "TE",
-      "pffTied": false,
       "madden27Rating": 69,
       "madden27Dev": "Normal"
     },
@@ -237,10 +182,6 @@
       "code": "CC/Atl",
       "isAcquired": true,
       "pffGrade": 75.0,
-      "pffPositionRank": 16,
-      "pffPositionTotal": 76,
-      "pffPositionLabel": "QB",
-      "pffTied": false,
       "madden27Rating": 73,
       "madden27Dev": "Normal"
     },
@@ -250,6 +191,7 @@
       "jersey": "15",
       "code": "26/1",
       "isAcquired": false,
+      "pffGrade": null,
       "madden27Rating": 74,
       "madden27Dev": "Superstar"
     },
@@ -260,10 +202,6 @@
       "code": "23/4",
       "isAcquired": false,
       "pffGrade": 66.9,
-      "pffPositionRank": 34,
-      "pffPositionTotal": 76,
-      "pffPositionLabel": "QB",
-      "pffTied": false,
       "madden27Rating": 67,
       "madden27Dev": "Normal"
     },
@@ -274,10 +212,6 @@
       "code": "25/1",
       "isAcquired": false,
       "pffGrade": 70.4,
-      "pffPositionRank": 48,
-      "pffPositionTotal": 136,
-      "pffPositionLabel": "HB",
-      "pffTied": false,
       "madden27Rating": 85,
       "madden27Dev": "Star"
     },
@@ -287,6 +221,7 @@
       "jersey": "4",
       "code": "26/4",
       "isAcquired": false,
+      "pffGrade": null,
       "madden27Rating": 72,
       "madden27Dev": "Star"
     },
@@ -296,11 +231,7 @@
       "jersey": "23",
       "code": "24/6",
       "isAcquired": false,
-      "pffGrade": 44.2,
-      "pffPositionRank": 133,
-      "pffPositionTotal": 136,
-      "pffPositionLabel": "HB",
-      "pffTied": false,
+      "pffGrade": null,
       "madden27Rating": 68,
       "madden27Dev": "Normal"
     },
@@ -310,6 +241,7 @@
       "jersey": "34",
       "code": "U/Pit",
       "isAcquired": true,
+      "pffGrade": null,
       "madden27Rating": 66,
       "madden27Dev": "Normal"
     },
@@ -320,10 +252,6 @@
       "code": "19/4",
       "isAcquired": false,
       "pffGrade": 79.7,
-      "pffPositionRank": 19,
-      "pffPositionTotal": 206,
-      "pffPositionLabel": "ED",
-      "pffTied": false,
       "madden27Rating": 97,
       "madden27Dev": "X-Factor"
     },
@@ -334,10 +262,6 @@
       "code": "U/Ind",
       "isAcquired": true,
       "pffGrade": 59.4,
-      "pffPositionRank": 117,
-      "pffPositionTotal": 206,
-      "pffPositionLabel": "ED",
-      "pffTied": false,
       "madden27Rating": 77,
       "madden27Dev": "Normal"
     },
@@ -348,10 +272,6 @@
       "code": "25/4",
       "isAcquired": false,
       "pffGrade": 37.6,
-      "pffPositionRank": 204,
-      "pffPositionTotal": 225,
-      "pffPositionLabel": "DI",
-      "pffTied": false,
       "madden27Rating": 68,
       "madden27Dev": "Normal"
     },
@@ -362,10 +282,6 @@
       "code": "T/Phi",
       "isAcquired": true,
       "pffGrade": 45.6,
-      "pffPositionRank": 169,
-      "pffPositionTotal": 225,
-      "pffPositionLabel": "DI",
-      "pffTied": false,
       "madden27Rating": 66,
       "madden27Dev": "Normal"
     },
@@ -375,6 +291,7 @@
       "jersey": "94",
       "code": "U/Hou",
       "isAcquired": true,
+      "pffGrade": null,
       "madden27Rating": 74,
       "madden27Dev": "Normal"
     },
@@ -385,10 +302,6 @@
       "code": "SF23",
       "isAcquired": false,
       "pffGrade": 53.8,
-      "pffPositionRank": 119,
-      "pffPositionTotal": 225,
-      "pffPositionLabel": "DI",
-      "pffTied": false,
       "madden27Rating": 73,
       "madden27Dev": "Normal"
     },
@@ -399,10 +312,6 @@
       "code": "W/Ind",
       "isAcquired": true,
       "pffGrade": 40.9,
-      "pffPositionRank": 194,
-      "pffPositionTotal": 225,
-      "pffPositionLabel": "DI",
-      "pffTied": false,
       "madden27Rating": 69,
       "madden27Dev": "Normal"
     },
@@ -413,10 +322,6 @@
       "code": "25/6",
       "isAcquired": false,
       "pffGrade": 40.4,
-      "pffPositionRank": 196,
-      "pffPositionTotal": 225,
-      "pffPositionLabel": "DI",
-      "pffTied": false,
       "madden27Rating": 67,
       "madden27Dev": "Normal"
     },
@@ -427,10 +332,6 @@
       "code": "21/3",
       "isAcquired": false,
       "pffGrade": 59.1,
-      "pffPositionRank": 120,
-      "pffPositionTotal": 206,
-      "pffPositionLabel": "ED",
-      "pffTied": true,
       "madden27Rating": 75,
       "madden27Dev": "Normal"
     },
@@ -441,10 +342,6 @@
       "code": "SF26",
       "isAcquired": false,
       "pffGrade": 39.4,
-      "pffPositionRank": 199,
-      "pffPositionTotal": 206,
-      "pffPositionLabel": "ED",
-      "pffTied": false,
       "madden27Rating": 66,
       "madden27Dev": "Normal"
     },
@@ -455,10 +352,6 @@
       "code": "U/GB",
       "isAcquired": true,
       "pffGrade": 48.7,
-      "pffPositionRank": 147,
-      "pffPositionTotal": 186,
-      "pffPositionLabel": "LB",
-      "pffTied": false,
       "madden27Rating": 80,
       "madden27Dev": "Normal"
     },
@@ -469,10 +362,6 @@
       "code": "24/5",
       "isAcquired": false,
       "pffGrade": 58.2,
-      "pffPositionRank": 107,
-      "pffPositionTotal": 186,
-      "pffPositionLabel": "LB",
-      "pffTied": false,
       "madden27Rating": 70,
       "madden27Dev": "Normal"
     },
@@ -483,10 +372,6 @@
       "code": "U/Ind",
       "isAcquired": true,
       "pffGrade": 64.4,
-      "pffPositionRank": 76,
-      "pffPositionTotal": 186,
-      "pffPositionLabel": "LB",
-      "pffTied": false,
       "madden27Rating": 66,
       "madden27Dev": "Normal"
     },
@@ -497,10 +382,6 @@
       "code": "U/Phi",
       "isAcquired": true,
       "pffGrade": 62.0,
-      "pffPositionRank": 88,
-      "pffPositionTotal": 186,
-      "pffPositionLabel": "LB",
-      "pffTied": true,
       "madden27Rating": 78,
       "madden27Dev": "Normal"
     },
@@ -510,6 +391,7 @@
       "jersey": "55",
       "code": "25/7",
       "isAcquired": false,
+      "pffGrade": null,
       "madden27Rating": 62,
       "madden27Dev": "Normal"
     },
@@ -520,10 +402,6 @@
       "code": "U/GB",
       "isAcquired": true,
       "pffGrade": 75.0,
-      "pffPositionRank": 20,
-      "pffPositionTotal": 217,
-      "pffPositionLabel": "CB",
-      "pffTied": false,
       "madden27Rating": 77,
       "madden27Dev": "Star"
     },
@@ -533,6 +411,7 @@
       "jersey": "28",
       "code": "26/4",
       "isAcquired": false,
+      "pffGrade": null,
       "madden27Rating": 74,
       "madden27Dev": "Star"
     },
@@ -543,10 +422,6 @@
       "code": "W/SF",
       "isAcquired": true,
       "pffGrade": 60.7,
-      "pffPositionRank": 104,
-      "pffPositionTotal": 217,
-      "pffPositionLabel": "CB",
-      "pffTied": false,
       "madden27Rating": null,
       "madden27Dev": null
     },
@@ -557,10 +432,6 @@
       "code": "U/Was",
       "isAcquired": true,
       "pffGrade": 66.7,
-      "pffPositionRank": 65,
-      "pffPositionTotal": 179,
-      "pffPositionLabel": "S",
-      "pffTied": true,
       "madden27Rating": 82,
       "madden27Dev": "Normal"
     },
@@ -570,6 +441,7 @@
       "jersey": "43",
       "code": "26/5",
       "isAcquired": false,
+      "pffGrade": null,
       "madden27Rating": 68,
       "madden27Dev": "Normal"
     },
@@ -579,6 +451,7 @@
       "jersey": "31",
       "code": "26/2",
       "isAcquired": false,
+      "pffGrade": null,
       "madden27Rating": 76,
       "madden27Dev": "Star"
     },
@@ -589,10 +462,6 @@
       "code": "CF22",
       "isAcquired": false,
       "pffGrade": 39.6,
-      "pffPositionRank": 172,
-      "pffPositionTotal": 179,
-      "pffPositionLabel": "S",
-      "pffTied": false,
       "madden27Rating": 71,
       "madden27Dev": "Normal"
     },
@@ -603,10 +472,6 @@
       "code": "W/Phi",
       "isAcquired": true,
       "pffGrade": 52.3,
-      "pffPositionRank": 142,
-      "pffPositionTotal": 179,
-      "pffPositionLabel": "S",
-      "pffTied": false,
       "madden27Rating": 62,
       "madden27Dev": "Normal"
     },
@@ -617,10 +482,6 @@
       "code": "25/3",
       "isAcquired": false,
       "pffGrade": 54.4,
-      "pffPositionRank": 159,
-      "pffPositionTotal": 217,
-      "pffPositionLabel": "CB",
-      "pffTied": true,
       "madden27Rating": 74,
       "madden27Dev": "Normal"
     },
@@ -630,6 +491,7 @@
       "jersey": "35",
       "code": "26/5",
       "isAcquired": false,
+      "pffGrade": null,
       "madden27Rating": 68,
       "madden27Dev": "Normal"
     },
@@ -640,10 +502,6 @@
       "code": "CC/Buf",
       "isAcquired": true,
       "pffGrade": 60.3,
-      "pffPositionRank": 107,
-      "pffPositionTotal": 217,
-      "pffPositionLabel": "CB",
-      "pffTied": true,
       "madden27Rating": 83,
       "madden27Dev": "Normal"
     },
@@ -654,10 +512,6 @@
       "code": "CF19",
       "isAcquired": false,
       "pffGrade": 72.2,
-      "pffPositionRank": 14,
-      "pffPositionTotal": 36,
-      "pffPositionLabel": "P",
-      "pffTied": false,
       "madden27Rating": null,
       "madden27Dev": null
     },
@@ -668,10 +522,6 @@
       "code": "SF26",
       "isAcquired": false,
       "pffGrade": 62.0,
-      "pffPositionRank": 35,
-      "pffPositionTotal": 42,
-      "pffPositionLabel": "K",
-      "pffTied": false,
       "madden27Rating": 75,
       "madden27Dev": "Normal"
     },
@@ -681,6 +531,7 @@
       "jersey": "47",
       "code": "SF26",
       "isAcquired": false,
+      "pffGrade": null,
       "madden27Rating": 62,
       "madden27Dev": "Normal"
     },
@@ -691,10 +542,6 @@
       "code": "CF19",
       "isAcquired": false,
       "pffGrade": 72.2,
-      "pffPositionRank": 14,
-      "pffPositionTotal": 36,
-      "pffPositionLabel": "P",
-      "pffTied": false,
       "madden27Rating": null,
       "madden27Dev": null
     },
@@ -705,10 +552,6 @@
       "code": "SF26",
       "isAcquired": false,
       "pffGrade": 62.0,
-      "pffPositionRank": 35,
-      "pffPositionTotal": 42,
-      "pffPositionLabel": "K",
-      "pffTied": false,
       "madden27Rating": 75,
       "madden27Dev": "Normal"
     },
@@ -718,6 +561,7 @@
       "jersey": "1",
       "code": "23/3",
       "isAcquired": false,
+      "pffGrade": null,
       "madden27Rating": 78,
       "madden27Dev": "Normal"
     },
@@ -727,6 +571,7 @@
       "jersey": "28",
       "code": "26/4",
       "isAcquired": false,
+      "pffGrade": null,
       "madden27Rating": 74,
       "madden27Dev": "Star"
     },
@@ -736,6 +581,7 @@
       "jersey": "19",
       "code": "26/6",
       "isAcquired": false,
+      "pffGrade": null,
       "madden27Rating": 69,
       "madden27Dev": "Normal"
     },
@@ -745,6 +591,7 @@
       "jersey": "1",
       "code": "23/3",
       "isAcquired": false,
+      "pffGrade": null,
       "madden27Rating": 78,
       "madden27Dev": "Normal"
     },
@@ -754,6 +601,7 @@
       "jersey": "23",
       "code": "24/6",
       "isAcquired": false,
+      "pffGrade": null,
       "madden27Rating": 68,
       "madden27Dev": "Normal"
     },
@@ -763,6 +611,7 @@
       "jersey": "19",
       "code": "26/6",
       "isAcquired": false,
+      "pffGrade": null,
       "madden27Rating": 69,
       "madden27Dev": "Normal"
     }
