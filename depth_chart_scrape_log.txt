@@ -14,12 +14,11 @@ exit_code=0
 === indiana ===
 Scraping Ourlads depth chart for Indiana...
   76 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
   2022: 25 players
   2023: 14 players
   2024: 17 players
   2025: 26 players
-  2026: 23 players
 Fetching CFBD transfer portal data for new transfers...
   40 transfers in from CFBD
 Wrote ../depth_chart_data/indiana.json
@@ -66,12 +65,11 @@ exit_code=0
 === michigan-state ===
 Scraping Ourlads depth chart for Michigan State...
   67 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
   2022: 27 players
   2023: 18 players
   2024: 26 players
   2025: 20 players
-  2026: 22 players
 Fetching CFBD transfer portal data for new transfers...
   51 transfers in from CFBD
 Wrote ../depth_chart_data/michigan-state.json
@@ -79,12 +77,11 @@ exit_code=0
 === minnesota ===
 Scraping Ourlads depth chart for Minnesota...
   79 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
   2022: 21 players
   2023: 26 players
   2024: 25 players
   2025: 22 players
-  2026: 31 players
 Fetching CFBD transfer portal data for new transfers...
   40 transfers in from CFBD
 Wrote ../depth_chart_data/minnesota.json
@@ -105,12 +102,10 @@ exit_code=0
 === northwestern ===
 Scraping Ourlads depth chart for Northwestern...
   72 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024]...
   2022: 16 players
   2023: 19 players
   2024: 18 players
-  2025: 22 players
-  2026: 22 players
 Fetching CFBD transfer portal data for new transfers...
   31 transfers in from CFBD
 Wrote ../depth_chart_data/northwestern.json
@@ -118,11 +113,10 @@ exit_code=0
 === ohio-state ===
 Scraping Ourlads depth chart for Ohio State...
   77 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024]...
   2022: 21 players
   2023: 24 players
   2024: 25 players
-  2026: 30 players
 Fetching CFBD transfer portal data for new transfers...
   28 transfers in from CFBD
 Wrote ../depth_chart_data/ohio-state.json
@@ -143,12 +137,10 @@ exit_code=0
 === penn-state ===
 Scraping Ourlads depth chart for Penn State...
   85 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024]...
   2022: 24 players
   2023: 24 players
   2024: 26 players
-  2025: 29 players
-  2026: 15 players
 Fetching CFBD transfer portal data for new transfers...
   46 transfers in from CFBD
 Wrote ../depth_chart_data/penn-state.json
@@ -156,12 +148,10 @@ exit_code=0
 === purdue ===
 Scraping Ourlads depth chart for Purdue...
   83 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024]...
   2022: 22 players
   2023: 18 players
   2024: 25 players
-  2025: 17 players
-  2026: 21 players
 Fetching CFBD transfer portal data for new transfers...
   80 transfers in from CFBD
 Wrote ../depth_chart_data/purdue.json
@@ -169,12 +159,11 @@ exit_code=0
 === rutgers ===
 Scraping Ourlads depth chart for Rutgers...
   71 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
   2022: 27 players
   2023: 21 players
   2024: 25 players
   2025: 30 players
-  2026: 26 players
 Fetching CFBD transfer portal data for new transfers...
   34 transfers in from CFBD
 Wrote ../depth_chart_data/rutgers.json
@@ -182,10 +171,9 @@ exit_code=0
 === ucla ===
 Scraping Ourlads depth chart for UCLA...
   76 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2025, 2026]...
   2022: 13 players
   2023: 17 players
-  2024: 11 players
   2025: 22 players
   2026: 18 players
 Fetching CFBD transfer portal data for new transfers...
@@ -208,12 +196,10 @@ exit_code=0
 === washington ===
 Scraping Ourlads depth chart for Washington...
   59 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024]...
   2022: 14 players
   2023: 27 players
   2024: 16 players
-  2025: 30 players
-  2026: 27 players
 Fetching CFBD transfer portal data for new transfers...
   32 transfers in from CFBD
 Wrote ../depth_chart_data/washington.json
@@ -234,11 +220,10 @@ exit_code=0
 === alabama ===
 Scraping Ourlads depth chart for Alabama...
   97 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2026]...
   2022: 26 players
   2023: 27 players
   2024: 28 players
-  2025: 20 players
   2026: 26 players
 Fetching CFBD transfer portal data for new transfers...
   28 transfers in from CFBD
@@ -286,12 +271,10 @@ exit_code=0
 === georgia ===
 Scraping Ourlads depth chart for Georgia...
   91 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2025]...
   2022: 31 players
   2023: 26 players
-  2024: 32 players
   2025: 29 players
-  2026: 32 players
 Fetching CFBD transfer portal data for new transfers...
   19 transfers in from CFBD
 Wrote ../depth_chart_data/georgia.json
@@ -325,9 +308,8 @@ exit_code=0
 === ole-miss ===
 Scraping Ourlads depth chart for Ole Miss...
   76 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2024, 2025, 2026]...
   2022: 18 players
-  2023: 17 players
   2024: 18 players
   2025: 22 players
   2026: 22 players
@@ -351,12 +333,11 @@ exit_code=0
 === missouri ===
 Scraping Ourlads depth chart for Missouri...
   70 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
   2022: 19 players
   2023: 19 players
   2024: 23 players
   2025: 17 players
-  2026: 23 players
 Fetching CFBD transfer portal data for new transfers...
   51 transfers in from CFBD
 Wrote ../depth_chart_data/missouri.json
@@ -364,12 +345,11 @@ exit_code=0
 === oklahoma ===
 Scraping Ourlads depth chart for Oklahoma...
   81 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
   2022: 22 players
   2023: 26 players
   2024: 30 players
   2025: 18 players
-  2026: 25 players
 Fetching CFBD transfer portal data for new transfers...
   36 transfers in from CFBD
 Wrote ../depth_chart_data/oklahoma.json
@@ -377,12 +357,11 @@ exit_code=0
 === south-carolina ===
 Scraping Ourlads depth chart for South Carolina...
   84 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
   2022: 24 players
   2023: 25 players
   2024: 17 players
   2025: 25 players
-  2026: 18 players
 Fetching CFBD transfer portal data for new transfers...
   43 transfers in from CFBD
 Wrote ../depth_chart_data/south-carolina.json
@@ -390,12 +369,11 @@ exit_code=0
 === tennessee ===
 Scraping Ourlads depth chart for Tennessee...
   87 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
   2022: 23 players
   2023: 26 players
   2024: 23 players
   2025: 25 players
-  2026: 32 players
 Fetching CFBD transfer portal data for new transfers...
   28 transfers in from CFBD
 Wrote ../depth_chart_data/tennessee.json
@@ -403,11 +381,10 @@ exit_code=0
 === texas ===
 Scraping Ourlads depth chart for Texas...
   96 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2026]...
   2022: 30 players
   2023: 26 players
   2024: 23 players
-  2025: 25 players
   2026: 26 players
 Fetching CFBD transfer portal data for new transfers...
   33 transfers in from CFBD
@@ -429,12 +406,11 @@ exit_code=0
 === vanderbilt ===
 Scraping Ourlads depth chart for Vanderbilt...
   80 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
   2022: 27 players
   2023: 23 players
   2024: 20 players
   2025: 14 players
-  2026: 23 players
 Fetching CFBD transfer portal data for new transfers...
   38 transfers in from CFBD
 Wrote ../depth_chart_data/vanderbilt.json
@@ -442,11 +418,10 @@ exit_code=0
 === boston-college ===
 Scraping Ourlads depth chart for Boston College...
   105 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2026]...
   2022: 23 players
   2023: 18 players
   2024: 12 players
-  2025: 27 players
   2026: 24 players
 Fetching CFBD transfer portal data for new transfers...
   41 transfers in from CFBD
@@ -455,12 +430,11 @@ exit_code=0
 === california ===
 Scraping Ourlads depth chart for California...
   76 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
   2022: 17 players
   2023: 14 players
   2024: 20 players
   2025: 15 players
-  2026: 18 players
 Fetching CFBD transfer portal data for new transfers...
   68 transfers in from CFBD
 Wrote ../depth_chart_data/california.json
@@ -468,12 +442,10 @@ exit_code=0
 === clemson ===
 Scraping Ourlads depth chart for Clemson...
   79 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024]...
   2022: 22 players
   2023: 26 players
   2024: 23 players
-  2025: 15 players
-  2026: 22 players
 Fetching CFBD transfer portal data for new transfers...
   15 transfers in from CFBD
 Wrote ../depth_chart_data/clemson.json
@@ -481,12 +453,11 @@ exit_code=0
 === duke ===
 Scraping Ourlads depth chart for Duke...
   77 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
   2022: 18 players
   2023: 26 players
   2024: 18 players
   2025: 28 players
-  2026: 15 players
 Fetching CFBD transfer portal data for new transfers...
   28 transfers in from CFBD
 Wrote ../depth_chart_data/duke.json
@@ -494,12 +465,11 @@ exit_code=0
 === florida-state ===
 Scraping Ourlads depth chart for Florida State...
   67 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
   2022: 19 players
   2023: 17 players
   2024: 25 players
   2025: 23 players
-  2026: 30 players
 Fetching CFBD transfer portal data for new transfers...
   44 transfers in from CFBD
 Wrote ../depth_chart_data/florida-state.json
@@ -507,12 +477,11 @@ exit_code=0
 === georgia-tech ===
 Scraping Ourlads depth chart for Georgia Tech...
   86 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
   2022: 15 players
   2023: 21 players
   2024: 23 players
   2025: 24 players
-  2026: 24 players
 Fetching CFBD transfer portal data for new transfers...
   42 transfers in from CFBD
 Wrote ../depth_chart_data/georgia-tech.json
@@ -520,12 +489,11 @@ exit_code=0
 === louisville ===
 Scraping Ourlads depth chart for Louisville...
   84 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
   2022: 16 players
   2023: 19 players
   2024: 18 players
   2025: 17 players
-  2026: 20 players
 Fetching CFBD transfer portal data for new transfers...
   63 transfers in from CFBD
 Wrote ../depth_chart_data/louisville.json
@@ -559,11 +527,10 @@ exit_code=0
 === nc-state ===
 Scraping Ourlads depth chart for NC State...
   68 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2026]...
   2022: 12 players
   2023: 15 players
   2024: 23 players
-  2025: 23 players
   2026: 26 players
 Fetching CFBD transfer portal data for new transfers...
   38 transfers in from CFBD
@@ -572,12 +539,11 @@ exit_code=0
 === pittsburgh ===
 Scraping Ourlads depth chart for Pittsburgh...
   63 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
   2022: 11 players
   2023: 19 players
   2024: 23 players
   2025: 25 players
-  2026: 21 players
 Fetching CFBD transfer portal data for new transfers...
   31 transfers in from CFBD
 Wrote ../depth_chart_data/pittsburgh.json
@@ -598,11 +564,10 @@ exit_code=0
 === stanford ===
 Scraping Ourlads depth chart for Stanford...
   84 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2026]...
   2022: 25 players
   2023: 23 players
   2024: 28 players
-  2025: 17 players
   2026: 23 players
 Fetching CFBD transfer portal data for new transfers...
   23 transfers in from CFBD
@@ -611,9 +576,8 @@ exit_code=0
 === syracuse ===
 Scraping Ourlads depth chart for Syracuse...
   70 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2024, 2025, 2026]...
   2022: 17 players
-  2023: 14 players
   2024: 25 players
   2025: 35 players
   2026: 26 players
@@ -624,12 +588,10 @@ exit_code=0
 === virginia ===
 Scraping Ourlads depth chart for Virginia...
   74 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024]...
   2022: 16 players
   2023: 20 players
   2024: 16 players
-  2025: 21 players
-  2026: 15 players
 Fetching CFBD transfer portal data for new transfers...
   62 transfers in from CFBD
 Wrote ../depth_chart_data/virginia.json
@@ -637,12 +599,11 @@ exit_code=0
 === virginia-tech ===
 Scraping Ourlads depth chart for Virginia Tech...
   82 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
   2022: 24 players
   2023: 29 players
   2024: 15 players
   2025: 20 players
-  2026: 23 players
 Fetching CFBD transfer portal data for new transfers...
   59 transfers in from CFBD
 Wrote ../depth_chart_data/virginia-tech.json
@@ -663,12 +624,10 @@ exit_code=0
 === notre-dame ===
 Scraping Ourlads depth chart for Notre Dame...
   81 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024]...
   2022: 23 players
   2023: 24 players
   2024: 23 players
-  2025: 25 players
-  2026: 30 players
 Fetching CFBD transfer portal data for new transfers...
   14 transfers in from CFBD
 Wrote ../depth_chart_data/notre-dame.json
@@ -702,12 +661,9 @@ exit_code=0
 === baylor ===
 Scraping Ourlads depth chart for Baylor...
   59 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: 23 players
+Fetching CFBD recruiting data for new players, class years: [2023, 2024]...
   2023: 21 players
   2024: 13 players
-  2025: 21 players
-  2026: 14 players
 Fetching CFBD transfer portal data for new transfers...
   54 transfers in from CFBD
 Wrote ../depth_chart_data/baylor.json
@@ -715,12 +671,11 @@ exit_code=0
 === byu ===
 Scraping Ourlads depth chart for BYU...
   72 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
   2022: 27 players
   2023: 21 players
   2024: 25 players
   2025: 24 players
-  2026: 21 players
 Fetching CFBD transfer portal data for new transfers...
   22 transfers in from CFBD
 Wrote ../depth_chart_data/byu.json
@@ -728,156 +683,168 @@ exit_code=0
 === ucf ===
 Scraping Ourlads depth chart for UCF...
   80 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
   2022: 17 players
-  2023: 15 players
-  2024: 17 players
-  2025: 14 players
-  2026: 16 players
+  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=UCF)
+  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=UCF)
+  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=UCF)
 Fetching CFBD transfer portal data for new transfers...
-  69 transfers in from CFBD
+  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
+  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
+  0 transfers in from CFBD
 Wrote ../depth_chart_data/ucf.json
 exit_code=0
 === cincinnati ===
 Scraping Ourlads depth chart for Cincinnati...
   72 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: 20 players
-  2023: 12 players
-  2024: 24 players
-  2025: 20 players
-  2026: 25 players
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
+  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Cincinnati)
+  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Cincinnati)
+  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Cincinnati)
+  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Cincinnati)
 Fetching CFBD transfer portal data for new transfers...
-  42 transfers in from CFBD
+  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
+  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
+  0 transfers in from CFBD
 Wrote ../depth_chart_data/cincinnati.json
 exit_code=0
 === colorado ===
 Scraping Ourlads depth chart for Colorado...
   75 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: 24 players
-  2023: 18 players
-  2024: 12 players
-  2025: 16 players
-  2026: 14 players
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
+  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Colorado)
+  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Colorado)
+  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Colorado)
+  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Colorado)
 Fetching CFBD transfer portal data for new transfers...
-  75 transfers in from CFBD
+  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
+  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
+  0 transfers in from CFBD
 Wrote ../depth_chart_data/colorado.json
 exit_code=0
 === houston ===
 Scraping Ourlads depth chart for Houston...
   70 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: 14 players
-  2023: 18 players
-  2024: 14 players
-  2025: 19 players
-  2026: 19 players
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
+  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Houston)
+  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Houston)
+  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Houston)
+  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Houston)
 Fetching CFBD transfer portal data for new transfers...
-  46 transfers in from CFBD
+  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
+  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
+  0 transfers in from CFBD
 Wrote ../depth_chart_data/houston.json
 exit_code=0
 === iowa-state ===
 Scraping Ourlads depth chart for Iowa State...
   69 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: 20 players
-  2023: 26 players
-  2024: 23 players
-  2025: 21 players
-  2026: 25 players
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
+  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Iowa+State)
+  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Iowa+State)
+  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Iowa+State)
+  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Iowa+State)
 Fetching CFBD transfer portal data for new transfers...
-  56 transfers in from CFBD
+  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
+  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
+  0 transfers in from CFBD
 Wrote ../depth_chart_data/iowa-state.json
 exit_code=0
 === kansas ===
 Scraping Ourlads depth chart for Kansas...
   75 depth chart rows
 Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: 7 players
-  2023: 16 players
-  2024: 17 players
-  2025: 15 players
-  2026: 18 players
+  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Kansas)
+  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Kansas)
+  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Kansas)
+  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Kansas)
+  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=Kansas)
 Fetching CFBD transfer portal data for new transfers...
-  58 transfers in from CFBD
+  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
+  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
+  0 transfers in from CFBD
 Wrote ../depth_chart_data/kansas.json
 exit_code=0
 === kansas-state ===
 Scraping Ourlads depth chart for Kansas State...
   80 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: 17 players
-  2023: 23 players
-  2024: 18 players
-  2025: 25 players
-  2026: 18 players
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
+  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Kansas+State)
+  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Kansas+State)
+  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Kansas+State)
+  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Kansas+State)
 Fetching CFBD transfer portal data for new transfers...
-  42 transfers in from CFBD
+  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
+  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
+  0 transfers in from CFBD
 Wrote ../depth_chart_data/kansas-state.json
 exit_code=0
 === oklahoma-state ===
 Scraping Ourlads depth chart for Oklahoma State...
   79 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: 17 players
-  2023: 19 players
-  2024: 20 players
-  2025: 16 players
-  2026: 18 players
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
+  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Oklahoma+State)
+  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Oklahoma+State)
+  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Oklahoma+State)
+  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Oklahoma+State)
 Fetching CFBD transfer portal data for new transfers...
-  95 transfers in from CFBD
+  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
+  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
+  0 transfers in from CFBD
 Wrote ../depth_chart_data/oklahoma-state.json
 exit_code=0
 === tcu ===
 Scraping Ourlads depth chart for TCU...
   76 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: 13 players
-  2023: 21 players
-  2024: 21 players
-  2025: 27 players
-  2026: 22 players
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
+  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=TCU)
+  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=TCU)
+  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=TCU)
+  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=TCU)
 Fetching CFBD transfer portal data for new transfers...
-  22 transfers in from CFBD
+  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
+  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
+  0 transfers in from CFBD
 Wrote ../depth_chart_data/tcu.json
 exit_code=0
 === texas-tech ===
 Scraping Ourlads depth chart for Texas Tech...
   82 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: 18 players
-  2023: 29 players
-  2024: 22 players
-  2025: 18 players
-  2026: 22 players
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024]...
+  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Texas+Tech)
+  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Texas+Tech)
+  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Texas+Tech)
 Fetching CFBD transfer portal data for new transfers...
-  44 transfers in from CFBD
+  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
+  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
+  0 transfers in from CFBD
 Wrote ../depth_chart_data/texas-tech.json
 exit_code=0
 === utah ===
 Scraping Ourlads depth chart for Utah...
   65 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: 18 players
-  2023: 20 players
-  2024: 16 players
-  2025: 25 players
-  2026: 16 players
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
+  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Utah)
+  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Utah)
+  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=Utah)
+  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=Utah)
 Fetching CFBD transfer portal data for new transfers...
-  37 transfers in from CFBD
+  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
+  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
+  0 transfers in from CFBD
 Wrote ../depth_chart_data/utah.json
 exit_code=0
 === west-virginia ===
 Scraping Ourlads depth chart for West Virginia...
   76 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
-  2022: 18 players
-  2023: 21 players
-  2024: 25 players
-  2025: 25 players
-  2026: 37 players
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
+  2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=West+Virginia)
+  2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=West+Virginia)
+  2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=West+Virginia)
+  2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=West+Virginia)
 Fetching CFBD transfer portal data for new transfers...
-  85 transfers in from CFBD
+  2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
+  2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
+  0 transfers in from CFBD
 Wrote ../depth_chart_data/west-virginia.json
 exit_code=0
