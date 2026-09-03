@@ -40,8 +40,16 @@ def scrape_big_board(url="https://www.tankathon.com/nfl/big-board"):
             continue
         pick_text = pick_el.get_text(strip=True)
         if not pick_text.isdigit():
-            continue  # skips the "2028"-style next-year placeholder rows
+            continue
         rank = int(pick_text)
+        # isdigit() alone doesn't exclude the next-year alphabetical
+        # section's placeholder label (e.g. "2028") since a 4-digit year IS
+        # a valid digit string -- confirmed real bug: 11 entries with
+        # rank=2028 leaked through into the output. No real big board ranks
+        # this deep, so reject anything implausibly high as a year label
+        # instead of a genuine rank.
+        if rank > 500:
+            continue
 
         player_link = row.find(class_="mock-row-player")
         if not player_link:
