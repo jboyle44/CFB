@@ -43,8 +43,7 @@
       "player": "Germie Bernard",
       "jersey": "17",
       "code": "26/2",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "SWR",
@@ -63,8 +62,7 @@
       "player": "Kaden Wetjen",
       "jersey": "10",
       "code": "26/4",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LT",
@@ -143,8 +141,7 @@
       "player": "Gennings Dunker",
       "jersey": "73",
       "code": "26/3",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RT",
@@ -163,8 +160,7 @@
       "player": "Max Iheanachor",
       "jersey": "71",
       "code": "26/1",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "TE",
@@ -231,16 +227,14 @@
       "player": "Will Howard",
       "jersey": "18",
       "code": "25/6",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "QB",
       "player": "Drew Allar",
       "jersey": "16",
       "code": "26/3",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RB",
@@ -271,16 +265,14 @@
       "player": "Eli Heidenreich",
       "jersey": "29",
       "code": "26/7",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "FB",
       "player": "Riley Nowakowski",
       "jersey": "37",
       "code": "26/5",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "DE",
@@ -311,8 +303,7 @@
       "player": "Kevin Jobity Jr.",
       "jersey": "92",
       "code": "CF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "NT",
@@ -331,8 +322,7 @@
       "player": "Gabriel Rubio",
       "jersey": "96",
       "code": "26/6",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "DT",
@@ -507,8 +497,7 @@
       "player": "Robert Spears-Jennings",
       "jersey": "28",
       "code": "26/7",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RCB",
@@ -527,8 +516,7 @@
       "player": "Daylen Everette",
       "jersey": "23",
       "code": "26/3",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "NB",
@@ -583,8 +571,7 @@
       "player": "Christian Kuntz",
       "jersey": "46",
       "code": "SF19",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "H",
@@ -615,60 +602,42 @@
       "player": "Kaden Wetjen",
       "jersey": "10",
       "code": "26/4",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "PR",
       "player": "Rico Dowdle",
       "jersey": "13",
       "code": "U/Car",
-      "isAcquired": true,
-      "pffGrade": 64.4,
-      "pffPositionRank": 82,
-      "pffPositionTotal": 136,
-      "pffPositionLabel": "HB",
-      "pffTied": false
+      "isAcquired": true
     },
     {
       "position": "KR",
       "player": "Kaden Wetjen",
       "jersey": "10",
       "code": "26/4",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Jaylen Warren",
       "jersey": "30",
       "code": "CF22",
-      "isAcquired": false,
-      "pffGrade": 81.4,
-      "pffPositionRank": 11,
-      "pffPositionTotal": 136,
-      "pffPositionLabel": "HB",
-      "pffTied": true
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Rico Dowdle",
       "jersey": "13",
       "code": "U/Car",
-      "isAcquired": true,
-      "pffGrade": 64.4,
-      "pffPositionRank": 82,
-      "pffPositionTotal": 136,
-      "pffPositionLabel": "HB",
-      "pffTied": false
+      "isAcquired": true
     },
     {
       "position": "KR",
       "player": "Eli Heidenreich",
       "jersey": "29",
       "code": "26/7",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     }
   ]
 }
