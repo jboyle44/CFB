@@ -43,8 +43,7 @@
       "player": "J. Michael Sturdivant",
       "jersey": "87",
       "code": "CF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "SWR",
@@ -87,8 +86,7 @@
       "player": "John Williams",
       "jersey": "73",
       "code": "25/7",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LG",
@@ -107,8 +105,7 @@
       "player": "Jager Burton",
       "jersey": "52",
       "code": "26/5",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "C",
@@ -175,8 +172,7 @@
       "player": "Travis Glover",
       "jersey": "79",
       "code": "24/6",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "TE",
@@ -219,8 +215,7 @@
       "player": "Mark Redman",
       "jersey": "86",
       "code": "T/LAR",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "QB",
@@ -251,8 +246,7 @@
       "player": "MarShawn Lloyd",
       "jersey": "32",
       "code": "24/3",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RB",
@@ -307,8 +301,7 @@
       "player": "Chris McClellan",
       "jersey": "55",
       "code": "26/3",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "NT",
@@ -351,8 +344,7 @@
       "player": "Anthony Campbell",
       "jersey": "93",
       "code": "SF25",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LOLB",
@@ -431,8 +423,7 @@
       "player": "Nick Niemann",
       "jersey": "31",
       "code": "SF25",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "ROLB",
@@ -451,8 +442,7 @@
       "player": "Dani Dennis-Sutton",
       "jersey": "51",
       "code": "26/4",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LCB",
@@ -531,8 +521,7 @@
       "player": "Brandon Cisse",
       "jersey": "2",
       "code": "26/2",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "NB",
@@ -575,16 +564,14 @@
       "player": "Trey Smack",
       "jersey": "28",
       "code": "26/6",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LS",
       "player": "Matt Orzech",
       "jersey": "42",
       "code": "U/LAR",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "H",
@@ -603,32 +590,21 @@
       "player": "Trey Smack",
       "jersey": "28",
       "code": "26/6",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "PR",
       "player": "Skyy Moore",
       "jersey": "23",
       "code": "U/SF",
-      "isAcquired": true,
-      "pffGrade": 67.5,
-      "pffPositionRank": 82,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "isAcquired": true
     },
     {
       "position": "KR",
       "player": "Skyy Moore",
       "jersey": "23",
       "code": "U/SF",
-      "isAcquired": true,
-      "pffGrade": 67.5,
-      "pffPositionRank": 82,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "isAcquired": true
     }
   ]
 }
