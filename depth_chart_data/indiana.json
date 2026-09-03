@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T00:27:37.948408+00:00",
+  "generatedAt": "2026-09-03T02:09:41.214547+00:00",
   "team": "Indiana",
   "offenseScheme": "Spread",
   "defenseScheme": "Multiple 4-2-5",
@@ -10,18 +10,14 @@
       "jersey": "11",
       "class": "JR",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 94,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 34,
+      "transferPosRank": 8,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 67.5,
-      "pffPositionRank": 314,
-      "pffPositionTotal": 1175,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "pffGrade": 67.5
     },
     {
       "position": "WR-X",
@@ -29,18 +25,14 @@
       "jersey": "7",
       "class": "RS SR",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 89,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 201,
+      "transferPosRank": 47,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 71.8,
-      "pffPositionRank": 181,
-      "pffPositionTotal": 1175,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "pffGrade": null
     },
     {
       "position": "WR-X",
@@ -48,13 +40,14 @@
       "jersey": "82",
       "class": "RS FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 86,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 1440,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "WR-Z",
@@ -62,18 +55,14 @@
       "jersey": "80",
       "class": "JR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 87,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 977,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 89.1,
-      "pffPositionRank": 4,
-      "pffPositionTotal": 1175,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "pffGrade": 89.1
     },
     {
       "position": "WR-Z",
@@ -81,18 +70,14 @@
       "jersey": "4",
       "class": "SO",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 88,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 628,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 70.5,
-      "pffPositionRank": 211,
-      "pffPositionTotal": 1175,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "pffGrade": 70.5
     },
     {
       "position": "WR-SL",
@@ -100,13 +85,14 @@
       "jersey": "8",
       "class": "RS SR",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 87,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 437,
+      "transferPosRank": 76,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "WR-SL",
@@ -114,18 +100,14 @@
       "jersey": "6",
       "class": "SO",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 87,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 1014,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 64.8,
-      "pffPositionRank": 429,
-      "pffPositionTotal": 1175,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "pffGrade": null
     },
     {
       "position": "LT",
@@ -133,18 +115,14 @@
       "jersey": "65",
       "class": "RS SR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 87,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 730,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 85.7,
-      "pffPositionRank": 9,
-      "pffPositionTotal": 724,
-      "pffPositionLabel": "T",
-      "pffTied": true
+      "pffGrade": 85.7
     },
     {
       "position": "LT",
@@ -152,18 +130,14 @@
       "jersey": "61",
       "class": "RS FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 86,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 1556,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 62.5,
-      "pffPositionRank": 295,
-      "pffPositionTotal": 755,
-      "pffPositionLabel": "G",
-      "pffTied": true
+      "pffGrade": 62.5
     },
     {
       "position": "LG",
@@ -178,11 +152,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 73.2,
-      "pffPositionRank": 54,
-      "pffPositionTotal": 755,
-      "pffPositionLabel": "G",
-      "pffTied": true
+      "pffGrade": 73.2
     },
     {
       "position": "LG",
@@ -190,13 +160,14 @@
       "jersey": "66",
       "class": "RS FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 86,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 1523,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "C",
@@ -204,18 +175,14 @@
       "jersey": "74",
       "class": "RS SR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 86,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 1040,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 62.4,
-      "pffPositionRank": 300,
-      "pffPositionTotal": 755,
-      "pffPositionLabel": "G",
-      "pffTied": true
+      "pffGrade": 62.4
     },
     {
       "position": "C",
@@ -223,18 +190,14 @@
       "jersey": "77",
       "class": "RS FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 86,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 1405,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 64.0,
-      "pffPositionRank": 250,
-      "pffPositionTotal": 755,
-      "pffPositionLabel": "G",
-      "pffTied": true
+      "pffGrade": 64.0
     },
     {
       "position": "RG",
@@ -242,18 +205,14 @@
       "jersey": "72",
       "class": "RS SO",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 87,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 947,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 65.2,
-      "pffPositionRank": 202,
-      "pffPositionTotal": 755,
-      "pffPositionLabel": "G",
-      "pffTied": true
+      "pffGrade": 65.2
     },
     {
       "position": "RG",
@@ -261,13 +220,14 @@
       "jersey": "75",
       "class": "FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 87,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 921,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "RT",
@@ -275,18 +235,14 @@
       "jersey": "56",
       "class": "RS SR",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 93,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 82,
+      "transferPosRank": 2,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 66.5,
-      "pffPositionRank": 162,
-      "pffPositionTotal": 755,
-      "pffPositionLabel": "G",
-      "pffTied": true
+      "pffGrade": 66.5
     },
     {
       "position": "RT",
@@ -294,18 +250,14 @@
       "jersey": "70",
       "class": "RS SO",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 86,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 1158,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 65.3,
-      "pffPositionRank": 123,
-      "pffPositionTotal": 304,
-      "pffPositionLabel": "C",
-      "pffTied": false
+      "pffGrade": 65.3
     },
     {
       "position": "TE",
@@ -313,18 +265,14 @@
       "jersey": "88",
       "class": "RS FR",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 87,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 444,
+      "transferPosRank": 34,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 92.1,
-      "pffPositionRank": 1,
-      "pffPositionTotal": 507,
-      "pffPositionLabel": "TE",
-      "pffTied": false
+      "pffGrade": 92.1
     },
     {
       "position": "TE",
@@ -332,13 +280,14 @@
       "jersey": "85",
       "class": "RS FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 85,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 1901,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "TE",
@@ -346,13 +295,14 @@
       "jersey": "84",
       "class": "RS FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 87,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 1045,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "QB",
@@ -360,18 +310,14 @@
       "jersey": "10",
       "class": "RS SR",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 93,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 79,
+      "transferPosRank": 13,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 78.9,
-      "pffPositionRank": 42,
-      "pffPositionTotal": 408,
-      "pffPositionLabel": "QB",
-      "pffTied": true
+      "pffGrade": 78.9
     },
     {
       "position": "QB",
@@ -379,18 +325,14 @@
       "jersey": "2",
       "class": "RS SR",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 84,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 1728,
+      "transferPosRank": 118,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 56.1,
-      "pffPositionRank": 277,
-      "pffPositionTotal": 408,
-      "pffPositionLabel": "QB",
-      "pffTied": false
+      "pffGrade": 56.1
     },
     {
       "position": "QB",
@@ -398,13 +340,14 @@
       "jersey": "15",
       "class": "RS FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 92,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 234,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "QB",
@@ -412,13 +355,14 @@
       "jersey": "12",
       "class": "RS FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 84,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 2316,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "RB",
@@ -426,18 +370,14 @@
       "jersey": "1",
       "class": "JR",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 88,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 257,
+      "transferPosRank": 20,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 72.5,
-      "pffPositionRank": 275,
-      "pffPositionTotal": 736,
-      "pffPositionLabel": "HB",
-      "pffTied": true
+      "pffGrade": null
     },
     {
       "position": "RB",
@@ -445,18 +385,14 @@
       "jersey": "28",
       "class": "RS SO",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 85,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 1487,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 89.6,
-      "pffPositionRank": 10,
-      "pffPositionTotal": 736,
-      "pffPositionLabel": "HB",
-      "pffTied": false
+      "pffGrade": 89.6
     },
     {
       "position": "RB",
@@ -464,18 +400,14 @@
       "jersey": "29",
       "class": "RS SR",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 84,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 1710,
+      "transferPosRank": 128,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 72.1,
-      "pffPositionRank": 291,
-      "pffPositionTotal": 736,
-      "pffPositionLabel": "HB",
-      "pffTied": true
+      "pffGrade": 72.1
     },
     {
       "position": "RB",
@@ -483,18 +415,14 @@
       "jersey": "20",
       "class": "RS FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 87,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 795,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 72.6,
-      "pffPositionRank": 271,
-      "pffPositionTotal": 736,
-      "pffPositionLabel": "HB",
-      "pffTied": true
+      "pffGrade": 72.6
     },
     {
       "position": "RB",
@@ -502,13 +430,14 @@
       "jersey": "22",
       "class": "FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 87,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 1114,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "DE",
@@ -516,18 +445,14 @@
       "jersey": "7",
       "class": "RS JR",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 87,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 375,
+      "transferPosRank": 46,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 68.6,
-      "pffPositionRank": 364,
-      "pffPositionTotal": 1085,
-      "pffPositionLabel": "ED",
-      "pffTied": true
+      "pffGrade": 68.6
     },
     {
       "position": "DE",
@@ -542,11 +467,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 74.4,
-      "pffPositionRank": 176,
-      "pffPositionTotal": 1085,
-      "pffPositionLabel": "ED",
-      "pffTied": true
+      "pffGrade": 74.4
     },
     {
       "position": "DE",
@@ -554,18 +475,14 @@
       "jersey": "99",
       "class": "RS FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 88,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 588,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 59.0,
-      "pffPositionRank": 750,
-      "pffPositionTotal": 1076,
-      "pffPositionLabel": "DI",
-      "pffTied": true
+      "pffGrade": 59.0
     },
     {
       "position": "NT",
@@ -580,11 +497,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 77.9,
-      "pffPositionRank": 51,
-      "pffPositionTotal": 1076,
-      "pffPositionLabel": "DI",
-      "pffTied": false
+      "pffGrade": 77.9
     },
     {
       "position": "NT",
@@ -592,13 +505,14 @@
       "jersey": "50",
       "class": "RS FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 87,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 1107,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "DT",
@@ -606,18 +520,14 @@
       "jersey": "97",
       "class": "JR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 81,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 2660,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 65.4,
-      "pffPositionRank": 394,
-      "pffPositionTotal": 1076,
-      "pffPositionLabel": "DI",
-      "pffTied": true
+      "pffGrade": 65.4
     },
     {
       "position": "DT",
@@ -625,18 +535,14 @@
       "jersey": "90",
       "class": "RS SR",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 85,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 1845,
+      "transferPosRank": 181,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 79.3,
-      "pffPositionRank": 34,
-      "pffPositionTotal": 1076,
-      "pffPositionLabel": "DI",
-      "pffTied": true
+      "pffGrade": 79.3
     },
     {
       "position": "DT",
@@ -644,18 +550,14 @@
       "jersey": "94",
       "class": "RS FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 86,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 1440,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 66.0,
-      "pffPositionRank": 371,
-      "pffPositionTotal": 1076,
-      "pffPositionLabel": "DI",
-      "pffTied": true
+      "pffGrade": 66.0
     },
     {
       "position": "STUD",
@@ -663,18 +565,14 @@
       "jersey": "12",
       "class": "RS SR",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 94,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 36,
+      "transferPosRank": 6,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 67.7,
-      "pffPositionRank": 401,
-      "pffPositionTotal": 1085,
-      "pffPositionLabel": "ED",
-      "pffTied": true
+      "pffGrade": 67.7
     },
     {
       "position": "STUD",
@@ -682,18 +580,14 @@
       "jersey": "17",
       "class": "JR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 84,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 1794,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 66.8,
-      "pffPositionRank": 431,
-      "pffPositionTotal": 1085,
-      "pffPositionLabel": "ED",
-      "pffTied": true
+      "pffGrade": 66.8
     },
     {
       "position": "STUD",
@@ -701,13 +595,14 @@
       "jersey": "40",
       "class": "RS SO",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 87,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 1002,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "WLB",
@@ -722,11 +617,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 73.2,
-      "pffPositionRank": 165,
-      "pffPositionTotal": 1054,
-      "pffPositionLabel": "LB",
-      "pffTied": true
+      "pffGrade": 73.2
     },
     {
       "position": "WLB",
@@ -734,18 +625,14 @@
       "jersey": "34",
       "class": "RS SR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 79,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 2552,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 59.2,
-      "pffPositionRank": 741,
-      "pffPositionTotal": 1054,
-      "pffPositionLabel": "LB",
-      "pffTied": true
+      "pffGrade": 59.2
     },
     {
       "position": "WLB",
@@ -753,13 +640,14 @@
       "jersey": "21",
       "class": "FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 87,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 966,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "WLB",
@@ -767,13 +655,14 @@
       "jersey": "24",
       "class": "FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 90,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 327,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "WLB",
@@ -781,13 +670,14 @@
       "jersey": "44",
       "class": "RS FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 86,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 1325,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "MLB",
@@ -795,18 +685,14 @@
       "jersey": "46",
       "class": "RS SR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 86,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 997,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 71.3,
-      "pffPositionRank": 225,
-      "pffPositionTotal": 1054,
-      "pffPositionLabel": "LB",
-      "pffTied": true
+      "pffGrade": 71.3
     },
     {
       "position": "MLB",
@@ -814,18 +700,14 @@
       "jersey": "14",
       "class": "RS SR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 85,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 1404,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 61.7,
-      "pffPositionRank": 589,
-      "pffPositionTotal": 1054,
-      "pffPositionLabel": "LB",
-      "pffTied": true
+      "pffGrade": 61.7
     },
     {
       "position": "MLB",
@@ -833,13 +715,14 @@
       "jersey": "30",
       "class": "RS FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 86,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 1133,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "MLB",
@@ -847,13 +730,14 @@
       "jersey": "23",
       "class": "FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 91,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 264,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "MLB",
@@ -868,11 +752,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 40.7,
-      "pffPositionRank": 1020,
-      "pffPositionTotal": 1054,
-      "pffPositionLabel": "LB",
-      "pffTied": false
+      "pffGrade": 40.7
     },
     {
       "position": "LCB",
@@ -880,18 +760,14 @@
       "jersey": "22",
       "class": "RS SR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 87,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 829,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 84.1,
-      "pffPositionRank": 20,
-      "pffPositionTotal": 1128,
-      "pffPositionLabel": "CB",
-      "pffTied": true
+      "pffGrade": 84.1
     },
     {
       "position": "LCB",
@@ -899,18 +775,14 @@
       "jersey": "10",
       "class": "RS SR",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 87,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 471,
+      "transferPosRank": 63,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 70.9,
-      "pffPositionRank": 238,
-      "pffPositionTotal": 1128,
-      "pffPositionLabel": "CB",
-      "pffTied": true
+      "pffGrade": 70.9
     },
     {
       "position": "LCB",
@@ -918,13 +790,14 @@
       "jersey": "0",
       "class": "RS SO",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 86,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 676,
+      "transferPosRank": 65,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "SS",
@@ -932,18 +805,14 @@
       "jersey": "6",
       "class": "GR",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 86,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 648,
+      "transferPosRank": 56,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 79.6,
-      "pffPositionRank": 56,
-      "pffPositionTotal": 1043,
-      "pffPositionLabel": "S",
-      "pffTied": false
+      "pffGrade": 79.6
     },
     {
       "position": "SS",
@@ -951,13 +820,14 @@
       "jersey": "9",
       "class": "RS FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 87,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 880,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "SS",
@@ -972,11 +842,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 89.0,
-      "pffPositionRank": 11,
-      "pffPositionTotal": 1043,
-      "pffPositionLabel": "S",
-      "pffTied": false
+      "pffGrade": 89.0
     },
     {
       "position": "FS",
@@ -984,18 +850,14 @@
       "jersey": "1",
       "class": "SR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 88,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 579,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 80.1,
-      "pffPositionRank": 51,
-      "pffPositionTotal": 1043,
-      "pffPositionLabel": "S",
-      "pffTied": false
+      "pffGrade": 80.1
     },
     {
       "position": "FS",
@@ -1003,18 +865,14 @@
       "jersey": "33",
       "class": "RS FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 85,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 1629,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 76.8,
-      "pffPositionRank": 93,
-      "pffPositionTotal": 1043,
-      "pffPositionLabel": "S",
-      "pffTied": true
+      "pffGrade": 76.8
     },
     {
       "position": "FS",
@@ -1022,13 +880,14 @@
       "jersey": "16",
       "class": "FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 88,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 774,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "RCB",
@@ -1036,18 +895,14 @@
       "jersey": "4",
       "class": "SR",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 91,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 135,
+      "transferPosRank": 8,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 60.7,
-      "pffPositionRank": 721,
-      "pffPositionTotal": 1128,
-      "pffPositionLabel": "CB",
-      "pffTied": true
+      "pffGrade": 60.7
     },
     {
       "position": "RCB",
@@ -1055,18 +910,14 @@
       "jersey": "3",
       "class": "SO",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 87,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 1039,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 66.6,
-      "pffPositionRank": 393,
-      "pffPositionTotal": 1128,
-      "pffPositionLabel": "CB",
-      "pffTied": true
+      "pffGrade": 66.6
     },
     {
       "position": "NB",
@@ -1074,18 +925,14 @@
       "jersey": "2",
       "class": "SO",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 91,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 258,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 56.1,
-      "pffPositionRank": 924,
-      "pffPositionTotal": 1128,
-      "pffPositionLabel": "CB",
-      "pffTied": true
+      "pffGrade": 56.1
     },
     {
       "position": "NB",
@@ -1100,11 +947,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 56.9,
-      "pffPositionRank": 815,
-      "pffPositionTotal": 1043,
-      "pffPositionLabel": "S",
-      "pffTied": true
+      "pffGrade": 56.9
     },
     {
       "position": "PT",
@@ -1119,11 +962,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 93.2,
-      "pffPositionRank": 1,
-      "pffPositionTotal": 144,
-      "pffPositionLabel": "P",
-      "pffTied": false
+      "pffGrade": 93.2
     },
     {
       "position": "PT",
@@ -1137,7 +976,8 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "PK",
@@ -1152,11 +992,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 86.9,
-      "pffPositionRank": 24,
-      "pffPositionTotal": 217,
-      "pffPositionLabel": "K",
-      "pffTied": false
+      "pffGrade": 86.9
     },
     {
       "position": "PK",
@@ -1164,18 +1000,14 @@
       "jersey": "35",
       "class": "RS SR",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 83,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 2524,
+      "transferPosRank": 11,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 60.0,
-      "pffPositionRank": 155,
-      "pffPositionTotal": 217,
-      "pffPositionLabel": "K",
-      "pffTied": true
+      "pffGrade": 60.0
     },
     {
       "position": "KO",
@@ -1183,18 +1015,14 @@
       "jersey": "35",
       "class": "RS SR",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 83,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 2524,
+      "transferPosRank": 11,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 60.0,
-      "pffPositionRank": 155,
-      "pffPositionTotal": 217,
-      "pffPositionLabel": "K",
-      "pffTied": true
+      "pffGrade": 60.0
     },
     {
       "position": "KO",
@@ -1208,7 +1036,8 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "LS",
@@ -1222,7 +1051,8 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "LS",
@@ -1236,7 +1066,8 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "H",
@@ -1251,11 +1082,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 93.2,
-      "pffPositionRank": 1,
-      "pffPositionTotal": 144,
-      "pffPositionLabel": "P",
-      "pffTied": false
+      "pffGrade": 93.2
     },
     {
       "position": "PR",
@@ -1263,13 +1090,14 @@
       "jersey": "8",
       "class": "RS SR",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 87,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 437,
+      "transferPosRank": 76,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "PR",
@@ -1277,13 +1105,14 @@
       "jersey": "6",
       "class": "SO",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 87,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 1014,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "KR",
@@ -1291,13 +1120,14 @@
       "jersey": "1",
       "class": "JR",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 88,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 257,
+      "transferPosRank": 20,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "KR",
@@ -1305,13 +1135,14 @@
       "jersey": "7",
       "class": "RS SR",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 89,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 201,
+      "transferPosRank": 47,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     }
   ]
 }

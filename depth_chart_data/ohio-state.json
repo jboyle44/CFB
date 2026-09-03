@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T00:27:55.249726+00:00",
+  "generatedAt": "2026-09-03T02:10:17.745831+00:00",
   "team": "Ohio State",
   "offenseScheme": "Spread Option",
   "defenseScheme": "4-2-5",
@@ -10,13 +10,14 @@
       "jersey": "15",
       "class": "FR",
       "isTransfer": false,
-      "compositeScore": 98,
+      "compositeScore": 99,
       "profileUrl": "https://247sports.com/player/chris-henry-jr-46133004/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 14,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "WR-X",
@@ -24,13 +25,14 @@
       "jersey": "11",
       "class": "FR",
       "isTransfer": false,
-      "compositeScore": 87,
+      "compositeScore": 88,
       "profileUrl": "https://247sports.com/player/brock-boyd-46138964/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 731,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "WR-X",
@@ -45,11 +47,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 52.5,
-      "pffPositionRank": 1039,
-      "pffPositionTotal": 1175,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "pffGrade": 52.5
     },
     {
       "position": "WR-X",
@@ -64,11 +62,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 59.6,
-      "pffPositionRank": 701,
-      "pffPositionTotal": 1175,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "pffGrade": 59.6
     },
     {
       "position": "WR-Z",
@@ -76,18 +70,14 @@
       "jersey": "4",
       "class": "JR",
       "isTransfer": false,
-      "compositeScore": 101,
+      "compositeScore": 100,
       "profileUrl": "https://247sports.com/player/jeremiah-smith-46114094/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 1,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 90.7,
-      "pffPositionRank": 3,
-      "pffPositionTotal": 1175,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "pffGrade": 90.7
     },
     {
       "position": "WR-Z",
@@ -97,16 +87,12 @@
       "isTransfer": true,
       "compositeScore": 86,
       "profileUrl": "https://247sports.com/player/devin-mccuin-46117826/",
-      "transferRank": 275,
-      "transferPosRank": 67,
+      "transferRank": 1119,
+      "transferPosRank": 182,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 77.7,
-      "pffPositionRank": 69,
-      "pffPositionTotal": 1175,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "pffGrade": 77.7
     },
     {
       "position": "WR-Z",
@@ -114,13 +100,14 @@
       "jersey": "6",
       "class": "FR",
       "isTransfer": false,
-      "compositeScore": 96,
+      "compositeScore": 98,
       "profileUrl": "https://247sports.com/player/jerquaden-guilford-46143457/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 45,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "WR-SL",
@@ -128,18 +115,14 @@
       "jersey": "1",
       "class": "SR",
       "isTransfer": false,
-      "compositeScore": 97,
+      "compositeScore": 99,
       "profileUrl": "https://247sports.com/player/brandon-inniss-46058554/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 36,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 63.4,
-      "pffPositionRank": 498,
-      "pffPositionTotal": 1175,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "pffGrade": null
     },
     {
       "position": "WR-SL",
@@ -147,18 +130,14 @@
       "jersey": "5",
       "class": "RS JR",
       "isTransfer": true,
-      "compositeScore": 90,
+      "compositeScore": 87,
       "profileUrl": "https://247sports.com/player/kyle-parker-46098346/",
-      "transferRank": 375,
-      "transferPosRank": 77,
+      "transferRank": 417,
+      "transferPosRank": 78,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 62.9,
-      "pffPositionRank": 522,
-      "pffPositionTotal": 1175,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "pffGrade": 62.9
     },
     {
       "position": "WR-SL",
@@ -172,7 +151,8 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "LT",
@@ -180,18 +160,14 @@
       "jersey": "69",
       "class": "RS SO",
       "isTransfer": false,
-      "compositeScore": 92,
+      "compositeScore": 93,
       "profileUrl": "https://247sports.com/player/ian-moore-46125726/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 168,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 69.7,
-      "pffPositionRank": 141,
-      "pffPositionTotal": 724,
-      "pffPositionLabel": "T",
-      "pffTied": true
+      "pffGrade": 69.7
     },
     {
       "position": "LT",
@@ -199,13 +175,14 @@
       "jersey": "77",
       "class": "FR",
       "isTransfer": false,
-      "compositeScore": 97,
+      "compositeScore": 98,
       "profileUrl": "https://247sports.com/player/sam-greer-46141156/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 53,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "LG",
@@ -213,18 +190,14 @@
       "jersey": "51",
       "class": "SR",
       "isTransfer": false,
-      "compositeScore": 94,
+      "compositeScore": 96,
       "profileUrl": "https://247sports.com/player/luke-montgomery-46093573/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 93,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 73.4,
-      "pffPositionRank": 51,
-      "pffPositionTotal": 755,
-      "pffPositionLabel": "G",
-      "pffTied": true
+      "pffGrade": 73.4
     },
     {
       "position": "LG",
@@ -239,11 +212,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 59.3,
-      "pffPositionRank": 471,
-      "pffPositionTotal": 755,
-      "pffPositionLabel": "G",
-      "pffTied": true
+      "pffGrade": 59.3
     },
     {
       "position": "C",
@@ -255,14 +224,10 @@
       "profileUrl": "https://247sports.com/player/carson-hinzman-46085697/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 177,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 73.7,
-      "pffPositionRank": 23,
-      "pffPositionTotal": 304,
-      "pffPositionLabel": "C",
-      "pffTied": false
+      "pffGrade": 73.7
     },
     {
       "position": "C",
@@ -270,18 +235,14 @@
       "jersey": "62",
       "class": "RS JR",
       "isTransfer": false,
-      "compositeScore": 90,
+      "compositeScore": 92,
       "profileUrl": "https://247sports.com/player/joshua-padilla-46113852/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 228,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 73.7,
-      "pffPositionRank": 49,
-      "pffPositionTotal": 755,
-      "pffPositionLabel": "G",
-      "pffTied": false
+      "pffGrade": 73.7
     },
     {
       "position": "RG",
@@ -289,18 +250,14 @@
       "jersey": "67",
       "class": "RS JR",
       "isTransfer": false,
-      "compositeScore": 89,
+      "compositeScore": 90,
       "profileUrl": "https://247sports.com/player/austin-siereveld-46128057/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 300,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 83.5,
-      "pffPositionRank": 19,
-      "pffPositionTotal": 724,
-      "pffPositionLabel": "T",
-      "pffTied": true
+      "pffGrade": 83.5
     },
     {
       "position": "RG",
@@ -308,18 +265,14 @@
       "jersey": "58",
       "class": "RS SO",
       "isTransfer": false,
-      "compositeScore": 89,
+      "compositeScore": 91,
       "profileUrl": "https://247sports.com/player/gabe-vansickle-46134765/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 283,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 59.5,
-      "pffPositionRank": 461,
-      "pffPositionTotal": 755,
-      "pffPositionLabel": "G",
-      "pffTied": true
+      "pffGrade": 59.5
     },
     {
       "position": "RT",
@@ -327,18 +280,14 @@
       "jersey": "70",
       "class": "RS JR",
       "isTransfer": true,
-      "compositeScore": 88,
+      "compositeScore": 91,
       "profileUrl": "https://247sports.com/player/phillip-daniels-46129245/",
-      "transferRank": 44,
-      "transferPosRank": 5,
+      "transferRank": 82,
+      "transferPosRank": 8,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 66.1,
-      "pffPositionRank": 213,
-      "pffPositionTotal": 724,
-      "pffPositionLabel": "T",
-      "pffTied": true
+      "pffGrade": 66.1
     },
     {
       "position": "RT",
@@ -353,11 +302,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 49.0,
-      "pffPositionRank": 625,
-      "pffPositionTotal": 724,
-      "pffPositionLabel": "T",
-      "pffTied": false
+      "pffGrade": 49.0
     },
     {
       "position": "RT",
@@ -365,18 +310,14 @@
       "jersey": "72",
       "class": "RS SO",
       "isTransfer": false,
-      "compositeScore": 89,
+      "compositeScore": 90,
       "profileUrl": "https://247sports.com/player/deontae-armstrong-46129784/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 388,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 60.6,
-      "pffPositionRank": 362,
-      "pffPositionTotal": 724,
-      "pffPositionLabel": "T",
-      "pffTied": true
+      "pffGrade": 60.6
     },
     {
       "position": "TE",
@@ -391,11 +332,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 53.6,
-      "pffPositionRank": 361,
-      "pffPositionTotal": 507,
-      "pffPositionLabel": "TE",
-      "pffTied": true
+      "pffGrade": 53.6
     },
     {
       "position": "TE",
@@ -403,18 +340,14 @@
       "jersey": "84",
       "class": "GR",
       "isTransfer": true,
-      "compositeScore": 84,
+      "compositeScore": 91,
       "profileUrl": "https://247sports.com/player/hunter-welcing-46082206/",
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 131,
+      "transferPosRank": 4,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 61.0,
-      "pffPositionRank": 209,
-      "pffPositionTotal": 507,
-      "pffPositionLabel": "TE",
-      "pffTied": false
+      "pffGrade": 61.0
     },
     {
       "position": "TE",
@@ -422,18 +355,14 @@
       "jersey": "86",
       "class": "RS JR",
       "isTransfer": true,
-      "compositeScore": 84,
+      "compositeScore": 85,
       "profileUrl": "https://247sports.com/player/mason-williams-46131182/",
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 1873,
+      "transferPosRank": 109,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 74.4,
-      "pffPositionRank": 51,
-      "pffPositionTotal": 507,
-      "pffPositionLabel": "TE",
-      "pffTied": true
+      "pffGrade": 74.4
     },
     {
       "position": "TE",
@@ -441,18 +370,14 @@
       "jersey": "85",
       "class": "RS SR",
       "isTransfer": false,
-      "compositeScore": 91,
+      "compositeScore": 89,
       "profileUrl": "https://247sports.com/player/bennett-christian-46094907/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 408,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 45.3,
-      "pffPositionRank": 472,
-      "pffPositionTotal": 507,
-      "pffPositionLabel": "TE",
-      "pffTied": false
+      "pffGrade": 45.3
     },
     {
       "position": "QB",
@@ -467,11 +392,7 @@
       "hsNationalRank": 20,
       "hsPositionRank": 3,
       "hsStateRank": 1,
-      "pffGrade": 92.5,
-      "pffPositionRank": 1,
-      "pffPositionTotal": 408,
-      "pffPositionLabel": "QB",
-      "pffTied": false
+      "pffGrade": 92.5
     },
     {
       "position": "QB",
@@ -486,11 +407,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 49.0,
-      "pffPositionRank": 340,
-      "pffPositionTotal": 408,
-      "pffPositionLabel": "QB",
-      "pffTied": true
+      "pffGrade": 49.0
     },
     {
       "position": "QB",
@@ -498,13 +415,14 @@
       "jersey": "16",
       "class": "RS SR",
       "isTransfer": true,
-      "compositeScore": 90,
+      "compositeScore": 86,
       "profileUrl": "https://247sports.com/player/justyn-martin-46096380/",
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 580,
+      "transferPosRank": 34,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "QB",
@@ -512,13 +430,14 @@
       "jersey": "13",
       "class": "FR",
       "isTransfer": false,
-      "compositeScore": 88,
+      "compositeScore": 89,
       "profileUrl": "https://247sports.com/player/luke-fahey-46146282/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 586,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "RB",
@@ -533,11 +452,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 86.4,
-      "pffPositionRank": 23,
-      "pffPositionTotal": 736,
-      "pffPositionLabel": "HB",
-      "pffTied": false
+      "pffGrade": 86.4
     },
     {
       "position": "RB",
@@ -552,11 +467,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 76.5,
-      "pffPositionRank": 158,
-      "pffPositionTotal": 736,
-      "pffPositionLabel": "HB",
-      "pffTied": false
+      "pffGrade": 76.5
     },
     {
       "position": "RB",
@@ -564,18 +475,14 @@
       "jersey": "24",
       "class": "RS SR",
       "isTransfer": true,
-      "compositeScore": 83,
+      "compositeScore": 88,
       "profileUrl": "https://247sports.com/player/jakobi-jackson-46142012/",
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 222,
+      "transferPosRank": 15,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 67.0,
-      "pffPositionRank": 444,
-      "pffPositionTotal": 736,
-      "pffPositionLabel": "HB",
-      "pffTied": true
+      "pffGrade": 67.0
     },
     {
       "position": "RB",
@@ -583,13 +490,14 @@
       "jersey": "2",
       "class": "FR",
       "isTransfer": false,
-      "compositeScore": 93,
+      "compositeScore": 95,
       "profileUrl": "https://247sports.com/player/legend-bey-46138963/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 127,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "LDE",
@@ -597,18 +505,14 @@
       "jersey": "2",
       "class": "RS SR",
       "isTransfer": false,
-      "compositeScore": 95,
+      "compositeScore": 97,
       "profileUrl": "https://247sports.com/player/kenyatta-jackson-jr-46084576/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 60,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 72.7,
-      "pffPositionRank": 212,
-      "pffPositionTotal": 1085,
-      "pffPositionLabel": "ED",
-      "pffTied": true
+      "pffGrade": 72.7
     },
     {
       "position": "LDE",
@@ -623,11 +527,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 74.8,
-      "pffPositionRank": 164,
-      "pffPositionTotal": 1085,
-      "pffPositionLabel": "ED",
-      "pffTied": true
+      "pffGrade": 74.8
     },
     {
       "position": "LDE",
@@ -635,13 +535,14 @@
       "jersey": "34",
       "class": "FR",
       "isTransfer": false,
-      "compositeScore": 95,
+      "compositeScore": 98,
       "profileUrl": "https://247sports.com/player/khary-wilder-46143420/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 52,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "NT",
@@ -649,18 +550,14 @@
       "jersey": "55",
       "class": "RS JR",
       "isTransfer": true,
-      "compositeScore": 95,
+      "compositeScore": 87,
       "profileUrl": "https://247sports.com/player/john-walker-46098674/",
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 458,
+      "transferPosRank": 47,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 70.7,
-      "pffPositionRank": 189,
-      "pffPositionTotal": 1076,
-      "pffPositionLabel": "DI",
-      "pffTied": true
+      "pffGrade": 70.7
     },
     {
       "position": "NT",
@@ -668,18 +565,14 @@
       "jersey": "53",
       "class": "RS JR",
       "isTransfer": false,
-      "compositeScore": 94,
+      "compositeScore": 91,
       "profileUrl": "https://247sports.com/player/will-smith-jr-46125567/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 245,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 72.6,
-      "pffPositionRank": 137,
-      "pffPositionTotal": 1076,
-      "pffPositionLabel": "DI",
-      "pffTied": true
+      "pffGrade": 72.6
     },
     {
       "position": "NT",
@@ -687,18 +580,14 @@
       "jersey": "94",
       "class": "RS JR",
       "isTransfer": false,
-      "compositeScore": 96,
+      "compositeScore": 97,
       "profileUrl": "https://247sports.com/player/jason-moore-46094276/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 68,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 69.5,
-      "pffPositionRank": 224,
-      "pffPositionTotal": 1076,
-      "pffPositionLabel": "DI",
-      "pffTied": true
+      "pffGrade": 69.5
     },
     {
       "position": "DT",
@@ -706,13 +595,14 @@
       "jersey": "3",
       "class": "SR",
       "isTransfer": true,
-      "compositeScore": 97,
+      "compositeScore": 94,
       "profileUrl": "https://247sports.com/player/james-smith-46099271/",
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 50,
+      "transferPosRank": 5,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "DT",
@@ -720,18 +610,14 @@
       "jersey": "96",
       "class": "JR",
       "isTransfer": false,
-      "compositeScore": 97,
+      "compositeScore": 99,
       "profileUrl": "https://247sports.com/player/eddrick-houston-46113344/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 26,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 59.6,
-      "pffPositionRank": 717,
-      "pffPositionTotal": 1076,
-      "pffPositionLabel": "DI",
-      "pffTied": true
+      "pffGrade": 59.6
     },
     {
       "position": "RDE",
@@ -739,18 +625,14 @@
       "jersey": "12",
       "class": "RS SR",
       "isTransfer": true,
-      "compositeScore": 89,
+      "compositeScore": 91,
       "profileUrl": "https://247sports.com/player/beau-atkinson-46094682/",
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 76,
+      "transferPosRank": 13,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 51.9,
-      "pffPositionRank": 1014,
-      "pffPositionTotal": 1085,
-      "pffPositionLabel": "ED",
-      "pffTied": false
+      "pffGrade": 51.9
     },
     {
       "position": "RDE",
@@ -758,18 +640,14 @@
       "jersey": "4",
       "class": "RS JR",
       "isTransfer": true,
-      "compositeScore": 96,
+      "compositeScore": 93,
       "profileUrl": "https://247sports.com/player/qua-russaw-46102639/",
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 65,
+      "transferPosRank": 12,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 67.6,
-      "pffPositionRank": 406,
-      "pffPositionTotal": 1085,
-      "pffPositionLabel": "ED",
-      "pffTied": true
+      "pffGrade": 67.6
     },
     {
       "position": "RDE",
@@ -784,11 +662,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 60.7,
-      "pffPositionRank": 756,
-      "pffPositionTotal": 1085,
-      "pffPositionLabel": "ED",
-      "pffTied": true
+      "pffGrade": 60.7
     },
     {
       "position": "WLB",
@@ -796,18 +670,14 @@
       "jersey": "14",
       "class": "SR",
       "isTransfer": true,
-      "compositeScore": 86,
+      "compositeScore": 88,
       "profileUrl": "https://247sports.com/player/christian-alliegro-46135691/",
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 286,
+      "transferPosRank": 18,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 62.3,
-      "pffPositionRank": 565,
-      "pffPositionTotal": 1054,
-      "pffPositionLabel": "LB",
-      "pffTied": true
+      "pffGrade": 62.3
     },
     {
       "position": "WLB",
@@ -822,11 +692,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 66.6,
-      "pffPositionRank": 382,
-      "pffPositionTotal": 1054,
-      "pffPositionLabel": "LB",
-      "pffTied": true
+      "pffGrade": 66.6
     },
     {
       "position": "WLB",
@@ -834,13 +700,14 @@
       "jersey": "20",
       "class": "FR",
       "isTransfer": false,
-      "compositeScore": 98,
+      "compositeScore": 99,
       "profileUrl": "https://247sports.com/player/cincere-johnson-46139662/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 16,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "WLB",
@@ -848,13 +715,14 @@
       "jersey": "41",
       "class": "FR",
       "isTransfer": false,
-      "compositeScore": 91,
+      "compositeScore": 92,
       "profileUrl": "https://247sports.com/player/braxton-rembert-46159228/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 195,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "MLB",
@@ -866,14 +734,10 @@
       "profileUrl": "https://247sports.com/player/payton-pierce-46111821/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 204,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 82.2,
-      "pffPositionRank": 46,
-      "pffPositionTotal": 1054,
-      "pffPositionLabel": "LB",
-      "pffTied": true
+      "pffGrade": 82.2
     },
     {
       "position": "MLB",
@@ -887,7 +751,8 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "MLB",
@@ -895,18 +760,14 @@
       "jersey": "23",
       "class": "JR",
       "isTransfer": false,
-      "compositeScore": 92,
+      "compositeScore": 94,
       "profileUrl": "https://247sports.com/player/garrett-stover-46131244/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 142,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 40.4,
-      "pffPositionRank": 1021,
-      "pffPositionTotal": 1054,
-      "pffPositionLabel": "LB",
-      "pffTied": false
+      "pffGrade": 40.4
     },
     {
       "position": "MLB",
@@ -921,11 +782,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 73.9,
-      "pffPositionRank": 148,
-      "pffPositionTotal": 1054,
-      "pffPositionLabel": "LB",
-      "pffTied": true
+      "pffGrade": 73.9
     },
     {
       "position": "LCB",
@@ -933,18 +790,14 @@
       "jersey": "7",
       "class": "SR",
       "isTransfer": false,
-      "compositeScore": 94,
+      "compositeScore": 98,
       "profileUrl": "https://247sports.com/player/jermaine-mathews-jr-46128873/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 52,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 62.2,
-      "pffPositionRank": 639,
-      "pffPositionTotal": 1128,
-      "pffPositionLabel": "CB",
-      "pffTied": true
+      "pffGrade": 62.2
     },
     {
       "position": "LCB",
@@ -952,18 +805,14 @@
       "jersey": "18",
       "class": "RS JR",
       "isTransfer": true,
-      "compositeScore": 90,
+      "compositeScore": 88,
       "profileUrl": "https://247sports.com/player/cam-calhoun-46129060/",
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 264,
+      "transferPosRank": 21,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 60.6,
-      "pffPositionRank": 724,
-      "pffPositionTotal": 1128,
-      "pffPositionLabel": "CB",
-      "pffTied": true
+      "pffGrade": 60.6
     },
     {
       "position": "LCB",
@@ -971,13 +820,14 @@
       "jersey": "25",
       "class": "FR",
       "isTransfer": false,
-      "compositeScore": 97,
+      "compositeScore": 99,
       "profileUrl": "https://247sports.com/player/jay-timmons-46150623/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 25,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "SS",
@@ -985,18 +835,14 @@
       "jersey": "8",
       "class": "JR",
       "isTransfer": false,
-      "compositeScore": 89,
+      "compositeScore": 90,
       "profileUrl": "https://247sports.com/player/jaylen-mcclain-46117329/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 375,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 78.1,
-      "pffPositionRank": 72,
-      "pffPositionTotal": 1043,
-      "pffPositionLabel": "S",
-      "pffTied": true
+      "pffGrade": 78.1
     },
     {
       "position": "SS",
@@ -1004,13 +850,14 @@
       "jersey": "16",
       "class": "FR",
       "isTransfer": false,
-      "compositeScore": 94,
+      "compositeScore": 97,
       "profileUrl": "https://247sports.com/player/blaine-bradford-46136704/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 74,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "FS",
@@ -1018,13 +865,14 @@
       "jersey": "11",
       "class": "RS SR",
       "isTransfer": true,
-      "compositeScore": 86,
+      "compositeScore": 94,
       "profileUrl": "https://247sports.com/player/terry-moore-46117262/",
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 48,
+      "transferPosRank": 3,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "FS",
@@ -1032,18 +880,14 @@
       "jersey": "10",
       "class": "RS SO",
       "isTransfer": false,
-      "compositeScore": 85,
+      "compositeScore": 87,
       "profileUrl": "https://247sports.com/player/leroy-roker-iii-46143693/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 841,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 70.2,
-      "pffPositionRank": 249,
-      "pffPositionTotal": 1043,
-      "pffPositionLabel": "S",
-      "pffTied": false
+      "pffGrade": 70.2
     },
     {
       "position": "FS",
@@ -1051,13 +895,14 @@
       "jersey": "30",
       "class": "FR",
       "isTransfer": false,
-      "compositeScore": 92,
+      "compositeScore": 90,
       "profileUrl": "https://247sports.com/player/khmari-bing-46151620/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 371,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "RCB",
@@ -1072,11 +917,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 60.8,
-      "pffPositionRank": 711,
-      "pffPositionTotal": 1128,
-      "pffPositionLabel": "CB",
-      "pffTied": true
+      "pffGrade": 60.8
     },
     {
       "position": "RCB",
@@ -1086,16 +927,12 @@
       "isTransfer": true,
       "compositeScore": 90,
       "profileUrl": "https://247sports.com/player/dominick-kelly-46146129/",
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 155,
+      "transferPosRank": 10,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 58.2,
-      "pffPositionRank": 866,
-      "pffPositionTotal": 1128,
-      "pffPositionLabel": "CB",
-      "pffTied": true
+      "pffGrade": 58.2
     },
     {
       "position": "RCB",
@@ -1103,13 +940,14 @@
       "jersey": "15",
       "class": "FR",
       "isTransfer": false,
-      "compositeScore": 93,
+      "compositeScore": 96,
       "profileUrl": "https://247sports.com/player/jordan-thomas-46143578/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 104,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "NB",
@@ -1117,18 +955,14 @@
       "jersey": "1",
       "class": "RS SR",
       "isTransfer": true,
-      "compositeScore": 95,
+      "compositeScore": 93,
       "profileUrl": "https://247sports.com/player/earl-little-jr-46082962/",
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 86,
+      "transferPosRank": 6,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 69.1,
-      "pffPositionRank": 281,
-      "pffPositionTotal": 1043,
-      "pffPositionLabel": "S",
-      "pffTied": true
+      "pffGrade": 69.1
     },
     {
       "position": "NB",
@@ -1140,14 +974,10 @@
       "profileUrl": "https://247sports.com/player/miles-lockhart-46110535/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 402,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 62.4,
-      "pffPositionRank": 629,
-      "pffPositionTotal": 1128,
-      "pffPositionLabel": "CB",
-      "pffTied": true
+      "pffGrade": 62.4
     },
     {
       "position": "PT",
@@ -1162,11 +992,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 67.3,
-      "pffPositionRank": 63,
-      "pffPositionTotal": 144,
-      "pffPositionLabel": "P",
-      "pffTied": false
+      "pffGrade": 67.3
     },
     {
       "position": "PT",
@@ -1180,7 +1006,8 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "PK",
@@ -1188,18 +1015,14 @@
       "jersey": "96",
       "class": "RS SO",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 84,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 2314,
+      "transferPosRank": 4,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 88.7,
-      "pffPositionRank": 16,
-      "pffPositionTotal": 217,
-      "pffPositionLabel": "K",
-      "pffTied": false
+      "pffGrade": 88.7
     },
     {
       "position": "PK",
@@ -1207,13 +1030,14 @@
       "jersey": "92",
       "class": "FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 83,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 3032,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "KO",
@@ -1221,18 +1045,14 @@
       "jersey": "96",
       "class": "RS SO",
       "isTransfer": true,
-      "compositeScore": null,
+      "compositeScore": 84,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
+      "transferRank": 2314,
+      "transferPosRank": 4,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 88.7,
-      "pffPositionRank": 16,
-      "pffPositionTotal": 217,
-      "pffPositionLabel": "K",
-      "pffTied": false
+      "pffGrade": 88.7
     },
     {
       "position": "KO",
@@ -1240,13 +1060,14 @@
       "jersey": "92",
       "class": "FR",
       "isTransfer": false,
-      "compositeScore": null,
+      "compositeScore": 83,
       "profileUrl": null,
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 3032,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "LS",
@@ -1260,7 +1081,8 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "LS",
@@ -1274,7 +1096,8 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "H",
@@ -1289,11 +1112,7 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 67.3,
-      "pffPositionRank": 63,
-      "pffPositionTotal": 144,
-      "pffPositionLabel": "P",
-      "pffTied": false
+      "pffGrade": 67.3
     },
     {
       "position": "H",
@@ -1307,7 +1126,8 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "PR",
@@ -1315,13 +1135,14 @@
       "jersey": "1",
       "class": "SR",
       "isTransfer": false,
-      "compositeScore": 97,
+      "compositeScore": 99,
       "profileUrl": "https://247sports.com/player/brandon-inniss-46058554/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 36,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     },
     {
       "position": "KR",
@@ -1329,13 +1150,14 @@
       "jersey": "1",
       "class": "SR",
       "isTransfer": false,
-      "compositeScore": 97,
+      "compositeScore": 99,
       "profileUrl": "https://247sports.com/player/brandon-inniss-46058554/",
       "transferRank": null,
       "transferPosRank": null,
-      "hsNationalRank": null,
+      "hsNationalRank": 36,
       "hsPositionRank": null,
-      "hsStateRank": null
+      "hsStateRank": null,
+      "pffGrade": null
     }
   ]
 }

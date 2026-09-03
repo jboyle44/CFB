@@ -1,476 +1,883 @@
 === illinois ===
 Scraping Ourlads depth chart for Illinois...
   92 depth chart rows
-Scraping 247Sports roster for Illinois...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 25 players
+  2023: 22 players
+  2024: 18 players
+  2025: 21 players
+  2026: 31 players
+Fetching CFBD transfer portal data for new transfers...
+  38 transfers in from CFBD
 Wrote ../depth_chart_data/illinois.json
 exit_code=0
 === indiana ===
 Scraping Ourlads depth chart for Indiana...
   76 depth chart rows
-Scraping 247Sports roster for Indiana...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 25 players
+  2023: 14 players
+  2024: 17 players
+  2025: 26 players
+  2026: 23 players
+Fetching CFBD transfer portal data for new transfers...
+  40 transfers in from CFBD
 Wrote ../depth_chart_data/indiana.json
 exit_code=0
 === iowa ===
 Scraping Ourlads depth chart for Iowa...
   58 depth chart rows
-Scraping 247Sports roster for Iowa...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 21 players
+  2023: 25 players
+  2024: 28 players
+  2025: 18 players
+  2026: 19 players
+Fetching CFBD transfer portal data for new transfers...
+  23 transfers in from CFBD
 Wrote ../depth_chart_data/iowa.json
 exit_code=0
 === maryland ===
 Scraping Ourlads depth chart for Maryland...
   68 depth chart rows
-Scraping 247Sports roster for Maryland...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 21 players
+  2023: 25 players
+  2024: 24 players
+  2025: 21 players
+  2026: 19 players
+Fetching CFBD transfer portal data for new transfers...
+  29 transfers in from CFBD
 Wrote ../depth_chart_data/maryland.json
 exit_code=0
 === michigan ===
 Scraping Ourlads depth chart for Michigan...
   99 depth chart rows
-Scraping 247Sports roster for Michigan...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 27 players
+  2023: 27 players
+  2024: 26 players
+  2025: 25 players
+  2026: 24 players
+Fetching CFBD transfer portal data for new transfers...
+  34 transfers in from CFBD
 Wrote ../depth_chart_data/michigan.json
 exit_code=0
 === michigan-state ===
 Scraping Ourlads depth chart for Michigan State...
   67 depth chart rows
-Scraping 247Sports roster for Michigan State...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 27 players
+  2023: 18 players
+  2024: 26 players
+  2025: 20 players
+  2026: 22 players
+Fetching CFBD transfer portal data for new transfers...
+  51 transfers in from CFBD
 Wrote ../depth_chart_data/michigan-state.json
 exit_code=0
 === minnesota ===
 Scraping Ourlads depth chart for Minnesota...
   79 depth chart rows
-Scraping 247Sports roster for Minnesota...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 21 players
+  2023: 26 players
+  2024: 25 players
+  2025: 22 players
+  2026: 31 players
+Fetching CFBD transfer portal data for new transfers...
+  40 transfers in from CFBD
 Wrote ../depth_chart_data/minnesota.json
 exit_code=0
 === nebraska ===
 Scraping Ourlads depth chart for Nebraska...
   75 depth chart rows
-Scraping 247Sports roster for Nebraska...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 17 players
+  2023: 32 players
+  2024: 37 players
+  2025: 20 players
+  2026: 12 players
+Fetching CFBD transfer portal data for new transfers...
+  32 transfers in from CFBD
 Wrote ../depth_chart_data/nebraska.json
 exit_code=0
 === northwestern ===
 Scraping Ourlads depth chart for Northwestern...
   72 depth chart rows
-Scraping 247Sports roster for Northwestern...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 16 players
+  2023: 19 players
+  2024: 18 players
+  2025: 22 players
+  2026: 22 players
+Fetching CFBD transfer portal data for new transfers...
+  31 transfers in from CFBD
 Wrote ../depth_chart_data/northwestern.json
 exit_code=0
 === ohio-state ===
 Scraping Ourlads depth chart for Ohio State...
   77 depth chart rows
-Scraping 247Sports roster for Ohio State...
-  247Sports roster scrape failed (403 Client Error: Forbidden for url: https://247sports.com/team/ohio-state-buckeyes-football-79/Roster/); falling back to previously-saved composite/transfer data for this run.
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2026]...
+  2022: 21 players
+  2023: 24 players
+  2024: 25 players
+  2026: 30 players
+Fetching CFBD transfer portal data for new transfers...
+  28 transfers in from CFBD
 Wrote ../depth_chart_data/ohio-state.json
 exit_code=0
 === oregon ===
 Scraping Ourlads depth chart for Oregon...
   85 depth chart rows
-Scraping 247Sports roster for Oregon...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 21 players
+  2023: 33 players
+  2024: 31 players
+  2025: 21 players
+  2026: 25 players
+Fetching CFBD transfer portal data for new transfers...
+  24 transfers in from CFBD
 Wrote ../depth_chart_data/oregon.json
 exit_code=0
 === penn-state ===
 Scraping Ourlads depth chart for Penn State...
   85 depth chart rows
-Scraping 247Sports roster for Penn State...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 24 players
+  2023: 24 players
+  2024: 26 players
+  2025: 29 players
+  2026: 15 players
+Fetching CFBD transfer portal data for new transfers...
+  46 transfers in from CFBD
 Wrote ../depth_chart_data/penn-state.json
 exit_code=0
 === purdue ===
 Scraping Ourlads depth chart for Purdue...
   83 depth chart rows
-Scraping 247Sports roster for Purdue...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 22 players
+  2023: 18 players
+  2024: 25 players
+  2025: 17 players
+  2026: 21 players
+Fetching CFBD transfer portal data for new transfers...
+  80 transfers in from CFBD
 Wrote ../depth_chart_data/purdue.json
 exit_code=0
 === rutgers ===
 Scraping Ourlads depth chart for Rutgers...
   71 depth chart rows
-Scraping 247Sports roster for Rutgers...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 27 players
+  2023: 21 players
+  2024: 25 players
+  2025: 30 players
+  2026: 26 players
+Fetching CFBD transfer portal data for new transfers...
+  34 transfers in from CFBD
 Wrote ../depth_chart_data/rutgers.json
 exit_code=0
 === ucla ===
 Scraping Ourlads depth chart for UCLA...
   76 depth chart rows
-Scraping 247Sports roster for UCLA...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 13 players
+  2023: 17 players
+  2024: 11 players
+  2025: 22 players
+  2026: 18 players
+Fetching CFBD transfer portal data for new transfers...
+  73 transfers in from CFBD
 Wrote ../depth_chart_data/ucla.json
 exit_code=0
 === usc ===
 Scraping Ourlads depth chart for USC...
   73 depth chart rows
-Scraping 247Sports roster for USC...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 10 players
+  2023: 27 players
+  2024: 25 players
+  2025: 28 players
+  2026: 34 players
+Fetching CFBD transfer portal data for new transfers...
+  24 transfers in from CFBD
 Wrote ../depth_chart_data/usc.json
 exit_code=0
 === washington ===
 Scraping Ourlads depth chart for Washington...
   59 depth chart rows
-Scraping 247Sports roster for Washington...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 14 players
+  2023: 27 players
+  2024: 16 players
+  2025: 30 players
+  2026: 27 players
+Fetching CFBD transfer portal data for new transfers...
+  32 transfers in from CFBD
 Wrote ../depth_chart_data/washington.json
 exit_code=0
 === wisconsin ===
 Scraping Ourlads depth chart for Wisconsin...
   92 depth chart rows
-Scraping 247Sports roster for Wisconsin...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 20 players
+  2023: 16 players
+  2024: 26 players
+  2025: 22 players
+  2026: 14 players
+Fetching CFBD transfer portal data for new transfers...
+  51 transfers in from CFBD
 Wrote ../depth_chart_data/wisconsin.json
 exit_code=0
 === alabama ===
 Scraping Ourlads depth chart for Alabama...
   97 depth chart rows
-Scraping 247Sports roster for Alabama...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 26 players
+  2023: 27 players
+  2024: 28 players
+  2025: 20 players
+  2026: 26 players
+Fetching CFBD transfer portal data for new transfers...
+  28 transfers in from CFBD
 Wrote ../depth_chart_data/alabama.json
 exit_code=0
 === arkansas ===
 Scraping Ourlads depth chart for Arkansas...
   103 depth chart rows
-Scraping 247Sports roster for Arkansas...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 27 players
+  2023: 27 players
+  2024: 17 players
+  2025: 21 players
+  2026: 20 players
+Fetching CFBD transfer portal data for new transfers...
+  73 transfers in from CFBD
 Wrote ../depth_chart_data/arkansas.json
 exit_code=0
 === auburn ===
 Scraping Ourlads depth chart for Auburn...
   114 depth chart rows
-Scraping 247Sports roster for Auburn...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 15 players
+  2023: 19 players
+  2024: 22 players
+  2025: 26 players
+  2026: 20 players
+Fetching CFBD transfer portal data for new transfers...
+  60 transfers in from CFBD
 Wrote ../depth_chart_data/auburn.json
 exit_code=0
 === florida ===
 Scraping Ourlads depth chart for Florida...
   69 depth chart rows
-Scraping 247Sports roster for Florida...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 22 players
+  2023: 21 players
+  2024: 19 players
+  2025: 27 players
+  2026: 19 players
+Fetching CFBD transfer portal data for new transfers...
+  35 transfers in from CFBD
 Wrote ../depth_chart_data/florida.json
 exit_code=0
 === georgia ===
 Scraping Ourlads depth chart for Georgia...
   91 depth chart rows
-Scraping 247Sports roster for Georgia...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 31 players
+  2023: 26 players
+  2024: 32 players
+  2025: 29 players
+  2026: 32 players
+Fetching CFBD transfer portal data for new transfers...
+  19 transfers in from CFBD
 Wrote ../depth_chart_data/georgia.json
 exit_code=0
 === kentucky ===
 Scraping Ourlads depth chart for Kentucky...
   84 depth chart rows
-Scraping 247Sports roster for Kentucky...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 20 players
+  2023: 18 players
+  2024: 25 players
+  2025: 24 players
+  2026: 17 players
+Fetching CFBD transfer portal data for new transfers...
+  54 transfers in from CFBD
 Wrote ../depth_chart_data/kentucky.json
 exit_code=0
 === lsu ===
 Scraping Ourlads depth chart for LSU...
   87 depth chart rows
-Scraping 247Sports roster for LSU...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 15 players
+  2023: 28 players
+  2024: 28 players
+  2025: 24 players
+  2026: 16 players
+Fetching CFBD transfer portal data for new transfers...
+  61 transfers in from CFBD
 Wrote ../depth_chart_data/lsu.json
 exit_code=0
 === ole-miss ===
 Scraping Ourlads depth chart for Ole Miss...
   76 depth chart rows
-Scraping 247Sports roster for Ole Miss...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 18 players
+  2023: 17 players
+  2024: 18 players
+  2025: 22 players
+  2026: 22 players
+Fetching CFBD transfer portal data for new transfers...
+  56 transfers in from CFBD
 Wrote ../depth_chart_data/ole-miss.json
 exit_code=0
 === mississippi-state ===
 Scraping Ourlads depth chart for Mississippi State...
   84 depth chart rows
-Scraping 247Sports roster for Mississippi State...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 21 players
+  2023: 23 players
+  2024: 19 players
+  2025: 18 players
+  2026: 28 players
+Fetching CFBD transfer portal data for new transfers...
+  60 transfers in from CFBD
 Wrote ../depth_chart_data/mississippi-state.json
 exit_code=0
 === missouri ===
 Scraping Ourlads depth chart for Missouri...
   70 depth chart rows
-Scraping 247Sports roster for Missouri...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 19 players
+  2023: 19 players
+  2024: 23 players
+  2025: 17 players
+  2026: 23 players
+Fetching CFBD transfer portal data for new transfers...
+  51 transfers in from CFBD
 Wrote ../depth_chart_data/missouri.json
 exit_code=0
 === oklahoma ===
 Scraping Ourlads depth chart for Oklahoma...
-  80 depth chart rows
-Scraping 247Sports roster for Oklahoma...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+  81 depth chart rows
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 22 players
+  2023: 26 players
+  2024: 30 players
+  2025: 18 players
+  2026: 25 players
+Fetching CFBD transfer portal data for new transfers...
+  36 transfers in from CFBD
 Wrote ../depth_chart_data/oklahoma.json
 exit_code=0
 === south-carolina ===
 Scraping Ourlads depth chart for South Carolina...
   84 depth chart rows
-Scraping 247Sports roster for South Carolina...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 24 players
+  2023: 25 players
+  2024: 17 players
+  2025: 25 players
+  2026: 18 players
+Fetching CFBD transfer portal data for new transfers...
+  43 transfers in from CFBD
 Wrote ../depth_chart_data/south-carolina.json
 exit_code=0
 === tennessee ===
 Scraping Ourlads depth chart for Tennessee...
   87 depth chart rows
-Scraping 247Sports roster for Tennessee...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 23 players
+  2023: 26 players
+  2024: 23 players
+  2025: 25 players
+  2026: 32 players
+Fetching CFBD transfer portal data for new transfers...
+  28 transfers in from CFBD
 Wrote ../depth_chart_data/tennessee.json
 exit_code=0
 === texas ===
 Scraping Ourlads depth chart for Texas...
   96 depth chart rows
-Scraping 247Sports roster for Texas...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 30 players
+  2023: 26 players
+  2024: 23 players
+  2025: 25 players
+  2026: 26 players
+Fetching CFBD transfer portal data for new transfers...
+  33 transfers in from CFBD
 Wrote ../depth_chart_data/texas.json
 exit_code=0
 === texas-am ===
 Scraping Ourlads depth chart for Texas A&M...
   87 depth chart rows
-Scraping 247Sports roster for Texas A&M...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 30 players
+  2023: 20 players
+  2024: 17 players
+  2025: 25 players
+  2026: 27 players
+Fetching CFBD transfer portal data for new transfers...
+  32 transfers in from CFBD
 Wrote ../depth_chart_data/texas-am.json
 exit_code=0
 === vanderbilt ===
 Scraping Ourlads depth chart for Vanderbilt...
   80 depth chart rows
-Scraping 247Sports roster for Vanderbilt...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 27 players
+  2023: 23 players
+  2024: 20 players
+  2025: 14 players
+  2026: 23 players
+Fetching CFBD transfer portal data for new transfers...
+  38 transfers in from CFBD
 Wrote ../depth_chart_data/vanderbilt.json
 exit_code=0
 === boston-college ===
 Scraping Ourlads depth chart for Boston College...
   105 depth chart rows
-Scraping 247Sports roster for Boston College...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 23 players
+  2023: 18 players
+  2024: 12 players
+  2025: 27 players
+  2026: 24 players
+Fetching CFBD transfer portal data for new transfers...
+  41 transfers in from CFBD
 Wrote ../depth_chart_data/boston-college.json
 exit_code=0
 === california ===
 Scraping Ourlads depth chart for California...
   76 depth chart rows
-Scraping 247Sports roster for California...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 17 players
+  2023: 14 players
+  2024: 20 players
+  2025: 15 players
+  2026: 18 players
+Fetching CFBD transfer portal data for new transfers...
+  68 transfers in from CFBD
 Wrote ../depth_chart_data/california.json
 exit_code=0
 === clemson ===
 Scraping Ourlads depth chart for Clemson...
   79 depth chart rows
-Scraping 247Sports roster for Clemson...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 22 players
+  2023: 26 players
+  2024: 23 players
+  2025: 15 players
+  2026: 22 players
+Fetching CFBD transfer portal data for new transfers...
+  15 transfers in from CFBD
 Wrote ../depth_chart_data/clemson.json
 exit_code=0
 === duke ===
 Scraping Ourlads depth chart for Duke...
   77 depth chart rows
-Scraping 247Sports roster for Duke...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 18 players
+  2023: 26 players
+  2024: 18 players
+  2025: 28 players
+  2026: 15 players
+Fetching CFBD transfer portal data for new transfers...
+  28 transfers in from CFBD
 Wrote ../depth_chart_data/duke.json
 exit_code=0
 === florida-state ===
 Scraping Ourlads depth chart for Florida State...
   67 depth chart rows
-Scraping 247Sports roster for Florida State...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 19 players
+  2023: 17 players
+  2024: 25 players
+  2025: 23 players
+  2026: 30 players
+Fetching CFBD transfer portal data for new transfers...
+  44 transfers in from CFBD
 Wrote ../depth_chart_data/florida-state.json
 exit_code=0
 === georgia-tech ===
 Scraping Ourlads depth chart for Georgia Tech...
   86 depth chart rows
-Scraping 247Sports roster for Georgia Tech...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 15 players
+  2023: 21 players
+  2024: 23 players
+  2025: 24 players
+  2026: 24 players
+Fetching CFBD transfer portal data for new transfers...
+  42 transfers in from CFBD
 Wrote ../depth_chart_data/georgia-tech.json
 exit_code=0
 === louisville ===
 Scraping Ourlads depth chart for Louisville...
   84 depth chart rows
-Scraping 247Sports roster for Louisville...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 16 players
+  2023: 19 players
+  2024: 18 players
+  2025: 17 players
+  2026: 20 players
+Fetching CFBD transfer portal data for new transfers...
+  63 transfers in from CFBD
 Wrote ../depth_chart_data/louisville.json
 exit_code=0
 === miami-fl ===
 Scraping Ourlads depth chart for Miami...
   72 depth chart rows
-Scraping 247Sports roster for Miami...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 14 players
+  2023: 25 players
+  2024: 27 players
+  2025: 21 players
+  2026: 30 players
+Fetching CFBD transfer portal data for new transfers...
+  31 transfers in from CFBD
 Wrote ../depth_chart_data/miami-fl.json
 exit_code=0
 === north-carolina ===
 Scraping Ourlads depth chart for North Carolina...
   80 depth chart rows
-Scraping 247Sports roster for North Carolina...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 26 players
+  2023: 22 players
+  2024: 31 players
+  2025: 30 players
+  2026: 40 players
+Fetching CFBD transfer portal data for new transfers...
+  56 transfers in from CFBD
 Wrote ../depth_chart_data/north-carolina.json
 exit_code=0
 === nc-state ===
 Scraping Ourlads depth chart for NC State...
   68 depth chart rows
-Scraping 247Sports roster for NC State...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 12 players
+  2023: 15 players
+  2024: 23 players
+  2025: 23 players
+  2026: 26 players
+Fetching CFBD transfer portal data for new transfers...
+  38 transfers in from CFBD
 Wrote ../depth_chart_data/nc-state.json
 exit_code=0
 === pittsburgh ===
 Scraping Ourlads depth chart for Pittsburgh...
   63 depth chart rows
-Scraping 247Sports roster for Pittsburgh...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 11 players
+  2023: 19 players
+  2024: 23 players
+  2025: 25 players
+  2026: 21 players
+Fetching CFBD transfer portal data for new transfers...
+  31 transfers in from CFBD
 Wrote ../depth_chart_data/pittsburgh.json
 exit_code=0
 === smu ===
 Scraping Ourlads depth chart for SMU...
   78 depth chart rows
-Scraping 247Sports roster for SMU...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 13 players
+  2023: 17 players
+  2024: 13 players
+  2025: 20 players
+  2026: 21 players
+Fetching CFBD transfer portal data for new transfers...
+  35 transfers in from CFBD
 Wrote ../depth_chart_data/smu.json
 exit_code=0
 === stanford ===
 Scraping Ourlads depth chart for Stanford...
   84 depth chart rows
-Scraping 247Sports roster for Stanford...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 25 players
+  2023: 23 players
+  2024: 28 players
+  2025: 17 players
+  2026: 23 players
+Fetching CFBD transfer portal data for new transfers...
+  23 transfers in from CFBD
 Wrote ../depth_chart_data/stanford.json
 exit_code=0
 === syracuse ===
 Scraping Ourlads depth chart for Syracuse...
-  72 depth chart rows
-Scraping 247Sports roster for Syracuse...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+  70 depth chart rows
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 17 players
+  2023: 14 players
+  2024: 25 players
+  2025: 35 players
+  2026: 26 players
+Fetching CFBD transfer portal data for new transfers...
+  35 transfers in from CFBD
 Wrote ../depth_chart_data/syracuse.json
 exit_code=0
 === virginia ===
 Scraping Ourlads depth chart for Virginia...
   74 depth chart rows
-Scraping 247Sports roster for Virginia...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 16 players
+  2023: 20 players
+  2024: 16 players
+  2025: 21 players
+  2026: 15 players
+Fetching CFBD transfer portal data for new transfers...
+  62 transfers in from CFBD
 Wrote ../depth_chart_data/virginia.json
 exit_code=0
 === virginia-tech ===
 Scraping Ourlads depth chart for Virginia Tech...
   82 depth chart rows
-Scraping 247Sports roster for Virginia Tech...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 24 players
+  2023: 29 players
+  2024: 15 players
+  2025: 20 players
+  2026: 23 players
+Fetching CFBD transfer portal data for new transfers...
+  59 transfers in from CFBD
 Wrote ../depth_chart_data/virginia-tech.json
 exit_code=0
 === wake-forest ===
 Scraping Ourlads depth chart for Wake Forest...
   80 depth chart rows
-Scraping 247Sports roster for Wake Forest...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 15 players
+  2023: 22 players
+  2024: 22 players
+  2025: 24 players
+  2026: 31 players
+Fetching CFBD transfer portal data for new transfers...
+  57 transfers in from CFBD
 Wrote ../depth_chart_data/wake-forest.json
 exit_code=0
 === notre-dame ===
 Scraping Ourlads depth chart for Notre Dame...
   81 depth chart rows
-Scraping 247Sports roster for Notre Dame...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 23 players
+  2023: 24 players
+  2024: 23 players
+  2025: 25 players
+  2026: 30 players
+Fetching CFBD transfer portal data for new transfers...
+  14 transfers in from CFBD
 Wrote ../depth_chart_data/notre-dame.json
 exit_code=0
 === arizona ===
 Scraping Ourlads depth chart for Arizona...
   89 depth chart rows
-Scraping 247Sports roster for Arizona...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 30 players
+  2023: 27 players
+  2024: 15 players
+  2025: 25 players
+  2026: 20 players
+Fetching CFBD transfer portal data for new transfers...
+  52 transfers in from CFBD
 Wrote ../depth_chart_data/arizona.json
 exit_code=0
 === arizona-state ===
 Scraping Ourlads depth chart for Arizona State...
   102 depth chart rows
-Scraping 247Sports roster for Arizona State...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 8 players
+  2023: 19 players
+  2024: 21 players
+  2025: 22 players
+  2026: 17 players
+Fetching CFBD transfer portal data for new transfers...
+  40 transfers in from CFBD
 Wrote ../depth_chart_data/arizona-state.json
 exit_code=0
 === baylor ===
 Scraping Ourlads depth chart for Baylor...
   59 depth chart rows
-Scraping 247Sports roster for Baylor...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 23 players
+  2023: 21 players
+  2024: 13 players
+  2025: 21 players
+  2026: 14 players
+Fetching CFBD transfer portal data for new transfers...
+  54 transfers in from CFBD
 Wrote ../depth_chart_data/baylor.json
 exit_code=0
 === byu ===
 Scraping Ourlads depth chart for BYU...
   72 depth chart rows
-Scraping 247Sports roster for BYU...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 27 players
+  2023: 21 players
+  2024: 25 players
+  2025: 24 players
+  2026: 21 players
+Fetching CFBD transfer portal data for new transfers...
+  22 transfers in from CFBD
 Wrote ../depth_chart_data/byu.json
 exit_code=0
 === ucf ===
 Scraping Ourlads depth chart for UCF...
   80 depth chart rows
-Scraping 247Sports roster for UCF...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 17 players
+  2023: 15 players
+  2024: 17 players
+  2025: 14 players
+  2026: 16 players
+Fetching CFBD transfer portal data for new transfers...
+  69 transfers in from CFBD
 Wrote ../depth_chart_data/ucf.json
 exit_code=0
 === cincinnati ===
 Scraping Ourlads depth chart for Cincinnati...
   72 depth chart rows
-Scraping 247Sports roster for Cincinnati...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 20 players
+  2023: 12 players
+  2024: 24 players
+  2025: 20 players
+  2026: 25 players
+Fetching CFBD transfer portal data for new transfers...
+  42 transfers in from CFBD
 Wrote ../depth_chart_data/cincinnati.json
 exit_code=0
 === colorado ===
 Scraping Ourlads depth chart for Colorado...
   75 depth chart rows
-Scraping 247Sports roster for Colorado...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 24 players
+  2023: 18 players
+  2024: 12 players
+  2025: 16 players
+  2026: 14 players
+Fetching CFBD transfer portal data for new transfers...
+  75 transfers in from CFBD
 Wrote ../depth_chart_data/colorado.json
 exit_code=0
 === houston ===
 Scraping Ourlads depth chart for Houston...
   70 depth chart rows
-Scraping 247Sports roster for Houston...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 14 players
+  2023: 18 players
+  2024: 14 players
+  2025: 19 players
+  2026: 19 players
+Fetching CFBD transfer portal data for new transfers...
+  46 transfers in from CFBD
 Wrote ../depth_chart_data/houston.json
 exit_code=0
 === iowa-state ===
 Scraping Ourlads depth chart for Iowa State...
   69 depth chart rows
-Scraping 247Sports roster for Iowa State...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 20 players
+  2023: 26 players
+  2024: 23 players
+  2025: 21 players
+  2026: 25 players
+Fetching CFBD transfer portal data for new transfers...
+  56 transfers in from CFBD
 Wrote ../depth_chart_data/iowa-state.json
 exit_code=0
 === kansas ===
 Scraping Ourlads depth chart for Kansas...
   75 depth chart rows
-Scraping 247Sports roster for Kansas...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 7 players
+  2023: 16 players
+  2024: 17 players
+  2025: 15 players
+  2026: 18 players
+Fetching CFBD transfer portal data for new transfers...
+  58 transfers in from CFBD
 Wrote ../depth_chart_data/kansas.json
 exit_code=0
 === kansas-state ===
 Scraping Ourlads depth chart for Kansas State...
   80 depth chart rows
-Scraping 247Sports roster for Kansas State...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 17 players
+  2023: 23 players
+  2024: 18 players
+  2025: 25 players
+  2026: 18 players
+Fetching CFBD transfer portal data for new transfers...
+  42 transfers in from CFBD
 Wrote ../depth_chart_data/kansas-state.json
 exit_code=0
 === oklahoma-state ===
 Scraping Ourlads depth chart for Oklahoma State...
   79 depth chart rows
-Scraping 247Sports roster for Oklahoma State...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 17 players
+  2023: 19 players
+  2024: 20 players
+  2025: 16 players
+  2026: 18 players
+Fetching CFBD transfer portal data for new transfers...
+  95 transfers in from CFBD
 Wrote ../depth_chart_data/oklahoma-state.json
 exit_code=0
 === tcu ===
 Scraping Ourlads depth chart for TCU...
   76 depth chart rows
-Scraping 247Sports roster for TCU...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 13 players
+  2023: 21 players
+  2024: 21 players
+  2025: 27 players
+  2026: 22 players
+Fetching CFBD transfer portal data for new transfers...
+  22 transfers in from CFBD
 Wrote ../depth_chart_data/tcu.json
 exit_code=0
 === texas-tech ===
 Scraping Ourlads depth chart for Texas Tech...
   82 depth chart rows
-Scraping 247Sports roster for Texas Tech...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 18 players
+  2023: 29 players
+  2024: 22 players
+  2025: 18 players
+  2026: 22 players
+Fetching CFBD transfer portal data for new transfers...
+  44 transfers in from CFBD
 Wrote ../depth_chart_data/texas-tech.json
 exit_code=0
 === utah ===
 Scraping Ourlads depth chart for Utah...
   65 depth chart rows
-Scraping 247Sports roster for Utah...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 18 players
+  2023: 20 players
+  2024: 16 players
+  2025: 25 players
+  2026: 16 players
+Fetching CFBD transfer portal data for new transfers...
+  37 transfers in from CFBD
 Wrote ../depth_chart_data/utah.json
 exit_code=0
 === west-virginia ===
 Scraping Ourlads depth chart for West Virginia...
-  110 depth chart rows
-Scraping 247Sports roster for West Virginia...
-  No sports247_slug configured for this team yet; skipping 247 data (Ourlads depth chart data still populates normally).
+  76 depth chart rows
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
+  2022: 18 players
+  2023: 21 players
+  2024: 25 players
+  2025: 25 players
+  2026: 37 players
+Fetching CFBD transfer portal data for new transfers...
+  85 transfers in from CFBD
 Wrote ../depth_chart_data/west-virginia.json
 exit_code=0
