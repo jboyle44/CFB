@@ -118,6 +118,7 @@
   .slot .pff{color:var(--text-faint); font-style:italic;}
   .slot .pff-rookie{color:var(--purple); font-style:italic; font-weight:700;}
   .slot .pff-rank{color:var(--text-faint); font-size:8.5px; margin-top:1px;}
+  .slot .cfb27{color:var(--text-faint); font-size:9px; margin-top:1px;}
 
   .posbox.slim .hd{font-size:9px; padding:3px 2px;}
   .posbox.slim .slot{padding:2px 4px;}
@@ -480,12 +481,17 @@ function slotHtml(r, isStarter){
   const rankLine = (r.pffPositionRank != null)
     ? `Ranked ${ordinal(r.pffPositionRank)} of ${r.pffPositionTotal} ${r.pffPositionLabel}`
     : '';
+  let madden27Html = '';
+  if(r.madden27Rating != null){
+    madden27Html = `M27: ${gradeSpan(r.madden27Rating, 60, 99)}${r.madden27Dev ? ' ' + r.madden27Dev : ''}`;
+  }
   return `
     <div class="slot ${isStarter ? 'starter' : ''}">
       <div class="l1"><span class="num">${r.jersey || ''}</span> ${r.player}</div>
       ${codeLine ? `<div class="l2">${codeLine}</div>` : ''}
       <div class="l3">${pffHtml}</div>
       ${rankLine ? `<div class="l3 pff-rank">${rankLine}</div>` : ''}
+      ${madden27Html ? `<div class="l3 cfb27">${madden27Html}</div>` : ''}
     </div>`;
 }
 
