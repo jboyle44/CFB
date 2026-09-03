@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-03T17:10:37.784177+00:00",
   "ourladsUpdatedAt": "2026-09-03T17:10:37.784177+00:00",
   "cfbdUpdatedAt": "2026-09-03T17:10:37.784177+00:00",
-  "cfb27UpdatedAt": "2026-09-03T03:36:58.752582+00:00",
+  "cfb27UpdatedAt": "2026-09-03T17:13:02.695209+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Washington",
   "offenseScheme": "Air Raid",
@@ -1368,7 +1368,9 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": null
+      "pffGrade": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RES",
@@ -1386,7 +1388,9 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": null
+      "pffGrade": null,
+      "cfb27Rating": 81,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RES",
@@ -1404,7 +1408,9 @@
       "hsNationalRank": 441,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": null
+      "pffGrade": null,
+      "cfb27Rating": 78,
+      "cfb27Dev": "Impact"
     }
   ]
 }

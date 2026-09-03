@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-03T17:11:06.455753+00:00",
   "ourladsUpdatedAt": "2026-09-03T17:11:06.455753+00:00",
   "cfbdUpdatedAt": "2026-09-03T17:11:06.455753+00:00",
-  "cfb27UpdatedAt": "2026-09-03T03:37:00.011297+00:00",
+  "cfb27UpdatedAt": "2026-09-03T17:13:03.980712+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Wisconsin",
   "offenseScheme": "Pro Style",
@@ -2208,7 +2208,9 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": null
+      "pffGrade": null,
+      "cfb27Rating": 72,
+      "cfb27Dev": "Impact"
     }
   ]
 }

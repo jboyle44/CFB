@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-03T17:03:49.611502+00:00",
   "ourladsUpdatedAt": "2026-09-03T17:03:49.611502+00:00",
   "cfbdUpdatedAt": "2026-09-03T17:03:49.611502+00:00",
-  "cfb27UpdatedAt": "2026-09-03T03:36:40.896087+00:00",
+  "cfb27UpdatedAt": "2026-09-03T17:12:45.188521+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Iowa",
   "offenseScheme": "Multiple",
@@ -1392,7 +1392,9 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": null
+      "pffGrade": null,
+      "cfb27Rating": 82,
+      "cfb27Dev": "Impact"
     }
   ]
 }
