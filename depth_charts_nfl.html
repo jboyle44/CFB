@@ -93,6 +93,14 @@
     display:grid; gap:8px; margin-bottom:8px;
   }
 
+  /* Compacts vertical space between the CB row and the LB row below it,
+     pulling the LB row up roughly halfway into the CB row's typical height.
+     Fixed, blind offset -- not coordinated with CB row geometry, to avoid
+     collision bugs across teams with different backup counts per box. */
+  #row-lb{
+    margin-top:-75px;
+  }
+
   .posbox{
     background:var(--panel); border:1px solid var(--line); border-radius:6px;
     overflow:hidden; min-width:0;
