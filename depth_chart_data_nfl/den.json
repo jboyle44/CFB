@@ -115,8 +115,7 @@
       "player": "Kage Casey",
       "jersey": "78",
       "code": "26/4",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "C",
@@ -219,8 +218,7 @@
       "player": "Dallen Bentley",
       "jersey": "89",
       "code": "26/7",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "QB",
@@ -239,16 +237,14 @@
       "player": "Jarrett Stidham",
       "jersey": "8",
       "code": "U/LV",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "QB",
       "player": "Sam Ehlinger",
       "jersey": "4",
       "code": "U/Ind",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "RB",
@@ -279,8 +275,7 @@
       "player": "Jonah Coleman",
       "jersey": "20",
       "code": "26/4",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RB",
@@ -311,8 +306,7 @@
       "player": "Tyler Onyedim",
       "jersey": "98",
       "code": "26/3",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LDE",
@@ -391,8 +385,7 @@
       "player": "Que Robinson",
       "jersey": "51",
       "code": "25/4",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LILB",
@@ -639,48 +632,28 @@
       "player": "Marvin Mims Jr.",
       "jersey": "19",
       "code": "23/2",
-      "isAcquired": false,
-      "pffGrade": 63.5,
-      "pffPositionRank": 109,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Marvin Mims Jr.",
       "jersey": "19",
       "code": "23/2",
-      "isAcquired": false,
-      "pffGrade": 63.5,
-      "pffPositionRank": 109,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Tyler Badie",
       "jersey": "28",
       "code": "P/Bal",
-      "isAcquired": true,
-      "pffGrade": 57.9,
-      "pffPositionRank": 104,
-      "pffPositionTotal": 136,
-      "pffPositionLabel": "HB",
-      "pffTied": false
+      "isAcquired": true
     },
     {
       "position": "KR",
       "player": "Rj Harvey",
       "jersey": "12",
       "code": "25/2",
-      "isAcquired": false,
-      "pffGrade": 68.3,
-      "pffPositionRank": 60,
-      "pffPositionTotal": 136,
-      "pffPositionLabel": "HB",
-      "pffTied": true
+      "isAcquired": false
     }
   ]
 }
