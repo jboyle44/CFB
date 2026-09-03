@@ -536,7 +536,7 @@ const TEAM_COLORS = {
 function teamSpan(name){
   const c = TEAM_COLORS[name];
   if(!c) return name;
-  return `<span style="background:${c.primary}; color:#fff; padding:1px 7px; border-radius:4px; border-bottom:2px solid ${c.secondary}; font-weight:700; white-space:nowrap; display:inline-block;">${name}</span>`;
+  return `<span style="background:${c.primary}; color:#fff; padding:1px 7px; border-radius:4px; border:2px solid ${c.secondary}; font-weight:700; white-space:nowrap; display:inline-block;">${name}</span>`;
 }
 
 
