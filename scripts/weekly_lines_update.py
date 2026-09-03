@@ -336,6 +336,23 @@ def main():
     captured_at = datetime.now(timezone.utc).isoformat()
     updated = {}
     for week in range(1, MAX_REGULAR_WEEK + 1):
+        # A week whose games are ALL already graded/frozen can't change anymore
+        # (scores don't get replayed, lines don't get revised after grading) --
+        # skip the CFBD refetch entirely and just carry the existing rows
+        # forward. This is what keeps this script's per-run cost roughly
+        # constant instead of growing every week for the rest of the season,
+        # since otherwise every run re-checks every prior week from scratch.
+        existing_week_games = [r for r in existing_by_id.values() if r.get("week") == week]
+        week_fully_graded = bool(existing_week_games) and all(
+            g.get("status") == "final" for g in existing_week_games
+        )
+        if week_fully_graded:
+            for g in existing_week_games:
+                updated[g["gameId"]] = g
+            print(f"  Week {week}: already fully graded ({len(existing_week_games)} games), "
+                  f"skipping CFBD refetch.")
+            continue
+
         try:
             games = fetch_week_games(year, week)
         except requests.HTTPError as e:
