@@ -1,24 +1,21 @@
 Scraping Ourlads depth chart for Indiana...
   76 depth chart rows
-DEBUG: needs_transfer_lookup = True
 Fetching CFBD transfer portal data for new transfers...
   114 transfers in from CFBD
-Fetching CFBD recruiting data for 14 (school, year) pairs...
+Fetching CFBD recruiting data for 15 (school, year) pairs...
   Buffalo 2024: 22 players
+  Cincinnati 2024: 24 players
   Georgia State 2023: 14 players
   Hawai'i 2025: 11 players
-  Indiana 2022: 25 players
   Indiana 2023: 14 players
   Indiana 2024: 17 players
   Iowa State 2022: 20 players
   James Madison 2022: 14 players
   Navy 2022: 28 players
+  Notre Dame 2022: 23 players
   Old Dominion 2022: 14 players
   Troy 2022: 9 players
   Tulsa 2022: 14 players
   UAB 2022: 8 players
   Wisconsin 2022: 20 players
-DEBUG: norm='quan sanks' last='sanks' candidate={'stars': 3, 'rating': 0.86, 'origin': 'Cincinnati', 'destination': 'Indiana', 'transferDate': '2026-01-04T22:00:00.000Z', 'overallRank': 816, 'positionRank': 72}
-DEBUG: transfers_in_by_last_name_candidates for sanks = [{'stars': 3, 'rating': 0.86, 'origin': 'Cincinnati', 'destination': 'Indiana', 'transferDate': '2026-01-04T22:00:00.000Z', 'overallRank': 816, 'positionRank': 72}]
-DEBUG: site_bucket='DB' cand_bucket=None
 Wrote ../depth_chart_data/indiana.json
