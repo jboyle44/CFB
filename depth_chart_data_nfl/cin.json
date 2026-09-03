@@ -19,8 +19,7 @@
       "player": "Dohnte Meyers",
       "jersey": "81",
       "code": "SF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RWR",
@@ -39,8 +38,7 @@
       "player": "Colbie Young",
       "jersey": "86",
       "code": "26/4",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "SWR",
@@ -83,8 +81,7 @@
       "player": "Myles Hinton",
       "jersey": "77",
       "code": "W/Phi",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "LG",
@@ -103,8 +100,7 @@
       "player": "Jacob Bayer",
       "jersey": "69",
       "code": "SF25",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "C",
@@ -123,8 +119,7 @@
       "player": "Connor Lew",
       "jersey": "65",
       "code": "26/4",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RG",
@@ -167,8 +162,7 @@
       "player": "Javon Foster",
       "jersey": "73",
       "code": "SF25",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "TE",
@@ -199,16 +193,14 @@
       "player": "Erick All Jr.",
       "jersey": "83",
       "code": "24/4",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "TE",
       "player": "Jack Endries",
       "jersey": "84",
       "code": "26/7",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "QB",
@@ -371,8 +363,7 @@
       "player": "Landon Robinson",
       "jersey": "96",
       "code": "26/7",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RDE",
@@ -391,8 +382,7 @@
       "player": "Cashius Howell",
       "jersey": "55",
       "code": "26/2",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "WLB",
@@ -459,8 +449,7 @@
       "player": "Tacario Davis",
       "jersey": "20",
       "code": "26/3",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "SS",
@@ -587,8 +576,7 @@
       "player": "William Wagner",
       "jersey": "46",
       "code": "CF25",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "H",
@@ -619,64 +607,42 @@
       "player": "Ke'Shawn Williams",
       "jersey": "12",
       "code": "W/Pit",
-      "isAcquired": true,
-      "pffGrade": 54.4,
-      "pffPositionRank": 189,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "isAcquired": true
     },
     {
       "position": "PR",
       "player": "Dohnte Meyers",
       "jersey": "81",
       "code": "SF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Ke'Shawn Williams",
       "jersey": "12",
       "code": "W/Pit",
-      "isAcquired": true,
-      "pffGrade": 54.4,
-      "pffPositionRank": 189,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "isAcquired": true
     },
     {
       "position": "KR",
       "player": "Dohnte Meyers",
       "jersey": "81",
       "code": "SF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Samaje Perine",
       "jersey": "34",
       "code": "U/KC",
-      "isAcquired": true,
-      "pffGrade": 66.6,
-      "pffPositionRank": 70,
-      "pffPositionTotal": 136,
-      "pffPositionLabel": "HB",
-      "pffTied": true
+      "isAcquired": true
     },
     {
       "position": "KR",
       "player": "Tahj Brooks",
       "jersey": "25",
       "code": "25/6",
-      "isAcquired": false,
-      "pffGrade": 48.7,
-      "pffPositionRank": 129,
-      "pffPositionTotal": 136,
-      "pffPositionLabel": "HB",
-      "pffTied": false
+      "isAcquired": false
     }
   ]
 }
