@@ -1,0 +1,36 @@
+name: Rollout Multi-hop Transfer Fix
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  rollout:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    timeout-minutes: 120
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+      - name: Configure git identity
+        run: |
+          git config --global user.name "rollout-bot"
+          git config --global user.email "actions@github.com"
+      - name: Run rollout with budget safety floor
+        working-directory: scripts
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python3 rollout_remaining.py 2> ../rollout_log.txt
+      - name: Commit log
+        run: |
+          git add rollout_log.txt
+          git commit -m "Rollout log" || echo "nothing to commit"
+          git push
