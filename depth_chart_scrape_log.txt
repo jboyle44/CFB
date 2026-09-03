@@ -273,7 +273,7 @@ Wrote ../depth_chart_data/alabama.json
 exit_code=0
 === arkansas ===
 Scraping Ourlads depth chart for Arkansas...
-  103 depth chart rows
+  100 depth chart rows
 Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
   2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Arkansas)
   2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Arkansas)
@@ -288,7 +288,7 @@ Wrote ../depth_chart_data/arkansas.json
 exit_code=0
 === auburn ===
 Scraping Ourlads depth chart for Auburn...
-  114 depth chart rows
+  116 depth chart rows
 Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
   2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=Auburn)
   2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=Auburn)
@@ -790,12 +790,13 @@ Wrote ../depth_chart_data/baylor.json
 exit_code=0
 === byu ===
 Scraping Ourlads depth chart for BYU...
-  72 depth chart rows
-Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025]...
+  83 depth chart rows
+Fetching CFBD recruiting data for new players, class years: [2022, 2023, 2024, 2025, 2026]...
   2022: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2022&team=BYU)
   2023: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2023&team=BYU)
   2024: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2024&team=BYU)
   2025: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2025&team=BYU)
+  2026: failed (429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/recruiting/players?year=2026&team=BYU)
 Fetching CFBD transfer portal data for new transfers...
   2026 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2026
   2025 portal fetch failed: 429 Client Error: Too Many Requests for url: https://api.collegefootballdata.com/player/portal?year=2025
