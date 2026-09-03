@@ -134,12 +134,23 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
         row["isTransfer"] and not already_has_transfer_data(row) for row in depth_chart
     )
     transfers_in = {}
+    # Full multi-year portal history per player (NOT filtered by destination)
+    # -- needed to trace a multi-hop transfer (e.g. Alabama -> Florida State
+    # -> Ohio State) back to their TRUE original school. A player's most
+    # recent portal entry's "origin" is only their immediately-previous stop,
+    # not necessarily where they were originally recruited -- their earliest
+    # portal entry's origin is.
+    portal_history_by_name = {}
     if needs_transfer_lookup:
         print(f"Fetching CFBD transfer portal data for new transfers...", file=sys.stderr)
-        for yr in (CURRENT_YEAR, CURRENT_YEAR - 1):
+        # 6 years covers a player's full realistic eligibility window (up to
+        # a redshirt + 5 playing years) so multi-hop chains can be traced
+        # back to their true origin regardless of how long ago they signed.
+        for yr in range(CURRENT_YEAR, CURRENT_YEAR - 6, -1):
             try:
                 portal = get_transfer_portal(yr)
                 for name, info in portal.items():
+                    portal_history_by_name.setdefault(name, []).append(info)
                     if info.get("destination") == team_name:
                         transfers_in[name] = info
             except Exception as e:
@@ -147,6 +158,18 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
         print(f"  {len(transfers_in)} transfers in from CFBD", file=sys.stderr)
     else:
         print("No new transfers needing portal data -- skipping CFBD portal call this run.", file=sys.stderr)
+
+    def true_origin_school(player_name_norm, fallback_match):
+        """The origin of a transfer's EARLIEST portal entry -- their real
+        original signing school, not just their most recent previous stop."""
+        history = portal_history_by_name.get(player_name_norm)
+        if not history:
+            return fallback_match["origin"] if fallback_match and fallback_match.get("origin") else None
+        dated = [h for h in history if h.get("transferDate")]
+        if not dated:
+            return fallback_match["origin"] if fallback_match and fallback_match.get("origin") else None
+        earliest = min(dated, key=lambda h: h["transferDate"])
+        return earliest.get("origin") or (fallback_match.get("origin") if fallback_match else None)
 
     # Recruiting composite scores never change once assigned (they're
     # historical/fixed), so on a steady-state week where the roster hasn't
@@ -172,8 +195,9 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
             continue
         yr = infer_recruiting_class_year(r["class"])
         if r["isTransfer"]:
-            match = transfers_in.get(normalize_name(r["player"]))
-            school = match["origin"] if match and match.get("origin") else team_name
+            norm_name = normalize_name(r["player"])
+            match = transfers_in.get(norm_name)
+            school = true_origin_school(norm_name, match) or team_name
         else:
             school = team_name
         needed_school_years.add((school, yr))
