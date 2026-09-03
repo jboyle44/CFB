@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-09-03T16:20:28.316476+00:00",
   "ourladsUpdatedAt": "2026-09-03T16:20:28.316476+00:00",
-  "madden27UpdatedAt": "2026-09-03T17:13:27.841294+00:00",
+  "madden27UpdatedAt": "2026-09-03T18:27:22.130508+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Tennessee Titans",
   "offenseScheme": "11 - One RB, One TE (70%)",
@@ -90,8 +90,8 @@
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "madden27Rating": 73,
+      "madden27Dev": "Normal",
       "pffGrade": 62.0,
       "pffPositionRank": 66,
       "pffPositionTotal": 95,
@@ -181,8 +181,8 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 70,
+      "madden27Dev": "Star"
     },
     {
       "position": "RG",
@@ -572,8 +572,8 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "madden27Rating": 67,
+      "madden27Dev": "Normal",
       "pffGrade": 60.8,
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -695,8 +695,8 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "madden27Rating": 73,
+      "madden27Dev": "Star",
       "pffGrade": 62.1,
       "pffPositionRank": 63,
       "pffPositionTotal": 107,
@@ -889,8 +889,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 62,
+      "madden27Dev": "Normal"
     },
     {
       "position": "DE",

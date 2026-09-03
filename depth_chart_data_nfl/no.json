@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-09-03T16:20:43.717680+00:00",
   "ourladsUpdatedAt": "2026-09-03T16:20:43.717680+00:00",
-  "madden27UpdatedAt": "2026-09-03T17:13:16.085305+00:00",
+  "madden27UpdatedAt": "2026-09-03T18:27:11.228755+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New Orleans Saints",
   "offenseScheme": "11 - One RB, One TE (67%)",
@@ -69,8 +69,8 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "madden27Rating": 77,
+      "madden27Dev": "Star",
       "pffGrade": 73.5,
       "pffPositionRank": 31,
       "pffPositionTotal": 95,
@@ -289,8 +289,8 @@
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "madden27Rating": 87,
+      "madden27Dev": "Star",
       "pffGrade": 72.6,
       "pffPositionRank": 29,
       "pffPositionTotal": 73,
@@ -722,8 +722,8 @@
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 75,
+      "madden27Dev": "Normal"
     },
     {
       "position": "NB",
@@ -955,8 +955,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 68,
+      "madden27Dev": "Normal"
     },
     {
       "position": "RB",

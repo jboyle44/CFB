@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-09-03T16:20:39.265593+00:00",
   "ourladsUpdatedAt": "2026-09-03T16:20:39.265593+00:00",
-  "madden27UpdatedAt": "2026-09-03T17:12:43.885620+00:00",
+  "madden27UpdatedAt": "2026-09-03T18:26:43.410894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Atlanta Falcons",
   "offenseScheme": "11 - One RB, One TE (45%)",
@@ -235,8 +235,8 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "madden27Rating": 81,
+      "madden27Dev": "Star",
       "pffGrade": 73.6,
       "pffPositionRank": 15,
       "pffPositionTotal": 68,
@@ -283,8 +283,8 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "madden27Rating": 73,
+      "madden27Dev": "Star",
       "pffGrade": 58.0,
       "pffPositionRank": 39,
       "pffPositionTotal": 45,
@@ -358,8 +358,8 @@
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "madden27Rating": 78,
+      "madden27Dev": "Normal",
       "pffGrade": 69.9,
       "pffPositionRank": 36,
       "pffPositionTotal": 73,
@@ -722,8 +722,8 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "madden27Rating": 73,
+      "madden27Dev": "Normal",
       "pffGrade": 49.6,
       "pffPositionRank": 113,
       "pffPositionTotal": 122,
@@ -749,8 +749,8 @@
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 72,
+      "madden27Dev": "Normal"
     },
     {
       "position": "PT",
@@ -989,8 +989,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "SUS",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 79,
+      "madden27Dev": "Star"
     }
   ]
 }

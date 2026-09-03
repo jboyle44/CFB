@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-09-03T16:19:48.396551+00:00",
   "ourladsUpdatedAt": "2026-09-03T16:19:48.396551+00:00",
-  "madden27UpdatedAt": "2026-09-03T17:13:17.611899+00:00",
+  "madden27UpdatedAt": "2026-09-03T18:27:12.540485+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Giants",
   "offenseScheme": "11 - One RB, One TE (60%)",
@@ -31,8 +31,8 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 73,
+      "madden27Dev": "Normal"
     },
     {
       "position": "RWR",
@@ -112,8 +112,8 @@
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "madden27Rating": 74,
+      "madden27Dev": "Normal",
       "pffGrade": 53.0,
       "pffPositionRank": 71,
       "pffPositionTotal": 87,
@@ -144,8 +144,8 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "madden27Rating": 73,
+      "madden27Dev": "Normal",
       "pffGrade": 60.8,
       "pffPositionRank": 29,
       "pffPositionTotal": 41,
@@ -326,8 +326,8 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "madden27Rating": 79,
+      "madden27Dev": "Normal",
       "pffGrade": 69.5,
       "pffPositionRank": 39,
       "pffPositionTotal": 73,
@@ -928,8 +928,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 76,
+      "madden27Dev": "Normal"
     }
   ]
 }
