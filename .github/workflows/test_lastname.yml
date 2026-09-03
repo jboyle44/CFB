@@ -1,0 +1,31 @@
+name: Test Lastname Fix
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+      - name: Rebuild Indiana
+        working-directory: scripts
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python3 test_lastname_fix.py
+      - name: Commit result
+        run: |
+          git config user.name "test-bot"
+          git config user.email "actions@github.com"
+          git add depth_chart_data/indiana.json
+          git commit -m "Test transfer lastname fallback" || echo "nothing to commit"
+          git push
