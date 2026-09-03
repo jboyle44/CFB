@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:50:01.534366+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:50:01.534366+00:00",
+  "generatedAt": "2026-09-03T15:57:07.345718+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:57:07.345718+00:00",
   "madden27UpdatedAt": "2026-09-03T03:37:15.373685+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "San Francisco 49ers",
@@ -832,6 +832,98 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Christian Kirk",
+      "jersey": "3",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Austen Pleasants",
+      "jersey": "62",
+      "position": "OT"
+    },
+    {
+      "status": "IR",
+      "player": "Nate Hobbs",
+      "jersey": "22",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Nick Martin",
+      "jersey": "45",
+      "position": "LB"
+    },
+    {
+      "status": "IR",
+      "player": "Mikail Kamara",
+      "jersey": "59",
+      "position": "DE"
+    },
+    {
+      "status": "IR",
+      "player": "Darrick Forrest",
+      "jersey": "29",
+      "position": "S"
+    },
+    {
+      "status": "IR",
+      "player": "K.J. Henry",
+      "jersey": "50",
+      "position": "DE"
+    },
+    {
+      "status": "IR",
+      "player": "Victor Dimukeje",
+      "jersey": "96",
+      "position": "DE"
+    },
+    {
+      "status": "IR",
+      "player": "Nick Zakelj",
+      "jersey": "63",
+      "position": "OG"
+    },
+    {
+      "status": "IR",
+      "player": "Brett Toth",
+      "jersey": "78",
+      "position": "OG"
+    },
+    {
+      "status": "IR",
+      "player": "Ricky Pearsall",
+      "jersey": "1",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Andrew Farmer II",
+      "jersey": "50",
+      "position": "DE"
+    },
+    {
+      "status": "PUP",
+      "player": "Mykel Williams",
+      "jersey": "98",
+      "position": "DE"
+    },
+    {
+      "status": "PUP",
+      "player": "Isaac Guerendo",
+      "jersey": "31",
+      "position": "RB"
+    },
+    {
+      "status": "LEFT",
+      "player": "Brandon Aiyuk",
+      "jersey": "11",
+      "position": "WR"
     }
   ]
 }

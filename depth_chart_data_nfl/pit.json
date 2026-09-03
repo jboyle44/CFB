@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:21.587538+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:21.587538+00:00",
+  "generatedAt": "2026-09-03T15:56:30.276036+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:30.276036+00:00",
   "madden27UpdatedAt": "2026-09-03T03:37:14.137914+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Pittsburgh Steelers",
@@ -860,6 +860,44 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "DeShon Elliott",
+      "jersey": "25",
+      "position": "S"
+    },
+    {
+      "status": "IR",
+      "player": "Jack Driscoll",
+      "jersey": "68",
+      "position": "OT"
+    },
+    {
+      "status": "IR",
+      "player": "Daequan Hardy",
+      "jersey": "31",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Cole Burgess",
+      "jersey": "85",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Logan Lee",
+      "jersey": "91",
+      "position": "DT"
+    },
+    {
+      "status": "PUP",
+      "player": "Donte Kent",
+      "jersey": "34",
+      "position": "CB"
     }
   ]
 }

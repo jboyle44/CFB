@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:36.291152+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:36.291152+00:00",
+  "generatedAt": "2026-09-03T15:56:43.974571+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:43.974571+00:00",
   "madden27UpdatedAt": "2026-09-03T03:36:58.956008+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Jacksonville Jaguars",
@@ -832,6 +832,62 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Patrick Mekari",
+      "jersey": "65",
+      "position": "OG"
+    },
+    {
+      "status": "IR",
+      "player": "Zach Durfee",
+      "jersey": "58",
+      "position": "DE"
+    },
+    {
+      "status": "IR",
+      "player": "Keith Taylor",
+      "jersey": "32",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Garrett DiGiorgio",
+      "jersey": "74",
+      "position": "OG"
+    },
+    {
+      "status": "IR",
+      "player": "Jared Bartlett",
+      "jersey": "45",
+      "position": "LB"
+    },
+    {
+      "status": "IR",
+      "player": "Parker Hughes",
+      "jersey": "53",
+      "position": "LB"
+    },
+    {
+      "status": "IR",
+      "player": "Sam Mustipher",
+      "jersey": "69",
+      "position": "C"
+    },
+    {
+      "status": "IR",
+      "player": "Carter Bradley",
+      "jersey": "10",
+      "position": "QB"
+    },
+    {
+      "status": "IR",
+      "player": "Keivie Rose",
+      "jersey": "97",
+      "position": "DT"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:59.443843+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:59.443843+00:00",
+  "generatedAt": "2026-09-03T15:57:05.412164+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:57:05.412164+00:00",
   "madden27UpdatedAt": "2026-09-03T03:37:04.055617+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Los Angeles Rams",
@@ -832,6 +832,56 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Keagen Trost",
+      "jersey": "79",
+      "position": "OT"
+    },
+    {
+      "status": "IR",
+      "player": "Justin Dedich",
+      "jersey": "67",
+      "position": "OG"
+    },
+    {
+      "status": "IR",
+      "player": "Zech McPhearson",
+      "jersey": "41",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Daniel Rickert",
+      "jersey": "40",
+      "position": "OLB"
+    },
+    {
+      "status": "IR",
+      "player": "Matthew Caldwell",
+      "jersey": "16",
+      "position": "QB"
+    },
+    {
+      "status": "IR",
+      "player": "Eddie Walls III",
+      "jersey": "51",
+      "position": "OLB"
+    },
+    {
+      "status": "IR",
+      "player": "Keir Thomas II",
+      "jersey": "11",
+      "position": "OLB"
+    },
+    {
+      "status": "IR",
+      "player": "Alex Johnson",
+      "jersey": "36",
+      "position": "CB"
     }
   ]
 }

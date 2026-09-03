@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:19.502756+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:19.502756+00:00",
+  "generatedAt": "2026-09-03T15:56:28.335562+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:28.335562+00:00",
   "madden27UpdatedAt": "2026-09-03T03:36:48.964492+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Cleveland Browns",
@@ -860,6 +860,74 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Dillon Gabriel",
+      "jersey": "6",
+      "position": "QB"
+    },
+    {
+      "status": "IR",
+      "player": "Kalia Davis",
+      "jersey": "93",
+      "position": "DT"
+    },
+    {
+      "status": "IR",
+      "player": "Kendrick Green",
+      "jersey": "53",
+      "position": "OG"
+    },
+    {
+      "status": "IR",
+      "player": "Damarri Mathis",
+      "jersey": "37",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Alex Wright",
+      "jersey": "91",
+      "position": "DE"
+    },
+    {
+      "status": "IR",
+      "player": "Edefuan Ulofoshio",
+      "jersey": "54",
+      "position": "LB"
+    },
+    {
+      "status": "IR",
+      "player": "Elijah Chatman",
+      "jersey": "62",
+      "position": "DT"
+    },
+    {
+      "status": "IR",
+      "player": "Travis Bell",
+      "jersey": "66",
+      "position": "DT"
+    },
+    {
+      "status": "IR",
+      "player": "Jamari Thrash",
+      "jersey": "80",
+      "position": "WR"
+    },
+    {
+      "status": "PUP",
+      "player": "Jeremiah Owusu-Koramoah",
+      "jersey": "6",
+      "position": "LB"
+    },
+    {
+      "status": "NFI",
+      "player": "Joe Royer",
+      "jersey": "18",
+      "position": "TE"
     }
   ]
 }

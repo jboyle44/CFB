@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:53.195675+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:53.195675+00:00",
+  "generatedAt": "2026-09-03T15:56:59.626605+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:59.626605+00:00",
   "madden27UpdatedAt": "2026-09-03T03:37:09.106200+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New Orleans Saints",
@@ -818,6 +818,92 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Jordyn Tyson",
+      "jersey": "0",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Jaylan Ford",
+      "jersey": "53",
+      "position": "ILB"
+    },
+    {
+      "status": "IR",
+      "player": "Lorenzo Styles Jr.",
+      "jersey": "36",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Bryan Bresee",
+      "jersey": "90",
+      "position": "DE"
+    },
+    {
+      "status": "IR",
+      "player": "Rejzohn Wright",
+      "jersey": "25",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Dillon Radunz",
+      "jersey": "77",
+      "position": "OG"
+    },
+    {
+      "status": "IR",
+      "player": "Moliki Matavao",
+      "jersey": "80",
+      "position": "TE"
+    },
+    {
+      "status": "IR",
+      "player": "David Long Jr.",
+      "jersey": "45",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Devin Neal",
+      "jersey": "24",
+      "position": "RB"
+    },
+    {
+      "status": "IR",
+      "player": "Ty Chandler",
+      "jersey": "32",
+      "position": "RB"
+    },
+    {
+      "status": "IR",
+      "player": "Michael Heldman",
+      "jersey": "63",
+      "position": "OLB"
+    },
+    {
+      "status": "PUP",
+      "player": "Mason Tipton",
+      "jersey": "15",
+      "position": "WR"
+    },
+    {
+      "status": "PUP",
+      "player": "Nick Saldiveri",
+      "jersey": "64",
+      "position": "OG"
+    },
+    {
+      "status": "SUS",
+      "player": "Brock Rechsteiner",
+      "jersey": "89",
+      "position": "WR"
     }
   ]
 }

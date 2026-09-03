@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:34.208402+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:34.208402+00:00",
+  "generatedAt": "2026-09-03T15:56:42.051266+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:42.051266+00:00",
   "madden27UpdatedAt": "2026-09-03T03:36:57.686091+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Indianapolis Colts",
@@ -832,6 +832,44 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Will Mallory",
+      "jersey": "86",
+      "position": "TE"
+    },
+    {
+      "status": "IR",
+      "player": "Coleman Owen",
+      "jersey": "9",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "D.J. Montgomery",
+      "jersey": "2",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Cameron Mitchell",
+      "jersey": "43",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Carson Towt",
+      "jersey": "45",
+      "position": "TE"
+    },
+    {
+      "status": "SUS",
+      "player": "Cam Taylor-Britt",
+      "jersey": "26",
+      "position": "CB"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:06.784661+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:06.784661+00:00",
+  "generatedAt": "2026-09-03T15:56:16.398759+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:16.398759+00:00",
   "madden27UpdatedAt": "2026-09-03T03:36:43.762602+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Buffalo Bills",
@@ -874,6 +874,38 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Zane Durant",
+      "jersey": "92",
+      "position": "DT"
+    },
+    {
+      "status": "IR",
+      "player": "Demetrius Flannigan-Fowles",
+      "jersey": "50",
+      "position": "ILB"
+    },
+    {
+      "status": "PUP",
+      "player": "Tyrell Shavers",
+      "jersey": "14",
+      "position": "WR"
+    },
+    {
+      "status": "NFI",
+      "player": "Dorian Strong",
+      "jersey": "43",
+      "position": "CB"
+    },
+    {
+      "status": "SUS",
+      "player": "Phidarian Mathis",
+      "jersey": "72",
+      "position": "DT"
     }
   ]
 }

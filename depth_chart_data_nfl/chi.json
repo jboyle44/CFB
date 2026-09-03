@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:23.710215+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:23.710215+00:00",
+  "generatedAt": "2026-09-03T15:56:32.246136+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:32.246136+00:00",
   "madden27UpdatedAt": "2026-09-03T03:36:46.510001+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Chicago Bears",
@@ -860,6 +860,98 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Coby Bryant",
+      "jersey": "2",
+      "position": "S"
+    },
+    {
+      "status": "IR",
+      "player": "Hayden Large",
+      "jersey": "43",
+      "position": "TE"
+    },
+    {
+      "status": "IR",
+      "player": "Nikola Kalinic",
+      "jersey": "86",
+      "position": "TE"
+    },
+    {
+      "status": "IR",
+      "player": "Nephi Sewell",
+      "jersey": "45",
+      "position": "LB"
+    },
+    {
+      "status": "IR",
+      "player": "Tony Fields II",
+      "jersey": "43",
+      "position": "LB"
+    },
+    {
+      "status": "IR",
+      "player": "Ray-Ray McCloud III",
+      "jersey": "26",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Brittain Brown",
+      "jersey": "38",
+      "position": "RB"
+    },
+    {
+      "status": "IR",
+      "player": "Dallis Flowers",
+      "jersey": "37",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Beanie Bishop Jr.",
+      "jersey": "25",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Dontae Manning",
+      "jersey": "27",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Ruben Hyppolite II",
+      "jersey": "47",
+      "position": "LB"
+    },
+    {
+      "status": "IR",
+      "player": "Jonathan Garvin",
+      "jersey": "52",
+      "position": "DE"
+    },
+    {
+      "status": "PUP",
+      "player": "Kyler Gordon",
+      "jersey": "6",
+      "position": "CB"
+    },
+    {
+      "status": "PUP",
+      "player": "Shemar Turner",
+      "jersey": "95",
+      "position": "DE"
+    },
+    {
+      "status": "PUP",
+      "player": "Noah Sewell",
+      "jersey": "44",
+      "position": "LB"
     }
   ]
 }

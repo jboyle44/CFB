@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:00.403686+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:00.403686+00:00",
+  "generatedAt": "2026-09-03T15:56:10.484299+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:10.484299+00:00",
   "madden27UpdatedAt": "2026-09-03T03:37:10.350276+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Giants",
@@ -804,6 +804,50 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Korie Black",
+      "jersey": "38",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Roy Robertson-Harris",
+      "jersey": "95",
+      "position": "DE"
+    },
+    {
+      "status": "IR",
+      "player": "Thaddeus Dixon",
+      "jersey": "39",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Gunner Olszewski",
+      "jersey": "80",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Rico Payton",
+      "jersey": "36",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Jarrick Bernard-Converse",
+      "jersey": "35",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Calvin Austin III",
+      "jersey": "82",
+      "position": "WR"
     }
   ]
 }

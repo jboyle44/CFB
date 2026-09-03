@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:08.965911+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:08.965911+00:00",
+  "generatedAt": "2026-09-03T15:56:18.500766+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:18.500766+00:00",
   "madden27UpdatedAt": "2026-09-03T03:37:05.311545+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Miami Dolphins",
@@ -846,6 +846,56 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Kenneth Grant",
+      "jersey": "78",
+      "position": "DT"
+    },
+    {
+      "status": "IR",
+      "player": "Trey Moore",
+      "jersey": "17",
+      "position": "LB"
+    },
+    {
+      "status": "IR",
+      "player": "Carter Warren",
+      "jersey": "77",
+      "position": "OT"
+    },
+    {
+      "status": "IR",
+      "player": "Rene Konga",
+      "jersey": "95",
+      "position": "DT"
+    },
+    {
+      "status": "IR",
+      "player": "Cole Turner",
+      "jersey": "87",
+      "position": "TE"
+    },
+    {
+      "status": "IR",
+      "player": "Ben Sims",
+      "jersey": "89",
+      "position": "TE"
+    },
+    {
+      "status": "PUP",
+      "player": "Storm Duck",
+      "jersey": "29",
+      "position": "CB"
+    },
+    {
+      "status": "PUP",
+      "player": "Darrell Baker Jr.",
+      "jersey": "22",
+      "position": "CB"
     }
   ]
 }

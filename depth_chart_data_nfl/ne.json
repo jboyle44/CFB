@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:11.117674+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:11.117674+00:00",
+  "generatedAt": "2026-09-03T15:56:20.531192+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:20.531192+00:00",
   "madden27UpdatedAt": "2026-09-03T03:37:07.820127+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New England Patriots",
@@ -846,6 +846,62 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Marcus Bryant",
+      "jersey": "52",
+      "position": "OT"
+    },
+    {
+      "status": "IR",
+      "player": "Bryce Baringer",
+      "jersey": "17",
+      "position": "PT"
+    },
+    {
+      "status": "IR",
+      "player": "Khalil Jacobs",
+      "jersey": "59",
+      "position": "ILB"
+    },
+    {
+      "status": "IR",
+      "player": "Jeremiah Webb",
+      "jersey": "29",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Myles Montgomery",
+      "jersey": "39",
+      "position": "RB"
+    },
+    {
+      "status": "IR",
+      "player": "Julian Hill",
+      "jersey": "80",
+      "position": "TE"
+    },
+    {
+      "status": "IR",
+      "player": "Isaiah Iton",
+      "jersey": "62",
+      "position": "DT"
+    },
+    {
+      "status": "PUP",
+      "player": "Harold Landry Iii",
+      "jersey": "2",
+      "position": "OLB"
+    },
+    {
+      "status": "NFI",
+      "player": "Brenden Schooler",
+      "jersey": "41",
+      "position": "S"
     }
   ]
 }

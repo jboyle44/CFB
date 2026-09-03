@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:25.800602+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:25.800602+00:00",
+  "generatedAt": "2026-09-03T15:56:34.210158+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:34.210158+00:00",
   "madden27UpdatedAt": "2026-09-03T03:36:54.002726+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Detroit Lions",
@@ -776,6 +776,62 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Cade Mays",
+      "jersey": "64",
+      "position": "C"
+    },
+    {
+      "status": "IR",
+      "player": "Isiah Pacheco",
+      "jersey": "10",
+      "position": "RB"
+    },
+    {
+      "status": "IR",
+      "player": "Damone Clark",
+      "jersey": "11",
+      "position": "LB"
+    },
+    {
+      "status": "IR",
+      "player": "Payton Turner",
+      "jersey": "92",
+      "position": "DE"
+    },
+    {
+      "status": "IR",
+      "player": "Michael Niese",
+      "jersey": "62",
+      "position": "C"
+    },
+    {
+      "status": "IR",
+      "player": "Kendrick Law",
+      "jersey": "88",
+      "position": "WR"
+    },
+    {
+      "status": "PUP",
+      "player": "Brian Branch",
+      "jersey": "32",
+      "position": "S"
+    },
+    {
+      "status": "PUP",
+      "player": "Kerby Joseph",
+      "jersey": "31",
+      "position": "S"
+    },
+    {
+      "status": "NFI",
+      "player": "Giovanni Manu",
+      "jersey": "59",
+      "position": "OT"
     }
   ]
 }

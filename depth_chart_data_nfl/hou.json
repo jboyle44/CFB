@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:32.117958+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:32.117958+00:00",
+  "generatedAt": "2026-09-03T15:56:40.038658+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:40.038658+00:00",
   "madden27UpdatedAt": "2026-09-03T03:36:56.459994+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Houston Texans",
@@ -860,6 +860,86 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Tank Dell",
+      "jersey": "1",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Ja'Marcus Ingram",
+      "jersey": "20",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Braden Smith",
+      "jersey": "71",
+      "position": "OT"
+    },
+    {
+      "status": "IR",
+      "player": "Sam Hagen",
+      "jersey": "76",
+      "position": "OT"
+    },
+    {
+      "status": "IR",
+      "player": "K.C. Ossai",
+      "jersey": "52",
+      "position": "LB"
+    },
+    {
+      "status": "IR",
+      "player": "Dylan Horton",
+      "jersey": "92",
+      "position": "DE"
+    },
+    {
+      "status": "IR",
+      "player": "Ali Gaye",
+      "jersey": "95",
+      "position": "DE"
+    },
+    {
+      "status": "IR",
+      "player": "Solomon Byrd",
+      "jersey": "50",
+      "position": "DE"
+    },
+    {
+      "status": "IR",
+      "player": "Kyonte Hamilton",
+      "jersey": "58",
+      "position": "DT"
+    },
+    {
+      "status": "IR",
+      "player": "Graham Mertz",
+      "jersey": "18",
+      "position": "QB"
+    },
+    {
+      "status": "IR",
+      "player": "Jayden Higgins",
+      "jersey": "81",
+      "position": "WR"
+    },
+    {
+      "status": "PUP",
+      "player": "E.J. Speed",
+      "jersey": "45",
+      "position": "LB"
+    },
+    {
+      "status": "PUP",
+      "player": "M.J. Stewart",
+      "jersey": "29",
+      "position": "S"
     }
   ]
 }

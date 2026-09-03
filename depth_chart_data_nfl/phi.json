@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:02.526296+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:02.526296+00:00",
+  "generatedAt": "2026-09-03T15:56:12.504019+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:12.504019+00:00",
   "madden27UpdatedAt": "2026-09-03T03:37:12.906980+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Philadelphia Eagles",
@@ -846,6 +846,38 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "NFI",
+      "player": "Tucker Large",
+      "jersey": "37",
+      "position": "S"
+    },
+    {
+      "status": "IR",
+      "player": "Jakorian Bennett",
+      "jersey": "23",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Grant Calcaterra",
+      "jersey": "81",
+      "position": "TE"
+    },
+    {
+      "status": "IR",
+      "player": "Johnny Wilson",
+      "jersey": "89",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Andre' Sam",
+      "jersey": "32",
+      "position": "S"
     }
   ]
 }

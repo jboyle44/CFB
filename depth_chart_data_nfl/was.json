@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:04.701304+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:04.701304+00:00",
+  "generatedAt": "2026-09-03T15:56:14.453685+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:14.453685+00:00",
   "madden27UpdatedAt": "2026-09-03T03:37:20.372397+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Washington Commanders",
@@ -874,6 +874,80 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Laremy Tunsil",
+      "jersey": "78",
+      "position": "OT"
+    },
+    {
+      "status": "IR",
+      "player": "Jer'Zhan Newton",
+      "jersey": "95",
+      "position": "DT"
+    },
+    {
+      "status": "IR",
+      "player": "Trey Amos",
+      "jersey": "23",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Jeremy Mcnichols",
+      "jersey": "26",
+      "position": "RB"
+    },
+    {
+      "status": "IR",
+      "player": "Malik Spencer",
+      "jersey": "36",
+      "position": "S"
+    },
+    {
+      "status": "IR",
+      "player": "Drake Jackson",
+      "jersey": "93",
+      "position": "OLB"
+    },
+    {
+      "status": "IR",
+      "player": "T.J. Maguranyanga",
+      "jersey": "59",
+      "position": "OLB"
+    },
+    {
+      "status": "IR",
+      "player": "Quentin Moore",
+      "jersey": "40",
+      "position": "TE"
+    },
+    {
+      "status": "IR",
+      "player": "Curtis Jacobs",
+      "jersey": "57",
+      "position": "ILB"
+    },
+    {
+      "status": "IR",
+      "player": "Jacoby Jones",
+      "jersey": "84",
+      "position": "WR"
+    },
+    {
+      "status": "PUP",
+      "player": "Deatrich Wise Jr.",
+      "jersey": "91",
+      "position": "DE"
+    },
+    {
+      "status": "SUS",
+      "player": "Dorance Armstrong",
+      "jersey": "92",
+      "position": "OLB"
     }
   ]
 }

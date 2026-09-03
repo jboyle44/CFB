@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:13.204887+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:13.204887+00:00",
+  "generatedAt": "2026-09-03T15:56:22.504829+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:22.504829+00:00",
   "madden27UpdatedAt": "2026-09-03T03:37:11.552765+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Jets",
@@ -860,6 +860,68 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Anez Cooper",
+      "jersey": "72",
+      "position": "OG"
+    },
+    {
+      "status": "IR",
+      "player": "Vj Payne",
+      "jersey": "34",
+      "position": "S"
+    },
+    {
+      "status": "IR",
+      "player": "Chip Trayanum",
+      "jersey": "40",
+      "position": "RB"
+    },
+    {
+      "status": "IR",
+      "player": "Mykal Walker",
+      "jersey": "43",
+      "position": "ILB"
+    },
+    {
+      "status": "IR",
+      "player": "Tre Brown",
+      "jersey": "30",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Kingsley Jonathan",
+      "jersey": "57",
+      "position": "OLB"
+    },
+    {
+      "status": "IR",
+      "player": "Dt Sheffield",
+      "jersey": "38",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Dominic Richardson",
+      "jersey": "35",
+      "position": "RB"
+    },
+    {
+      "status": "IR",
+      "player": "Connor Hulstein",
+      "jersey": "49",
+      "position": "TE"
+    },
+    {
+      "status": "PUP",
+      "player": "Tyler Baron",
+      "jersey": "94",
+      "position": "OLB"
     }
   ]
 }

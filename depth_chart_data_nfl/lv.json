@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:44.778403+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:44.778403+00:00",
+  "generatedAt": "2026-09-03T15:56:51.812959+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:51.812959+00:00",
   "madden27UpdatedAt": "2026-09-03T03:37:01.515886+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Las Vegas Raiders",
@@ -860,6 +860,68 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Carter Runyon",
+      "jersey": "84",
+      "position": "TE"
+    },
+    {
+      "status": "IR",
+      "player": "Dont'e Thornton Jr.",
+      "jersey": "10",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Keyron Crawford",
+      "jersey": "42",
+      "position": "DE"
+    },
+    {
+      "status": "IR",
+      "player": "Brennan Jackson",
+      "jersey": "54",
+      "position": "DE"
+    },
+    {
+      "status": "IR",
+      "player": "Justin Pickett",
+      "jersey": "77",
+      "position": "OG"
+    },
+    {
+      "status": "IR",
+      "player": "Chris Collier",
+      "jersey": "33",
+      "position": "RB"
+    },
+    {
+      "status": "IR",
+      "player": "Chigozie Anusiem",
+      "jersey": "29",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Justin Shorter",
+      "jersey": "88",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Corey Rucker",
+      "jersey": "82",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Chase Roberts",
+      "jersey": "86",
+      "position": "WR"
     }
   ]
 }

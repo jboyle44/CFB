@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:57.339783+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:57.339783+00:00",
+  "generatedAt": "2026-09-03T15:57:03.500609+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:57:03.500609+00:00",
   "madden27UpdatedAt": "2026-09-03T03:36:39.833985+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Arizona Cardinals",
@@ -846,6 +846,56 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "James Conner",
+      "jersey": "6",
+      "position": "RB"
+    },
+    {
+      "status": "IR",
+      "player": "Zach Carter",
+      "jersey": "90",
+      "position": "DE"
+    },
+    {
+      "status": "IR",
+      "player": "Kaleb Proctor",
+      "jersey": "94",
+      "position": "DE"
+    },
+    {
+      "status": "IR",
+      "player": "Joey Blount",
+      "jersey": "32",
+      "position": "S"
+    },
+    {
+      "status": "IR",
+      "player": "Chase Bisontis",
+      "jersey": "57",
+      "position": "OG"
+    },
+    {
+      "status": "IR",
+      "player": "Jameson Geers",
+      "jersey": "46",
+      "position": "TE"
+    },
+    {
+      "status": "IR",
+      "player": "Trey Benson",
+      "jersey": "33",
+      "position": "RB"
+    },
+    {
+      "status": "PUP",
+      "player": "Tip Reiman",
+      "jersey": "87",
+      "position": "TE"
     }
   ]
 }

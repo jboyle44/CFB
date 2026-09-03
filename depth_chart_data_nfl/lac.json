@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:46.857024+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:46.857024+00:00",
+  "generatedAt": "2026-09-03T15:56:53.762519+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:53.762519+00:00",
   "madden27UpdatedAt": "2026-09-03T03:37:02.802522+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Los Angeles Chargers",
@@ -888,6 +888,56 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Branson Taylor",
+      "jersey": "71",
+      "position": "OG"
+    },
+    {
+      "status": "IR",
+      "player": "Scott Matlock",
+      "jersey": "44",
+      "position": "TE"
+    },
+    {
+      "status": "IR",
+      "player": "Denzel Perryman",
+      "jersey": "6",
+      "position": "ILB"
+    },
+    {
+      "status": "IR",
+      "player": "Tyler Biadasz",
+      "jersey": "63",
+      "position": "C"
+    },
+    {
+      "status": "IR",
+      "player": "Sincere Brown",
+      "jersey": "38",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Dalevon Campbell",
+      "jersey": "81",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Kyle Kennard",
+      "jersey": "54",
+      "position": "OLB"
+    },
+    {
+      "status": "NFI",
+      "player": "Isaiah World",
+      "jersey": "67",
+      "position": "OT"
     }
   ]
 }

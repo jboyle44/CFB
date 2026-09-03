@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:29.941977+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:29.941977+00:00",
+  "generatedAt": "2026-09-03T15:56:38.089263+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:38.089263+00:00",
   "madden27UpdatedAt": "2026-09-03T03:37:06.572496+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Minnesota Vikings",
@@ -846,6 +846,80 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Michael Jurgens",
+      "jersey": "65",
+      "position": "C"
+    },
+    {
+      "status": "IR",
+      "player": "Taki Taimani",
+      "jersey": "94",
+      "position": "DT"
+    },
+    {
+      "status": "IR",
+      "player": "Tyreek Chappell",
+      "jersey": "28",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Dwight McGlothern Jr.",
+      "jersey": "6",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Tyler Batty",
+      "jersey": "92",
+      "position": "OLB"
+    },
+    {
+      "status": "IR",
+      "player": "Jamal Adams",
+      "jersey": "32",
+      "position": "S"
+    },
+    {
+      "status": "IR",
+      "player": "Jacob Roberts",
+      "jersey": "48",
+      "position": "ILB"
+    },
+    {
+      "status": "IR",
+      "player": "Jermar Jefferson",
+      "jersey": "17",
+      "position": "RB"
+    },
+    {
+      "status": "IR",
+      "player": "Dontae Fleming",
+      "jersey": "19",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Kenny Dyson",
+      "jersey": "54",
+      "position": "OLB"
+    },
+    {
+      "status": "IR",
+      "player": "Marcus Allen",
+      "jersey": "29",
+      "position": "CB"
+    },
+    {
+      "status": "SUS",
+      "player": "Jeshaun Jones",
+      "jersey": "82",
+      "position": "WR"
     }
   ]
 }

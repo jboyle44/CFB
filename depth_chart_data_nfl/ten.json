@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:38.367510+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:38.367510+00:00",
+  "generatedAt": "2026-09-03T15:56:45.900643+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:45.900643+00:00",
   "madden27UpdatedAt": "2026-09-03T03:37:19.142589+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Tennessee Titans",
@@ -818,6 +818,62 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Joshua Williams",
+      "jersey": "25",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Dorian Mausi",
+      "jersey": "54",
+      "position": "LB"
+    },
+    {
+      "status": "IR",
+      "player": "Tanoh Kpassagnon",
+      "jersey": "58",
+      "position": "DE"
+    },
+    {
+      "status": "IR",
+      "player": "Nazeeh Johnson",
+      "jersey": "36",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Jaylen Harrell",
+      "jersey": "92",
+      "position": "DE"
+    },
+    {
+      "status": "IR",
+      "player": "Jaren Kanak",
+      "jersey": "81",
+      "position": "TE"
+    },
+    {
+      "status": "IR",
+      "player": "Dominique Hampton",
+      "jersey": "40",
+      "position": "LB"
+    },
+    {
+      "status": "IR",
+      "player": "Milo Eifler",
+      "jersey": "45",
+      "position": "LB"
+    },
+    {
+      "status": "IR",
+      "player": "Kendell Brooks",
+      "jersey": "30",
+      "position": "S"
     }
   ]
 }

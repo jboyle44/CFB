@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:27.876554+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:27.876554+00:00",
+  "generatedAt": "2026-09-03T15:56:36.158895+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:36.158895+00:00",
   "madden27UpdatedAt": "2026-09-03T03:36:55.245423+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Green Bay Packers",
@@ -804,6 +804,74 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Savion Williams",
+      "jersey": "83",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Collin Oliver",
+      "jersey": "45",
+      "position": "OLB"
+    },
+    {
+      "status": "IR",
+      "player": "Luke Lachey",
+      "jersey": "86",
+      "position": "TE"
+    },
+    {
+      "status": "IR",
+      "player": "Johnathan Baldwin II",
+      "jersey": "37",
+      "position": "S"
+    },
+    {
+      "status": "IR",
+      "player": "Marlon Jones",
+      "jersey": "46",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Trey Dean III",
+      "jersey": "35",
+      "position": "S"
+    },
+    {
+      "status": "IR",
+      "player": "Thomas Yassmin",
+      "jersey": "84",
+      "position": "TE"
+    },
+    {
+      "status": "PUP",
+      "player": "Micah Parsons",
+      "jersey": "1",
+      "position": "OLB"
+    },
+    {
+      "status": "PUP",
+      "player": "Luke Musgrave",
+      "jersey": "88",
+      "position": "TE"
+    },
+    {
+      "status": "PUP",
+      "player": "Jordon Riley",
+      "jersey": "97",
+      "position": "DT"
+    },
+    {
+      "status": "CE",
+      "player": "Josh Jacobs",
+      "jersey": "8",
+      "position": "RB"
     }
   ]
 }

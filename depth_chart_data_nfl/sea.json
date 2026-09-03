@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:50:03.613748+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:50:03.613748+00:00",
+  "generatedAt": "2026-09-03T15:57:09.294574+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:57:09.294574+00:00",
   "madden27UpdatedAt": "2026-09-03T03:37:16.632749+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Seattle Seahawks",
@@ -846,6 +846,68 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Irv Charles",
+      "jersey": "85",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Robbie Ouzts",
+      "jersey": "40",
+      "position": "FB"
+    },
+    {
+      "status": "IR",
+      "player": "Jake Bobo",
+      "jersey": "19",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Mason Richman",
+      "jersey": "78",
+      "position": "OG"
+    },
+    {
+      "status": "IR",
+      "player": "Bud Clark",
+      "jersey": "9",
+      "position": "S"
+    },
+    {
+      "status": "IR",
+      "player": "Amari Kight",
+      "jersey": "79",
+      "position": "OT"
+    },
+    {
+      "status": "IR",
+      "player": "Aaron Smith",
+      "jersey": "42",
+      "position": "ILB"
+    },
+    {
+      "status": "IR",
+      "player": "Power Echols",
+      "jersey": "46",
+      "position": "ILB"
+    },
+    {
+      "status": "PUP",
+      "player": "Zach Charbonnet",
+      "jersey": "26",
+      "position": "RB"
+    },
+    {
+      "status": "CE",
+      "player": "Terrion Arnold",
+      "jersey": "17",
+      "position": "CB"
     }
   ]
 }

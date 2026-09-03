@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:40.526620+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:40.526620+00:00",
+  "generatedAt": "2026-09-03T15:56:47.929508+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:47.929508+00:00",
   "madden27UpdatedAt": "2026-09-03T03:36:51.696146+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Denver Broncos",
@@ -832,6 +832,56 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Caleb Lohner",
+      "jersey": "84",
+      "position": "TE"
+    },
+    {
+      "status": "IR",
+      "player": "Frank Crum",
+      "jersey": "73",
+      "position": "OT"
+    },
+    {
+      "status": "IR",
+      "player": "Matt Henningsen",
+      "jersey": "91",
+      "position": "DE"
+    },
+    {
+      "status": "IR",
+      "player": "Michael Deiter",
+      "jersey": "67",
+      "position": "C"
+    },
+    {
+      "status": "IR",
+      "player": "Levelle Bailey",
+      "jersey": "56",
+      "position": "ILB"
+    },
+    {
+      "status": "IR",
+      "player": "Drew Sanders",
+      "jersey": "41",
+      "position": "OLB"
+    },
+    {
+      "status": "PUP",
+      "player": "Nick Gargiulo",
+      "jersey": "66",
+      "position": "OG"
+    },
+    {
+      "status": "CE",
+      "player": "Jonathon Cooper",
+      "jersey": "0",
+      "position": "OLB"
     }
   ]
 }

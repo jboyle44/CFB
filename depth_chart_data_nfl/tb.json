@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:55.268986+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:55.268986+00:00",
+  "generatedAt": "2026-09-03T15:57:01.541940+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:57:01.541940+00:00",
   "madden27UpdatedAt": "2026-09-03T03:37:17.848739+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Tampa Bay Buccaneers",
@@ -846,6 +846,44 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Josh Hayes",
+      "jersey": "32",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "David Sills V",
+      "jersey": "80",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Deshawn McKnight",
+      "jersey": "73",
+      "position": "DE"
+    },
+    {
+      "status": "IR",
+      "player": "Dennis Houston",
+      "jersey": "89",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Xavier Williams",
+      "jersey": "26",
+      "position": "S"
+    },
+    {
+      "status": "IR",
+      "player": "Mohamed Kamara",
+      "jersey": "59",
+      "position": "OLB"
     }
   ]
 }

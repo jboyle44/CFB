@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:17.409439+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:17.409439+00:00",
+  "generatedAt": "2026-09-03T15:56:26.350962+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:26.350962+00:00",
   "madden27UpdatedAt": "2026-09-03T03:36:47.752800+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Cincinnati Bengals",
@@ -860,6 +860,20 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Brian Parker II",
+      "jersey": "62",
+      "position": "OG"
+    },
+    {
+      "status": "IR",
+      "player": "Ja'Sir Taylor",
+      "jersey": "26",
+      "position": "CB"
     }
   ]
 }

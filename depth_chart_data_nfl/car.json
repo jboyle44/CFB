@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:51.112863+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:51.112863+00:00",
+  "generatedAt": "2026-09-03T15:56:57.668231+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:57.668231+00:00",
   "madden27UpdatedAt": "2026-09-03T03:36:45.267648+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Carolina Panthers",
@@ -832,6 +832,74 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Trevor Etienne",
+      "jersey": "23",
+      "position": "RB"
+    },
+    {
+      "status": "IR",
+      "player": "Bam Martin-Scott",
+      "jersey": "54",
+      "position": "ILB"
+    },
+    {
+      "status": "IR",
+      "player": "Brady Christensen",
+      "jersey": "70",
+      "position": "OG"
+    },
+    {
+      "status": "IR",
+      "player": "Nic Scourton",
+      "jersey": "11",
+      "position": "OLB"
+    },
+    {
+      "status": "IR",
+      "player": "Chris Brazzell II",
+      "jersey": "19",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Malick Meiga",
+      "jersey": "35",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Ryan Hayes",
+      "jersey": "66",
+      "position": "OT"
+    },
+    {
+      "status": "IR",
+      "player": "Bryce Pierre",
+      "jersey": "45",
+      "position": "TE"
+    },
+    {
+      "status": "PUP",
+      "player": "Tershawn Wharton",
+      "jersey": "98",
+      "position": "DE"
+    },
+    {
+      "status": "NFI",
+      "player": "Taylor Moton",
+      "jersey": "72",
+      "position": "OT"
+    },
+    {
+      "status": "NFI",
+      "player": "Ikem Ekwonu",
+      "jersey": "79",
+      "position": "OT"
     }
   ]
 }

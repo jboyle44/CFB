@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:15.288966+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:15.288966+00:00",
+  "generatedAt": "2026-09-03T15:56:24.422287+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:24.422287+00:00",
   "madden27UpdatedAt": "2026-09-03T03:36:42.472904+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Baltimore Ravens",
@@ -832,6 +832,38 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Adam Randall",
+      "jersey": "23",
+      "position": "RB"
+    },
+    {
+      "status": "IR",
+      "player": "Bilhal Kone",
+      "jersey": "31",
+      "position": "CB"
+    },
+    {
+      "status": "IR",
+      "player": "Skylar Thompson",
+      "jersey": "11",
+      "position": "QB"
+    },
+    {
+      "status": "IR",
+      "player": "Jahquez Robinson",
+      "jersey": "41",
+      "position": "S"
+    },
+    {
+      "status": "IR",
+      "player": "Danny Pinter",
+      "jersey": "63",
+      "position": "C"
     }
   ]
 }

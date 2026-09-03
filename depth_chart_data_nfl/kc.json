@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-03T13:49:42.642479+00:00",
-  "ourladsUpdatedAt": "2026-09-03T13:49:42.642479+00:00",
+  "generatedAt": "2026-09-03T15:56:49.881580+00:00",
+  "ourladsUpdatedAt": "2026-09-03T15:56:49.881580+00:00",
   "madden27UpdatedAt": "2026-09-03T03:37:00.198627+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Kansas City Chiefs",
@@ -860,6 +860,62 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    }
+  ],
+  "reserves": [
+    {
+      "status": "IR",
+      "player": "Jimmy Holiday",
+      "jersey": "82",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "John Michael Gyllenborg",
+      "jersey": "84",
+      "position": "TE"
+    },
+    {
+      "status": "IR",
+      "player": "Ethan Downs",
+      "jersey": "40",
+      "position": "DE"
+    },
+    {
+      "status": "IR",
+      "player": "Matt Waletzko",
+      "jersey": "73",
+      "position": "OT"
+    },
+    {
+      "status": "IR",
+      "player": "Jeff Caldwell",
+      "jersey": "8",
+      "position": "WR"
+    },
+    {
+      "status": "IR",
+      "player": "Chris Oladokun",
+      "jersey": "19",
+      "position": "QB"
+    },
+    {
+      "status": "IR",
+      "player": "C.J. Hanson",
+      "jersey": "61",
+      "position": "OG"
+    },
+    {
+      "status": "IR",
+      "player": "Ej Smith",
+      "jersey": "35",
+      "position": "RB"
+    },
+    {
+      "status": "PUP",
+      "player": "Omarr Norman-Lott",
+      "jersey": "55",
+      "position": "DT"
     }
   ]
 }
