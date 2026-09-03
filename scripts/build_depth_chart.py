@@ -120,6 +120,26 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
     previous_by_norm_name = load_previous_data(output_path)
     previous_metadata = load_previous_metadata(output_path)
 
+    # Reserves (injured/suspended) don't have a real position in Ourlads'
+    # own data for this section -- backfill it from whatever we last knew
+    # about them when they were active, if anything. A reserve entry with no
+    # backfillable position (never seen active before, e.g. a true freshman
+    # hurt before ever appearing on the depth chart) gets position "RES" so
+    # it still shows up somewhere rather than disappearing silently.
+    for r in reserves:
+        prev = previous_by_norm_name.get(normalize_name(r["player"]))
+        r["position"] = (prev.get("position") if prev and prev.get("position") else "RES")
+        r["isReserve"] = True
+        r["reserveStatus"] = r.pop("status", None)
+
+    # Merge reserves into the same list as active depth chart rows so they
+    # flow through the exact same recruiting/transfer/PFF matching pipeline
+    # below -- no separate, parallel enrichment logic to maintain.
+    for row in depth_chart:
+        row["isReserve"] = False
+        row["reserveStatus"] = None
+    depth_chart = depth_chart + reserves
+
     # Transfer portal fetch happens FIRST now, because we need each transfer's
     # origin school before we can look up their recruiting profile correctly
     # -- a transfer was never a HS recruit to their CURRENT team, so searching
@@ -309,6 +329,8 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
             "jersey": row["jersey"],
             "class": row["class"],
             "isTransfer": row["isTransfer"],
+            "isReserve": row.get("isReserve", False),
+            "reserveStatus": row.get("reserveStatus"),
             "compositeScore": None,   # HS recruiting rating
             "transferScore": None,    # transfer portal rating -- kept separate,
                                        # these are two different evaluations at
@@ -363,7 +385,6 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
         "offenseScheme": schemes.get("offense"),
         "defenseScheme": schemes.get("defense"),
         "rows": output_rows,
-        "reserves": reserves,
     }
 
     if output_path:
