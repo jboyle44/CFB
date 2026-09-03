@@ -190,7 +190,10 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
             "jersey": row["jersey"],
             "class": row["class"],
             "isTransfer": row["isTransfer"],
-            "compositeScore": None,
+            "compositeScore": None,   # HS recruiting rating
+            "transferScore": None,    # transfer portal rating -- kept separate,
+                                       # these are two different evaluations at
+                                       # two different points in the player's career
             "profileUrl": None,
             "transferRank": None,
             "transferPosRank": None,
@@ -207,15 +210,15 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
             out_row["hsNationalRank"] = recruit_match.get("ranking")
 
         if row["isTransfer"] and transfer_match:
-            if transfer_match.get("rating") is not None and out_row["compositeScore"] is None:
-                out_row["compositeScore"] = round(transfer_match["rating"] * 100)
+            if transfer_match.get("rating") is not None:
+                out_row["transferScore"] = round(transfer_match["rating"] * 100)
             out_row["transferRank"] = transfer_match.get("overallRank")
             out_row["transferPosRank"] = transfer_match.get("positionRank")
 
         # Fill any still-missing fields from last known-good data (e.g. walk-ons
         # with no CFBD recruiting profile at all).
         if prev_match:
-            for k in ("compositeScore", "profileUrl", "transferRank", "transferPosRank",
+            for k in ("compositeScore", "transferScore", "profileUrl", "transferRank", "transferPosRank",
                       "hsNationalRank", "hsPositionRank", "hsStateRank", "pffGrade"):
                 if out_row.get(k) is None:
                     out_row[k] = prev_match.get(k)
