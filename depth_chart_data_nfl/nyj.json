@@ -67,16 +67,14 @@
       "player": "Omar Cooper Jr.",
       "jersey": "83",
       "code": "26/1",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LT",
       "player": "Olu Fashanu",
       "jersey": "74",
       "code": "24/1",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LT",
@@ -155,8 +153,7 @@
       "player": "Chukwuma Okorafor",
       "jersey": "79",
       "code": "SF25",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "TE",
@@ -175,8 +172,7 @@
       "player": "Kenyon Sadiq",
       "jersey": "16",
       "code": "26/1",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "TE",
@@ -219,8 +215,7 @@
       "player": "Cade Klubnik",
       "jersey": "10",
       "code": "26/4",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RB",
@@ -323,8 +318,7 @@
       "player": "Darrell Jackson Jr.",
       "jersey": "95",
       "code": "26/4",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "DT",
@@ -343,8 +337,7 @@
       "player": "David Bailey",
       "jersey": "31",
       "code": "26/1",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LOLB",
@@ -567,8 +560,7 @@
       "player": "D'Angelo Ponds",
       "jersey": "23",
       "code": "26/2",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "PT",
@@ -599,8 +591,7 @@
       "player": "Thomas Hennessy",
       "jersey": "42",
       "code": "T/Ind",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "H",
@@ -631,72 +622,42 @@
       "player": "Isaiah Williams",
       "jersey": "18",
       "code": "P/Cin",
-      "isAcquired": true,
-      "pffGrade": 61.3,
-      "pffPositionRank": 129,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "isAcquired": true
     },
     {
       "position": "PR",
       "player": "Arian Smith",
       "jersey": "82",
       "code": "25/4",
-      "isAcquired": false,
-      "pffGrade": 48.4,
-      "pffPositionRank": 216,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Kene Nwangwu",
       "jersey": "3",
       "code": "SF24",
-      "isAcquired": false,
-      "pffGrade": 63.6,
-      "pffPositionRank": 86,
-      "pffPositionTotal": 136,
-      "pffPositionLabel": "HB",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Isaiah Williams",
       "jersey": "18",
       "code": "P/Cin",
-      "isAcquired": true,
-      "pffGrade": 61.3,
-      "pffPositionRank": 129,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "isAcquired": true
     },
     {
       "position": "KR",
       "player": "Isaiah Davis",
       "jersey": "32",
       "code": "24/5",
-      "isAcquired": false,
-      "pffGrade": 69.0,
-      "pffPositionRank": 56,
-      "pffPositionTotal": 136,
-      "pffPositionLabel": "HB",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Arian Smith",
       "jersey": "82",
       "code": "25/4",
-      "isAcquired": false,
-      "pffGrade": 48.4,
-      "pffPositionRank": 216,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     }
   ]
 }
