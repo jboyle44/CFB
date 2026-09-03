@@ -114,7 +114,7 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
     team_name = team["display_name"]
 
     print(f"Scraping Ourlads depth chart for {team_name}...", file=sys.stderr)
-    depth_chart, schemes = scrape_ourlads_depth_chart(team["ourlads_slug"], team["ourlads_id"])
+    depth_chart, schemes, reserves = scrape_ourlads_depth_chart(team["ourlads_slug"], team["ourlads_id"])
     print(f"  {len(depth_chart)} depth chart rows", file=sys.stderr)
 
     previous_by_norm_name = load_previous_data(output_path)
@@ -363,6 +363,7 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
         "offenseScheme": schemes.get("offense"),
         "defenseScheme": schemes.get("defense"),
         "rows": output_rows,
+        "reserves": reserves,
     }
 
     if output_path:
