@@ -314,7 +314,8 @@
       "pffPositionLabel": "T",
       "pffTied": true,
       "cfb27Rating": 90,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "draftRank": 94
     },
     {
       "position": "LG",
@@ -578,7 +579,8 @@
       "pffPositionLabel": "QB",
       "pffTied": false,
       "cfb27Rating": 92,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 10
     },
     {
       "position": "QB",
@@ -930,7 +932,8 @@
       "pffPositionLabel": "ED",
       "pffTied": true,
       "cfb27Rating": 88,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 72
     },
     {
       "position": "RDE",
@@ -1062,7 +1065,8 @@
       "pffPositionLabel": "LB",
       "pffTied": false,
       "cfb27Rating": 90,
-      "cfb27Dev": "Elite"
+      "cfb27Dev": "Elite",
+      "draftRank": 41
     },
     {
       "position": "MLB",
@@ -1106,7 +1110,8 @@
       "pffPositionLabel": "CB",
       "pffTied": true,
       "cfb27Rating": 89,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "draftRank": 114
     },
     {
       "position": "FCB",
@@ -1238,7 +1243,8 @@
       "pffPositionLabel": "CB",
       "pffTied": false,
       "cfb27Rating": 97,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 5
     },
     {
       "position": "BCB",
@@ -1282,7 +1288,8 @@
       "pffPositionLabel": "CB",
       "pffTied": false,
       "cfb27Rating": 88,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 118
     },
     {
       "position": "NB",
@@ -1717,5 +1724,6 @@
       "class": "FR",
       "isTransfer": false
     }
-  ]
+  ],
+  "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00"
 }

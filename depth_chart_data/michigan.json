@@ -294,7 +294,8 @@
       "pffPositionLabel": "T",
       "pffTied": true,
       "cfb27Rating": 82,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 120
     },
     {
       "position": "LT",
@@ -1278,7 +1279,8 @@
       "pffPositionLabel": "ED",
       "pffTied": false,
       "cfb27Rating": 92,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 92
     },
     {
       "position": "RDE",
@@ -1782,7 +1784,8 @@
       "pffPositionLabel": "CB",
       "pffTied": false,
       "cfb27Rating": 91,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 86
     },
     {
       "position": "RCB",
@@ -2380,5 +2383,6 @@
       "cfb27Rating": 82,
       "cfb27Dev": "Star"
     }
-  ]
+  ],
+  "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00"
 }

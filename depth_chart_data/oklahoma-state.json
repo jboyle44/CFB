@@ -94,7 +94,8 @@
       "pffPositionLabel": "WR",
       "pffTied": false,
       "cfb27Rating": 90,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "draftRank": 70
     },
     {
       "position": "WR-Z",
@@ -534,7 +535,8 @@
       "pffPositionLabel": "QB",
       "pffTied": false,
       "cfb27Rating": 89,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 33
     },
     {
       "position": "QB",
@@ -1747,5 +1749,6 @@
       "cfb27Dev": "Impact"
     }
   ],
-  "reserves": []
+  "reserves": [],
+  "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00"
 }

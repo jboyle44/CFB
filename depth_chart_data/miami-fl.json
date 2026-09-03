@@ -534,7 +534,8 @@
       "pffPositionLabel": "QB",
       "pffTied": false,
       "cfb27Rating": 91,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 22
     },
     {
       "position": "QB",
@@ -600,7 +601,8 @@
       "pffPositionLabel": "HB",
       "pffTied": true,
       "cfb27Rating": 93,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 82
     },
     {
       "position": "RB",
@@ -688,7 +690,8 @@
       "pffPositionLabel": "ED",
       "pffTied": false,
       "cfb27Rating": 89,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 56
     },
     {
       "position": "LDE",
@@ -732,7 +735,8 @@
       "pffPositionLabel": "DI",
       "pffTied": false,
       "cfb27Rating": 87,
-      "cfb27Dev": "Elite"
+      "cfb27Dev": "Elite",
+      "draftRank": 25
     },
     {
       "position": "NT",
@@ -776,7 +780,8 @@
       "pffPositionLabel": "DI",
       "pffTied": true,
       "cfb27Rating": 91,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "draftRank": 29
     },
     {
       "position": "DT",
@@ -1593,5 +1598,6 @@
       "cfb27Dev": "Star"
     }
   ],
-  "reserves": []
+  "reserves": [],
+  "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00"
 }

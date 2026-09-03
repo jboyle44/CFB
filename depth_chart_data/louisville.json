@@ -600,7 +600,8 @@
       "pffPositionLabel": "HB",
       "pffTied": true,
       "cfb27Rating": 92,
-      "cfb27Dev": "Elite"
+      "cfb27Dev": "Elite",
+      "draftRank": 76
     },
     {
       "position": "RB",
@@ -930,7 +931,8 @@
       "pffPositionLabel": "ED",
       "pffTied": true,
       "cfb27Rating": 92,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "draftRank": 63
     },
     {
       "position": "LEO",
@@ -1813,5 +1815,6 @@
       "class": "RS JR",
       "isTransfer": true
     }
-  ]
+  ],
+  "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00"
 }

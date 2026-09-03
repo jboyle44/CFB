@@ -754,7 +754,8 @@
       "pffPositionLabel": "HB",
       "pffTied": false,
       "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Dev": null,
+      "draftRank": 110
     },
     {
       "position": "RB",
@@ -1901,5 +1902,6 @@
       "cfb27Dev": null
     }
   ],
-  "reserves": []
+  "reserves": [],
+  "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00"
 }

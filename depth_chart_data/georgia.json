@@ -798,7 +798,8 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 90,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 73
     },
     {
       "position": "RB",
@@ -1194,7 +1195,8 @@
       "pffPositionLabel": "LB",
       "pffTied": false,
       "cfb27Rating": 88,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 49
     },
     {
       "position": "MONEY",
@@ -1260,7 +1262,8 @@
       "pffPositionLabel": "CB",
       "pffTied": true,
       "cfb27Rating": 90,
-      "cfb27Dev": "Elite"
+      "cfb27Dev": "Elite",
+      "draftRank": 12
     },
     {
       "position": "LCB",
@@ -1392,7 +1395,8 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 95,
-      "cfb27Dev": "Elite"
+      "cfb27Dev": "Elite",
+      "draftRank": 13
     },
     {
       "position": "FS",
@@ -1942,7 +1946,8 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 95,
-      "cfb27Dev": "Elite"
+      "cfb27Dev": "Elite",
+      "draftRank": 13
     },
     {
       "position": "KR",
@@ -1964,7 +1969,8 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 90,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 73
     },
     {
       "position": "KR",
@@ -1989,5 +1995,6 @@
       "cfb27Dev": "Impact"
     }
   ],
-  "reserves": []
+  "reserves": [],
+  "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00"
 }

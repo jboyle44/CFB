@@ -556,7 +556,8 @@
       "pffPositionLabel": "TE",
       "pffTied": false,
       "cfb27Rating": 92,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "draftRank": 75
     },
     {
       "position": "TE",
@@ -864,7 +865,8 @@
       "pffPositionLabel": "DI",
       "pffTied": false,
       "cfb27Rating": 92,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "draftRank": 58
     },
     {
       "position": "NT",
@@ -908,7 +910,8 @@
       "pffPositionLabel": "DI",
       "pffTied": false,
       "cfb27Rating": 87,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "draftRank": 97
     },
     {
       "position": "DT",
@@ -1084,7 +1087,8 @@
       "pffPositionLabel": "LB",
       "pffTied": false,
       "cfb27Rating": 91,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "draftRank": 95
     },
     {
       "position": "MLB",
@@ -1216,7 +1220,8 @@
       "pffPositionLabel": "CB",
       "pffTied": false,
       "cfb27Rating": 93,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "draftRank": 64
     },
     {
       "position": "LCB",
@@ -1799,5 +1804,6 @@
       "class": "RS JR",
       "isTransfer": false
     }
-  ]
+  ],
+  "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00"
 }

@@ -30,7 +30,8 @@
       "pffPositionLabel": "WR",
       "pffTied": false,
       "cfb27Rating": 99,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 1
     },
     {
       "position": "WR-X",
@@ -126,7 +127,8 @@
       "pffPositionLabel": "WR",
       "pffTied": true,
       "cfb27Rating": 85,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "draftRank": 103
     },
     {
       "position": "WR-Z",
@@ -318,7 +320,8 @@
       "pffPositionLabel": "G",
       "pffTied": false,
       "cfb27Rating": 92,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 112
     },
     {
       "position": "LG",
@@ -414,7 +417,8 @@
       "pffPositionLabel": "T",
       "pffTied": true,
       "cfb27Rating": 90,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 43
     },
     {
       "position": "RG",
@@ -630,7 +634,8 @@
       "pffPositionLabel": "QB",
       "pffTied": false,
       "cfb27Rating": 94,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 14
     },
     {
       "position": "QB",
@@ -822,7 +827,8 @@
       "pffPositionLabel": "ED",
       "pffTied": true,
       "cfb27Rating": 91,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 45
     },
     {
       "position": "LDE",
@@ -1326,7 +1332,8 @@
       "pffPositionLabel": "S",
       "pffTied": false,
       "cfb27Rating": 88,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 67
     },
     {
       "position": "SS",
@@ -1856,5 +1863,6 @@
       "cfb27Rating": 87,
       "cfb27Dev": "Star"
     }
-  ]
+  ],
+  "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00"
 }

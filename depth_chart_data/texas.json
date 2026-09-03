@@ -28,7 +28,8 @@
       "pffPositionLabel": "WR",
       "pffTied": true,
       "cfb27Rating": 92,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 7
     },
     {
       "position": "WR-X",
@@ -94,7 +95,8 @@
       "pffPositionLabel": "WR",
       "pffTied": true,
       "cfb27Rating": 87,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 71
     },
     {
       "position": "WR-Z",
@@ -226,7 +228,8 @@
       "pffPositionLabel": "T",
       "pffTied": false,
       "cfb27Rating": 94,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 8
     },
     {
       "position": "LT",
@@ -424,7 +427,8 @@
       "pffPositionLabel": "T",
       "pffTied": true,
       "cfb27Rating": 87,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 104
     },
     {
       "position": "RG",
@@ -512,7 +516,8 @@
       "pffPositionLabel": "T",
       "pffTied": false,
       "cfb27Rating": 86,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "draftRank": 46
     },
     {
       "position": "RT",
@@ -710,7 +715,8 @@
       "pffPositionLabel": "QB",
       "pffTied": true,
       "cfb27Rating": 91,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 2
     },
     {
       "position": "QB",
@@ -798,7 +804,8 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 89,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "draftRank": 109
     },
     {
       "position": "RB",
@@ -1150,7 +1157,8 @@
       "pffPositionLabel": "ED",
       "pffTied": false,
       "cfb27Rating": 95,
-      "cfb27Dev": "Elite"
+      "cfb27Dev": "Elite",
+      "draftRank": 3
     },
     {
       "position": "JACK",
@@ -1238,7 +1246,8 @@
       "pffPositionLabel": "LB",
       "pffTied": true,
       "cfb27Rating": 92,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "draftRank": 59
     },
     {
       "position": "WLB",
@@ -1502,7 +1511,8 @@
       "pffPositionLabel": "S",
       "pffTied": true,
       "cfb27Rating": 90,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 61
     },
     {
       "position": "SS",
@@ -2096,7 +2106,8 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 89,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "draftRank": 109
     },
     {
       "position": "KR",
@@ -2121,5 +2132,6 @@
       "cfb27Dev": "Star"
     }
   ],
-  "reserves": []
+  "reserves": [],
+  "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00"
 }

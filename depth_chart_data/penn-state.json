@@ -582,7 +582,8 @@
       "pffPositionLabel": "TE",
       "pffTied": true,
       "cfb27Rating": 88,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 106
     },
     {
       "position": "TE",
@@ -1446,7 +1447,8 @@
       "pffPositionLabel": "S",
       "pffTied": false,
       "cfb27Rating": 87,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 116
     },
     {
       "position": "SS",
@@ -2048,5 +2050,6 @@
       "cfb27Rating": 74,
       "cfb27Dev": "Impact"
     }
-  ]
+  ],
+  "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00"
 }

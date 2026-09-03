@@ -226,7 +226,8 @@
       "pffPositionLabel": "T",
       "pffTied": true,
       "cfb27Rating": 87,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 87
     },
     {
       "position": "LT",
@@ -974,7 +975,8 @@
       "pffPositionLabel": "DI",
       "pffTied": true,
       "cfb27Rating": 86,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "draftRank": 68
     },
     {
       "position": "DT",
@@ -1857,5 +1859,6 @@
       "cfb27Dev": "Impact"
     }
   ],
-  "reserves": []
+  "reserves": [],
+  "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00"
 }
