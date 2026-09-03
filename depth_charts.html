@@ -247,11 +247,11 @@ const DLINE_CANDIDATES = ["LOLB","LDE","JACK","WOLF","BUCK","LEO","CHEETAH","CHE
 // an off-ball linebacker, even though some programs' codes don't make that
 // obvious: STING/HUSKY/STAR/CASH/SPUR/BAN. Rendered in the CB/NB row's
 // middle section alongside (or instead of) NB, not in the LB row.
-const NICKEL_CANDIDATES = ["NB","HUSKY","STAR","CASH","SPUR","BAN"];
+const NICKEL_CANDIDATES = ["NB","HUSKY","STAR","CASH","SPUR","BAN","ROVER","CAT"];
 // True off-ball linebackers. MONEY plays as a linebacker at every program that
 // uses it (Georgia, Oregon, Pittsburgh), so it's global here rather than a
 // per-team override.
-const LB_CANDIDATES = ["SLB","WLB","STING","MAC","MLB","MONEY"];
+const LB_CANDIDATES = ["SLB","WLB","STING","MAC","MLB","MONEY","DOG"];
 
 // Some position codes could plausibly mean different things at different
 // programs -- this override system moves a code between the LB and nickel/DB
@@ -305,7 +305,7 @@ const OFFENSE_ROWS = [
       { pos:"WR-Z", col:13, span:2 }
     ]},
   { cols:OFFENSE_COLS, items:[
-      { pos:"WR-SL", alts:["WR-F","WR-H"], col:2,  span:2 }, // left: sits in the gap between WR-X and LT
+      { pos:"WR-SL", alts:["WR-F","WR-H","WR-Y"], col:2,  span:2 }, // left: sits in the gap between WR-X and LT
       { pos:"RB",    col:4,  span:2 }, // left: sits in the gap between LT and LG
       { pos:"QB",    col:7,  span:2 }, // directly behind center
       { pos:"FB",    alts:["TE-H"], col:10, span:2 }, // right: mirrors RB -- gap between RG and RT; TE-H shares this slot for teams that use it as a blocking H-back instead of a true FB
