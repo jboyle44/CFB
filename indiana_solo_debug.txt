@@ -1,0 +1,29 @@
+Scraping Ourlads depth chart for Indiana...
+  76 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  114 transfers in from CFBD
+Fetching CFBD recruiting data for 23 (school, year) pairs...
+  Alabama 2022: 26 players
+  Boston College 2024: 12 players
+  Buffalo 2024: 22 players
+  Georgia 2023: 26 players
+  Georgia State 2023: 14 players
+  Hawai'i 2025: 11 players
+  Indiana 2022: 25 players
+  Indiana 2023: 14 players
+  Indiana 2024: 17 players
+  Iowa State 2022: 20 players
+  James Madison 2022: 14 players
+  Kansas State 2022: 17 players
+  Kansas State 2023: 23 players
+  Miami 2025: 21 players
+  Michigan State 2024: 26 players
+  Navy 2022: 28 players
+  Old Dominion 2022: 14 players
+  Pittsburgh 2022: 11 players
+  TCU 2022: 13 players
+  Troy 2022: 9 players
+  Tulsa 2022: 14 players
+  UAB 2022: 8 players
+  Wisconsin 2022: 20 players
+Wrote ../depth_chart_data/indiana.json
