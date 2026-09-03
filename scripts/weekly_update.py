@@ -31,6 +31,7 @@ BASE = "https://api.collegefootballdata.com"
 HEADERS = {"Authorization": f"Bearer {API_KEY}"} if API_KEY else {}
 
 DATA_FILE = "brr_data.json"
+HISTORY_FILE = "brr_history.json"
 
 COEFS = dict(
     intercept=14.3946, sp=0.1799, rw=0.8549, spw=0.0514,
@@ -188,16 +189,46 @@ def main():
     existing = [r for r in existing if r["year"] != year]
     existing.extend(rows)
 
+    now_iso = datetime.now(timezone.utc).isoformat()
+
     # Wrapped in an object with a generation timestamp -- not a bare array
     # -- so the front end can show an accurate "data last refreshed at"
     # time instead of just describing the schedule in prose.
     with open(DATA_FILE, "w") as f:
         json.dump({
-            "generatedAt": datetime.now(timezone.utc).isoformat(),
+            "generatedAt": now_iso,
             "rows": existing,
         }, f, separators=(",", ":"))
 
+    # Weekly snapshot history -- unlike brr_data.json (which only ever shows
+    # the current/latest state for a season), this accumulates one entry per
+    # (year, week) so the front end can offer a week filter and let the user
+    # look back at exactly what the rankings looked like at any prior point
+    # in the season. Mirrors the same pattern already used for DFI-CFB's
+    # ratings_history.json. Re-running within the same week overwrites only
+    # that week's entry, not any other week's.
+    try:
+        with open(HISTORY_FILE) as f:
+            existing_history = json.load(f)
+    except FileNotFoundError:
+        existing_history = []
+
+    history_by_key = {(h["year"], h["week"]): h for h in existing_history}
+    history_by_key[(year, week)] = {
+        "year": year,
+        "week": week,
+        "rankSource": source,
+        "capturedAt": now_iso,
+        "rows": rows,
+    }
+    all_history = list(history_by_key.values())
+    all_history.sort(key=lambda h: (h["year"], h["week"]))
+
+    with open(HISTORY_FILE, "w") as f:
+        json.dump(all_history, f, separators=(",", ":"))
+
     print(f"Wrote {len(rows)} rows for {year} (week {week}). Total rows in file: {len(existing)}")
+    print(f"Wrote weekly snapshot for {year} week {week}. Total snapshots in history: {len(all_history)}")
 
 
 if __name__ == "__main__":
