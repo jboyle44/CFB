@@ -197,7 +197,7 @@
         <dt>Transfer:</dt>
         <dd>Shown only for players tagged as transfers. This is a separate 247Sports ranking assigned specifically when the player entered the transfer portal — an independent evaluation of their college performance, not their original recruiting rank.</dd>
         <dt>PFF</dt>
-        <dd>2025 season overall PFF College grade (color-coded red → yellow → green, low to high), from a PFF Elite data export. Below it, "Ranked Xth of Y [position]" shows where that grade ranks nationally among every graded FBS player at the same position — "(T)" means a tie. Transfers are matched to their 2025 grade regardless of which school they played for then. True freshmen show "FRESHMAN" instead of a dash, since they have no prior college snaps to grade.</dd>
+        <dd>2025 season overall PFF College grade (color-coded red → yellow → green, low to high), from a PFF Elite data export. Below it, "Ranked Xth of Y [position]" shows where that grade ranks nationally among every graded FBS player at the same position. Transfers are matched to their 2025 grade regardless of which school they played for then. True freshmen show "FRESHMAN" instead of a dash, since they have no prior college snaps to grade.</dd>
         <dt>Color scale</dt>
         <dd>Composite score and PFF grade are colored on a sliding red → yellow → green scale, low to high, so you can scan a formation and spot the strongest/weakest spots at a glance.</dd>
       </dl>
@@ -605,7 +605,7 @@ function slotHtml(r, isStarter){
     pffHtml = `<span class="pff">PFF: —</span>`;
   }
   const rankLine = (r.pffPositionRank != null)
-    ? `Ranked ${ordinal(r.pffPositionRank)}${r.pffTied ? ' (T)' : ''} of ${r.pffPositionTotal} ${r.pffPositionLabel}`
+    ? `Ranked ${ordinal(r.pffPositionRank)} of ${r.pffPositionTotal} ${r.pffPositionLabel}`
     : '';
 
   return `
