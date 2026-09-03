@@ -550,6 +550,7 @@ function renderSourceTimestamps(){
     ['Recruit / TR (CollegeFootballData.com)', fmtTimestamp(DATA.cfbdUpdatedAt)],
     ['PFF grades', fmtTimestamp(DATA.pffUpdatedAt)],
     ['CFB27 ratings (TeamCrafters)', fmtTimestamp(DATA.cfb27UpdatedAt)],
+    ['Draft Rank (Tankathon)', fmtTimestamp(DATA.draftRankUpdatedAt)],
   ];
   el.innerHTML = rows.map(([label, ts]) =>
     `<div class="src-ts"><span class="src-ts-label">${label}:</span> ${ts || 'not yet run'}</div>`
@@ -641,6 +642,15 @@ function slotHtml(r, isStarter){
   const badge = r.isTransfer ? '<span class="badge tr">TR</span>'
               : r.isReserve ? `<span class="badge status">${r.reserveStatus || ''}</span>` : '';
 
+  const isDraftProspect = r.draftRank != null;
+  const nameHtml = isDraftProspect
+    ? `<span style="color:#87CEEB; font-weight:700;">${r.player}</span>` +
+      `<span style="margin-left:6px;">` +
+        `<span style="color:#87CEEB; font-weight:700; font-size:7px; letter-spacing:0.02em; position:relative; top:-4px;">DFT RK</span> ` +
+        `<span style="color:#87CEEB; font-weight:700;">#${r.draftRank}</span>` +
+      `</span>`
+    : r.player;
+
   const recruitStars = starsForComposite(r.compositeScore);
   const recruitLine = `Recruit: ${recruitStars || '—'}`;
 
@@ -669,7 +679,7 @@ function slotHtml(r, isStarter){
 
   return `
     <div class="slot ${isStarter ? 'starter' : ''}">
-      <div class="l1"><span class="num">${r.jersey || ''}</span> ${r.player}${badge}</div>
+      <div class="l1"><span class="num">${r.jersey || ''}</span> ${nameHtml}${badge}</div>
       ${transferLine ? `<div class="l2">${transferLine}</div>` : ''}
       <div class="l2">${r.class || ''} · ${recruitLine}</div>
       <div class="l3">${pffHtml}</div>
