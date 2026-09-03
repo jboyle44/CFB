@@ -69,32 +69,57 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
     depth_chart, schemes = scrape_ourlads_depth_chart(team["ourlads_slug"], team["ourlads_id"])
     print(f"  {len(depth_chart)} depth chart rows", file=sys.stderr)
 
-    # Only query the specific recruiting-class years actually present on this
-    # roster, not a blind range -- keeps API call count minimal.
-    needed_years = sorted({infer_recruiting_class_year(r["class"]) for r in depth_chart})
-    print(f"Fetching CFBD recruiting data for class years: {needed_years}...", file=sys.stderr)
-    recruiting_by_name = {}
-    for yr in needed_years:
-        try:
-            players = get_recruiting_players(team_name, yr)
-            recruiting_by_name.update(players)
-            print(f"  {yr}: {len(players)} players", file=sys.stderr)
-        except Exception as e:
-            print(f"  {yr}: failed ({e})", file=sys.stderr)
-
-    print(f"Fetching CFBD transfer portal data...", file=sys.stderr)
-    transfers_in = {}
-    for yr in (CURRENT_YEAR, CURRENT_YEAR - 1):
-        try:
-            portal = get_transfer_portal(yr)
-            for name, info in portal.items():
-                if info.get("destination") == team_name:
-                    transfers_in[name] = info
-        except Exception as e:
-            print(f"  {yr} portal fetch failed: {e}", file=sys.stderr)
-    print(f"  {len(transfers_in)} transfers in from CFBD", file=sys.stderr)
-
     previous_by_norm_name = load_previous_data(output_path)
+
+    # Recruiting composite scores and transfer rankings never change once
+    # assigned (they're historical/fixed), so on a steady-state week where the
+    # roster hasn't changed, there's no reason to re-fetch anything -- only
+    # query CFBD for players who don't already have cached data from a
+    # previous run. This keeps the free-tier 1,000-calls/month budget
+    # sustainable across 68+ teams updating twice a week; a full roster only
+    # costs real API calls once, the first time each player appears.
+    def already_has_recruit_data(row):
+        prev = previous_by_norm_name.get(normalize_name(row["player"]))
+        return prev is not None and prev.get("compositeScore") is not None
+
+    def already_has_transfer_data(row):
+        prev = previous_by_norm_name.get(normalize_name(row["player"]))
+        return prev is not None and prev.get("transferRank") is not None
+
+    needed_years = sorted({
+        infer_recruiting_class_year(r["class"]) for r in depth_chart
+        if not already_has_recruit_data(r)
+    })
+    recruiting_by_name = {}
+    if needed_years:
+        print(f"Fetching CFBD recruiting data for new players, class years: {needed_years}...", file=sys.stderr)
+        for yr in needed_years:
+            try:
+                players = get_recruiting_players(team_name, yr)
+                recruiting_by_name.update(players)
+                print(f"  {yr}: {len(players)} players", file=sys.stderr)
+            except Exception as e:
+                print(f"  {yr}: failed ({e})", file=sys.stderr)
+    else:
+        print("No new players needing recruiting data -- skipping CFBD recruiting call this run.", file=sys.stderr)
+
+    needs_transfer_lookup = any(
+        row["isTransfer"] and not already_has_transfer_data(row) for row in depth_chart
+    )
+    transfers_in = {}
+    if needs_transfer_lookup:
+        print(f"Fetching CFBD transfer portal data for new transfers...", file=sys.stderr)
+        for yr in (CURRENT_YEAR, CURRENT_YEAR - 1):
+            try:
+                portal = get_transfer_portal(yr)
+                for name, info in portal.items():
+                    if info.get("destination") == team_name:
+                        transfers_in[name] = info
+            except Exception as e:
+                print(f"  {yr} portal fetch failed: {e}", file=sys.stderr)
+        print(f"  {len(transfers_in)} transfers in from CFBD", file=sys.stderr)
+    else:
+        print("No new transfers needing portal data -- skipping CFBD portal call this run.", file=sys.stderr)
 
     output_rows = []
     for row in depth_chart:
