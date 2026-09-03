@@ -146,6 +146,9 @@
   .notes-body dt{font-weight:600; color:var(--text);}
   .notes-body dd{margin:0; color:var(--text-dim); line-height:1.55;}
   .notes-body .foot-note{font-size:12px; color:var(--text-faint); line-height:1.6; margin-top:4px;}
+  .notes-body .src-ts-block{margin-top:10px; padding-top:10px; border-top:1px solid var(--line);}
+  .notes-body .src-ts{font-size:12px; color:var(--text-faint); line-height:1.7;}
+  .notes-body .src-ts-label{color:var(--text-dim); font-weight:600;}
 </style>
 </head>
 <body>
@@ -195,12 +198,15 @@
         <dd>Ourlads' shorthand for how a player originally joined the roster — a draft year/round like "20/1" (2020, round 1), a street/college free agent signing like "SF23"/"CF26" (original signing year), or an inter-team move like "T/Pit" (traded from Pittsburgh), "U/Den" (waived, claimed from Denver). This reflects how they arrived, however long ago — it isn't a "recently happened" flag, so a player can show a trade/waiver/FA code from a year or more back.</dd>
         <dt>PFF</dt>
         <dd>2025 season overall PFF grade (color-coded red → yellow → green, low to high), from a PFF Elite data export. Below it, "Ranked Xth of Y [position]" shows where that grade ranks league-wide among every graded player at the same position. Players without a shown grade are usually rookies or depth players who didn't log enough 2025 snaps to be graded, or joined the league after that season.</dd>
+        <dt>M27</dt>
+        <dd>Overall player rating from EA Sports Madden NFL 27, sourced via TeamCrafters' community ratings database (EA's own site doesn't expose this data in a scrapable form).</dd>
         <dt>Color scale</dt>
-        <dd>Once PFF grades are added, they'll color on a sliding red → yellow → green scale, low to high, so you can scan a formation and spot the strongest/weakest spots at a glance.</dd>
+        <dd>PFF grade and M27 rating are colored on a sliding red → yellow → green scale, low to high, so you can scan a formation and spot the strongest/weakest spots at a glance.</dd>
       </dl>
       <div class="foot-note">
-        Depth chart data refreshes automatically on the same weekly cadence as the rest of the site. Front-seven position codes vary by team scheme (3-4 vs 4-3), so linebacker/D-line rows detect and center whichever codes each team actually uses.
+        Depth chart data refreshes Tuesday and Friday mornings. Front-seven position codes vary by team scheme (3-4 vs 4-3), so linebacker/D-line rows detect and center whichever codes each team actually uses. M27 ratings refresh on a separate schedule tied to EA's own roster update cadence.
       </div>
+      <div class="src-ts-block" id="sourceTimestamps"></div>
     </div>
   </details>
 
@@ -373,6 +379,7 @@ function renderStatus(){
   if(!DATA.rows || !DATA.rows.length){
     dot.className = 'dot warn';
     statusText.textContent = 'No data loaded yet.';
+    renderSourceTimestamps();
     return;
   }
   dot.className = 'dot ok';
@@ -380,6 +387,20 @@ function renderStatus(){
   const parts = [`${DATA.team || 'Team'} · ${DATA.rows.length} depth chart spots`];
   if(ts) parts.push(`updated ${ts}`);
   statusText.textContent = parts.join(' · ');
+  renderSourceTimestamps();
+}
+
+function renderSourceTimestamps(){
+  const el = document.getElementById('sourceTimestamps');
+  if(!el) return;
+  const rows = [
+    ['Depth Chart (Ourlads)', fmtTimestamp(DATA.ourladsUpdatedAt)],
+    ['PFF grades', fmtTimestamp(DATA.pffUpdatedAt)],
+    ['M27 ratings (TeamCrafters)', fmtTimestamp(DATA.madden27UpdatedAt)],
+  ];
+  el.innerHTML = rows.map(([label, ts]) =>
+    `<div class="src-ts"><span class="src-ts-label">${label}:</span> ${ts || 'not yet run'}</div>`
+  ).join('');
 }
 
 let state = { search: "" };
