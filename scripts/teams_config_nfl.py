@@ -32,7 +32,7 @@ NFL_TEAMS = {
     "car": {"display_name": "Carolina Panthers", "ourlads_abbr": "CAR"},
     "no":  {"display_name": "New Orleans Saints", "ourlads_abbr": "NO"},
     "tb":  {"display_name": "Tampa Bay Buccaneers", "ourlads_abbr": "TB"},
-    "ari": {"display_name": "Arizona Cardinals", "ourlads_abbr": "ARI"},
+    "ari": {"display_name": "Arizona Cardinals", "ourlads_abbr": "ARZ"},
     "lar": {"display_name": "Los Angeles Rams", "ourlads_abbr": "LAR"},
     "sf":  {"display_name": "San Francisco 49ers", "ourlads_abbr": "SF"},
     "sea": {"display_name": "Seattle Seahawks", "ourlads_abbr": "SEA"},
