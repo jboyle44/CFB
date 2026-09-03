@@ -58,7 +58,10 @@ def parse_player_cell(text):
 
 
 def scrape_ourlads_nfl_depth_chart(team_abbr, delay=1.5):
-    """Returns a list of dicts: {position, player, jersey, code, isAcquired}"""
+    """Returns (rows, schemes) where rows is a list of dicts:
+    {position, player, jersey, code, isAcquired} and schemes is
+    {"offense": "11 - One RB, One TE (66%)"|None, "defense": "Base 3-4"|None}
+    pulled from each table's heading, same pattern as the NCAA version."""
     url = f"https://www.ourlads.com/nfldepthcharts/depthchart/{team_abbr}"
     resp = requests.get(url, headers=HEADERS, timeout=20)
     resp.raise_for_status()
@@ -66,6 +69,7 @@ def scrape_ourlads_nfl_depth_chart(team_abbr, delay=1.5):
 
     soup = BeautifulSoup(resp.text, "html.parser")
     rows_out = []
+    schemes = {"offense": None, "defense": None}
 
     for table in soup.find_all("table"):
         header_cells = [th.get_text(strip=True) for th in table.find_all("th")]
@@ -75,9 +79,20 @@ def scrape_ourlads_nfl_depth_chart(team_abbr, delay=1.5):
         # Determine which section this table belongs to by looking at the nearest
         # preceding heading, so Practice Squad / Reserves tables can be skipped.
         heading = table.find_previous(["h2", "h3"])
-        heading_text = heading.get_text(strip=True).lower() if heading else ""
-        if any(skip in heading_text for skip in SKIP_TABLE_TITLES):
+        heading_text = heading.get_text(strip=True) if heading else ""
+        heading_lower = heading_text.lower()
+        if any(skip in heading_lower for skip in SKIP_TABLE_TITLES):
             continue
+
+        # Heading looks like "Offense11 - One RB, One TE (66%)" or
+        # "DefenseBase 3-4" -- the unit name is the first word, the scheme
+        # is whatever follows.
+        if heading_lower.startswith("offense"):
+            scheme = heading_text[len("offense"):].strip()
+            schemes["offense"] = scheme or None
+        elif heading_lower.startswith("defense"):
+            scheme = heading_text[len("defense"):].strip()
+            schemes["defense"] = scheme or None
 
         for tr in table.find_all("tr"):
             cells = tr.find_all("td")
@@ -108,13 +123,13 @@ def scrape_ourlads_nfl_depth_chart(team_abbr, delay=1.5):
                     "isAcquired": is_acquired,
                 })
 
-    return rows_out
+    return rows_out, schemes
 
 
 if __name__ == "__main__":
     import json
     import sys
     abbr = sys.argv[1] if len(sys.argv) > 1 else "DAL"
-    data = scrape_ourlads_nfl_depth_chart(abbr)
-    print(json.dumps(data, indent=2))
+    data, schemes = scrape_ourlads_nfl_depth_chart(abbr)
+    print(json.dumps({"schemes": schemes, "rows": data}, indent=2))
     print(f"\n{len(data)} depth chart rows scraped", file=sys.stderr)
