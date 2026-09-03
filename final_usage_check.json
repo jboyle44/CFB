@@ -1,0 +1,124 @@
+{
+  "remaining": "4748",
+  "usage_body": {
+    "window": {
+      "start": "2026-08-27T11:55:45.215Z",
+      "end": "2026-09-03T11:55:45.215Z"
+    },
+    "api": "all",
+    "totals": {
+      "requests": 2624,
+      "cfbRequests": 2624,
+      "cbbRequests": 0,
+      "uniqueEndpoints": 9
+    },
+    "topEndpoints": [
+      {
+        "api": "cfb",
+        "endpoint": "/recruiting/players",
+        "requests": 1638,
+        "lastUsedAt": "2026-09-03T11:52:39.722Z"
+      },
+      {
+        "api": "cfb",
+        "endpoint": "/player/portal",
+        "requests": 759,
+        "lastUsedAt": "2026-09-03T11:52:36.428Z"
+      },
+      {
+        "api": "cfb",
+        "endpoint": "/games",
+        "requests": 106,
+        "lastUsedAt": "2026-09-03T04:53:52.543Z"
+      },
+      {
+        "api": "cfb",
+        "endpoint": "/lines",
+        "requests": 96,
+        "lastUsedAt": "2026-09-03T04:53:52.422Z"
+      },
+      {
+        "api": "cfb",
+        "endpoint": "/rankings",
+        "requests": 9,
+        "lastUsedAt": "2026-09-03T04:43:05.076Z"
+      },
+      {
+        "api": "cfb",
+        "endpoint": "/info/usage",
+        "requests": 6,
+        "lastUsedAt": "2026-09-03T11:55:45.209Z"
+      },
+      {
+        "api": "cfb",
+        "endpoint": "/teams/fbs",
+        "requests": 4,
+        "lastUsedAt": "2026-09-03T11:55:45.102Z"
+      },
+      {
+        "api": "cfb",
+        "endpoint": "/records",
+        "requests": 3,
+        "lastUsedAt": "2026-09-03T04:43:05.301Z"
+      },
+      {
+        "api": "cfb",
+        "endpoint": "/ratings/sp",
+        "requests": 3,
+        "lastUsedAt": "2026-09-03T04:43:05.205Z"
+      }
+    ],
+    "recentRequests": [
+      {
+        "api": "cfb",
+        "endpoint": "/info/usage",
+        "requestedAt": "2026-09-03T11:55:45.209Z"
+      },
+      {
+        "api": "cfb",
+        "endpoint": "/teams/fbs",
+        "requestedAt": "2026-09-03T11:55:45.102Z"
+      },
+      {
+        "api": "cfb",
+        "endpoint": "/recruiting/players",
+        "requestedAt": "2026-09-03T11:52:39.722Z"
+      },
+      {
+        "api": "cfb",
+        "endpoint": "/recruiting/players",
+        "requestedAt": "2026-09-03T11:52:39.594Z"
+      },
+      {
+        "api": "cfb",
+        "endpoint": "/recruiting/players",
+        "requestedAt": "2026-09-03T11:52:39.474Z"
+      },
+      {
+        "api": "cfb",
+        "endpoint": "/recruiting/players",
+        "requestedAt": "2026-09-03T11:52:39.368Z"
+      },
+      {
+        "api": "cfb",
+        "endpoint": "/recruiting/players",
+        "requestedAt": "2026-09-03T11:52:39.253Z"
+      },
+      {
+        "api": "cfb",
+        "endpoint": "/recruiting/players",
+        "requestedAt": "2026-09-03T11:52:39.143Z"
+      },
+      {
+        "api": "cfb",
+        "endpoint": "/recruiting/players",
+        "requestedAt": "2026-09-03T11:52:39.033Z"
+      },
+      {
+        "api": "cfb",
+        "endpoint": "/recruiting/players",
+        "requestedAt": "2026-09-03T11:52:38.923Z"
+      }
+    ]
+  }
+}
