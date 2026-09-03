@@ -120,46 +120,15 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
     previous_by_norm_name = load_previous_data(output_path)
     previous_metadata = load_previous_metadata(output_path)
 
-    # Recruiting composite scores and transfer rankings never change once
-    # assigned (they're historical/fixed), so on a steady-state week where the
-    # roster hasn't changed, there's no reason to re-fetch anything -- only
-    # query CFBD for players who don't already have cached data from a
-    # previous run. This keeps the free-tier 1,000-calls/month budget
-    # sustainable across 68+ teams updating twice a week; a full roster only
-    # costs real API calls once, the first time each player appears.
-    def already_has_recruit_data(row):
-        prev = previous_by_norm_name.get(normalize_name(row["player"]))
-        return prev is not None and prev.get("compositeScore") is not None
-
+    # Transfer portal fetch happens FIRST now, because we need each transfer's
+    # origin school before we can look up their recruiting profile correctly
+    # -- a transfer was never a HS recruit to their CURRENT team, so searching
+    # under team_name would never find them. Real example: Earl Little Jr. at
+    # Ohio State was a 2022 Alabama signee; searching "Ohio State" recruiting
+    # data can never surface that, only searching "Alabama" can.
     def already_has_transfer_data(row):
         prev = previous_by_norm_name.get(normalize_name(row["player"]))
         return prev is not None and prev.get("transferRank") is not None
-
-    needed_years = sorted({
-        infer_recruiting_class_year(r["class"]) for r in depth_chart
-        if not already_has_recruit_data(r)
-    })
-    recruiting_by_name = {}
-    recruiting_by_last_name = {}
-    if needed_years:
-        print(f"Fetching CFBD recruiting data for new players, class years: {needed_years}...", file=sys.stderr)
-        for yr in needed_years:
-            try:
-                by_full, by_last = get_recruiting_players(team_name, yr)
-                recruiting_by_name.update(by_full)
-                # Only keep a last-name fallback entry if it's unambiguous across
-                # ALL years merged too, not just within one year's class.
-                for last, info in by_last.items():
-                    if last in recruiting_by_last_name and recruiting_by_last_name[last] != info:
-                        recruiting_by_last_name[last] = None  # now ambiguous, drop it
-                    elif last not in recruiting_by_last_name:
-                        recruiting_by_last_name[last] = info
-                print(f"  {yr}: {len(by_full)} players", file=sys.stderr)
-            except Exception as e:
-                print(f"  {yr}: failed ({e})", file=sys.stderr)
-        recruiting_by_last_name = {k: v for k, v in recruiting_by_last_name.items() if v is not None}
-    else:
-        print("No new players needing recruiting data -- skipping CFBD recruiting call this run.", file=sys.stderr)
 
     needs_transfer_lookup = any(
         row["isTransfer"] and not already_has_transfer_data(row) for row in depth_chart
@@ -178,6 +147,59 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
         print(f"  {len(transfers_in)} transfers in from CFBD", file=sys.stderr)
     else:
         print("No new transfers needing portal data -- skipping CFBD portal call this run.", file=sys.stderr)
+
+    # Recruiting composite scores never change once assigned (they're
+    # historical/fixed), so on a steady-state week where the roster hasn't
+    # changed, there's no reason to re-fetch anything -- only query CFBD for
+    # players who don't already have cached data from a previous run. This
+    # keeps the free-tier calls/month budget sustainable across 68+ teams
+    # updating twice a week; a full roster only costs real API calls once,
+    # the first time each player appears.
+    def already_has_recruit_data(row):
+        prev = previous_by_norm_name.get(normalize_name(row["player"]))
+        return prev is not None and prev.get("compositeScore") is not None
+
+    # For each player needing recruit data, figure out which SCHOOL to query:
+    # a transfer's own origin school (from the portal data above) if we have
+    # it, otherwise fall back to the current team (works correctly for
+    # non-transfers, and is the best guess available for a transfer whose
+    # portal entry we couldn't find). Group by (school, year) and dedupe --
+    # many transfers/recruits share both, so this stays cheap even though
+    # we're now querying more than just one team.
+    needed_school_years = set()
+    for r in depth_chart:
+        if already_has_recruit_data(r):
+            continue
+        yr = infer_recruiting_class_year(r["class"])
+        if r["isTransfer"]:
+            match = transfers_in.get(normalize_name(r["player"]))
+            school = match["origin"] if match and match.get("origin") else team_name
+        else:
+            school = team_name
+        needed_school_years.add((school, yr))
+
+    recruiting_by_name = {}
+    recruiting_by_last_name = {}
+    if needed_school_years:
+        print(f"Fetching CFBD recruiting data for {len(needed_school_years)} (school, year) pairs...",
+              file=sys.stderr)
+        for school, yr in sorted(needed_school_years):
+            try:
+                by_full, by_last = get_recruiting_players(school, yr)
+                recruiting_by_name.update(by_full)
+                # Only keep a last-name fallback entry if it's unambiguous across
+                # ALL school/year combos merged too, not just within one.
+                for last, info in by_last.items():
+                    if last in recruiting_by_last_name and recruiting_by_last_name[last] != info:
+                        recruiting_by_last_name[last] = None  # now ambiguous, drop it
+                    elif last not in recruiting_by_last_name:
+                        recruiting_by_last_name[last] = info
+                print(f"  {school} {yr}: {len(by_full)} players", file=sys.stderr)
+            except Exception as e:
+                print(f"  {school} {yr}: failed ({e})", file=sys.stderr)
+        recruiting_by_last_name = {k: v for k, v in recruiting_by_last_name.items() if v is not None}
+    else:
+        print("No new players needing recruiting data -- skipping CFBD recruiting call this run.", file=sys.stderr)
 
     output_rows = []
     for row in depth_chart:
@@ -244,7 +266,7 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
         output_rows.append(out_row)
 
     now_iso = datetime.datetime.now(datetime.timezone.utc).isoformat()
-    cfbd_fetched_this_run = bool(needed_years) or needs_transfer_lookup
+    cfbd_fetched_this_run = bool(needed_school_years) or needs_transfer_lookup
     cfbd_updated_at = now_iso if cfbd_fetched_this_run else previous_metadata.get("cfbdUpdatedAt", now_iso)
 
     wrapped = {
