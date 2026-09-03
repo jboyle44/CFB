@@ -816,7 +816,6 @@ function render(){
   html += sectionHtml("Defense", DATA.defenseScheme || "", DEFENSE_ROWS);
   html += sectionHtml("Offense", DATA.offenseScheme || "", OFFENSE_ROWS);
   html += sectionHtml("Specialists", "", [SPECIAL_ROW]);
-  html += injuriesBoxesHtml(reserveRows);
 
   container.innerHTML = html;
   adjustLbRowOverlap();
