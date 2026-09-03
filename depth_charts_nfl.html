@@ -456,13 +456,15 @@ function ordinal(n){
   return n + (s[(v-20)%10] || s[v] || s[0]);
 }
 
-// Drafted-in-2026 codes look like "26/1", "26/3", etc; undrafted 2026 signings
-// are "SF26" (street free agent) or "CF26" (college free agent). A player
-// drafted in an earlier year (e.g. "25/7") who just didn't log enough 2025
-// snaps to get graded is NOT a rookie anymore -- this only flags true rookies.
+// Drafted-in-2026 codes look like "26/1", "26/3", etc -- genuine rookies.
+// "CF26" (college free agent) means undrafted straight out of college in 2026 --
+// also a genuine rookie. "SF26" (street free agent) is different: it just means
+// signed via free agency in 2026, which could be a 10-year veteran like Odell
+// Beckham Jr. re-entering the league -- NOT a rookie, so it's deliberately
+// excluded here even though it looks similar to CF26.
 function isRookie2026(code){
   if(!code) return false;
-  return /^26\//.test(code) || /^(SF|CF)26$/.test(code);
+  return /^26\//.test(code) || /^CF26$/.test(code);
 }
 
 function slotHtml(r, isStarter){
