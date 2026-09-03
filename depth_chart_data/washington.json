@@ -35,8 +35,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": null
+      "hsStateRank": null
     },
     {
       "position": "WR-X",
@@ -107,8 +106,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": null
+      "hsStateRank": null
     },
     {
       "position": "WR-SL",
@@ -141,8 +139,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": null
+      "hsStateRank": null
     },
     {
       "position": "LT",
@@ -156,8 +153,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": null
+      "hsStateRank": null
     },
     {
       "position": "LT",
@@ -285,8 +281,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": null
+      "hsStateRank": null
     },
     {
       "position": "RT",
@@ -357,8 +352,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": null
+      "hsStateRank": null
     },
     {
       "position": "TE",
@@ -411,7 +405,11 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": null
+      "pffGrade": 55.7,
+      "pffPositionRank": 281,
+      "pffPositionTotal": 408,
+      "pffPositionLabel": "QB",
+      "pffTied": false
     },
     {
       "position": "RB",
@@ -463,8 +461,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": null
+      "hsStateRank": null
     },
     {
       "position": "LDE",
@@ -535,8 +532,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": null
+      "hsStateRank": null
     },
     {
       "position": "RDT",
@@ -550,8 +546,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": null
+      "hsStateRank": null
     },
     {
       "position": "RDT",
@@ -584,8 +579,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": null
+      "hsStateRank": null
     },
     {
       "position": "RDE",
@@ -599,8 +593,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": null
+      "hsStateRank": null
     },
     {
       "position": "WLB",
@@ -747,8 +740,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": null
+      "hsStateRank": null
     },
     {
       "position": "FS",
@@ -781,8 +773,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": null
+      "hsStateRank": null
     },
     {
       "position": "RCB",
@@ -815,8 +806,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": null
+      "hsStateRank": null
     },
     {
       "position": "NB",
@@ -849,8 +839,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": null
+      "hsStateRank": null
     },
     {
       "position": "PT",
@@ -902,8 +891,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": null
+      "hsStateRank": null
     },
     {
       "position": "LS",
@@ -917,8 +905,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": null
+      "hsStateRank": null
     },
     {
       "position": "H",
@@ -951,12 +938,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": 74.7,
-      "pffPositionRank": 127,
-      "pffPositionTotal": 1128,
-      "pffPositionLabel": "CB",
-      "pffTied": true
+      "hsStateRank": null
     },
     {
       "position": "KR",
@@ -970,12 +952,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": 74.7,
-      "pffPositionRank": 127,
-      "pffPositionTotal": 1128,
-      "pffPositionLabel": "CB",
-      "pffTied": true
+      "hsStateRank": null
     },
     {
       "position": "KR",
@@ -989,12 +966,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": 57.5,
-      "pffPositionRank": 670,
-      "pffPositionTotal": 736,
-      "pffPositionLabel": "HB",
-      "pffTied": true
+      "hsStateRank": null
     },
     {
       "position": "INJ",
@@ -1008,8 +980,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": null
+      "hsStateRank": null
     },
     {
       "position": "INJ",
@@ -1023,12 +994,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": 82.7,
-      "pffPositionRank": 52,
-      "pffPositionTotal": 736,
-      "pffPositionLabel": "HB",
-      "pffTied": false
+      "hsStateRank": null
     },
     {
       "position": "INJ",
@@ -1042,12 +1008,7 @@
       "transferPosRank": null,
       "hsNationalRank": null,
       "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": 62.1,
-      "pffPositionRank": 168,
-      "pffPositionTotal": 304,
-      "pffPositionLabel": "C",
-      "pffTied": false
+      "hsStateRank": null
     }
   ]
 }
