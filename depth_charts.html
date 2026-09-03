@@ -113,6 +113,7 @@
   .slot:not(.starter) .l1{font-weight:600; color:var(--text-dim); font-size:11px;}
   .slot .num{color:var(--text-faint); font-weight:600; font-variant-numeric:tabular-nums;}
   .slot .l2{font-size:9px; color:var(--text-faint); margin-top:1px; line-height:1.3; overflow:visible; text-overflow:clip; white-space:normal;}
+  .slot .stars{color:var(--gold); font-size:10px; letter-spacing:0.5px;}
   .slot .l3{font-size:9px; color:var(--text-faint); margin-top:0; line-height:1.3;}
   .slot .pff{color:var(--text-faint); font-style:italic;}
   .slot .pff-rookie{color:var(--purple); font-style:italic; font-weight:700;}
@@ -579,12 +580,28 @@ function ordinal(n){
   return n + (s[(v-20)%10] || s[v] || s[0]);
 }
 
+// Standard 247Sports composite-score-to-star thresholds. Rendered as gold stars,
+// deliberately distinct from the red/yellow/green PFF grade scale so the two
+// grading systems (recruiting talent vs. actual on-field performance) are easy
+// to tell apart at a glance.
+function starsForComposite(score){
+  if(score == null) return '';
+  let stars;
+  if(score >= 98) stars = 5;
+  else if(score >= 89) stars = 4;
+  else if(score >= 80) stars = 3;
+  else if(score >= 70) stars = 2;
+  else stars = 1;
+  return `<span class="stars" title="${stars}-star">${'★'.repeat(stars)}${'☆'.repeat(5-stars)}</span>`;
+}
+
 function slotHtml(r, isStarter){
   const badge = r.isTransfer ? '<span class="badge tr">TR</span>'
               : (r.class && r.class.toUpperCase() === 'FR') ? '<span class="badge fr">FR</span>' : '';
   const compositeHtml = gradeSpan(r.compositeScore, 65, 100);
+  const starsHtml = starsForComposite(r.compositeScore);
 
-  let recruitLine = `Recruit: ${compositeHtml}`;
+  let recruitLine = `Recruit: ${compositeHtml} ${starsHtml}`;
   if(r.hsNationalRank != null){
     recruitLine += ` (#${r.hsNationalRank} natl, POS #${r.hsPositionRank ?? '—'})`;
   }
