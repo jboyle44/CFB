@@ -177,8 +177,14 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
     def true_origin_school(player_name_norm, fallback_match):
         """The origin of a transfer's EARLIEST portal entry -- their real
         original signing school, not just their most recent previous stop."""
-        history = (portal_history_by_name.get(player_name_norm)
-                   or portal_history_by_stripped_name.get(strip_suffix(player_name_norm)))
+        # Combine both indexes rather than falling back only when the exact
+        # index is completely empty -- a player can have SOME entries under
+        # their exact name and MORE (earlier) entries only findable via the
+        # suffix-stripped name, so the exact-only list alone can be
+        # incomplete without being empty.
+        exact = portal_history_by_name.get(player_name_norm, [])
+        stripped = portal_history_by_stripped_name.get(strip_suffix(player_name_norm), [])
+        history = exact + [h for h in stripped if h not in exact]
         if not history:
             return fallback_match["origin"] if fallback_match and fallback_match.get("origin") else None
         dated = [h for h in history if h.get("transferDate")]
