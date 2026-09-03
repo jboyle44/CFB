@@ -596,7 +596,7 @@ function starsForComposite(score){
   else if(score >= 80) stars = 3;
   else if(score >= 70) stars = 2;
   else stars = 1;
-  return `<span class="stars" title="${stars}-star">${'★'.repeat(stars)}${'☆'.repeat(5-stars)}</span>`;
+  return `<span class="stars" title="${stars}-star">${'★'.repeat(stars)}</span>`;
 }
 
 function slotHtml(r, isStarter){
