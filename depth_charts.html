@@ -92,14 +92,19 @@
     display:grid; gap:8px; margin-bottom:8px;
   }
 
-  /* Compacts vertical space between the CB/NB row and the LB row below it.
-     This is a fixed, blind offset -- NOT coordinated with CB row geometry
-     (nickel count, LCB span) the way an earlier version was. That coupling
-     was the source of repeated collision bugs for teams with unusual
-     configurations; a fixed amount avoids it entirely since it never needs
-     to know anything about what's in the row above. */
+  /* Compacts vertical space between the CB/NB row and the LB row below it,
+     pulling the LB row up roughly halfway into the CB/NB row's typical
+     height. This is a fixed, blind offset -- NOT coordinated with CB row
+     geometry (nickel count, LCB span, or exact player count per box) the
+     way an earlier version was. That coupling was the source of repeated
+     collision bugs for teams with unusual configurations; a fixed amount
+     avoids it entirely since it never needs to know anything about what's
+     in the row above. Because box height varies with player count (2 vs 3
+     backups shown) this is an approximation of "halfway", not exact for
+     every team -- CB boxes with 3 players will have a bit more clearance
+     than CB boxes with 2. */
   #row-lb{
-    margin-top:-22px;
+    margin-top:-75px;
   }
 
   .posbox{
