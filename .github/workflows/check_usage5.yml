@@ -1,0 +1,24 @@
+name: Check Usage 5
+on:
+  workflow_dispatch: {}
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - working-directory: scripts
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python3 check_usage5.py
+      - run: |
+          git config user.name "test-bot"
+          git config user.email "actions@github.com"
+          git add usage_check5_result.json
+          git commit -m "Usage check 5" || echo "nothing to commit"
+          git push
