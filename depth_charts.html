@@ -245,19 +245,19 @@ const DEFENSE_ROWS = [
 const DLINE_CANDIDATES = ["LOLB","LDE","JACK","WOLF","BUCK","LEO","CHEETAH","CHEET","RUSH","STUD","NT","LDT","DT","RDT","DE","RDE","ROLB"];
 // Nickel/hybrid defensive backs -- these play like NB (slot defender), not like
 // an off-ball linebacker, even though some programs' codes don't make that
-// obvious: STING/HUSKY/STAR/CASH/SPUR/BAN/MONEY. Rendered in the CB/NB row's
+// obvious: STING/HUSKY/STAR/CASH/SPUR/BAN. Rendered in the CB/NB row's
 // middle section alongside (or instead of) NB, not in the LB row.
-const NICKEL_CANDIDATES = ["NB","HUSKY","STAR","CASH","SPUR","BAN","MONEY"];
-// True off-ball linebackers only.
-const LB_CANDIDATES = ["SLB","WLB","STING","MAC","MLB"];
+const NICKEL_CANDIDATES = ["NB","HUSKY","STAR","CASH","SPUR","BAN"];
+// True off-ball linebackers. MONEY plays as a linebacker at every program that
+// uses it (Georgia, Oregon, Pittsburgh), so it's global here rather than a
+// per-team override.
+const LB_CANDIDATES = ["SLB","WLB","STING","MAC","MLB","MONEY"];
 
-// Some position codes mean different things at different programs (MONEY is
-// used by Georgia, Oregon, and Pittsburgh, but only Georgia's is confirmed to
-// play like a linebacker) -- these overrides move a code between the LB and
-// nickel/DB candidate lists for one specific team only, not globally.
-const TEAM_POSITION_OVERRIDES = {
-  "georgia": { toLB: ["MONEY"] },
-};
+// Some position codes could plausibly mean different things at different
+// programs -- this override system moves a code between the LB and nickel/DB
+// candidate lists for one specific team only, for cases where that turns out
+// to be true. Empty for now.
+const TEAM_POSITION_OVERRIDES = {};
 
 function effectiveLBCandidates(teamKey){
   const override = TEAM_POSITION_OVERRIDES[teamKey];
