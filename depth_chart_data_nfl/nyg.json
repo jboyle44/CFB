@@ -19,16 +19,14 @@
       "player": "Odell Beckham Jr.",
       "jersey": "13",
       "code": "SF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RWR",
       "player": "Malachi Fields",
       "jersey": "88",
       "code": "26/3",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RWR",
@@ -71,8 +69,7 @@
       "player": "J.C. Davis",
       "jersey": "74",
       "code": "26/6",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LG",
@@ -127,8 +124,7 @@
       "player": "Francis Mauigoa",
       "jersey": "65",
       "code": "26/1",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RT",
@@ -195,8 +191,7 @@
       "player": "Thomas Fidone II",
       "jersey": "86",
       "code": "25/7",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "QB",
@@ -335,8 +330,7 @@
       "player": "Bobby Jamison-Travis",
       "jersey": "97",
       "code": "26/6",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LOLB",
@@ -367,16 +361,14 @@
       "player": "Arvell Reese",
       "jersey": "52",
       "code": "26/1",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "WLB",
       "player": "Jack Kelly",
       "jersey": "51",
       "code": "26/6",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "WLB",
@@ -539,8 +531,7 @@
       "player": "Colton Hood",
       "jersey": "12",
       "code": "26/2",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "NB",
@@ -583,16 +574,14 @@
       "player": "Dominic Zvada",
       "jersey": "34",
       "code": "CF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LS",
       "player": "Ben Mann",
       "jersey": "58",
       "code": "CF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "H",
@@ -611,32 +600,21 @@
       "player": "Dominic Zvada",
       "jersey": "34",
       "code": "CF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Deonte Banks",
       "jersey": "2",
       "code": "23/1",
-      "isAcquired": false,
-      "pffGrade": 42.4,
-      "pffPositionRank": 203,
-      "pffPositionTotal": 217,
-      "pffPositionLabel": "CB",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Devin Singletary",
       "jersey": "26",
       "code": "U/Hou",
-      "isAcquired": true,
-      "pffGrade": 71.1,
-      "pffPositionRank": 44,
-      "pffPositionTotal": 136,
-      "pffPositionLabel": "HB",
-      "pffTied": false
+      "isAcquired": true
     }
   ]
 }
