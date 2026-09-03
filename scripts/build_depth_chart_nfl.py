@@ -50,7 +50,7 @@ def build(team_key, output_path=None):
     team = NFL_TEAMS[team_key]
 
     print(f"Scraping Ourlads depth chart for {team['display_name']}...", file=sys.stderr)
-    depth_chart = scrape_ourlads_nfl_depth_chart(team["ourlads_abbr"])
+    depth_chart, schemes = scrape_ourlads_nfl_depth_chart(team["ourlads_abbr"])
     print(f"  {len(depth_chart)} depth chart rows", file=sys.stderr)
 
     previous_by_norm_name = load_previous_data(output_path)
@@ -83,6 +83,8 @@ def build(team_key, output_path=None):
         "madden27UpdatedAt": previous_metadata.get("madden27UpdatedAt"),
         "pffUpdatedAt": previous_metadata.get("pffUpdatedAt"),
         "team": team["display_name"],
+        "offenseScheme": schemes.get("offense"),
+        "defenseScheme": schemes.get("defense"),
         "rows": output_rows,
     }
 
