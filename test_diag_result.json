@@ -1,0 +1,50 @@
+{
+  "reddick_search": {
+    "2022": [],
+    "2023": [],
+    "2024": [
+      {
+        "id": "109554",
+        "athleteId": "5218946",
+        "recruitType": "HighSchool",
+        "year": 2024,
+        "ranking": 866,
+        "name": "Anthony Reddick",
+        "school": "Phoebus",
+        "committedTo": "Maryland",
+        "position": "EDGE",
+        "height": 74,
+        "weight": 220,
+        "stars": 3,
+        "rating": 0.8719,
+        "city": "Hampton",
+        "stateProvince": "VA",
+        "country": "USA",
+        "hometownInfo": {
+          "latitude": 37.0520315,
+          "longitude": -76.2856365,
+          "fipsCode": "51650"
+        }
+      }
+    ],
+    "2025": []
+  },
+  "moore_search": {
+    "2024": [],
+    "2025": [
+      {
+        "season": 2025,
+        "firstName": "Carlos",
+        "lastName": "Moore",
+        "position": "OT",
+        "origin": "Elon",
+        "destination": "Maryland",
+        "transferDate": "2025-04-23T16:23:00.000Z",
+        "rating": 0.87,
+        "stars": 3,
+        "eligibility": "Immediate"
+      }
+    ],
+    "2026": []
+  }
+}
