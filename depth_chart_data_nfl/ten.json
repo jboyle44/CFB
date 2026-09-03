@@ -31,8 +31,7 @@
       "player": "Carnell Tate",
       "jersey": "14",
       "code": "26/1",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "SWR",
@@ -123,16 +122,14 @@
       "player": "Pat Coogan",
       "jersey": "79",
       "code": "26/6",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RG",
       "player": "Fernando Carmona Jr.",
       "jersey": "66",
       "code": "26/5",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RG",
@@ -235,8 +232,7 @@
       "player": "Mitchell Trubisky",
       "jersey": "10",
       "code": "U/Buf",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "RB",
@@ -267,8 +263,7 @@
       "player": "Nicholas Singleton",
       "jersey": "32",
       "code": "26/5",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RB",
@@ -335,8 +330,7 @@
       "player": "Jackie Marshall",
       "jersey": "96",
       "code": "26/6",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RDT",
@@ -391,8 +385,7 @@
       "player": "Keldric Faulk",
       "jersey": "15",
       "code": "26/1",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RDE",
@@ -459,8 +452,7 @@
       "player": "Anthony Hill Jr.",
       "jersey": "53",
       "code": "26/2",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LCB",
@@ -551,8 +543,7 @@
       "player": "Melvin Smith Jr.",
       "jersey": "39",
       "code": "W/KC",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "NB",
@@ -595,8 +586,7 @@
       "player": "Morgan Cox",
       "jersey": "46",
       "code": "U/Bal",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "H",
@@ -627,36 +617,21 @@
       "player": "Chimere Dike",
       "jersey": "17",
       "code": "25/4",
-      "isAcquired": false,
-      "pffGrade": 61.4,
-      "pffPositionRank": 128,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Chimere Dike",
       "jersey": "17",
       "code": "25/4",
-      "isAcquired": false,
-      "pffGrade": 61.4,
-      "pffPositionRank": 128,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Julius Chestnut",
       "jersey": "36",
       "code": "CF22",
-      "isAcquired": false,
-      "pffGrade": 60.8,
-      "pffPositionRank": 93,
-      "pffPositionTotal": 136,
-      "pffPositionLabel": "HB",
-      "pffTied": false
+      "isAcquired": false
     }
   ]
 }
