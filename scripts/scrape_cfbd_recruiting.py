@@ -106,6 +106,7 @@ def get_transfer_portal(year):
             "rating": e.get("rating"),
             "origin": e.get("origin"),
             "destination": e.get("destination"),
+            "transferDate": e.get("transferDate"),
             "overallRank": e.get("_overall_rank"),
             "positionRank": e.get("_position_rank"),
         }
