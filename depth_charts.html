@@ -251,8 +251,9 @@ const NICKEL_CANDIDATES = ["NB","STING","HUSKY","STAR","CASH","SPUR","BAN","MONE
 // True off-ball linebackers only.
 const LB_CANDIDATES = ["SLB","WLB","MAC","MLB"];
 
-function dynamicCenteredRowHtml(candidates, groups, baseCols, id){
-  const present = candidates.filter(p => groups[p] && groups[p].length);
+function dynamicCenteredRowHtml(candidates, groups, baseCols, id, reorderFn){
+  let present = candidates.filter(p => groups[p] && groups[p].length);
+  if(reorderFn) present = reorderFn(present);
   if(!present.length) return { html: "", safeToOverlap: false };
   const totalSpan = present.length * 2;
   // widen the row's own column count if there are more items than the base grid
@@ -623,30 +624,11 @@ function centerMikeLB(present){
   return others;
 }
 
-// LB boxes use the same standard width as every other row (2 of 8 units each) --
-// they should NOT stretch to fill the whole free zone, just center within it.
-// The free zone starts right after LCB (which may be span1 or span2, see above)
-// plus any nickel boxes, and ends right before RCB (cols7-8). If more LB items
-// exist than fit at standard width, narrow them just enough to fit.
-function lbRowHtml(groups, id){
-  const present = centerMikeLB(LB_CANDIDATES.filter(p => groups[p] && groups[p].length));
-  if(!present.length) return "";
-  const nickelCount = NICKEL_CANDIDATES.filter(p => groups[p] && groups[p].length).length;
-  const lcbSpan = nickelCount > 0 ? 1 : 2;
-  const zoneStart = 1 + lcbSpan + nickelCount; // right after LCB + nickel box(es)
-  const zoneWidth = 6 - zoneStart + 1;         // up to (not including) RCB at col7
-  const standardSpan = present.length * 2;
-  const perBoxSpan = standardSpan <= zoneWidth ? 2 : Math.max(1, Math.floor(zoneWidth / present.length));
-  const actualSpan = perBoxSpan * present.length;
-  const start = zoneStart + Math.floor((zoneWidth - actualSpan) / 2);
-  const boxesHtml = present.map((pos, i) => posBoxHtml(pos, groups, start + i * perBoxSpan, perBoxSpan)).join('');
-  const idAttr = id ? ` id="${id}"` : "";
-  return `<div class="formrow"${idAttr} style="grid-template-columns:repeat(8, 1fr);">${boxesHtml}</div>`;
-}
+
 
 function rowHtml(row){
   if(row.dynamic === "dline") return dynamicCenteredRowHtml(DLINE_CANDIDATES, groupsRef, row.cols, row.id).html;
-  if(row.dynamic === "lb") return lbRowHtml(groupsRef, row.id);
+  if(row.dynamic === "lb") return dynamicCenteredRowHtml(LB_CANDIDATES, groupsRef, row.cols, row.id, centerMikeLB).html;
   if(row.dynamic === "cbnb") return cbnbRowHtml(groupsRef, row.id);
   const { cols, items, id } = row;
   const boxesHtml = items.map(it => posBoxHtml(resolveItemPos(it, groupsRef), groupsRef, it.col, it.span)).join('');
@@ -704,23 +686,10 @@ function render(){
   html += sectionHtml("Specialists", "", [SPECIAL_ROW]);
 
   container.innerHTML = html;
-  applyLbSpacing();
-}
-
-function applyLbSpacing(){
-  const cbnbRow = document.getElementById('row-cbnb');
-  const lbRow = document.getElementById('row-lb');
-  if(!cbnbRow || !lbRow) return;
-  // LB row is always width-constrained to fit inside whatever gap the CB row
-  // leaves open, so pulling it up to the CB row's vertical midpoint is always
-  // safe now, regardless of how many LB/hybrid codes a team lists.
-  const h = cbnbRow.getBoundingClientRect().height;
-  lbRow.style.marginTop = `-${(h / 2)}px`;
 }
 
 searchBox.addEventListener("input", () => { state.search = searchBox.value.toLowerCase(); render(); });
 loadData(currentTeamKey());
-window.addEventListener('resize', () => applyLbSpacing());
 </script>
 </body>
 </html>
