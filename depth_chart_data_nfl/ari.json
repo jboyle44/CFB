@@ -1,8 +1,609 @@
 {
-  "generatedAt": "2026-09-03T03:32:37.722022+00:00",
-  "ourladsUpdatedAt": "2026-09-03T03:32:37.722022+00:00",
+  "generatedAt": "2026-09-03T04:09:09.540056+00:00",
+  "ourladsUpdatedAt": "2026-09-03T04:09:09.540056+00:00",
   "madden27UpdatedAt": "2026-09-03T03:36:39.833985+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Arizona Cardinals",
-  "rows": []
+  "rows": [
+    {
+      "position": "LWR",
+      "player": "Marvin Harrison Jr.",
+      "jersey": "18",
+      "code": "24/1",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "LWR",
+      "player": "Simi Fehoko",
+      "jersey": "80",
+      "code": "U/LAC",
+      "isAcquired": true,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "LWR",
+      "player": "Jalen Brooks",
+      "jersey": "83",
+      "code": "SF25",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "RWR",
+      "player": "Michael Wilson",
+      "jersey": "14",
+      "code": "23/3",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "RWR",
+      "player": "Reggie Virgil",
+      "jersey": "82",
+      "code": "26/5",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "SWR",
+      "player": "Kendrick Bourne",
+      "jersey": "17",
+      "code": "U/SF",
+      "isAcquired": true,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "SWR",
+      "player": "Devin Duvernay",
+      "jersey": "81",
+      "code": "U/Chi",
+      "isAcquired": true,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "LT",
+      "player": "Paris Johnson Jr.",
+      "jersey": "70",
+      "code": "23/1",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "LT",
+      "player": "Jayden Williams",
+      "jersey": "66",
+      "code": "26/7",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "LG",
+      "player": "Isaac Seumalo",
+      "jersey": "73",
+      "code": "U/Pit",
+      "isAcquired": true,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "LG",
+      "player": "Hayden Conner",
+      "jersey": "58",
+      "code": "25/6",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "C",
+      "player": "Hjalte Froholdt",
+      "jersey": "72",
+      "code": "U/Cle",
+      "isAcquired": true,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "C",
+      "player": "Jon Gaines II",
+      "jersey": "71",
+      "code": "23/4",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "RG",
+      "player": "Isaiah Adams",
+      "jersey": "74",
+      "code": "24/3",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "RT",
+      "player": "Elijah Wilkinson",
+      "jersey": "65",
+      "code": "U/Atl",
+      "isAcquired": true,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "RT",
+      "player": "Josh Fryar",
+      "jersey": "78",
+      "code": "CF25",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "TE",
+      "player": "Trey McBride",
+      "jersey": "85",
+      "code": "22/2",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "TE",
+      "player": "Elijah Higgins",
+      "jersey": "84",
+      "code": "W/Mia",
+      "isAcquired": true,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "TE",
+      "player": "Hunter Long",
+      "jersey": "89",
+      "code": "T/Jax",
+      "isAcquired": true,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "QB",
+      "player": "Jacoby Brissett",
+      "jersey": "7",
+      "code": "U/NE",
+      "isAcquired": true,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "QB",
+      "player": "Gardner Minshew Ii",
+      "jersey": "15",
+      "code": "U/KC",
+      "isAcquired": true,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "QB",
+      "player": "Carson Beck",
+      "jersey": "19",
+      "code": "26/3",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "RB",
+      "player": "Jeremiyah Love",
+      "jersey": "4",
+      "code": "26/1",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "RB",
+      "player": "Tyler Allgeier",
+      "jersey": "22",
+      "code": "U/Atl",
+      "isAcquired": true,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "RB",
+      "player": "Bam Knight",
+      "jersey": "20",
+      "code": "SF25",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "LDE",
+      "player": "Walter Nolen III",
+      "jersey": "97",
+      "code": "25/1",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "LDE",
+      "player": "L.J. Collier",
+      "jersey": "91",
+      "code": "U/Sea",
+      "isAcquired": true,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "NT",
+      "player": "Roy Lopez",
+      "jersey": "51",
+      "code": "U/Det",
+      "isAcquired": true,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "NT",
+      "player": "Andrew Billings",
+      "jersey": "95",
+      "code": "U/Chi",
+      "isAcquired": true,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "RDE",
+      "player": "Darius Robinson",
+      "jersey": "56",
+      "code": "24/1",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "RDE",
+      "player": "Dante Stills",
+      "jersey": "55",
+      "code": "23/6",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "LOLB",
+      "player": "Zaven Collins",
+      "jersey": "25",
+      "code": "21/1",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "LOLB",
+      "player": "Baron Browning",
+      "jersey": "5",
+      "code": "T/Den",
+      "isAcquired": true,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "LOLB",
+      "player": "Eku Leota",
+      "jersey": "54",
+      "code": "SF25",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "WLB",
+      "player": "Cody Simon",
+      "jersey": "0",
+      "code": "25/4",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "WLB",
+      "player": "Karson Sharar",
+      "jersey": "43",
+      "code": "26/6",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "MLB",
+      "player": "Mack Wilson Sr.",
+      "jersey": "1",
+      "code": "U/NE",
+      "isAcquired": true,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "MLB",
+      "player": "Jack Gibbens",
+      "jersey": "50",
+      "code": "U/NE",
+      "isAcquired": true,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "ROLB",
+      "player": "Josh Sweat",
+      "jersey": "10",
+      "code": "U/Phi",
+      "isAcquired": true,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "ROLB",
+      "player": "Jordan Burch",
+      "jersey": "52",
+      "code": "25/3",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "LCB",
+      "player": "Will Johnson",
+      "jersey": "2",
+      "code": "25/2",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "LCB",
+      "player": "Kei'Trel Clark",
+      "jersey": "13",
+      "code": "23/6",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "SS",
+      "player": "Budda Baker",
+      "jersey": "3",
+      "code": "17/2",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "SS",
+      "player": "Kitan Crawford",
+      "jersey": "36",
+      "code": "25/7",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "SS",
+      "player": "Wydett Williams Jr.",
+      "jersey": "31",
+      "code": "CF26",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "FS",
+      "player": "Andrew Wingard",
+      "jersey": "28",
+      "code": "U/Jax",
+      "isAcquired": true,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "FS",
+      "player": "Dadrion Taylor-Demerson",
+      "jersey": "42",
+      "code": "24/4",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "RCB",
+      "player": "Denzel Burke",
+      "jersey": "29",
+      "code": "25/5",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "RCB",
+      "player": "Max Melton",
+      "jersey": "16",
+      "code": "24/2",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "NB",
+      "player": "Garrett Williams",
+      "jersey": "21",
+      "code": "23/3",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "PT",
+      "player": "Blake Gillikin",
+      "jersey": "12",
+      "code": "SF23",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "PK",
+      "player": "Chad Ryland",
+      "jersey": "38",
+      "code": "SF24",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "LS",
+      "player": "Casey Kreiter",
+      "jersey": "59",
+      "code": "U/NYG",
+      "isAcquired": true,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "H",
+      "player": "Blake Gillikin",
+      "jersey": "12",
+      "code": "SF23",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "KO",
+      "player": "Chad Ryland",
+      "jersey": "38",
+      "code": "SF24",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "PR",
+      "player": "Devin Duvernay",
+      "jersey": "81",
+      "code": "U/Chi",
+      "isAcquired": true,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "PR",
+      "player": "Michael Wilson",
+      "jersey": "14",
+      "code": "23/3",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "KR",
+      "player": "Devin Duvernay",
+      "jersey": "81",
+      "code": "U/Chi",
+      "isAcquired": true,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "KR",
+      "player": "Max Melton",
+      "jersey": "16",
+      "code": "24/2",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "KR",
+      "player": "Bam Knight",
+      "jersey": "20",
+      "code": "SF25",
+      "isAcquired": false,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    }
+  ]
 }
