@@ -118,6 +118,7 @@
   .slot .pff{color:var(--text-faint); font-style:italic;}
   .slot .pff-rookie{color:var(--purple); font-style:italic; font-weight:700;}
   .slot .pff-rank{color:var(--text-faint); font-size:8.5px; margin-top:1px;}
+  .slot .cfb27{color:var(--text-faint); font-size:9px; margin-top:1px;}
 
   .posbox.slim .hd{font-size:9px; padding:3px 2px;}
   .posbox.slim .slot{padding:2px 4px;}
@@ -624,6 +625,11 @@ function slotHtml(r, isStarter){
     ? `Ranked ${ordinal(r.pffPositionRank)} of ${r.pffPositionTotal} ${r.pffPositionLabel}`
     : '';
 
+  let cfb27Html = '';
+  if(r.cfb27Rating != null){
+    cfb27Html = `CFB27: ${gradeSpan(r.cfb27Rating, 60, 99)}${r.cfb27Dev ? ' ' + r.cfb27Dev : ''}`;
+  }
+
   return `
     <div class="slot ${isStarter ? 'starter' : ''}">
       <div class="l1"><span class="num">${r.jersey || ''}</span> ${r.player}${badge}</div>
@@ -631,6 +637,7 @@ function slotHtml(r, isStarter){
       <div class="l2">${r.class || ''} · ${recruitLine}</div>
       <div class="l3">${pffHtml}</div>
       ${rankLine ? `<div class="l3 pff-rank">${rankLine}</div>` : ''}
+      ${cfb27Html ? `<div class="l3 cfb27">${cfb27Html}</div>` : ''}
     </div>`;
 }
 
