@@ -2,8 +2,9 @@ name: Update Depth Chart Data
 
 on:
   schedule:
-    # Ourlads and 247Sports both update rolling through the week rather than on
-    # one fixed day, so this runs on the same cadence as the DFI-CFB scripts:
+    # Ourlads and CollegeFootballData.com both update rolling through the week
+    # rather than on one fixed day, so this runs on the same cadence as the
+    # DFI-CFB scripts:
     # Sunday ~noon ET (16:00 UTC) and Tuesday ~10am ET (14:00 UTC).
     - cron: '0 16 * * 0'
     - cron: '0 14 * * 2'
@@ -31,6 +32,8 @@ jobs:
 
       - name: Run depth chart scraper for every configured team
         working-directory: scripts
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
         run: |
           set +e
           mkdir -p ../depth_chart_data
