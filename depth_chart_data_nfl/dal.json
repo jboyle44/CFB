@@ -11,7 +11,8 @@
       "pffGrade": 85.9,
       "pffPositionRank": 11,
       "pffPositionTotal": 223,
-      "pffPositionLabel": "WR"
+      "pffPositionLabel": "WR",
+      "pffTied": false
     },
     {
       "position": "LWR",
@@ -30,7 +31,8 @@
       "pffGrade": 77.6,
       "pffPositionRank": 30,
       "pffPositionTotal": 223,
-      "pffPositionLabel": "WR"
+      "pffPositionLabel": "WR",
+      "pffTied": true
     },
     {
       "position": "RWR",
@@ -41,7 +43,8 @@
       "pffGrade": 53.2,
       "pffPositionRank": 194,
       "pffPositionTotal": 223,
-      "pffPositionLabel": "WR"
+      "pffPositionLabel": "WR",
+      "pffTied": false
     },
     {
       "position": "SWR",
@@ -52,7 +55,8 @@
       "pffGrade": 80.3,
       "pffPositionRank": 19,
       "pffPositionTotal": 223,
-      "pffPositionLabel": "WR"
+      "pffPositionLabel": "WR",
+      "pffTied": false
     },
     {
       "position": "SWR",
@@ -63,7 +67,8 @@
       "pffGrade": 61.6,
       "pffPositionRank": 125,
       "pffPositionTotal": 223,
-      "pffPositionLabel": "WR"
+      "pffPositionLabel": "WR",
+      "pffTied": true
     },
     {
       "position": "LT",
@@ -74,7 +79,8 @@
       "pffGrade": 57.4,
       "pffPositionRank": 94,
       "pffPositionTotal": 134,
-      "pffPositionLabel": "T"
+      "pffPositionLabel": "T",
+      "pffTied": true
     },
     {
       "position": "LT",
@@ -93,7 +99,8 @@
       "pffGrade": 73.4,
       "pffPositionRank": 19,
       "pffPositionTotal": 138,
-      "pffPositionLabel": "G"
+      "pffPositionLabel": "G",
+      "pffTied": true
     },
     {
       "position": "C",
@@ -104,7 +111,8 @@
       "pffGrade": 67.8,
       "pffPositionRank": 21,
       "pffPositionTotal": 59,
-      "pffPositionLabel": "C"
+      "pffPositionLabel": "C",
+      "pffTied": false
     },
     {
       "position": "C",
@@ -115,7 +123,8 @@
       "pffGrade": 67.6,
       "pffPositionRank": 40,
       "pffPositionTotal": 138,
-      "pffPositionLabel": "G"
+      "pffPositionLabel": "G",
+      "pffTied": false
     },
     {
       "position": "RG",
@@ -126,7 +135,8 @@
       "pffGrade": 72.0,
       "pffPositionRank": 24,
       "pffPositionTotal": 138,
-      "pffPositionLabel": "G"
+      "pffPositionLabel": "G",
+      "pffTied": false
     },
     {
       "position": "RG",
@@ -145,7 +155,8 @@
       "pffGrade": 63.6,
       "pffPositionRank": 69,
       "pffPositionTotal": 134,
-      "pffPositionLabel": "T"
+      "pffPositionLabel": "T",
+      "pffTied": false
     },
     {
       "position": "RT",
@@ -156,7 +167,8 @@
       "pffGrade": 57.7,
       "pffPositionRank": 92,
       "pffPositionTotal": 134,
-      "pffPositionLabel": "T"
+      "pffPositionLabel": "T",
+      "pffTied": true
     },
     {
       "position": "TE",
@@ -167,7 +179,8 @@
       "pffGrade": 59.4,
       "pffPositionRank": 66,
       "pffPositionTotal": 125,
-      "pffPositionLabel": "TE"
+      "pffPositionLabel": "TE",
+      "pffTied": false
     },
     {
       "position": "TE",
@@ -178,7 +191,8 @@
       "pffGrade": 73.0,
       "pffPositionRank": 24,
       "pffPositionTotal": 125,
-      "pffPositionLabel": "TE"
+      "pffPositionLabel": "TE",
+      "pffTied": true
     },
     {
       "position": "TE",
@@ -189,7 +203,8 @@
       "pffGrade": 55.1,
       "pffPositionRank": 91,
       "pffPositionTotal": 125,
-      "pffPositionLabel": "TE"
+      "pffPositionLabel": "TE",
+      "pffTied": false
     },
     {
       "position": "QB",
@@ -200,7 +215,8 @@
       "pffGrade": 85.4,
       "pffPositionRank": 7,
       "pffPositionTotal": 76,
-      "pffPositionLabel": "QB"
+      "pffPositionLabel": "QB",
+      "pffTied": false
     },
     {
       "position": "QB",
@@ -219,7 +235,8 @@
       "pffGrade": 75.3,
       "pffPositionRank": 25,
       "pffPositionTotal": 136,
-      "pffPositionLabel": "HB"
+      "pffPositionLabel": "HB",
+      "pffTied": true
     },
     {
       "position": "RB",
@@ -230,7 +247,8 @@
       "pffGrade": 60.3,
       "pffPositionRank": 94,
       "pffPositionTotal": 136,
-      "pffPositionLabel": "HB"
+      "pffPositionLabel": "HB",
+      "pffTied": false
     },
     {
       "position": "RB",
@@ -241,7 +259,8 @@
       "pffGrade": 53.8,
       "pffPositionRank": 116,
       "pffPositionTotal": 136,
-      "pffPositionLabel": "HB"
+      "pffPositionLabel": "HB",
+      "pffTied": false
     },
     {
       "position": "FB",
@@ -252,7 +271,8 @@
       "pffGrade": 60.5,
       "pffPositionRank": 7,
       "pffPositionTotal": 9,
-      "pffPositionLabel": "FB"
+      "pffPositionLabel": "FB",
+      "pffTied": false
     },
     {
       "position": "DE",
@@ -263,7 +283,8 @@
       "pffGrade": 55.3,
       "pffPositionRank": 112,
       "pffPositionTotal": 225,
-      "pffPositionLabel": "DI"
+      "pffPositionLabel": "DI",
+      "pffTied": true
     },
     {
       "position": "DE",
@@ -282,7 +303,8 @@
       "pffGrade": 67.6,
       "pffPositionRank": 48,
       "pffPositionTotal": 225,
-      "pffPositionLabel": "DI"
+      "pffPositionLabel": "DI",
+      "pffTied": false
     },
     {
       "position": "DT",
@@ -293,7 +315,8 @@
       "pffGrade": 88.7,
       "pffPositionRank": 2,
       "pffPositionTotal": 225,
-      "pffPositionLabel": "DI"
+      "pffPositionLabel": "DI",
+      "pffTied": false
     },
     {
       "position": "DT",
@@ -304,7 +327,8 @@
       "pffGrade": 58.9,
       "pffPositionRank": 88,
       "pffPositionTotal": 225,
-      "pffPositionLabel": "DI"
+      "pffPositionLabel": "DI",
+      "pffTied": false
     },
     {
       "position": "LOLB",
@@ -315,7 +339,8 @@
       "pffGrade": 68.3,
       "pffPositionRank": 64,
       "pffPositionTotal": 206,
-      "pffPositionLabel": "ED"
+      "pffPositionLabel": "ED",
+      "pffTied": false
     },
     {
       "position": "LOLB",
@@ -334,7 +359,8 @@
       "pffGrade": 69.1,
       "pffPositionRank": 57,
       "pffPositionTotal": 206,
-      "pffPositionLabel": "ED"
+      "pffPositionLabel": "ED",
+      "pffTied": true
     },
     {
       "position": "WLB",
@@ -345,7 +371,8 @@
       "pffGrade": 60.4,
       "pffPositionRank": 97,
       "pffPositionTotal": 186,
-      "pffPositionLabel": "LB"
+      "pffPositionLabel": "LB",
+      "pffTied": false
     },
     {
       "position": "WLB",
@@ -364,7 +391,8 @@
       "pffGrade": 67.4,
       "pffPositionRank": 63,
       "pffPositionTotal": 186,
-      "pffPositionLabel": "LB"
+      "pffPositionLabel": "LB",
+      "pffTied": true
     },
     {
       "position": "MLB",
@@ -375,7 +403,8 @@
       "pffGrade": 40.1,
       "pffPositionRank": 170,
       "pffPositionTotal": 186,
-      "pffPositionLabel": "LB"
+      "pffPositionLabel": "LB",
+      "pffTied": false
     },
     {
       "position": "ROLB",
@@ -386,7 +415,8 @@
       "pffGrade": 73.2,
       "pffPositionRank": 44,
       "pffPositionTotal": 206,
-      "pffPositionLabel": "ED"
+      "pffPositionLabel": "ED",
+      "pffTied": false
     },
     {
       "position": "ROLB",
@@ -397,7 +427,8 @@
       "pffGrade": 64.5,
       "pffPositionRank": 82,
       "pffPositionTotal": 206,
-      "pffPositionLabel": "ED"
+      "pffPositionLabel": "ED",
+      "pffTied": false
     },
     {
       "position": "ROLB",
@@ -408,7 +439,8 @@
       "pffGrade": 82.3,
       "pffPositionRank": 18,
       "pffPositionTotal": 206,
-      "pffPositionLabel": "ED"
+      "pffPositionLabel": "ED",
+      "pffTied": false
     },
     {
       "position": "LCB",
@@ -419,7 +451,8 @@
       "pffGrade": 65.3,
       "pffPositionRank": 72,
       "pffPositionTotal": 217,
-      "pffPositionLabel": "CB"
+      "pffPositionLabel": "CB",
+      "pffTied": false
     },
     {
       "position": "LCB",
@@ -430,7 +463,8 @@
       "pffGrade": 35.2,
       "pffPositionRank": 214,
       "pffPositionTotal": 217,
-      "pffPositionLabel": "CB"
+      "pffPositionLabel": "CB",
+      "pffTied": false
     },
     {
       "position": "LCB",
@@ -449,7 +483,8 @@
       "pffGrade": 69.1,
       "pffPositionRank": 52,
       "pffPositionTotal": 179,
-      "pffPositionLabel": "S"
+      "pffPositionLabel": "S",
+      "pffTied": true
     },
     {
       "position": "SS",
@@ -460,7 +495,8 @@
       "pffGrade": 46.8,
       "pffPositionRank": 160,
       "pffPositionTotal": 179,
-      "pffPositionLabel": "S"
+      "pffPositionLabel": "S",
+      "pffTied": false
     },
     {
       "position": "FS",
@@ -471,7 +507,8 @@
       "pffGrade": 61.0,
       "pffPositionRank": 105,
       "pffPositionTotal": 179,
-      "pffPositionLabel": "S"
+      "pffPositionLabel": "S",
+      "pffTied": false
     },
     {
       "position": "FS",
@@ -482,7 +519,8 @@
       "pffGrade": 50.9,
       "pffPositionRank": 147,
       "pffPositionTotal": 179,
-      "pffPositionLabel": "S"
+      "pffPositionLabel": "S",
+      "pffTied": false
     },
     {
       "position": "FS",
@@ -493,7 +531,8 @@
       "pffGrade": 33.8,
       "pffPositionRank": 175,
       "pffPositionTotal": 179,
-      "pffPositionLabel": "S"
+      "pffPositionLabel": "S",
+      "pffTied": false
     },
     {
       "position": "RCB",
@@ -504,7 +543,8 @@
       "pffGrade": 66.3,
       "pffPositionRank": 65,
       "pffPositionTotal": 217,
-      "pffPositionLabel": "CB"
+      "pffPositionLabel": "CB",
+      "pffTied": true
     },
     {
       "position": "RCB",
@@ -515,7 +555,8 @@
       "pffGrade": 56.1,
       "pffPositionRank": 144,
       "pffPositionTotal": 217,
-      "pffPositionLabel": "CB"
+      "pffPositionLabel": "CB",
+      "pffTied": true
     },
     {
       "position": "NB",
@@ -534,7 +575,8 @@
       "pffGrade": 68.7,
       "pffPositionRank": 19,
       "pffPositionTotal": 36,
-      "pffPositionLabel": "P"
+      "pffPositionLabel": "P",
+      "pffTied": true
     },
     {
       "position": "PK",
@@ -545,7 +587,8 @@
       "pffGrade": 94.0,
       "pffPositionRank": 1,
       "pffPositionTotal": 42,
-      "pffPositionLabel": "K"
+      "pffPositionLabel": "K",
+      "pffTied": false
     },
     {
       "position": "LS",
@@ -564,7 +607,8 @@
       "pffGrade": 68.7,
       "pffPositionRank": 19,
       "pffPositionTotal": 36,
-      "pffPositionLabel": "P"
+      "pffPositionLabel": "P",
+      "pffTied": true
     },
     {
       "position": "KO",
@@ -575,7 +619,8 @@
       "pffGrade": 94.0,
       "pffPositionRank": 1,
       "pffPositionTotal": 42,
-      "pffPositionLabel": "K"
+      "pffPositionLabel": "K",
+      "pffTied": false
     },
     {
       "position": "PR",
@@ -586,7 +631,8 @@
       "pffGrade": 61.6,
       "pffPositionRank": 125,
       "pffPositionTotal": 223,
-      "pffPositionLabel": "WR"
+      "pffPositionLabel": "WR",
+      "pffTied": true
     },
     {
       "position": "PR",
@@ -605,7 +651,8 @@
       "pffGrade": 53.2,
       "pffPositionRank": 194,
       "pffPositionTotal": 223,
-      "pffPositionLabel": "WR"
+      "pffPositionLabel": "WR",
+      "pffTied": false
     },
     {
       "position": "KR",
@@ -616,7 +663,8 @@
       "pffGrade": 61.6,
       "pffPositionRank": 125,
       "pffPositionTotal": 223,
-      "pffPositionLabel": "WR"
+      "pffPositionLabel": "WR",
+      "pffTied": true
     },
     {
       "position": "KR",
@@ -627,7 +675,8 @@
       "pffGrade": 60.3,
       "pffPositionRank": 94,
       "pffPositionTotal": 136,
-      "pffPositionLabel": "HB"
+      "pffPositionLabel": "HB",
+      "pffTied": false
     }
   ]
 }
