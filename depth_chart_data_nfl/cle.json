@@ -7,8 +7,7 @@
       "player": "Denzel Boston",
       "jersey": "12",
       "code": "26/2",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LWR",
@@ -51,8 +50,7 @@
       "player": "Kc Concepcion",
       "jersey": "1",
       "code": "26/1",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "SWR",
@@ -71,8 +69,7 @@
       "player": "Spencer Fano",
       "jersey": "55",
       "code": "26/1",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LT",
@@ -127,8 +124,7 @@
       "player": "Parker Brailsford",
       "jersey": "52",
       "code": "26/5",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "C",
@@ -171,8 +167,7 @@
       "player": "Austin Barber",
       "jersey": "58",
       "code": "26/3",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "TE",
@@ -203,16 +198,14 @@
       "player": "Carsen Ryan",
       "jersey": "48",
       "code": "26/7",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "QB",
       "player": "Deshaun Watson",
       "jersey": "4",
       "code": "T/Hou",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "QB",
@@ -231,8 +224,7 @@
       "player": "Taylen Green",
       "jersey": "15",
       "code": "26/6",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RB",
@@ -275,8 +267,7 @@
       "player": "Michael Burton",
       "jersey": "34",
       "code": "U/Den",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "LDE",
@@ -319,8 +310,7 @@
       "player": "Mike Hall Jr.",
       "jersey": "51",
       "code": "24/2",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RDT",
@@ -387,8 +377,7 @@
       "player": "Winston Reid",
       "jersey": "59",
       "code": "CF24",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "WLB",
@@ -419,12 +408,7 @@
       "player": "Justin Jefferson",
       "jersey": "17",
       "code": "26/5",
-      "isAcquired": false,
-      "pffGrade": 80.5,
-      "pffPositionRank": 18,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "LCB",
@@ -503,8 +487,7 @@
       "player": "Emmanuel McNeil-Warren",
       "jersey": "28",
       "code": "26/2",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RCB",
@@ -547,8 +530,7 @@
       "player": "Toriano Pride Jr.",
       "jersey": "35",
       "code": "W/Buf",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "PT",
@@ -579,8 +561,7 @@
       "player": "Rex Sunahara",
       "jersey": "50",
       "code": "SF24",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "H",
@@ -611,68 +592,42 @@
       "player": "Kc Concepcion",
       "jersey": "1",
       "code": "26/1",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "PR",
       "player": "Isaiah Bond",
       "jersey": "0",
       "code": "CF25",
-      "isAcquired": false,
-      "pffGrade": 57.1,
-      "pffPositionRank": 169,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "PR",
       "player": "Tylan Wallace",
       "jersey": "16",
       "code": "U/Bal",
-      "isAcquired": true,
-      "pffGrade": 49.5,
-      "pffPositionRank": 213,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": true
     },
     {
       "position": "KR",
       "player": "Malachi Corley",
       "jersey": "11",
       "code": "SF25",
-      "isAcquired": false,
-      "pffGrade": 70.3,
-      "pffPositionRank": 61,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Dylan Sampson",
       "jersey": "22",
       "code": "25/4",
-      "isAcquired": false,
-      "pffGrade": 65.8,
-      "pffPositionRank": 76,
-      "pffPositionTotal": 136,
-      "pffPositionLabel": "HB",
-      "pffTied": true
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Tylan Wallace",
       "jersey": "16",
       "code": "U/Bal",
-      "isAcquired": true,
-      "pffGrade": 49.5,
-      "pffPositionRank": 213,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": true
     }
   ]
 }
