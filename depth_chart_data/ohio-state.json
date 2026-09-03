@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-03T03:32:06.965745+00:00",
-  "ourladsUpdatedAt": "2026-09-03T03:32:06.965745+00:00",
-  "cfbdUpdatedAt": "2026-09-03T03:32:06.965745+00:00",
+  "generatedAt": "2026-09-03T05:00:12.235010+00:00",
+  "ourladsUpdatedAt": "2026-09-03T05:00:12.235010+00:00",
+  "cfbdUpdatedAt": "2026-09-03T05:00:12.235010+00:00",
   "cfb27UpdatedAt": "2026-09-03T03:36:49.854352+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Ohio State",
@@ -22,13 +22,13 @@
       "hsNationalRank": 1,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 99,
-      "cfb27Dev": "Star",
       "pffGrade": 90.7,
       "pffPositionRank": 2,
       "pffPositionTotal": 569,
       "pffPositionLabel": "WR",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 99,
+      "cfb27Dev": "Star"
     },
     {
       "position": "WR-X",
@@ -44,6 +44,11 @@
       "hsNationalRank": 731,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 70,
       "cfb27Dev": "Normal"
     },
@@ -61,13 +66,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 76,
-      "cfb27Dev": "Impact",
       "pffGrade": 52.5,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "WR",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 76,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "WR-X",
@@ -83,13 +88,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null,
       "pffGrade": 59.6,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "WR",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "WR-Z",
@@ -105,13 +110,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 85,
-      "cfb27Dev": "Impact",
       "pffGrade": 77.7,
       "pffPositionRank": 45,
       "pffPositionTotal": 569,
       "pffPositionLabel": "WR",
-      "pffTied": true
+      "pffTied": true,
+      "cfb27Rating": 85,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "WR-Z",
@@ -127,6 +132,11 @@
       "hsNationalRank": 60,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 84,
       "cfb27Dev": "Elite"
     },
@@ -144,6 +154,11 @@
       "hsNationalRank": 45,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 78,
       "cfb27Dev": "Star"
     },
@@ -161,13 +176,13 @@
       "hsNationalRank": 36,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 87,
-      "cfb27Dev": "Star",
-      "pffGrade": 63.4,
-      "pffPositionRank": 319,
-      "pffPositionTotal": 569,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "cfb27Dev": "Star"
     },
     {
       "position": "WR-SL",
@@ -183,13 +198,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 83,
-      "cfb27Dev": "Impact",
       "pffGrade": 62.9,
       "pffPositionRank": 332,
       "pffPositionTotal": 569,
       "pffPositionLabel": "WR",
-      "pffTied": true
+      "pffTied": true,
+      "cfb27Rating": 83,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "WR-SL",
@@ -205,6 +220,11 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 77,
       "cfb27Dev": "Impact"
     },
@@ -222,13 +242,13 @@
       "hsNationalRank": 168,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 77,
-      "cfb27Dev": "Star",
       "pffGrade": 69.7,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "T",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 77,
+      "cfb27Dev": "Star"
     },
     {
       "position": "LT",
@@ -244,6 +264,11 @@
       "hsNationalRank": 53,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 75,
       "cfb27Dev": "Normal"
     },
@@ -261,13 +286,13 @@
       "hsNationalRank": 93,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 92,
-      "cfb27Dev": "Star",
       "pffGrade": 73.4,
       "pffPositionRank": 24,
       "pffPositionTotal": 374,
       "pffPositionLabel": "G",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 92,
+      "cfb27Dev": "Star"
     },
     {
       "position": "LG",
@@ -283,13 +308,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 69,
-      "cfb27Dev": "Normal",
       "pffGrade": 59.3,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "G",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 69,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "C",
@@ -305,13 +330,13 @@
       "hsNationalRank": 177,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 88,
-      "cfb27Dev": "Star",
       "pffGrade": 73.7,
       "pffPositionRank": 14,
       "pffPositionTotal": 163,
       "pffPositionLabel": "C",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 88,
+      "cfb27Dev": "Star"
     },
     {
       "position": "C",
@@ -327,13 +352,13 @@
       "hsNationalRank": 228,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 74,
-      "cfb27Dev": "Impact",
       "pffGrade": 73.7,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "G",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 74,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RG",
@@ -349,13 +374,13 @@
       "hsNationalRank": 300,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 90,
-      "cfb27Dev": "Star",
       "pffGrade": 83.5,
       "pffPositionRank": 12,
       "pffPositionTotal": 334,
       "pffPositionLabel": "T",
-      "pffTied": true
+      "pffTied": true,
+      "cfb27Rating": 90,
+      "cfb27Dev": "Star"
     },
     {
       "position": "RG",
@@ -371,13 +396,13 @@
       "hsNationalRank": 283,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 75,
-      "cfb27Dev": "Impact",
       "pffGrade": 59.5,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "G",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 75,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RT",
@@ -393,13 +418,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 82,
-      "cfb27Dev": "Impact",
       "pffGrade": 66.1,
       "pffPositionRank": 120,
       "pffPositionTotal": 334,
       "pffPositionLabel": "T",
-      "pffTied": true
+      "pffTied": true,
+      "cfb27Rating": 82,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RT",
@@ -415,13 +440,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 74,
-      "cfb27Dev": "Impact",
       "pffGrade": 49.0,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "T",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 74,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RT",
@@ -437,13 +462,13 @@
       "hsNationalRank": 388,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 73,
-      "cfb27Dev": "Impact",
       "pffGrade": 60.6,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "T",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 73,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "TE",
@@ -459,13 +484,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 79,
-      "cfb27Dev": "Impact",
       "pffGrade": 53.6,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "TE",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 79,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "TE",
@@ -481,13 +506,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 77,
-      "cfb27Dev": "Normal",
       "pffGrade": 74.4,
       "pffPositionRank": 22,
       "pffPositionTotal": 259,
       "pffPositionLabel": "TE",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 77,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "TE",
@@ -503,13 +528,13 @@
       "hsNationalRank": 408,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 79,
-      "cfb27Dev": "Impact",
       "pffGrade": 45.3,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "TE",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 79,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "TE",
@@ -525,13 +550,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 81,
-      "cfb27Dev": "Normal",
       "pffGrade": 61.0,
       "pffPositionRank": 114,
       "pffPositionTotal": 259,
       "pffPositionLabel": "TE",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 81,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "QB",
@@ -547,13 +572,13 @@
       "hsNationalRank": 20,
       "hsPositionRank": 3,
       "hsStateRank": 1,
-      "cfb27Rating": 94,
-      "cfb27Dev": "Star",
       "pffGrade": 92.5,
       "pffPositionRank": 1,
       "pffPositionTotal": 166,
       "pffPositionLabel": "QB",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 94,
+      "cfb27Dev": "Star"
     },
     {
       "position": "QB",
@@ -569,13 +594,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 82,
-      "cfb27Dev": "Star",
       "pffGrade": 49.0,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "QB",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 82,
+      "cfb27Dev": "Star"
     },
     {
       "position": "QB",
@@ -591,6 +616,11 @@
       "hsNationalRank": 586,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 70,
       "cfb27Dev": "Normal"
     },
@@ -608,6 +638,11 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 71,
       "cfb27Dev": "Impact"
     },
@@ -625,13 +660,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 90,
-      "cfb27Dev": "Star",
       "pffGrade": 86.4,
       "pffPositionRank": 20,
       "pffPositionTotal": 341,
       "pffPositionLabel": "HB",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 90,
+      "cfb27Dev": "Star"
     },
     {
       "position": "RB",
@@ -647,13 +682,13 @@
       "hsNationalRank": 64,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 82,
-      "cfb27Dev": "Impact",
       "pffGrade": 76.5,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "HB",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 82,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RB",
@@ -669,13 +704,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 81,
-      "cfb27Dev": "Normal",
       "pffGrade": 67.0,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "HB",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 81,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RB",
@@ -691,6 +726,11 @@
       "hsNationalRank": 127,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 79,
       "cfb27Dev": "Impact"
     },
@@ -708,13 +748,13 @@
       "hsNationalRank": 60,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 91,
-      "cfb27Dev": "Star",
       "pffGrade": 72.7,
       "pffPositionRank": 150,
       "pffPositionTotal": 544,
       "pffPositionLabel": "ED",
-      "pffTied": true
+      "pffTied": true,
+      "cfb27Rating": 91,
+      "cfb27Dev": "Star"
     },
     {
       "position": "LDE",
@@ -730,13 +770,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 81,
-      "cfb27Dev": "Star",
       "pffGrade": 74.8,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "ED",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 81,
+      "cfb27Dev": "Star"
     },
     {
       "position": "LDE",
@@ -752,6 +792,11 @@
       "hsNationalRank": 52,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 76,
       "cfb27Dev": "Impact"
     },
@@ -769,13 +814,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 88,
-      "cfb27Dev": "Star",
       "pffGrade": 70.7,
       "pffPositionRank": 134,
       "pffPositionTotal": 546,
       "pffPositionLabel": "DI",
-      "pffTied": true
+      "pffTied": true,
+      "cfb27Rating": 88,
+      "cfb27Dev": "Star"
     },
     {
       "position": "NT",
@@ -791,13 +836,13 @@
       "hsNationalRank": 245,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 80,
-      "cfb27Dev": "Impact",
       "pffGrade": 72.6,
       "pffPositionRank": 99,
       "pffPositionTotal": 546,
       "pffPositionLabel": "DI",
-      "pffTied": true
+      "pffTied": true,
+      "cfb27Rating": 80,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "NT",
@@ -813,13 +858,13 @@
       "hsNationalRank": 68,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 78,
-      "cfb27Dev": "Star",
       "pffGrade": 69.5,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "DI",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 78,
+      "cfb27Dev": "Star"
     },
     {
       "position": "DT",
@@ -835,13 +880,13 @@
       "hsNationalRank": 26,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 85,
-      "cfb27Dev": "Star",
       "pffGrade": 59.6,
       "pffPositionRank": 414,
       "pffPositionTotal": 546,
       "pffPositionLabel": "DI",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 85,
+      "cfb27Dev": "Star"
     },
     {
       "position": "DT",
@@ -857,6 +902,11 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 87,
       "cfb27Dev": "Star"
     },
@@ -874,13 +924,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 84,
-      "cfb27Dev": "Impact",
       "pffGrade": 51.9,
       "pffPositionRank": 528,
       "pffPositionTotal": 544,
       "pffPositionLabel": "ED",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 84,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RDE",
@@ -896,13 +946,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 83,
-      "cfb27Dev": "Star",
       "pffGrade": 67.6,
       "pffPositionRank": 267,
       "pffPositionTotal": 544,
       "pffPositionLabel": "ED",
-      "pffTied": true
+      "pffTied": true,
+      "cfb27Rating": 83,
+      "cfb27Dev": "Star"
     },
     {
       "position": "RDE",
@@ -918,13 +968,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null,
       "pffGrade": 60.7,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "ED",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "WLB",
@@ -940,13 +990,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 78,
-      "cfb27Dev": "Impact",
       "pffGrade": 62.3,
       "pffPositionRank": 312,
       "pffPositionTotal": 474,
       "pffPositionLabel": "LB",
-      "pffTied": true
+      "pffTied": true,
+      "cfb27Rating": 78,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "WLB",
@@ -962,13 +1012,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 78,
-      "cfb27Dev": "Star",
       "pffGrade": 66.6,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "LB",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 78,
+      "cfb27Dev": "Star"
     },
     {
       "position": "WLB",
@@ -984,6 +1034,11 @@
       "hsNationalRank": 16,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 77,
       "cfb27Dev": "Elite"
     },
@@ -1001,6 +1056,11 @@
       "hsNationalRank": 195,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 72,
       "cfb27Dev": "Normal"
     },
@@ -1018,13 +1078,13 @@
       "hsNationalRank": 204,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 83,
-      "cfb27Dev": "Impact",
       "pffGrade": 82.2,
       "pffPositionRank": 29,
       "pffPositionTotal": 474,
       "pffPositionLabel": "LB",
-      "pffTied": true
+      "pffTied": true,
+      "cfb27Rating": 83,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "MLB",
@@ -1040,6 +1100,11 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 74,
       "cfb27Dev": "Normal"
     },
@@ -1057,13 +1122,13 @@
       "hsNationalRank": 142,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 74,
-      "cfb27Dev": "Star",
       "pffGrade": 40.4,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "LB",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 74,
+      "cfb27Dev": "Star"
     },
     {
       "position": "MLB",
@@ -1079,13 +1144,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 70,
-      "cfb27Dev": "Normal",
       "pffGrade": 73.9,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "LB",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 70,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "LCB",
@@ -1101,13 +1166,13 @@
       "hsNationalRank": 52,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 88,
-      "cfb27Dev": "Impact",
       "pffGrade": 62.2,
       "pffPositionRank": 389,
       "pffPositionTotal": 524,
       "pffPositionLabel": "CB",
-      "pffTied": true
+      "pffTied": true,
+      "cfb27Rating": 88,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "LCB",
@@ -1123,13 +1188,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 85,
-      "cfb27Dev": "Impact",
       "pffGrade": 60.6,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "CB",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 85,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "SS",
@@ -1145,13 +1210,13 @@
       "hsNationalRank": 375,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 88,
-      "cfb27Dev": "Star",
       "pffGrade": 78.1,
       "pffPositionRank": 57,
       "pffPositionTotal": 516,
       "pffPositionLabel": "S",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 88,
+      "cfb27Dev": "Star"
     },
     {
       "position": "SS",
@@ -1167,6 +1232,11 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 90,
       "cfb27Dev": "Impact"
     },
@@ -1184,6 +1254,11 @@
       "hsNationalRank": 74,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 78,
       "cfb27Dev": "Star"
     },
@@ -1201,13 +1276,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 84,
-      "cfb27Dev": "Impact",
       "pffGrade": 69.1,
       "pffPositionRank": 192,
       "pffPositionTotal": 516,
       "pffPositionLabel": "S",
-      "pffTied": true
+      "pffTied": true,
+      "cfb27Rating": 84,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "FS",
@@ -1223,13 +1298,13 @@
       "hsNationalRank": 841,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 75,
-      "cfb27Dev": "Impact",
       "pffGrade": 70.2,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "S",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 75,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "FS",
@@ -1245,6 +1320,11 @@
       "hsNationalRank": 371,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 75,
       "cfb27Dev": "Normal"
     },
@@ -1262,13 +1342,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 87,
-      "cfb27Dev": "Elite",
       "pffGrade": 60.8,
       "pffPositionRank": 415,
       "pffPositionTotal": 524,
       "pffPositionLabel": "CB",
-      "pffTied": true
+      "pffTied": true,
+      "cfb27Rating": 87,
+      "cfb27Dev": "Elite"
     },
     {
       "position": "RCB",
@@ -1284,13 +1364,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 81,
-      "cfb27Dev": "Impact",
       "pffGrade": 58.2,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "CB",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 81,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RCB",
@@ -1306,6 +1386,11 @@
       "hsNationalRank": 104,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 77,
       "cfb27Dev": "Impact"
     },
@@ -1323,6 +1408,11 @@
       "hsNationalRank": 25,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 81,
       "cfb27Dev": "Star"
     },
@@ -1340,13 +1430,13 @@
       "hsNationalRank": 402,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 76,
-      "cfb27Dev": "Impact",
       "pffGrade": 62.4,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "CB",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 76,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "PT",
@@ -1362,13 +1452,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 75,
-      "cfb27Dev": "Normal",
       "pffGrade": 67.3,
       "pffPositionRank": 63,
       "pffPositionTotal": 144,
       "pffPositionLabel": "P",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 75,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "PT",
@@ -1384,6 +1474,11 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": null,
       "cfb27Dev": null
     },
@@ -1401,13 +1496,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 78,
-      "cfb27Dev": "Normal",
       "pffGrade": 88.7,
       "pffPositionRank": 16,
       "pffPositionTotal": 217,
       "pffPositionLabel": "K",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 78,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "PK",
@@ -1423,6 +1518,11 @@
       "hsNationalRank": 3032,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 71,
       "cfb27Dev": "Normal"
     },
@@ -1440,13 +1540,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 78,
-      "cfb27Dev": "Normal",
       "pffGrade": 88.7,
       "pffPositionRank": 16,
       "pffPositionTotal": 217,
       "pffPositionLabel": "K",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 78,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "KO",
@@ -1462,6 +1562,11 @@
       "hsNationalRank": 3032,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 71,
       "cfb27Dev": "Normal"
     },
@@ -1479,6 +1584,11 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": null,
       "cfb27Dev": null
     },
@@ -1496,6 +1606,11 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": null,
       "cfb27Dev": null
     },
@@ -1513,13 +1628,13 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "cfb27Rating": 75,
-      "cfb27Dev": "Normal",
       "pffGrade": 67.3,
       "pffPositionRank": 63,
       "pffPositionTotal": 144,
       "pffPositionLabel": "P",
-      "pffTied": false
+      "pffTied": false,
+      "cfb27Rating": 75,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "H",
@@ -1535,6 +1650,11 @@
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": null,
       "cfb27Dev": null
     },
@@ -1552,6 +1672,11 @@
       "hsNationalRank": 36,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 87,
       "cfb27Dev": "Star"
     },
@@ -1569,6 +1694,11 @@
       "hsNationalRank": 36,
       "hsPositionRank": null,
       "hsStateRank": null,
+      "pffGrade": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 87,
       "cfb27Dev": "Star"
     }
