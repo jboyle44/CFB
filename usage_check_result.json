@@ -1,0 +1,31 @@
+{
+  "usage_status": 200,
+  "usage_body": "{\"window\":{\"start\":\"2026-08-27T04:30:15.075Z\",\"end\":\"2026-09-03T04:30:15.075Z\"},\"api\":\"all\",\"totals\":{\"requests\":2353,\"cfbRequests\":2353,\"cbbRequests\":0,\"uniqueEndpoints\":8},\"topEndpoints\":[{\"api\":\"cfb\",\"endpoint\":\"/recruiting/players\",\"requests\":1498,\"lastUsedAt\":\"2026-09-03T03:35:11.967Z\"},{\"api\":\"cfb\",\"endpoint\":\"/player/portal\",\"requests\":696,\"lastUsedAt\":\"2026-09-03T03:35:12.104Z\"},{\"api\":\"cfb\",\"endpoint\":\"/games\",\"requests\":77,\"lastUsedAt\":\"2026-09-02T12:26:45.574Z\"},{\"api\":\"cfb\",\"endpoint\":\"/lines\",\"requests\":70,\"lastUsedAt\":\"2026-09-02T12:16:21.430Z\"},{\"api\":\"cfb\",\"endpoint\":\"/rankings\",\"requests\":7,\"lastUsedAt\":\"2026-09-03T03:49:41.113Z\"},{\"api\":\"cfb\",\"endpoint\":\"/records\",\"requests\":2,\"lastUsedAt\":\"2026-09-02T12:26:45.082Z\"},{\"api\":\"cfb\",\"endpoint\":\"/ratings/sp\",\"requests\":2,\"lastUsedAt\":\"2026-09-02T12:26:44.537Z\"},{\"api\":\"cfb\",\"endpoint\":\"/info/usage\",\"requests\":1,\"lastUsedAt\":\"2026-09-03T04:30:15.055Z\"}],\"recentRequests\":[{\"api\":\"cfb\",\"endpoint\":\"/info/usage\",\"requestedAt\":\"2026-09-03T04:30:15.055Z\"},{\"api\":\"cfb\",\"endpoint\":\"/rankings\",\"requestedAt\":\"2026-09-03T03:49:41.113Z\"},{\"api\":\"cfb\",\"endpoint\":\"/rankings\",\"requestedAt\":\"2026-09-03T03:47:00.356Z\"},{\"api\":\"cfb\",\"endpoint\":\"/rankings\",\"requestedAt\":\"2026-09-03T03:45:39.778Z\"},{\"api\":\"cfb\",\"endpoint\":\"/rankings\",\"requestedAt\":\"2026-09-03T03:44:47.685Z\"},{\"api\":\"cfb\",\"endpoint\":\"/player/portal\",\"requestedAt\":\"2026-09-03T03:35:12.104Z\"},{\"api\":\"cfb\",\"endpoint\":\"/player/portal\",\"requestedAt\":\"2026-09-03T03:35:12.033Z\"},{\"api\":\"cfb\",\"endpoint\":\"/recruiting/players\",\"requestedAt\":\"2026-09-03T03:35:11.967Z\"},{\"api\":\"cfb\",\"endpoint\":\"/recruiting/players\",\"requestedAt\":\"2026-09-03T03:35:11.893Z\"},{\"api\":\"cfb\",\"endpoint\":\"/recruiting/players\",\"requestedAt\":\"2026-09-03T03:35:11.804Z\"}]}",
+  "test_call_status": 429,
+  "test_call_headers": {
+    "Date": "Thu, 03 Sep 2026 04:30:19 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "42",
+    "Connection": "keep-alive",
+    "Server": "cloudflare",
+    "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+    "Cross-Origin-Opener-Policy": "same-origin",
+    "Cross-Origin-Resource-Policy": "same-origin",
+    "Origin-Agent-Cluster": "?1",
+    "Referrer-Policy": "no-referrer",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "X-Content-Type-Options": "nosniff",
+    "X-DNS-Prefetch-Control": "off",
+    "X-Download-Options": "noopen",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Permitted-Cross-Domain-Policies": "none",
+    "X-XSS-Protection": "0",
+    "Access-Control-Allow-Origin": "*",
+    "X-CallLimit-Remaining": "0",
+    "ETag": "W/\"2a-StelzfS0jIRCg7niwxsUXo9zp3Y\"",
+    "cf-cache-status": "DYNAMIC",
+    "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=f9yyN68OmM0dNdYx7kP1AI4cWIg3CVUsw48rkoIr%2BfLqqKJVq7nJeVzc27Uc5ylbAt2hnWfwIj%2BPEGmD9Lrsccuxt1H%2FVFnikIKhKnOHiQbZXiJMlk3MYS6vgcymBcSUmLPRPFeASM1AfDizAQ%3D%3D\"}]}",
+    "CF-RAY": "a35204a2fc792385-SJC"
+  },
+  "test_call_body_snippet": "{\"message\":\"Monthly call quota exceeded.\"}"
+}
