@@ -43,16 +43,14 @@
       "player": "Hollywood Brown",
       "jersey": "0",
       "code": "U/KC",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "SWR",
       "player": "Makai Lemon",
       "jersey": "9",
       "code": "26/1",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "SWR",
@@ -107,8 +105,7 @@
       "player": "Micah Morris",
       "jersey": "76",
       "code": "26/6",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "C",
@@ -151,8 +148,7 @@
       "player": "Willie Lampkin",
       "jersey": "61",
       "code": "CF25",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RT",
@@ -171,8 +167,7 @@
       "player": "Markel Bell",
       "jersey": "72",
       "code": "26/3",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "TE",
@@ -203,16 +198,14 @@
       "player": "Eli Stowers",
       "jersey": "87",
       "code": "26/2",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "TE",
       "player": "E.J. Jenkins",
       "jersey": "84",
       "code": "SF24",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "QB",
@@ -255,8 +248,7 @@
       "player": "Cole Payton",
       "jersey": "18",
       "code": "26/5",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RB",
@@ -467,8 +459,7 @@
       "player": "Riq Woolen",
       "jersey": "2",
       "code": "U/Sea",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "LCB",
@@ -595,8 +586,7 @@
       "player": "Rocco Underwood",
       "jersey": "41",
       "code": "CF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "H",
@@ -627,56 +617,35 @@
       "player": "Makai Lemon",
       "jersey": "9",
       "code": "26/1",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "PR",
       "player": "Elijah Moore",
       "jersey": "19",
       "code": "SF26",
-      "isAcquired": false,
-      "pffGrade": 63.0,
-      "pffPositionRank": 113,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "PR",
       "player": "Cooper DeJean",
       "jersey": "33",
       "code": "24/2",
-      "isAcquired": false,
-      "pffGrade": 77.0,
-      "pffPositionRank": 11,
-      "pffPositionTotal": 217,
-      "pffPositionLabel": "CB",
-      "pffTied": true
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Will Shipley",
       "jersey": "28",
       "code": "24/4",
-      "isAcquired": false,
-      "pffGrade": 54.7,
-      "pffPositionRank": 114,
-      "pffPositionTotal": 136,
-      "pffPositionLabel": "HB",
-      "pffTied": true
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Tank Bigsby",
       "jersey": "8",
       "code": "T/Jax",
-      "isAcquired": true,
-      "pffGrade": 81.8,
-      "pffPositionRank": 10,
-      "pffPositionTotal": 136,
-      "pffPositionLabel": "HB",
-      "pffTied": false
+      "isAcquired": true
     }
   ]
 }
