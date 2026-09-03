@@ -84,7 +84,7 @@ def get_transfer_portal(year):
 
     out = {}
     for e in entries:
-        full_name = f"{e.get('first_name','')} {e.get('last_name','')}".strip().lower()
+        full_name = f"{e.get('firstName','')} {e.get('lastName','')}".strip().lower()
         if not full_name:
             continue
         out[full_name] = {
