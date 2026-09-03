@@ -55,8 +55,7 @@
       "player": "Zavion Thomas",
       "jersey": "81",
       "code": "26/3",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LT",
@@ -123,8 +122,7 @@
       "player": "Logan Jones",
       "jersey": "54",
       "code": "26/2",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RG",
@@ -203,8 +201,7 @@
       "player": "Sam Roush",
       "jersey": "87",
       "code": "26/3",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "QB",
@@ -235,8 +232,7 @@
       "player": "Case Keenum",
       "jersey": "11",
       "code": "U/Hou",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "RB",
@@ -303,8 +299,7 @@
       "player": "Jamree Kromah",
       "jersey": "59",
       "code": "SF24",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LDT",
@@ -335,8 +330,7 @@
       "player": "Jayden Loving",
       "jersey": "91",
       "code": "CF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RDT",
@@ -367,8 +361,7 @@
       "player": "Jordan van den Berg",
       "jersey": "96",
       "code": "26/6",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RDE",
@@ -447,8 +440,7 @@
       "player": "Keyshaun Elliott",
       "jersey": "49",
       "code": "26/5",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LCB",
@@ -467,16 +459,14 @@
       "player": "Malik Muhammad II",
       "jersey": "24",
       "code": "26/4",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "SS",
       "player": "Dillon Thieneman",
       "jersey": "31",
       "code": "26/1",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "SS",
@@ -507,8 +497,7 @@
       "player": "Skyler Thomas",
       "jersey": "38",
       "code": "CF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RCB",
@@ -527,8 +516,7 @@
       "player": "Clark Phillips III",
       "jersey": "20",
       "code": "T/Atl",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "NB",
@@ -583,8 +571,7 @@
       "player": "Beau Gardner",
       "jersey": "45",
       "code": "CF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "H",
@@ -615,64 +602,42 @@
       "player": "Kalif Raymond",
       "jersey": "14",
       "code": "U/Det",
-      "isAcquired": true,
-      "pffGrade": 70.0,
-      "pffPositionRank": 66,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": true
     },
     {
       "position": "PR",
       "player": "Zavion Thomas",
       "jersey": "81",
       "code": "26/3",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "PR",
       "player": "Luther Burden III",
       "jersey": "10",
       "code": "25/2",
-      "isAcquired": false,
-      "pffGrade": 79.3,
-      "pffPositionRank": 25,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Kalif Raymond",
       "jersey": "14",
       "code": "U/Det",
-      "isAcquired": true,
-      "pffGrade": 70.0,
-      "pffPositionRank": 66,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": true
     },
     {
       "position": "KR",
       "player": "Zavion Thomas",
       "jersey": "81",
       "code": "26/3",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Josh Blackwell",
       "jersey": "39",
       "code": "W/Phi",
-      "isAcquired": true,
-      "pffGrade": 64.7,
-      "pffPositionRank": 77,
-      "pffPositionTotal": 217,
-      "pffPositionLabel": "CB",
-      "pffTied": false
+      "isAcquired": true
     }
   ]
 }
