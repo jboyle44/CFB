@@ -101,6 +101,13 @@ def scrape_ourlads_nfl_depth_chart(team_abbr, delay=1.5):
             position = cells[0].get_text(strip=True)
             if not position:
                 continue
+            # Same guard as the CFB scraper -- Ourlads' Injured/Suspended
+            # list uses the identical table structure with "INJ"/"SUS" in
+            # the position column. Not observed in current NFL data, but
+            # this protects against it appearing later the same way it did
+            # on the CFB side.
+            if position in ("INJ", "SUS"):
+                continue
 
             slot_cells = cells[1:]
             for i in range(0, len(slot_cells) - 1, 2):
