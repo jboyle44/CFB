@@ -139,8 +139,7 @@
       "player": "Sam Hecht",
       "jersey": "75",
       "code": "26/5",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RG",
@@ -159,16 +158,14 @@
       "player": "Monroe Freeling",
       "jersey": "57",
       "code": "26/1",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RT",
       "player": "Albert Reese",
       "jersey": "76",
       "code": "CF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "TE",
@@ -223,8 +220,7 @@
       "player": "Feleipe Franks",
       "jersey": "81",
       "code": "U/Atl",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "QB",
@@ -255,8 +251,7 @@
       "player": "Haynes King",
       "jersey": "16",
       "code": "CF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RB",
@@ -275,8 +270,7 @@
       "player": "Jonathon Brooks",
       "jersey": "25",
       "code": "24/2",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RB",
@@ -307,24 +301,21 @@
       "player": "Aaron Hall",
       "jersey": "94",
       "code": "CF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "NT",
       "player": "Cam Jackson",
       "jersey": "99",
       "code": "25/5",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "NT",
       "player": "Lee Hunter",
       "jersey": "92",
       "code": "26/2",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RDE",
@@ -343,8 +334,7 @@
       "player": "TeRah Edwards",
       "jersey": "93",
       "code": "T/LAC",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "LOLB",
@@ -387,8 +377,7 @@
       "player": "Jackson Kuwatch",
       "jersey": "46",
       "code": "26/7",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RILB",
@@ -419,8 +408,7 @@
       "player": "Patrick Jones II",
       "jersey": "91",
       "code": "U/Min",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "ROLB",
@@ -511,8 +499,7 @@
       "player": "Zakee Wheatley",
       "jersey": "20",
       "code": "26/5",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RCB",
@@ -531,8 +518,7 @@
       "player": "Will Lee III",
       "jersey": "24",
       "code": "26/4",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "NB",
@@ -575,8 +561,7 @@
       "player": "Jj Jansen",
       "jersey": "44",
       "code": "T/GB",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "H",
@@ -607,48 +592,28 @@
       "player": "Jimmy Horn Jr.",
       "jersey": "15",
       "code": "25/6",
-      "isAcquired": false,
-      "pffGrade": 65.2,
-      "pffPositionRank": 100,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Chuba Hubbard",
       "jersey": "30",
       "code": "21/4",
-      "isAcquired": false,
-      "pffGrade": 67.5,
-      "pffPositionRank": 64,
-      "pffPositionTotal": 136,
-      "pffPositionLabel": "HB",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Jimmy Horn Jr.",
       "jersey": "15",
       "code": "25/6",
-      "isAcquired": false,
-      "pffGrade": 65.2,
-      "pffPositionRank": 100,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "John Metchie III",
       "jersey": "13",
       "code": "U/NYJ",
-      "isAcquired": true,
-      "pffGrade": 57.6,
-      "pffPositionRank": 163,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "isAcquired": true
     }
   ]
 }
