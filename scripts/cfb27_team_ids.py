@@ -1,0 +1,25 @@
+# Maps our internal team_key (from teams_config.py) to teamcrafters.net's
+# numeric CFB27 team ID. Verified against the freshmen-update-v2 team list.
+CFB27_TEAM_IDS = {
+    "illinois": 662, "indiana": 663, "iowa": 664, "maryland": 679,
+    "michigan": 683, "michigan-state": 684, "minnesota": 686, "nebraska": 691,
+    "northwestern": 698, "ohio-state": 701, "oregon": 706, "penn-state": 708,
+    "purdue": 710, "rutgers": 712, "ucla": 736, "usc": 740, "washington": 749,
+    "wisconsin": 754,
+    "alabama": 625, "arkansas": 629, "auburn": 632, "florida": 653,
+    "georgia": 656, "kentucky": 671, "lsu": 677, "ole-miss": 705,
+    "mississippi-state": 687, "missouri": 688, "oklahoma": 702,
+    "south-carolina": 718, "tennessee": 725, "texas": 726, "texas-am": 727,
+    "vanderbilt": 745,
+    "boston-college": 636, "california": 640, "clemson": 644, "duke": 648,
+    "florida-state": 654, "georgia-tech": 659, "louisville": 676,
+    "miami-fl": 681, "north-carolina": 695, "nc-state": 690,
+    "pittsburgh": 709, "smu": 716, "stanford": 721, "syracuse": 722,
+    "virginia": 746, "virginia-tech": 747, "wake-forest": 748,
+    "notre-dame": 699,
+    "arizona": 627, "arizona-state": 628, "baylor": 634, "byu": 639,
+    "ucf": 735, "cincinnati": 643, "colorado": 646, "houston": 661,
+    "iowa-state": 665, "kansas": 668, "kansas-state": 669,
+    "oklahoma-state": 703, "tcu": 723, "texas-tech": 729, "utah": 743,
+    "west-virginia": 751,
+}
