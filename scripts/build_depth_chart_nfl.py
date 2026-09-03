@@ -70,7 +70,8 @@ def build(team_key, output_path=None):
             "madden27Dev": None,
         }
         if prev_match:
-            for k in ("pffGrade", "madden27Rating", "madden27Dev"):
+            for k in ("pffGrade", "pffPositionRank", "pffPositionTotal", "pffPositionLabel", "pffTied",
+                      "madden27Rating", "madden27Dev"):
                 if out_row.get(k) is None:
                     out_row[k] = prev_match.get(k)
         output_rows.append(out_row)
