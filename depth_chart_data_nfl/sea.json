@@ -19,8 +19,7 @@
       "player": "Montorie Foster Jr.",
       "jersey": "87",
       "code": "CF25",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RWR",
@@ -135,8 +134,7 @@
       "player": "Olu Oluwatimi",
       "jersey": "55",
       "code": "23/5",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RG",
@@ -155,8 +153,7 @@
       "player": "Beau Stephens",
       "jersey": "70",
       "code": "26/5",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RT",
@@ -247,16 +244,14 @@
       "player": "Jalen Milroe",
       "jersey": "6",
       "code": "25/3",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RB",
       "player": "Jadarian Price",
       "jersey": "8",
       "code": "26/1",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RB",
@@ -287,8 +282,7 @@
       "player": "Brady Russell",
       "jersey": "38",
       "code": "P/Phi",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "DE",
@@ -451,36 +445,21 @@
       "player": "Uchenna Nwosu",
       "jersey": "7",
       "code": "U/LAC",
-      "isAcquired": true,
-      "pffGrade": 60.4,
-      "pffPositionRank": 108,
-      "pffPositionTotal": 206,
-      "pffPositionLabel": "ED",
-      "pffTied": false
+      "isAcquired": true
     },
     {
       "position": "SLB",
       "player": "Dante Fowler Jr.",
       "jersey": "56",
       "code": "U/Dal",
-      "isAcquired": true,
-      "pffGrade": 77.6,
-      "pffPositionRank": 25,
-      "pffPositionTotal": 206,
-      "pffPositionLabel": "ED",
-      "pffTied": true
+      "isAcquired": true
     },
     {
       "position": "SLB",
       "player": "Connor O'Toole",
       "jersey": "57",
       "code": "CF25",
-      "isAcquired": false,
-      "pffGrade": 62.9,
-      "pffPositionRank": 93,
-      "pffPositionTotal": 206,
-      "pffPositionLabel": "ED",
-      "pffTied": true
+      "isAcquired": false
     },
     {
       "position": "LCB",
@@ -547,8 +526,7 @@
       "player": "Julian Neal",
       "jersey": "1",
       "code": "26/3",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "NB",
@@ -567,8 +545,7 @@
       "player": "Avery Smith",
       "jersey": "27",
       "code": "T/LAC",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "PT",
@@ -599,8 +576,7 @@
       "player": "Chris Stoll",
       "jersey": "41",
       "code": "CF23",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "H",
@@ -631,60 +607,35 @@
       "player": "Rashid Shaheed",
       "jersey": "22",
       "code": "T/NO",
-      "isAcquired": true,
-      "pffGrade": 66.1,
-      "pffPositionRank": 93,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "isAcquired": true
     },
     {
       "position": "PR",
       "player": "Tory Horton",
       "jersey": "15",
       "code": "25/5",
-      "isAcquired": false,
-      "pffGrade": 70.1,
-      "pffPositionRank": 65,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Tory Horton",
       "jersey": "15",
       "code": "25/5",
-      "isAcquired": false,
-      "pffGrade": 70.1,
-      "pffPositionRank": 65,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Rashid Shaheed",
       "jersey": "22",
       "code": "T/NO",
-      "isAcquired": true,
-      "pffGrade": 66.1,
-      "pffPositionRank": 93,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "isAcquired": true
     },
     {
       "position": "KR",
       "player": "George Holani",
       "jersey": "36",
       "code": "CF24",
-      "isAcquired": false,
-      "pffGrade": 59.9,
-      "pffPositionRank": 95,
-      "pffPositionTotal": 136,
-      "pffPositionLabel": "HB",
-      "pffTied": false
+      "isAcquired": false
     }
   ]
 }
