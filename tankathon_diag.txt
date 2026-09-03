@@ -1,0 +1,46 @@
+status: 200
+length: 1225806
+Total unique classes found: 84
+Player/rank-related classes: ['future-players', 'mock-row', 'mock-row-logo', 'mock-row-measurements', 'mock-row-name', 'mock-row-pick-number', 'mock-row-player', 'mock-row-school-position', 'mock-row-stats-container', 'mock-rows', 'nfl-mock-row-stats', 'row']
+
+=== RAW HTML SNIPPET (first 5000 chars after body) ===
+<body class="sport-nfl"><div class="header-outer-wrapper"><div class="header-wrapper"><div class="header content"><div class="title"><a class="logo-and-text" href="/nfl"><img class="header-logo" src="https://d13084n5ydpt71.cloudfront.net/assets/tank-nfl-5cf7168768c3957df4144345efd1d2c441cc7c5b08f465724556f6f1f0ce4cf3.svg"/><span>Tankathon</span></a></div> <div class="sport-nav"><a href="/"><div class="sport-nav-button"><span>NBA</span></div></a><a class="active-sport" href="/nfl"><div class="sport-nav-button"><span>NFL</span></div></a><a href="/nhl"><div class="sport-nav-button"><span>NHL</span></div></a><a href="/mlb"><div class="sport-nav-button"><span>MLB</span></div></a><a href="/wnba"><div class="sport-nav-button"><span>WNBA</span></div></a></div><div class="header-search"><i class="fa fa-search search-icon"></i><input autocapitalize="none" autocomplete="off" autocorrect="off" id="header-search-input" placeholder="Search (Press /)" spellcheck="false" type="text"/><div class="search-results-dropdown"></div></div></div></div><div class="subheader-wrapper"><div class="subheader content"><a href="/nfl"><div class="nav-button direct-link nfl"><span class="desktop">NFL</span> <span>Home</span></div></a><a href="/nfl/mock-draft"><div class="nav-button direct-link nfl"><span>Mock</span> <span class="desktop">Draft</span></div></a><a href="/nfl/big-board"><div class="nav-button direct-link nfl active"><span class="desktop">Big</span> <span>Board</span></div></a><a href="/nfl/full-draft"><div class="nav-button direct-link nfl"><span class="desktop">Full</span> <span>Order</span></div></a><div class="nav-button nfl" id="more-menu-toggle"><span>More</span> <i class="fa fa-caret-down teams-menu-icon"></i></div></div></div><div class="nav-teams nfl" id="more-menu"><div class="content"><ul><li><a href="/nfl/power-rankings">Draft Power Rankings</a></li><li><a href="/nfl/remaining-schedule-strength">Remaining Schedule Strength</a></li><li><a href="/nfl/tiebreaker-rooting">SOS Tiebreaker Rooting Help</a></li><li><a href="/nfl/past-drafts">Past Draft Results</a></li><li><a href="/nfl/colleges">Colleges</a></li><li><a href="/nfl/big-board/matchup">Big Board College Matchup</a></li></ul></div></div></div><main><div class="content"><div align="center" class="horizontal-primary-ad" data-freestar-ad="__728x90 __320x100" id="tankathon_leaderboard_atf">
+<script data-cfasync="false" type="text/javascript">
+      freestar.config.enabled_slots.push({ placementName: "tankathon_leaderboard_atf", slotId: "tankathon_leaderboard_atf" });
+  </script>
+</div>
+<div class="sidebar-container left">
+<!-- <div align="center" data-freestar-ad="__300x600 __0x0" id="tankathon_left_rail" class="vertical-ad-freestar with-leaderboard sticky">
+    <script data-cfasync="false" type="text/javascript">
+        freestar.config.enabled_slots.push({ placementName: "tankathon_left_rail", slotId: "tankathon_left_rail" });
+    </script>
+  </div> -->
+<div align="center" class="vertical-ad-freestar-mrec with-leaderboard sticky mrec-primary" data-freestar-ad="__300x250" id="tankathon_mrec_1">
+<script data-cfasync="false" type="text/javascript">
+      freestar.config.enabled_slots.push({ placementName: "tankathon_mrec_1", slotId: "tankathon_mrec_1" });
+    </script>
+</div>
+<div align="center" class="vertical-ad-freestar-mrec with-leaderboard sticky mrec-secondary" data-freestar-ad="__300x250" id="tankathon_mrec_3">
+<script data-cfasync="false" type="text/javascript">
+      freestar.config.enabled_slots.push({ placementName: "tankathon_mrec_3", slotId: "tankathon_mrec_3" });
+    </script>
+</div>
+</div>
+<div class="sidebar-container right">
+<!-- <div align="center" data-freestar-ad="__300x600 __0x0" id="tankathon_right_rail" class="vertical-ad-freestar with-leaderboard sticky">
+    <script data-cfasync="false" type="text/javascript">
+        freestar.config.enabled_slots.push({ placementName: "tankathon_right_rail", slotId: "tankathon_right_rail" });
+    </script>
+  </div> -->
+<div align="center" class="vertical-ad-freestar-mrec with-leaderboard sticky mrec-primary" data-freestar-ad="__300x250" id="tankathon_mrec_2">
+<script data-cfasync="false" type="text/javascript">
+      freestar.config.enabled_slots.push({ placementName: "tankathon_mrec_2", slotId: "tankathon_mrec_2" });
+    </script>
+</div>
+<div align="center" class="vertical-ad-freestar-mrec with-leaderboard sticky mrec-secondary" data-freestar-ad="__300x250" id="tankathon_mrec_4">
+<script data-cfasync="false" type="text/javascript">
+      freestar.config.enabled_slots.push({ placementName: "tankathon_mrec_4", slotId: "tankathon_mrec_4" });
+    </script>
+</div>
+</div>
+<h1 class="page-title">2027 NFL Draft Big Board</h1><div class="last-updated-at">Player Rankings updated <time datetime="2026-09-02T14:56:00-05:00">about 23 hours</time> ago</div><div class="board-type-selectors"><div class="board-type-selector active" data-option="overall">Overall Rank</div><div class="board-type-selector" data-option="by_school">By School</div></div><div class="overall-filters" style=""><div class="filters"><div class="filter" data-pos="QB">QB</div><div class="filter" data-pos="RB">RB</div><div class="filter" data-pos="WR">WR</div><div class="filter" data-pos="TE">TE</div><div class="filter" data-pos="OT">OT</div><div class="filter" data-pos="IOL">IOL</div></div><div class="filters"><div class="filter" data-pos="DL">DL</div><div class="filter" data-pos="EDGE">EDGE</div><div class="filter" data-pos="LB">LB</div><div class="filter" data-pos="CB">CB</div><div class="filter" data-pos="S">S</div></div></div><div class="by-school-filters" style="display: none;"><div class="filters"><div class="filter active" data-type="combined">COMBINED</div><div class="filter" data-type="offense-defense">OFFENSE/DEFENSE</div></div><div class="matchup-link"><div><a class="underline primary-hover" href="/nfl/big-board/matchup">Head to Head Matchup View</a></div><div style="font-size: 12px; margin-top: 4px; color: #777">Useful when scouting a game on TV</div></div></div><div style="height: 1px;"> <a class="stat-type unselectable desktop active" data-option="totals">Totals</a><a class="stat-type unselectable desktop" data-option="per_game">Per Game</a> </div><div id="mock-draft-board-container"><div id="big-board" style=""><div class="mock-rows" style=""><div class="mock-row nfl" data-pos="WR"><div class="mock-row-pick-number">1</div><div class="mock-row-logo"><a href="/nfl/colleges/ohio-state"><img alt="Ohio State" class="nba-30" src="http://d2uki2uvp6v3wr.cloudfront.net/ncaa/ohio-state.svg"/></a></div> <div class="mock-row-player"><a class="primary-hover" href="/nfl/players/jeremiah-smith"><div class="mock-row-name">Jeremiah Smith</div><div class="mock-row-school-position">WR | Ohio State </div></a> </div> <div class="mock-row-measurements nfl"><div class="section height-weight"><div>6'4"</div><div>222 <span class="lbs">lbs</span></div></div></div> <div class="mock-row-stats-container"><div class="nfl-mock-row-stats statistics"><div class="stat" data-priority="3"><div class="label">REC</div><div class="value total">87</div><div class="value per-game" style="display: none;">6.7</div></div><div class="stat" data-priority="1"><div class="label">REC Yds</div><div class="value total">1243</div><div class="value per-game" style="display: none;">95.6</div></div><div class="stat" data-priority="2"><div class="label">TD</div><div class="value total">12</div><div class="value per-game" style="display: none;">0.92</div></div><div class="stat" data-priority="4"><div class="label">AVG</div><div class="value total">14.3</div><div class="value per-game" style="display: none;">14.3</div></div><div class="stat" data-priority="5"><div class="label">RUSH YDS</div><div class="value total">21</div><div class="value per-game" style="display: none;">1.6</div></div></div></div></div><div class="mock-row nfl" data-pos="QB"><div class="mock-row-pick-number">2</div><div class="mock-row-logo"><a href="/nfl/colleges/t
