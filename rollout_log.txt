@@ -1,0 +1,1634 @@
+Starting remaining: 4429
+[1/54] rutgers -- remaining before: 4428
+Scraping Ourlads depth chart for Rutgers...
+  71 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  61 transfers in from CFBD
+Fetching CFBD recruiting data for 24 (school, year) pairs...
+  Alabama 2023: 27 players
+  Ball State 2024: 21 players
+  Colorado 2023: 18 players
+  Delaware State 2022: 0 players
+  Drake 2022: 0 players
+  Eastern Michigan 2024: 21 players
+  LIU Post 2023: 0 players
+  Lafayette 2022: 1 players
+  Louisiana Tech 2022: 12 players
+  Louisiana Tech 2023: 21 players
+  Maine 2024: 0 players
+  Maryland 2024: 24 players
+  Mercer 2023: 0 players
+  Rice 2023: 21 players
+  Rutgers 2022: 27 players
+  Rutgers 2023: 21 players
+  Rutgers 2024: 25 players
+  Rutgers 2025: 30 players
+  South Carolina 2022: 24 players
+  South Dakota 2024: 8 players
+  TCU 2022: 13 players
+  The Citadel 2023: 4 players
+  Toledo 2022: 14 players
+  Villanova 2023: 8 players
+Wrote ../depth_chart_data/rutgers.json
+[2/54] ucla -- remaining before: 4409
+Scraping Ourlads depth chart for UCLA...
+  76 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  129 transfers in from CFBD
+Fetching CFBD recruiting data for 43 (school, year) pairs...
+  Arizona State 2023: 19 players
+  Boise State 2022: 24 players
+  California 2023: 14 players
+  Eastern Michigan 2022: 5 players
+  Florida 2023: 21 players
+  Florida State 2022: 19 players
+  Georgia Tech 2022: 15 players
+  Harvard 2022: 12 players
+  Idaho 2022: 14 players
+  Iowa State 2023: 26 players
+  James Madison 2022: 14 players
+  James Madison 2023: 18 players
+  James Madison 2024: 18 players
+  Kansas State 2022: 17 players
+  Louisville 2023: 19 players
+  Miami 2023: 25 players
+  Michigan 2023: 27 players
+  Montana State 2024: 16 players
+  Notre Dame 2022: 23 players
+  Notre Dame 2023: 24 players
+  Notre Dame 2025: 25 players
+  Ohio State 2023: 24 players
+  Ohio State 2025: 28 players
+  Oklahoma 2023: 26 players
+  Oklahoma 2024: 30 players
+  Oregon 2023: 33 players
+  Oregon State 2025: 20 players
+  Purdue 2023: 18 players
+  Richmond 2023: 0 players
+  Sam Houston 2025: 12 players
+  South Carolina 2022: 24 players
+  South Carolina 2025: 25 players
+  Tennessee 2023: 26 players
+  Texas 2022: 30 players
+  Texas Tech 2023: 29 players
+  UCLA 2022: 13 players
+  UCLA 2023: 17 players
+  UCLA 2025: 22 players
+  UCLA 2026: 18 players
+  Utah 2022: 18 players
+  Utah 2023: 20 players
+  Utah Tech 2023: 10 players
+  Virginia Tech 2023: 29 players
+Wrote ../depth_chart_data/ucla.json
+[3/54] usc -- remaining before: 4359
+Scraping Ourlads depth chart for USC...
+  73 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  85 transfers in from CFBD
+Fetching CFBD recruiting data for 20 (school, year) pairs...
+  Iowa State 2022: 20 players
+  Memphis 2025: 19 players
+  Michigan State 2022: 27 players
+  NC State 2024: 23 players
+  Notre Dame 2024: 23 players
+  Oregon State 2022: 19 players
+  Penn State 2022: 24 players
+  Penn State 2023: 24 players
+  UCF 2024: 17 players
+  UNLV 2022: 6 players
+  UNLV 2024: 23 players
+  USC 2022: 10 players
+  USC 2023: 27 players
+  USC 2024: 25 players
+  USC 2025: 28 players
+  Utah 2022: 18 players
+  Utah 2024: 16 players
+  Washington 2022: 14 players
+  Washington 2023: 27 players
+  Wisconsin 2023: 16 players
+Wrote ../depth_chart_data/usc.json
+[4/54] washington -- remaining before: 4332
+Scraping Ourlads depth chart for Washington...
+  59 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  82 transfers in from CFBD
+Fetching CFBD recruiting data for 21 (school, year) pairs...
+  Alabama 2024: 28 players
+  Arizona 2022: 30 players
+  Ball State 2023: 19 players
+  Eastern Washington 2025: 22 players
+  Florida International 2022: 18 players
+  Georgia Tech 2022: 15 players
+  Idaho 2023: 32 players
+  Idaho State 2023: 9 players
+  Miami 2023: 25 players
+  Mississippi State 2024: 19 players
+  Northern Arizona 2023: 12 players
+  Oregon 2023: 33 players
+  Sam Houston 2023: 16 players
+  San Diego State 2022: 18 players
+  USC 2023: 27 players
+  Utah Tech 2022: 6 players
+  Virginia Tech 2022: 24 players
+  Virginia Tech 2023: 29 players
+  Washington 2022: 14 players
+  Washington 2024: 16 players
+  Washington State 2022: 31 players
+Wrote ../depth_chart_data/washington.json
+[5/54] wisconsin -- remaining before: 4304
+Scraping Ourlads depth chart for Wisconsin...
+  92 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  89 transfers in from CFBD
+Fetching CFBD recruiting data for 42 (school, year) pairs...
+  App State 2024: 19 players
+  Arkansas 2025: 21 players
+  Augustana 2024: 0 players
+  Bowling Green 2023: 16 players
+  Buffalo 2023: 14 players
+  Charlotte 2023: 15 players
+  East Carolina 2024: 20 players
+  Florida 2022: 22 players
+  Florida State 2024: 25 players
+  Grambling 2023: 4 players
+  Hope  2022: 0 players
+  Iowa State 2023: 26 players
+  Iowa State 2024: 23 players
+  Kansas 2024: 17 players
+  Kentucky 2022: 20 players
+  Louisville 2024: 18 players
+  Michigan State 2022: 27 players
+  Missouri 2023: 19 players
+  Nebraska 2023: 32 players
+  North Carolina 2022: 26 players
+  Ohio State 2024: 25 players
+  Oklahoma 2024: 30 players
+  Oklahoma State 2022: 17 players
+  Old Dominion 2023: 21 players
+  Purdue 2024: 25 players
+  Richmond 2023: 0 players
+  San Diego State 2024: 17 players
+  Southeastern Louisiana 2023: 0 players
+  Southern Illinois 2022: 8 players
+  TCU 2024: 21 players
+  Tennessee 2025: 25 players
+  Toledo 2024: 22 players
+  USC 2024: 25 players
+  UT Martin 2022: 3 players
+  Virginia Tech 2024: 15 players
+  Washington State 2022: 31 players
+  West Virginia 2022: 18 players
+  Wisconsin 2022: 20 players
+  Wisconsin 2023: 16 players
+  Wisconsin 2024: 26 players
+  Wisconsin 2026: 14 players
+  Wisconsin La Crosse 2023: 0 players
+Wrote ../depth_chart_data/wisconsin.json
+[6/54] alabama -- remaining before: 4255
+Scraping Ourlads depth chart for Alabama...
+  97 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  56 transfers in from CFBD
+Fetching CFBD recruiting data for 20 (school, year) pairs...
+  Alabama 2022: 26 players
+  Alabama 2023: 27 players
+  Alabama 2024: 28 players
+  Alabama 2026: 26 players
+  Cal Poly 2023: 17 players
+  Marshall 2025: 18 players
+  Maryland 2023: 25 players
+  Mercer 2024: 7 players
+  Michigan 2022: 27 players
+  Michigan 2025: 25 players
+  North Carolina 2022: 26 players
+  Ohio State 2023: 24 players
+  Oklahoma State 2024: 20 players
+  Ole Miss 2023: 17 players
+  Oregon 2023: 33 players
+  South Carolina 2023: 25 players
+  Texas 2025: 25 players
+  USC 2022: 10 players
+  Virginia Tech 2023: 29 players
+  Washington 2023: 27 players
+Wrote ../depth_chart_data/alabama.json
+[7/54] arkansas -- remaining before: 4228
+Scraping Ourlads depth chart for Arkansas...
+  100 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  126 transfers in from CFBD
+Fetching CFBD recruiting data for 48 (school, year) pairs...
+  Abilene Christian 2022: 3 players
+  Alabama 2023: 27 players
+  Angelo State 2022: 0 players
+  Arkansas 2022: 27 players
+  Arkansas 2023: 27 players
+  Arkansas 2024: 17 players
+  Arkansas 2025: 21 players
+  Arkansas 2026: 20 players
+  Arkansas State 2023: 22 players
+  Auburn 2023: 19 players
+  Auburn 2024: 22 players
+  Baylor 2022: 23 players
+  Charlotte 2022: 16 players
+  Clemson 2023: 26 players
+  Clemson 2025: 15 players
+  Colorado 2023: 18 players
+  Florida 2022: 22 players
+  Fresno State 2022: 17 players
+  Howard 2024: 9 players
+  Iowa State 2025: 21 players
+  Kentucky 2024: 25 players
+  LSU 2024: 28 players
+  Louisiana 2022: 12 players
+  Maryland 2024: 24 players
+  Memphis 2022: 13 players
+  Memphis 2023: 19 players
+  Memphis 2025: 19 players
+  Michigan 2025: 25 players
+  Missouri 2024: 23 players
+  NC State 2025: 23 players
+  New Mexico State 2023: 20 players
+  Ohio State 2025: 28 players
+  Ole Miss 2024: 18 players
+  Oregon 2024: 31 players
+  Oregon State 2024: 16 players
+  Ouachita Baptist 2024: 0 players
+  Southern Illinois 2022: 8 players
+  Stanford 2023: 23 players
+  Temple 2024: 16 players
+  Tennessee 2022: 23 players
+  Tennessee 2023: 26 players
+  Texas A&M 2022: 30 players
+  Texas A&M 2023: 20 players
+  UCF 2022: 17 players
+  USC 2024: 25 players
+  Vanderbilt 2022: 27 players
+  Washington 2024: 16 players
+  West Georgia 2022: 0 players
+Wrote ../depth_chart_data/arkansas.json
+[8/54] auburn -- remaining before: 4173
+Scraping Ourlads depth chart for Auburn...
+  116 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  116 transfers in from CFBD
+Fetching CFBD recruiting data for 37 (school, year) pairs...
+  Akron 2025: 11 players
+  Auburn 2022: 15 players
+  Auburn 2023: 19 players
+  Auburn 2024: 22 players
+  Auburn 2025: 26 players
+  Auburn 2026: 20 players
+  Chattanooga 2025: 7 players
+  Florida 2022: 22 players
+  Florida State 2025: 23 players
+  Hampton 2023: 0 players
+  Hampton 2024: 5 players
+  Howard 2025: 8 players
+  LSU 2023: 28 players
+  LSU 2024: 28 players
+  LSU 2025: 24 players
+  Miami 2024: 27 players
+  Michigan State 2023: 18 players
+  Notre Dame 2025: 25 players
+  Oklahoma 2023: 26 players
+  Oklahoma State 2023: 19 players
+  Ole Miss 2025: 22 players
+  Oregon State 2022: 19 players
+  Oregon State 2023: 19 players
+  Oregon State 2025: 20 players
+  South Florida 2022: 12 players
+  South Florida 2023: 17 players
+  South Florida 2024: 27 players
+  South Florida 2025: 26 players
+  Southern Miss 2023: 20 players
+  Stanford 2022: 25 players
+  TCU 2022: 13 players
+  Tennessee 2022: 23 players
+  Texas A&M 2022: 30 players
+  Troy 2022: 9 players
+  Tulane 2022: 17 players
+  Utah 2023: 20 players
+  West Alabama 2022: 0 players
+Wrote ../depth_chart_data/auburn.json
+[9/54] florida -- remaining before: 4145
+Scraping Ourlads depth chart for Florida...
+  69 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  78 transfers in from CFBD
+Fetching CFBD recruiting data for 23 (school, year) pairs...
+  Baylor 2022: 23 players
+  Baylor 2023: 21 players
+  Charlotte 2023: 15 players
+  Colorado 2023: 18 players
+  Exeter 2024: 0 players
+  Florida 2022: 22 players
+  Florida 2024: 19 players
+  Florida 2026: 19 players
+  Georgia Tech 2023: 21 players
+  Georgia Tech 2024: 23 players
+  Kentucky 2024: 25 players
+  Massachusetts 2022: 12 players
+  Ohio State 2022: 21 players
+  Penn State 2023: 24 players
+  Penn State 2024: 26 players
+  Southern Miss 2023: 20 players
+  Stanford 2025: 17 players
+  Texas A&M 2023: 20 players
+  Texas A&M 2024: 17 players
+  Tulane 2024: 18 players
+  UCF 2022: 17 players
+  UCLA 2023: 17 players
+  Wake Forest 2023: 22 players
+Wrote ../depth_chart_data/florida.json
+[10/54] georgia -- remaining before: 4115
+Scraping Ourlads depth chart for Georgia...
+  90 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  38 transfers in from CFBD
+Fetching CFBD recruiting data for 15 (school, year) pairs...
+  Alabama A&M 2024: 6 players
+  Auburn 2024: 22 players
+  Clemson 2023: 26 players
+  East Carolina 2024: 20 players
+  Georgia 2022: 31 players
+  Georgia 2023: 26 players
+  Georgia 2025: 29 players
+  Georgia Tech 2024: 23 players
+  Miami 2023: 25 players
+  Oklahoma 2022: 22 players
+  Oregon 2023: 33 players
+  UCF 2024: 17 players
+  USC 2022: 10 players
+  USC 2024: 25 players
+  Vanderbilt 2023: 23 players
+Wrote ../depth_chart_data/georgia.json
+[11/54] kentucky -- remaining before: 4093
+Scraping Ourlads depth chart for Kentucky...
+  84 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  94 transfers in from CFBD
+Fetching CFBD recruiting data for 39 (school, year) pairs...
+  Alabama 2022: 26 players
+  Alabama 2023: 27 players
+  Arkansas 2025: 21 players
+  Baylor 2022: 23 players
+  Boston College 2022: 23 players
+  Florida 2023: 21 players
+  Florida Atlantic 2023: 20 players
+  Illinois 2022: 25 players
+  Jacksonville State 2023: 13 players
+  Kentucky 2022: 20 players
+  Kentucky 2024: 25 players
+  Kentucky 2025: 24 players
+  Kentucky 2026: 17 players
+  LSU 2023: 28 players
+  LSU 2024: 28 players
+  Louisville 2025: 17 players
+  Marshall 2024: 18 players
+  Maryland 2023: 25 players
+  Mississippi State 2024: 19 players
+  Northwestern 2023: 19 players
+  Notre Dame 2023: 24 players
+  Ohio State 2022: 21 players
+  Oklahoma 2022: 22 players
+  Pittsburgh 2023: 19 players
+  Purdue 2023: 18 players
+  South Alabama 2022: 11 players
+  South Dakota 2022: 13 players
+  South Florida 2023: 17 players
+  Southeastern 2024: 0 players
+  Southern Utah 2024: 6 players
+  Tennessee 2024: 23 players
+  Texas 2023: 26 players
+  Texas 2025: 25 players
+  UAB 2023: 24 players
+  UAB 2024: 19 players
+  UCLA 2023: 17 players
+  USC 2023: 27 players
+  USC 2024: 25 players
+  Western Carolina 2024: 6 players
+Wrote ../depth_chart_data/kentucky.json
+[12/54] lsu -- remaining before: 4047
+Scraping Ourlads depth chart for LSU...
+  89 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  103 transfers in from CFBD
+Fetching CFBD recruiting data for 41 (school, year) pairs...
+  Arkansas 2025: 21 players
+  Auburn 2024: 22 players
+  Baylor 2023: 21 players
+  Boise State 2023: 25 players
+  Charlotte 2024: 16 players
+  Clemson 2023: 26 players
+  Colorado 2024: 12 players
+  Colorado State 2024: 20 players
+  Elon 2024: 0 players
+  Florida 2023: 21 players
+  Florida 2025: 27 players
+  Georgia 2022: 31 players
+  Georgia Tech 2024: 23 players
+  Illinois 2023: 22 players
+  Kansas State 2023: 23 players
+  Kentucky 2025: 24 players
+  LSU 2023: 28 players
+  LSU 2025: 24 players
+  LSU 2026: 16 players
+  Maryland 2023: 25 players
+  Michigan State 2023: 18 players
+  Middle Tennessee 2022: 8 players
+  Middle Tennessee 2024: 18 players
+  Missouri 2024: 23 players
+  Nebraska 2023: 32 players
+  Notre Dame 2023: 24 players
+  Ohio State 2025: 28 players
+  Old Dominion 2023: 21 players
+  Ole Miss 2022: 18 players
+  Ole Miss 2025: 22 players
+  Oregon 2023: 33 players
+  Stanford 2023: 23 players
+  Tennessee 2024: 23 players
+  Troy 2023: 19 players
+  UCF 2024: 17 players
+  USC 2025: 28 players
+  Virginia Tech 2022: 24 players
+  Virginia Tech 2023: 29 players
+  Virginia Tech 2024: 15 players
+  West Florida 2023: 0 players
+  Wisconsin 2024: 26 players
+Wrote ../depth_chart_data/lsu.json
+[13/54] ole-miss -- remaining before: 3999
+Scraping Ourlads depth chart for Ole Miss...
+  76 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  125 transfers in from CFBD
+Fetching CFBD recruiting data for 40 (school, year) pairs...
+  Alabama 2022: 26 players
+  Alabama 2023: 27 players
+  Alabama 2024: 28 players
+  App State 2022: 16 players
+  Arkansas 2022: 27 players
+  Arkansas 2023: 27 players
+  Auburn 2025: 26 players
+  Baylor 2022: 23 players
+  California 2024: 20 players
+  Clemson 2024: 23 players
+  Ferris State 2022: 0 players
+  Florida 2023: 21 players
+  Florida 2024: 19 players
+  Florida State 2023: 17 players
+  Georgia 2023: 26 players
+  Georgia Tech 2024: 23 players
+  Jackson State 2023: 12 players
+  LSU 2022: 15 players
+  LSU 2025: 24 players
+  Maryland 2024: 24 players
+  Miami 2023: 25 players
+  Michigan 2024: 26 players
+  Michigan State 2024: 26 players
+  Missouri 2024: 23 players
+  Nevada 2022: 14 players
+  Ole Miss 2022: 18 players
+  Ole Miss 2024: 18 players
+  Ole Miss 2025: 22 players
+  Ole Miss 2026: 22 players
+  Oregon 2023: 33 players
+  Pittsburgh 2024: 23 players
+  Southern Illinois 2022: 8 players
+  Syracuse 2023: 14 players
+  Tennessee 2025: 25 players
+  UAB 2023: 24 players
+  UTEP 2023: 12 players
+  Wake Forest 2022: 15 players
+  Wake Forest 2023: 22 players
+  Washington 2023: 27 players
+  West Virginia 2023: 21 players
+Wrote ../depth_chart_data/ole-miss.json
+[14/54] mississippi-state -- remaining before: 3952
+Scraping Ourlads depth chart for Mississippi State...
+  71 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  109 transfers in from CFBD
+Fetching CFBD recruiting data for 31 (school, year) pairs...
+  Alabama 2023: 27 players
+  App State 2022: 16 players
+  Arkansas 2025: 21 players
+  Coastal Carolina 2022: 19 players
+  Florida 2024: 19 players
+  Florida State 2024: 25 players
+  Georgia 2023: 26 players
+  Indiana 2023: 14 players
+  Iowa State 2024: 23 players
+  LSU 2023: 28 players
+  Mercer 2022: 8 players
+  Mississippi State 2022: 21 players
+  Mississippi State 2023: 23 players
+  Mississippi State 2024: 19 players
+  Mississippi State 2025: 18 players
+  Mississippi State 2026: 28 players
+  Missouri 2023: 19 players
+  Oklahoma 2022: 22 players
+  Oklahoma 2024: 30 players
+  Ole Miss 2023: 17 players
+  Rutgers 2025: 30 players
+  South Alabama 2024: 18 players
+  Syracuse 2025: 35 players
+  Tennessee 2022: 23 players
+  Tennessee 2023: 26 players
+  Texas 2022: 30 players
+  Texas A&M 2022: 30 players
+  Texas A&M 2024: 17 players
+  USC 2025: 28 players
+  Vanderbilt 2022: 27 players
+  Virginia 2023: 20 players
+Wrote ../depth_chart_data/mississippi-state.json
+[15/54] missouri -- remaining before: 3914
+Scraping Ourlads depth chart for Missouri...
+  70 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  92 transfers in from CFBD
+Fetching CFBD recruiting data for 28 (school, year) pairs...
+  Auburn 2022: 15 players
+  Auburn 2024: 22 players
+  Charleston Southern 2024: 0 players
+  Clemson 2023: 26 players
+  Colorado State 2023: 27 players
+  Florida 2025: 27 players
+  Florida State 2025: 23 players
+  Georgia 2022: 31 players
+  Hawai'i 2022: 16 players
+  Houston Christian 2024: 13 players
+  Miami 2023: 25 players
+  Michigan 2022: 27 players
+  Michigan 2024: 26 players
+  Michigan 2025: 25 players
+  Minnesota 2023: 26 players
+  Mississippi State 2024: 19 players
+  Missouri 2023: 19 players
+  Missouri 2025: 17 players
+  Montana 2024: 10 players
+  New Mexico State 2022: 22 players
+  Northern Illinois 2023: 23 players
+  Northwest Missouri State 2023: 0 players
+  Notre Dame 2025: 25 players
+  Oklahoma 2023: 26 players
+  Ole Miss 2022: 18 players
+  Ole Miss 2023: 17 players
+  Oregon 2022: 21 players
+  UL Monroe 2024: 11 players
+Wrote ../depth_chart_data/missouri.json
+[16/54] oklahoma -- remaining before: 3879
+Scraping Ourlads depth chart for Oklahoma...
+  81 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  96 transfers in from CFBD
+Fetching CFBD recruiting data for 25 (school, year) pairs...
+  Arkansas 2022: 27 players
+  Eastern Kentucky 2024: 10 players
+  Florida 2022: 22 players
+  Florida International 2022: 18 players
+  Florida State 2022: 19 players
+  Georgia Tech 2025: 24 players
+  Kennesaw State 2023: 9 players
+  Kent State 2022: 23 players
+  McNeese 2023: 4 players
+  Mercer 2024: 7 players
+  Michigan 2024: 26 players
+  Oklahoma 2022: 22 players
+  Oklahoma 2023: 26 players
+  Oklahoma 2024: 30 players
+  Oklahoma 2025: 18 players
+  Oregon 2024: 31 players
+  Stanford 2022: 25 players
+  Tennessee 2025: 25 players
+  Texas 2024: 23 players
+  Tulsa 2024: 28 players
+  UTSA 2022: 13 players
+  UTSA 2024: 13 players
+  Virginia Tech 2023: 29 players
+  Washington State 2022: 31 players
+  Washington State 2024: 30 players
+Wrote ../depth_chart_data/oklahoma.json
+[17/54] south-carolina -- remaining before: 3857
+Scraping Ourlads depth chart for South Carolina...
+  84 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  93 transfers in from CFBD
+Fetching CFBD recruiting data for 34 (school, year) pairs...
+  Alabama 2022: 26 players
+  Alabama 2024: 28 players
+  App State 2023: 15 players
+  Arkansas 2023: 27 players
+  Arkansas State 2024: 28 players
+  Ball State 2022: 17 players
+  Bowling Green 2023: 16 players
+  Ferris State 2022: 0 players
+  Florida 2023: 21 players
+  Florida State 2022: 19 players
+  Georgia 2024: 32 players
+  Georgia Southern 2023: 21 players
+  Holy Cross 2023: 13 players
+  Incarnate Word 2022: 0 players
+  James Madison 2022: 14 players
+  Kentucky 2022: 20 players
+  Kentucky 2024: 25 players
+  Limestone University 2022: 0 players
+  Marshall 2022: 26 players
+  Missouri State 2023: 13 players
+  NC State 2022: 12 players
+  New Mexico State 2022: 22 players
+  South Carolina 2022: 24 players
+  South Carolina 2023: 25 players
+  South Carolina 2024: 17 players
+  South Carolina 2025: 25 players
+  South Carolina State 2023: 0 players
+  Temple 2024: 16 players
+  Tennessee 2023: 26 players
+  Tennessee Tech 2022: 4 players
+  Texas 2024: 23 players
+  Texas A&M 2022: 30 players
+  UNLV 2024: 23 players
+  Western Carolina 2023: 21 players
+Wrote ../depth_chart_data/south-carolina.json
+[18/54] tennessee -- remaining before: 3816
+Scraping Ourlads depth chart for Tennessee...
+  87 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  63 transfers in from CFBD
+Fetching CFBD recruiting data for 20 (school, year) pairs...
+  App State 2022: 16 players
+  Arizona 2022: 30 players
+  Arkansas 2023: 27 players
+  Arkansas 2024: 17 players
+  Auburn 2023: 19 players
+  Austin Peay 2022: 18 players
+  Colorado 2023: 18 players
+  Eastern Kentucky 2023: 6 players
+  Idaho State 2023: 9 players
+  LSU 2024: 28 players
+  Louisville 2024: 18 players
+  North Carolina 2023: 22 players
+  Notre Dame 2023: 24 players
+  Penn State 2024: 26 players
+  South Alabama 2023: 12 players
+  Tennessee 2022: 23 players
+  Tennessee 2025: 25 players
+  Tulane 2025: 20 players
+  Vanderbilt 2022: 27 players
+  West Georgia 2023: 0 players
+Wrote ../depth_chart_data/tennessee.json
+[19/54] texas-am -- remaining before: 3789
+Scraping Ourlads depth chart for Texas A&M...
+  87 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  74 transfers in from CFBD
+Fetching CFBD recruiting data for 26 (school, year) pairs...
+  Alabama 2023: 27 players
+  Auburn 2022: 15 players
+  Colorado 2024: 12 players
+  East Carolina 2022: 14 players
+  East Tennessee State 2023: 3 players
+  Florida 2023: 21 players
+  Fresno State 2023: 14 players
+  Georgia 2023: 26 players
+  Illinois 2023: 22 players
+  Illinois 2024: 18 players
+  Indiana 2023: 14 players
+  LSU 2023: 28 players
+  LSU 2024: 28 players
+  Miami 2022: 14 players
+  Mississippi State 2024: 19 players
+  Northwestern 2022: 16 players
+  Oklahoma State 2023: 19 players
+  San Diego State 2022: 18 players
+  San Diego State 2023: 14 players
+  South Carolina 2022: 24 players
+  South Florida 2023: 17 players
+  Tennessee 2023: 26 players
+  Texas A&M 2022: 30 players
+  Texas A&M 2024: 17 players
+  Texas A&M 2026: 27 players
+  UTSA 2022: 13 players
+Wrote ../depth_chart_data/texas-am.json
+[20/54] vanderbilt -- remaining before: 3756
+Scraping Ourlads depth chart for Vanderbilt...
+  80 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  74 transfers in from CFBD
+Fetching CFBD recruiting data for 32 (school, year) pairs...
+  Alabama 2023: 27 players
+  Alabama 2025: 20 players
+  Boston College 2022: 23 players
+  Clemson 2024: 23 players
+  Florida Atlantic 2024: 16 players
+  Iowa 2022: 21 players
+  Jacksonville State 2024: 20 players
+  James Madison 2022: 14 players
+  LSU 2024: 28 players
+  Minnesota 2022: 21 players
+  Morehouse 2023: 0 players
+  NC State 2022: 12 players
+  New Mexico State 2023: 20 players
+  North Dakota State 2023: 16 players
+  Northern Arizona 2024: 6 players
+  Oklahoma 2022: 22 players
+  Oklahoma State 2022: 17 players
+  Old Dominion 2023: 21 players
+  Ole Miss 2023: 17 players
+  Oregon 2022: 21 players
+  Pittsburgh 2024: 23 players
+  Sam Houston 2022: 15 players
+  South Dakota 2022: 13 players
+  Southeast Missouri State 2023: 8 players
+  Tennessee 2023: 26 players
+  Texas 2022: 30 players
+  Texas A&M 2025: 25 players
+  Vanderbilt 2022: 27 players
+  Vanderbilt 2023: 23 players
+  Vanderbilt 2024: 20 players
+  Vanderbilt 2025: 14 players
+  Virginia Tech 2022: 24 players
+Wrote ../depth_chart_data/vanderbilt.json
+[21/54] boston-college -- remaining before: 3717
+Scraping Ourlads depth chart for Boston College...
+  105 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  70 transfers in from CFBD
+Fetching CFBD recruiting data for 38 (school, year) pairs...
+  Arkansas 2025: 21 players
+  Barton 2024: 0 players
+  Boston College 2022: 23 players
+  Boston College 2024: 12 players
+  Buffalo 2024: 22 players
+  Campbell 2022: 15 players
+  Charlotte 2023: 15 players
+  Colgate 2023: 6 players
+  Colorado 2025: 16 players
+  Colorado State 2022: 16 players
+  Elon 2022: 0 players
+  Florida 2023: 21 players
+  Florida 2025: 27 players
+  Florida Atlantic 2023: 20 players
+  Florida State 2023: 17 players
+  Georgia 2024: 32 players
+  Georgia State 2025: 26 players
+  Georgia Tech 2023: 21 players
+  Harvard 2022: 12 players
+  Jacksonville State 2023: 13 players
+  Kennesaw State 2023: 9 players
+  Maryland 2023: 25 players
+  Merrimack 2023: 0 players
+  Merrimack 2024: 0 players
+  Michigan State 2022: 27 players
+  North Carolina 2024: 31 players
+  North Carolina Central 2022: 7 players
+  Notre Dame 2024: 23 players
+  Ohio State 2022: 21 players
+  Saginaw Valley State 2023: 0 players
+  South Dakota State 2024: 16 players
+  Tennessee State 2024: 13 players
+  Utah 2022: 18 players
+  Valparaiso 2022: 0 players
+  Virginia Tech 2022: 24 players
+  Wake Forest 2023: 22 players
+  Washington State 2024: 30 players
+  West Virginia 2024: 25 players
+Wrote ../depth_chart_data/boston-college.json
+[22/54] california -- remaining before: 3672
+Scraping Ourlads depth chart for California...
+  76 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  119 transfers in from CFBD
+Fetching CFBD recruiting data for 44 (school, year) pairs...
+  Alabama 2023: 27 players
+  Arizona 2023: 27 players
+  Arizona 2024: 15 players
+  Auburn 2024: 22 players
+  California 2022: 17 players
+  California 2023: 14 players
+  California 2024: 20 players
+  California 2025: 15 players
+  Campbell 2023: 23 players
+  Colorado State 2023: 27 players
+  Florida International 2023: 19 players
+  Georgia 2023: 26 players
+  Idaho 2023: 32 players
+  Iowa State 2022: 20 players
+  Kent State 2022: 23 players
+  Maryland 2023: 25 players
+  Miami 2023: 25 players
+  Mississippi State 2022: 21 players
+  Mississippi State 2024: 19 players
+  Nevada 2023: 15 players
+  Norfolk State 2022: 0 players
+  Northern Arizona 2022: 16 players
+  Ohio 2023: 16 players
+  Ohio State 2022: 21 players
+  Oklahoma 2023: 26 players
+  Oregon 2024: 31 players
+  Oregon 2025: 21 players
+  Rutgers 2023: 21 players
+  South Alabama 2022: 11 players
+  South Dakota 2024: 8 players
+  Tennessee 2024: 23 players
+  Texas A&M 2022: 30 players
+  Texas A&M 2024: 17 players
+  Texas Tech 2023: 29 players
+  Tulsa 2022: 14 players
+  Tulsa 2023: 21 players
+  UC Davis 2024: 10 players
+  USC 2024: 25 players
+  USC 2025: 28 players
+  UTEP 2024: 23 players
+  Utah 2024: 16 players
+  Virginia Tech 2022: 24 players
+  Washington 2023: 27 players
+  Wisconsin 2023: 16 players
+Wrote ../depth_chart_data/california.json
+[23/54] clemson -- remaining before: 3621
+Scraping Ourlads depth chart for Clemson...
+  79 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  17 transfers in from CFBD
+Fetching CFBD recruiting data for 16 (school, year) pairs...
+  Alabama 2022: 26 players
+  Auburn 2025: 26 players
+  Clemson 2022: 22 players
+  Clemson 2023: 26 players
+  Clemson 2024: 23 players
+  Colorado 2025: 16 players
+  Marshall 2024: 18 players
+  Miami 2023: 25 players
+  Oklahoma 2023: 26 players
+  Old Dominion 2024: 17 players
+  Penn State 2023: 24 players
+  Purdue 2023: 18 players
+  Southeast Missouri State 2023: 8 players
+  Texas State 2022: 2 players
+  West Georgia 2024: 9 players
+  Wingate 2023: 0 players
+Wrote ../depth_chart_data/clemson.json
+[24/54] duke -- remaining before: 3608
+Scraping Ourlads depth chart for Duke...
+  77 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  68 transfers in from CFBD
+Fetching CFBD recruiting data for 19 (school, year) pairs...
+  Coastal Carolina 2022: 19 players
+  Cornell 2022: 5 players
+  Duke 2022: 18 players
+  Duke 2023: 26 players
+  Duke 2024: 18 players
+  Duke 2025: 28 players
+  Florida State 2022: 19 players
+  LSU 2022: 15 players
+  Louisville 2022: 16 players
+  Michigan 2024: 26 players
+  Michigan State 2022: 27 players
+  Montana 2024: 10 players
+  North Texas 2022: 10 players
+  Northwestern 2022: 16 players
+  Pennsylvania 2022: 14 players
+  San José State 2022: 22 players
+  South Dakota 2022: 13 players
+  Southern Utah 2022: 4 players
+  Yale 2022: 8 players
+Wrote ../depth_chart_data/duke.json
+[25/54] florida-state -- remaining before: 3582
+Scraping Ourlads depth chart for Florida State...
+  67 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  97 transfers in from CFBD
+Fetching CFBD recruiting data for 28 (school, year) pairs...
+  Bowling Green 2022: 10 players
+  Cal Poly 2022: 11 players
+  Duke 2025: 28 players
+  East Carolina 2023: 21 players
+  Florida Atlantic 2023: 20 players
+  Florida State 2022: 19 players
+  Florida State 2023: 17 players
+  Florida State 2024: 25 players
+  Florida State 2025: 23 players
+  Georgia Tech 2024: 23 players
+  Idaho State 2022: 14 players
+  Illinois State 2024: 6 players
+  Louisville 2024: 18 players
+  Missouri 2022: 19 players
+  Nevada 2024: 17 players
+  New Mexico 2023: 14 players
+  North Carolina 2023: 22 players
+  Notre Dame 2024: 23 players
+  Quincy 2025: 0 players
+  Stanford 2022: 25 players
+  Stephen F. Austin 2023: 16 players
+  Texas 2023: 26 players
+  Texas A&M 2023: 20 players
+  Troy 2025: 14 players
+  USC 2023: 27 players
+  Virginia Tech 2022: 24 players
+  Western Kentucky 2022: 22 players
+  Youngstown State 2022: 14 players
+Wrote ../depth_chart_data/florida-state.json
+[26/54] georgia-tech -- remaining before: 3547
+Scraping Ourlads depth chart for Georgia Tech...
+  86 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  98 transfers in from CFBD
+Fetching CFBD recruiting data for 33 (school, year) pairs...
+  Alabama 2023: 27 players
+  Alabama 2024: 28 players
+  App State 2022: 16 players
+  Bowling Green 2022: 10 players
+  California 2022: 17 players
+  Central Michigan 2023: 22 players
+  Chattanooga 2022: 6 players
+  Cincinnati 2025: 20 players
+  Clemson 2023: 26 players
+  Dartmouth 2022: 13 players
+  Eastern Michigan 2023: 20 players
+  Elon 2024: 0 players
+  Georgia Tech 2022: 15 players
+  Georgia Tech 2023: 21 players
+  Georgia Tech 2024: 23 players
+  Georgia Tech 2025: 24 players
+  Illinois 2023: 22 players
+  Indiana 2024: 17 players
+  Louisville 2022: 16 players
+  Mercer 2023: 0 players
+  Miami 2022: 14 players
+  Oregon State 2022: 19 players
+  Penn State 2022: 24 players
+  Penn State 2024: 26 players
+  Pennsylvania 2023: 10 players
+  Princeton 2022: 12 players
+  South Alabama 2022: 11 players
+  South Carolina 2024: 17 players
+  Tennessee Tech 2023: 9 players
+  UAB 2024: 19 players
+  UConn 2023: 15 players
+  Wisconsin 2023: 16 players
+  Yale 2023: 12 players
+Wrote ../depth_chart_data/georgia-tech.json
+[27/54] louisville -- remaining before: 3507
+Scraping Ourlads depth chart for Louisville...
+  84 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  136 transfers in from CFBD
+Fetching CFBD recruiting data for 41 (school, year) pairs...
+  Boston College 2023: 18 players
+  Coastal Carolina 2022: 19 players
+  Delaware 2023: 10 players
+  Eastern Illinois 2022: 8 players
+  Eastern Kentucky 2023: 6 players
+  Elon 2024: 0 players
+  Florida International 2022: 18 players
+  Florida State 2024: 25 players
+  Georgia Southern 2022: 22 players
+  Indiana 2022: 25 players
+  Iowa 2022: 21 players
+  Kansas State 2022: 17 players
+  Kansas State 2024: 18 players
+  Kentucky 2023: 18 players
+  Kentucky 2024: 25 players
+  Kentucky 2025: 24 players
+  Liberty 2024: 19 players
+  Louisville 2022: 16 players
+  Louisville 2023: 19 players
+  Louisville 2024: 18 players
+  Louisville 2025: 17 players
+  Miami 2022: 14 players
+  Miami 2024: 27 players
+  Michigan 2023: 27 players
+  Missouri 2025: 17 players
+  New Mexico State 2022: 22 players
+  North Carolina 2022: 26 players
+  North Carolina 2023: 22 players
+  Ohio State 2023: 24 players
+  Purdue 2024: 25 players
+  South Carolina 2022: 24 players
+  Southern Miss 2023: 20 players
+  Tennessee 2024: 23 players
+  Texas 2024: 23 players
+  Toledo 2023: 17 players
+  Troy 2022: 9 players
+  USC 2022: 10 players
+  Weber State 2022: 14 players
+  West Georgia 2022: 0 players
+  West Virginia 2024: 25 players
+  Western Kentucky 2022: 22 players
+Wrote ../depth_chart_data/louisville.json
+[28/54] miami-fl -- remaining before: 3459
+Scraping Ourlads depth chart for Miami...
+  72 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  74 transfers in from CFBD
+Fetching CFBD recruiting data for 22 (school, year) pairs...
+  Arizona 2022: 30 players
+  Boston College 2024: 12 players
+  Florida State 2023: 17 players
+  Florida State 2024: 25 players
+  Georgia 2023: 26 players
+  Harvard 2022: 12 players
+  Jacksonville State 2023: 13 players
+  Miami 2022: 14 players
+  Miami 2023: 25 players
+  Miami 2024: 27 players
+  Miami 2025: 21 players
+  Miami 2026: 30 players
+  NC State 2023: 15 players
+  Nebraska 2024: 37 players
+  North Dakota State 2023: 16 players
+  Northern Illinois 2022: 23 players
+  Northwestern 2022: 16 players
+  Ohio State 2025: 28 players
+  Tulane 2023: 20 players
+  UCF 2023: 15 players
+  Washington State 2023: 33 players
+  Wisconsin 2024: 26 players
+Wrote ../depth_chart_data/miami-fl.json
+[29/54] north-carolina -- remaining before: 3430
+Scraping Ourlads depth chart for North Carolina...
+  80 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  82 transfers in from CFBD
+Fetching CFBD recruiting data for 37 (school, year) pairs...
+  Arizona 2024: 15 players
+  Arkansas 2023: 27 players
+  Charleston Southern 2023: 0 players
+  Clemson 2025: 15 players
+  Colorado State 2024: 20 players
+  Eastern Illinois 2023: 4 players
+  Florida 2023: 21 players
+  Florida 2024: 19 players
+  Florida State 2024: 25 players
+  Fresno State 2022: 17 players
+  Holy Cross 2022: 6 players
+  LSU 2024: 28 players
+  Lehigh 2023: 0 players
+  Liberty 2023: 14 players
+  Michigan 2023: 27 players
+  Michigan State 2022: 27 players
+  Minnesota 2022: 21 players
+  North Carolina 2022: 26 players
+  North Carolina 2023: 22 players
+  North Carolina 2025: 30 players
+  North Carolina 2026: 40 players
+  Ohio State 2023: 24 players
+  Oklahoma State 2024: 20 players
+  Oregon 2024: 31 players
+  Penn State 2023: 24 players
+  Penn State 2024: 26 players
+  Purdue 2023: 18 players
+  Richmond 2022: 7 players
+  Richmond 2024: 0 players
+  San Diego State 2023: 14 players
+  Syracuse 2022: 17 players
+  Tennessee 2023: 26 players
+  Texas A&M 2024: 17 players
+  Wake Forest 2022: 15 players
+  Washington 2024: 16 players
+  West Virginia 2025: 25 players
+  Wisconsin 2023: 16 players
+Wrote ../depth_chart_data/north-carolina.json
+[30/54] nc-state -- remaining before: 3386
+Scraping Ourlads depth chart for NC State...
+  68 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  65 transfers in from CFBD
+Fetching CFBD recruiting data for 25 (school, year) pairs...
+  Alabama 2024: 28 players
+  Alcorn State 2023: 6 players
+  Arkansas 2023: 27 players
+  Buffalo 2022: 12 players
+  Colorado 2022: 24 players
+  East Carolina 2023: 21 players
+  Marshall 2022: 26 players
+  Miami 2023: 25 players
+  Miami 2024: 27 players
+  Missouri 2024: 23 players
+  Montana State 2023: 12 players
+  NC State 2022: 12 players
+  NC State 2023: 15 players
+  NC State 2024: 23 players
+  NC State 2026: 26 players
+  Norfolk State 2023: 0 players
+  North Carolina 2024: 31 players
+  North Texas 2023: 13 players
+  Oregon 2025: 21 players
+  Penn State 2023: 24 players
+  SMU 2024: 13 players
+  Texas 2024: 23 players
+  Texas Tech 2022: 18 players
+  Tulane 2022: 17 players
+  Utah State 2022: 24 players
+Wrote ../depth_chart_data/nc-state.json
+[31/54] pittsburgh -- remaining before: 3354
+Scraping Ourlads depth chart for Pittsburgh...
+  63 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  63 transfers in from CFBD
+Fetching CFBD recruiting data for 25 (school, year) pairs...
+  Akron 2022: 11 players
+  Arkansas 2023: 27 players
+  Auburn 2022: 15 players
+  Auburn 2023: 19 players
+  California (PA) 2022: 0 players
+  Charlotte 2022: 16 players
+  Florida State 2023: 17 players
+  Illinois 2023: 22 players
+  Indiana 2022: 25 players
+  Kennesaw State 2022: 0 players
+  Kentucky 2022: 20 players
+  Liberty 2023: 14 players
+  Louisville 2023: 19 players
+  Miami (OH) 2023: 16 players
+  Ohio State 2023: 24 players
+  Oregon 2023: 33 players
+  Pennsylvania 2022: 14 players
+  Pittsburgh 2022: 11 players
+  Pittsburgh 2024: 23 players
+  Pittsburgh 2025: 25 players
+  Purdue 2025: 17 players
+  Richmond 2022: 7 players
+  Slippery Rock 2022: 0 players
+  UAB 2023: 24 players
+  Western Carolina 2022: 20 players
+Wrote ../depth_chart_data/pittsburgh.json
+[32/54] smu -- remaining before: 3328
+Scraping Ourlads depth chart for SMU...
+  78 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  110 transfers in from CFBD
+Fetching CFBD recruiting data for 31 (school, year) pairs...
+  Alabama 2023: 27 players
+  Arkansas 2022: 27 players
+  Ball State 2023: 19 players
+  Baylor 2023: 21 players
+  Bowling Green 2024: 21 players
+  Clemson 2023: 26 players
+  Colorado 2023: 18 players
+  East Carolina 2024: 20 players
+  Georgia 2022: 31 players
+  James Madison 2023: 18 players
+  Kansas State 2022: 17 players
+  LSU 2022: 15 players
+  Liberty 2022: 11 players
+  Louisville 2023: 19 players
+  Massachusetts 2022: 12 players
+  Missouri 2023: 19 players
+  NC State 2023: 15 players
+  Oklahoma 2023: 26 players
+  SMU 2022: 13 players
+  SMU 2023: 17 players
+  SMU 2024: 13 players
+  SMU 2026: 21 players
+  South Florida 2023: 17 players
+  South Florida 2024: 27 players
+  Stanford 2022: 25 players
+  Syracuse 2024: 25 players
+  Tennessee 2022: 23 players
+  Texas A&M 2022: 30 players
+  Texas A&M 2023: 20 players
+  Texas Tech 2024: 22 players
+  UCF 2023: 15 players
+Wrote ../depth_chart_data/smu.json
+[33/54] stanford -- remaining before: 3290
+Scraping Ourlads depth chart for Stanford...
+  84 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  33 transfers in from CFBD
+Fetching CFBD recruiting data for 17 (school, year) pairs...
+  Colorado 2023: 18 players
+  Harvard 2022: 12 players
+  Idaho 2023: 32 players
+  Michigan 2022: 27 players
+  Northern Iowa 2022: 9 players
+  South Carolina State 2023: 0 players
+  Stanford 2022: 25 players
+  Stanford 2023: 23 players
+  Stanford 2024: 28 players
+  Stanford 2026: 23 players
+  Texas Tech 2023: 29 players
+  UCF 2023: 15 players
+  UCLA 2022: 13 players
+  UCLA 2023: 17 players
+  Wake Forest 2024: 22 players
+  Washington 2023: 27 players
+  Yale 2022: 8 players
+Wrote ../depth_chart_data/stanford.json
+[34/54] syracuse -- remaining before: 3266
+Scraping Ourlads depth chart for Syracuse...
+  70 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  73 transfers in from CFBD
+Fetching CFBD recruiting data for 27 (school, year) pairs...
+  Boise State 2022: 24 players
+  Georgia 2023: 26 players
+  Georgia State 2025: 26 players
+  Iowa 2024: 28 players
+  Iowa State 2022: 20 players
+  Kennesaw State 2023: 9 players
+  LSU 2024: 28 players
+  Maryland 2023: 25 players
+  Miami (OH) 2023: 16 players
+  North Carolina 2022: 26 players
+  Notre Dame 2022: 23 players
+  Saint Francis (PA) 2023: 0 players
+  South Carolina 2023: 25 players
+  South Carolina 2024: 17 players
+  Syracuse 2022: 17 players
+  Syracuse 2024: 25 players
+  Syracuse 2025: 35 players
+  Syracuse 2026: 26 players
+  Texas A&M 2022: 30 players
+  Texas A&M 2023: 20 players
+  Toledo 2023: 17 players
+  UL Monroe 2023: 11 players
+  USC 2022: 10 players
+  USC 2023: 27 players
+  Western Kentucky 2022: 22 players
+  Western Kentucky 2023: 8 players
+  Wisconsin 2023: 16 players
+Wrote ../depth_chart_data/syracuse.json
+[35/54] virginia -- remaining before: 3232
+Scraping Ourlads depth chart for Virginia...
+  74 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  99 transfers in from CFBD
+Fetching CFBD recruiting data for 33 (school, year) pairs...
+  Alabama 2023: 27 players
+  Arkansas State 2022: 18 players
+  Army 2022: 30 players
+  Central Michigan 2022: 19 players
+  Eastern Kentucky 2023: 6 players
+  Kent State 2024: 23 players
+  Marshall 2022: 26 players
+  Massachusetts 2022: 12 players
+  Michigan 2023: 27 players
+  Michigan 2024: 26 players
+  Middle Tennessee 2023: 14 players
+  Navy 2024: 28 players
+  New Hampshire 2024: 4 players
+  New Mexico 2022: 19 players
+  Notre Dame 2022: 23 players
+  Ohio State 2022: 21 players
+  Oklahoma State 2022: 17 players
+  Penn State 2022: 24 players
+  Robert Morris 2022: 4 players
+  South Carolina 2022: 24 players
+  South Carolina 2023: 25 players
+  Stanford 2022: 25 players
+  Tennessee 2024: 23 players
+  Tulane 2023: 20 players
+  UCF 2022: 17 players
+  UConn 2023: 15 players
+  UNLV 2022: 6 players
+  USC 2025: 28 players
+  UTSA 2022: 13 players
+  Virginia 2022: 16 players
+  Virginia 2023: 20 players
+  Virginia 2024: 16 players
+  Wisconsin 2024: 26 players
+Wrote ../depth_chart_data/virginia.json
+[36/54] virginia-tech -- remaining before: 3192
+Scraping Ourlads depth chart for Virginia Tech...
+  82 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  87 transfers in from CFBD
+Fetching CFBD recruiting data for 29 (school, year) pairs...
+  Central Missouri State 2022: 0 players
+  Clemson 2022: 22 players
+  Duke 2023: 26 players
+  East Carolina 2022: 14 players
+  Georgia Southern 2022: 22 players
+  Georgia State 2022: 10 players
+  Louisiana 2023: 20 players
+  Louisiana Tech 2022: 12 players
+  Marshall 2023: 18 players
+  Miami 2023: 25 players
+  Missouri 2025: 17 players
+  North Carolina 2025: 30 players
+  Ohio State 2024: 25 players
+  Oklahoma 2023: 26 players
+  Penn State 2022: 24 players
+  Penn State 2024: 26 players
+  Penn State 2025: 29 players
+  Pittsburgh 2022: 11 players
+  Pittsburgh 2023: 19 players
+  Rice 2022: 12 players
+  Temple 2022: 12 players
+  Troy 2023: 19 players
+  UConn 2023: 15 players
+  Virginia Tech 2022: 24 players
+  Virginia Tech 2023: 29 players
+  Virginia Tech 2024: 15 players
+  Virginia Tech 2025: 20 players
+  West Virginia 2024: 25 players
+  Wisconsin 2024: 26 players
+Wrote ../depth_chart_data/virginia-tech.json
+[37/54] wake-forest -- remaining before: 3156
+Scraping Ourlads depth chart for Wake Forest...
+  80 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  75 transfers in from CFBD
+Fetching CFBD recruiting data for 32 (school, year) pairs...
+  Bucknell 2022: 7 players
+  Colorado State 2023: 27 players
+  Dayton 2023: 0 players
+  Duke 2024: 18 players
+  Florida 2024: 19 players
+  Idaho 2023: 32 players
+  LSU 2024: 28 players
+  New Hampshire 2022: 5 players
+  New Hampshire 2024: 4 players
+  North Alabama 2022: 1 players
+  Oregon State 2023: 19 players
+  Rice 2023: 21 players
+  South Alabama 2023: 12 players
+  South Alabama 2024: 18 players
+  Syracuse 2022: 17 players
+  Texas 2023: 26 players
+  Tuskegee 2022: 0 players
+  UAB 2023: 24 players
+  UConn 2022: 15 players
+  Vanderbilt 2023: 23 players
+  Virginia Tech 2023: 29 players
+  Wake Forest 2022: 15 players
+  Wake Forest 2023: 22 players
+  Wake Forest 2024: 22 players
+  Wake Forest 2025: 24 players
+  Wake Forest 2026: 31 players
+  Washington State 2023: 33 players
+  Washington State 2024: 30 players
+  Weber State 2022: 14 players
+  Weber State 2023: 11 players
+  William & Mary 2023: 0 players
+  Wisconsin 2022: 20 players
+Wrote ../depth_chart_data/wake-forest.json
+[38/54] notre-dame -- remaining before: 3117
+Scraping Ourlads depth chart for Notre Dame...
+  81 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  38 transfers in from CFBD
+Fetching CFBD recruiting data for 12 (school, year) pairs...
+  Alabama 2023: 27 players
+  Arkansas 2022: 27 players
+  Michigan 2025: 25 players
+  Notre Dame 2022: 23 players
+  Notre Dame 2023: 24 players
+  Notre Dame 2024: 23 players
+  Ohio State 2024: 25 players
+  Ohio State 2025: 28 players
+  Oklahoma State 2022: 17 players
+  Oregon 2024: 31 players
+  Pittsburgh 2024: 23 players
+  USC 2023: 27 players
+Wrote ../depth_chart_data/notre-dame.json
+[39/54] arizona -- remaining before: 3098
+Scraping Ourlads depth chart for Arizona...
+  89 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  107 transfers in from CFBD
+Fetching CFBD recruiting data for 34 (school, year) pairs...
+  Arizona 2022: 30 players
+  Arizona 2023: 27 players
+  Arizona 2024: 15 players
+  Arizona 2026: 20 players
+  Arizona State 2023: 19 players
+  BYU 2023: 21 players
+  Colorado 2023: 18 players
+  Colorado State 2024: 20 players
+  Eastern Michigan 2022: 5 players
+  Georgetown 2023: 6 players
+  Houston Christian 2023: 6 players
+  Howard 2024: 9 players
+  Louisville 2023: 19 players
+  Michigan 2022: 27 players
+  Nebraska 2022: 17 players
+  Nebraska 2023: 32 players
+  Northern Colorado 2024: 5 players
+  Northwestern 2023: 19 players
+  Ole Miss 2023: 17 players
+  Oregon 2023: 33 players
+  Portland State 2022: 15 players
+  Portland State 2023: 26 players
+  San Diego State 2024: 17 players
+  San José State 2022: 22 players
+  Southern Miss 2025: 14 players
+  UAB 2023: 24 players
+  UConn 2022: 15 players
+  UL Monroe 2023: 11 players
+  USC 2024: 25 players
+  USC 2025: 28 players
+  Utah 2022: 18 players
+  West Virginia 2023: 21 players
+  Wisconsin 2022: 20 players
+  Wyoming 2024: 29 players
+Wrote ../depth_chart_data/arizona.json
+[40/54] arizona-state -- remaining before: 3070
+Scraping Ourlads depth chart for Arizona State...
+  102 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  117 transfers in from CFBD
+Fetching CFBD recruiting data for 35 (school, year) pairs...
+  Alabama 2023: 27 players
+  Arizona State 2022: 8 players
+  Arizona State 2023: 19 players
+  Arizona State 2024: 21 players
+  Arizona State 2025: 22 players
+  Arizona State 2026: 17 players
+  Boston College 2023: 18 players
+  Colorado 2023: 18 players
+  Colorado State 2024: 20 players
+  Delaware State 2022: 0 players
+  Florida International 2025: 22 players
+  Fresno State 2022: 17 players
+  Georgia Tech 2024: 23 players
+  Indiana 2023: 14 players
+  Iowa State 2024: 23 players
+  Kansas State 2022: 17 players
+  Kentucky 2023: 18 players
+  Kentucky 2024: 25 players
+  LSU 2023: 28 players
+  Michigan State 2023: 18 players
+  Northern Arizona 2022: 16 players
+  Northern Arizona 2024: 6 players
+  Ohio State 2024: 25 players
+  Oklahoma 2022: 22 players
+  Oklahoma State 2022: 17 players
+  Oregon 2022: 21 players
+  Penn State 2024: 26 players
+  Purdue 2022: 22 players
+  Stanford 2023: 23 players
+  Texas 2022: 30 players
+  Texas 2025: 25 players
+  UCF 2022: 17 players
+  Washington 2022: 14 players
+  Washington 2025: 30 players
+  Washington State 2022: 31 players
+Wrote ../depth_chart_data/arizona-state.json
+[41/54] baylor -- remaining before: 3028
+Scraping Ourlads depth chart for Baylor...
+  59 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  92 transfers in from CFBD
+Fetching CFBD recruiting data for 28 (school, year) pairs...
+  Auburn 2022: 15 players
+  Baylor 2023: 21 players
+  Baylor 2024: 13 players
+  Coastal Carolina 2022: 19 players
+  Colorado 2024: 12 players
+  Colorado State 2022: 16 players
+  Delaware 2023: 10 players
+  Florida 2023: 21 players
+  Florida 2024: 19 players
+  Florida International 2022: 18 players
+  Georgia State 2022: 10 players
+  Incarnate Word 2023: 14 players
+  Kansas State 2022: 17 players
+  Kansas State 2023: 23 players
+  Northwestern 2022: 16 players
+  Ohio State 2023: 24 players
+  Oklahoma 2022: 22 players
+  Oklahoma 2024: 30 players
+  Oregon 2023: 33 players
+  Sam Houston 2022: 15 players
+  South Alabama 2024: 18 players
+  South Carolina 2022: 24 players
+  South Carolina 2023: 25 players
+  Southern Miss 2022: 15 players
+  Texas 2024: 23 players
+  Toledo 2023: 17 players
+  UAB 2023: 24 players
+  Western Kentucky 2022: 22 players
+Wrote ../depth_chart_data/baylor.json
+[42/54] byu -- remaining before: 2993
+Scraping Ourlads depth chart for BYU...
+  83 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  60 transfers in from CFBD
+Fetching CFBD recruiting data for 21 (school, year) pairs...
+  BYU 2022: 27 players
+  BYU 2023: 21 players
+  BYU 2024: 25 players
+  BYU 2025: 24 players
+  BYU 2026: 21 players
+  California 2023: 14 players
+  Kansas State 2024: 18 players
+  Kennesaw State 2022: 0 players
+  Michigan 2022: 27 players
+  New Mexico 2022: 19 players
+  Oregon 2023: 33 players
+  Oregon 2024: 31 players
+  Southern Utah 2022: 4 players
+  Stanford 2023: 23 players
+  Stanford 2025: 17 players
+  Texas 2023: 26 players
+  USC 2024: 25 players
+  Utah 2022: 18 players
+  Utah Tech 2022: 6 players
+  Washington 2024: 16 players
+  Western Michigan 2022: 14 players
+Wrote ../depth_chart_data/byu.json
+[43/54] ucf -- remaining before: 2965
+Scraping Ourlads depth chart for UCF...
+  80 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  136 transfers in from CFBD
+Fetching CFBD recruiting data for 50 (school, year) pairs...
+  Akron 2023: 21 players
+  Bethune-Cookman 2023: 5 players
+  Boise State 2024: 20 players
+  Buffalo 2023: 14 players
+  Central Arkansas 2023: 7 players
+  Charlotte 2023: 15 players
+  Colgate 2023: 6 players
+  East Carolina 2023: 21 players
+  Eastern Kentucky 2022: 6 players
+  Florida International 2023: 19 players
+  Florida State 2025: 23 players
+  Georgia Tech 2022: 15 players
+  Grand Valley State 2022: 21 players
+  Harvard 2022: 12 players
+  Idaho 2024: 27 players
+  James Madison 2022: 14 players
+  Limestone 2023: 0 players
+  Louisville 2024: 18 players
+  Maryland 2023: 25 players
+  Massachusetts 2023: 7 players
+  Memphis 2022: 13 players
+  Miami 2024: 27 players
+  Michigan 2023: 27 players
+  Michigan State 2023: 18 players
+  Missouri 2022: 19 players
+  Monmouth 2023: 5 players
+  North Dakota State 2023: 16 players
+  Notre Dame 2022: 23 players
+  Oklahoma 2023: 26 players
+  Old Dominion 2022: 14 players
+  Ole Miss 2022: 18 players
+  Oregon State 2023: 19 players
+  Penn State 2022: 24 players
+  Pittsburgh 2024: 23 players
+  Tennessee 2022: 23 players
+  Tennessee State 2024: 13 players
+  Texas 2022: 30 players
+  UCF 2022: 17 players
+  UCF 2023: 15 players
+  UCF 2024: 17 players
+  UCF 2025: 14 players
+  UConn 2022: 15 players
+  UL Monroe 2024: 11 players
+  USC 2022: 10 players
+  USC 2023: 27 players
+  Utah State 2024: 8 players
+  Virginia Union 2023: 0 players
+  Wayne State College 2024: 0 players
+  West Virginia 2024: 25 players
+  Wisconsin 2023: 16 players
+Wrote ../depth_chart_data/ucf.json
+[44/54] cincinnati -- remaining before: 2908
+Scraping Ourlads depth chart for Cincinnati...
+  72 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  96 transfers in from CFBD
+Fetching CFBD recruiting data for 32 (school, year) pairs...
+  Albany 2023: 0 players
+  Arkansas 2022: 27 players
+  Ball State 2022: 17 players
+  Central Arkansas 2023: 7 players
+  Charlotte 2022: 16 players
+  Cincinnati 2022: 20 players
+  Cincinnati 2023: 12 players
+  Cincinnati 2025: 20 players
+  Colorado School of Mines 2022: 0 players
+  Fresno State 2024: 17 players
+  Georgia State 2024: 11 players
+  Illinois State 2022: 6 players
+  Illinois State 2023: 8 players
+  Kent State 2024: 23 players
+  Louisiana 2022: 12 players
+  Maine 2023: 6 players
+  Memphis 2022: 13 players
+  North Carolina Central 2022: 7 players
+  Northern Illinois 2022: 23 players
+  Northern Illinois 2023: 23 players
+  Notre Dame 2022: 23 players
+  Old Dominion 2022: 14 players
+  Pennsylvania 2022: 14 players
+  South Alabama 2024: 18 players
+  South Dakota 2022: 13 players
+  South Dakota 2023: 8 players
+  Southern Illinois 2023: 9 players
+  Syracuse 2022: 17 players
+  UTSA 2022: 13 players
+  UTSA 2024: 13 players
+  Washington State 2024: 30 players
+  Wisconsin 2022: 20 players
+Wrote ../depth_chart_data/cincinnati.json
+[45/54] colorado -- remaining before: 2869
+STOPPING: remaining (2869) at or below safety threshold (2900). Halting rollout to protect the 2800 floor.
+
+=== ROLLOUT SUMMARY ===
+Completed: 44 teams: ['rutgers', 'ucla', 'usc', 'washington', 'wisconsin', 'alabama', 'arkansas', 'auburn', 'florida', 'georgia', 'kentucky', 'lsu', 'ole-miss', 'mississippi-state', 'missouri', 'oklahoma', 'south-carolina', 'tennessee', 'texas-am', 'vanderbilt', 'boston-college', 'california', 'clemson', 'duke', 'florida-state', 'georgia-tech', 'louisville', 'miami-fl', 'north-carolina', 'nc-state', 'pittsburgh', 'smu', 'stanford', 'syracuse', 'virginia', 'virginia-tech', 'wake-forest', 'notre-dame', 'arizona', 'arizona-state', 'baylor', 'byu', 'ucf', 'cincinnati']
+Skipped/not reached: 10 teams: ['colorado', 'houston', 'iowa-state', 'kansas', 'kansas-state', 'oklahoma-state', 'tcu', 'texas-tech', 'utah', 'west-virginia']
+Remaining calls: 2868
