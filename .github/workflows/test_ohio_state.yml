@@ -1,4 +1,4 @@
-name: Test Ohio State Rebuild
+name: Test Ohio State Rebuild 2
 
 on:
   workflow_dispatch: {}
@@ -17,15 +17,15 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: pip install requests beautifulsoup4
-      - name: Rebuild Ohio State
+      - name: Rebuild Ohio State with tracing
         working-directory: scripts
         env:
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
-        run: python3 test_ohio_state.py
+        run: python3 test_ohio_state.py 2> ../oh_state_debug.txt
       - name: Commit result
         run: |
           git config user.name "test-bot"
           git config user.email "actions@github.com"
-          git add depth_chart_data/ohio-state.json
-          git commit -m "Test Ohio State rebuild" || echo "nothing to commit"
+          git add depth_chart_data/ohio-state.json oh_state_debug.txt
+          git commit -m "Test Ohio State rebuild with debug" || echo "nothing to commit"
           git push
