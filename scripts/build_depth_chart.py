@@ -342,6 +342,8 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
             "hsPositionRank": None,
             "hsStateRank": None,
             "pffGrade": None,  # populated separately from a manual PFF Elite export
+            "draftRank": None,  # populated separately by merge_draft_ranks.py, run
+                                  # alongside the weekly Tankathon draft board scrape
         }
 
         if recruit_match and recruit_match.get("rating") is not None:
@@ -365,7 +367,7 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
             for k in ("compositeScore", "transferScore", "profileUrl", "transferRank", "transferPosRank",
                       "hsNationalRank", "hsPositionRank", "hsStateRank", "pffGrade",
                       "pffPositionRank", "pffPositionTotal", "pffPositionLabel", "pffTied",
-                      "cfb27Rating", "cfb27Dev"):
+                      "cfb27Rating", "cfb27Dev", "draftRank"):
                 if out_row.get(k) is None:
                     out_row[k] = prev_match.get(k)
 
@@ -380,6 +382,7 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
         "ourladsUpdatedAt": now_iso,
         "cfbdUpdatedAt": cfbd_updated_at,
         "cfb27UpdatedAt": previous_metadata.get("cfb27UpdatedAt"),
+        "draftRankUpdatedAt": previous_metadata.get("draftRankUpdatedAt"),
         "pffUpdatedAt": previous_metadata.get("pffUpdatedAt"),
         "team": team_name,
         "offenseScheme": schemes.get("offense"),
