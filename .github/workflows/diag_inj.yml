@@ -1,0 +1,29 @@
+name: Diagnostic Injuries
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+      - name: Run diagnostic
+        working-directory: scripts
+        run: python3 diag_injuries.py
+      - name: Commit result
+        run: |
+          git config user.name "test-bot"
+          git config user.email "actions@github.com"
+          git add injuries_diag.txt
+          git commit -m "Diagnostic result" || echo "nothing to commit"
+          git push
