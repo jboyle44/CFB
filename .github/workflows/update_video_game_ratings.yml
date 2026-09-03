@@ -1,0 +1,86 @@
+name: Update Video Game Ratings (CFB27 / Madden27)
+
+on:
+  schedule:
+    # Oct 6, 9am ET (13:00 UTC, still EDT) -- both games
+    - cron: '0 13 6 10 *'
+    # Nov 3, 9am ET (14:00 UTC, EST after clocks fall back Nov 1) -- both games
+    - cron: '0 14 3 11 *'
+    # Dec 2, 9am ET (14:00 UTC, EST) -- both games
+    - cron: '0 14 2 12 *'
+    # Jan 5, 9am ET (14:00 UTC, EST) -- NFL/Madden only
+    - cron: '0 14 5 1 *'
+
+  workflow_dispatch: {}
+
+jobs:
+  update-cfb27:
+    # Runs for every trigger except the Jan 5 NFL-only schedule.
+    if: github.event_name == 'workflow_dispatch' || github.event.schedule != '0 14 5 1 *'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+      - name: Update CFB27 ratings
+        working-directory: scripts
+        run: python3 update_video_game_ratings.py ../depth_chart_data
+      - name: Commit and push if data changed
+        run: |
+          git config user.name "video-game-ratings-bot"
+          git config user.email "actions@github.com"
+          git add depth_chart_data/
+          if git diff --staged --quiet; then
+            echo "No CFB27 rating changes to commit."
+            exit 0
+          fi
+          git commit -m "CFB27 ratings update - $(date -u +%Y-%m-%d)"
+          for attempt in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+            git pull --rebase origin main
+          done
+          exit 1
+
+  update-madden27:
+    # Runs on every trigger, including the Jan 5 NFL-only schedule.
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+      - name: Update Madden27 ratings
+        working-directory: scripts
+        run: python3 update_video_game_ratings_nfl.py ../depth_chart_data_nfl
+      - name: Commit and push if data changed
+        run: |
+          git config user.name "video-game-ratings-bot"
+          git config user.email "actions@github.com"
+          git add depth_chart_data_nfl/
+          if git diff --staged --quiet; then
+            echo "No Madden27 rating changes to commit."
+            exit 0
+          fi
+          git commit -m "Madden27 ratings update - $(date -u +%Y-%m-%d)"
+          for attempt in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+            git pull --rebase origin main
+          done
+          exit 1
