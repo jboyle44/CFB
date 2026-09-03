@@ -1,0 +1,37 @@
+name: Test Notre Dame
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+      - name: Rebuild Notre Dame
+        working-directory: scripts
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python3 test_notre_dame.py
+      - name: Commit result
+        run: |
+          git config user.name "test-bot"
+          git config user.email "actions@github.com"
+          git add depth_chart_data/notre-dame.json
+          git commit -m "Test year widening fix" || echo "nothing to commit"
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            git pull --rebase origin main
+          done
+          exit 1
