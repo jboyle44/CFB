@@ -29,6 +29,42 @@ def normalize_name(name):
     return name.lower().strip()
 
 
+# Broad position buckets so the last-name fallback (used when the roster name
+# doesn't exactly match CFBD's, e.g. a nickname like "Trey" vs the legal name
+# "Anthony") can be gated on position -- unverified last-name-only matches can
+# silently attribute a completely different person's data (confirmed with a
+# real case: a roster with three different "Moore" players).
+def site_position_bucket(pos):
+    if pos in ("WR-X","WR-Z","WR-SL","WR-F","WR-H","WR-Y"): return "WR"
+    if pos in ("TE","TE-Y","TE-H"): return "TE"
+    if pos == "RB": return "RB"
+    if pos == "FB": return "RB"
+    if pos == "QB": return "QB"
+    if pos in ("LT","RT","QT","ST","LG","RG","QG","SG","C"): return "OL"
+    if pos in ("LOLB","LDE","JACK","WOLF","BUCK","LEO","CHEETAH","CHEET","RUSH","STUD",
+               "DE","NT","LDT","DT","RDT","RDE","ROLB"): return "FRONT7"
+    if pos in ("SLB","WLB","STING","MAC","MLB","MONEY","DOG"): return "FRONT7"
+    if pos in ("NB","HUSKY","STAR","CASH","SPUR","BAN","ROVER","CAT",
+               "LCB","RCB","FCB","BCB","FS","SS","BS"): return "DB"
+    if pos in ("PT","PK","KO","LS","H","PR","KR"): return "ST"
+    return None
+
+
+def cfbd_position_bucket(pos):
+    if not pos:
+        return None
+    p = pos.upper()
+    return {
+        "QB": "QB", "RB": "RB", "HB": "RB", "FB": "RB",
+        "WR": "WR", "TE": "TE",
+        "OT": "OL", "OG": "OL", "OL": "OL", "C": "OL", "IOL": "OL",
+        "DL": "FRONT7", "DT": "FRONT7", "DE": "FRONT7", "EDGE": "FRONT7",
+        "LB": "FRONT7", "ILB": "FRONT7", "OLB": "FRONT7",
+        "CB": "DB", "S": "DB", "DB": "DB", "SAF": "DB",
+        "K": "ST", "P": "ST", "LS": "ST",
+    }.get(p)
+
+
 def infer_recruiting_class_year(class_str):
     """
     Maps a class string like 'FR', 'RS SO', 'JR', 'RS SR' to the year that
@@ -137,7 +173,14 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
         if not recruit_match:
             last = norm.split()[-1] if norm.split() else None
             if last:
-                recruit_match = recruiting_by_last_name.get(last)
+                candidate = recruiting_by_last_name.get(last)
+                if candidate:
+                    site_bucket = site_position_bucket(row["position"])
+                    cand_bucket = cfbd_position_bucket(candidate.get("position"))
+                    if site_bucket and cand_bucket and site_bucket == cand_bucket:
+                        recruit_match = candidate
+                    # else: same last name, different role -- almost certainly
+                    # a different person, don't risk a wrong match
         transfer_match = transfers_in.get(norm)
         prev_match = previous_by_norm_name.get(norm)
 
