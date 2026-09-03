@@ -55,8 +55,7 @@
       "player": "Antonio Williams",
       "jersey": "14",
       "code": "26/3",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "SWR",
@@ -123,8 +122,7 @@
       "player": "Tanoa Togiai",
       "jersey": "62",
       "code": "CF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "C",
@@ -143,8 +141,7 @@
       "player": "Matt Gulbin",
       "jersey": "66",
       "code": "26/6",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RG",
@@ -187,8 +184,7 @@
       "player": "Chig Okonkwo",
       "jersey": "85",
       "code": "U/Ten",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "TE",
@@ -255,8 +251,7 @@
       "player": "Athan Kaliakmanis",
       "jersey": "16",
       "code": "26/7",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "RB",
@@ -287,8 +282,7 @@
       "player": "Kaytron Allen",
       "jersey": "31",
       "code": "26/6",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "DE",
@@ -379,8 +373,7 @@
       "player": "Joshua Josephs",
       "jersey": "48",
       "code": "26/5",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "WLB",
@@ -411,16 +404,14 @@
       "player": "Kain Medrano",
       "jersey": "56",
       "code": "25/6",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "MLB",
       "player": "Sonny Styles",
       "jersey": "52",
       "code": "26/1",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "MLB",
@@ -583,16 +574,14 @@
       "player": "Drew Stevens",
       "jersey": "19",
       "code": "CF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "LS",
       "player": "Tyler Ott",
       "jersey": "69",
       "code": "U/Bal",
-      "isAcquired": true,
-      "pffGrade": null
+      "isAcquired": true
     },
     {
       "position": "H",
@@ -611,88 +600,56 @@
       "player": "Drew Stevens",
       "jersey": "19",
       "code": "CF26",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "PR",
       "player": "Jaylin Lane",
       "jersey": "83",
       "code": "25/4",
-      "isAcquired": false,
-      "pffGrade": 59.5,
-      "pffPositionRank": 148,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "PR",
       "player": "Luke McCaffrey",
       "jersey": "11",
       "code": "24/3",
-      "isAcquired": false,
-      "pffGrade": 72.4,
-      "pffPositionRank": 49,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "PR",
       "player": "Treylon Burks",
       "jersey": "13",
       "code": "SF25",
-      "isAcquired": false,
-      "pffGrade": 62.9,
-      "pffPositionRank": 114,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "PR",
       "player": "Antonio Williams",
       "jersey": "14",
       "code": "26/3",
-      "isAcquired": false,
-      "pffGrade": null
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Luke McCaffrey",
       "jersey": "11",
       "code": "24/3",
-      "isAcquired": false,
-      "pffGrade": 72.4,
-      "pffPositionRank": 49,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Jaylin Lane",
       "jersey": "83",
       "code": "25/4",
-      "isAcquired": false,
-      "pffGrade": 59.5,
-      "pffPositionRank": 148,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "isAcquired": false
     },
     {
       "position": "KR",
       "player": "Dyami Brown",
       "jersey": "6",
       "code": "U/Jax",
-      "isAcquired": true,
-      "pffGrade": 55.5,
-      "pffPositionRank": 181,
-      "pffPositionTotal": 223,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "isAcquired": true
     }
   ]
 }
