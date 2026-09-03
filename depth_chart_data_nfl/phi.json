@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-09-03T16:19:50.592419+00:00",
   "ourladsUpdatedAt": "2026-09-03T16:19:50.592419+00:00",
-  "madden27UpdatedAt": "2026-09-03T03:37:12.906980+00:00",
+  "madden27UpdatedAt": "2026-09-03T17:13:20.727027+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Philadelphia Eagles",
   "offenseScheme": "11 - One RB, One TE (59%)",
@@ -911,8 +911,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 73,
+      "madden27Dev": "Normal"
     },
     {
       "position": "TE",
@@ -922,8 +922,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "madden27Rating": 69,
+      "madden27Dev": "Normal",
       "pffGrade": 49.8,
       "pffPositionRank": null,
       "pffPositionTotal": null,

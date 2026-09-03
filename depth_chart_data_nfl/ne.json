@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-09-03T16:19:59.527194+00:00",
   "ourladsUpdatedAt": "2026-09-03T16:19:59.527194+00:00",
-  "madden27UpdatedAt": "2026-09-03T03:37:07.820127+00:00",
+  "madden27UpdatedAt": "2026-09-03T17:13:14.441771+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New England Patriots",
   "offenseScheme": "11 - One RB, One TE (49%)",
@@ -860,8 +860,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 64,
+      "madden27Dev": "Normal"
     },
     {
       "position": "PT",
@@ -871,8 +871,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "madden27Rating": 78,
+      "madden27Dev": "Normal",
       "pffGrade": 63.0,
       "pffPositionRank": 28,
       "pffPositionTotal": 36,
@@ -920,8 +920,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "madden27Rating": 63,
+      "madden27Dev": "Normal",
       "pffGrade": 53.8,
       "pffPositionRank": 65,
       "pffPositionTotal": 68,
@@ -947,8 +947,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "PUP",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 82,
+      "madden27Dev": "Star"
     },
     {
       "position": "S",
@@ -958,8 +958,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "NFI",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 66,
+      "madden27Dev": "Normal"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-09-03T16:20:52.473717+00:00",
   "ourladsUpdatedAt": "2026-09-03T16:20:52.473717+00:00",
-  "madden27UpdatedAt": "2026-09-03T03:37:15.373685+00:00",
+  "madden27UpdatedAt": "2026-09-03T17:13:23.548933+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "San Francisco 49ers",
   "offenseScheme": "11 - One RB, One TE (43%)",
@@ -874,8 +874,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 78,
+      "madden27Dev": "Normal"
     },
     {
       "position": "OT",
@@ -885,8 +885,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 65,
+      "madden27Dev": "Normal"
     },
     {
       "position": "CB",
@@ -896,8 +896,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 76,
+      "madden27Dev": "Normal"
     },
     {
       "position": "LB",
@@ -907,8 +907,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 71,
+      "madden27Dev": "Normal"
     },
     {
       "position": "DE",
@@ -929,8 +929,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 71,
+      "madden27Dev": "Normal"
     },
     {
       "position": "DE",
@@ -951,8 +951,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "madden27Rating": 70,
+      "madden27Dev": "Normal",
       "pffGrade": 65.6,
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -978,8 +978,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 62,
+      "madden27Dev": "Normal"
     },
     {
       "position": "WR",
@@ -989,8 +989,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 80,
+      "madden27Dev": "Normal"
     },
     {
       "position": "DE",
@@ -1011,8 +1011,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "PUP",
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "madden27Rating": 77,
+      "madden27Dev": "Star",
       "pffGrade": 54.7,
       "pffPositionRank": 106,
       "pffPositionTotal": 129,
@@ -1027,8 +1027,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "PUP",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 72,
+      "madden27Dev": "Normal"
     },
     {
       "position": "WR",
@@ -1038,8 +1038,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "LEFT",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 77,
+      "madden27Dev": "Star"
     }
   ]
 }

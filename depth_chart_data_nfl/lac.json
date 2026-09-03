@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-09-03T16:20:37.088743+00:00",
   "ourladsUpdatedAt": "2026-09-03T16:20:37.088743+00:00",
-  "madden27UpdatedAt": "2026-09-03T03:37:02.802522+00:00",
+  "madden27UpdatedAt": "2026-09-03T17:13:08.185162+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Los Angeles Chargers",
   "offenseScheme": "11 - One RB, One TE (57%)",
@@ -923,8 +923,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 65,
+      "madden27Dev": "Normal"
     },
     {
       "position": "TE",
@@ -934,8 +934,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 68,
+      "madden27Dev": "Normal"
     },
     {
       "position": "ILB",
@@ -945,8 +945,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 76,
+      "madden27Dev": "Normal"
     },
     {
       "position": "C",
@@ -956,8 +956,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "madden27Rating": 80,
+      "madden27Dev": "Normal",
       "pffGrade": 70.8,
       "pffPositionRank": 11,
       "pffPositionTotal": 41,
@@ -972,8 +972,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 66,
+      "madden27Dev": "Normal"
     },
     {
       "position": "WR",
@@ -983,8 +983,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 65,
+      "madden27Dev": "Normal"
     },
     {
       "position": "OLB",
@@ -994,8 +994,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 69,
+      "madden27Dev": "Normal"
     },
     {
       "position": "OT",
@@ -1005,8 +1005,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "NFI",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 61,
+      "madden27Dev": "Normal"
     }
   ]
 }

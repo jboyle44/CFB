@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-09-03T16:20:06.118595+00:00",
   "ourladsUpdatedAt": "2026-09-03T16:20:06.118595+00:00",
-  "madden27UpdatedAt": "2026-09-03T03:36:47.752800+00:00",
+  "madden27UpdatedAt": "2026-09-03T17:12:50.671548+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Cincinnati Bengals",
   "offenseScheme": "11 - One RB, One TE (64%)",
@@ -901,8 +901,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 68,
+      "madden27Dev": "Normal"
     },
     {
       "position": "CB",
@@ -912,8 +912,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 71,
+      "madden27Dev": "Normal"
     }
   ]
 }

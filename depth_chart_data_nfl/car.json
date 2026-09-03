@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-09-03T16:20:41.540287+00:00",
   "ourladsUpdatedAt": "2026-09-03T16:20:41.540287+00:00",
-  "madden27UpdatedAt": "2026-09-03T03:36:45.267648+00:00",
+  "madden27UpdatedAt": "2026-09-03T17:12:47.839256+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Carolina Panthers",
   "offenseScheme": "11 - One RB, One TE (65%)",
@@ -864,8 +864,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "madden27Rating": 71,
+      "madden27Dev": "Normal",
       "pffGrade": 69.7,
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -880,8 +880,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 63,
+      "madden27Dev": "Normal"
     },
     {
       "position": "OG",
@@ -891,8 +891,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 76,
+      "madden27Dev": "Normal"
     },
     {
       "position": "OLB",
@@ -902,8 +902,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 75,
+      "madden27Dev": "Star"
     },
     {
       "position": "WR",
@@ -913,8 +913,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 72,
+      "madden27Dev": "Normal"
     },
     {
       "position": "WR",
@@ -957,8 +957,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "PUP",
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "madden27Rating": 74,
+      "madden27Dev": "Normal",
       "pffGrade": 40.8,
       "pffPositionRank": 136,
       "pffPositionTotal": 146,
@@ -973,8 +973,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "NFI",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 84,
+      "madden27Dev": "Normal"
     },
     {
       "position": "OT",
@@ -984,8 +984,8 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "NFI",
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 80,
+      "madden27Dev": "Star"
     }
   ]
 }
