@@ -560,7 +560,8 @@ function groupForTeam(teamKey){
 
 function populateTeamSelect(group, selectedKey){
   const teamSelect = document.getElementById('teamSelect');
-  const teamsInGroup = TEAM_LIST.filter(t => t.group === group);
+  const teamsInGroup = TEAM_LIST.filter(t => t.group === group)
+    .sort((a, b) => a.name.localeCompare(b.name));
   teamSelect.innerHTML = teamsInGroup.map(t => `<option value="${t.key}">${t.name}</option>`).join('');
   const stillPresent = selectedKey && teamsInGroup.some(t => t.key === selectedKey);
   teamSelect.value = stillPresent ? selectedKey : teamsInGroup[0].key;
