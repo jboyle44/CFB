@@ -332,10 +332,12 @@ function fmtSpreadTeam(g, spread){
 function gameCardHtml(g, listPosition, colorMap){
   const spread = g.vegasSpread != null ? g.vegasSpread : g.modelSpread;
   const spreadText = fmtSpreadTeam(g, spread);
+  const location = g.venueCity ? `${g.venue || ''} · ${g.venueCity}${g.venueState ? ', ' + g.venueState : ''}` : (g.venue || null);
   return `
     <div class="game-card">
       <div class="matchup"><span class="rank-num">${listPosition}.</span>${awayNameWithRank(g.awayTeam, colorMap)} @ ${homeNameWithRank(g.homeTeam, colorMap)}</div>
       <div class="meta">${formatGameTime(g.startDate)}</div>
+      ${location ? `<div class="meta">${location}</div>` : ''}
       <div class="meta">Spread: <span class="spread">${spreadText}</span></div>
     </div>`;
 }
