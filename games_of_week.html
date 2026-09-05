@@ -471,12 +471,29 @@ async function fetchDepthChart(path){
 // first and falling back -- not perfectly apples-to-apples across
 // different scales, but a reasonable "how notable is this player" signal
 // given what data actually exists for them.
-function bestRating(row){
-  if(row.pffGrade != null) return row.pffGrade;
+function gameRating(row){
+  // CFB27 rating for CFB rows, Madden27 for NFL rows -- a given row only
+  // ever has one or the other, never both, so this is safe either way.
   if(row.cfb27Rating != null) return row.cfb27Rating;
   if(row.madden27Rating != null) return row.madden27Rating;
-  if(row.compositeScore != null) return row.compositeScore;
   return null;
+}
+
+// Selection priority: draft rank first (a real 2027 draft prospect always
+// outranks a non-prospect), with a lower rank number (closer to #1) beating
+// a higher one among prospects. Everyone else is sorted by CFB27/Madden
+// rating. PFF grade is intentionally NOT part of this -- it's shown as
+// display info on the card, not used to decide who gets selected.
+function comparePlayers(a, b){
+  const aDraft = a.draftRank, bDraft = b.draftRank;
+  if(aDraft != null && bDraft != null) return aDraft - bDraft;
+  if(aDraft != null) return -1;
+  if(bDraft != null) return 1;
+  const aRating = gameRating(a), bRating = gameRating(b);
+  if(aRating == null && bRating == null) return 0;
+  if(aRating == null) return 1;
+  if(bRating == null) return -1;
+  return bRating - aRating;
 }
 
 const OL_POSITIONS = new Set(["LT", "RT", "LG", "RG", "C", "T", "G"]);
@@ -506,21 +523,29 @@ function findStarterAtPosition(rows, matchFn){
 function topByRating(rows, matchFn, count, exclude){
   const excludeSet = new Set(exclude || []);
   return rows
-    .filter(r => matchFn(r.position) && !r.isReserve && !excludeSet.has(r.player) && bestRating(r) != null)
-    .sort((a, b) => bestRating(b) - bestRating(a))
+    .filter(r => matchFn(r.position) && !r.isReserve && !excludeSet.has(r.player) &&
+                 (r.draftRank != null || gameRating(r) != null))
+    .sort(comparePlayers)
     .slice(0, count);
 }
 
 function playerLineHtml(row){
   if(!row) return `<div class="pw-player pw-empty-slot">—</div>`;
-  const rating = bestRating(row);
+  const rating = gameRating(row);
   const ratingText = rating != null ? rating.toFixed(1) : '—';
   const recruitStars = starsForComposite(row.compositeScore);
   const draftRankText = row.draftRank ? ` · <span style="color:#87CEEB; font-weight:700;">Draft Rank #${row.draftRank}</span>` : '';
+  let pffText = '';
+  if(row.pffGrade != null){
+    pffText = ` · PFF: ${row.pffGrade.toFixed(1)}`;
+    if(row.pffPositionRank != null && row.pffPositionTotal != null){
+      pffText += ` (Ranked ${row.pffPositionRank}${row.pffTied ? 'T' : ''} of ${row.pffPositionTotal})`;
+    }
+  }
   return `
     <div class="pw-player">
       <div class="pw-name">${row.player} <span class="pw-pos">${row.position || ''}</span></div>
-      <div class="pw-meta">${row.class || ''} · Rating: ${ratingText}${recruitStars ? ' · Recruit: ' + recruitStars : ''}${draftRankText}</div>
+      <div class="pw-meta">${row.class || ''} · Rating: ${ratingText}${recruitStars ? ' · Recruit: ' + recruitStars : ''}${pffText}${draftRankText}</div>
     </div>`;
 }
 
