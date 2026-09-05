@@ -329,6 +329,31 @@ function fmtSpreadTeam(g, spread){
   return `${favTeam} -${Math.abs(spread).toFixed(1)}`;
 }
 
+// WMO weather codes, per Open-Meteo's documented convention
+const WMO_CODES = {
+  0: "Clear", 1: "Mostly clear", 2: "Partly cloudy", 3: "Overcast",
+  45: "Fog", 48: "Fog",
+  51: "Light drizzle", 53: "Drizzle", 55: "Heavy drizzle",
+  61: "Light rain", 63: "Rain", 65: "Heavy rain",
+  71: "Light snow", 73: "Snow", 75: "Heavy snow",
+  80: "Rain showers", 81: "Rain showers", 82: "Heavy rain showers",
+  95: "Thunderstorm", 96: "Thunderstorm", 99: "Severe thunderstorm",
+};
+
+let weatherByGameId = {};
+
+function weatherHtml(g){
+  const w = weatherByGameId[String(g.gameId)];
+  if(!w || g.dome) return '';
+  const desc = WMO_CODES[w.weatherCode] || '';
+  const parts = [];
+  if(w.temperatureF != null) parts.push(`${Math.round(w.temperatureF)}°F`);
+  if(desc) parts.push(desc);
+  if(w.precipitationProbability != null && w.precipitationProbability >= 20) parts.push(`${w.precipitationProbability}% precip`);
+  if(w.windSpeedMph != null && w.windSpeedMph >= 15) parts.push(`${Math.round(w.windSpeedMph)} mph wind`);
+  return parts.length ? `<div class="meta">${parts.join(' · ')}</div>` : '';
+}
+
 function gameCardHtml(g, listPosition, colorMap){
   const spread = g.vegasSpread != null ? g.vegasSpread : g.modelSpread;
   const spreadText = fmtSpreadTeam(g, spread);
@@ -338,6 +363,7 @@ function gameCardHtml(g, listPosition, colorMap){
       <div class="matchup"><span class="rank-num">${listPosition}.</span>${awayNameWithRank(g.awayTeam, colorMap)} @ ${homeNameWithRank(g.homeTeam, colorMap)}</div>
       <div class="meta">${formatGameTime(g.startDate)}</div>
       ${location ? `<div class="meta">${location}</div>` : ''}
+      ${weatherHtml(g)}
       <div class="meta">Spread: <span class="spread">${spreadText}</span></div>
     </div>`;
 }
@@ -366,6 +392,16 @@ async function loadData(){
     const cfbGames = Array.isArray(cfbRaw) ? cfbRaw : (cfbRaw.games || []);
     const nflGames = Array.isArray(nflRaw) ? nflRaw : (nflRaw.games || []);
     const brrRows = Array.isArray(brrRaw) ? brrRaw : (brrRaw.rows || []);
+
+    // Weather is a nice-to-have on top of the core page -- fetched
+    // separately so a missing/failed weather file never breaks the rest.
+    try{
+      const weatherRes = await fetch('games_weather.json?v=' + Date.now());
+      const weatherRaw = await weatherRes.json();
+      weatherByGameId = weatherRaw.weather || {};
+    } catch(e){
+      weatherByGameId = {};
+    }
 
     const cfbWeek = currentWeek(cfbGames);
     const nflWeek = currentWeek(nflGames);
