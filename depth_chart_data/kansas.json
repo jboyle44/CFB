@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:38:34.896408+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:38:34.896408+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:38:34.896408+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:27:53.911411+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:46:02.839257+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Kansas",
@@ -1685,7 +1685,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Kory Amachree",
       "jersey": "2",
       "class": "FR",
@@ -1701,7 +1701,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 72,
+      "cfb27Dev": "Impact"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:20:49.029016+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:20:49.029016+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:20:49.029016+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:27:15.611159+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:45:21.706841+00:00",
   "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Tennessee",
@@ -1426,7 +1426,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 71,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "SS",

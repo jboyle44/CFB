@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:24:42.821073+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:24:42.821073+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:24:42.821073+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:27:25.536084+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:45:32.346019+00:00",
   "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Florida State",
@@ -1635,7 +1635,7 @@
       "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Karson Hobbs",
       "jersey": "16",
       "class": "JR",
@@ -1651,10 +1651,12 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 76,
+      "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Gemari Sands",
       "jersey": "22",
       "class": "RS JR",
@@ -1670,7 +1672,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 78,
+      "cfb27Dev": "Impact"
     }
   ]
 }

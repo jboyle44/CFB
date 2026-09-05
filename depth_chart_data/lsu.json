@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:17:41.539610+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:17:41.539610+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:17:41.539610+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:27:08.198709+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:45:13.704108+00:00",
   "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "LSU",
@@ -2185,7 +2185,7 @@
       "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "Gabriel Reliford",
       "jersey": "19",
       "class": "JR",
@@ -2201,10 +2201,12 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 75,
+      "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Aidan Anding",
       "jersey": "23",
       "class": "SO",
@@ -2220,7 +2222,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 74,
+      "cfb27Dev": "Impact"
     }
   ]
 }

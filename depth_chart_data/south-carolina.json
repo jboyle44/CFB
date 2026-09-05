@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:20:17.760210+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:20:17.760210+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:20:17.760210+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:27:14.376251+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:45:20.388278+00:00",
   "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "South Carolina",
@@ -1651,7 +1651,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RCB",
@@ -1845,7 +1847,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "PK",
@@ -1914,7 +1918,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "KO",
@@ -2192,7 +2198,7 @@
       "cfb27Dev": "Elite"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Jayden Gibson",
       "jersey": "9",
       "class": "RS SR",
@@ -2208,10 +2214,12 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 79,
+      "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Jayden Sellers",
       "jersey": "17",
       "class": "SO",
@@ -2227,7 +2235,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 80,
+      "cfb27Dev": "Normal"
     }
   ]
 }

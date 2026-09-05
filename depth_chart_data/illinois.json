@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:05:49.358342+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:05:49.358342+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:05:49.358342+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:26:38.393239+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:44:41.701988+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Illinois",
@@ -2285,7 +2285,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "TE",
       "player": "BJ Thurman",
       "jersey": "87",
       "class": "SO",
@@ -2301,7 +2301,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 68,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RES",
@@ -2320,7 +2322,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RES",
@@ -2339,7 +2343,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     }
   ]
 }

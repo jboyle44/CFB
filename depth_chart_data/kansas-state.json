@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:39:08.245155+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:39:08.245155+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:39:08.245155+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:27:55.163463+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:46:04.182178+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Kansas State",
@@ -2010,7 +2010,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "LT",
       "player": "John Pastore",
       "jersey": "78",
       "class": "RS SR",
@@ -2026,7 +2026,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 84,
+      "cfb27Dev": "Normal"
     }
   ]
 }

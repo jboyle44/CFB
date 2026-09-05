@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:30:58.269149+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:30:58.269149+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:30:58.269149+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:27:39.091149+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:45:46.937649+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Virginia Tech",
@@ -2035,7 +2035,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "DT",
       "player": "Emmett Laws",
       "jersey": "99",
       "class": "RS SO",
@@ -2051,7 +2051,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 72,
+      "cfb27Dev": "Impact"
     }
   ]
 }

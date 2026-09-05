@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:12:32.966979+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:12:32.966979+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:12:32.966979+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:26:54.532358+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:44:59.034643+00:00",
   "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Rutgers",
@@ -1326,7 +1326,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 67,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "SS",

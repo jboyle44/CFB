@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:16:41.549680+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:16:41.549680+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:16:41.549680+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:27:05.694816+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:45:11.045780+00:00",
   "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Georgia",
@@ -101,7 +101,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "WR-X",
@@ -120,7 +122,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "WR-Z",
@@ -664,7 +668,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RT",
@@ -858,7 +864,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 67,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "QB",
@@ -1052,7 +1060,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 81,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RB",
@@ -1071,7 +1081,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "DE",
@@ -2349,7 +2361,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Dante Dowdell",
       "jersey": "22",
       "class": "SR",

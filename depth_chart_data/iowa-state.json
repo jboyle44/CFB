@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:38:04.407748+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:38:04.407748+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:38:04.407748+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:27:52.693833+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:46:01.532291+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Iowa State",
@@ -1735,7 +1735,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "FS",
       "player": "Braden Awls",
       "jersey": "2",
       "class": "SR",
@@ -1751,10 +1751,12 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 82,
+      "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Jordyn Bailey",
       "jersey": "17",
       "class": "RS JR",
@@ -1770,7 +1772,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 75,
+      "cfb27Dev": "Impact"
     }
   ]
 }

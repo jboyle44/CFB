@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:27:31.067255+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:27:31.067255+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:27:31.067255+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:27:31.688631+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:45:38.968156+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "NC State",
@@ -1535,7 +1535,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Isaiah Crowell",
       "jersey": "8",
       "class": "RS SR",
@@ -1551,10 +1551,12 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 69,
+      "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Teddy Hoffmann",
       "jersey": "12",
       "class": "SO",
@@ -1570,7 +1572,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 79,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RES",
@@ -1589,10 +1593,12 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "C",
       "player": "Rylan Vann",
       "jersey": "55",
       "class": "RS SR",
@@ -1608,10 +1614,12 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 71,
+      "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Tyreek Copper",
       "jersey": "85",
       "class": "FR",
@@ -1627,10 +1635,12 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 74,
+      "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "DT",
       "player": "Carmelo McKenzie",
       "jersey": "93",
       "class": "FR",
@@ -1646,7 +1656,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 75,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RES",
@@ -1665,7 +1677,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     }
   ]
 }

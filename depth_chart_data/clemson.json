@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:23:43.641566+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:23:43.641566+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:23:43.641566+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:27:23.044903+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:45:29.696846+00:00",
   "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Clemson",
@@ -1885,7 +1885,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "DT",
       "player": "Kourtney Kelly",
       "jersey": "44",
       "class": "RS SO",
@@ -1901,7 +1901,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 72,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "FS",
@@ -1945,7 +1947,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "WR-X",
@@ -1989,10 +1993,12 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "DT",
       "player": "Vic Burley",
       "jersey": "45",
       "class": "RS JR",
@@ -2008,7 +2014,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 85,
+      "cfb27Dev": "Star"
     }
   ]
 }

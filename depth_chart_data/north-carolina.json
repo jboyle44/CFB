@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:27:00.913773+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:27:00.913773+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:27:00.913773+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:27:30.468037+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:45:37.662232+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "North Carolina",
@@ -1960,7 +1960,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "TE",
       "player": "Jaxxon Warren",
       "jersey": "19",
       "class": "RS SO",
@@ -1976,10 +1976,12 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 71,
+      "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "TE",
       "player": "Jordan Washington",
       "jersey": "80",
       "class": "RS SO",
@@ -1995,7 +1997,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 76,
+      "cfb27Dev": "Impact"
     }
   ]
 }

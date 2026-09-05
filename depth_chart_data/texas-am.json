@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:21:42.225888+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:21:42.225888+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:21:42.225888+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:27:18.095618+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:45:24.379049+00:00",
   "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Texas A&M",
@@ -2126,10 +2126,12 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "LE",
       "player": "Chace Sims",
       "jersey": "59",
       "class": "RS FR",
@@ -2145,10 +2147,12 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 75,
+      "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "FS",
       "player": "Bryce Anderson",
       "jersey": "1",
       "class": "RS JR",
@@ -2164,7 +2168,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 82,
+      "cfb27Dev": "Star"
     }
   ]
 }

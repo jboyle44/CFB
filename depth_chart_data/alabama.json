@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:14:41.250429+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:14:41.250429+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:14:41.250429+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:27:00.721910+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:45:05.652266+00:00",
   "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Alabama",
@@ -2335,7 +2335,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Noah Rogers",
       "jersey": "5",
       "class": "RS JR",
@@ -2351,10 +2351,12 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 84,
+      "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "AK Dear",
       "jersey": "0",
       "class": "RS FR",
@@ -2370,10 +2372,12 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 82,
+      "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "DT",
       "player": "Jeremiah Beaman",
       "jersey": "92",
       "class": "RS SO",
@@ -2389,10 +2393,12 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 75,
+      "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "SS",
       "player": "Jireh Edwards",
       "jersey": "10",
       "class": "FR",
@@ -2408,7 +2414,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 82,
+      "cfb27Dev": "Elite"
     }
   ]
 }

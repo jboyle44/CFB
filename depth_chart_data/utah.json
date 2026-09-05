@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:41:32.060703+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:41:32.060703+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:41:32.060703+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:28:00.125343+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:46:09.477514+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Utah",
@@ -151,7 +151,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 74,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "WR-SL",
@@ -745,7 +747,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 71,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RB",
@@ -839,7 +843,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 73,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "LDE",
@@ -858,7 +864,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "LDT",
@@ -1027,7 +1035,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 76,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RDE",
@@ -1321,7 +1331,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 70,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "SS",
@@ -1515,7 +1527,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 75,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "PT",

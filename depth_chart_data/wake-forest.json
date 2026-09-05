@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:31:56.855845+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:31:56.855845+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:31:56.855845+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:27:40.315362+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:45:48.262198+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Wake Forest",
@@ -1985,7 +1985,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Bernard Causey",
       "jersey": "3",
       "class": "RS SO",
@@ -2001,7 +2001,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 75,
+      "cfb27Dev": "Normal"
     }
   ]
 }

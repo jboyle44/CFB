@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:28:50.270368+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:28:50.270368+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:28:50.270368+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:27:35.378219+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:45:42.930019+00:00",
   "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Stanford",
@@ -1960,7 +1960,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Caden High",
       "jersey": "0",
       "class": "SR",
@@ -1976,10 +1976,12 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 76,
+      "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "LT",
       "player": "Niki Prongos",
       "jersey": "66",
       "class": "RS SR",
@@ -1995,10 +1997,12 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 82,
+      "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "LG",
       "player": "Nick Fattig",
       "jersey": "60",
       "class": "RS JR",
@@ -2014,10 +2018,12 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 76,
+      "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "RG",
       "player": "Simione Pale",
       "jersey": "55",
       "class": "RS JR",
@@ -2033,10 +2039,12 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 76,
+      "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Aaron Morris",
       "jersey": "31",
       "class": "RS JR",
@@ -2052,10 +2060,12 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 70,
+      "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Carter Shaw",
       "jersey": "15",
       "class": "RS JR",
@@ -2071,7 +2081,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 76,
+      "cfb27Dev": "Normal"
     }
   ]
 }

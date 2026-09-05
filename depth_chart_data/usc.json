@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:13:16.205467+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:13:16.205467+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:13:16.205467+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:26:56.962047+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:45:01.655654+00:00",
   "draftRankUpdatedAt": "2026-09-03T19:20:14.740555+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "USC",
@@ -1760,7 +1760,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "C",
       "player": "Kilian O'Connor",
       "jersey": "67",
       "class": "RS SR",
@@ -1776,7 +1776,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 81,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RES",
@@ -1804,7 +1806,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "LE",
       "player": "Braylan Shelby",
       "jersey": "10",
       "class": "SR",

@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:37:21.282381+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:37:21.282381+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:37:21.282381+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:27:51.449235+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:46:00.207575+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Houston",
@@ -1710,7 +1710,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "TE",
       "player": "Luke McGary",
       "jersey": "87",
       "class": "SR",
@@ -1726,7 +1726,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 74,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "WR-Z",

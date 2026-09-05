@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:40:20.126605+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:40:20.126605+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:40:20.126605+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:27:57.641620+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:46:06.825351+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "TCU",
@@ -1835,7 +1835,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Jordan Dwyer",
       "jersey": "7",
       "class": "RS SR",
@@ -1851,10 +1851,12 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 86,
+      "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Dozie Ezukanma",
       "jersey": "0",
       "class": "RS SO",
@@ -1870,10 +1872,12 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 72,
+      "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "Zach Chapman",
       "jersey": "0",
       "class": "RS JR",
@@ -1889,7 +1893,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 77,
+      "cfb27Dev": "Impact"
     }
   ]
 }

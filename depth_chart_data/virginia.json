@@ -2,7 +2,7 @@
   "generatedAt": "2026-09-04T13:29:59.934694+00:00",
   "ourladsUpdatedAt": "2026-09-04T13:29:59.934694+00:00",
   "cfbdUpdatedAt": "2026-09-04T13:29:59.934694+00:00",
-  "cfb27UpdatedAt": "2026-09-03T18:27:37.844001+00:00",
+  "cfb27UpdatedAt": "2026-09-05T00:45:45.601184+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Virginia",
@@ -1851,7 +1851,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     }
   ]
 }
