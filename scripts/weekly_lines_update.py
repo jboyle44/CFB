@@ -213,6 +213,8 @@ def build_record(game, ratings_by_team, ratings_source, existing_by_id, venues_l
         "venueCity": venue_info.get("city"),
         "venueState": venue_info.get("state"),
         "dome": venue_info.get("dome"),
+        "venueLat": venue_info.get("latitude"),
+        "venueLon": venue_info.get("longitude"),
     }
 
     # Once a game has been graded, freeze the line/pick/model fields --
