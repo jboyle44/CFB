@@ -110,23 +110,23 @@ NEUTRAL_SITE_GAMES = {
 # international venues since there's no US state to show.
 NEUTRAL_SITE_VENUES = {
     ("Los Angeles Rams", "San Francisco 49ers", 1):
-        {"venue": "Melbourne Cricket Ground", "city": "Melbourne", "state": "Australia", "dome": False},
+        {"venue": "Melbourne Cricket Ground", "city": "Melbourne", "state": "Australia", "dome": False, "lat": -37.8199, "lon": 144.9834},
     ("Dallas Cowboys", "Baltimore Ravens", 3):
-        {"venue": "Maracanã Stadium", "city": "Rio de Janeiro", "state": "Brazil", "dome": False},
+        {"venue": "Maracanã Stadium", "city": "Rio de Janeiro", "state": "Brazil", "dome": False, "lat": -22.9121, "lon": -43.2302},
     ("Washington Commanders", "Indianapolis Colts", 4):
-        {"venue": "Tottenham Hotspur Stadium", "city": "London", "state": "England", "dome": False},
+        {"venue": "Tottenham Hotspur Stadium", "city": "London", "state": "England", "dome": False, "lat": 51.6043, "lon": -0.0664},
     ("Jacksonville Jaguars", "Philadelphia Eagles", 5):
-        {"venue": "Tottenham Hotspur Stadium", "city": "London", "state": "England", "dome": False},
+        {"venue": "Tottenham Hotspur Stadium", "city": "London", "state": "England", "dome": False, "lat": 51.6043, "lon": -0.0664},
     ("Jacksonville Jaguars", "Houston Texans", 6):
-        {"venue": "Wembley Stadium", "city": "London", "state": "England", "dome": False},
+        {"venue": "Wembley Stadium", "city": "London", "state": "England", "dome": False, "lat": 51.5560, "lon": -0.2795},
     ("New Orleans Saints", "Pittsburgh Steelers", 7):
-        {"venue": "Stade de France", "city": "Paris", "state": "France", "dome": False},
+        {"venue": "Stade de France", "city": "Paris", "state": "France", "dome": False, "lat": 48.9244, "lon": 2.3601},
     ("Atlanta Falcons", "Cincinnati Bengals", 9):
-        {"venue": "Estadio Santiago Bernabéu", "city": "Madrid", "state": "Spain", "dome": False},
+        {"venue": "Estadio Santiago Bernabéu", "city": "Madrid", "state": "Spain", "dome": False, "lat": 40.4531, "lon": -3.6883},
     ("Detroit Lions", "New England Patriots", 10):
-        {"venue": "Allianz Arena", "city": "Munich", "state": "Germany", "dome": False},
+        {"venue": "Allianz Arena", "city": "Munich", "state": "Germany", "dome": False, "lat": 48.2188, "lon": 11.6247},
     ("San Francisco 49ers", "Minnesota Vikings", 11):
-        {"venue": "Estadio Banorte", "city": "Mexico City", "state": "Mexico", "dome": False},
+        {"venue": "Estadio Banorte", "city": "Mexico City", "state": "Mexico", "dome": False, "lat": 19.3029, "lon": -99.1505},
 }
 
 # Standard NFL conference/division alignment (stable year to year barring
@@ -227,6 +227,8 @@ def _backfill_venue_fields(record):
     record["venueCity"] = venue_info.get("city")
     record["venueState"] = venue_info.get("state")
     record["dome"] = venue_info.get("dome")
+    record["venueLat"] = venue_info.get("lat")
+    record["venueLon"] = venue_info.get("lon")
 
 
 def build_record(game, ratings_by_abbr, ratings_source, existing_by_id, home_spread, provider):
@@ -283,6 +285,8 @@ def build_record(game, ratings_by_abbr, ratings_source, existing_by_id, home_spr
         "venueCity": venue_info.get("city"),
         "venueState": venue_info.get("state"),
         "dome": venue_info.get("dome"),
+        "venueLat": venue_info.get("lat"),
+        "venueLon": venue_info.get("lon"),
         "homeRating": home_rating,
         "awayRating": away_rating,
         "ratingsSource": ratings_source,
