@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/runner/work/CFB/CFB/diag_nfl_real.py", line 4, in <module>
+    runpy.run_path("scripts/weekly_lines_update_nfl.py", run_name="__main__")
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "scripts/weekly_lines_update_nfl.py", line 53, in <module>
+    from nfl_stadiums import NFL_STADIUMS
+ModuleNotFoundError: No module named 'nfl_stadiums'
