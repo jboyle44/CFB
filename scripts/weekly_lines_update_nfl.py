@@ -103,6 +103,32 @@ NEUTRAL_SITE_GAMES = {
     ("San Francisco 49ers", "Minnesota Vikings", 11),    # Mexico City, Mexico
 }
 
+# Real venue for each neutral-site game above, keyed identically -- without
+# this, a neutral-site game would otherwise get the home team's usual
+# domestic stadium attached (confirmed real bug: Rams-49ers in Melbourne was
+# showing "SoFi Stadium, Inglewood CA"). "state" holds the country name for
+# international venues since there's no US state to show.
+NEUTRAL_SITE_VENUES = {
+    ("Los Angeles Rams", "San Francisco 49ers", 1):
+        {"venue": "Melbourne Cricket Ground", "city": "Melbourne", "state": "Australia", "dome": False},
+    ("Dallas Cowboys", "Baltimore Ravens", 3):
+        {"venue": "Maracanã Stadium", "city": "Rio de Janeiro", "state": "Brazil", "dome": False},
+    ("Washington Commanders", "Indianapolis Colts", 4):
+        {"venue": "Tottenham Hotspur Stadium", "city": "London", "state": "England", "dome": False},
+    ("Jacksonville Jaguars", "Philadelphia Eagles", 5):
+        {"venue": "Tottenham Hotspur Stadium", "city": "London", "state": "England", "dome": False},
+    ("Jacksonville Jaguars", "Houston Texans", 6):
+        {"venue": "Wembley Stadium", "city": "London", "state": "England", "dome": False},
+    ("New Orleans Saints", "Pittsburgh Steelers", 7):
+        {"venue": "Stade de France", "city": "Paris", "state": "France", "dome": False},
+    ("Atlanta Falcons", "Cincinnati Bengals", 9):
+        {"venue": "Estadio Santiago Bernabéu", "city": "Madrid", "state": "Spain", "dome": False},
+    ("Detroit Lions", "New England Patriots", 10):
+        {"venue": "Allianz Arena", "city": "Munich", "state": "Germany", "dome": False},
+    ("San Francisco 49ers", "Minnesota Vikings", 11):
+        {"venue": "Estadio Banorte", "city": "Mexico City", "state": "Mexico", "dome": False},
+}
+
 # Standard NFL conference/division alignment (stable year to year barring
 # realignment). Used for the Results & Trends AFC/NFC and division
 # breakdowns -- NFL has no equivalent of CFB's P4/G6 or conference concept,
@@ -195,7 +221,8 @@ def _backfill_venue_fields(record):
     (score, grade, model line, etc)."""
     if "venue" in record:
         return  # already has venue fields, nothing to backfill
-    venue_info = NFL_STADIUMS.get(record.get("homeTeam"), {})
+    key = (record.get("homeTeam"), record.get("awayTeam"), record.get("week"))
+    venue_info = NEUTRAL_SITE_VENUES.get(key) or NFL_STADIUMS.get(record.get("homeTeam"), {})
     record["venue"] = venue_info.get("venue")
     record["venueCity"] = venue_info.get("city")
     record["venueState"] = venue_info.get("state")
@@ -231,13 +258,12 @@ def build_record(game, ratings_by_abbr, ratings_source, existing_by_id, home_spr
     home_division = DIVISION_BY_ABBR.get(home_abbr)
     away_division = DIVISION_BY_ABBR.get(away_abbr)
 
-    # Keyed by home team since NFL games are (almost) always at the home
-    # team's own stadium -- unlike CFB, there's no per-game neutral-site
-    # venue lookup here, just this team's usual home. International/neutral
-    # site games (already tracked separately via NEUTRAL_SITE_GAMES) will
-    # get their home team's stadium info, which is wrong for those specific
-    # games, but there's no venue data source for those one-off cases here.
-    venue_info = NFL_STADIUMS.get(home_name, {})
+    # Neutral-site games (already tracked via NEUTRAL_SITE_GAMES/
+    # NEUTRAL_SITE_VENUES) get their real international venue. Everything
+    # else is keyed by home team, since NFL games are otherwise always at
+    # the home team's own stadium. Confirmed real bug this fixes: Rams-49ers
+    # in Melbourne was showing "SoFi Stadium, Inglewood CA" before this.
+    venue_info = NEUTRAL_SITE_VENUES.get((home_name, away_name, week)) or NFL_STADIUMS.get(home_name, {})
 
     return {
         "gameId": gid,
