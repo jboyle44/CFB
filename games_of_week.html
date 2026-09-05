@@ -16,7 +16,11 @@
     margin:0; background:var(--bg); color:var(--text);
     font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
   }
-  .wrap{max-width:900px; margin:0 auto; padding:20px 16px 60px;}
+  .wrap{max-width:1200px; margin:0 auto; padding:20px 16px 60px;}
+  .two-col{display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:start;}
+  @media (max-width:760px){
+    .two-col{grid-template-columns:1fr;}
+  }
   .topbar{
     display:flex; justify-content:space-between; align-items:flex-start;
     flex-wrap:wrap; gap:16px; margin-bottom:16px;
@@ -382,11 +386,11 @@ async function loadData(){
     APRankings = {};
     brrRows.filter(r => r.year === latestYear).forEach(r => { APRankings[r.team] = r.rank; });
 
-    let html = "";
-    html += sectionHtml("Top 10 College Football Games", cfbThisWeek, CFB_TEAM_COLORS, 10);
-    APRankings = {};  // NFL has no such poll -- clear so nameWithRank is a no-op for the NFL section
-    html += sectionHtml("Top 5 NFL Games", nflThisWeek, NFL_TEAM_COLORS, 5);
-    document.getElementById('content').innerHTML = html;
+    const cfbHtml = sectionHtml("Top 10 College Football Games", cfbThisWeek, CFB_TEAM_COLORS, 10);
+    APRankings = {};  // NFL has no such poll -- clear so awayNameWithRank/homeNameWithRank are no-ops for the NFL section
+    const nflHtml = sectionHtml("Top 5 NFL Games", nflThisWeek, NFL_TEAM_COLORS, 5);
+    document.getElementById('content').innerHTML =
+      `<div class="two-col"><div>${cfbHtml}</div><div>${nflHtml}</div></div>`;
   } catch(e){
     document.getElementById('statusText').textContent = 'Failed to load data';
     document.getElementById('statusDot').style.background = '#D46A6A';
