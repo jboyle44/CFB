@@ -1,10 +1,8 @@
-import sys, traceback
-try:
-    import runpy
-    runpy.run_path("scripts/weekly_lines_update_nfl.py", run_name="__main__")
-    result = "SUCCESS"
-except Exception:
-    result = traceback.format_exc()
-
+import subprocess
+result = subprocess.run(["python3", "scripts/weekly_lines_update_nfl.py"], capture_output=True, text=True)
 with open('nfl_traceback_diag.txt', 'w') as f:
-    f.write(result)
+    f.write(f"returncode={result.returncode}\n")
+    f.write("=== STDOUT ===\n")
+    f.write(result.stdout)
+    f.write("\n=== STDERR ===\n")
+    f.write(result.stderr)
