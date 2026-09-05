@@ -59,6 +59,7 @@ MPG_BASE = "https://mpg000f.github.io/cbb_power_rating"
 
 DATA_FILE = "lines_data.json"
 RATINGS_HISTORY_FILE = "ratings_history.json"
+VENUES_FILE = "cfbd_venues.json"
 HFA = 3.0
 MAX_REGULAR_WEEK = 16
 # Prefer these providers in order when a game has lines from more than one.
@@ -73,6 +74,18 @@ def get(url, params=None):
 
 def cfbd(endpoint, params=None):
     return get(f"{BASE}{endpoint}", params)
+
+
+def load_venues():
+    """Static venue metadata (city, state, dome status) keyed by venueId,
+    fetched once via fetch_cfbd_venues.py -- essentially never changes
+    since stadiums don't move, so this is read from a committed file
+    rather than re-fetched from CFBD on every run."""
+    try:
+        with open(VENUES_FILE) as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
 
 
 def current_season_year():
@@ -185,7 +198,7 @@ def grade(home_score, away_score, vegas_spread):
     return ("home_cover" if diff > 0 else "away_cover"), actual_margin
 
 
-def build_record(game, ratings_by_team, ratings_source, existing_by_id):
+def build_record(game, ratings_by_team, ratings_source, existing_by_id, venues_lookup):
     gid = game["id"]
     home, away = game["homeTeam"], game["awayTeam"]
     prior = existing_by_id.get(gid)
@@ -194,11 +207,25 @@ def build_record(game, ratings_by_team, ratings_source, existing_by_id):
     away_score = game.get("awayPoints")
     is_final = home_score is not None and away_score is not None
 
+    venue_info = venues_lookup.get(str(game.get("venueId")), {})
+    venue_fields = {
+        "venue": game.get("venue"),
+        "venueCity": venue_info.get("city"),
+        "venueState": venue_info.get("state"),
+        "dome": venue_info.get("dome"),
+    }
+
     # Once a game has been graded, freeze the line/pick/model fields --
-    # only fill in / confirm the final score and grade.
+    # only fill in / confirm the final score and grade. Venue fields are an
+    # exception: backfill them onto already-existing records too (using
+    # setdefault so a value already present never gets clobbered), since
+    # these fields didn't exist in the schema before and old records would
+    # otherwise never pick them up.
     if prior and prior.get("status") == "final":
         prior["homeScore"] = home_score
         prior["awayScore"] = away_score
+        for k, v in venue_fields.items():
+            prior.setdefault(k, v)
         return prior
 
     # Also freeze at kickoff even if we haven't graded it yet -- CFBD
@@ -219,6 +246,8 @@ def build_record(game, ratings_by_team, ratings_source, existing_by_id):
         prior["awayScore"] = away_score
         if is_final:
             prior["status"] = "final"
+        for k, v in venue_fields.items():
+            prior.setdefault(k, v)
         return prior
 
     home_rating = ratings_by_team.get(home)
@@ -239,6 +268,7 @@ def build_record(game, ratings_by_team, ratings_source, existing_by_id):
         "awayTeam": away,
         "homeConference": game.get("homeConference"),
         "awayConference": game.get("awayConference"),
+        **venue_fields,
         "homeRating": home_rating,
         "awayRating": away_rating,
         "ratingsSource": ratings_source,
@@ -326,6 +356,8 @@ def main():
     existing_by_id = {r["gameId"]: r for r in existing if r.get("season") == year}
     kept_other_years = [r for r in existing if r.get("season") != year]
 
+    venues_lookup = load_venues()
+
     try:
         with open(RATINGS_HISTORY_FILE) as f:
             existing_history = json.load(f)
@@ -376,7 +408,7 @@ def main():
 
         dropped_no_rating = 0
         for g in games:
-            record = build_record(g, ratings_by_team, ratings_source, existing_by_id)
+            record = build_record(g, ratings_by_team, ratings_source, existing_by_id, venues_lookup)
             record = apply_line_and_grade(record, line_games.get(g["id"]))
             # Belt-and-suspenders on top of the classification filter in
             # fetch_week_games(): a team can be tagged 'fbs' by CFBD (e.g.
