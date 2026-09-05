@@ -60,6 +60,19 @@
   .meta{font-size:11px; color:var(--text-faint); text-align:left;}
   .spread{color:var(--text-dim);}
   .empty{padding:30px; text-align:center; color:var(--text-faint); font-size:13px;}
+
+  .pw-toggle{
+    margin-top:6px; padding-top:6px; border-top:1px solid var(--line);
+    font-size:11px; color:var(--gow); font-weight:600; cursor:pointer;
+    display:flex; justify-content:space-between; align-items:center;
+  }
+  .pw-content{margin-top:6px; display:flex; flex-direction:column; gap:6px;}
+  .pw-player{background:var(--panel-2); border-radius:6px; padding:6px 8px;}
+  .pw-label{font-size:9px; text-transform:uppercase; letter-spacing:0.03em; color:var(--text-faint); font-weight:700;}
+  .pw-name{font-size:12px; font-weight:700; margin-top:1px;}
+  .pw-pos{font-size:10px; color:var(--gow); font-weight:600;}
+  .pw-meta{font-size:10px; color:var(--text-dim); margin-top:1px;}
+  .pw-loading{font-size:11px; color:var(--text-faint); padding:4px 0;}
 </style>
 </head>
 <body>
@@ -264,6 +277,77 @@ const NFL_TEAM_COLORS = {
   'Tennessee Titans': { primary:'#0C2340', secondary:'#C60C30' },
 };
 
+const CFB_DISPLAY_TO_KEY = {
+  "Illinois": "illinois",
+  "Indiana": "indiana",
+  "Iowa": "iowa",
+  "Maryland": "maryland",
+  "Michigan": "michigan",
+  "Michigan State": "michigan-state",
+  "Minnesota": "minnesota",
+  "Nebraska": "nebraska",
+  "Northwestern": "northwestern",
+  "Ohio State": "ohio-state",
+  "Oregon": "oregon",
+  "Penn State": "penn-state",
+  "Purdue": "purdue",
+  "Rutgers": "rutgers",
+  "UCLA": "ucla",
+  "USC": "usc",
+  "Washington": "washington",
+  "Wisconsin": "wisconsin",
+  "Alabama": "alabama",
+  "Arkansas": "arkansas",
+  "Auburn": "auburn",
+  "Florida": "florida",
+  "Georgia": "georgia",
+  "Kentucky": "kentucky",
+  "LSU": "lsu",
+  "Ole Miss": "ole-miss",
+  "Mississippi State": "mississippi-state",
+  "Missouri": "missouri",
+  "Oklahoma": "oklahoma",
+  "South Carolina": "south-carolina",
+  "Tennessee": "tennessee",
+  "Texas": "texas",
+  "Texas A&M": "texas-am",
+  "Vanderbilt": "vanderbilt",
+  "Boston College": "boston-college",
+  "California": "california",
+  "Clemson": "clemson",
+  "Duke": "duke",
+  "Florida State": "florida-state",
+  "Georgia Tech": "georgia-tech",
+  "Louisville": "louisville",
+  "Miami": "miami-fl",
+  "North Carolina": "north-carolina",
+  "NC State": "nc-state",
+  "Pittsburgh": "pittsburgh",
+  "SMU": "smu",
+  "Stanford": "stanford",
+  "Syracuse": "syracuse",
+  "Virginia": "virginia",
+  "Virginia Tech": "virginia-tech",
+  "Wake Forest": "wake-forest",
+  "Notre Dame": "notre-dame",
+  "Arizona": "arizona",
+  "Arizona State": "arizona-state",
+  "Baylor": "baylor",
+  "BYU": "byu",
+  "UCF": "ucf",
+  "Cincinnati": "cincinnati",
+  "Colorado": "colorado",
+  "Houston": "houston",
+  "Iowa State": "iowa-state",
+  "Kansas": "kansas",
+  "Kansas State": "kansas-state",
+  "Oklahoma State": "oklahoma-state",
+  "TCU": "tcu",
+  "Texas Tech": "texas-tech",
+  "Utah": "utah",
+  "West Virginia": "west-virginia"
+};
+
 const SPREAD_WEIGHT = 1.0;
 
 function coloredName(name, colorMap){
@@ -354,10 +438,149 @@ function weatherHtml(g){
   return parts.length ? `<div class="meta">${parts.join(' · ')}</div>` : '';
 }
 
-function gameCardHtml(g, listPosition, colorMap){
+// ===== Players to Watch =====
+const depthChartCache = {};
+
+function depthChartPath(teamDisplayName, league, game){
+  if(league === "nfl"){
+    const abbr = (teamDisplayName === game.homeTeam ? game.homeAbbr : game.awayAbbr);
+    return abbr ? `depth_chart_data_nfl/${abbr.toLowerCase()}.json` : null;
+  }
+  const key = CFB_DISPLAY_TO_KEY[teamDisplayName];
+  return key ? `depth_chart_data/${key}.json` : null;
+}
+
+async function fetchDepthChart(path){
+  if(!path) return null;
+  if(depthChartCache[path]) return depthChartCache[path];
+  try{
+    const res = await fetch(path + '?v=' + Date.now());
+    const data = await res.json();
+    depthChartCache[path] = data;
+    return data;
+  } catch(e){
+    return null;
+  }
+}
+
+// Best available rating for a player, trying the most rigorous source
+// first and falling back -- not perfectly apples-to-apples across
+// different scales, but a reasonable "how notable is this player" signal
+// given what data actually exists for them.
+function bestRating(row){
+  if(row.pffGrade != null) return row.pffGrade;
+  if(row.cfb27Rating != null) return row.cfb27Rating;
+  if(row.madden27Rating != null) return row.madden27Rating;
+  if(row.compositeScore != null) return row.compositeScore;
+  return null;
+}
+
+const OL_POSITIONS = new Set(["LT", "RT", "LG", "RG", "C", "T", "G"]);
+const SPECIALIST_KEYWORDS = ["K", "P", "LS", "KR", "PR"];
+const DEFENSE_KEYWORDS = ["DE", "DT", "DL", "LB", "CB", "FS", "SS", "S", "NB", "JACK", "EDGE"];
+
+function isOffenseSkill(position){
+  if(!position) return false;
+  if(position === "QB") return false;
+  if(OL_POSITIONS.has(position)) return false;
+  if(SPECIALIST_KEYWORDS.includes(position)) return false;
+  return /WR|TE|HB|RB|FB/.test(position);
+}
+
+function isDefense(position){
+  if(!position) return false;
+  return DEFENSE_KEYWORDS.some(kw => position.includes(kw));
+}
+
+function findStarterAtPosition(rows, matchFn){
+  // Depth chart rows are listed starter-first within each position group
+  // (matching Ourlads' own ordering), so the first non-reserve match is
+  // the starter.
+  return rows.find(r => matchFn(r.position) && !r.isReserve) || null;
+}
+
+function topByRating(rows, matchFn, count, exclude){
+  const excludeSet = new Set(exclude || []);
+  return rows
+    .filter(r => matchFn(r.position) && !r.isReserve && !excludeSet.has(r.player) && bestRating(r) != null)
+    .sort((a, b) => bestRating(b) - bestRating(a))
+    .slice(0, count);
+}
+
+function playerLineHtml(row, label){
+  if(!row) return `<div class="pw-player"><span class="pw-label">${label}</span> —</div>`;
+  const rating = bestRating(row);
+  const ratingText = rating != null ? rating.toFixed(1) : '—';
+  const recruitStars = starsForComposite ? starsForComposite(row.compositeScore) : '';
+  return `
+    <div class="pw-player">
+      <div class="pw-label">${label}</div>
+      <div class="pw-name">${row.player} <span class="pw-pos">${row.position || ''}</span></div>
+      <div class="pw-meta">${row.class || ''} · Rating: ${ratingText}${recruitStars ? ' · Recruit: ' + recruitStars : ''}${row.draftRank ? ' · Draft Rank #' + row.draftRank : ''}</div>
+    </div>`;
+}
+
+function starsForComposite(score){
+  if(score == null) return '';
+  if(score >= 95) return '★★★★★';
+  if(score >= 85) return '★★★★';
+  if(score >= 75) return '★★★';
+  if(score >= 65) return '★★';
+  if(score >= 50) return '★';
+  return '';
+}
+
+async function loadPlayersToWatch(gameId, homeTeam, awayTeam, league, game){
+  const container = document.getElementById(`pw-content-${gameId}`);
+  if(!container) return;
+  container.innerHTML = `<div class="pw-loading">Loading players…</div>`;
+
+  const [homeData, awayData] = await Promise.all([
+    fetchDepthChart(depthChartPath(homeTeam, league, game)),
+    fetchDepthChart(depthChartPath(awayTeam, league, game)),
+  ]);
+
+  const homeRows = (homeData && homeData.rows) || [];
+  const awayRows = (awayData && awayData.rows) || [];
+
+  const homeQB = findStarterAtPosition(homeRows, p => p === "QB");
+  const awayQB = findStarterAtPosition(awayRows, p => p === "QB");
+  const qbNames = [homeQB, awayQB].filter(Boolean).map(r => r.player);
+
+  const allRows = homeRows.concat(awayRows);
+  const topOffense = topByRating(allRows, isOffenseSkill, 2, qbNames);
+  const topDefense = topByRating(allRows, isDefense, 3, qbNames);
+
+  let html = "";
+  html += playerLineHtml(awayQB, `${awayTeam} QB`);
+  html += playerLineHtml(homeQB, `${homeTeam} QB`);
+  topOffense.forEach(r => { html += playerLineHtml(r, "Offense"); });
+  topDefense.forEach(r => { html += playerLineHtml(r, "Defense"); });
+
+  container.innerHTML = html || `<div class="pw-loading">No player data available.</div>`;
+}
+
+let gameLookupById = {};
+
+function togglePlayersToWatch(gameId, homeTeam, awayTeam, league){
+  const content = document.getElementById(`pw-content-${gameId}`);
+  const arrow = document.getElementById(`pw-arrow-${gameId}`);
+  if(!content) return;
+  const isOpen = content.style.display === "block";
+  content.style.display = isOpen ? "none" : "block";
+  if(arrow) arrow.textContent = isOpen ? "▾" : "▴";
+  if(!isOpen && !content.dataset.loaded){
+    content.dataset.loaded = "1";
+    const game = gameLookupById[gameId];
+    loadPlayersToWatch(gameId, homeTeam, awayTeam, league, game);
+  }
+}
+
+function gameCardHtml(g, listPosition, colorMap, league){
   const spread = g.vegasSpread != null ? g.vegasSpread : g.modelSpread;
   const spreadText = fmtSpreadTeam(g, spread);
   const location = g.venueCity ? `${g.venue || ''} · ${g.venueCity}${g.venueState ? ', ' + g.venueState : ''}` : (g.venue || null);
+  gameLookupById[g.gameId] = g;
   return `
     <div class="game-card">
       <div class="matchup"><span class="rank-num">${listPosition}.</span>${awayNameWithRank(g.awayTeam, colorMap)} @ ${homeNameWithRank(g.homeTeam, colorMap)}</div>
@@ -365,17 +588,21 @@ function gameCardHtml(g, listPosition, colorMap){
       ${location ? `<div class="meta">${location}</div>` : ''}
       ${weatherHtml(g)}
       <div class="meta">Spread: <span class="spread">${spreadText}</span></div>
+      <div class="pw-toggle" onclick="togglePlayersToWatch('${g.gameId}', '${g.homeTeam.replace(/'/g, "\\'")}', '${g.awayTeam.replace(/'/g, "\\'")}', '${league}')">
+        Players to Watch <span id="pw-arrow-${g.gameId}">▾</span>
+      </div>
+      <div class="pw-content" id="pw-content-${g.gameId}" style="display:none;"></div>
     </div>`;
 }
 
-function sectionHtml(title, games, colorMap, count){
+function sectionHtml(title, games, colorMap, count, league){
   if(!games.length){
     return `<div class="section-head"><h2>${title}</h2></div><div class="empty">No games scheduled this week.</div>`;
   }
   const scored = games.map(g => ({ g, score: gameScore(g) }));
   scored.sort((a, b) => b.score - a.score);
   const top = scored.slice(0, count);
-  const cardsHtml = top.map((item, i) => gameCardHtml(item.g, i + 1, colorMap)).join("");
+  const cardsHtml = top.map((item, i) => gameCardHtml(item.g, i + 1, colorMap, league)).join("");
   return `<div class="section-head"><h2>${title}</h2></div>${cardsHtml}`;
 }
 
@@ -418,9 +645,9 @@ async function loadData(){
     APRankings = {};
     brrRows.filter(r => r.year === latestYear).forEach(r => { APRankings[r.team] = r.rank; });
 
-    const cfbHtml = sectionHtml("Top 10 College Football Games", cfbThisWeek, CFB_TEAM_COLORS, 10);
+    const cfbHtml = sectionHtml("Top 10 College Football Games", cfbThisWeek, CFB_TEAM_COLORS, 10, "cfb");
     APRankings = {};  // NFL has no such poll -- clear so awayNameWithRank/homeNameWithRank are no-ops for the NFL section
-    const nflHtml = sectionHtml("Top 5 NFL Games", nflThisWeek, NFL_TEAM_COLORS, 5);
+    const nflHtml = sectionHtml("Top 5 NFL Games", nflThisWeek, NFL_TEAM_COLORS, 5, "nfl");
     document.getElementById('content').innerHTML =
       `<div class="two-col"><div>${cfbHtml}</div><div>${nflHtml}</div></div>`;
   } catch(e){
