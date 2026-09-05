@@ -1,0 +1,43 @@
+name: Fetch Games Weather
+
+on:
+  schedule:
+    - cron: '0 12 * * 4'  # Thursday 8am ET (EDT) - close to that week's games
+  workflow_dispatch: {}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install requests
+      - name: Fetch weather for this week's featured games
+        run: python3 scripts/fetch_games_weather.py lines_data.json lines_data_nfl.json games_weather.json
+      - name: Commit and push if data changed
+        run: |
+          git config user.name "weather-bot"
+          git config user.email "actions@github.com"
+          git add games_weather.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Weather update - $(date -u +%Y-%m-%d)"
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "Pushed successfully."
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt) -- rebasing onto latest main and retrying."
+            git pull --rebase origin main
+          done
+          echo "Push failed after 3 attempts." >&2
+          exit 1
