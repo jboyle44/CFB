@@ -66,10 +66,14 @@
     font-size:11px; color:var(--gow); font-weight:600; cursor:pointer;
     display:flex; justify-content:space-between; align-items:center;
   }
-  .pw-content{margin-top:6px; display:flex; flex-direction:column; gap:6px;}
+  .pw-content{margin-top:6px;}
+  .pw-cols{display:grid; grid-template-columns:1fr 1fr; gap:0;}
+  .pw-col{padding:0 6px; display:flex; flex-direction:column; gap:6px;}
+  .pw-col:first-child{border-right:1px solid var(--line); padding-left:0;}
+  .pw-col:last-child{padding-right:0;}
+  .pw-col-head{font-size:9px; text-transform:uppercase; letter-spacing:0.03em; color:var(--text-faint); font-weight:700; margin-bottom:2px;}
   .pw-player{background:var(--panel-2); border-radius:6px; padding:6px 8px;}
-  .pw-label{font-size:9px; text-transform:uppercase; letter-spacing:0.03em; color:var(--text-faint); font-weight:700;}
-  .pw-name{font-size:12px; font-weight:700; margin-top:1px;}
+  .pw-name{font-size:12px; font-weight:700;}
   .pw-pos{font-size:10px; color:var(--gow); font-weight:600;}
   .pw-meta{font-size:10px; color:var(--text-dim); margin-top:1px;}
   .pw-loading{font-size:11px; color:var(--text-faint); padding:4px 0;}
@@ -507,14 +511,13 @@ function topByRating(rows, matchFn, count, exclude){
     .slice(0, count);
 }
 
-function playerLineHtml(row, label){
-  if(!row) return `<div class="pw-player"><span class="pw-label">${label}</span> —</div>`;
+function playerLineHtml(row){
+  if(!row) return `<div class="pw-player pw-empty-slot">—</div>`;
   const rating = bestRating(row);
   const ratingText = rating != null ? rating.toFixed(1) : '—';
-  const recruitStars = starsForComposite ? starsForComposite(row.compositeScore) : '';
+  const recruitStars = starsForComposite(row.compositeScore);
   return `
     <div class="pw-player">
-      <div class="pw-label">${label}</div>
       <div class="pw-name">${row.player} <span class="pw-pos">${row.position || ''}</span></div>
       <div class="pw-meta">${row.class || ''} · Rating: ${ratingText}${recruitStars ? ' · Recruit: ' + recruitStars : ''}${row.draftRank ? ' · Draft Rank #' + row.draftRank : ''}</div>
     </div>`;
@@ -547,17 +550,33 @@ async function loadPlayersToWatch(gameId, homeTeam, awayTeam, league, game){
   const awayQB = findStarterAtPosition(awayRows, p => p === "QB");
   const qbNames = [homeQB, awayQB].filter(Boolean).map(r => r.player);
 
-  const allRows = homeRows.concat(awayRows);
+  // Best 2 offense / 3 defense overall (across both teams), same selection
+  // criteria as before -- just tagged by team of origin afterward so they
+  // can be split into the right column below.
+  const homeTagged = homeRows.map(r => ({ ...r, __team: "home" }));
+  const awayTagged = awayRows.map(r => ({ ...r, __team: "away" }));
+  const allRows = homeTagged.concat(awayTagged);
   const topOffense = topByRating(allRows, isOffenseSkill, 2, qbNames);
   const topDefense = topByRating(allRows, isDefense, 3, qbNames);
+  const picks = topOffense.concat(topDefense);
 
-  let html = "";
-  html += playerLineHtml(awayQB, `${awayTeam} QB`);
-  html += playerLineHtml(homeQB, `${homeTeam} QB`);
-  topOffense.forEach(r => { html += playerLineHtml(r, "Offense"); });
-  topDefense.forEach(r => { html += playerLineHtml(r, "Defense"); });
+  const homePicks = [homeQB, ...picks.filter(r => r.__team === "home")];
+  const awayPicks = [awayQB, ...picks.filter(r => r.__team === "away")];
 
-  container.innerHTML = html || `<div class="pw-loading">No player data available.</div>`;
+  const homeHtml = homePicks.map(playerLineHtml).join("");
+  const awayHtml = awayPicks.map(playerLineHtml).join("");
+
+  container.innerHTML = `
+    <div class="pw-cols">
+      <div class="pw-col">
+        <div class="pw-col-head">${awayTeam}</div>
+        ${awayHtml}
+      </div>
+      <div class="pw-col">
+        <div class="pw-col-head">${homeTeam}</div>
+        ${homeHtml}
+      </div>
+    </div>`;
 }
 
 let gameLookupById = {};
