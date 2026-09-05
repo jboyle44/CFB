@@ -50,6 +50,11 @@
   }
   .dot{width:8px; height:8px; border-radius:50%; background:#5A9A5A; display:inline-block;}
   .section-head{margin:26px 0 12px;}
+  .week-select-row{display:flex; align-items:center; gap:8px; margin-bottom:8px; font-size:12px; color:var(--text-dim);}
+  .week-select-row select{
+    background:var(--panel); border:1px solid var(--line); color:var(--text);
+    padding:5px 8px; border-radius:6px; font-size:12px;
+  }
   .section-head h2{font-size:16px; margin:0; color:var(--text);}
   .game-card{
     background:var(--panel); border:1px solid var(--line); border-radius:10px;
@@ -102,7 +107,22 @@
     <span id="statusText">Loading…</span>
   </div>
 
-  <div id="content"></div>
+  <div class="two-col">
+    <div>
+      <div class="week-select-row">
+        <label for="cfbWeekSelect">Week:</label>
+        <select id="cfbWeekSelect" onchange="renderSection('cfb')"></select>
+      </div>
+      <div id="cfbContent"></div>
+    </div>
+    <div>
+      <div class="week-select-row">
+        <label for="nflWeekSelect">Week:</label>
+        <select id="nflWeekSelect" onchange="renderSection('nfl')"></select>
+      </div>
+      <div id="nflContent"></div>
+    </div>
+  </div>
 
 </div>
 
@@ -618,10 +638,25 @@ function togglePlayersToWatch(gameId, homeTeam, awayTeam, league){
   }
 }
 
+function resultHtml(g){
+  if(g.status !== "final" || g.homeScore == null || g.awayScore == null) return null;
+  const scoreText = `Final: ${g.awayTeam} ${g.awayScore}, ${g.homeTeam} ${g.homeScore}`;
+  let coverText = '';
+  if(g.atsResult === "push"){
+    coverText = ' · Push';
+  } else if(g.modelCorrect === true){
+    coverText = ' · <span style="color:#5DCAA5;">✓ Model covered</span>';
+  } else if(g.modelCorrect === false){
+    coverText = ' · <span style="color:#D46A6A;">✗ Model missed</span>';
+  }
+  return `<div class="meta">${scoreText}${coverText}</div>`;
+}
+
 function gameCardHtml(g, listPosition, colorMap, league){
   const spread = g.vegasSpread != null ? g.vegasSpread : g.modelSpread;
   const spreadText = fmtSpreadTeam(g, spread);
   const location = g.venueCity ? `${g.venue || ''} · ${g.venueCity}${g.venueState ? ', ' + g.venueState : ''}` : (g.venue || null);
+  const result = resultHtml(g);
   gameLookupById[g.gameId] = g;
   return `
     <div class="game-card">
@@ -630,6 +665,7 @@ function gameCardHtml(g, listPosition, colorMap, league){
       ${location ? `<div class="meta">${location}</div>` : ''}
       ${weatherHtml(g)}
       <div class="meta">Spread: <span class="spread">${spreadText}</span></div>
+      ${result ? result : ''}
       <div class="pw-toggle" onclick="togglePlayersToWatch('${g.gameId}', '${g.homeTeam.replace(/'/g, "\\'")}', '${g.awayTeam.replace(/'/g, "\\'")}', '${league}')">
         Players to Watch <span id="pw-arrow-${g.gameId}">▾</span>
       </div>
@@ -648,6 +684,36 @@ function sectionHtml(title, games, colorMap, count, league){
   return `<div class="section-head"><h2>${title}</h2></div>${cardsHtml}`;
 }
 
+let allCfbGames = [];
+let allNflGames = [];
+
+function populateWeekSelect(selectEl, games, defaultWeek){
+  const weeks = [...new Set(games.map(g => g.week))].sort((a, b) => a - b);
+  selectEl.innerHTML = weeks.map(w => `<option value="${w}">Week ${w}</option>`).join("");
+  selectEl.value = String(defaultWeek);
+}
+
+function renderSection(league){
+  const isCfb = league === "cfb";
+  const games = isCfb ? allCfbGames : allNflGames;
+  const selectEl = document.getElementById(isCfb ? "cfbWeekSelect" : "nflWeekSelect");
+  const contentEl = document.getElementById(isCfb ? "cfbContent" : "nflContent");
+  const week = parseInt(selectEl.value, 10);
+  const thisWeek = games.filter(g => g.week === week);
+
+  if(isCfb){
+    const latestYear = brrRowsGlobal.length ? Math.max(...brrRowsGlobal.map(r => r.year)) : null;
+    APRankings = {};
+    brrRowsGlobal.filter(r => r.year === latestYear).forEach(r => { APRankings[r.team] = r.rank; });
+    contentEl.innerHTML = sectionHtml("Top 10 College Football Games", thisWeek, CFB_TEAM_COLORS, 10, "cfb");
+  } else {
+    APRankings = {};
+    contentEl.innerHTML = sectionHtml("Top 5 NFL Games", thisWeek, NFL_TEAM_COLORS, 5, "nfl");
+  }
+}
+
+let brrRowsGlobal = [];
+
 async function loadData(){
   try{
     const [cfbRes, nflRes, brrRes] = await Promise.all([
@@ -658,9 +724,9 @@ async function loadData(){
     const cfbRaw = await cfbRes.json();
     const nflRaw = await nflRes.json();
     const brrRaw = await brrRes.json();
-    const cfbGames = Array.isArray(cfbRaw) ? cfbRaw : (cfbRaw.games || []);
-    const nflGames = Array.isArray(nflRaw) ? nflRaw : (nflRaw.games || []);
-    const brrRows = Array.isArray(brrRaw) ? brrRaw : (brrRaw.rows || []);
+    allCfbGames = Array.isArray(cfbRaw) ? cfbRaw : (cfbRaw.games || []);
+    allNflGames = Array.isArray(nflRaw) ? nflRaw : (nflRaw.games || []);
+    brrRowsGlobal = Array.isArray(brrRaw) ? brrRaw : (brrRaw.rows || []);
 
     // Weather is a nice-to-have on top of the core page -- fetched
     // separately so a missing/failed weather file never breaks the rest.
@@ -672,26 +738,19 @@ async function loadData(){
       weatherByGameId = {};
     }
 
-    const cfbWeek = currentWeek(cfbGames);
-    const nflWeek = currentWeek(nflGames);
-
-    const cfbThisWeek = cfbGames.filter(g => g.week === cfbWeek);
-    const nflThisWeek = nflGames.filter(g => g.week === nflWeek);
+    const cfbWeek = currentWeek(allCfbGames);
+    const nflWeek = currentWeek(allNflGames);
 
     document.getElementById('statusText').textContent =
       `College Football Week ${cfbWeek || '—'} · NFL Week ${nflWeek || '—'}`;
 
-    // AP/committee rank only applies to CFB -- build the lookup from the
-    // most recent season present in brr_data.json, keyed by team name.
-    const latestYear = brrRows.length ? Math.max(...brrRows.map(r => r.year)) : null;
-    APRankings = {};
-    brrRows.filter(r => r.year === latestYear).forEach(r => { APRankings[r.team] = r.rank; });
+    populateWeekSelect(document.getElementById('cfbWeekSelect'), allCfbGames, cfbWeek);
+    populateWeekSelect(document.getElementById('nflWeekSelect'), allNflGames, nflWeek);
 
-    const cfbHtml = sectionHtml("Top 10 College Football Games", cfbThisWeek, CFB_TEAM_COLORS, 10, "cfb");
-    APRankings = {};  // NFL has no such poll -- clear so awayNameWithRank/homeNameWithRank are no-ops for the NFL section
-    const nflHtml = sectionHtml("Top 5 NFL Games", nflThisWeek, NFL_TEAM_COLORS, 5, "nfl");
-    document.getElementById('content').innerHTML =
-      `<div class="two-col"><div>${cfbHtml}</div><div>${nflHtml}</div></div>`;
+    // Always opens to the current week by default -- the dropdowns above
+    // just let you browse to a different one afterward.
+    renderSection('cfb');
+    renderSection('nfl');
   } catch(e){
     document.getElementById('statusText').textContent = 'Failed to load data';
     document.getElementById('statusDot').style.background = '#D46A6A';
