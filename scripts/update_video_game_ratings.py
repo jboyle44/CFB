@@ -75,6 +75,7 @@ def update_team(team_key, output_dir):
     # so we accept some misses from nickname/formatting differences rather
     # than risk a wrong match.
     matched = 0
+    position_backfilled = 0
     for row in data.get("rows", []):
         norm = normalize_name(row["player"])
         info = ratings.get(norm)
@@ -84,6 +85,14 @@ def update_team(team_key, output_dir):
             row["cfb27Rating"] = info["ovr"]
             row["cfb27Dev"] = info["dev"]
             matched += 1
+            # Position backfill -- ONLY for reserve players whose real
+            # position is completely unknown (marked "RES" because they
+            # were never seen on an active depth chart to backfill from).
+            # Never touches any other player's position, active or
+            # reserve, whether or not it happens to already be correct.
+            if row.get("position") == "RES" and info.get("position"):
+                row["position"] = info["position"]
+                position_backfilled += 1
         else:
             row["cfb27Rating"] = row.get("cfb27Rating")  # preserve if present
             row["cfb27Dev"] = row.get("cfb27Dev")
@@ -91,7 +100,8 @@ def update_team(team_key, output_dir):
     data["cfb27UpdatedAt"] = datetime.datetime.now(datetime.timezone.utc).isoformat()
     with open(path, "w") as f:
         json.dump(data, f, indent=2)
-    print(f"  {team_key}: {matched}/{len(data.get('rows', []))} matched", file=sys.stderr)
+    print(f"  {team_key}: {matched}/{len(data.get('rows', []))} matched, "
+          f"{position_backfilled} RES positions backfilled", file=sys.stderr)
 
 
 if __name__ == "__main__":
