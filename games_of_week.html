@@ -272,6 +272,26 @@ function coloredName(name, colorMap){
   return `<span style="background:${c.primary}; color:#fff; padding:1px 7px; border-radius:4px; border:2px solid ${c.secondary}; font-weight:700; white-space:nowrap; display:inline-block;">${name}</span>`;
 }
 
+// AP/committee rank is only meaningful for CFB (NFL has no such poll) --
+// APRankings gets populated only when rendering the CFB section, so this
+// silently does nothing for NFL games.
+let APRankings = {};
+function nameWithRank(name, colorMap){
+  const rank = APRankings[name];
+  const rankPrefix = rank ? `<span style="color:var(--text-faint); font-weight:700; margin-right:3px;">#${rank}</span>` : '';
+  return rankPrefix + coloredName(name, colorMap);
+}
+
+function formatGameTime(isoString){
+  if(!isoString) return '—';
+  const d = new Date(isoString);
+  const dayTime = d.toLocaleString('en-US', {
+    weekday: 'short', month: 'numeric', day: 'numeric',
+    hour: 'numeric', minute: '2-digit', timeZoneName: 'short'
+  });
+  return dayTime;
+}
+
 function gameScore(g){
   const combined = (g.homeRating || 0) + (g.awayRating || 0);
   const spreadPenalty = SPREAD_WEIGHT * Math.abs(g.vegasSpread != null ? g.vegasSpread : (g.modelSpread || 0));
@@ -285,12 +305,15 @@ function currentWeek(games){
   return allWeeks.length ? Math.max(...allWeeks) : null;
 }
 
-function gameCardHtml(g, rank, colorMap){
+function gameCardHtml(g, listPosition, colorMap){
   const spread = g.vegasSpread != null ? g.vegasSpread : g.modelSpread;
   const spreadText = spread != null ? `${g.pick || ''} -${Math.abs(spread).toFixed(1)}` : '—';
   return `
     <div class="game-card">
-      <div class="matchup"><span class="rank-num">${rank}.</span>${coloredName(g.awayTeam, colorMap)} @ ${coloredName(g.homeTeam, colorMap)}</div>
+      <div>
+        <div class="matchup"><span class="rank-num">${listPosition}.</span>${nameWithRank(g.awayTeam, colorMap)} @ ${nameWithRank(g.homeTeam, colorMap)}</div>
+        <div class="meta" style="text-align:left; margin-top:3px;">${formatGameTime(g.startDate)}</div>
+      </div>
       <div class="meta">Spread: <span class="spread">${spreadText}</span></div>
     </div>`;
 }
@@ -308,14 +331,17 @@ function sectionHtml(title, games, colorMap, count){
 
 async function loadData(){
   try{
-    const [cfbRes, nflRes] = await Promise.all([
+    const [cfbRes, nflRes, brrRes] = await Promise.all([
       fetch('lines_data.json?v=' + Date.now()),
-      fetch('lines_data_nfl.json?v=' + Date.now())
+      fetch('lines_data_nfl.json?v=' + Date.now()),
+      fetch('brr_data.json?v=' + Date.now())
     ]);
     const cfbRaw = await cfbRes.json();
     const nflRaw = await nflRes.json();
+    const brrRaw = await brrRes.json();
     const cfbGames = Array.isArray(cfbRaw) ? cfbRaw : (cfbRaw.games || []);
     const nflGames = Array.isArray(nflRaw) ? nflRaw : (nflRaw.games || []);
+    const brrRows = Array.isArray(brrRaw) ? brrRaw : (brrRaw.rows || []);
 
     const cfbWeek = currentWeek(cfbGames);
     const nflWeek = currentWeek(nflGames);
@@ -326,8 +352,15 @@ async function loadData(){
     document.getElementById('statusText').textContent =
       `College Football Week ${cfbWeek || '—'} · NFL Week ${nflWeek || '—'}`;
 
+    // AP/committee rank only applies to CFB -- build the lookup from the
+    // most recent season present in brr_data.json, keyed by team name.
+    const latestYear = brrRows.length ? Math.max(...brrRows.map(r => r.year)) : null;
+    APRankings = {};
+    brrRows.filter(r => r.year === latestYear).forEach(r => { APRankings[r.team] = r.rank; });
+
     let html = "";
     html += sectionHtml("Top 10 College Football Games", cfbThisWeek, CFB_TEAM_COLORS, 10);
+    APRankings = {};  // NFL has no such poll -- clear so nameWithRank is a no-op for the NFL section
     html += sectionHtml("Top 5 NFL Games", nflThisWeek, NFL_TEAM_COLORS, 5);
     document.getElementById('content').innerHTML = html;
   } catch(e){
