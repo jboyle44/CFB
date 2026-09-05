@@ -1,0 +1,32 @@
+name: Fetch CFBD Venues (one-time)
+on:
+  workflow_dispatch: {}
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - working-directory: scripts
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python3 fetch_cfbd_venues.py ../cfbd_venues.json
+      - run: |
+          git config user.name "venues-fetch-bot"
+          git config user.email "actions@github.com"
+          git add cfbd_venues.json
+          if git diff --staged --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git commit -m "Fetch CFBD venues lookup"
+          for attempt in 1 2 3; do
+            if git push; then exit 0; fi
+            git pull --rebase origin main
+          done
+          exit 1
