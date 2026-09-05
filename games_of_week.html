@@ -276,10 +276,20 @@ function coloredName(name, colorMap){
 // APRankings gets populated only when rendering the CFB section, so this
 // silently does nothing for NFL games.
 let APRankings = {};
-function nameWithRank(name, colorMap){
+function rankSup(rank){
+  return `<sup style="color:#fff; font-style:italic; font-weight:700;">#${rank}</sup>`;
+}
+
+function awayNameWithRank(name, colorMap){
   const rank = APRankings[name];
-  const rankPrefix = rank ? `<span style="color:var(--text-faint); font-weight:700; margin-right:3px;">#${rank}</span>` : '';
-  return rankPrefix + coloredName(name, colorMap);
+  const rankHtml = rank ? rankSup(rank) + ' ' : '';
+  return rankHtml + coloredName(name, colorMap);
+}
+
+function homeNameWithRank(name, colorMap){
+  const rank = APRankings[name];
+  const rankHtml = rank ? ' ' + rankSup(rank) : '';
+  return coloredName(name, colorMap) + rankHtml;
 }
 
 function formatGameTime(isoString){
@@ -325,7 +335,7 @@ function gameCardHtml(g, listPosition, colorMap){
   return `
     <div class="game-card">
       <div>
-        <div class="matchup"><span class="rank-num">${listPosition}.</span>${nameWithRank(g.awayTeam, colorMap)} @ ${nameWithRank(g.homeTeam, colorMap)}</div>
+        <div class="matchup"><span class="rank-num">${listPosition}.</span>${awayNameWithRank(g.awayTeam, colorMap)} @ ${homeNameWithRank(g.homeTeam, colorMap)}</div>
         <div class="meta" style="text-align:left; margin-top:3px;">${formatGameTime(g.startDate)}</div>
       </div>
       <div class="meta">Spread: <span class="spread">${spreadText}</span></div>
