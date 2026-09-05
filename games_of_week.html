@@ -305,9 +305,23 @@ function currentWeek(games){
   return allWeeks.length ? Math.max(...allWeeks) : null;
 }
 
+function fmtSpreadTeam(g, spread){
+  // spread is home-perspective: positive = home favored, negative = away
+  // favored. Confirmed real bug this replaces: g.pick is the model's own
+  // betting-value recommendation (which side has edge against the market),
+  // NOT necessarily who is actually favored to win -- pairing it with the
+  // spread magnitude produced wrong output like "Tulane -7.5" for a game
+  // where Vegas actually favored Duke by 7.5, because the model recommended
+  // betting Tulane as the value side while still expecting Duke to win.
+  if(spread == null) return '—';
+  if(spread === 0) return "Pick'em";
+  const favTeam = spread > 0 ? g.homeTeam : g.awayTeam;
+  return `${favTeam} -${Math.abs(spread).toFixed(1)}`;
+}
+
 function gameCardHtml(g, listPosition, colorMap){
   const spread = g.vegasSpread != null ? g.vegasSpread : g.modelSpread;
-  const spreadText = spread != null ? `${g.pick || ''} -${Math.abs(spread).toFixed(1)}` : '—';
+  const spreadText = fmtSpreadTeam(g, spread);
   return `
     <div class="game-card">
       <div>
