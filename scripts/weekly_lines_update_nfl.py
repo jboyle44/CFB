@@ -50,6 +50,8 @@ from datetime import datetime, timezone
 
 import requests
 
+from nfl_stadiums import NFL_STADIUMS
+
 API_KEY = os.environ.get("ODDS_API_KEY")
 BASE = "https://api.the-odds-api.com/v4"
 SPORT = "americanfootball_nfl"
@@ -187,6 +189,19 @@ def grade(home_score, away_score, vegas_spread):
     return ("home_cover" if diff > 0 else "away_cover"), actual_margin
 
 
+def _backfill_venue_fields(record):
+    """Old records built before venue tracking existed won't have these
+    fields at all -- add them without touching anything already frozen
+    (score, grade, model line, etc)."""
+    if "venue" in record:
+        return  # already has venue fields, nothing to backfill
+    venue_info = NFL_STADIUMS.get(record.get("homeTeam"), {})
+    record["venue"] = venue_info.get("venue")
+    record["venueCity"] = venue_info.get("city")
+    record["venueState"] = venue_info.get("state")
+    record["dome"] = venue_info.get("dome")
+
+
 def build_record(game, ratings_by_abbr, ratings_source, existing_by_id, home_spread, provider):
     gid = game["id"]
     home_name, away_name = game["home_team"], game["away_team"]
@@ -216,6 +231,14 @@ def build_record(game, ratings_by_abbr, ratings_source, existing_by_id, home_spr
     home_division = DIVISION_BY_ABBR.get(home_abbr)
     away_division = DIVISION_BY_ABBR.get(away_abbr)
 
+    # Keyed by home team since NFL games are (almost) always at the home
+    # team's own stadium -- unlike CFB, there's no per-game neutral-site
+    # venue lookup here, just this team's usual home. International/neutral
+    # site games (already tracked separately via NEUTRAL_SITE_GAMES) will
+    # get their home team's stadium info, which is wrong for those specific
+    # games, but there's no venue data source for those one-off cases here.
+    venue_info = NFL_STADIUMS.get(home_name, {})
+
     return {
         "gameId": gid,
         "season": SEASON,
@@ -230,6 +253,10 @@ def build_record(game, ratings_by_abbr, ratings_source, existing_by_id, home_spr
         "awayConference": away_division.split(" ")[0] if away_division else None,
         "homeDivision": home_division,   # e.g. "AFC East"
         "awayDivision": away_division,
+        "venue": venue_info.get("venue"),
+        "venueCity": venue_info.get("city"),
+        "venueState": venue_info.get("state"),
+        "dome": venue_info.get("dome"),
         "homeRating": home_rating,
         "awayRating": away_rating,
         "ratingsSource": ratings_source,
@@ -281,9 +308,11 @@ def main():
         gid = g["id"]
         prior = existing_by_id.get(gid)
         if prior and prior.get("status") == "final":
+            _backfill_venue_fields(prior)
             continue  # already graded and frozen
         commence = datetime.fromisoformat(g["commence_time"].replace("Z", "+00:00"))
         if prior and commence <= now:
+            _backfill_venue_fields(prior)
             continue  # kickoff has passed -- freeze the pre-game snapshot even if not graded yet
         home_spread, provider = best_spread_for_home(g)
         record = build_record(g, ratings_by_abbr, ratings_source, existing_by_id, home_spread, provider)
@@ -308,6 +337,7 @@ def main():
             home_spread, provider = None, None
             record = build_record(g, ratings_by_abbr, ratings_source, existing_by_id, home_spread, provider)
         if record.get("status") == "final" and record.get("atsResult") is not None:
+            _backfill_venue_fields(record)
             continue  # already graded and frozen
 
         scores = {s["name"]: s.get("score") for s in (g.get("scores") or [])}
