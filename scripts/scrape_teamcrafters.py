@@ -19,9 +19,9 @@ HEADERS = {
 
 def _scrape_team_page(url, delay=1.0):
     """
-    Returns {player_name_lower: {"ovr": int, "dev": str, "position": str}}
-    Parses the "All Players" table: each row has player name (as a link),
-    position, OVR, and Dev columns.
+    Returns {player_name_lower: {"ovr": int, "dev": str, "position": str|None}}
+    Parses the "All Players" table: each row has player name (as a link,
+    with position embedded in the link's href slug), OVR, and Dev columns.
     """
     resp = requests.get(url, headers=HEADERS, timeout=20)
     resp.raise_for_status()
@@ -50,6 +50,14 @@ def _scrape_team_page(url, delay=1.0):
         if not name:
             continue
 
+        # Position isn't in the link's visible text (confirmed via direct
+        # HTML inspection -- the link only contains the player's name), but
+        # it IS the final segment of the link's URL slug, e.g.
+        # ".../701/jeremiah-smith-wr" -> "wr". More reliable than parsing
+        # display text since it's a structured slug, not free-form text.
+        href = link.get("href", "")
+        position = href.rstrip("/").split("-")[-1].upper() if href else None
+
         try:
             ovr = int(cells[1].get_text(strip=True))
         except (ValueError, IndexError):
@@ -57,7 +65,7 @@ def _scrape_team_page(url, delay=1.0):
         dev = cells[2].get_text(strip=True) if len(cells) > 2 else None
 
         norm_name = name.replace("*", "").strip().lower()
-        out[norm_name] = {"ovr": ovr, "dev": dev}
+        out[norm_name] = {"ovr": ovr, "dev": dev, "position": position}
 
     return out
 
