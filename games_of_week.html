@@ -516,10 +516,11 @@ function playerLineHtml(row){
   const rating = bestRating(row);
   const ratingText = rating != null ? rating.toFixed(1) : '—';
   const recruitStars = starsForComposite(row.compositeScore);
+  const draftRankText = row.draftRank ? ` · <span style="color:#87CEEB; font-weight:700;">Draft Rank #${row.draftRank}</span>` : '';
   return `
     <div class="pw-player">
       <div class="pw-name">${row.player} <span class="pw-pos">${row.position || ''}</span></div>
-      <div class="pw-meta">${row.class || ''} · Rating: ${ratingText}${recruitStars ? ' · Recruit: ' + recruitStars : ''}${row.draftRank ? ' · Draft Rank #' + row.draftRank : ''}</div>
+      <div class="pw-meta">${row.class || ''} · Rating: ${ratingText}${recruitStars ? ' · Recruit: ' + recruitStars : ''}${draftRankText}</div>
     </div>`;
 }
 
@@ -531,6 +532,14 @@ function starsForComposite(score){
   if(score >= 65) return '★★';
   if(score >= 50) return '★';
   return '';
+}
+
+function teamPicks(rows){
+  const qb = findStarterAtPosition(rows, p => p === "QB");
+  const exclude = qb ? [qb.player] : [];
+  const offense = topByRating(rows, isOffenseSkill, 2, exclude);
+  const defense = topByRating(rows, isDefense, 3, exclude);
+  return [qb, ...offense, ...defense];
 }
 
 async function loadPlayersToWatch(gameId, homeTeam, awayTeam, league, game){
@@ -546,22 +555,11 @@ async function loadPlayersToWatch(gameId, homeTeam, awayTeam, league, game){
   const homeRows = (homeData && homeData.rows) || [];
   const awayRows = (awayData && awayData.rows) || [];
 
-  const homeQB = findStarterAtPosition(homeRows, p => p === "QB");
-  const awayQB = findStarterAtPosition(awayRows, p => p === "QB");
-  const qbNames = [homeQB, awayQB].filter(Boolean).map(r => r.player);
-
-  // Best 2 offense / 3 defense overall (across both teams), same selection
-  // criteria as before -- just tagged by team of origin afterward so they
-  // can be split into the right column below.
-  const homeTagged = homeRows.map(r => ({ ...r, __team: "home" }));
-  const awayTagged = awayRows.map(r => ({ ...r, __team: "away" }));
-  const allRows = homeTagged.concat(awayTagged);
-  const topOffense = topByRating(allRows, isOffenseSkill, 2, qbNames);
-  const topDefense = topByRating(allRows, isDefense, 3, qbNames);
-  const picks = topOffense.concat(topDefense);
-
-  const homePicks = [homeQB, ...picks.filter(r => r.__team === "home")];
-  const awayPicks = [awayQB, ...picks.filter(r => r.__team === "away")];
+  // Each team gets its own independent 6: QB + top 2 offense + top 3
+  // defense from that team's own roster -- not pooled across both teams,
+  // so both columns always show the same consistent count.
+  const homePicks = teamPicks(homeRows);
+  const awayPicks = teamPicks(awayRows);
 
   const homeHtml = homePicks.map(playerLineHtml).join("");
   const awayHtml = awayPicks.map(playerLineHtml).join("");
