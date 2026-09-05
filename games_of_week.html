@@ -17,10 +17,7 @@
     font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
   }
   .wrap{max-width:1200px; margin:0 auto; padding:20px 16px 60px;}
-  .two-col{display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:start;}
-  @media (max-width:760px){
-    .two-col{grid-template-columns:1fr;}
-  }
+  .two-col{display:grid; grid-template-columns:1fr 1fr; gap:10px; align-items:start;}
   .topbar{
     display:flex; justify-content:space-between; align-items:flex-start;
     flex-wrap:wrap; gap:16px; margin-bottom:16px;
@@ -56,12 +53,11 @@
   .section-head h2{font-size:16px; margin:0; color:var(--text);}
   .game-card{
     background:var(--panel); border:1px solid var(--line); border-radius:10px;
-    padding:12px 14px; margin-bottom:8px; display:flex; justify-content:space-between;
-    align-items:center; flex-wrap:wrap; gap:8px;
+    padding:10px 12px; margin-bottom:8px; display:flex; flex-direction:column; gap:4px;
   }
-  .matchup{font-size:14px; font-weight:600;}
-  .rank-num{color:var(--text-faint); font-weight:700; margin-right:8px; font-size:13px;}
-  .meta{font-size:11px; color:var(--text-faint); text-align:right;}
+  .matchup{font-size:13px; font-weight:600; line-height:1.4;}
+  .rank-num{color:var(--text-faint); font-weight:700; margin-right:6px; font-size:12px;}
+  .meta{font-size:11px; color:var(--text-faint); text-align:left;}
   .spread{color:var(--text-dim);}
   .empty{padding:30px; text-align:center; color:var(--text-faint); font-size:13px;}
 </style>
@@ -338,10 +334,8 @@ function gameCardHtml(g, listPosition, colorMap){
   const spreadText = fmtSpreadTeam(g, spread);
   return `
     <div class="game-card">
-      <div>
-        <div class="matchup"><span class="rank-num">${listPosition}.</span>${awayNameWithRank(g.awayTeam, colorMap)} @ ${homeNameWithRank(g.homeTeam, colorMap)}</div>
-        <div class="meta" style="text-align:left; margin-top:3px;">${formatGameTime(g.startDate)}</div>
-      </div>
+      <div class="matchup"><span class="rank-num">${listPosition}.</span>${awayNameWithRank(g.awayTeam, colorMap)} @ ${homeNameWithRank(g.homeTeam, colorMap)}</div>
+      <div class="meta">${formatGameTime(g.startDate)}</div>
       <div class="meta">Spread: <span class="spread">${spreadText}</span></div>
     </div>`;
 }
