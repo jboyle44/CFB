@@ -223,7 +223,15 @@ def build_record(game, ratings_by_team, ratings_source, existing_by_id, venues_l
     # setdefault so a value already present never gets clobbered), since
     # these fields didn't exist in the schema before and old records would
     # otherwise never pick them up.
-    if prior and prior.get("status") == "final":
+    #
+    # Confirmed real bug this fixes: checking only status=="final" (not
+    # whether atsResult was ever actually set) meant a game marked final
+    # before grading worked correctly would freeze here PERMANENTLY,
+    # forever returning the stale, ungraded prior record and never
+    # reaching apply_line_and_grade's grading logic at all -- compounding
+    # with a separate bug there that's already been fixed. Confirmed real
+    # case: 43 of 51 Week 1 games were stuck exactly this way.
+    if prior and prior.get("status") == "final" and prior.get("atsResult") is not None:
         prior["homeScore"] = home_score
         prior["awayScore"] = away_score
         for k, v in venue_fields.items():
