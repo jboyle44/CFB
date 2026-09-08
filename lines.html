@@ -879,7 +879,7 @@ function teamSpan(name){
     const pushes = games.filter(g => g.atsResult === 'push').length;
     const pct = graded.length ? ((wins / graded.length) * 100).toFixed(1) + '%' : '–';
 
-    document.getElementById('statRecord').textContent = graded.length ? `${wins}-${losses}` : '–';
+    document.getElementById('statRecord').textContent = graded.length ? `${wins}-${losses}-${pushes}` : '–';
     document.getElementById('statPct').textContent = pct;
     document.getElementById('statPushes').textContent = pushes || '0';
 
