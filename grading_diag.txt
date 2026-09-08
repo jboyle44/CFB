@@ -1,0 +1,2 @@
+BEFORE: status=final, atsResult=None, vegasSpread=28.5, modelCorrect=None
+AFTER apply_line_and_grade: status=final, atsResult=away_cover, modelCorrect=True
