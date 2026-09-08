@@ -216,7 +216,7 @@
   </div>
 
   <div class="panel">
-    <h2><span class="htitle"><span class="collapse-arrow">▾</span><span id="thisWeekTitle">This Week</span></span><span class="count" id="thisWeekCount"></span></h2>
+    <h2><span class="htitle"><span class="collapse-arrow">▾</span><span id="thisWeekTitle">This Week</span></span><span class="count" id="thisWeekCount"></span> <select id="thisWeekSelect" class="week-select" onchange="onThisWeekSelectChange(event)"></select></h2>
     <div class="panel-body">
       <div class="table-wrap">
         <table>
@@ -652,6 +652,7 @@ function teamSpan(name){
   let games = [];       // rows from lines_data.json
   let ratings = [];      // live MPG ratings, for the manual tool
   let thisWeekNumber = null;   // the week currently shown in the "This Week" table, set by renderThisWeek()
+  let manualThisWeek = null;   // user-picked week override via the dropdown; null = auto-detect current week
   let gamesGeneratedAt = null;   // when the games/lines data was last refreshed
   let ratingsLastUpdated = null; // when MPG's power ratings were last refreshed
   const REFRESH_SCHEDULE_TEXT = 'refreshes Sun ~3pm ET & Thu ~9am ET';
@@ -804,10 +805,35 @@ function teamSpan(name){
     });
   }
 
+  function detectAutoWeek(){
+    const scheduled = games.filter(g => g.status === 'scheduled');
+    if(scheduled.length) return Math.min(...scheduled.map(g => g.week));
+    if(games.length) return Math.max(...games.map(g => g.week));
+    return null;
+  }
+
+  function populateThisWeekSelect(){
+    const selectEl = document.getElementById('thisWeekSelect');
+    const weeks = [...new Set(games.map(g => g.week))].sort((a, b) => a - b);
+    selectEl.innerHTML = weeks.map(w => `<option value="${w}">Week ${w}</option>`).join('');
+    const autoWeek = detectAutoWeek();
+    if(autoWeek != null) selectEl.value = String(autoWeek);
+  }
+
+  function onThisWeekSelectChange(e){
+    manualThisWeek = parseInt(e.target.value, 10);
+    renderThisWeek();
+  }
+
   function renderThisWeek(){
     const scheduled = games.filter(g => g.status === 'scheduled');
     let week, rows, title;
-    if(scheduled.length){
+    if(manualThisWeek != null){
+      week = manualThisWeek;
+      rows = games.filter(g => g.week === week);
+      const allFinal = rows.length && rows.every(g => g.status === 'final');
+      title = allFinal ? `Week ${week} results` : `Week ${week}`;
+    } else if(scheduled.length){
       week = Math.min(...scheduled.map(g => g.week));
       rows = games.filter(g => g.week === week);
       title = `Week ${week}`;
@@ -1170,6 +1196,7 @@ function teamSpan(name){
           dot.className = 'dot warn';
           document.getElementById('statusText').textContent = 'Data file loaded but empty — first weekly run hasn\'t populated it yet.';
         }
+        populateThisWeekSelect();
         renderThisWeek();
         renderStats();
         renderTrend();
