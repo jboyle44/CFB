@@ -117,6 +117,42 @@ def fetch_mpg_ratings(year, week):
         return {}, [], None
 
 
+def pregame_snapshot_rows(rows, source_label):
+    """For the HISTORY snapshot specifically (not game predictions, which
+    are untouched and rely on kickoff-freeze instead): if MPG's data
+    includes a per-team "delta" (this week's change from before), use it to
+    reconstruct each team's TRUE pre-game rating (rating - delta), rank
+    freshly by that reconstructed value, and reset record/games to reflect
+    pre-game state. Confirmed real bug this fixes: without this, a week's
+    "history" snapshot could end up showing already-updated post-game
+    ratings (mislabeled as that week's pre-game state) whenever the script
+    happened to run after that week's games had already started -- e.g.
+    Week 1 showing Ohio State at "1-0" instead of their real 0-0 pre-game
+    rating. Falls back to the raw rows unchanged if no delta field exists
+    (the season-file fallback source never has one)."""
+    if not rows or not all("delta" in r for r in rows):
+        return rows, source_label
+
+    corrected = []
+    for r in rows:
+        delta = r.get("delta")
+        rating = r.get("rating")
+        if delta is None or rating is None:
+            continue
+        corrected.append({
+            "team": r.get("team"),
+            "rating": round(rating - delta, 1),
+            "adjO": r.get("adjO"),  # not delta-corrected -- MPG doesn't
+            "adjD": r.get("adjD"),  # expose a per-metric delta, only overall
+            "record": "0-0",
+            "games": 0,
+        })
+    corrected.sort(key=lambda t: -t["rating"])
+    for i, t in enumerate(corrected):
+        t["rank"] = i + 1
+    return corrected, f"{source_label}, reconstructed pre-game via MPG's delta field"
+
+
 SPREAD_RE = re.compile(r"^(.*?)\s*([+-]?\d+(?:\.\d+)?)\s*$")
 
 
@@ -468,24 +504,34 @@ def main():
 
         # Snapshot the full ratings grid for this week, independent of MPG's
         # own site (it doesn't keep week-over-week history for the current
-        # season). Overwritten each run with whatever's best available, so
-        # a week's snapshot upgrades automatically if MPG later publishes a
-        # proper weekly file for it.
+        # season).
         #
         # Only written when it's actually meaningful: either a genuine
         # week-specific MPG file was found (ratings_source starts with
         # "weekly snapshot"), or this is the real current week, where the
         # season-file fallback is a legitimate proxy for "right now". For
         # any other (future, not-yet-reached) week, MPG has nothing week-
-        # specific to offer yet, so there's nothing real to capture --
-        # leave that week's slot alone rather than overwrite it with
-        # today's unrelated snapshot.
+        # specific to offer yet, so there's nothing real to capture.
+        #
+        # Once a week's snapshot exists at all, it's frozen permanently --
+        # never overwritten by a later run. Confirmed real bug this fixes:
+        # allowing every run to keep overwriting it meant a week's history
+        # could end up capturing ratings from AFTER that week's games
+        # already happened, rather than the pre-game state a "history"
+        # snapshot is supposed to represent.
+        #
+        # Also uses pregame_snapshot_rows() to reconstruct true pre-game
+        # ratings via MPG's own delta field when available -- a second,
+        # more direct fix for the same underlying problem, independent of
+        # exactly when this script happens to run relative to kickoff.
+        already_captured = (year, week) in history_by_week
         is_real_weekly_source = bool(ratings_source) and ratings_source.startswith("weekly snapshot")
-        if ratings_rows and (is_real_weekly_source or week == current_week):
+        if ratings_rows and not already_captured and (is_real_weekly_source or week == current_week):
+            snapshot_rows, snapshot_source = pregame_snapshot_rows(ratings_rows, ratings_source)
             history_by_week[(year, week)] = {
                 "season": year,
                 "week": week,
-                "source": ratings_source,
+                "source": snapshot_source,
                 "capturedAt": captured_at,
                 "teams": [
                     {
@@ -497,7 +543,7 @@ def main():
                         "record": r.get("record"),
                         "games": r.get("games"),
                     }
-                    for r in ratings_rows
+                    for r in snapshot_rows
                 ],
             }
 
