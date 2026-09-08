@@ -1,4 +1,4 @@
-name: Diagnostic MPG Site
+name: Diagnostic MPG Change Search
 on:
   workflow_dispatch: {}
 jobs:
@@ -17,6 +17,6 @@ jobs:
       - run: |
           git config user.name "test-bot"
           git config user.email "actions@github.com"
-          git add mpg_site_diag.txt
+          git add mpg_change_search.txt
           git commit -m "Diagnostic" || echo "nothing to commit"
           git push
