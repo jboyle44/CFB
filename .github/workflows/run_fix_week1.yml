@@ -1,0 +1,25 @@
+name: Fix Week 1 Ratings (one-time)
+on:
+  workflow_dispatch: {}
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - run: python3 fix_week1_ratings.py
+      - run: |
+          git config user.name "week1-fix-bot"
+          git config user.email "actions@github.com"
+          git add ratings_history.json
+          git commit -m "One-time correction: Week 1 ratings reconstructed as true pre-game state"
+          for attempt in 1 2 3; do
+            if git push; then exit 0; fi
+            git pull --rebase origin main
+          done
+          exit 1
