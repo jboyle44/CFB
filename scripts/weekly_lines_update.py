@@ -392,9 +392,21 @@ def main():
         # forward. This is what keeps this script's per-run cost roughly
         # constant instead of growing every week for the rest of the season,
         # since otherwise every run re-checks every prior week from scratch.
+        #
+        # Confirmed real bug this fixes: checking only status=="final" here
+        # (not whether atsResult was ever actually set) meant that once every
+        # game in a week was marked final, this skip fired PERMANENTLY,
+        # regardless of whether grading had ever actually succeeded for any
+        # of them -- compounding with two other bugs at the build_record and
+        # apply_line_and_grade level that have already been fixed. All three
+        # had to be fixed together, since fixing only the inner two never got
+        # a chance to run once a week hit this outer skip. Confirmed real
+        # case: Week 1 got stuck at 8 of 51 games graded because of this,
+        # even after the other two fixes were deployed.
         existing_week_games = [r for r in existing_by_id.values() if r.get("week") == week]
         week_fully_graded = bool(existing_week_games) and all(
-            g.get("status") == "final" for g in existing_week_games
+            g.get("status") == "final" and g.get("atsResult") is not None
+            for g in existing_week_games
         )
         if week_fully_graded:
             for g in existing_week_games:
