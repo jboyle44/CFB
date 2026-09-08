@@ -300,6 +300,14 @@ def apply_line_and_grade(record, line_game):
     # locked. Only skip if we've actually captured a line already -- if
     # kickoff passed before any line was ever posted, still take this one
     # grab so we're not left with nothing.
+    #
+    # Confirmed real bug this fixes: this used to be an early "return
+    # record" here, which also skipped the grading block below for every
+    # game that had a line locked in before kickoff -- i.e. essentially
+    # every normal game. Only games whose line was still missing at
+    # kickoff (a rare case) ever made it to grading. Freezing the LINE and
+    # running the GRADING are two separate concerns; only the first should
+    # be skipped once the line is locked in.
     started = False
     if record.get("startDate"):
         try:
@@ -307,25 +315,24 @@ def apply_line_and_grade(record, line_game):
             started = commence <= datetime.now(timezone.utc)
         except ValueError:
             pass
-    if started and record.get("vegasSpread") is not None:
-        return record
 
-    best = pick_best_line((line_game or {}).get("lines", []))
-    vegas = vegas_home_spread(best, record["homeTeam"], record["awayTeam"]) if best else None
+    if not (started and record.get("vegasSpread") is not None):
+        best = pick_best_line((line_game or {}).get("lines", []))
+        vegas = vegas_home_spread(best, record["homeTeam"], record["awayTeam"]) if best else None
 
-    if vegas is not None:
-        record["vegasSpread"] = vegas
-        record["vegasProvider"] = best.get("provider")
-        if record["modelSpread"] is not None:
-            edge = round(record["modelSpread"] - vegas, 1)
-            record["edge"] = edge
-            if edge > 0:
-                record["pick"] = record["homeTeam"]
-            elif edge < 0:
-                record["pick"] = record["awayTeam"]
-            else:
-                record["pick"] = None  # dead-even, no lean
-            record["pickMargin"] = abs(edge)
+        if vegas is not None:
+            record["vegasSpread"] = vegas
+            record["vegasProvider"] = best.get("provider")
+            if record["modelSpread"] is not None:
+                edge = round(record["modelSpread"] - vegas, 1)
+                record["edge"] = edge
+                if edge > 0:
+                    record["pick"] = record["homeTeam"]
+                elif edge < 0:
+                    record["pick"] = record["awayTeam"]
+                else:
+                    record["pick"] = None  # dead-even, no lean
+                record["pickMargin"] = abs(edge)
 
     if record["status"] == "final":
         ats_result, actual_margin = grade(record["homeScore"], record["awayScore"], record["vegasSpread"])
