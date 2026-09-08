@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-04T13:16:12.336907+00:00",
-  "ourladsUpdatedAt": "2026-09-04T13:16:12.336907+00:00",
+  "generatedAt": "2026-09-08T13:07:46.723551+00:00",
+  "ourladsUpdatedAt": "2026-09-08T13:07:46.723551+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:05.218600+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Los Angeles Rams",
@@ -985,8 +985,8 @@
     },
     {
       "position": "CB",
-      "player": "Zech McPhearson",
-      "jersey": "41",
+      "player": "Alex Johnson",
+      "jersey": "36",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
@@ -1049,7 +1049,7 @@
     },
     {
       "position": "OLB",
-      "player": "Keir Thomas II",
+      "player": "Keir Thomas",
       "jersey": "11",
       "code": "",
       "isAcquired": false,
@@ -1057,27 +1057,7 @@
       "reserveStatus": "IR",
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "CB",
-      "player": "Alex Johnson",
-      "jersey": "36",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Dev": null
     }
   ]
 }

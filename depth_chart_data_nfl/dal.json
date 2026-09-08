@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-04T13:15:09.816391+00:00",
-  "ourladsUpdatedAt": "2026-09-04T13:15:09.816391+00:00",
+  "generatedAt": "2026-09-08T13:06:44.547804+00:00",
+  "ourladsUpdatedAt": "2026-09-08T13:06:44.547804+00:00",
   "madden27UpdatedAt": "2026-09-05T00:44:52.552429+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Dallas Cowboys",
@@ -58,7 +58,7 @@
     {
       "position": "RWR",
       "player": "Jonathan Mingo",
-      "jersey": "81",
+      "jersey": "18",
       "code": "T/Car",
       "isAcquired": true,
       "isReserve": false,
@@ -137,16 +137,16 @@
     },
     {
       "position": "LG",
-      "player": "Tyler Smith",
-      "jersey": "73",
-      "code": "22/1",
+      "player": "T.J. Bass",
+      "jersey": "66",
+      "code": "CF23",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 73.4,
-      "madden27Rating": 89,
-      "madden27Dev": "Star",
-      "pffPositionRank": 15,
+      "pffGrade": 67.6,
+      "madden27Rating": 69,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 31,
       "pffPositionTotal": 87,
       "pffPositionLabel": "G",
       "pffTied": false
@@ -165,22 +165,6 @@
       "pffPositionRank": 17,
       "pffPositionTotal": 41,
       "pffPositionLabel": "C",
-      "pffTied": false
-    },
-    {
-      "position": "C",
-      "player": "T.J. Bass",
-      "jersey": "66",
-      "code": "CF23",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 67.6,
-      "madden27Rating": 69,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 31,
-      "pffPositionTotal": 87,
-      "pffPositionLabel": "G",
       "pffTied": false
     },
     {
@@ -378,7 +362,7 @@
     {
       "position": "FB",
       "player": "Hunter Luepke",
-      "jersey": "40",
+      "jersey": "30",
       "code": "CF23",
       "isAcquired": false,
       "isReserve": false,
@@ -746,7 +730,7 @@
     {
       "position": "FS",
       "player": "Alijah Clark",
-      "jersey": "38",
+      "jersey": "11",
       "code": "CF25",
       "isAcquired": false,
       "isReserve": false,
@@ -922,7 +906,7 @@
     {
       "position": "PR",
       "player": "Jonathan Mingo",
-      "jersey": "81",
+      "jersey": "18",
       "code": "T/Car",
       "isAcquired": true,
       "isReserve": false,
@@ -968,6 +952,22 @@
       "pffTied": null
     },
     {
+      "position": "OG",
+      "player": "Tyler Smith",
+      "jersey": "73",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 73.4,
+      "madden27Rating": 89,
+      "madden27Dev": "Star",
+      "pffPositionRank": 15,
+      "pffPositionTotal": 87,
+      "pffPositionLabel": "G",
+      "pffTied": false
+    },
+    {
       "position": "CB",
       "player": "Devin Moore",
       "jersey": "29",
@@ -998,22 +998,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "C",
-      "player": "Matt Hennessy",
-      "jersey": "72",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 68.8,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "C",
-      "pffTied": false
     },
     {
       "position": "TE",
@@ -1062,6 +1046,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "C",
+      "player": "Matt Hennessy",
+      "jersey": "72",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 68.8,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "C",
+      "pffTied": false
     }
   ]
 }

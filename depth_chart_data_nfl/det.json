@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-04T13:15:37.990138+00:00",
-  "ourladsUpdatedAt": "2026-09-04T13:15:37.990138+00:00",
+  "generatedAt": "2026-09-08T13:07:12.649034+00:00",
+  "ourladsUpdatedAt": "2026-09-08T13:07:12.649034+00:00",
   "madden27UpdatedAt": "2026-09-05T00:44:55.084169+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Detroit Lions",
@@ -282,7 +282,7 @@
     {
       "position": "QB",
       "player": "Joshua Dobbs",
-      "jersey": "6",
+      "jersey": "11",
       "code": "CC/NE",
       "isAcquired": true,
       "isReserve": false,
@@ -552,6 +552,18 @@
       "pffTied": false
     },
     {
+      "position": "WLB",
+      "player": "Joe Bachie",
+      "jersey": "35",
+      "code": "U/Ten",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "MLB",
       "player": "Jack Campbell",
       "jersey": "46",
@@ -746,7 +758,7 @@
     {
       "position": "NB",
       "player": "Christian Izien",
-      "jersey": "27",
+      "jersey": "5",
       "code": "U/TB",
       "isAcquired": true,
       "isReserve": false,
@@ -982,6 +994,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "OG",
+      "player": "Mason Miller",
+      "jersey": "63",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "PS/IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "S",
