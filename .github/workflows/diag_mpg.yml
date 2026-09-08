@@ -1,4 +1,4 @@
-name: Diagnostic MPG Change
+name: Diagnostic MPG Site
 on:
   workflow_dispatch: {}
 jobs:
@@ -13,10 +13,10 @@ jobs:
           python-version: '3.11'
       - run: pip install requests
       - working-directory: scripts
-        run: python3 diag_mpg_change.py
+        run: python3 diag_mpg_site.py
       - run: |
           git config user.name "test-bot"
           git config user.email "actions@github.com"
-          git add mpg_change_diag.txt
+          git add mpg_site_diag.txt
           git commit -m "Diagnostic" || echo "nothing to commit"
           git push
