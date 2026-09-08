@@ -1,4 +1,0 @@
-week_01.json: status=200
-  138 rows, keys: ['rank', 'team', 'conference', 'rating', 'record', 'adjO', 'adjD', 'games', 'delta']
-  Ohio State: {"rank": 1, "team": "Ohio State", "conference": "Big Ten", "rating": 28.6, "record": "1-0", "adjO": 40.9, "adjD": 12.9, "games": 1, "delta": -1.6}
-week_02.json: status=404
