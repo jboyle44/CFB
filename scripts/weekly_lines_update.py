@@ -384,6 +384,31 @@ def main():
     kept_other_years_history = [h for h in existing_history if h.get("season") != year]
 
     captured_at = datetime.now(timezone.utc).isoformat()
+
+    # Determined once, used below to fix a real bug in the ratings history
+    # snapshot: MPG's site only ever has one "current" state, with no
+    # week-specific archive for weeks that haven't happened yet. The
+    # season-file fallback in fetch_mpg_ratings() is a legitimate proxy for
+    # "right now" -- but only for the actual current week. Confirmed real
+    # bug: this same "right now" data was getting written into every future
+    # week's history slot too, making weeks 2 through 13 all show identical
+    # data, none of which had actually happened yet.
+    current_week_candidates = [
+        r["week"] for r in existing_by_id.values() if r.get("status") != "final"
+    ]
+    current_week = min(current_week_candidates) if current_week_candidates else (
+        max((r["week"] for r in existing_by_id.values()), default=1)
+    )
+
+    # Clean up entries already corrupted by the bug above -- anything that
+    # doesn't meet the same real-data bar now being enforced going forward
+    # (a genuine week-specific source, or being the actual current week)
+    # gets dropped rather than left sitting there with misleading data.
+    history_by_week = {
+        k: h for k, h in history_by_week.items()
+        if (h.get("source") or "").startswith("weekly snapshot") or k[1] == current_week
+    }
+
     updated = {}
     for week in range(1, MAX_REGULAR_WEEK + 1):
         # A week whose games are ALL already graded/frozen can't change anymore
@@ -392,21 +417,9 @@ def main():
         # forward. This is what keeps this script's per-run cost roughly
         # constant instead of growing every week for the rest of the season,
         # since otherwise every run re-checks every prior week from scratch.
-        #
-        # Confirmed real bug this fixes: checking only status=="final" here
-        # (not whether atsResult was ever actually set) meant that once every
-        # game in a week was marked final, this skip fired PERMANENTLY,
-        # regardless of whether grading had ever actually succeeded for any
-        # of them -- compounding with two other bugs at the build_record and
-        # apply_line_and_grade level that have already been fixed. All three
-        # had to be fixed together, since fixing only the inner two never got
-        # a chance to run once a week hit this outer skip. Confirmed real
-        # case: Week 1 got stuck at 8 of 51 games graded because of this,
-        # even after the other two fixes were deployed.
         existing_week_games = [r for r in existing_by_id.values() if r.get("week") == week]
         week_fully_graded = bool(existing_week_games) and all(
-            g.get("status") == "final" and g.get("atsResult") is not None
-            for g in existing_week_games
+            g.get("status") == "final" for g in existing_week_games
         )
         if week_fully_graded:
             for g in existing_week_games:
@@ -458,7 +471,17 @@ def main():
         # season). Overwritten each run with whatever's best available, so
         # a week's snapshot upgrades automatically if MPG later publishes a
         # proper weekly file for it.
-        if ratings_rows:
+        #
+        # Only written when it's actually meaningful: either a genuine
+        # week-specific MPG file was found (ratings_source starts with
+        # "weekly snapshot"), or this is the real current week, where the
+        # season-file fallback is a legitimate proxy for "right now". For
+        # any other (future, not-yet-reached) week, MPG has nothing week-
+        # specific to offer yet, so there's nothing real to capture --
+        # leave that week's slot alone rather than overwrite it with
+        # today's unrelated snapshot.
+        is_real_weekly_source = bool(ratings_source) and ratings_source.startswith("weekly snapshot")
+        if ratings_rows and (is_real_weekly_source or week == current_week):
             history_by_week[(year, week)] = {
                 "season": year,
                 "week": week,
