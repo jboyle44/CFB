@@ -14,5 +14,5 @@ output = [f"BEFORE: status={target['status']}, atsResult={target.get('atsResult'
 result = m.apply_line_and_grade(dict(target), None)
 output.append(f"AFTER apply_line_and_grade: status={result['status']}, atsResult={result.get('atsResult')}, modelCorrect={result.get('modelCorrect')}")
 
-with open('../grading_diag.txt', 'w') as f:
+with open('grading_diag.txt', 'w') as f:
     f.write("\n".join(output))
