@@ -1,65 +1,83 @@
 {
-  "generatedAt": "2026-09-05T02:35:23.165566+00:00",
+  "generatedAt": "2026-09-10T12:02:51.480296+00:00",
   "weather": {
-    "401856661": {
-      "temperatureF": 89.8,
-      "precipitationProbability": 0,
-      "windSpeedMph": 9.4,
-      "weatherCode": 0
-    },
-    "401858212": {
-      "temperatureF": 75.6,
-      "precipitationProbability": 82,
-      "windSpeedMph": 9.1,
-      "weatherCode": 81
-    },
-    "401856660": {
-      "temperatureF": 84.1,
-      "precipitationProbability": 23,
-      "windSpeedMph": 2.7,
-      "weatherCode": 2
-    },
-    "401858438": {
-      "temperatureF": 72.7,
-      "precipitationProbability": 0,
-      "windSpeedMph": 5.6,
+    "401856682": {
+      "temperatureF": 99.3,
+      "precipitationProbability": 1,
+      "windSpeedMph": 13.0,
       "weatherCode": 3
     },
-    "401858433": {
-      "temperatureF": 63.5,
-      "precipitationProbability": 2,
-      "windSpeedMph": 2.8,
-      "weatherCode": 0
+    "401856679": {
+      "temperatureF": 77.7,
+      "precipitationProbability": 9,
+      "windSpeedMph": 10.0,
+      "weatherCode": 3
     },
-    "401858210": {
-      "temperatureF": 63.8,
+    "401856678": {
+      "temperatureF": 86.8,
+      "precipitationProbability": 1,
+      "windSpeedMph": 8.6,
+      "weatherCode": 1
+    },
+    "401856810": {
+      "temperatureF": 88.2,
       "precipitationProbability": 0,
-      "windSpeedMph": 3.9,
+      "windSpeedMph": 13.8,
       "weatherCode": 0
     },
-    "401858209": {
-      "temperatureF": 76.2,
-      "precipitationProbability": 3,
-      "windSpeedMph": 16.3,
-      "weatherCode": 2
+    "401856670": {
+      "temperatureF": 87.4,
+      "precipitationProbability": 1,
+      "windSpeedMph": 15.5,
+      "weatherCode": 3
+    },
+    "401856674": {
+      "temperatureF": 81.7,
+      "precipitationProbability": 64,
+      "windSpeedMph": 9.4,
+      "weatherCode": 3
+    },
+    "401856683": {
+      "temperatureF": 90.3,
+      "precipitationProbability": 2,
+      "windSpeedMph": 8.5,
+      "weatherCode": 0
+    },
+    "401856681": {
+      "temperatureF": 81.1,
+      "precipitationProbability": 87,
+      "windSpeedMph": 5.9,
+      "weatherCode": 3
+    },
+    "401856790": {
+      "temperatureF": 74.3,
+      "precipitationProbability": 65,
+      "windSpeedMph": 8.5,
+      "weatherCode": 3
+    },
+    "401856677": {
+      "temperatureF": 75.2,
+      "precipitationProbability": 0,
+      "windSpeedMph": 10.0,
+      "weatherCode": 3
     },
     "acc580d74344ea3b31bbcdd057fe6a9c": {
       "temperatureF": 51.4,
       "precipitationProbability": 0,
-      "windSpeedMph": 2.0,
-      "weatherCode": 2
+      "windSpeedMph": 0.5,
+      "weatherCode": 3
     },
     "8c94552d022acec4a0458d70c19d3da9": {
-      "temperatureF": 76.9,
-      "precipitationProbability": 0,
-      "windSpeedMph": 6.8,
-      "weatherCode": 0
+      "temperatureF": 73.2,
+      "precipitationProbability": 1,
+      "windSpeedMph": 5.3,
+      "weatherCode": 2
     },
     "5ad8135dc2b5f27de0b777acd317855a": {
-      "temperatureF": 96.6,
-      "precipitationProbability": 11,
-      "windSpeedMph": 9.4,
-      "weatherCode": 3
+      "temperatureF": 92.9,
+      "precipitationProbability": 12,
+      "windSpeedMph": 10.1,
+      "weatherCode": 0
     }
   }
 }
