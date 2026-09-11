@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-08T13:41:50.829539+00:00",
-  "ourladsUpdatedAt": "2026-09-08T13:41:50.829539+00:00",
-  "cfbdUpdatedAt": "2026-09-08T13:41:50.829539+00:00",
+  "generatedAt": "2026-09-11T13:29:31.538881+00:00",
+  "ourladsUpdatedAt": "2026-09-11T13:29:31.538881+00:00",
+  "cfbdUpdatedAt": "2026-09-11T13:29:31.538881+00:00",
   "cfb27UpdatedAt": "2026-09-05T00:45:57.555053+00:00",
   "draftRankUpdatedAt": "2026-09-08T13:15:54.512215+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
@@ -76,7 +76,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "WR-Z",
@@ -114,7 +120,7 @@
       "compositeScore": 79,
       "transferScore": 87,
       "profileUrl": null,
-      "transferRank": 378,
+      "transferRank": 380,
       "transferPosRank": 74,
       "hsNationalRank": 2678,
       "hsPositionRank": null,
@@ -245,7 +251,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "LG",
@@ -289,7 +301,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "C",
@@ -483,7 +501,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "TE",
@@ -502,7 +526,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "QB",
@@ -671,7 +701,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "DE",
@@ -790,7 +826,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "DT",
@@ -859,7 +901,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "DOG",
@@ -1053,7 +1101,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "CAT",
@@ -1191,7 +1245,7 @@
       "compositeScore": 77,
       "transferScore": 87,
       "profileUrl": null,
-      "transferRank": 371,
+      "transferRank": 372,
       "transferPosRank": 29,
       "hsNationalRank": 2977,
       "hsPositionRank": null,
@@ -1241,7 +1295,7 @@
       "compositeScore": null,
       "transferScore": 86,
       "profileUrl": null,
-      "transferRank": 605,
+      "transferRank": 621,
       "transferPosRank": 52,
       "hsNationalRank": null,
       "hsPositionRank": null,
@@ -1291,8 +1345,8 @@
       "compositeScore": 82,
       "transferScore": 86,
       "profileUrl": null,
-      "transferRank": 1034,
-      "transferPosRank": 119,
+      "transferRank": 1029,
+      "transferPosRank": 118,
       "hsNationalRank": 1989,
       "hsPositionRank": null,
       "hsStateRank": null,
@@ -1522,7 +1576,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "H",

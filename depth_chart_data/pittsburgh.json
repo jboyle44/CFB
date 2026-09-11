@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-08T13:36:11.850478+00:00",
-  "ourladsUpdatedAt": "2026-09-08T13:36:11.850478+00:00",
-  "cfbdUpdatedAt": "2026-09-08T13:36:11.850478+00:00",
+  "generatedAt": "2026-09-11T13:23:48.567160+00:00",
+  "ourladsUpdatedAt": "2026-09-11T13:23:48.567160+00:00",
+  "cfbdUpdatedAt": "2026-09-11T13:23:48.567160+00:00",
   "cfb27UpdatedAt": "2026-09-05T00:45:40.304430+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
@@ -12,7 +12,7 @@
     {
       "position": "WR-X",
       "player": "Malik Knight",
-      "jersey": "18",
+      "jersey": "7",
       "class": "RS SR",
       "isTransfer": true,
       "isReserve": false,
@@ -37,7 +37,7 @@
     {
       "position": "WR-X",
       "player": "Tony Kinsler",
-      "jersey": "17",
+      "jersey": "2",
       "class": "SO",
       "isTransfer": false,
       "isReserve": false,
@@ -101,7 +101,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "WR-SL",
@@ -131,7 +137,7 @@
     {
       "position": "WR-SL",
       "player": "Bryce Yates",
-      "jersey": "80",
+      "jersey": "4",
       "class": "SO",
       "isTransfer": false,
       "isReserve": false,
@@ -420,12 +426,18 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "TE",
       "player": "Carson Kent",
-      "jersey": "85",
+      "jersey": "86",
       "class": "RS SR",
       "isTransfer": true,
       "isReserve": false,
@@ -433,7 +445,7 @@
       "compositeScore": null,
       "transferScore": 87,
       "profileUrl": null,
-      "transferRank": 308,
+      "transferRank": 310,
       "transferPosRank": 23,
       "hsNationalRank": null,
       "hsPositionRank": null,
@@ -450,7 +462,7 @@
     {
       "position": "TE",
       "player": "Elijah Lagg",
-      "jersey": "82",
+      "jersey": "17",
       "class": "SR",
       "isTransfer": true,
       "isReserve": false,
@@ -500,7 +512,7 @@
     {
       "position": "QB",
       "player": "Holden Geriner",
-      "jersey": "11",
+      "jersey": "15",
       "class": "RS SR",
       "isTransfer": true,
       "isReserve": false,
@@ -525,7 +537,7 @@
     {
       "position": "RB",
       "player": "Ja'Kyrian Turner",
-      "jersey": "25",
+      "jersey": "9",
       "class": "SO",
       "isTransfer": false,
       "isReserve": false,
@@ -550,7 +562,7 @@
     {
       "position": "RB",
       "player": "La'Vell Wright",
-      "jersey": "29",
+      "jersey": "11",
       "class": "GR",
       "isTransfer": true,
       "isReserve": false,
@@ -664,7 +676,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "LDT",
@@ -694,7 +712,7 @@
     {
       "position": "LDT",
       "player": "Eliyt Nairne",
-      "jersey": "95",
+      "jersey": "16",
       "class": "RS JR",
       "isTransfer": true,
       "isReserve": false,
@@ -733,7 +751,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RDT",
@@ -763,7 +787,7 @@
     {
       "position": "RDT",
       "player": "Jeremiah Warren",
-      "jersey": "45",
+      "jersey": "9",
       "class": "RS JR",
       "isTransfer": true,
       "isReserve": false,
@@ -771,8 +795,8 @@
       "compositeScore": 85,
       "transferScore": 86,
       "profileUrl": null,
-      "transferRank": 594,
-      "transferPosRank": 66,
+      "transferRank": 610,
+      "transferPosRank": 67,
       "hsNationalRank": 1347,
       "hsPositionRank": null,
       "hsStateRank": null,
@@ -802,7 +826,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RDE",
@@ -832,7 +862,7 @@
     {
       "position": "RDE",
       "player": "Jaeden Moore",
-      "jersey": "56",
+      "jersey": "8",
       "class": "RS JR",
       "isTransfer": true,
       "isReserve": false,
@@ -890,7 +920,7 @@
       "compositeScore": 87,
       "transferScore": 86,
       "profileUrl": null,
-      "transferRank": 1062,
+      "transferRank": 1064,
       "transferPosRank": 65,
       "hsNationalRank": 777,
       "hsPositionRank": null,
@@ -971,7 +1001,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "MLB",
@@ -990,7 +1026,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "STAR",
@@ -1020,7 +1062,7 @@
     {
       "position": "STAR",
       "player": "DeMarco Ward",
-      "jersey": "31",
+      "jersey": "7",
       "class": "RS JR",
       "isTransfer": true,
       "isReserve": false,
@@ -1070,7 +1112,7 @@
     {
       "position": "LCB",
       "player": "Raion Strader",
-      "jersey": "16",
+      "jersey": "6",
       "class": "SR",
       "isTransfer": true,
       "isReserve": false,
@@ -1134,7 +1176,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "SS",
@@ -1178,7 +1226,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "FS",
@@ -1258,7 +1312,7 @@
     {
       "position": "RCB",
       "player": "Shawn Lee Jr.",
-      "jersey": "28",
+      "jersey": "3",
       "class": "SO",
       "isTransfer": false,
       "isReserve": false,
@@ -1283,7 +1337,7 @@
     {
       "position": "RCB",
       "player": "Rashan Murray",
-      "jersey": "18",
+      "jersey": "4",
       "class": "RS SR",
       "isTransfer": true,
       "isReserve": false,
@@ -1358,7 +1412,7 @@
     {
       "position": "PK",
       "player": "Antonio Chadha",
-      "jersey": "93",
+      "jersey": "48",
       "class": "RS SR",
       "isTransfer": true,
       "isReserve": false,
@@ -1433,7 +1487,7 @@
     {
       "position": "KO",
       "player": "Antonio Chadha",
-      "jersey": "93",
+      "jersey": "48",
       "class": "RS SR",
       "isTransfer": true,
       "isReserve": false,
@@ -1497,7 +1551,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "H",
@@ -1541,7 +1601,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "PR",
@@ -1635,7 +1701,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     }
   ]
 }
