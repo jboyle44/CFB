@@ -60,6 +60,7 @@ MPG_BASE = "https://mpg000f.github.io/cbb_power_rating"
 
 DATA_FILE = "lines_data_nfl.json"
 RATINGS_HISTORY_FILE = "ratings_history_nfl.json"
+PRESEASON_RATINGS_FILE = "preseason_ratings_nfl.json"
 HFA = 2.0
 SEASON = 2026
 
@@ -161,20 +162,46 @@ def week_for(commence_time_iso):
     return min(delta_days // 7 + 1, MAX_WEEK)
 
 
+def load_preseason_ratings():
+    """MPG's Week 0 (preseason) snapshot, stored locally in
+    PRESEASON_RATINGS_FILE. MPG doesn't rate a team until it's played a
+    game this season and has no preseason fallback of its own, so without
+    this every team's pick stays null until its first game is final.
+    Returns (ratings_by_abbr, captured_at)."""
+    try:
+        with open(PRESEASON_RATINGS_FILE) as f:
+            data = json.load(f)
+        return data["teams"], data.get("capturedAt", "?")
+    except Exception as e:
+        print(f"  WARNING: couldn't load preseason NFL ratings: {e}", file=sys.stderr)
+        return {}, None
+
+
 def fetch_mpg_ratings():
     """NFL doesn't have a per-week snapshot file on MPG's site yet (unlike
-    CFB), so this always uses the season-level ratings file. Returns
-    (ratings_by_abbr, full_rows, source_label)."""
+    CFB), so this always uses the season-level ratings file -- blended with
+    the local Week 0 preseason snapshot as a fallback for any team MPG
+    hasn't rated yet this season. In-season always wins once a team has
+    played. Returns (ratings_by_abbr, source_by_abbr, full_rows,
+    in_season_label, preseason_label)."""
+    preseason_ratings, preseason_captured_at = load_preseason_ratings()
+    preseason_label = f"Week 0 preseason snapshot ({preseason_captured_at})" if preseason_captured_at else None
+
+    in_season_ratings, rows, in_season_label = {}, [], None
     try:
         r = requests.get(f"{MPG_BASE}/data/nfl/ratings_{SEASON}.json", timeout=30)
         r.raise_for_status()
         data = r.json()
         rows = data["ratings"]
-        ratings = {row["team"]: row["rating"] for row in rows}
-        return ratings, rows, f"season file (last updated {data.get('lastUpdated', '?')})"
+        in_season_ratings = {row["team"]: row["rating"] for row in rows}
+        in_season_label = f"season file (last updated {data.get('lastUpdated', '?')})"
     except Exception as e:
         print(f"  WARNING: couldn't load MPG NFL ratings: {e}", file=sys.stderr)
-        return {}, [], None
+
+    ratings = dict(preseason_ratings)
+    ratings.update(in_season_ratings)  # in-season overrides preseason once a team has played
+    source_by_abbr = {abbr: ("in-season" if abbr in in_season_ratings else "preseason") for abbr in ratings}
+    return ratings, source_by_abbr, rows, in_season_label, preseason_label
 
 
 def fetch_odds():
@@ -231,7 +258,8 @@ def _backfill_venue_fields(record):
     record["venueLon"] = venue_info.get("lon")
 
 
-def build_record(game, ratings_by_abbr, ratings_source, existing_by_id, home_spread, provider):
+def build_record(game, ratings_by_abbr, source_by_abbr, in_season_label, preseason_label,
+                  existing_by_id, home_spread, provider):
     gid = game["id"]
     home_name, away_name = game["home_team"], game["away_team"]
     home_abbr = NAME_TO_ABBR.get(home_name)
@@ -240,6 +268,20 @@ def build_record(game, ratings_by_abbr, ratings_source, existing_by_id, home_spr
 
     home_rating = ratings_by_abbr.get(home_abbr) if home_abbr else None
     away_rating = ratings_by_abbr.get(away_abbr) if away_abbr else None
+
+    # Per-game label reflects which teams actually used which source --
+    # mixed games (one team's played, the other hasn't) get called out
+    # explicitly rather than picking one label and hiding the blend.
+    home_src = source_by_abbr.get(home_abbr) if home_abbr else None
+    away_src = source_by_abbr.get(away_abbr) if away_abbr else None
+    if home_src == "in-season" and away_src == "in-season":
+        ratings_source = in_season_label
+    elif home_src == "preseason" and away_src == "preseason":
+        ratings_source = preseason_label
+    elif home_src and away_src:
+        ratings_source = f"mixed ({home_name}: {home_src}, {away_name}: {away_src})"
+    else:
+        ratings_source = in_season_label or preseason_label
 
     neutral = (home_name, away_name, week) in NEUTRAL_SITE_GAMES
     home_hfa = 0 if neutral else HFA
@@ -320,8 +362,10 @@ def main():
         existing = []
     existing_by_id = {r["gameId"]: r for r in existing}
 
-    ratings_by_abbr, ratings_rows, ratings_source = fetch_mpg_ratings()
-    print(f"  {len(ratings_by_abbr)} teams rated ({ratings_source})")
+    ratings_by_abbr, source_by_abbr, ratings_rows, in_season_label, preseason_label = fetch_mpg_ratings()
+    n_in_season = sum(1 for s in source_by_abbr.values() if s == "in-season")
+    print(f"  {len(ratings_by_abbr)} teams rated ({n_in_season} in-season, "
+          f"{len(ratings_by_abbr) - n_in_season} preseason fallback)")
 
     # 1. Upcoming/live games + current lines -- refresh line/pick for any
     #    game whose kickoff hasn't happened yet. Once kickoff passes, the
@@ -346,7 +390,7 @@ def main():
             _backfill_venue_fields(prior)
             continue  # kickoff has passed -- freeze the pre-game snapshot even if not graded yet
         home_spread, provider = best_spread_for_home(g)
-        record = build_record(g, ratings_by_abbr, ratings_source, existing_by_id, home_spread, provider)
+        record = build_record(g, ratings_by_abbr, source_by_abbr, in_season_label, preseason_label, existing_by_id, home_spread, provider)
         existing_by_id[gid] = record
 
     # 2. Recently completed games (last 3 days) -- fill in scores and grade.
@@ -366,7 +410,7 @@ def main():
             # never posted, or it fell outside our polling window). Build a
             # minimal record so it's at least visible, even if ungraded.
             home_spread, provider = None, None
-            record = build_record(g, ratings_by_abbr, ratings_source, existing_by_id, home_spread, provider)
+            record = build_record(g, ratings_by_abbr, source_by_abbr, in_season_label, preseason_label, existing_by_id, home_spread, provider)
         if record.get("status") == "final" and record.get("atsResult") is not None:
             _backfill_venue_fields(record)
             continue  # already graded and frozen
@@ -412,7 +456,7 @@ def main():
         history.append({
             "season": SEASON,
             "week": current_week,
-            "source": ratings_source,
+            "source": in_season_label,
             "capturedAt": datetime.now(timezone.utc).isoformat(),
             "teams": [
                 {"rank": r.get("rank"), "team": r.get("team"), "rating": r.get("rating"),
@@ -434,3 +478,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
