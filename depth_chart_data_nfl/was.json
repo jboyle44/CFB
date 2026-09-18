@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-15T13:06:02.722441+00:00",
-  "ourladsUpdatedAt": "2026-09-15T13:06:02.722441+00:00",
+  "generatedAt": "2026-09-18T13:14:28.407993+00:00",
+  "ourladsUpdatedAt": "2026-09-18T13:14:28.407993+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:22.024738+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Washington Commanders",
@@ -185,15 +185,19 @@
     },
     {
       "position": "C",
-      "player": "Good-Jones, Julian",
-      "jersey": "61",
+      "player": "Gulbin, Matt",
+      "jersey": "66",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RG",
@@ -213,19 +217,15 @@
     },
     {
       "position": "RG",
-      "player": "Gulbin, Matt",
-      "jersey": "66",
+      "player": "Patrick, Lucas",
+      "jersey": "63",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Dev": null
     },
     {
       "position": "RT",
@@ -500,22 +500,6 @@
       "pffTied": null
     },
     {
-      "position": "DT",
-      "player": "Barber, Ricky",
-      "jersey": "50",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "LOLB",
       "player": "Chaisson, K'Lavon",
       "jersey": "45",
@@ -596,22 +580,6 @@
       "pffTied": null
     },
     {
-      "position": "WLB",
-      "player": "Medrano, Kain",
-      "jersey": "56",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "MLB",
       "player": "Styles, Sonny",
       "jersey": "52",
@@ -629,8 +597,8 @@
     },
     {
       "position": "MLB",
-      "player": "Magee, Jordan",
-      "jersey": "58",
+      "player": "Medrano, Kain",
+      "jersey": "56",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -706,6 +674,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "LCB",
+      "player": "Yiadom, Isaac",
+      "jersey": "37",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "SS",
@@ -1029,6 +1009,22 @@
     },
     {
       "position": null,
+      "player": "Magee, Jordan",
+      "jersey": "58",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": null,
       "player": "Tunsil, Laremy",
       "jersey": "78",
       "code": "",
@@ -1061,8 +1057,8 @@
     },
     {
       "position": null,
-      "player": "Amos, Trey",
-      "jersey": "23",
+      "player": "Mcnichols, Jeremy",
+      "jersey": "26",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
@@ -1077,8 +1073,8 @@
     },
     {
       "position": null,
-      "player": "Mcnichols, Jeremy",
-      "jersey": "26",
+      "player": "Amos, Trey",
+      "jersey": "23",
       "code": "",
       "isAcquired": false,
       "isReserve": true,

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-15T13:06:51.975819+00:00",
-  "ourladsUpdatedAt": "2026-09-15T13:06:51.975819+00:00",
+  "generatedAt": "2026-09-18T13:15:18.988343+00:00",
+  "ourladsUpdatedAt": "2026-09-18T13:15:18.988343+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:10.598813+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New Orleans Saints",
@@ -22,18 +22,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "LWR",
-      "player": "Austin Jr., Kevin",
-      "jersey": "81",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     },
     {
       "position": "RWR",
@@ -285,7 +273,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "QB",
@@ -382,18 +374,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "RB",
-      "player": "Donaldson, CJ",
-      "jersey": "43",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     },
     {
       "position": "DE",
@@ -943,6 +923,22 @@
       "position": "KR",
       "player": "Brown, Barion",
       "jersey": "19",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "KR",
+      "player": "Miller, Kendre",
+      "jersey": "5",
       "code": "",
       "isAcquired": false,
       "isReserve": false,

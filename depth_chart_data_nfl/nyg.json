@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-15T13:05:58.364045+00:00",
-  "ourladsUpdatedAt": "2026-09-15T13:05:58.364045+00:00",
+  "generatedAt": "2026-09-18T13:14:24.017992+00:00",
+  "ourladsUpdatedAt": "2026-09-18T13:14:24.017992+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:11.846913+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Giants",
@@ -56,18 +56,6 @@
       "pffTied": null
     },
     {
-      "position": "RWR",
-      "player": "Cambre, Dalen",
-      "jersey": "83",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
-    },
-    {
       "position": "SWR",
       "player": "Mooney, Darnell",
       "jersey": "17",
@@ -82,18 +70,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "SWR",
-      "player": "Berrios, Braxton",
-      "jersey": "87",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     },
     {
       "position": "LT",
@@ -353,8 +329,8 @@
     },
     {
       "position": "RB",
-      "player": "Tracy Jr., Tyrone",
-      "jersey": "29",
+      "player": "Singletary, Devin",
+      "jersey": "26",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -369,8 +345,8 @@
     },
     {
       "position": "RB",
-      "player": "Singletary, Devin",
-      "jersey": "26",
+      "player": "Tracy Jr., Tyrone",
+      "jersey": "29",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -478,6 +454,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "NT",
+      "player": "Tupou, Josh",
+      "jersey": "94",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "DT",
@@ -608,18 +596,6 @@
       "pffTied": null
     },
     {
-      "position": "MLB",
-      "player": "Harrison, Malik",
-      "jersey": "54",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
-    },
-    {
       "position": "SLB",
       "player": "Carter, Abdul",
       "jersey": "3",
@@ -701,6 +677,22 @@
     },
     {
       "position": "SS",
+      "player": "Campbell, Elijah",
+      "jersey": "28",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "SS",
       "player": "Pinnock, Jason",
       "jersey": "25",
       "code": "",
@@ -735,22 +727,6 @@
       "position": "FS",
       "player": "Washington, Ar'Darius",
       "jersey": "24",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "FS",
-      "player": "Campbell, Elijah",
-      "jersey": "28",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -909,18 +885,6 @@
     },
     {
       "position": "PR",
-      "player": "Berrios, Braxton",
-      "jersey": "87",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
-    },
-    {
-      "position": "PR",
       "player": "Holland, Jev\u00f3n",
       "jersey": "8",
       "code": "",
@@ -934,18 +898,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "KR",
-      "player": "Berrios, Braxton",
-      "jersey": "87",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     },
     {
       "position": "KR",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-15T13:06:24.301060+00:00",
-  "ourladsUpdatedAt": "2026-09-15T13:06:24.301060+00:00",
+  "generatedAt": "2026-09-18T13:14:50.609256+00:00",
+  "ourladsUpdatedAt": "2026-09-18T13:14:50.609256+00:00",
   "madden27UpdatedAt": "2026-09-05T00:44:55.084169+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Detroit Lions",
@@ -104,6 +104,18 @@
       "pffTied": null
     },
     {
+      "position": "LT",
+      "player": "Cochran, Devin",
+      "jersey": "77",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "LG",
       "player": "Mahogany, Christian",
       "jersey": "73",
@@ -121,8 +133,8 @@
     },
     {
       "position": "LG",
-      "player": "Frazier, Miles",
-      "jersey": "71",
+      "player": "Bartch, Ben",
+      "jersey": "78",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -152,6 +164,18 @@
       "pffTied": null
     },
     {
+      "position": "C",
+      "player": "McLaughlin, Seth",
+      "jersey": "65",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "RG",
       "player": "Ratledge, Tate",
       "jersey": "69",
@@ -169,8 +193,8 @@
     },
     {
       "position": "RG",
-      "player": "Bartch, Ben",
-      "jersey": "78",
+      "player": "Frazier, Miles",
+      "jersey": "71",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -457,8 +481,8 @@
     },
     {
       "position": "RDT",
-      "player": "Stille, Ben",
-      "jersey": "96",
+      "player": "Onwuzurike, Levi",
+      "jersey": "95",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -676,6 +700,22 @@
       "pffTied": null
     },
     {
+      "position": "LCB",
+      "player": "Rakestraw Jr., Ennis",
+      "jersey": "2",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
       "position": "SS",
       "player": "Maddox, Avonte",
       "jersey": "29",
@@ -741,8 +781,8 @@
     },
     {
       "position": "RCB",
-      "player": "Rakestraw Jr., Ennis",
-      "jersey": "2",
+      "player": "McCreary, Roger",
+      "jersey": "21",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -759,22 +799,6 @@
       "position": "NB",
       "player": "Izien, Christian",
       "jersey": "5",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "NB",
-      "player": "McCreary, Roger",
-      "jersey": "21",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -885,8 +909,8 @@
     },
     {
       "position": "PR",
-      "player": "Saylors, Jacob",
-      "jersey": "25",
+      "player": "Kennedy, Tom",
+      "jersey": "85",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -900,7 +924,7 @@
       "pffTied": null
     },
     {
-      "position": "PR",
+      "position": "KR",
       "player": "Kennedy, Tom",
       "jersey": "85",
       "code": "",
@@ -919,22 +943,6 @@
       "position": "KR",
       "player": "Saylors, Jacob",
       "jersey": "25",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "KR",
-      "player": "Kennedy, Tom",
-      "jersey": "85",
       "code": "",
       "isAcquired": false,
       "isReserve": false,

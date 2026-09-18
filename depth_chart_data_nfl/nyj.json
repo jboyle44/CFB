@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-15T13:06:11.412349+00:00",
-  "ourladsUpdatedAt": "2026-09-15T13:06:11.412349+00:00",
+  "generatedAt": "2026-09-18T13:14:37.425719+00:00",
+  "ourladsUpdatedAt": "2026-09-18T13:14:37.425719+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:13.092560+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Jets",
@@ -792,6 +792,18 @@
       "pffTied": null
     },
     {
+      "position": "NB",
+      "player": "Clark, Jordan",
+      "jersey": "33",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "PT",
       "player": "McNamara, Austin",
       "jersey": "14",
@@ -806,18 +818,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "PK",
-      "player": "Sanders, Jason",
-      "jersey": "19",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     },
     {
       "position": "PK",
@@ -866,18 +866,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "KO",
-      "player": "Sanders, Jason",
-      "jersey": "19",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     },
     {
       "position": "KO",

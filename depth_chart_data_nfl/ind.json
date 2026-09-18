@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-15T13:06:32.773799+00:00",
-  "ourladsUpdatedAt": "2026-09-15T13:06:32.773799+00:00",
+  "generatedAt": "2026-09-18T13:14:59.369435+00:00",
+  "ourladsUpdatedAt": "2026-09-18T13:14:59.369435+00:00",
   "madden27UpdatedAt": "2026-09-05T00:44:58.881067+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Indianapolis Colts",
@@ -680,6 +680,22 @@
       "pffTied": null
     },
     {
+      "position": "LCB",
+      "player": "Taylor-Britt, Cam",
+      "jersey": "29",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
       "position": "SS",
       "player": "Haulcy, AJ",
       "jersey": "25",
@@ -758,18 +774,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "RCB",
-      "player": "Harris, Kenneth",
-      "jersey": "33",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     },
     {
       "position": "NB",
@@ -933,8 +937,8 @@
     },
     {
       "position": "KR",
-      "player": "Dulin, Ashton",
-      "jersey": "16",
+      "player": "McGowan, Seth",
+      "jersey": "20",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -949,8 +953,8 @@
     },
     {
       "position": "KR",
-      "player": "McGowan, Seth",
-      "jersey": "20",
+      "player": "Dulin, Ashton",
+      "jersey": "16",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -1035,22 +1039,6 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": null,
-      "player": "Taylor-Britt, Cam",
-      "jersey": "29",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "SUS",
       "pffGrade": null,
       "madden27Rating": null,
       "madden27Dev": null,

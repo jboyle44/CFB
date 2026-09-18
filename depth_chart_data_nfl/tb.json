@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-15T13:06:54.132396+00:00",
-  "ourladsUpdatedAt": "2026-09-15T13:06:54.132396+00:00",
+  "generatedAt": "2026-09-18T13:15:21.158858+00:00",
+  "ourladsUpdatedAt": "2026-09-18T13:15:21.158858+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:19.413576+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Tampa Bay Buccaneers",
@@ -408,18 +408,6 @@
       "pffTied": null
     },
     {
-      "position": "RB",
-      "player": "Williams, Josh",
-      "jersey": "18",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
-    },
-    {
       "position": "LDE",
       "player": "Kancey, Calijah",
       "jersey": "94",
@@ -724,18 +712,6 @@
       "pffTied": null
     },
     {
-      "position": "SS",
-      "player": "Melifonwu, Ifeatu",
-      "jersey": "5",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
-    },
-    {
       "position": "FS",
       "player": "Winfield Jr., Antoine",
       "jersey": "31",
@@ -945,6 +921,22 @@
     },
     {
       "position": "KR",
+      "player": "Johnson, Kameron",
+      "jersey": "19",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "KR",
       "player": "Tucker, Sean",
       "jersey": "44",
       "code": "",
@@ -977,8 +969,8 @@
     },
     {
       "position": "KR",
-      "player": "Johnson, Kameron",
-      "jersey": "19",
+      "player": "Williams, Josh",
+      "jersey": "18",
       "code": "",
       "isAcquired": false,
       "isReserve": false,

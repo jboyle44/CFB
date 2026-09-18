@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-15T13:06:37.031217+00:00",
-  "ourladsUpdatedAt": "2026-09-15T13:06:37.031217+00:00",
+  "generatedAt": "2026-09-18T13:15:03.777992+00:00",
+  "ourladsUpdatedAt": "2026-09-18T13:15:03.777992+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:20.738647+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Tennessee Titans",
@@ -145,7 +145,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "C",
@@ -660,18 +664,6 @@
       "pffTied": null
     },
     {
-      "position": "MLB",
-      "player": "Diabate, Mohamoud",
-      "jersey": "44",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
-    },
-    {
       "position": "LCB",
       "player": "Flott, Cor'Dale",
       "jersey": "18",
@@ -814,18 +806,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "NB",
-      "player": "Hallett II, Erick",
-      "jersey": "41",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     },
     {
       "position": "PT",

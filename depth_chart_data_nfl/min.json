@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-15T13:06:28.521669+00:00",
-  "ourladsUpdatedAt": "2026-09-15T13:06:28.521669+00:00",
+  "generatedAt": "2026-09-18T13:14:55.006242+00:00",
+  "ourladsUpdatedAt": "2026-09-18T13:14:55.006242+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:08.051108+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Minnesota Vikings",
@@ -361,8 +361,8 @@
     },
     {
       "position": "RB",
-      "player": "Mason, Jordan",
-      "jersey": "27",
+      "player": "Dallas, DeeJay",
+      "jersey": "31",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -374,18 +374,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "RB",
-      "player": "Dallas, DeeJay",
-      "jersey": "31",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     },
     {
       "position": "RB",
@@ -546,18 +534,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "LOLB",
-      "player": "Van Noy, Kyle",
-      "jersey": "17",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     },
     {
       "position": "WLB",
@@ -961,8 +937,8 @@
     },
     {
       "position": "KR",
-      "player": "Felton, Tai",
-      "jersey": "13",
+      "player": "Claiborne, Demond",
+      "jersey": "21",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -976,13 +952,13 @@
       "pffTied": null
     },
     {
-      "position": "KR",
-      "player": "Claiborne, Demond",
-      "jersey": "21",
+      "position": null,
+      "player": "Mason, Jordan",
+      "jersey": "27",
       "code": "",
       "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
+      "isReserve": true,
+      "reserveStatus": "IR",
       "pffGrade": null,
       "madden27Rating": null,
       "madden27Dev": null,

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-15T13:06:04.823890+00:00",
-  "ourladsUpdatedAt": "2026-09-15T13:06:04.823890+00:00",
+  "generatedAt": "2026-09-18T13:14:30.691202+00:00",
+  "ourladsUpdatedAt": "2026-09-18T13:14:30.691202+00:00",
   "madden27UpdatedAt": "2026-09-05T00:44:46.237218+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Buffalo Bills",
@@ -97,7 +97,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LT",
@@ -389,8 +393,8 @@
     },
     {
       "position": "RB",
-      "player": "Davis, Ray",
-      "jersey": "7",
+      "player": "Gore Jr., Frank",
+      "jersey": "20",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -405,15 +409,19 @@
     },
     {
       "position": "RB",
-      "player": "Gore Jr., Frank",
-      "jersey": "20",
+      "player": "Davis, Ray",
+      "jersey": "7",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "DE",
@@ -921,7 +929,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "PR",
@@ -959,6 +971,22 @@
       "position": "PR",
       "player": "Shakir, Khalil",
       "jersey": "10",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "KR",
+      "player": "Dortch, Greg",
+      "jersey": "19",
       "code": "",
       "isAcquired": false,
       "isReserve": false,

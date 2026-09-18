@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-15T13:06:09.122583+00:00",
-  "ourladsUpdatedAt": "2026-09-15T13:06:09.122583+00:00",
+  "generatedAt": "2026-09-18T13:14:35.179660+00:00",
+  "ourladsUpdatedAt": "2026-09-18T13:14:35.179660+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:09.278986+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New England Patriots",
@@ -481,7 +481,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RDE",
@@ -900,6 +904,22 @@
       "pffTied": null
     },
     {
+      "position": "PR",
+      "player": "Chism III, Efton",
+      "jersey": "86",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
       "position": "KR",
       "player": "Williams, Kyle",
       "jersey": "18",
@@ -983,22 +1003,6 @@
       "position": null,
       "player": "Jacobs, Khalil",
       "jersey": "59",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": null,
-      "player": "Montgomery, Myles",
-      "jersey": "39",
       "code": "",
       "isAcquired": false,
       "isReserve": true,

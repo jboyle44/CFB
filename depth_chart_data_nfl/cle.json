@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-15T13:06:17.937522+00:00",
-  "ourladsUpdatedAt": "2026-09-15T13:06:17.937522+00:00",
+  "generatedAt": "2026-09-18T13:14:43.971741+00:00",
+  "ourladsUpdatedAt": "2026-09-18T13:14:43.971741+00:00",
   "madden27UpdatedAt": "2026-09-05T00:44:51.291980+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Cleveland Browns",
@@ -73,7 +73,7 @@
     },
     {
       "position": "SWR",
-      "player": "Concepcion, KC",
+      "player": "Concepcion Jr., KC",
       "jersey": "1",
       "code": "",
       "isAcquired": false,
@@ -81,11 +81,7 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Dev": null
     },
     {
       "position": "SWR",
@@ -377,8 +373,8 @@
     },
     {
       "position": "RB",
-      "player": "Sampson, Dylan",
-      "jersey": "22",
+      "player": "Sanders, Raheim",
+      "jersey": "23",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -393,19 +389,15 @@
     },
     {
       "position": "RB",
-      "player": "Sanders, Raheim",
-      "jersey": "23",
+      "player": "McLaughlin, Jaleel",
+      "jersey": "38",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Dev": null
     },
     {
       "position": "FB",
@@ -584,18 +576,6 @@
       "pffTied": null
     },
     {
-      "position": "WLB",
-      "player": "Watson, Nathaniel",
-      "jersey": "40",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
-    },
-    {
       "position": "MLB",
       "player": "Schwesinger, Carson",
       "jersey": "49",
@@ -772,18 +752,6 @@
       "pffTied": null
     },
     {
-      "position": "RCB",
-      "player": "Ross, D'Angelo",
-      "jersey": "38",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
-    },
-    {
       "position": "NB",
       "player": "Harden, Myles",
       "jersey": "26",
@@ -913,8 +881,20 @@
     },
     {
       "position": "PR",
-      "player": "Concepcion, KC",
+      "player": "Concepcion Jr., KC",
       "jersey": "1",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "PR",
+      "player": "Boston, Denzel",
+      "jersey": "12",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -945,6 +925,22 @@
     },
     {
       "position": "KR",
+      "player": "Sanders, Raheim",
+      "jersey": "23",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "KR",
       "player": "Corley, Malachi",
       "jersey": "11",
       "code": "",
@@ -960,13 +956,13 @@
       "pffTied": null
     },
     {
-      "position": "KR",
+      "position": null,
       "player": "Sampson, Dylan",
       "jersey": "22",
       "code": "",
       "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
+      "isReserve": true,
+      "reserveStatus": "IR",
       "pffGrade": null,
       "madden27Rating": null,
       "madden27Dev": null,
@@ -1011,22 +1007,6 @@
       "position": null,
       "player": "Green, Kendrick",
       "jersey": "53",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": null,
-      "player": "Mathis, Damarri",
-      "jersey": "37",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
@@ -1091,6 +1071,22 @@
       "position": null,
       "player": "Bell, Travis",
       "jersey": "66",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": null,
+      "player": "Mathis, Damarri",
+      "jersey": "37",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
