@@ -1,6 +1,6 @@
 === illinois ===
 Scraping Ourlads depth chart for Illinois...
-  88 depth chart rows
+  93 depth chart rows
 Fetching CFBD transfer portal data for new transfers...
   73 transfers in from CFBD
 Fetching CFBD recruiting data for 32 (school, year) pairs...
@@ -43,7 +43,7 @@ Scraping Ourlads depth chart for Indiana...
   80 depth chart rows
 Fetching CFBD transfer portal data for new transfers...
   114 transfers in from CFBD
-Fetching CFBD recruiting data for 25 (school, year) pairs...
+Fetching CFBD recruiting data for 27 (school, year) pairs...
   Buffalo 2023: 14 players
   Buffalo 2024: 22 players
   Georgia State 2022: 10 players
@@ -53,6 +53,8 @@ Fetching CFBD recruiting data for 25 (school, year) pairs...
   Indiana 2022: 25 players
   Indiana 2023: 14 players
   Indiana 2024: 17 players
+  Indiana 2025: 26 players
+  Indiana 2026: 23 players
   Iowa State 2021: 20 players
   Iowa State 2022: 20 players
   James Madison 2021: 9 players
@@ -286,20 +288,24 @@ Wrote ../depth_chart_data/northwestern.json
 exit_code=0
 === ohio-state ===
 Scraping Ourlads depth chart for Ohio State...
-  77 depth chart rows
+  90 depth chart rows
 Fetching CFBD transfer portal data for new transfers...
   47 transfers in from CFBD
-Fetching CFBD recruiting data for 10 (school, year) pairs...
+Fetching CFBD recruiting data for 14 (school, year) pairs...
   Alabama 2022: 26 players
   Alabama 2023: 27 players
   BYU 2021: 17 players
   BYU 2022: 27 players
+  Duquesne 2021: 5 players
+  Duquesne 2022: 4 players
   Northwestern 2021: 16 players
   Northwestern 2022: 16 players
   Ohio State 2021: 26 players
   Ohio State 2022: 21 players
   Ohio State 2023: 24 players
   Ohio State 2024: 25 players
+  Ohio State 2025: 28 players
+  Ohio State 2026: 30 players
 Wrote ../depth_chart_data/ohio-state.json
 exit_code=0
 === oregon ===
@@ -328,7 +334,7 @@ Wrote ../depth_chart_data/oregon.json
 exit_code=0
 === penn-state ===
 Scraping Ourlads depth chart for Penn State...
-  85 depth chart rows
+  95 depth chart rows
 Fetching CFBD transfer portal data for new transfers...
   67 transfers in from CFBD
 Fetching CFBD recruiting data for 21 (school, year) pairs...
@@ -347,22 +353,20 @@ Fetching CFBD recruiting data for 21 (school, year) pairs...
   Penn State 2022: 24 players
   Penn State 2023: 24 players
   Penn State 2024: 26 players
+  Penn State 2025: 29 players
+  Penn State 2026: 15 players
   UCLA 2021: 18 players
   UCLA 2022: 13 players
   Utah 2023: 20 players
   Utah 2024: 16 players
-  Western Michigan 2023: 17 players
-  Western Michigan 2024: 25 players
 Wrote ../depth_chart_data/penn-state.json
 exit_code=0
 === purdue ===
 Scraping Ourlads depth chart for Purdue...
-  87 depth chart rows
+  85 depth chart rows
 Fetching CFBD transfer portal data for new transfers...
   131 transfers in from CFBD
-Fetching CFBD recruiting data for 27 (school, year) pairs...
-  Arkansas 2023: 27 players
-  Arkansas 2024: 17 players
+Fetching CFBD recruiting data for 25 (school, year) pairs...
   Army 2022: 30 players
   Army 2023: 39 players
   Buffalo 2023: 14 players
@@ -392,10 +396,10 @@ Wrote ../depth_chart_data/purdue.json
 exit_code=0
 === rutgers ===
 Scraping Ourlads depth chart for Rutgers...
-  71 depth chart rows
+  73 depth chart rows
 Fetching CFBD transfer portal data for new transfers...
-  61 transfers in from CFBD
-Fetching CFBD recruiting data for 28 (school, year) pairs...
+  62 transfers in from CFBD
+Fetching CFBD recruiting data for 29 (school, year) pairs...
   Drake 2021: 0 players
   Drake 2022: 0 players
   LIU Post 2022: 0 players
@@ -414,6 +418,7 @@ Fetching CFBD recruiting data for 28 (school, year) pairs...
   Rutgers 2022: 27 players
   Rutgers 2023: 21 players
   Rutgers 2024: 25 players
+  Rutgers 2025: 30 players
   South Carolina 2021: 10 players
   South Carolina 2022: 24 players
   South Dakota 2023: 8 players
@@ -463,10 +468,10 @@ Wrote ../depth_chart_data/ucla.json
 exit_code=0
 === usc ===
 Scraping Ourlads depth chart for USC...
-  85 depth chart rows
+  94 depth chart rows
 Fetching CFBD transfer portal data for new transfers...
   85 transfers in from CFBD
-Fetching CFBD recruiting data for 11 (school, year) pairs...
+Fetching CFBD recruiting data for 12 (school, year) pairs...
   Memphis 2024: 16 players
   Memphis 2025: 19 players
   Oregon State 2021: 14 players
@@ -478,6 +483,7 @@ Fetching CFBD recruiting data for 11 (school, year) pairs...
   USC 2023: 27 players
   USC 2024: 25 players
   USC 2025: 28 players
+  USC 2026: 34 players
 Wrote ../depth_chart_data/usc.json
 exit_code=0
 === washington ===
@@ -512,22 +518,18 @@ Wrote ../depth_chart_data/washington.json
 exit_code=0
 === wisconsin ===
 Scraping Ourlads depth chart for Wisconsin...
-  91 depth chart rows
+  67 depth chart rows
 Fetching CFBD transfer portal data for new transfers...
   89 transfers in from CFBD
-Fetching CFBD recruiting data for 24 (school, year) pairs...
+Fetching CFBD recruiting data for 18 (school, year) pairs...
   Augustana 2023: 0 players
   Augustana 2024: 0 players
   Bethel 2021: 0 players
   Bethel 2022: 0 players
   Charlotte 2022: 16 players
   Charlotte 2023: 15 players
-  Hope  2021: 0 players
-  Hope  2022: 0 players
-  Richmond 2022: 7 players
-  Richmond 2023: 0 players
-  Southeastern Louisiana 2022: 5 players
-  Southeastern Louisiana 2023: 0 players
+  LSU 2022: 15 players
+  LSU 2023: 28 players
   Toledo 2023: 17 players
   Toledo 2024: 22 players
   UT Martin 2021: 3 players
@@ -536,8 +538,6 @@ Fetching CFBD recruiting data for 24 (school, year) pairs...
   Wisconsin 2022: 20 players
   Wisconsin 2023: 16 players
   Wisconsin 2024: 26 players
-  Wisconsin 2025: 22 players
-  Wisconsin 2026: 14 players
   Wisconsin La Crosse 2022: 0 players
   Wisconsin La Crosse 2023: 0 players
 Wrote ../depth_chart_data/wisconsin.json
@@ -598,20 +598,13 @@ Wrote ../depth_chart_data/arkansas.json
 exit_code=0
 === auburn ===
 Scraping Ourlads depth chart for Auburn...
-  116 depth chart rows
+  78 depth chart rows
 Fetching CFBD transfer portal data for new transfers...
   116 transfers in from CFBD
-Fetching CFBD recruiting data for 18 (school, year) pairs...
+Fetching CFBD recruiting data for 11 (school, year) pairs...
   Auburn 2021: 17 players
   Auburn 2022: 15 players
   Auburn 2023: 19 players
-  Auburn 2024: 22 players
-  Auburn 2025: 26 players
-  Auburn 2026: 20 players
-  Chattanooga 2024: 5 players
-  Chattanooga 2025: 7 players
-  Hampton 2022: 0 players
-  Hampton 2023: 0 players
   James Madison 2021: 9 players
   James Madison 2022: 14 players
   Oklahoma 2022: 22 players
@@ -753,7 +746,7 @@ Wrote ../depth_chart_data/ole-miss.json
 exit_code=0
 === mississippi-state ===
 Scraping Ourlads depth chart for Mississippi State...
-  71 depth chart rows
+  70 depth chart rows
 Fetching CFBD transfer portal data for new transfers...
   109 transfers in from CFBD
 Fetching CFBD recruiting data for 18 (school, year) pairs...
@@ -830,10 +823,10 @@ Wrote ../depth_chart_data/oklahoma.json
 exit_code=0
 === south-carolina ===
 Scraping Ourlads depth chart for South Carolina...
-  86 depth chart rows
+  83 depth chart rows
 Fetching CFBD transfer portal data for new transfers...
-  94 transfers in from CFBD
-Fetching CFBD recruiting data for 33 (school, year) pairs...
+  95 transfers in from CFBD
+Fetching CFBD recruiting data for 34 (school, year) pairs...
   Alabama 2021: 26 players
   Alabama 2022: 26 players
   Bowling Green 2022: 10 players
@@ -842,8 +835,6 @@ Fetching CFBD recruiting data for 33 (school, year) pairs...
   East Carolina 2022: 14 players
   Ferris State 2021: 0 players
   Ferris State 2022: 0 players
-  Florida State 2021: 17 players
-  Florida State 2022: 19 players
   Holy Cross 2022: 6 players
   Holy Cross 2023: 13 players
   Incarnate Word 2021: 14 players
@@ -854,15 +845,18 @@ Fetching CFBD recruiting data for 33 (school, year) pairs...
   Limestone University 2022: 0 players
   Missouri State 2022: 10 players
   Missouri State 2023: 13 players
-  New Mexico State 2021: 13 players
-  New Mexico State 2022: 22 players
+  Penn State 2024: 26 players
+  Penn State 2025: 29 players
   South Carolina 2021: 10 players
   South Carolina 2022: 24 players
   South Carolina 2023: 25 players
   South Carolina 2024: 17 players
   South Carolina 2025: 25 players
+  South Carolina 2026: 18 players
   South Carolina State 2022: 9 players
   South Carolina State 2023: 0 players
+  Southeast Missouri State 2024: 7 players
+  Southeast Missouri State 2025: 3 players
   Tennessee Tech 2021: 6 players
   Tennessee Tech 2022: 4 players
   Western Carolina 2022: 20 players
@@ -871,18 +865,20 @@ Wrote ../depth_chart_data/south-carolina.json
 exit_code=0
 === tennessee ===
 Scraping Ourlads depth chart for Tennessee...
-  77 depth chart rows
+  80 depth chart rows
 Fetching CFBD transfer portal data for new transfers...
   63 transfers in from CFBD
-Fetching CFBD recruiting data for 10 (school, year) pairs...
+Fetching CFBD recruiting data for 12 (school, year) pairs...
   Austin Peay 2021: 24 players
   Austin Peay 2022: 18 players
   Louisville 2023: 19 players
   Louisville 2024: 18 players
   Tennessee 2021: 14 players
   Tennessee 2022: 23 players
+  Tennessee 2023: 26 players
   Tennessee 2024: 23 players
   Tennessee 2025: 25 players
+  Tennessee 2026: 32 players
   West Georgia 2022: 0 players
   West Georgia 2023: 0 players
 Wrote ../depth_chart_data/tennessee.json
@@ -906,7 +902,7 @@ Wrote ../depth_chart_data/texas.json
 exit_code=0
 === texas-am ===
 Scraping Ourlads depth chart for Texas A&M...
-  84 depth chart rows
+  87 depth chart rows
 Fetching CFBD transfer portal data for new transfers...
   74 transfers in from CFBD
 Fetching CFBD recruiting data for 10 (school, year) pairs...
@@ -1346,9 +1342,7 @@ Scraping Ourlads depth chart for Syracuse...
   68 depth chart rows
 Fetching CFBD transfer portal data for new transfers...
   73 transfers in from CFBD
-Fetching CFBD recruiting data for 22 (school, year) pairs...
-  Colorado State 2022: 16 players
-  Colorado State 2023: 27 players
+Fetching CFBD recruiting data for 20 (school, year) pairs...
   Iowa State 2021: 20 players
   Iowa State 2022: 20 players
   Jackson State 2022: 7 players
@@ -1480,7 +1474,7 @@ Wrote ../depth_chart_data/wake-forest.json
 exit_code=0
 === notre-dame ===
 Scraping Ourlads depth chart for Notre Dame...
-  76 depth chart rows
+  81 depth chart rows
 Fetching CFBD transfer portal data for new transfers...
   38 transfers in from CFBD
 Fetching CFBD recruiting data for 3 (school, year) pairs...
@@ -1874,7 +1868,7 @@ Wrote ../depth_chart_data/kansas.json
 exit_code=0
 === kansas-state ===
 Scraping Ourlads depth chart for Kansas State...
-  79 depth chart rows
+  67 depth chart rows
 Fetching CFBD transfer portal data for new transfers...
   74 transfers in from CFBD
 Fetching CFBD recruiting data for 26 (school, year) pairs...
