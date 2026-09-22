@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-18T13:14:32.953168+00:00",
-  "ourladsUpdatedAt": "2026-09-18T13:14:32.953168+00:00",
+  "generatedAt": "2026-09-22T13:05:44.089050+00:00",
+  "ourladsUpdatedAt": "2026-09-22T13:05:44.089050+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:06.498142+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Miami Dolphins",
-  "offenseScheme": "11 - One RB, One TE (39%)",
+  "offenseScheme": "11 - One RB, One TE (68%)",
   "defenseScheme": "Base 4-3",
   "rows": [
     {
@@ -25,8 +25,8 @@
     },
     {
       "position": "LWR",
-      "player": "Coleman Jr., Kevin",
-      "jersey": "21",
+      "player": "Tolbert, Jalen",
+      "jersey": "1",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -57,8 +57,8 @@
     },
     {
       "position": "RWR",
-      "player": "Tolbert, Jalen",
-      "jersey": "1",
+      "player": "Miller, Ryan",
+      "jersey": "84",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -89,8 +89,8 @@
     },
     {
       "position": "SWR",
-      "player": "Miller, Ryan",
-      "jersey": "84",
+      "player": "Coleman Jr., Kevin",
+      "jersey": "21",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -465,6 +465,22 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "LDE",
+      "player": "Jones Jr., Andre",
+      "jersey": "",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
       "madden27Dev": null
     },
     {
@@ -580,22 +596,6 @@
       "pffTied": null
     },
     {
-      "position": "WLB",
-      "player": "Harrison Jr., Ronnie",
-      "jersey": "56",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "MLB",
       "player": "Rodriguez, Jacob",
       "jersey": "10",
@@ -677,8 +677,8 @@
     },
     {
       "position": "SS",
-      "player": "Anderson, Zayne",
-      "jersey": "23",
+      "player": "Taaffe, Michael",
+      "jersey": "16",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -709,8 +709,8 @@
     },
     {
       "position": "FS",
-      "player": "Taaffe, Michael",
-      "jersey": "16",
+      "player": "Trader Jr., Dante",
+      "jersey": "11",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -725,8 +725,8 @@
     },
     {
       "position": "FS",
-      "player": "Trader Jr., Dante",
-      "jersey": "11",
+      "player": "Anderson, Zayne",
+      "jersey": "23",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -765,7 +765,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "NB",
@@ -951,6 +955,22 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": null,
+      "player": "Harrison Jr., Ronnie",
+      "jersey": "56",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
       "pffGrade": null,
       "madden27Rating": null,
       "madden27Dev": null,

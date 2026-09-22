@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-18T13:14:24.017992+00:00",
-  "ourladsUpdatedAt": "2026-09-18T13:14:24.017992+00:00",
+  "generatedAt": "2026-09-22T13:05:36.304708+00:00",
+  "ourladsUpdatedAt": "2026-09-22T13:05:36.304708+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:11.846913+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Giants",
-  "offenseScheme": "11 - One RB, One TE (60%)",
+  "offenseScheme": "11 - One RB, One TE (32%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -70,6 +70,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "SWR",
+      "player": "Berrios, Braxton",
+      "jersey": "87",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LT",
@@ -457,15 +469,19 @@
     },
     {
       "position": "NT",
-      "player": "Tupou, Josh",
-      "jersey": "94",
+      "player": "Jamison-Travis, Bobby",
+      "jersey": "97",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "DT",
@@ -485,8 +501,8 @@
     },
     {
       "position": "DT",
-      "player": "Jamison-Travis, Bobby",
-      "jersey": "97",
+      "player": "Tupou, Josh",
+      "jersey": "94",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -596,6 +612,18 @@
       "pffTied": null
     },
     {
+      "position": "MLB",
+      "player": "Harrison, Malik",
+      "jersey": "54",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "SLB",
       "player": "Carter, Abdul",
       "jersey": "3",
@@ -645,8 +673,8 @@
     },
     {
       "position": "LCB",
-      "player": "Adebo, Paulson",
-      "jersey": "21",
+      "player": "Hood, Colton",
+      "jersey": "12",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -757,19 +785,15 @@
     },
     {
       "position": "RCB",
-      "player": "Hood, Colton",
-      "jersey": "12",
+      "player": "Reed, Nikko",
+      "jersey": "35",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Dev": null
     },
     {
       "position": "NB",
@@ -885,6 +909,18 @@
     },
     {
       "position": "PR",
+      "player": "Berrios, Braxton",
+      "jersey": "87",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "PR",
       "player": "Holland, Jev\u00f3n",
       "jersey": "8",
       "code": "",
@@ -898,6 +934,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "KR",
+      "player": "Berrios, Braxton",
+      "jersey": "87",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "KR",
@@ -949,8 +997,8 @@
     },
     {
       "position": null,
-      "player": "Black, Korie",
-      "jersey": "38",
+      "player": "Adebo, Paulson",
+      "jersey": "21",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
@@ -965,8 +1013,8 @@
     },
     {
       "position": null,
-      "player": "Robertson-Harris, Roy",
-      "jersey": "95",
+      "player": "Black, Korie",
+      "jersey": "38",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
@@ -1031,6 +1079,22 @@
       "position": null,
       "player": "Bernard-Converse, Jarrick",
       "jersey": "35",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": null,
+      "player": "Robertson-Harris, Roy",
+      "jersey": "95",
       "code": "",
       "isAcquired": false,
       "isReserve": true,

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-18T13:15:25.579698+00:00",
-  "ourladsUpdatedAt": "2026-09-18T13:15:25.579698+00:00",
+  "generatedAt": "2026-09-22T13:06:30.939400+00:00",
+  "ourladsUpdatedAt": "2026-09-22T13:06:30.939400+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:05.218600+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Los Angeles Rams",
-  "offenseScheme": "11 - One RB, One TE (59%)",
+  "offenseScheme": "11 - One RB, One TE (56%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -281,22 +281,6 @@
     },
     {
       "position": "TE",
-      "player": "Higbee, Tyler",
-      "jersey": "89",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "TE",
       "player": "Ferguson, Terrance",
       "jersey": "18",
       "code": "",
@@ -315,6 +299,22 @@
       "position": "TE",
       "player": "Allen, Davis",
       "jersey": "87",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "TE",
+      "player": "Higbee, Tyler",
+      "jersey": "89",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -600,6 +600,18 @@
       "pffTied": null
     },
     {
+      "position": "LILB",
+      "player": "Neal, Elias",
+      "jersey": "58",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "RILB",
       "player": "Speights, Omar",
       "jersey": "48",
@@ -713,8 +725,20 @@
     },
     {
       "position": "SS",
-      "player": "McCollough, Jaylen",
-      "jersey": "2",
+      "player": "Ingle, Tanner",
+      "jersey": "34",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "FS",
+      "player": "Kinchens, Kamren",
+      "jersey": "5",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -729,8 +753,8 @@
     },
     {
       "position": "FS",
-      "player": "Kinchens, Kamren",
-      "jersey": "5",
+      "player": "McCollough, Jaylen",
+      "jersey": "2",
       "code": "",
       "isAcquired": false,
       "isReserve": false,

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-18T13:15:16.810624+00:00",
-  "ourladsUpdatedAt": "2026-09-18T13:15:16.810624+00:00",
+  "generatedAt": "2026-09-22T13:06:23.093294+00:00",
+  "ourladsUpdatedAt": "2026-09-22T13:06:23.093294+00:00",
   "madden27UpdatedAt": "2026-09-05T00:44:47.501989+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Carolina Panthers",
-  "offenseScheme": "11 - One RB, One TE (65%)",
+  "offenseScheme": "11 - One RB, One TE (68%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -425,8 +425,8 @@
     },
     {
       "position": "LDE",
-      "player": "Hall, Aaron",
-      "jersey": "94",
+      "player": "Edwards, TeRah",
+      "jersey": "93",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -489,8 +489,8 @@
     },
     {
       "position": "RDE",
-      "player": "Edwards, TeRah",
-      "jersey": "93",
+      "player": "Hall, Aaron",
+      "jersey": "94",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -577,7 +577,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RILB",
@@ -757,8 +761,8 @@
     },
     {
       "position": "RCB",
-      "player": "Horn, Jaycee",
-      "jersey": "8",
+      "player": "Lee III, Will",
+      "jersey": "24",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -772,9 +776,9 @@
       "pffTied": null
     },
     {
-      "position": "RCB",
-      "player": "Lee III, Will",
-      "jersey": "24",
+      "position": "NB",
+      "player": "Horn, Jaycee",
+      "jersey": "8",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -885,6 +889,22 @@
     },
     {
       "position": "PR",
+      "player": "Coker, Jalen",
+      "jersey": "18",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "PR",
       "player": "Metchie III, John",
       "jersey": "13",
       "code": "",
@@ -916,22 +936,6 @@
       "pffTied": null
     },
     {
-      "position": "PR",
-      "player": "Hubbard, Chuba",
-      "jersey": "30",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "KR",
       "player": "Legette, Xavier",
       "jersey": "17",
@@ -951,22 +955,6 @@
       "position": "KR",
       "player": "Metchie III, John",
       "jersey": "13",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "KR",
-      "player": "Hubbard, Chuba",
-      "jersey": "30",
       "code": "",
       "isAcquired": false,
       "isReserve": false,

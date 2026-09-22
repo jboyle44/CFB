@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-18T13:14:21.825354+00:00",
-  "ourladsUpdatedAt": "2026-09-18T13:14:21.825354+00:00",
+  "generatedAt": "2026-09-22T13:05:34.351083+00:00",
+  "ourladsUpdatedAt": "2026-09-22T13:05:34.351083+00:00",
   "madden27UpdatedAt": "2026-09-05T00:44:52.552429+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Dallas Cowboys",
-  "offenseScheme": "11 - One RB, One TE (66%)",
+  "offenseScheme": "11 - One RB, One TE (71%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -369,7 +369,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "FB",
@@ -645,8 +649,8 @@
     },
     {
       "position": "LCB",
-      "player": "Revel Jr., Shavon",
-      "jersey": "28",
+      "player": "Speed, Ameer",
+      "jersey": "23",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -661,8 +665,8 @@
     },
     {
       "position": "LCB",
-      "player": "Speed, Ameer",
-      "jersey": "23",
+      "player": "Carson, Caelen",
+      "jersey": "21",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -773,8 +777,8 @@
     },
     {
       "position": "RCB",
-      "player": "Carson, Caelen",
-      "jersey": "21",
+      "player": "Revel Jr., Shavon",
+      "jersey": "28",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -957,7 +961,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": null,

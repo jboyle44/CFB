@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-18T13:15:27.815762+00:00",
-  "ourladsUpdatedAt": "2026-09-18T13:15:27.815762+00:00",
+  "generatedAt": "2026-09-22T13:06:32.870263+00:00",
+  "ourladsUpdatedAt": "2026-09-22T13:06:32.870263+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:16.912510+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "San Francisco 49ers",
-  "offenseScheme": "11 - One RB, One TE (43%)",
+  "offenseScheme": "11 - One RB, One TE (28%)",
   "defenseScheme": "Base 4-3",
   "rows": [
     {
@@ -65,7 +65,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "SWR",
@@ -285,7 +289,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "QB",
@@ -430,6 +438,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "LDE",
+      "player": "Okoronkwo, Ogbo",
+      "jersey": "59",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LDT",

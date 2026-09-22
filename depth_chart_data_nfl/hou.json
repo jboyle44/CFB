@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-18T13:14:57.221451+00:00",
-  "ourladsUpdatedAt": "2026-09-18T13:14:57.221451+00:00",
+  "generatedAt": "2026-09-22T13:06:05.548014+00:00",
+  "ourladsUpdatedAt": "2026-09-22T13:06:05.548014+00:00",
   "madden27UpdatedAt": "2026-09-05T00:44:57.646288+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Houston Texans",
-  "offenseScheme": "11 - One RB, One TE (66%)",
+  "offenseScheme": "11 - One RB, One TE (58%)",
   "defenseScheme": "Base 4-3",
   "rows": [
     {
@@ -137,8 +137,8 @@
     },
     {
       "position": "LG",
-      "player": "Teller, Wyatt",
-      "jersey": "75",
+      "player": "Nwaiwu, Febechi",
+      "jersey": "64",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -201,8 +201,8 @@
     },
     {
       "position": "RG",
-      "player": "Nwaiwu, Febechi",
-      "jersey": "64",
+      "player": "Teller, Wyatt",
+      "jersey": "75",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -281,8 +281,8 @@
     },
     {
       "position": "TE",
-      "player": "Klein, Marlin",
-      "jersey": "83",
+      "player": "Stover, Cade",
+      "jersey": "8",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -297,8 +297,8 @@
     },
     {
       "position": "TE",
-      "player": "Stover, Cade",
-      "jersey": "8",
+      "player": "Klein, Marlin",
+      "jersey": "83",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -488,22 +488,6 @@
       "pffTied": null
     },
     {
-      "position": "LDT",
-      "player": "McDonald, Kayden",
-      "jersey": "93",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "RDT",
       "player": "Rankins, Sheldon",
       "jersey": "98",
@@ -673,7 +657,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LCB",
@@ -997,6 +985,22 @@
     },
     {
       "position": null,
+      "player": "McDonald, Kayden",
+      "jersey": "93",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": null,
       "player": "Dell, Tank",
       "jersey": "1",
       "code": "",
@@ -1077,22 +1081,6 @@
     },
     {
       "position": null,
-      "player": "Horton, Dylan",
-      "jersey": "92",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": null,
       "player": "Gaye, Ali",
       "jersey": "95",
       "code": "",
@@ -1143,6 +1131,22 @@
       "position": null,
       "player": "Ossai, K.C.",
       "jersey": "52",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": null,
+      "player": "Horton, Dylan",
+      "jersey": "92",
       "code": "",
       "isAcquired": false,
       "isReserve": true,

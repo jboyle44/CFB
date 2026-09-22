@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-18T13:14:26.194877+00:00",
-  "ourladsUpdatedAt": "2026-09-18T13:14:26.194877+00:00",
+  "generatedAt": "2026-09-22T13:05:38.269888+00:00",
+  "ourladsUpdatedAt": "2026-09-22T13:05:38.269888+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:14.368126+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Philadelphia Eagles",
-  "offenseScheme": "11 - One RB, One TE (59%)",
+  "offenseScheme": "11 - One RB, One TE (72%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -153,8 +153,8 @@
     },
     {
       "position": "LG",
-      "player": "Kendall, Drew",
-      "jersey": "66",
+      "player": "Jurgens, Cam",
+      "jersey": "51",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -185,8 +185,8 @@
     },
     {
       "position": "C",
-      "player": "Jurgens, Cam",
-      "jersey": "51",
+      "player": "Kendall, Drew",
+      "jersey": "66",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -968,6 +968,22 @@
       "pffTied": null
     },
     {
+      "position": "KR",
+      "player": "Covey, Britain",
+      "jersey": "85",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
       "position": null,
       "player": "Dickerson, Landon",
       "jersey": "69",
@@ -1055,22 +1071,6 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": null,
-      "player": "Gray, Danny",
-      "jersey": "82",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "PS/IR",
       "pffGrade": null,
       "madden27Rating": null,
       "madden27Dev": null,
