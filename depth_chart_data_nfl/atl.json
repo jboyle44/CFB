@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-22T13:06:21.145881+00:00",
-  "ourladsUpdatedAt": "2026-09-22T13:06:21.145881+00:00",
+  "generatedAt": "2026-09-25T13:17:51.092804+00:00",
+  "ourladsUpdatedAt": "2026-09-25T13:17:51.092804+00:00",
   "madden27UpdatedAt": "2026-09-05T00:44:43.688845+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Atlanta Falcons",
-  "offenseScheme": "11 - One RB, One TE (51%)",
+  "offenseScheme": "11 - One RB, One TE (56%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -24,9 +24,9 @@
       "pffTied": null
     },
     {
-      "position": "LWR",
-      "player": "Blair, Chris",
-      "jersey": "19",
+      "position": "RWR",
+      "player": "Dotson, Jahan",
+      "jersey": "4",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -41,8 +41,8 @@
     },
     {
       "position": "RWR",
-      "player": "Dotson, Jahan",
-      "jersey": "4",
+      "player": "Blair, Chris",
+      "jersey": "19",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -408,6 +408,18 @@
       "pffTied": null
     },
     {
+      "position": "DE",
+      "player": "Harrison, Zach",
+      "jersey": "96",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "NT",
       "player": "London, LaCale",
       "jersey": "94",
@@ -457,8 +469,8 @@
     },
     {
       "position": "LOLB",
-      "player": "Ebukam, Samson",
-      "jersey": "52",
+      "player": "Thomas, Cameron",
+      "jersey": "99",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -473,8 +485,8 @@
     },
     {
       "position": "LOLB",
-      "player": "Smith, Za'Darius",
-      "jersey": "55",
+      "player": "Ivey, Jared",
+      "jersey": "51",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -489,19 +501,15 @@
     },
     {
       "position": "LOLB",
-      "player": "Abdullah, Yasir",
-      "jersey": "22",
+      "player": "Trice, Bralen",
+      "jersey": "48",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Dev": null
     },
     {
       "position": "LILB",
@@ -585,8 +593,8 @@
     },
     {
       "position": "ROLB",
-      "player": "Thomas, Cameron",
-      "jersey": "99",
+      "player": "Ebukam, Samson",
+      "jersey": "52",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -601,8 +609,24 @@
     },
     {
       "position": "ROLB",
-      "player": "Ivey, Jared",
-      "jersey": "51",
+      "player": "Smith, Za'Darius",
+      "jersey": "55",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "ROLB",
+      "player": "Abdullah, Yasir",
+      "jersey": "22",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -729,22 +753,6 @@
     },
     {
       "position": "RCB",
-      "player": "Terrell Jr., A.J.",
-      "jersey": "24",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "RCB",
       "player": "Henderson, C.J.",
       "jersey": "26",
       "code": "",
@@ -760,9 +768,9 @@
       "pffTied": null
     },
     {
-      "position": "NB",
-      "player": "Bowman Jr., Billy",
-      "jersey": "33",
+      "position": "RCB",
+      "player": "Terrell, Avieon",
+      "jersey": "12",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -776,9 +784,21 @@
       "pffTied": null
     },
     {
+      "position": "RCB",
+      "player": "Longerbeam, Robert",
+      "jersey": "37",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "NB",
-      "player": "Terrell, Avieon",
-      "jersey": "12",
+      "player": "Bowman Jr., Billy",
+      "jersey": "33",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -969,6 +989,22 @@
     },
     {
       "position": null,
+      "player": "Terrell Jr., A.J.",
+      "jersey": "24",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": null,
       "player": "Hand, Da'Shawn",
       "jersey": "90",
       "code": "",
@@ -1033,8 +1069,8 @@
     },
     {
       "position": null,
-      "player": "Sermon, Trey",
-      "jersey": "44",
+      "player": "Walker, Jalon",
+      "jersey": "11",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
@@ -1049,8 +1085,8 @@
     },
     {
       "position": null,
-      "player": "Walker, Jalon",
-      "jersey": "11",
+      "player": "Sermon, Trey",
+      "jersey": "44",
       "code": "",
       "isAcquired": false,
       "isReserve": true,

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-22T13:05:36.304708+00:00",
-  "ourladsUpdatedAt": "2026-09-22T13:05:36.304708+00:00",
+  "generatedAt": "2026-09-25T13:17:02.187444+00:00",
+  "ourladsUpdatedAt": "2026-09-25T13:17:02.187444+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:11.846913+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Giants",
-  "offenseScheme": "11 - One RB, One TE (32%)",
+  "offenseScheme": "11 - One RB, One TE (46%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -70,18 +70,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "SWR",
-      "player": "Berrios, Braxton",
-      "jersey": "87",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     },
     {
       "position": "LT",
@@ -293,22 +281,6 @@
     },
     {
       "position": "QB",
-      "player": "Dart, Jaxson",
-      "jersey": "6",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "QB",
       "player": "Winston, Jameis",
       "jersey": "19",
       "code": "",
@@ -357,8 +329,8 @@
     },
     {
       "position": "RB",
-      "player": "Tracy Jr., Tyrone",
-      "jersey": "29",
+      "player": "Harris, Najee",
+      "jersey": "23",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -373,8 +345,8 @@
     },
     {
       "position": "RB",
-      "player": "Harris, Najee",
-      "jersey": "23",
+      "player": "Tracy Jr., Tyrone",
+      "jersey": "29",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -549,22 +521,6 @@
     },
     {
       "position": "WLB",
-      "player": "Kelly, Jack",
-      "jersey": "51",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "WLB",
       "player": "Barnes, Zaire",
       "jersey": "46",
       "code": "",
@@ -613,15 +569,19 @@
     },
     {
       "position": "MLB",
-      "player": "Harrison, Malik",
-      "jersey": "54",
+      "player": "Kelly, Jack",
+      "jersey": "51",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "SLB",
@@ -793,7 +753,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "NB",
@@ -909,18 +873,6 @@
     },
     {
       "position": "PR",
-      "player": "Berrios, Braxton",
-      "jersey": "87",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
-    },
-    {
-      "position": "PR",
       "player": "Holland, Jev\u00f3n",
       "jersey": "8",
       "code": "",
@@ -934,18 +886,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "KR",
-      "player": "Berrios, Braxton",
-      "jersey": "87",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     },
     {
       "position": "KR",
@@ -1029,8 +969,8 @@
     },
     {
       "position": null,
-      "player": "Dixon, Thaddeus",
-      "jersey": "39",
+      "player": "Dart, Jaxson",
+      "jersey": "6",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
@@ -1045,8 +985,8 @@
     },
     {
       "position": null,
-      "player": "Olszewski, Gunner",
-      "jersey": "80",
+      "player": "Austin III, Calvin",
+      "jersey": "82",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
@@ -1109,8 +1049,24 @@
     },
     {
       "position": null,
-      "player": "Austin III, Calvin",
-      "jersey": "82",
+      "player": "Olszewski, Gunner",
+      "jersey": "80",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": null,
+      "player": "Dixon, Thaddeus",
+      "jersey": "39",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
