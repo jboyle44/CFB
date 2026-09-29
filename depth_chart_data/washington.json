@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-25T13:15:18.867061+00:00",
-  "ourladsUpdatedAt": "2026-09-25T13:15:18.867061+00:00",
-  "cfbdUpdatedAt": "2026-09-25T13:15:18.867061+00:00",
+  "generatedAt": "2026-09-29T13:25:46.988580+00:00",
+  "ourladsUpdatedAt": "2026-09-29T13:25:46.988580+00:00",
+  "cfbdUpdatedAt": "2026-09-29T13:25:46.988580+00:00",
   "cfb27UpdatedAt": "2026-09-05T00:45:03.025498+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
@@ -276,7 +276,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "LG",
@@ -345,7 +351,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RG",
@@ -414,7 +426,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RT",
@@ -558,7 +576,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "QB",
@@ -596,8 +620,8 @@
       "compositeScore": null,
       "transferScore": 85,
       "profileUrl": null,
-      "transferRank": 1837,
-      "transferPosRank": 116,
+      "transferRank": 1817,
+      "transferPosRank": 115,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
@@ -627,7 +651,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RB",
@@ -646,7 +676,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RB",
@@ -690,7 +726,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "DE",
@@ -728,8 +770,8 @@
       "compositeScore": null,
       "transferScore": 86,
       "profileUrl": null,
-      "transferRank": 760,
-      "transferPosRank": 91,
+      "transferRank": 755,
+      "transferPosRank": 90,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
@@ -759,7 +801,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "NT",
@@ -797,8 +845,8 @@
       "compositeScore": 86,
       "transferScore": 86,
       "profileUrl": null,
-      "transferRank": 687,
-      "transferPosRank": 76,
+      "transferRank": 678,
+      "transferPosRank": 75,
       "hsNationalRank": 1362,
       "hsPositionRank": null,
       "hsStateRank": null,
@@ -828,7 +876,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "NT",
@@ -847,7 +901,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "DT",
@@ -885,8 +945,8 @@
       "compositeScore": 82,
       "transferScore": 85,
       "profileUrl": null,
-      "transferRank": 1846,
-      "transferPosRank": 182,
+      "transferRank": 1851,
+      "transferPosRank": 183,
       "hsNationalRank": 2179,
       "hsPositionRank": null,
       "hsStateRank": null,
@@ -916,7 +976,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "DT",
@@ -935,7 +1001,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RUSH",
@@ -979,7 +1051,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RUSH",
@@ -1073,7 +1151,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "MLB",
@@ -1192,7 +1276,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "SS",
@@ -1305,8 +1395,8 @@
       "compositeScore": null,
       "transferScore": 88,
       "profileUrl": null,
-      "transferRank": 244,
-      "transferPosRank": 19,
+      "transferRank": 243,
+      "transferPosRank": 18,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
@@ -1361,7 +1451,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "NB",
@@ -1505,7 +1601,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "KO",
@@ -1524,7 +1626,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "KO",
@@ -1593,7 +1701,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "H",
@@ -1722,27 +1836,27 @@
     },
     {
       "position": "RES",
-      "player": "Christian Moss",
-      "jersey": "5",
-      "class": "RS SR",
-      "isTransfer": true,
+      "player": "Quaid Carr",
+      "jersey": "21",
+      "class": "RS FR",
+      "isTransfer": false,
       "isReserve": false,
       "reserveStatus": null,
       "compositeScore": 86,
-      "transferScore": 87,
+      "transferScore": null,
       "profileUrl": null,
-      "transferRank": 324,
-      "transferPosRank": 64,
-      "hsNationalRank": 1031,
+      "transferRank": null,
+      "transferPosRank": null,
+      "hsNationalRank": 1322,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": 65.7,
+      "pffGrade": null,
       "draftRank": null,
-      "pffPositionRank": 261,
-      "pffPositionTotal": 569,
-      "pffPositionLabel": "WR",
-      "pffTied": true,
-      "cfb27Rating": 82,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": 79,
       "cfb27Dev": "Impact"
     },
     {
@@ -1797,27 +1911,27 @@
     },
     {
       "position": "RES",
-      "player": "Quaid Carr",
-      "jersey": "21",
-      "class": "RS FR",
-      "isTransfer": false,
+      "player": "Christian Moss",
+      "jersey": "5",
+      "class": "RS SR",
+      "isTransfer": true,
       "isReserve": false,
       "reserveStatus": null,
       "compositeScore": 86,
-      "transferScore": null,
+      "transferScore": 87,
       "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
-      "hsNationalRank": 1322,
+      "transferRank": 323,
+      "transferPosRank": 64,
+      "hsNationalRank": 1031,
       "hsPositionRank": null,
       "hsStateRank": null,
-      "pffGrade": null,
+      "pffGrade": 65.7,
       "draftRank": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null,
-      "cfb27Rating": 79,
+      "pffPositionRank": 261,
+      "pffPositionTotal": 569,
+      "pffPositionLabel": "WR",
+      "pffTied": true,
+      "cfb27Rating": 82,
       "cfb27Dev": "Impact"
     }
   ]
