@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-25T13:17:51.092804+00:00",
-  "ourladsUpdatedAt": "2026-09-25T13:17:51.092804+00:00",
+  "generatedAt": "2026-09-29T13:09:38.907546+00:00",
+  "ourladsUpdatedAt": "2026-09-29T13:09:38.907546+00:00",
   "madden27UpdatedAt": "2026-09-05T00:44:43.688845+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Atlanta Falcons",
@@ -417,7 +417,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "NT",
@@ -498,18 +502,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "LOLB",
-      "player": "Trice, Bralen",
-      "jersey": "48",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     },
     {
       "position": "LILB",
@@ -793,7 +785,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "NB",
@@ -941,8 +937,8 @@
     },
     {
       "position": "KR",
-      "player": "Zaccheaus, Olamide",
-      "jersey": "14",
+      "player": "Robinson, Brian",
+      "jersey": "15",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -973,8 +969,8 @@
     },
     {
       "position": "KR",
-      "player": "Robinson, Brian",
-      "jersey": "15",
+      "player": "Zaccheaus, Olamide",
+      "jersey": "14",
       "code": "",
       "isAcquired": false,
       "isReserve": false,

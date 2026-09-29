@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-25T13:17:30.073230+00:00",
-  "ourladsUpdatedAt": "2026-09-25T13:17:30.073230+00:00",
+  "generatedAt": "2026-09-29T13:09:16.379455+00:00",
+  "ourladsUpdatedAt": "2026-09-29T13:09:16.379455+00:00",
   "madden27UpdatedAt": "2026-09-05T00:44:56.383634+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Green Bay Packers",
@@ -168,6 +168,18 @@
       "pffTied": null
     },
     {
+      "position": "LG",
+      "player": "Tomlinson, Laken",
+      "jersey": "",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "C",
       "player": "Rhyan, Sean",
       "jersey": "75",
@@ -230,6 +242,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "RG",
+      "player": "Becton, Mekhi",
+      "jersey": "",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RT",
@@ -361,22 +385,6 @@
     },
     {
       "position": "RB",
-      "player": "Brooks, Chris",
-      "jersey": "30",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "RB",
       "player": "Lloyd, MarShawn",
       "jersey": "32",
       "code": "",
@@ -395,6 +403,22 @@
       "position": "RB",
       "player": "Johnson, Kaleb",
       "jersey": "26",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "RB",
+      "player": "Brooks, Chris",
+      "jersey": "30",
       "code": "",
       "isAcquired": false,
       "isReserve": false,

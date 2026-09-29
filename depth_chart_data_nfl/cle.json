@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-25T13:17:21.315210+00:00",
-  "ourladsUpdatedAt": "2026-09-25T13:17:21.315210+00:00",
+  "generatedAt": "2026-09-29T13:09:07.323351+00:00",
+  "ourladsUpdatedAt": "2026-09-29T13:09:07.323351+00:00",
   "madden27UpdatedAt": "2026-09-05T00:44:51.291980+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Cleveland Browns",
@@ -649,8 +649,8 @@
     },
     {
       "position": "LCB",
-      "player": "Blackmon, Mekhi",
-      "jersey": "29",
+      "player": "Pride Jr., Toriano",
+      "jersey": "35",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -760,6 +760,22 @@
       "pffTied": null
     },
     {
+      "position": "RCB",
+      "player": "Blackmon, Mekhi",
+      "jersey": "29",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
       "position": "NB",
       "player": "Harden, Myles",
       "jersey": "26",
@@ -779,22 +795,6 @@
       "position": "NB",
       "player": "Igbinoghene, Noah",
       "jersey": "20",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "NB",
-      "player": "Pride Jr., Toriano",
-      "jersey": "35",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -1121,7 +1121,11 @@
       "reserveStatus": "PS/IR",
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": null,

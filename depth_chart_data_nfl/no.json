@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-25T13:17:55.297258+00:00",
-  "ourladsUpdatedAt": "2026-09-25T13:17:55.297258+00:00",
+  "generatedAt": "2026-09-29T13:09:43.376991+00:00",
+  "ourladsUpdatedAt": "2026-09-29T13:09:43.376991+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:10.598813+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New Orleans Saints",
@@ -40,9 +40,9 @@
       "pffTied": null
     },
     {
-      "position": "SWR",
-      "player": "Vele, Devaughn",
-      "jersey": "14",
+      "position": "RWR",
+      "player": "Brown, Barion",
+      "jersey": "19",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -57,8 +57,8 @@
     },
     {
       "position": "SWR",
-      "player": "Brown, Barion",
-      "jersey": "19",
+      "player": "Vele, Devaughn",
+      "jersey": "14",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -617,8 +617,8 @@
     },
     {
       "position": "ROLB",
-      "player": "Wilson, Tyree",
-      "jersey": "98",
+      "player": "Jennings, Anfernee",
+      "jersey": "33",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -633,8 +633,8 @@
     },
     {
       "position": "ROLB",
-      "player": "Jennings, Anfernee",
-      "jersey": "33",
+      "player": "Wilson, Tyree",
+      "jersey": "98",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -842,14 +842,18 @@
     {
       "position": "LS",
       "player": "Adomitis, Cal",
-      "jersey": "",
+      "jersey": "46",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "H",

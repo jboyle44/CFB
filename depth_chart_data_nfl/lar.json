@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-25T13:18:01.507749+00:00",
-  "ourladsUpdatedAt": "2026-09-25T13:18:01.507749+00:00",
+  "generatedAt": "2026-09-29T13:09:49.986431+00:00",
+  "ourladsUpdatedAt": "2026-09-29T13:09:49.986431+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:05.218600+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Los Angeles Rams",
@@ -297,8 +297,8 @@
     },
     {
       "position": "TE",
-      "player": "Allen, Davis",
-      "jersey": "87",
+      "player": "Higbee, Tyler",
+      "jersey": "89",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -313,8 +313,8 @@
     },
     {
       "position": "TE",
-      "player": "Higbee, Tyler",
-      "jersey": "89",
+      "player": "Allen, Davis",
+      "jersey": "87",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -753,7 +753,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RCB",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-25T13:17:14.910006+00:00",
-  "ourladsUpdatedAt": "2026-09-25T13:17:14.910006+00:00",
+  "generatedAt": "2026-09-29T13:09:00.569650+00:00",
+  "ourladsUpdatedAt": "2026-09-29T13:09:00.569650+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:13.092560+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Jets",
@@ -33,7 +33,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RWR",
@@ -66,6 +70,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "SWR",
+      "player": "Pritchett, Jamaal",
+      "jersey": "81",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LT",
@@ -397,7 +413,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "NT",
@@ -505,7 +525,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "MLB",
@@ -798,7 +822,7 @@
     {
       "position": "PK",
       "player": "Grupe, Blake",
-      "jersey": "4",
+      "jersey": "39",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -846,7 +870,7 @@
     {
       "position": "KO",
       "player": "Grupe, Blake",
-      "jersey": "4",
+      "jersey": "39",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -874,6 +898,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "PR",
+      "player": "Pritchett, Jamaal",
+      "jersey": "81",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "PR",
@@ -938,6 +974,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "KR",
+      "player": "Pritchett, Jamaal",
+      "jersey": "81",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": null,

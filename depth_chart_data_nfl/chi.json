@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-25T13:17:25.809928+00:00",
-  "ourladsUpdatedAt": "2026-09-25T13:17:25.809928+00:00",
+  "generatedAt": "2026-09-29T13:09:11.840160+00:00",
+  "ourladsUpdatedAt": "2026-09-29T13:09:11.840160+00:00",
   "madden27UpdatedAt": "2026-09-05T00:44:48.767448+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Chicago Bears",
@@ -313,8 +313,8 @@
     },
     {
       "position": "QB",
-      "player": "Bagent, Tyson",
-      "jersey": "17",
+      "player": "Keenum, Case",
+      "jersey": "11",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -329,8 +329,8 @@
     },
     {
       "position": "QB",
-      "player": "Keenum, Case",
-      "jersey": "11",
+      "player": "Bagent, Tyson",
+      "jersey": "17",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -849,7 +849,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "H",

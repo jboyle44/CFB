@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-25T13:17:08.525873+00:00",
-  "ourladsUpdatedAt": "2026-09-25T13:17:08.525873+00:00",
+  "generatedAt": "2026-09-29T13:08:53.716942+00:00",
+  "ourladsUpdatedAt": "2026-09-29T13:08:53.716942+00:00",
   "madden27UpdatedAt": "2026-09-05T00:44:46.237218+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Buffalo Bills",
@@ -86,6 +86,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "SWR",
+      "player": "Dortch, Greg",
+      "jersey": "19",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LT",
@@ -792,22 +804,6 @@
       "pffTied": null
     },
     {
-      "position": "NB",
-      "player": "Hancock, Jordan",
-      "jersey": "37",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "PT",
       "player": "Doman Jr., Tommy",
       "jersey": "39",
@@ -889,24 +885,20 @@
     },
     {
       "position": "PR",
-      "player": "Alford, Dee",
-      "jersey": "23",
+      "player": "Dortch, Greg",
+      "jersey": "19",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Dev": null
     },
     {
       "position": "PR",
-      "player": "Davis, Ray",
-      "jersey": "7",
+      "player": "Alford, Dee",
+      "jersey": "23",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -934,6 +926,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "KR",
+      "player": "Dortch, Greg",
+      "jersey": "19",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "KR",
@@ -968,13 +972,13 @@
       "pffTied": null
     },
     {
-      "position": "KR",
-      "player": "Shakir, Khalil",
-      "jersey": "10",
+      "position": null,
+      "player": "Hancock, Jordan",
+      "jersey": "37",
       "code": "",
       "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
+      "isReserve": true,
+      "reserveStatus": "IR",
       "pffGrade": null,
       "madden27Rating": null,
       "madden27Dev": null,
