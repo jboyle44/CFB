@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-29T13:18:58.309941+00:00",
-  "ourladsUpdatedAt": "2026-09-29T13:18:58.309941+00:00",
-  "cfbdUpdatedAt": "2026-09-29T13:18:58.309941+00:00",
+  "generatedAt": "2026-10-02T13:08:35.065000+00:00",
+  "ourladsUpdatedAt": "2026-10-02T13:08:35.065000+00:00",
+  "cfbdUpdatedAt": "2026-10-02T13:08:35.065000+00:00",
   "cfb27UpdatedAt": "2026-09-05T00:44:41.701988+00:00",
   "draftRankUpdatedAt": "2026-09-29T13:17:30.728379+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
@@ -45,7 +45,7 @@
       "compositeScore": 85,
       "transferScore": 85,
       "profileUrl": null,
-      "transferRank": 1896,
+      "transferRank": 1897,
       "transferPosRank": 270,
       "hsNationalRank": 1227,
       "hsPositionRank": null,
@@ -195,8 +195,8 @@
       "compositeScore": null,
       "transferScore": 85,
       "profileUrl": null,
-      "transferRank": 1908,
-      "transferPosRank": 273,
+      "transferRank": 1902,
+      "transferPosRank": 271,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
@@ -845,8 +845,8 @@
       "compositeScore": 84,
       "transferScore": 86,
       "profileUrl": null,
-      "transferRank": 507,
-      "transferPosRank": 52,
+      "transferRank": 520,
+      "transferPosRank": 54,
       "hsNationalRank": 1648,
       "hsPositionRank": null,
       "hsStateRank": null,
@@ -870,8 +870,8 @@
       "compositeScore": null,
       "transferScore": 86,
       "profileUrl": null,
-      "transferRank": 733,
-      "transferPosRank": 82,
+      "transferRank": 746,
+      "transferPosRank": 84,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
@@ -1120,7 +1120,7 @@
       "compositeScore": null,
       "transferScore": 84,
       "profileUrl": null,
-      "transferRank": 2168,
+      "transferRank": 2172,
       "transferPosRank": 214,
       "hsNationalRank": null,
       "hsPositionRank": null,
@@ -1520,8 +1520,8 @@
       "compositeScore": null,
       "transferScore": 86,
       "profileUrl": null,
-      "transferRank": 708,
-      "transferPosRank": 60,
+      "transferRank": 723,
+      "transferPosRank": 61,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
@@ -1970,8 +1970,8 @@
       "compositeScore": null,
       "transferScore": 85,
       "profileUrl": null,
-      "transferRank": 1908,
-      "transferPosRank": 273,
+      "transferRank": 1902,
+      "transferPosRank": 271,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
@@ -2251,7 +2251,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RES",
@@ -2270,7 +2276,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RES",
@@ -2289,7 +2301,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RES",
@@ -2308,7 +2326,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RES",
@@ -2327,7 +2351,13 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     }
   ]
 }
