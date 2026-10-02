@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-29T13:08:49.062053+00:00",
-  "ourladsUpdatedAt": "2026-09-29T13:08:49.062053+00:00",
+  "generatedAt": "2026-10-02T13:18:09.018646+00:00",
+  "ourladsUpdatedAt": "2026-10-02T13:18:09.018646+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:14.368126+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Philadelphia Eagles",
@@ -312,18 +312,6 @@
       "pffTied": null
     },
     {
-      "position": "TE",
-      "player": "Ertz, Zach",
-      "jersey": "86",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
-    },
-    {
       "position": "QB",
       "player": "Hurts, Jalen",
       "jersey": "1",
@@ -596,18 +584,6 @@
       "pffTied": null
     },
     {
-      "position": "WLB",
-      "player": "Campbell, Chance",
-      "jersey": "59",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
-    },
-    {
       "position": "MLB",
       "player": "Campbell, Jihaad",
       "jersey": "11",
@@ -691,6 +667,22 @@
       "position": "LCB",
       "player": "Jones, Jonathan",
       "jersey": "31",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "LCB",
+      "player": "McWilliams, Mac",
+      "jersey": "22",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -801,19 +793,15 @@
     },
     {
       "position": "NB",
-      "player": "McWilliams, Mac",
-      "jersey": "22",
+      "player": "Moore Ii, Kenny",
+      "jersey": "21",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Dev": null
     },
     {
       "position": "PT",
@@ -1095,6 +1083,22 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": null,
+      "player": "Campbell, Chance",
+      "jersey": "59",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "PS/IR",
       "pffGrade": null,
       "madden27Rating": null,
       "madden27Dev": null,

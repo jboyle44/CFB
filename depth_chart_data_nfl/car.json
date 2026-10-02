@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-29T13:09:41.184308+00:00",
-  "ourladsUpdatedAt": "2026-09-29T13:09:41.184308+00:00",
+  "generatedAt": "2026-10-02T13:18:53.208987+00:00",
+  "ourladsUpdatedAt": "2026-10-02T13:18:53.208987+00:00",
   "madden27UpdatedAt": "2026-09-05T00:44:47.501989+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Carolina Panthers",
@@ -22,6 +22,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "LWR",
+      "player": "Moore, David",
+      "jersey": "83",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RWR",
@@ -136,6 +148,22 @@
       "pffTied": null
     },
     {
+      "position": "LG",
+      "player": "Bullock, Corey",
+      "jersey": "67",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
       "position": "C",
       "player": "Fortner, Luke",
       "jersey": "77",
@@ -185,19 +213,15 @@
     },
     {
       "position": "RG",
-      "player": "Bullock, Corey",
-      "jersey": "67",
+      "player": "Simpkins III, Torricelli",
+      "jersey": "65",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Dev": null
     },
     {
       "position": "RT",
@@ -249,8 +273,8 @@
     },
     {
       "position": "TE",
-      "player": "Evans, Mitchell",
-      "jersey": "84",
+      "player": "Waller, Darren",
+      "jersey": "88",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -265,8 +289,8 @@
     },
     {
       "position": "TE",
-      "player": "Waller, Darren",
-      "jersey": "88",
+      "player": "Evans, Mitchell",
+      "jersey": "84",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -390,6 +414,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "RB",
+      "player": "Tyus III, Anthony",
+      "jersey": "34",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LDE",
@@ -584,18 +620,6 @@
       "pffTied": null
     },
     {
-      "position": "RILB",
-      "player": "Njongmeta, Maema",
-      "jersey": "45",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
-    },
-    {
       "position": "ROLB",
       "player": "Jones II, Patrick",
       "jersey": "91",
@@ -645,22 +669,6 @@
     },
     {
       "position": "LCB",
-      "player": "Jackson, Mike",
-      "jersey": "2",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "LCB",
       "player": "Evans, Akayleb",
       "jersey": "29",
       "code": "",
@@ -677,38 +685,6 @@
     },
     {
       "position": "SS",
-      "player": "Scott, Nick",
-      "jersey": "21",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "SS",
-      "player": "Wheatley, Zakee",
-      "jersey": "20",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "FS",
       "player": "Ransom, Lathan",
       "jersey": "22",
       "code": "",
@@ -724,7 +700,7 @@
       "pffTied": null
     },
     {
-      "position": "FS",
+      "position": "SS",
       "player": "Simmons, Isaiah",
       "jersey": "27",
       "code": "",
@@ -740,9 +716,25 @@
       "pffTied": null
     },
     {
-      "position": "RCB",
-      "player": "Horn, Jaycee",
-      "jersey": "8",
+      "position": "FS",
+      "player": "Scott, Nick",
+      "jersey": "21",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "FS",
+      "player": "Wheatley, Zakee",
+      "jersey": "20",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -965,8 +957,24 @@
     },
     {
       "position": null,
-      "player": "Cherelus, Claudin",
-      "jersey": "53",
+      "player": "Horn, Jaycee",
+      "jersey": "8",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": null,
+      "player": "Jackson, Mike",
+      "jersey": "2",
       "code": "",
       "isAcquired": false,
       "isReserve": true,

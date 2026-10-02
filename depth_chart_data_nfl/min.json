@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-29T13:09:18.618200+00:00",
-  "ourladsUpdatedAt": "2026-09-29T13:09:18.618200+00:00",
+  "generatedAt": "2026-10-02T13:18:34.026297+00:00",
+  "ourladsUpdatedAt": "2026-10-02T13:18:34.026297+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:08.051108+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Minnesota Vikings",
@@ -43,6 +43,22 @@
       "position": "RWR",
       "player": "Addison, Jordan",
       "jersey": "3",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "RWR",
+      "player": "Jones, Jeshaun",
+      "jersey": "82",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -249,22 +265,6 @@
     },
     {
       "position": "TE",
-      "player": "Oliver, Josh",
-      "jersey": "84",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "TE",
       "player": "Bartholomew, Gavin",
       "jersey": "86",
       "code": "",
@@ -310,6 +310,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "QB",
+      "player": "Brosmer, Max",
+      "jersey": "12",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RB",
@@ -486,6 +498,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "LOLB",
+      "player": "Van Noy, Kyle",
+      "jersey": "17",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LOLB",
@@ -792,18 +816,6 @@
       "pffTied": null
     },
     {
-      "position": "PT",
-      "player": "Hekker, Johnny",
-      "jersey": "6",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
-    },
-    {
       "position": "PK",
       "player": "Reichard, Will",
       "jersey": "16",
@@ -850,18 +862,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "H",
-      "player": "Hekker, Johnny",
-      "jersey": "6",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     },
     {
       "position": "KO",
@@ -945,6 +945,22 @@
     },
     {
       "position": null,
+      "player": "Oliver, Josh",
+      "jersey": "84",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": null,
       "player": "Samac, Nick",
       "jersey": "62",
       "code": "",
@@ -1009,22 +1025,6 @@
     },
     {
       "position": null,
-      "player": "Batty, Tyler",
-      "jersey": "92",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": null,
       "player": "Adams, Jamal",
       "jersey": "32",
       "code": "",
@@ -1057,12 +1057,12 @@
     },
     {
       "position": null,
-      "player": "Jones, Jeshaun",
-      "jersey": "82",
+      "player": "Batty, Tyler",
+      "jersey": "92",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
-      "reserveStatus": "SUS",
+      "reserveStatus": "IR",
       "pffGrade": null,
       "madden27Rating": null,
       "madden27Dev": null,

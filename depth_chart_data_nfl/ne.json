@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-29T13:08:58.248243+00:00",
-  "ourladsUpdatedAt": "2026-09-29T13:08:58.248243+00:00",
+  "generatedAt": "2026-10-02T13:18:16.704624+00:00",
+  "ourladsUpdatedAt": "2026-10-02T13:18:16.704624+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:09.278986+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New England Patriots",
@@ -168,7 +168,7 @@
       "pffTied": null
     },
     {
-      "position": "C",
+      "position": "RG",
       "player": "Brown, Ben",
       "jersey": "77",
       "code": "",
@@ -185,19 +185,15 @@
     },
     {
       "position": "RG",
-      "player": "Van Roten, Greg",
-      "jersey": "70",
+      "player": "Pryor, Matt",
+      "jersey": "",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Dev": null
     },
     {
       "position": "RT",
@@ -953,6 +949,22 @@
     },
     {
       "position": null,
+      "player": "Van Roten, Greg",
+      "jersey": "70",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": null,
       "player": "Hutchins, Quintayvious",
       "jersey": "45",
       "code": "",
@@ -1094,6 +1106,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": null,
+      "player": "Montgomery, Myles",
+      "jersey": "39",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": null,

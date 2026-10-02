@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-29T13:09:43.376991+00:00",
-  "ourladsUpdatedAt": "2026-09-29T13:09:43.376991+00:00",
+  "generatedAt": "2026-10-02T13:18:55.083824+00:00",
+  "ourladsUpdatedAt": "2026-10-02T13:18:55.083824+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:10.598813+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New Orleans Saints",
@@ -22,6 +22,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "LWR",
+      "player": "Austin Jr., Kevin",
+      "jersey": "81",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RWR",
@@ -313,22 +325,6 @@
     },
     {
       "position": "RB",
-      "player": "Etienne Jr., Travis",
-      "jersey": "3",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "RB",
       "player": "Kamara, Alvin",
       "jersey": "41",
       "code": "",
@@ -345,8 +341,8 @@
     },
     {
       "position": "RB",
-      "player": "Donaldson, CJ",
-      "jersey": "43",
+      "player": "Miller, Kendre",
+      "jersey": "5",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -361,8 +357,8 @@
     },
     {
       "position": "RB",
-      "player": "Miller, Kendre",
-      "jersey": "5",
+      "player": "Donaldson, CJ",
+      "jersey": "43",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -1065,8 +1061,8 @@
     },
     {
       "position": null,
-      "player": "Radunz, Dillon",
-      "jersey": "77",
+      "player": "Etienne Jr., Travis",
+      "jersey": "3",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
@@ -1081,8 +1077,8 @@
     },
     {
       "position": null,
-      "player": "Matavao, Moliki",
-      "jersey": "80",
+      "player": "Radunz, Dillon",
+      "jersey": "77",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
@@ -1161,8 +1157,8 @@
     },
     {
       "position": null,
-      "player": "Neal, Devin",
-      "jersey": "24",
+      "player": "Matavao, Moliki",
+      "jersey": "80",
       "code": "",
       "isAcquired": false,
       "isReserve": true,

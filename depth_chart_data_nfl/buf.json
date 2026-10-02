@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-29T13:08:53.716942+00:00",
-  "ourladsUpdatedAt": "2026-09-29T13:08:53.716942+00:00",
+  "generatedAt": "2026-10-02T13:18:12.905215+00:00",
+  "ourladsUpdatedAt": "2026-10-02T13:18:12.905215+00:00",
   "madden27UpdatedAt": "2026-09-05T00:44:46.237218+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Buffalo Bills",
@@ -97,7 +97,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LT",
@@ -893,7 +897,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "PR",
@@ -937,7 +945,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "KR",
@@ -1027,22 +1039,6 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "NFI",
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": null,
-      "player": "Mathis, Phidarian",
-      "jersey": "72",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "SUS",
       "pffGrade": null,
       "madden27Rating": null,
       "madden27Dev": null,

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-29T13:09:34.405845+00:00",
-  "ourladsUpdatedAt": "2026-09-29T13:09:34.405845+00:00",
+  "generatedAt": "2026-10-02T13:18:47.515754+00:00",
+  "ourladsUpdatedAt": "2026-10-02T13:18:47.515754+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:02.686342+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Las Vegas Raiders",
@@ -9,8 +9,8 @@
   "rows": [
     {
       "position": "LWR",
-      "player": "Tucker, Tre",
-      "jersey": "1",
+      "player": "Nailor, Jalen",
+      "jersey": "9",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -25,19 +25,15 @@
     },
     {
       "position": "RWR",
-      "player": "Nailor, Jalen",
-      "jersey": "9",
+      "player": "White, Cody",
+      "jersey": "82",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Dev": null
     },
     {
       "position": "RWR",
@@ -57,8 +53,8 @@
     },
     {
       "position": "SWR",
-      "player": "Bech, Jack",
-      "jersey": "18",
+      "player": "Tucker, Tre",
+      "jersey": "1",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -969,6 +965,22 @@
     },
     {
       "position": null,
+      "player": "Bech, Jack",
+      "jersey": "18",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": null,
       "player": "Runyon, Carter",
       "jersey": "84",
       "code": "",
@@ -987,22 +999,6 @@
       "position": null,
       "player": "Thornton Jr., Dont'e",
       "jersey": "10",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": null,
-      "player": "Crawford, Keyron",
-      "jersey": "42",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
@@ -1065,8 +1061,8 @@
     },
     {
       "position": null,
-      "player": "Shorter, Justin",
-      "jersey": "88",
+      "player": "Crawford, Keyron",
+      "jersey": "42",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
@@ -1094,6 +1090,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": null,
+      "player": "Pickett, Justin",
+      "jersey": "77",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     }
   ]
 }
