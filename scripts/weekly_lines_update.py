@@ -436,13 +436,20 @@ def main():
         max((r["week"] for r in existing_by_id.values()), default=1)
     )
 
-    # Clean up entries already corrupted by the bug above -- anything that
-    # doesn't meet the same real-data bar now being enforced going forward
-    # (a genuine week-specific source, or being the actual current week)
-    # gets dropped rather than left sitting there with misleading data.
+    # Clean up entries corrupted by the bug above: only snapshots sitting in
+    # a FUTURE week slot (week > current_week) without a genuine
+    # week-specific source are bogus. Past weeks must be kept.
+    #
+    # Confirmed real bug this fixes: this filter used to be
+    # `k[1] == current_week`, which deleted every legitimately captured
+    # season-file snapshot the moment the season moved on a week. Each
+    # Thursday run captured the current week's pre-game ratings, then the
+    # next Thursday run silently dropped it -- so history only ever held
+    # Week 1 (a real weekly source) plus whatever the current week was.
+    # Weeks 2-4 of 2026 were lost this way and restored from git history.
     history_by_week = {
         k: h for k, h in history_by_week.items()
-        if (h.get("source") or "").startswith("weekly snapshot") or k[1] == current_week
+        if (h.get("source") or "").startswith("weekly snapshot") or k[1] <= current_week
     }
 
     updated = {}
