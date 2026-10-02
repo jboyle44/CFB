@@ -4,9 +4,10 @@ Runs weekly via GitHub Actions (see .github/workflows/update_lines.yml).
 For every regular-season FBS week of the current season, pulls:
   - games + final scores from CollegeFootballData (CFBD)
   - the closing/current market spread for each game from CFBD's /lines
-  - MPG's power ratings (https://mpg000f.github.io/cbb_power_rating/#cfb),
-    using that week's snapshot if MPG has published one yet, otherwise the
-    latest season-level ratings file as an approximation
+  - MPG's power ratings (https://mpg000f.github.io/cbb_power_rating/#cfb):
+    for week N, MPG's week_{N-1} file (their state after week N-1's games,
+    i.e. the true pre-game state for week N) if published yet, otherwise
+    the latest season-level ratings file as an approximation
 
 ...and computes the model's projected spread and its pick against the
 market spread for every game. Results are merged into lines_data.json,
@@ -99,14 +100,34 @@ def fetch_mpg_ratings(year, week):
     current season-level file. Returns (ratings_by_team, full_rows,
     source_label) -- full_rows is the raw list of team rating dicts, kept
     so we can snapshot the whole grid into ratings_history.json even
-    though build_record() only needs the team->rating lookup."""
-    try:
-        data = get(f"{MPG_BASE}/data/cfb/weekly/{year}/week_{week:02d}.json")
-        rows = data["ratings"]
-        ratings = {r["team"]: r["rating"] for r in rows}
-        return ratings, rows, f"weekly snapshot (week {week})"
-    except Exception:
-        pass
+    though build_record() only needs the team->rating lookup.
+
+    MPG's week_NN.json is their state AFTER week NN's games. Confirmed real
+    off-by-one this fixes: we used to load week_{N} for week N, i.e. the
+    POST-game ratings, which is what originally polluted the Week 1 history
+    snapshot and would price any not-yet-kicked-off week-N game off ratings
+    that already include week N results. For week N >= 2 the correct
+    pre-game file is week_{N-1}. Its per-team "delta" is the change from
+    week N-1 itself, so it's stripped here -- otherwise
+    pregame_snapshot_rows() would roll it back one week too far. Week 1 has
+    no week_00, so it keeps the same-week file + delta reconstruction."""
+    if week >= 2:
+        prev = week - 1
+        try:
+            data = get(f"{MPG_BASE}/data/cfb/weekly/{year}/week_{prev:02d}.json")
+            rows = [{k: v for k, v in r.items() if k != "delta"} for r in data["ratings"]]
+            ratings = {r["team"]: r["rating"] for r in rows}
+            return ratings, rows, f"weekly snapshot (MPG week {prev} final = pre-week {week})"
+        except Exception:
+            pass
+    else:
+        try:
+            data = get(f"{MPG_BASE}/data/cfb/weekly/{year}/week_{week:02d}.json")
+            rows = data["ratings"]
+            ratings = {r["team"]: r["rating"] for r in rows}
+            return ratings, rows, f"weekly snapshot (week {week})"
+        except Exception:
+            pass
     try:
         data = get(f"{MPG_BASE}/data/cfb/ratings_{year}.json")
         rows = data["ratings"]
