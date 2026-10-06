@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-02T13:18:47.515754+00:00",
-  "ourladsUpdatedAt": "2026-10-02T13:18:47.515754+00:00",
+  "generatedAt": "2026-10-06T13:08:46.081824+00:00",
+  "ourladsUpdatedAt": "2026-10-06T13:08:46.081824+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:02.686342+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Las Vegas Raiders",
@@ -33,7 +33,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RWR",
@@ -677,8 +681,8 @@
     },
     {
       "position": "SS",
-      "player": "McCollum, Tristin",
-      "jersey": "27",
+      "player": "Johnson, Dalton",
+      "jersey": "43",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -693,8 +697,8 @@
     },
     {
       "position": "SS",
-      "player": "Johnson, Dalton",
-      "jersey": "43",
+      "player": "McCollum, Tristin",
+      "jersey": "27",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -741,8 +745,8 @@
     },
     {
       "position": "RCB",
-      "player": "Porter, Darien",
-      "jersey": "26",
+      "player": "Masses, Hezekiah",
+      "jersey": "35",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -757,8 +761,8 @@
     },
     {
       "position": "RCB",
-      "player": "Masses, Hezekiah",
-      "jersey": "35",
+      "player": "Porter, Darien",
+      "jersey": "26",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -1101,7 +1105,11 @@
       "reserveStatus": "IR",
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     }
   ]
 }

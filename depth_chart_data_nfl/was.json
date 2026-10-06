@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-02T13:18:10.931070+00:00",
-  "ourladsUpdatedAt": "2026-10-02T13:18:10.931070+00:00",
+  "generatedAt": "2026-10-06T13:08:05.321486+00:00",
+  "ourladsUpdatedAt": "2026-10-06T13:08:05.321486+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:22.024738+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Washington Commanders",
@@ -417,7 +417,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RB",
@@ -436,7 +440,7 @@
       "pffTied": null
     },
     {
-      "position": "DE",
+      "position": "LDE",
       "player": "Kinlaw, Javon",
       "jersey": "99",
       "code": "",
@@ -452,7 +456,7 @@
       "pffTied": null
     },
     {
-      "position": "DE",
+      "position": "LDE",
       "player": "Omenihu, Charles",
       "jersey": "90",
       "code": "",
@@ -500,7 +504,7 @@
       "pffTied": null
     },
     {
-      "position": "DT",
+      "position": "RDE",
       "player": "Payne, Daron",
       "jersey": "94",
       "code": "",
@@ -692,9 +696,9 @@
       "pffTied": null
     },
     {
-      "position": "SS",
-      "player": "Butler, Percy",
-      "jersey": "35",
+      "position": "FS",
+      "player": "Martin, Quan",
+      "jersey": "20",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -709,8 +713,8 @@
     },
     {
       "position": "FS",
-      "player": "Martin, Quan",
-      "jersey": "20",
+      "player": "Butler, Percy",
+      "jersey": "35",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -1117,7 +1121,11 @@
       "reserveStatus": "PS/IR",
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": null,

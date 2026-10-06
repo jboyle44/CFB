@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-02T13:19:02.893127+00:00",
-  "ourladsUpdatedAt": "2026-10-02T13:19:02.893127+00:00",
+  "generatedAt": "2026-10-06T13:09:03.024733+00:00",
+  "ourladsUpdatedAt": "2026-10-06T13:09:03.024733+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:16.912510+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "San Francisco 49ers",
@@ -11,6 +11,22 @@
       "position": "LWR",
       "player": "Evans, Mike",
       "jersey": "5",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "LWR",
+      "player": "Cooks, Brandin",
+      "jersey": "84",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -38,18 +54,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "RWR",
-      "player": "Cooks, Brandin",
-      "jersey": "84",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     },
     {
       "position": "SWR",
@@ -468,6 +472,18 @@
       "pffTied": null
     },
     {
+      "position": "LDT",
+      "player": "Valdez, Sebastian",
+      "jersey": "55",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "RDT",
       "player": "Halton, Gracen",
       "jersey": "93",
@@ -519,22 +535,6 @@
       "position": "RDE",
       "player": "Height, Romello",
       "jersey": "94",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "RDE",
-      "player": "Fehoko Jr., Viliami",
-      "jersey": "63",
       "code": "",
       "isAcquired": false,
       "isReserve": false,

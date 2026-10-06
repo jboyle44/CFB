@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-02T13:18:18.666906+00:00",
-  "ourladsUpdatedAt": "2026-10-02T13:18:18.666906+00:00",
+  "generatedAt": "2026-10-06T13:08:13.927193+00:00",
+  "ourladsUpdatedAt": "2026-10-06T13:08:13.927193+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:13.092560+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Jets",
@@ -56,9 +56,9 @@
       "pffTied": null
     },
     {
-      "position": "SWR",
-      "player": "Williams, Isaiah",
-      "jersey": "18",
+      "position": "RWR",
+      "player": "Pritchett, Jamaal",
+      "jersey": "81",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -73,8 +73,8 @@
     },
     {
       "position": "SWR",
-      "player": "Pritchett, Jamaal",
-      "jersey": "81",
+      "player": "Williams, Isaiah",
+      "jersey": "18",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -193,7 +193,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RT",
@@ -829,7 +833,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LS",
@@ -873,7 +881,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "PR",

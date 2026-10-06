@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-02T13:18:22.496714+00:00",
-  "ourladsUpdatedAt": "2026-10-02T13:18:22.496714+00:00",
+  "generatedAt": "2026-10-06T13:08:18.214227+00:00",
+  "ourladsUpdatedAt": "2026-10-06T13:08:18.214227+00:00",
   "madden27UpdatedAt": "2026-09-05T00:44:50.056470+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Cincinnati Bengals",
@@ -81,7 +81,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LT",
@@ -301,7 +305,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "TE",
@@ -417,8 +425,8 @@
     },
     {
       "position": "LDE",
-      "player": "Stewart, Shemar",
-      "jersey": "94",
+      "player": "Johnson, Cedric",
+      "jersey": "52",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -433,8 +441,8 @@
     },
     {
       "position": "LDE",
-      "player": "Johnson, Cedric",
-      "jersey": "52",
+      "player": "Stewart, Shemar",
+      "jersey": "94",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -625,8 +633,8 @@
     },
     {
       "position": "MLB",
-      "player": "Bozeman, Swayze",
-      "jersey": "47",
+      "player": "Giles-Harris, Joe",
+      "jersey": "43",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -641,8 +649,8 @@
     },
     {
       "position": "MLB",
-      "player": "Giles-Harris, Joe",
-      "jersey": "43",
+      "player": "Bozeman, Swayze",
+      "jersey": "47",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -705,8 +713,8 @@
     },
     {
       "position": "SS",
-      "player": "Jules, PJ",
-      "jersey": "37",
+      "player": "Dugger, Kyle",
+      "jersey": "29",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -737,8 +745,8 @@
     },
     {
       "position": "FS",
-      "player": "Dugger, Kyle",
-      "jersey": "29",
+      "player": "Jules, PJ",
+      "jersey": "37",
       "code": "",
       "isAcquired": false,
       "isReserve": false,

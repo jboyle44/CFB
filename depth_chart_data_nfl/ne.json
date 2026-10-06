@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-02T13:18:16.704624+00:00",
-  "ourladsUpdatedAt": "2026-10-02T13:18:16.704624+00:00",
+  "generatedAt": "2026-10-06T13:08:11.779472+00:00",
+  "ourladsUpdatedAt": "2026-10-06T13:08:11.779472+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:09.278986+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New England Patriots",
@@ -186,14 +186,18 @@
     {
       "position": "RG",
       "player": "Pryor, Matt",
-      "jersey": "",
+      "jersey": "65",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RT",
@@ -421,8 +425,8 @@
     },
     {
       "position": "LDE",
-      "player": "Farmer, Joshua",
-      "jersey": "92",
+      "player": "Taylor III, Leonard",
+      "jersey": "93",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -485,8 +489,8 @@
     },
     {
       "position": "RDE",
-      "player": "Taylor III, Leonard",
-      "jersey": "93",
+      "player": "Farmer, Joshua",
+      "jersey": "92",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -661,8 +665,8 @@
     },
     {
       "position": "LCB",
-      "player": "Woods, Charles",
-      "jersey": "22",
+      "player": "Prunty, Karon",
+      "jersey": "21",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -741,8 +745,8 @@
     },
     {
       "position": "RCB",
-      "player": "Prunty, Karon",
-      "jersey": "21",
+      "player": "Woods, Charles",
+      "jersey": "22",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -1117,7 +1121,11 @@
       "reserveStatus": "IR",
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": null,

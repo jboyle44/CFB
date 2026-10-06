@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-02T13:18:30.117426+00:00",
-  "ourladsUpdatedAt": "2026-10-02T13:18:30.117426+00:00",
+  "generatedAt": "2026-10-06T13:08:26.883373+00:00",
+  "ourladsUpdatedAt": "2026-10-06T13:08:26.883373+00:00",
   "madden27UpdatedAt": "2026-09-05T00:44:55.084169+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Detroit Lions",
@@ -593,7 +593,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "WLB",
@@ -661,6 +665,22 @@
     },
     {
       "position": "LCB",
+      "player": "Rakestraw Jr., Ennis",
+      "jersey": "2",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "LCB",
       "player": "Ya-Sin, Rock",
       "jersey": "23",
       "code": "",
@@ -676,25 +696,9 @@
       "pffTied": null
     },
     {
-      "position": "LCB",
-      "player": "Dorsey, Khalil",
-      "jersey": "30",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "SS",
-      "player": "Clark, Chuck",
-      "jersey": "36",
+      "player": "Izien, Christian",
+      "jersey": "5",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -709,8 +713,8 @@
     },
     {
       "position": "FS",
-      "player": "Izien, Christian",
-      "jersey": "5",
+      "player": "Clark, Chuck",
+      "jersey": "36",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -757,8 +761,8 @@
     },
     {
       "position": "RCB",
-      "player": "Rakestraw Jr., Ennis",
-      "jersey": "2",
+      "player": "Dorsey, Khalil",
+      "jersey": "30",
       "code": "",
       "isAcquired": false,
       "isReserve": false,

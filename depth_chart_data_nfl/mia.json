@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-02T13:18:14.780386+00:00",
-  "ourladsUpdatedAt": "2026-10-02T13:18:14.780386+00:00",
+  "generatedAt": "2026-10-06T13:08:09.610900+00:00",
+  "ourladsUpdatedAt": "2026-10-06T13:08:09.610900+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:06.498142+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Miami Dolphins",
@@ -57,8 +57,8 @@
     },
     {
       "position": "RWR",
-      "player": "Miller, Ryan",
-      "jersey": "84",
+      "player": "Coleman Jr., Kevin",
+      "jersey": "21",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -89,8 +89,8 @@
     },
     {
       "position": "SWR",
-      "player": "Coleman Jr., Kevin",
-      "jersey": "21",
+      "player": "Miller, Ryan",
+      "jersey": "84",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -377,8 +377,8 @@
     },
     {
       "position": "RB",
-      "player": "Wright, Jaylen",
-      "jersey": "5",
+      "player": "Gordon II, Ollie",
+      "jersey": "0",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -393,8 +393,8 @@
     },
     {
       "position": "RB",
-      "player": "Gordon II, Ollie",
-      "jersey": "0",
+      "player": "Wright, Jaylen",
+      "jersey": "5",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -577,7 +577,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "MLB",

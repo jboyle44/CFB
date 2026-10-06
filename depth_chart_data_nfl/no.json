@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-02T13:18:55.083824+00:00",
-  "ourladsUpdatedAt": "2026-10-02T13:18:55.083824+00:00",
+  "generatedAt": "2026-10-06T13:08:54.511320+00:00",
+  "ourladsUpdatedAt": "2026-10-06T13:08:54.511320+00:00",
   "madden27UpdatedAt": "2026-09-05T00:45:10.598813+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New Orleans Saints",
@@ -33,7 +33,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RWR",
@@ -421,8 +425,8 @@
     },
     {
       "position": "NT",
-      "player": "Miller, Christen",
-      "jersey": "52",
+      "player": "Boyd, Khristian",
+      "jersey": "97",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -437,8 +441,8 @@
     },
     {
       "position": "NT",
-      "player": "Boyd, Khristian",
-      "jersey": "97",
+      "player": "Miller, Christen",
+      "jersey": "52",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -516,6 +520,18 @@
       "pffTied": null
     },
     {
+      "position": "LOLB",
+      "player": "Diggs, Fadil",
+      "jersey": "40",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "WLB",
       "player": "Elliss, Kaden",
       "jersey": "55",
@@ -533,8 +549,8 @@
     },
     {
       "position": "WLB",
-      "player": "Rumph II, Chris",
-      "jersey": "58",
+      "player": "Stutsman, Danny",
+      "jersey": "28",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -581,8 +597,8 @@
     },
     {
       "position": "MLB",
-      "player": "Stutsman, Danny",
-      "jersey": "28",
+      "player": "Rumph II, Chris",
+      "jersey": "58",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -594,6 +610,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "MLB",
+      "player": "Sirmon, Jackson",
+      "jersey": "47",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "ROLB",
