@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:34:55.231815+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:34:55.231815+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:34:55.231815+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:46:04.182178+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:18:57.785567+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Kansas State",
@@ -181,8 +181,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 64,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "LT",
@@ -881,8 +881,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 68,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "MLB",
@@ -1206,8 +1206,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 69,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "NB",
@@ -1610,7 +1610,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "LT",
       "player": "John Pastore",
       "jersey": "78",
       "class": "RS SR",
@@ -1635,7 +1635,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "SS",
       "player": "Adrian Maddox",
       "jersey": "2",
       "class": "RS SR",
@@ -1660,7 +1660,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "QB",
       "player": "Dillon Duff",
       "jersey": "10",
       "class": "RS FR",
@@ -1681,8 +1681,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 72,
+      "cfb27Dev": "Normal"
     }
   ]
 }

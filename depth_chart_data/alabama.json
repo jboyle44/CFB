@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:16:24.711933+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:16:24.711933+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:16:24.711933+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:45:05.652266+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:17:40.942669+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Alabama",
@@ -1056,8 +1056,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 73,
+      "cfb27Dev": "Star"
     },
     {
       "position": "STING",
@@ -1206,8 +1206,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 71,
+      "cfb27Dev": "Star"
     },
     {
       "position": "LCB",
@@ -1860,7 +1860,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "LOLB",
       "player": "Cayden Jones",
       "jersey": "23",
       "class": "JR",
@@ -1881,11 +1881,11 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 71,
+      "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "DT",
       "player": "Jeremiah Beaman",
       "jersey": "92",
       "class": "RS SO",
@@ -1910,7 +1910,7 @@
       "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "FS",
       "player": "Zavier Mincey",
       "jersey": "12",
       "class": "JR",
@@ -1935,7 +1935,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "Desmond Umeozulu",
       "jersey": "9",
       "class": "SR",
@@ -1960,7 +1960,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "Justin Hill",
       "jersey": "8",
       "class": "SO",
@@ -1985,7 +1985,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Nick Sherman",
       "jersey": "29",
       "class": "JR",
@@ -2006,11 +2006,11 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 74,
+      "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Jorden Edmonds",
       "jersey": "16",
       "class": "FR",
@@ -2031,8 +2031,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 82,
+      "cfb27Dev": "Star"
     }
   ]
 }

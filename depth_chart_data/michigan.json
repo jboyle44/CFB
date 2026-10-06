@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:10:25.974208+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:10:25.974208+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:10:25.974208+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:44:47.024158+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:17:16.851772+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Michigan",
@@ -681,8 +681,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 66,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "QB",
@@ -2285,7 +2285,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Micah Ka'apana",
       "jersey": "25",
       "class": "RS SO",
@@ -2306,8 +2306,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 76,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RES",
@@ -2335,7 +2335,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Jonathan Brown",
       "jersey": "29",
       "class": "FR",
@@ -2360,7 +2360,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "LE",
       "player": "Julius Holly",
       "jersey": "37",
       "class": "RS FR",
@@ -2381,11 +2381,11 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 73,
+      "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "C",
       "player": "Ace Hamilton",
       "jersey": "52",
       "class": "FR",
@@ -2410,7 +2410,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "LT",
       "player": "Andrew Babalola",
       "jersey": "65",
       "class": "RS FR",
@@ -2460,7 +2460,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "RT",
       "player": "Andrew Sprague",
       "jersey": "54",
       "class": "RS SO",

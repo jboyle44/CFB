@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:13:26.458854+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:13:26.458854+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:13:26.458854+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:44:56.379956+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:17:29.382362+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Penn State",
@@ -656,8 +656,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 62,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "TE-Y",
@@ -681,8 +681,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 71,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "TE-H",
@@ -756,8 +756,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 75,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "QB",
@@ -1131,8 +1131,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 70,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RDT",
@@ -1281,8 +1281,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 74,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "WLB",
@@ -1656,8 +1656,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 70,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RCB",
@@ -1756,8 +1756,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 71,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "NB",
@@ -1781,8 +1781,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 73,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "NB",
@@ -2210,7 +2210,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "LaVar Arrington II",
       "jersey": "11",
       "class": "SO",
@@ -2235,7 +2235,7 @@
       "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "Max Granville",
       "jersey": "18",
       "class": "RS SO",
@@ -2260,7 +2260,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "TE",
       "player": "Cooper Alexander",
       "jersey": "80",
       "class": "RS SO",
@@ -2310,7 +2310,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "ROLB",
       "player": "Cam Smith",
       "jersey": "26",
       "class": "RS FR",
@@ -2335,7 +2335,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Koby Howard",
       "jersey": "6",
       "class": "SO",
@@ -2360,7 +2360,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Christian Askew",
       "jersey": "30",
       "class": "FR",
@@ -2381,11 +2381,11 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 71,
+      "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Tyler Armstead",
       "jersey": "35",
       "class": "RS SO",
@@ -2406,8 +2406,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 72,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RES",
@@ -2435,7 +2435,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "RG",
       "player": "Will Tompkins",
       "jersey": "66",
       "class": "RS FR",
@@ -2460,7 +2460,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "MLB",
       "player": "Dayshaun Burnett",
       "jersey": "43",
       "class": "RS FR",

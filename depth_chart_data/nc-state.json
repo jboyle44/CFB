@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:25:33.828422+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:25:33.828422+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:25:33.828422+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:45:38.968156+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:18:25.490006+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "NC State",
@@ -206,8 +206,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 74,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "WR-SL",
@@ -431,8 +431,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 71,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "C",
@@ -806,8 +806,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 71,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RB",
@@ -881,8 +881,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 71,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RB",
@@ -906,8 +906,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 79,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RB",
@@ -1856,11 +1856,11 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 76,
+      "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Isaiah Crowell",
       "jersey": "8",
       "class": "RS SR",
@@ -1885,7 +1885,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Teddy Hoffmann",
       "jersey": "12",
       "class": "SO",
@@ -1935,7 +1935,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "C",
       "player": "Rylan Vann",
       "jersey": "55",
       "class": "RS SR",
@@ -1960,7 +1960,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Tyreek Copper",
       "jersey": "85",
       "class": "FR",
@@ -1985,7 +1985,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "DT",
       "player": "Carmelo McKenzie",
       "jersey": "93",
       "class": "FR",

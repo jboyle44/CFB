@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:17:52.621659+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:17:52.621659+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:17:52.621659+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:45:12.358777+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:17:50.770933+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Kentucky",
@@ -706,8 +706,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 70,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "QB",
@@ -1606,8 +1606,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 71,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RCB",
@@ -2085,7 +2085,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Jovantae Barnes",
       "jersey": "2",
       "class": "RS SR",

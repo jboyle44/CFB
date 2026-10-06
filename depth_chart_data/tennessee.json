@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:20:27.331313+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:20:27.331313+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:20:27.331313+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:45:21.706841+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:18:02.786512+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Tennessee",
@@ -281,8 +281,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 75,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "LG",
@@ -606,8 +606,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 67,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "QB",
@@ -881,8 +881,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 76,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "NT",
@@ -1910,7 +1910,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "TE",
       "player": "Ethan Davis",
       "jersey": "0",
       "class": "RS JR",
@@ -1935,7 +1935,7 @@
       "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "SS",
       "player": "Edrees Farooq",
       "jersey": "15",
       "class": "JR",
@@ -1960,7 +1960,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Jadais Richard",
       "jersey": "8",
       "class": "RS SR",
@@ -1985,7 +1985,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "ROLB",
       "player": "Jaedon Harmon",
       "jersey": "12",
       "class": "SO",

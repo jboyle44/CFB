@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:09:32.686128+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:09:32.686128+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:09:32.686128+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:44:44.411043+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:17:13.469276+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Iowa",
@@ -506,8 +506,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 75,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "QB",
@@ -656,8 +656,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 76,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RB",
@@ -981,8 +981,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 68,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "MLB",
@@ -1031,8 +1031,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 65,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "CASH",
@@ -1306,8 +1306,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 75,
+      "cfb27Dev": "Star"
     },
     {
       "position": "PT",
@@ -1660,7 +1660,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "SS",
       "player": "Kyler Gerardy",
       "jersey": "19",
       "class": "RS SO",
@@ -1681,8 +1681,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 68,
+      "cfb27Dev": "Normal"
     }
   ]
 }

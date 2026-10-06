@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:08:35.065000+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:08:35.065000+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:08:35.065000+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:44:41.701988+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:17:10.147190+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Illinois",
@@ -256,8 +256,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 72,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "LG",
@@ -756,8 +756,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 73,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "LDE",
@@ -931,8 +931,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 71,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "NT",
@@ -1056,8 +1056,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 67,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RDE",
@@ -1131,8 +1131,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 70,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "JACK",
@@ -1456,8 +1456,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 66,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "SS",
@@ -2010,7 +2010,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "ROLB",
       "player": "Daniel Brown",
       "jersey": "4",
       "class": "RS SR",
@@ -2035,7 +2035,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Jayshon Platt",
       "jersey": "1",
       "class": "RS SR",
@@ -2060,7 +2060,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Alex Perry",
       "jersey": "9",
       "class": "RS SR",
@@ -2085,7 +2085,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "TE",
       "player": "BJ Thurman",
       "jersey": "87",
       "class": "SO",
@@ -2160,7 +2160,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "C",
       "player": "TJ McMillen",
       "jersey": "55",
       "class": "RS JR",
@@ -2185,7 +2185,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "LG",
       "player": "Maika Matelau",
       "jersey": "70",
       "class": "SO",
@@ -2210,7 +2210,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "RG",
       "player": "Brandon Henderson",
       "jersey": "75",
       "class": "SR",
@@ -2285,7 +2285,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "ROLB",
       "player": "Erik Gayle",
       "jersey": "34",
       "class": "RS FR",
@@ -2306,8 +2306,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 63,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RES",
@@ -2335,7 +2335,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "Cameron Brooks",
       "jersey": "91",
       "class": "RS FR",
@@ -2356,8 +2356,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 74,
+      "cfb27Dev": "Normal"
     }
   ]
 }

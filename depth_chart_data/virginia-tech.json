@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:28:01.362544+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:28:01.362544+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:28:01.362544+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:45:46.937649+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:18:35.361955+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Virginia Tech",
@@ -76,7 +76,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 69,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "WR-Z",
@@ -145,7 +147,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "WR-SL",
@@ -214,7 +218,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 69,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "LT",
@@ -258,7 +264,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "LG",
@@ -327,7 +335,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "C",
@@ -421,7 +431,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RG",
@@ -465,7 +477,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RT",
@@ -534,7 +548,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 70,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "TE",
@@ -653,7 +669,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "QB",
@@ -752,8 +770,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 68,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RB",
@@ -772,7 +790,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 85,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RB",
@@ -866,7 +886,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "LDE",
@@ -960,7 +982,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 67,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "LDE",
@@ -979,7 +1003,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "LDT",
@@ -1048,7 +1074,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 74,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "LDT",
@@ -1067,7 +1095,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 66,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "LDT",
@@ -1086,7 +1116,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RDT",
@@ -1135,8 +1167,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 70,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RDT",
@@ -1180,7 +1212,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RDT",
@@ -1199,7 +1233,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RDE",
@@ -1293,7 +1329,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RDE",
@@ -1312,7 +1350,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "WLB",
@@ -1381,7 +1421,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "MLB",
@@ -1430,8 +1472,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 66,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "MLB",
@@ -1450,7 +1492,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "MLB",
@@ -1469,7 +1513,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "SLB",
@@ -1513,7 +1559,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "SLB",
@@ -1532,7 +1580,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 71,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "LCB",
@@ -1601,7 +1651,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "LCB",
@@ -1620,7 +1672,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "SS",
@@ -1714,7 +1768,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "FS",
@@ -1758,7 +1814,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "FS",
@@ -1857,8 +1915,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 77,
+      "cfb27Dev": "Star"
     },
     {
       "position": "RCB",
@@ -1877,7 +1935,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 66,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "NB",
@@ -1921,7 +1981,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "PT",
@@ -2020,8 +2082,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 70,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "KO",
@@ -2045,8 +2107,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 70,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "KO",
@@ -2349,7 +2411,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "DT",
       "player": "Emmett Laws",
       "jersey": "99",
       "class": "RS SO",
@@ -2374,7 +2436,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Takye Heath",
       "jersey": "2",
       "class": "RS JR",
@@ -2399,7 +2461,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Shamarius Peterkin",
       "jersey": "15",
       "class": "SO",
@@ -2420,11 +2482,11 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 77,
+      "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "FS",
       "player": "Luke Stuewe",
       "jersey": "83",
       "class": "RS FR",
@@ -2445,11 +2507,11 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 72,
+      "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "LT",
       "player": "Justin Terry",
       "jersey": "72",
       "class": "RS SO",

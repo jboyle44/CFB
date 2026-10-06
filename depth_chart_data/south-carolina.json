@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:20:12.921227+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:20:12.921227+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:20:12.921227+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:45:20.388278+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:18:01.053707+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "South Carolina",
@@ -81,8 +81,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 72,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "WR-X",
@@ -806,8 +806,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 74,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RB",
@@ -1985,7 +1985,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Jayden Sellers",
       "jersey": "17",
       "class": "SO",
@@ -2010,7 +2010,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "LE",
       "player": "Dylan Stewart",
       "jersey": "6",
       "class": "JR",
@@ -2035,7 +2035,7 @@
       "cfb27Dev": "Elite"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Jayden Gibson",
       "jersey": "9",
       "class": "RS SR",
@@ -2060,7 +2060,7 @@
       "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "C",
       "player": "Carter Miller",
       "jersey": "50",
       "class": "RS SR",

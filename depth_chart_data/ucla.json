@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:14:52.924484+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:14:52.924484+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:14:52.924484+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:45:00.349198+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:17:34.502189+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "UCLA",
@@ -656,8 +656,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 73,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "QB",
@@ -731,8 +731,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 72,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "QB",
@@ -906,8 +906,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 73,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "NT",
@@ -1131,8 +1131,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 68,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "WLB",
@@ -1306,8 +1306,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 75,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "LCB",
@@ -1356,8 +1356,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 78,
+      "cfb27Dev": "Star"
     },
     {
       "position": "SS",
@@ -2035,7 +2035,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "FS",
       "player": "Tao Johnson",
       "jersey": "6",
       "class": "RS SR",
@@ -2060,7 +2060,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Mikey Matthews",
       "jersey": "7",
       "class": "SR",
@@ -2160,7 +2160,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "C",
       "player": "Sam Yoon",
       "jersey": "64",
       "class": "RS SR",

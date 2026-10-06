@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:17:30.482760+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:17:30.482760+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:17:30.482760+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:45:11.045780+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:17:49.175009+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Georgia",
@@ -1256,8 +1256,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 74,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "DE",
@@ -1281,8 +1281,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 79,
+      "cfb27Dev": "Star"
     },
     {
       "position": "NT",
@@ -1381,8 +1381,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 75,
+      "cfb27Dev": "Star"
     },
     {
       "position": "NT",
@@ -1406,8 +1406,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 67,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "DT",
@@ -1581,8 +1581,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 74,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "JACK",
@@ -1606,8 +1606,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 74,
+      "cfb27Dev": "Star"
     },
     {
       "position": "JACK",
@@ -1756,8 +1756,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 70,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "MAC",
@@ -1881,8 +1881,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 69,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "MONEY",
@@ -1981,8 +1981,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 76,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "SS",
@@ -2031,8 +2031,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 87,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "SS",
@@ -2181,8 +2181,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 70,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RCB",
@@ -2356,8 +2356,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 76,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "PT",
@@ -2760,7 +2760,7 @@
       "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Dante Dowdell",
       "jersey": "22",
       "class": "SR",
@@ -2785,7 +2785,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "Amaris Williams",
       "jersey": "17",
       "class": "JR",
@@ -2810,7 +2810,7 @@
       "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "ROLB",
       "player": "Chase Linton",
       "jersey": "85",
       "class": "RS FR",
@@ -2860,7 +2860,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "RG",
       "player": "Marcus Harrison",
       "jersey": "76",
       "class": "RS SO",
@@ -2885,7 +2885,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "SS",
       "player": "Tyriq Green",
       "jersey": "23",
       "class": "FR",

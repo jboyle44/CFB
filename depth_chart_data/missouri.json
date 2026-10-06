@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:19:15.424452+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:19:15.424452+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:19:15.424452+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:45:17.695058+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:17:57.315493+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Missouri",
@@ -606,8 +606,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 72,
+      "cfb27Dev": "Star"
     },
     {
       "position": "QB",
@@ -631,8 +631,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 67,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RB",
@@ -706,8 +706,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 70,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RB",
@@ -756,8 +756,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 75,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "DE",
@@ -1156,8 +1156,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 77,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "SS",
@@ -1810,7 +1810,7 @@
       "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "RT",
       "player": "Josh Atkins",
       "jersey": "54",
       "class": "RS SR",
@@ -1835,7 +1835,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "DT",
       "player": "Elias Williams",
       "jersey": "91",
       "class": "RS SO",
@@ -1860,7 +1860,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Ahmad Hardy",
       "jersey": "29",
       "class": "JR",
@@ -1885,7 +1885,7 @@
       "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "RT",
       "player": "Logan Reichert",
       "jersey": "66",
       "class": "RS JR",
@@ -1910,7 +1910,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Malae Fonoti",
       "jersey": "21",
       "class": "RS SO",
@@ -1935,7 +1935,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Jabari Brady",
       "jersey": "11",
       "class": "FR",
@@ -1956,8 +1956,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 73,
+      "cfb27Dev": "Normal"
     }
   ]
 }

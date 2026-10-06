@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:11:06.832316+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:11:06.832316+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:11:06.832316+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:44:48.394719+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:17:18.586657+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Michigan State",
@@ -281,8 +281,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 65,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "LG",
@@ -1710,7 +1710,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "ROLB",
       "player": "Brady Pretzlaff",
       "jersey": "45",
       "class": "RS SO",
@@ -1735,7 +1735,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "FB",
       "player": "Jay Coyne",
       "jersey": "44",
       "class": "RS SR",
@@ -1760,7 +1760,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "FS",
       "player": "Eliyjah Caldwell",
       "jersey": "35",
       "class": "FR",
@@ -1781,8 +1781,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 67,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RES",

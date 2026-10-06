@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:22:22.448830+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:22:22.448830+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:22:22.448830+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:45:28.393320+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:18:12.315435+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "California",
@@ -656,8 +656,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 73,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RB",
@@ -731,8 +731,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 67,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "NT",
@@ -881,8 +881,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 71,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "EDGE",
@@ -956,8 +956,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 73,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "WLB",
@@ -981,8 +981,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 70,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "WLB",
@@ -1760,7 +1760,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Carter Vargas",
       "jersey": "1",
       "class": "RS SO",
@@ -1785,7 +1785,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "LE",
       "player": "Nate Burrell",
       "jersey": "98",
       "class": "RS SR",
@@ -1810,7 +1810,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "C",
       "player": "Lamar Robinson",
       "jersey": "78",
       "class": "RS SR",

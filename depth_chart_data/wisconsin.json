@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:16:09.648041+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:16:09.648041+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:16:09.648041+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:45:04.318982+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:17:39.357157+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Wisconsin",
@@ -206,8 +206,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 69,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "LT",
@@ -806,8 +806,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 72,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "LOLB",
@@ -1660,7 +1660,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Cai Bates",
       "jersey": "3",
       "class": "RS SO",
@@ -1685,7 +1685,7 @@
       "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Jaylon Domingeaux",
       "jersey": "9",
       "class": "SR",
@@ -1706,11 +1706,11 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 71,
+      "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "LT",
       "player": "Michael Roeske",
       "jersey": "58",
       "class": "RS FR",
@@ -1731,11 +1731,11 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 74,
+      "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "DT",
       "player": "Xavier Ukponu",
       "jersey": "94",
       "class": "RS FR",
@@ -1756,8 +1756,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 72,
+      "cfb27Dev": "Normal"
     }
   ]
 }

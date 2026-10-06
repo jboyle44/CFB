@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:15:48.718072+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:15:48.718072+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:15:48.718072+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:45:03.025498+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:17:37.725191+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Washington",
@@ -281,8 +281,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 71,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "LG",
@@ -431,8 +431,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 65,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RT",
@@ -581,8 +581,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 68,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "QB",
@@ -656,8 +656,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 72,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RB",
@@ -731,8 +731,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 77,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "DE",
@@ -806,8 +806,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 74,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "NT",
@@ -881,8 +881,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 68,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "NT",
@@ -906,8 +906,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 73,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "DT",
@@ -1006,8 +1006,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 67,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RUSH",
@@ -1056,8 +1056,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 78,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RUSH",
@@ -1281,8 +1281,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 71,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "SS",
@@ -1810,7 +1810,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Jordan Washington",
       "jersey": "4",
       "class": "RS SO",
@@ -1835,7 +1835,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Quaid Carr",
       "jersey": "21",
       "class": "RS FR",
@@ -1860,7 +1860,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "C",
       "player": "Landen Hatchett",
       "jersey": "66",
       "class": "SR",
@@ -1885,7 +1885,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Jayden Limar",
       "jersey": "17",
       "class": "SR",
@@ -1910,7 +1910,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Christian Moss",
       "jersey": "5",
       "class": "RS SR",

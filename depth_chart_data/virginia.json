@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:27:33.878252+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:27:33.878252+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:27:33.878252+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:45:45.601184+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:18:33.740578+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Virginia",
@@ -1860,7 +1860,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Dillon Newton-Short",
       "jersey": "15",
       "class": "SO",
@@ -1881,11 +1881,11 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 72,
+      "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "RG",
       "player": "Grant Ellinger",
       "jersey": "65",
       "class": "RS SO",
@@ -1906,11 +1906,11 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 70,
+      "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "LE",
       "player": "Ezekiel Larry",
       "jersey": "94",
       "class": "GR",
@@ -1931,8 +1931,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 75,
+      "cfb27Dev": "Normal"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:20:48.307274+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:20:48.307274+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:20:48.307274+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:45:23.050045+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:18:04.508112+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Texas",
@@ -231,8 +231,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 77,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "LG",
@@ -781,8 +781,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 77,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RB",
@@ -881,8 +881,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 74,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "DE",
@@ -1181,8 +1181,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 78,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "WLB",
@@ -1331,8 +1331,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 72,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "MLB",
@@ -1356,8 +1356,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 80,
+      "cfb27Dev": "Elite"
     },
     {
       "position": "STAR",
@@ -1406,8 +1406,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 70,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "LCB",
@@ -1606,8 +1606,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 74,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RCB",
@@ -2035,7 +2035,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "FS",
       "player": "Xavier Filsaime",
       "jersey": "17",
       "class": "RS SO",
@@ -2060,7 +2060,7 @@
       "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "LE",
       "player": "Justus Terry",
       "jersey": "15",
       "class": "SO",

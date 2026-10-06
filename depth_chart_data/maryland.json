@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:09:59.811994+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:09:59.811994+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:09:59.811994+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:44:45.708189+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:17:15.062477+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Maryland",
@@ -56,8 +56,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 66,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "WR-X",
@@ -156,8 +156,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 72,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "WR-Z",
@@ -331,8 +331,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 67,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "LG",
@@ -481,8 +481,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 70,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RG",
@@ -906,8 +906,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 74,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "NT",
@@ -956,8 +956,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 73,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "NT",
@@ -1131,8 +1131,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 64,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "WLB",
@@ -1431,8 +1431,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 67,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "SS",
@@ -1631,8 +1631,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 76,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "NB",
@@ -2035,7 +2035,7 @@
       "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "Zahir Mathis",
       "jersey": "9",
       "class": "SO",
@@ -2060,7 +2060,7 @@
       "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "DeJuan Williams",
       "jersey": "0",
       "class": "RS SO",
@@ -2085,7 +2085,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "TE",
       "player": "Preston Howard",
       "jersey": "8",
       "class": "RS SR",
@@ -2110,7 +2110,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Lloyd Irvin III",
       "jersey": "15",
       "class": "RS SO",
@@ -2131,11 +2131,11 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 68,
+      "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Dontay Joyner",
       "jersey": "16",
       "class": "SR",
@@ -2156,11 +2156,11 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 79,
+      "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "DJ Samuels",
       "jersey": "20",
       "class": "RS JR",
@@ -2181,8 +2181,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 65,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RES",
@@ -2210,7 +2210,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Harry Dalton III",
       "jersey": "25",
       "class": "RS FR",
@@ -2260,7 +2260,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Josiah Teasley",
       "jersey": "18",
       "class": "FR",
@@ -2281,11 +2281,11 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 67,
+      "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "C",
       "player": "Trevor Szymanski",
       "jersey": "50",
       "class": "RS SO",
@@ -2306,8 +2306,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 64,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RES",
@@ -2335,7 +2335,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "LT",
       "player": "Michael McMonigle",
       "jersey": "51",
       "class": "RS FR",
@@ -2356,8 +2356,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 72,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RES",
@@ -2435,7 +2435,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "DT",
       "player": "Delmar White",
       "jersey": "90",
       "class": "RS FR",
@@ -2456,11 +2456,11 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 69,
+      "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "DT",
       "player": "Armon Parker",
       "jersey": "95",
       "class": "RS SR",
@@ -2481,8 +2481,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 76,
+      "cfb27Dev": "Normal"
     }
   ]
 }

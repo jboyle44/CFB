@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:12:23.137264+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:12:23.137264+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:12:23.137264+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:44:52.366917+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:17:24.090455+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Northwestern",
@@ -131,8 +131,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 71,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "WR-SL",
@@ -231,8 +231,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 70,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "LG",
@@ -731,8 +731,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 74,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "LDE",
@@ -781,8 +781,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 72,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "LDE",
@@ -856,8 +856,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 68,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "LDT",
@@ -1031,8 +1031,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 68,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "WLB",
@@ -1081,8 +1081,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 64,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "WLB",
@@ -1181,8 +1181,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 64,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "LCB",
@@ -1431,8 +1431,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 64,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "PT",
@@ -1835,7 +1835,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "DT",
       "player": "Glory Stephen-Wangboje",
       "jersey": "93",
       "class": "RS JR",
@@ -1860,7 +1860,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "C",
       "player": "Ezomo Oratokhai",
       "jersey": "62",
       "class": "RS SO",
@@ -1885,7 +1885,7 @@
       "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Hayden Eligon II",
       "jersey": "8",
       "class": "JR",
@@ -1935,7 +1935,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "LE",
       "player": "Troy Regovich",
       "jersey": "99",
       "class": "RS SO",
@@ -1960,7 +1960,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "ROLB",
       "player": "Nigel Glover",
       "jersey": "42",
       "class": "RS JR",
@@ -1985,7 +1985,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Chase Farrell",
       "jersey": "20",
       "class": "RS SO",
@@ -2010,7 +2010,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "Callen Campbell",
       "jersey": "44",
       "class": "RS SO",
@@ -2035,7 +2035,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Braden Turner",
       "jersey": "9",
       "class": "RS SR",
@@ -2085,7 +2085,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "LOLB",
       "player": "Jason Reynolds II",
       "jersey": "40",
       "class": "RS SR",
@@ -2106,8 +2106,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 69,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RES",
@@ -2160,7 +2160,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "LT",
       "player": "Jacob Miller",
       "jersey": "79",
       "class": "FR",
@@ -2181,11 +2181,11 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 67,
+      "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "RT",
       "player": "David Anchondo",
       "jersey": "61",
       "class": "RS JR",
@@ -2210,7 +2210,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "TE",
       "player": "Tom McGlinchey",
       "jersey": "85",
       "class": "FR",
@@ -2231,11 +2231,11 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 69,
+      "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Jaden McDuffie",
       "jersey": "82",
       "class": "FR",
@@ -2251,7 +2251,9 @@
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": null,
-      "draftRank": null
+      "draftRank": null,
+      "cfb27Rating": 70,
+      "cfb27Dev": "Normal"
     }
   ]
 }

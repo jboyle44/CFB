@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:11:41.387844+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:11:41.387844+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:11:41.387844+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:44:49.707767+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:17:20.386226+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Minnesota",
@@ -506,8 +506,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 69,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "TE",
@@ -706,8 +706,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 67,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RB",
@@ -806,8 +806,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 78,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RB",
@@ -931,8 +931,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 68,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "NT",
@@ -1131,8 +1131,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 70,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RUSH",
@@ -1331,8 +1331,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 68,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "MLB",
@@ -1481,8 +1481,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 66,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "SS",
@@ -2081,8 +2081,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 65,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "KR",
@@ -2135,7 +2135,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "Enoch Atewogbola",
       "jersey": "47",
       "class": "RS FR",
@@ -2156,11 +2156,11 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 71,
+      "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "C",
       "player": "Brett Carroll",
       "jersey": "56",
       "class": "RS SO",
@@ -2185,7 +2185,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Ryan Estrada",
       "jersey": "20",
       "class": "FR",
@@ -2210,7 +2210,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Hayden Moore",
       "jersey": "84",
       "class": "FR",

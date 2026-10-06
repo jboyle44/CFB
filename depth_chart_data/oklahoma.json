@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:19:37.853038+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:19:37.853038+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:19:37.853038+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:45:19.033639+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:17:59.483451+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Oklahoma",
@@ -181,8 +181,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 73,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "WR-H",
@@ -1131,8 +1131,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 72,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "DT",
@@ -1506,8 +1506,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 66,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "MLB",
@@ -2260,7 +2260,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "LT",
       "player": "Michael Fasusi",
       "jersey": "56",
       "class": "SO",
@@ -2285,7 +2285,7 @@
       "cfb27Dev": "Elite"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Trell Harris",
       "jersey": "11",
       "class": "RS SR",
@@ -2310,7 +2310,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "MLB",
       "player": "Kip Lewis",
       "jersey": "10",
       "class": "RS SR",

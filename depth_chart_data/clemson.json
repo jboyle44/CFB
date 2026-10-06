@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:22:36.229583+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:22:36.229583+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:22:36.229583+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:45:29.696846+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:18:14.126676+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Clemson",
@@ -56,8 +56,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 74,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "WR-Z",
@@ -356,8 +356,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 74,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RG",
@@ -656,8 +656,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 78,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RB",
@@ -756,8 +756,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 76,
+      "cfb27Dev": "Star"
     },
     {
       "position": "LDT",
@@ -831,8 +831,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 74,
+      "cfb27Dev": "Star"
     },
     {
       "position": "RDT",
@@ -1181,8 +1181,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 70,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "FS",
@@ -1635,7 +1635,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "DT",
       "player": "Kourtney Kelly",
       "jersey": "44",
       "class": "RS SO",
@@ -1660,7 +1660,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "FS",
       "player": "Polo Anderson",
       "jersey": "11",
       "class": "FR",
@@ -1710,7 +1710,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Cole Turner",
       "jersey": "22",
       "class": "RS SR",
@@ -1760,7 +1760,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "DT",
       "player": "Markus Strong",
       "jersey": "99",
       "class": "RS JR",
@@ -1785,7 +1785,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Corian Gipson",
       "jersey": "8",
       "class": "RS SO",
@@ -1860,7 +1860,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Jay Haynes",
       "jersey": "26",
       "class": "RS JR",
@@ -1881,8 +1881,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 84,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RES",
@@ -1910,7 +1910,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "DT",
       "player": "Devarrick Woods",
       "jersey": "92",
       "class": "RS SR",
@@ -1935,7 +1935,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "RT",
       "player": "Mason Wade",
       "jersey": "76",
       "class": "RS SO",
@@ -1960,7 +1960,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "RT",
       "player": "Adam Guthrie",
       "jersey": "72",
       "class": "FR",
@@ -1981,8 +1981,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 73,
+      "cfb27Dev": "Impact"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:12:42.725709+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:12:42.725709+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:12:42.725709+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:44:53.717636+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:17:25.764949+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Ohio State",
@@ -606,8 +606,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 70,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "QB",
@@ -956,8 +956,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 76,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "NT",
@@ -1006,8 +1006,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 74,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "DT",
@@ -1206,8 +1206,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 75,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RDE",
@@ -1481,8 +1481,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 75,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "LCB",
@@ -1581,8 +1581,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 76,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "SS",
@@ -2160,7 +2160,7 @@
       "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Kyle Parker",
       "jersey": "5",
       "class": "RS JR",
@@ -2210,7 +2210,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "RT",
       "player": "Vasean Washington",
       "jersey": "73",
       "class": "RS SR",
@@ -2231,8 +2231,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 75,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RES",
@@ -2260,7 +2260,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "TE",
       "player": "Bennett Christian",
       "jersey": "85",
       "class": "RS SR",
@@ -2285,7 +2285,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "LE",
       "player": "Zion Grady",
       "jersey": "9",
       "class": "SO",
@@ -2310,7 +2310,7 @@
       "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "RT",
       "player": "Phillip Daniels",
       "jersey": "70",
       "class": "RS JR",
@@ -2335,7 +2335,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Anthony Rogers",
       "jersey": "21",
       "class": "RS FR",
@@ -2356,8 +2356,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 80,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "RES",

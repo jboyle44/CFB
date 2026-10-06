@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:11:57.817640+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:11:57.817640+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:11:57.817640+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:44:51.063350+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:17:22.267843+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Nebraska",
@@ -1860,7 +1860,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "TE",
       "player": "Carter Nelson",
       "jersey": "29",
       "class": "JR",
@@ -1935,7 +1935,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "ROLB",
       "player": "Jase Reynolds",
       "jersey": "52",
       "class": "FR",
@@ -1956,8 +1956,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 67,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RES",
@@ -1985,7 +1985,7 @@
       "cfb27Dev": null
     },
     {
-      "position": "RES",
+      "position": "DT",
       "player": "Gabe Moore",
       "jersey": "95",
       "class": "RS JR",
@@ -2006,11 +2006,11 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 74,
+      "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "SS",
       "player": "Rex Guthrie",
       "jersey": "21",
       "class": "RS SO",
@@ -2035,7 +2035,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Bryson Webber",
       "jersey": "39",
       "class": "RS FR",
@@ -2056,8 +2056,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 73,
+      "cfb27Dev": "Impact"
     }
   ]
 }

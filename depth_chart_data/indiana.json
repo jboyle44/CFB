@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-02T13:09:07.553018+00:00",
   "ourladsUpdatedAt": "2026-10-02T13:09:07.553018+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:09:07.553018+00:00",
-  "cfb27UpdatedAt": "2026-09-05T00:44:43.053040+00:00",
+  "cfb27UpdatedAt": "2026-10-06T13:17:11.867244+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Indiana",
@@ -131,8 +131,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 68,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "WR-Z",
@@ -231,8 +231,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 66,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "LT",
@@ -531,8 +531,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 62,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "TE",
@@ -606,8 +606,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 68,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "TE",
@@ -656,8 +656,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 68,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "QB",
@@ -931,8 +931,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 71,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "NT",
@@ -1056,8 +1056,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 73,
+      "cfb27Dev": "Impact"
     },
     {
       "position": "DT",
@@ -1081,8 +1081,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 68,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "DT",
@@ -1556,8 +1556,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Rating": 66,
+      "cfb27Dev": "Normal"
     },
     {
       "position": "RCB",
@@ -1910,7 +1910,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Khobie Martin",
       "jersey": "28",
       "class": "RS SO",
@@ -1935,7 +1935,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Lebron Bond",
       "jersey": "6",
       "class": "SO",
@@ -1960,7 +1960,7 @@
       "cfb27Dev": "Impact"
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Carson Williams",
       "jersey": "0",
       "class": "RS SO",
@@ -1985,7 +1985,7 @@
       "cfb27Dev": "Normal"
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "A.J. Harris",
       "jersey": "4",
       "class": "SR",
@@ -2010,7 +2010,7 @@
       "cfb27Dev": "Star"
     },
     {
-      "position": "RES",
+      "position": "K",
       "player": "Nico Radicic",
       "jersey": "15",
       "class": "RS JR",
