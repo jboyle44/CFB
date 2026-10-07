@@ -20,7 +20,7 @@ import datetime
 
 from teams_config import TEAMS
 from scrape_ourlads import scrape_ourlads_depth_chart
-from scrape_cfbd_recruiting import get_recruiting_players, get_transfer_portal
+from scrape_cfbd_recruiting import get_recruiting_players, get_transfer_portal, cfbd_available
 
 CURRENT_YEAR = datetime.datetime.now().year
 
@@ -146,13 +146,29 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
     # under team_name would never find them. Real example: Earl Little Jr. at
     # Ohio State was a 2022 Alabama signee; searching "Ohio State" recruiting
     # data can never surface that, only searching "Alabama" can.
+    # A player counts as done once a lookup has actually been completed for
+    # them, whether or not CFBD had anything (walk-ons, unrated or unmatched
+    # transfers). Portal and recruiting data are historical, so a completed
+    # "not found" is final. Only checking for a filled-in value re-queried
+    # those players on every run, which kept every team fetching every run.
     def already_has_transfer_data(row):
         prev = previous_by_norm_name.get(normalize_name(row["player"]))
-        return prev is not None and prev.get("transferRank") is not None
+        return prev is not None and (prev.get("transferRank") is not None
+                                     or prev.get("transferLookedUp"))
 
-    needs_transfer_lookup = any(
-        row["isTransfer"] and not already_has_transfer_data(row) for row in depth_chart
+    def already_has_recruit_data(row):
+        prev = previous_by_norm_name.get(normalize_name(row["player"]))
+        return prev is not None and (prev.get("compositeScore") is not None
+                                     or prev.get("recruitLookedUp"))
+
+    # A transfer also needs portal history when their recruiting lookup is
+    # still pending, since that lookup searches their ORIGINAL school.
+    needs_transfer_lookup = cfbd_available() and any(
+        row["isTransfer"] and (not already_has_transfer_data(row) or not already_has_recruit_data(row))
+        for row in depth_chart
     )
+    portal_ok = False
+    cfbd_calls_ok = 0
     transfers_in = {}
     # Full multi-year portal history per player (NOT filtered by destination)
     # -- needed to trace a multi-hop transfer (e.g. Alabama -> Florida State
@@ -181,9 +197,11 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
         # 6 years covers a player's full realistic eligibility window (up to
         # a redshirt + 5 playing years) so multi-hop chains can be traced
         # back to their true origin regardless of how long ago they signed.
+        portal_ok = True
         for yr in range(CURRENT_YEAR, CURRENT_YEAR - 6, -1):
             try:
                 portal = get_transfer_portal(yr)
+                cfbd_calls_ok += 1
                 for name, info in portal.items():
                     portal_history_by_name.setdefault(name, []).append(info)
                     portal_history_by_stripped_name.setdefault(strip_suffix(name), []).append(info)
@@ -193,10 +211,12 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
                         if last:
                             transfers_in_by_last_name_candidates.setdefault(last, []).append(info)
             except Exception as e:
+                portal_ok = False
                 print(f"  {yr} portal fetch failed: {e}", file=sys.stderr)
         print(f"  {len(transfers_in)} transfers in from CFBD", file=sys.stderr)
     else:
-        print("No new transfers needing portal data -- skipping CFBD portal call this run.", file=sys.stderr)
+        reason = "CFBD unavailable" if not cfbd_available() else "no new transfers needing portal data"
+        print(f"Skipping CFBD portal call this run ({reason}).", file=sys.stderr)
 
     # Only keep a last-name fallback entry if it's unambiguous -- exactly one
     # transfer destined for this team has that last name. Mirrors the same
@@ -232,10 +252,6 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
     # keeps the free-tier calls/month budget sustainable across 68+ teams
     # updating twice a week; a full roster only costs real API calls once,
     # the first time each player appears.
-    def already_has_recruit_data(row):
-        prev = previous_by_norm_name.get(normalize_name(row["player"]))
-        return prev is not None and prev.get("compositeScore") is not None
-
     # For each player needing recruit data, figure out which SCHOOL to query:
     # a transfer's own origin school (from the portal data above) if we have
     # it, otherwise fall back to the current team (works correctly for
@@ -244,7 +260,8 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
     # many transfers/recruits share both, so this stays cheap even though
     # we're now querying more than just one team.
     needed_school_years = set()
-    for r in depth_chart:
+    pairs_by_player = {}  # norm name -> the (school, year) pairs it depends on
+    for r in depth_chart if cfbd_available() else []:
         if already_has_recruit_data(r):
             continue
         yr = infer_recruiting_class_year(r["class"])
@@ -270,15 +287,18 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
         # signing class was a full year earlier than the formula predicted.
         needed_school_years.add((school, yr))
         needed_school_years.add((school, yr - 1))
+        pairs_by_player[normalize_name(r["player"])] = {(school, yr), (school, yr - 1)}
 
     recruiting_by_name = {}
     recruiting_by_last_name = {}
+    failed_pairs = set()
     if needed_school_years:
         print(f"Fetching CFBD recruiting data for {len(needed_school_years)} (school, year) pairs...",
               file=sys.stderr)
         for school, yr in sorted(needed_school_years):
             try:
                 by_full, by_last = get_recruiting_players(school, yr)
+                cfbd_calls_ok += 1
                 recruiting_by_name.update(by_full)
                 # Only keep a last-name fallback entry if it's unambiguous across
                 # ALL school/year combos merged too, not just within one.
@@ -289,10 +309,12 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
                         recruiting_by_last_name[last] = info
                 print(f"  {school} {yr}: {len(by_full)} players", file=sys.stderr)
             except Exception as e:
+                failed_pairs.add((school, yr))
                 print(f"  {school} {yr}: failed ({e})", file=sys.stderr)
         recruiting_by_last_name = {k: v for k, v in recruiting_by_last_name.items() if v is not None}
     else:
-        print("No new players needing recruiting data -- skipping CFBD recruiting call this run.", file=sys.stderr)
+        reason = "CFBD unavailable" if not cfbd_available() else "no new players needing recruiting data"
+        print(f"Skipping CFBD recruiting call this run ({reason}).", file=sys.stderr)
 
     output_rows = []
     for row in depth_chart:
@@ -371,10 +393,25 @@ def build(team_key, output_path=None, fetch_detail_for_all=False):
                 if out_row.get(k) is None:
                     out_row[k] = prev_match.get(k)
 
+        # Record completed lookups so they're never repeated. Only a lookup
+        # whose calls all succeeded counts; a failure (quota, outage) leaves
+        # the player pending for the next run. A transfer's recruiting lookup
+        # also needs the portal pull, since it searches their original school.
+        prev_match = prev_match or {}
+        out_row["transferLookedUp"] = bool(
+            prev_match.get("transferLookedUp")
+            or (row["isTransfer"] and portal_ok)
+        ) if row["isTransfer"] else None
+        pairs = pairs_by_player.get(norm)
+        out_row["recruitLookedUp"] = bool(
+            prev_match.get("recruitLookedUp")
+            or (pairs and not (pairs & failed_pairs) and (portal_ok or not row["isTransfer"]))
+        )
+
         output_rows.append(out_row)
 
     now_iso = datetime.datetime.now(datetime.timezone.utc).isoformat()
-    cfbd_fetched_this_run = bool(needed_school_years) or needs_transfer_lookup
+    cfbd_fetched_this_run = cfbd_calls_ok > 0
     cfbd_updated_at = now_iso if cfbd_fetched_this_run else previous_metadata.get("cfbdUpdatedAt", now_iso)
 
     wrapped = {

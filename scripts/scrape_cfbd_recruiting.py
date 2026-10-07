@@ -10,7 +10,10 @@ Two endpoints:
                                (stars, rating, national ranking)
   GET /player/portal       -- transfer portal data (stars, rating, origin/dest)
 """
+import json
 import os
+import re
+import tempfile
 import time
 import requests
 
@@ -25,21 +28,76 @@ _MIN_REQUEST_GAP_SECONDS = 0.6
 _last_request_time = [0.0]
 
 
+# Every team in a depth chart run is built by its own Python process, so
+# responses are cached on disk for the duration of the run. The transfer portal
+# endpoint returns the whole country's portal for a season, so without this
+# each of the 68 teams re-downloaded the same 6 seasons (408 calls per run for
+# 6 unique responses). The workflow points CFBD_CACHE_DIR at the runner's temp
+# directory, so the cache never outlives a single run.
+CACHE_DIR = os.environ.get("CFBD_CACHE_DIR") or os.path.join(tempfile.gettempdir(), "cfbd_cache")
+_UNAVAILABLE_FLAG = os.path.join(CACHE_DIR, "UNAVAILABLE")
+
+
+class CFBDUnavailable(RuntimeError):
+    """CFBD is out of quota, rejecting the key, or skipped for this run."""
+
+
+def cfbd_available():
+    """False once any process in this run has hit a quota/auth failure, or
+    when CFBD_SKIP=1 is set to refresh depth charts without spending calls."""
+    return os.environ.get("CFBD_SKIP") != "1" and not os.path.exists(_UNAVAILABLE_FLAG)
+
+
+def _mark_unavailable(reason):
+    os.makedirs(CACHE_DIR, exist_ok=True)
+    with open(_UNAVAILABLE_FLAG, "w") as f:
+        f.write(reason)
+    print(f"  CFBD unavailable for the rest of this run: {reason}")
+
+
+def _cached(name, fetch):
+    """Return the cached JSON for `name`, or call fetch() and cache it."""
+    os.makedirs(CACHE_DIR, exist_ok=True)
+    path = os.path.join(CACHE_DIR, re.sub(r"[^A-Za-z0-9_.-]", "_", name) + ".json")
+    try:
+        with open(path) as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+    data = fetch()
+    tmp = path + f".{os.getpid()}.tmp"
+    with open(tmp, "w") as f:
+        json.dump(data, f)
+    os.replace(tmp, path)
+    return data
+
+
 def _paced_get(url, headers, params, timeout=20, max_retries=3):
+    # Circuit breaker: once the monthly quota is gone (or the key is
+    # rejected), every later call in the run fails the same way. Without
+    # this, each one sat through the full 429 backoff, which is how the
+    # Oct 6 run stretched from ~30 minutes to 1h43m.
+    if not cfbd_available():
+        raise CFBDUnavailable("CFBD skipped or unavailable for this run")
     for attempt in range(max_retries):
         elapsed = time.time() - _last_request_time[0]
         if elapsed < _MIN_REQUEST_GAP_SECONDS:
             time.sleep(_MIN_REQUEST_GAP_SECONDS - elapsed)
         resp = requests.get(url, headers=headers, params=params, timeout=timeout)
         _last_request_time[0] = time.time()
+        if resp.status_code in (401, 403):
+            _mark_unavailable(f"HTTP {resp.status_code} from {url}")
+            raise CFBDUnavailable(f"HTTP {resp.status_code}")
         if resp.status_code == 429:
             backoff = 2 ** attempt * 2  # 2s, 4s, 8s
             print(f"  429 rate limited, backing off {backoff}s (attempt {attempt+1}/{max_retries})")
             time.sleep(backoff)
             continue
         return resp
-    resp.raise_for_status()  # exhausted retries, raise the last 429
-    return resp
+    # Still 429 after backing off: the monthly quota is exhausted, not just
+    # the per-minute limit.
+    _mark_unavailable(f"HTTP 429 after {max_retries} attempts from {url}")
+    raise CFBDUnavailable("HTTP 429 after retries")
 
 
 def _auth_headers():
@@ -60,16 +118,20 @@ def get_recruiting_players(team_display_name, year):
         nickname (e.g. "Trey Reddick") for the same person -- when there's
         no ambiguity, matching on last name alone safely recovers these.
     """
-    resp = _paced_get(
-        f"{BASE_URL}/recruiting/players",
-        headers=_auth_headers(),
-        params={"year": year, "team": team_display_name},
-        timeout=20,
-    )
-    resp.raise_for_status()
+    def fetch():
+        resp = _paced_get(
+            f"{BASE_URL}/recruiting/players",
+            headers=_auth_headers(),
+            params={"year": year, "team": team_display_name},
+            timeout=20,
+        )
+        resp.raise_for_status()
+        return resp.json()
+
+    players = _cached(f"recruiting_{team_display_name}_{year}", fetch)
     by_full_name = {}
     by_last_name_candidates = {}
-    for r in resp.json():
+    for r in players:
         name = (r.get("name") or "").strip().lower()
         if not name:
             continue
@@ -99,14 +161,17 @@ def get_transfer_portal(year):
     an equivalent "#N transfer overall" and "#N at position" the same way
     247Sports displays it.
     """
-    resp = _paced_get(
-        f"{BASE_URL}/player/portal",
-        headers=_auth_headers(),
-        params={"year": year},
-        timeout=20,
-    )
-    resp.raise_for_status()
-    entries = resp.json()
+    def fetch():
+        resp = _paced_get(
+            f"{BASE_URL}/player/portal",
+            headers=_auth_headers(),
+            params={"year": year},
+            timeout=20,
+        )
+        resp.raise_for_status()
+        return resp.json()
+
+    entries = _cached(f"portal_{year}", fetch)
 
     # Compute overall rank (by rating, descending) and position rank.
     graded = [e for e in entries if e.get("rating") is not None]

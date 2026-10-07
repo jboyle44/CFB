@@ -9,7 +9,12 @@ on:
 
   # Trigger a run manually from the Actions tab any time, without waiting for
   # the schedule -- useful for testing after changes to the scraper.
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      skip_cfbd:
+        description: "Refresh rosters without any CFBD calls (carry forward existing CFBD data)"
+        type: boolean
+        default: false
 
 jobs:
   update:
@@ -42,6 +47,10 @@ jobs:
         working-directory: scripts
         env:
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+          # Shared across the per-team processes so each CFBD response is
+          # fetched at most once per run (see scrape_cfbd_recruiting.py).
+          CFBD_CACHE_DIR: ${{ runner.temp }}/cfbd_cache
+          CFBD_SKIP: ${{ inputs.skip_cfbd && '1' || '0' }}
         run: |
           set +e
           mkdir -p ../depth_chart_data
