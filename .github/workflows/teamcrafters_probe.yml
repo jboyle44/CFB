@@ -1,0 +1,16 @@
+name: Teamcrafters Version Probe (one-off)
+on:
+  workflow_dispatch: {}
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests beautifulsoup4
+      - working-directory: scripts
+        run: python3 teamcrafters_probe.py
