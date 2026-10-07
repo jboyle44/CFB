@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-02T13:16:09.648041+00:00",
-  "ourladsUpdatedAt": "2026-10-02T13:16:09.648041+00:00",
+  "generatedAt": "2026-10-07T00:38:18.326393+00:00",
+  "ourladsUpdatedAt": "2026-10-07T00:38:18.326393+00:00",
   "cfbdUpdatedAt": "2026-10-02T13:16:09.648041+00:00",
   "cfb27UpdatedAt": "2026-10-06T13:17:39.357157+00:00",
   "draftRankUpdatedAt": null,
@@ -32,7 +32,9 @@
       "pffPositionLabel": "WR",
       "pffTied": false,
       "cfb27Rating": 75,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "WR-X",
@@ -57,7 +59,9 @@
       "pffPositionLabel": "WR",
       "pffTied": true,
       "cfb27Rating": 78,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "WR-X",
@@ -82,7 +86,9 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Dev": null,
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "WR-Z",
@@ -107,7 +113,9 @@
       "pffPositionLabel": "WR",
       "pffTied": true,
       "cfb27Rating": 78,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "WR-Z",
@@ -132,7 +140,9 @@
       "pffPositionLabel": "WR",
       "pffTied": false,
       "cfb27Rating": 77,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "WR-SL",
@@ -157,7 +167,9 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 73,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "WR-SL",
@@ -182,7 +194,9 @@
       "pffPositionLabel": "WR",
       "pffTied": false,
       "cfb27Rating": 77,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "WR-SL",
@@ -207,7 +221,9 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 69,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "LT",
@@ -232,7 +248,9 @@
       "pffPositionLabel": "G",
       "pffTied": false,
       "cfb27Rating": 76,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "LT",
@@ -257,7 +275,9 @@
       "pffPositionLabel": "T",
       "pffTied": false,
       "cfb27Rating": 75,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "LG",
@@ -282,7 +302,9 @@
       "pffPositionLabel": "G",
       "pffTied": true,
       "cfb27Rating": 73,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "LG",
@@ -307,7 +329,9 @@
       "pffPositionLabel": "G",
       "pffTied": false,
       "cfb27Rating": 69,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "C",
@@ -332,7 +356,9 @@
       "pffPositionLabel": "C",
       "pffTied": true,
       "cfb27Rating": 76,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "C",
@@ -357,7 +383,9 @@
       "pffPositionLabel": "C",
       "pffTied": false,
       "cfb27Rating": 69,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "RG",
@@ -382,7 +410,9 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 71,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "RG",
@@ -407,7 +437,9 @@
       "pffPositionLabel": "T",
       "pffTied": true,
       "cfb27Rating": 77,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "RG",
@@ -432,7 +464,9 @@
       "pffPositionLabel": "G",
       "pffTied": false,
       "cfb27Rating": 72,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "RT",
@@ -457,7 +491,9 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 75,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "RT",
@@ -482,7 +518,9 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 73,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "TE",
@@ -507,7 +545,9 @@
       "pffPositionLabel": "TE",
       "pffTied": false,
       "cfb27Rating": 75,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "TE",
@@ -532,7 +572,9 @@
       "pffPositionLabel": "TE",
       "pffTied": false,
       "cfb27Rating": 76,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "TE",
@@ -557,57 +599,9 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 72,
-      "cfb27Dev": "Normal"
-    },
-    {
-      "position": "TE",
-      "player": "Ryan Schwendeman",
-      "jersey": "84",
-      "class": "GR",
-      "isTransfer": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "compositeScore": 76,
-      "transferScore": 85,
-      "profileUrl": null,
-      "transferRank": 1441,
-      "transferPosRank": 84,
-      "hsNationalRank": 3143,
-      "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": null,
-      "draftRank": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null,
-      "cfb27Rating": 68,
-      "cfb27Dev": "Normal"
-    },
-    {
-      "position": "TE",
-      "player": "Nizyi Davis",
-      "jersey": "17",
-      "class": "RS FR",
-      "isTransfer": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "compositeScore": 87,
-      "transferScore": null,
-      "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
-      "hsNationalRank": 880,
-      "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": null,
-      "draftRank": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null,
-      "cfb27Rating": 68,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "QB",
@@ -632,7 +626,9 @@
       "pffPositionLabel": "QB",
       "pffTied": true,
       "cfb27Rating": 84,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "QB",
@@ -657,7 +653,9 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 71,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "QB",
@@ -682,7 +680,9 @@
       "pffPositionLabel": "QB",
       "pffTied": false,
       "cfb27Rating": 65,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "RB",
@@ -707,7 +707,9 @@
       "pffPositionLabel": "HB",
       "pffTied": false,
       "cfb27Rating": 85,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "RB",
@@ -732,32 +734,9 @@
       "pffPositionLabel": "HB",
       "pffTied": true,
       "cfb27Rating": 80,
-      "cfb27Dev": "Impact"
-    },
-    {
-      "position": "RB",
-      "player": "Bryan Jackson II",
-      "jersey": "21",
-      "class": "JR",
-      "isTransfer": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "compositeScore": 88,
-      "transferScore": null,
-      "profileUrl": null,
-      "transferRank": null,
-      "transferPosRank": null,
-      "hsNationalRank": 646,
-      "hsPositionRank": null,
-      "hsStateRank": null,
-      "pffGrade": 63.4,
-      "draftRank": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "HB",
-      "pffTied": false,
-      "cfb27Rating": 80,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "RB",
@@ -782,7 +761,9 @@
       "pffPositionLabel": "HB",
       "pffTied": false,
       "cfb27Rating": 77,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "RB",
@@ -807,7 +788,9 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 72,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "LOLB",
@@ -832,7 +815,9 @@
       "pffPositionLabel": "ED",
       "pffTied": true,
       "cfb27Rating": 75,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "LOLB",
@@ -857,7 +842,30 @@
       "pffPositionLabel": "ED",
       "pffTied": false,
       "cfb27Rating": 70,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
+    },
+    {
+      "position": "LOLB",
+      "player": "Micheal Garner",
+      "jersey": "51",
+      "class": "SR",
+      "isTransfer": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "compositeScore": null,
+      "transferScore": null,
+      "profileUrl": null,
+      "transferRank": null,
+      "transferPosRank": null,
+      "hsNationalRank": null,
+      "hsPositionRank": null,
+      "hsStateRank": null,
+      "pffGrade": null,
+      "draftRank": null,
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "NT",
@@ -882,7 +890,9 @@
       "pffPositionLabel": "DI",
       "pffTied": true,
       "cfb27Rating": 83,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "NT",
@@ -907,7 +917,9 @@
       "pffPositionLabel": "DI",
       "pffTied": true,
       "cfb27Rating": 80,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "NT",
@@ -932,7 +944,9 @@
       "pffPositionLabel": "DI",
       "pffTied": false,
       "cfb27Rating": 74,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "DT",
@@ -957,7 +971,9 @@
       "pffPositionLabel": "DI",
       "pffTied": false,
       "cfb27Rating": 78,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "DT",
@@ -982,7 +998,9 @@
       "pffPositionLabel": "DI",
       "pffTied": true,
       "cfb27Rating": 71,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "DT",
@@ -1007,7 +1025,9 @@
       "pffPositionLabel": "DI",
       "pffTied": false,
       "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Dev": null,
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "ROLB",
@@ -1032,7 +1052,9 @@
       "pffPositionLabel": "ED",
       "pffTied": false,
       "cfb27Rating": 75,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "ROLB",
@@ -1057,7 +1079,9 @@
       "pffPositionLabel": "ED",
       "pffTied": false,
       "cfb27Rating": 74,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "WLB",
@@ -1082,7 +1106,9 @@
       "pffPositionLabel": "LB",
       "pffTied": false,
       "cfb27Rating": 80,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "WLB",
@@ -1107,7 +1133,9 @@
       "pffPositionLabel": "LB",
       "pffTied": false,
       "cfb27Rating": 75,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "MLB",
@@ -1132,7 +1160,9 @@
       "pffPositionLabel": "LB",
       "pffTied": true,
       "cfb27Rating": 73,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "MLB",
@@ -1157,7 +1187,9 @@
       "pffPositionLabel": "LB",
       "pffTied": true,
       "cfb27Rating": 64,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "LCB",
@@ -1182,7 +1214,30 @@
       "pffPositionLabel": "CB",
       "pffTied": false,
       "cfb27Rating": 85,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
+    },
+    {
+      "position": "LCB",
+      "player": "Donovan Dunmore",
+      "jersey": "18",
+      "class": "FR",
+      "isTransfer": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "compositeScore": null,
+      "transferScore": null,
+      "profileUrl": null,
+      "transferRank": null,
+      "transferPosRank": null,
+      "hsNationalRank": null,
+      "hsPositionRank": null,
+      "hsStateRank": null,
+      "pffGrade": null,
+      "draftRank": null,
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "SS",
@@ -1207,7 +1262,9 @@
       "pffPositionLabel": "S",
       "pffTied": true,
       "cfb27Rating": 76,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "SS",
@@ -1232,7 +1289,9 @@
       "pffPositionLabel": "S",
       "pffTied": false,
       "cfb27Rating": 67,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "FS",
@@ -1257,7 +1316,9 @@
       "pffPositionLabel": "S",
       "pffTied": true,
       "cfb27Rating": 83,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "FS",
@@ -1282,7 +1343,9 @@
       "pffPositionLabel": "CB",
       "pffTied": false,
       "cfb27Rating": 71,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "RCB",
@@ -1307,7 +1370,9 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 72,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "RCB",
@@ -1332,7 +1397,9 @@
       "pffPositionLabel": "CB",
       "pffTied": true,
       "cfb27Rating": 75,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "NB",
@@ -1357,7 +1424,9 @@
       "pffPositionLabel": "CB",
       "pffTied": false,
       "cfb27Rating": 77,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "NB",
@@ -1382,7 +1451,9 @@
       "pffPositionLabel": "CB",
       "pffTied": false,
       "cfb27Rating": 68,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "PT",
@@ -1407,7 +1478,9 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 75,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "PT",
@@ -1432,7 +1505,9 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Dev": null,
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "PK",
@@ -1457,7 +1532,9 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 81,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "KO",
@@ -1482,7 +1559,30 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 81,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
+    },
+    {
+      "position": "KO",
+      "player": "Brady Melum",
+      "jersey": "94",
+      "class": "FR",
+      "isTransfer": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "compositeScore": null,
+      "transferScore": null,
+      "profileUrl": null,
+      "transferRank": null,
+      "transferPosRank": null,
+      "hsNationalRank": null,
+      "hsPositionRank": null,
+      "hsStateRank": null,
+      "pffGrade": null,
+      "draftRank": null,
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
       "position": "LS",
@@ -1507,7 +1607,9 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 63,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "LS",
@@ -1532,7 +1634,9 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Dev": null,
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "H",
@@ -1557,7 +1661,36 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 75,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
+    },
+    {
+      "position": "H",
+      "player": "Ethan Tranel",
+      "jersey": "98",
+      "class": "RS JR",
+      "isTransfer": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "compositeScore": null,
+      "transferScore": 83,
+      "profileUrl": null,
+      "transferRank": 2550,
+      "transferPosRank": 8,
+      "hsNationalRank": null,
+      "hsPositionRank": null,
+      "hsStateRank": null,
+      "pffGrade": null,
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null,
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "PR",
@@ -1582,7 +1715,9 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 73,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "PR",
@@ -1607,7 +1742,30 @@
       "pffPositionLabel": "WR",
       "pffTied": false,
       "cfb27Rating": 75,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
+    },
+    {
+      "position": "KR",
+      "player": "Juju Pope",
+      "jersey": "20",
+      "class": "RS SO",
+      "isTransfer": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "compositeScore": null,
+      "transferScore": null,
+      "profileUrl": null,
+      "transferRank": null,
+      "transferPosRank": null,
+      "hsNationalRank": null,
+      "hsPositionRank": null,
+      "hsStateRank": null,
+      "pffGrade": null,
+      "draftRank": null,
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "KR",
@@ -1632,7 +1790,9 @@
       "pffPositionLabel": "HB",
       "pffTied": false,
       "cfb27Rating": 77,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
       "position": "KR",
@@ -1657,10 +1817,12 @@
       "pffPositionLabel": "HB",
       "pffTied": true,
       "cfb27Rating": 80,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
-      "position": "CB",
+      "position": "RES",
       "player": "Cai Bates",
       "jersey": "3",
       "class": "RS SO",
@@ -1682,10 +1844,12 @@
       "pffPositionLabel": "CB",
       "pffTied": false,
       "cfb27Rating": 76,
-      "cfb27Dev": "Star"
+      "cfb27Dev": "Star",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
-      "position": "WR",
+      "position": "RES",
       "player": "Jaylon Domingeaux",
       "jersey": "9",
       "class": "SR",
@@ -1707,10 +1871,12 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 71,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     },
     {
-      "position": "LT",
+      "position": "RES",
       "player": "Michael Roeske",
       "jersey": "58",
       "class": "RS FR",
@@ -1732,10 +1898,12 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 74,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
     },
     {
-      "position": "DT",
+      "position": "RES",
       "player": "Xavier Ukponu",
       "jersey": "94",
       "class": "RS FR",
@@ -1757,7 +1925,36 @@
       "pffPositionLabel": null,
       "pffTied": null,
       "cfb27Rating": 72,
-      "cfb27Dev": "Normal"
+      "cfb27Dev": "Normal",
+      "transferLookedUp": null,
+      "recruitLookedUp": false
+    },
+    {
+      "position": "RES",
+      "player": "Bryan Jackson II",
+      "jersey": "21",
+      "class": "JR",
+      "isTransfer": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "compositeScore": 88,
+      "transferScore": null,
+      "profileUrl": null,
+      "transferRank": null,
+      "transferPosRank": null,
+      "hsNationalRank": 646,
+      "hsPositionRank": null,
+      "hsStateRank": null,
+      "pffGrade": 63.4,
+      "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "HB",
+      "pffTied": false,
+      "cfb27Rating": 80,
+      "cfb27Dev": "Impact",
+      "transferLookedUp": false,
+      "recruitLookedUp": false
     }
   ]
 }
