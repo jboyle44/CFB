@@ -118,17 +118,24 @@ def get_recruiting_players(team_display_name, year):
         nickname (e.g. "Trey Reddick") for the same person -- when there's
         no ambiguity, matching on last name alone safely recovers these.
     """
+    # One national pull per class year, filtered locally. The year-only query
+    # returns the full high school class (~4,000 recruits, 1 call), and a
+    # 2026-10-07 probe confirmed filtering it by committedTo returns exactly
+    # the same players as team-filtered queries. With the run cache, every
+    # team shares these pulls: ~9 calls per run instead of one per
+    # (school, year) pair (~357).
     def fetch():
         resp = _paced_get(
             f"{BASE_URL}/recruiting/players",
             headers=_auth_headers(),
-            params={"year": year, "team": team_display_name},
-            timeout=20,
+            params={"year": year},
+            timeout=60,
         )
         resp.raise_for_status()
         return resp.json()
 
-    players = _cached(f"recruiting_{team_display_name}_{year}", fetch)
+    players = [r for r in _cached(f"recruiting_{year}", fetch)
+               if r.get("committedTo") == team_display_name]
     by_full_name = {}
     by_last_name_candidates = {}
     for r in players:
