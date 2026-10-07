@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-07T00:39:31.547372+00:00",
-  "ourladsUpdatedAt": "2026-10-07T00:39:31.547372+00:00",
-  "cfbdUpdatedAt": "2026-10-02T13:32:12.877878+00:00",
+  "generatedAt": "2026-10-07T01:01:44.293611+00:00",
+  "ourladsUpdatedAt": "2026-10-07T01:01:44.293611+00:00",
+  "cfbdUpdatedAt": "2026-10-07T01:01:44.293611+00:00",
   "cfb27UpdatedAt": "2026-10-06T13:18:49.629527+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
@@ -33,7 +33,7 @@
       "pffTied": true,
       "cfb27Rating": 84,
       "cfb27Dev": "Impact",
-      "transferLookedUp": false,
+      "transferLookedUp": true,
       "recruitLookedUp": false
     },
     {
@@ -114,8 +114,8 @@
       "pffTied": null,
       "cfb27Rating": 76,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
-      "recruitLookedUp": false
+      "transferLookedUp": true,
+      "recruitLookedUp": true
     },
     {
       "position": "WR-Z",
@@ -195,8 +195,8 @@
       "pffTied": false,
       "cfb27Rating": 75,
       "cfb27Dev": "Impact",
-      "transferLookedUp": false,
-      "recruitLookedUp": false
+      "transferLookedUp": true,
+      "recruitLookedUp": true
     },
     {
       "position": "WR-SL",
@@ -222,7 +222,7 @@
       "pffTied": null,
       "cfb27Rating": 74,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
+      "transferLookedUp": true,
       "recruitLookedUp": false
     },
     {
@@ -249,7 +249,7 @@
       "pffTied": null,
       "cfb27Rating": 75,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
+      "transferLookedUp": true,
       "recruitLookedUp": false
     },
     {
@@ -276,8 +276,8 @@
       "pffTied": true,
       "cfb27Rating": 83,
       "cfb27Dev": "Impact",
-      "transferLookedUp": false,
-      "recruitLookedUp": false
+      "transferLookedUp": true,
+      "recruitLookedUp": true
     },
     {
       "position": "LT",
@@ -384,7 +384,7 @@
       "pffTied": false,
       "cfb27Rating": 84,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
+      "transferLookedUp": true,
       "recruitLookedUp": false
     },
     {
@@ -412,7 +412,7 @@
       "cfb27Rating": 66,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
-      "recruitLookedUp": false
+      "recruitLookedUp": true
     },
     {
       "position": "RG",
@@ -438,8 +438,8 @@
       "pffTied": false,
       "cfb27Rating": 75,
       "cfb27Dev": "Impact",
-      "transferLookedUp": false,
-      "recruitLookedUp": false
+      "transferLookedUp": true,
+      "recruitLookedUp": true
     },
     {
       "position": "RG",
@@ -492,8 +492,8 @@
       "pffTied": false,
       "cfb27Rating": 71,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
-      "recruitLookedUp": false
+      "transferLookedUp": true,
+      "recruitLookedUp": true
     },
     {
       "position": "RT",
@@ -519,8 +519,8 @@
       "pffTied": false,
       "cfb27Rating": 73,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
-      "recruitLookedUp": false
+      "transferLookedUp": true,
+      "recruitLookedUp": true
     },
     {
       "position": "TE",
@@ -655,7 +655,7 @@
       "cfb27Rating": null,
       "cfb27Dev": null,
       "transferLookedUp": null,
-      "recruitLookedUp": false
+      "recruitLookedUp": true
     },
     {
       "position": "QB",
@@ -681,7 +681,7 @@
       "pffTied": true,
       "cfb27Rating": 77,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
+      "transferLookedUp": true,
       "recruitLookedUp": false
     },
     {
@@ -735,8 +735,8 @@
       "pffTied": null,
       "cfb27Rating": 70,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
-      "recruitLookedUp": false
+      "transferLookedUp": true,
+      "recruitLookedUp": true
     },
     {
       "position": "RB",
@@ -762,7 +762,7 @@
       "pffTied": null,
       "cfb27Rating": 79,
       "cfb27Dev": "Impact",
-      "transferLookedUp": false,
+      "transferLookedUp": true,
       "recruitLookedUp": false
     },
     {
@@ -789,7 +789,7 @@
       "pffTied": false,
       "cfb27Rating": 81,
       "cfb27Dev": "Impact",
-      "transferLookedUp": false,
+      "transferLookedUp": true,
       "recruitLookedUp": false
     },
     {
@@ -830,7 +830,7 @@
       "compositeScore": null,
       "transferScore": 85,
       "profileUrl": null,
-      "transferRank": 1939,
+      "transferRank": 1936,
       "transferPosRank": 152,
       "hsNationalRank": null,
       "hsPositionRank": null,
@@ -843,8 +843,8 @@
       "pffTied": false,
       "cfb27Rating": 82,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
-      "recruitLookedUp": false
+      "transferLookedUp": true,
+      "recruitLookedUp": true
     },
     {
       "position": "RB",
@@ -924,7 +924,7 @@
       "pffTied": true,
       "cfb27Rating": 70,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
+      "transferLookedUp": true,
       "recruitLookedUp": false
     },
     {
@@ -951,8 +951,8 @@
       "pffTied": null,
       "cfb27Rating": 74,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
-      "recruitLookedUp": false
+      "transferLookedUp": true,
+      "recruitLookedUp": true
     },
     {
       "position": "NT",
@@ -978,7 +978,7 @@
       "pffTied": null,
       "cfb27Rating": 73,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
+      "transferLookedUp": true,
       "recruitLookedUp": false
     },
     {
@@ -1032,7 +1032,7 @@
       "pffTied": false,
       "cfb27Rating": 74,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
+      "transferLookedUp": true,
       "recruitLookedUp": false
     },
     {
@@ -1059,8 +1059,8 @@
       "pffTied": false,
       "cfb27Rating": 75,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
-      "recruitLookedUp": false
+      "transferLookedUp": true,
+      "recruitLookedUp": true
     },
     {
       "position": "NT",
@@ -1141,7 +1141,7 @@
       "cfb27Rating": 66,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
-      "recruitLookedUp": false
+      "recruitLookedUp": true
     },
     {
       "position": "DT",
@@ -1167,7 +1167,7 @@
       "pffTied": null,
       "cfb27Rating": 78,
       "cfb27Dev": "Impact",
-      "transferLookedUp": false,
+      "transferLookedUp": true,
       "recruitLookedUp": false
     },
     {
@@ -1235,8 +1235,8 @@
       "compositeScore": null,
       "transferScore": 85,
       "profileUrl": null,
-      "transferRank": 1924,
-      "transferPosRank": 153,
+      "transferRank": 1918,
+      "transferPosRank": 152,
       "hsNationalRank": null,
       "hsPositionRank": null,
       "hsStateRank": null,
@@ -1248,8 +1248,8 @@
       "pffTied": null,
       "cfb27Rating": 73,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
-      "recruitLookedUp": false
+      "transferLookedUp": true,
+      "recruitLookedUp": true
     },
     {
       "position": "DOG",
@@ -1437,7 +1437,7 @@
       "pffTied": false,
       "cfb27Rating": 71,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
+      "transferLookedUp": true,
       "recruitLookedUp": false
     },
     {
@@ -1464,8 +1464,8 @@
       "pffTied": true,
       "cfb27Rating": 75,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
-      "recruitLookedUp": false
+      "transferLookedUp": true,
+      "recruitLookedUp": true
     },
     {
       "position": "MLB",
@@ -1492,7 +1492,7 @@
       "cfb27Rating": null,
       "cfb27Dev": null,
       "transferLookedUp": null,
-      "recruitLookedUp": false
+      "recruitLookedUp": true
     },
     {
       "position": "CAT",
@@ -1519,7 +1519,7 @@
       "cfb27Rating": 85,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
-      "recruitLookedUp": false
+      "recruitLookedUp": true
     },
     {
       "position": "CAT",
@@ -1572,7 +1572,7 @@
       "pffTied": true,
       "cfb27Rating": 68,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
+      "transferLookedUp": true,
       "recruitLookedUp": false
     },
     {
@@ -1586,7 +1586,7 @@
       "compositeScore": null,
       "transferScore": 85,
       "profileUrl": null,
-      "transferRank": 1776,
+      "transferRank": 1775,
       "transferPosRank": 202,
       "hsNationalRank": null,
       "hsPositionRank": null,
@@ -1599,8 +1599,8 @@
       "pffTied": true,
       "cfb27Rating": 74,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
-      "recruitLookedUp": false
+      "transferLookedUp": true,
+      "recruitLookedUp": true
     },
     {
       "position": "LCB",
@@ -1653,8 +1653,8 @@
       "pffTied": true,
       "cfb27Rating": 83,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
-      "recruitLookedUp": false
+      "transferLookedUp": true,
+      "recruitLookedUp": true
     },
     {
       "position": "SS",
@@ -1680,7 +1680,7 @@
       "pffTied": null,
       "cfb27Rating": null,
       "cfb27Dev": null,
-      "transferLookedUp": false,
+      "transferLookedUp": true,
       "recruitLookedUp": false
     },
     {
@@ -1734,7 +1734,7 @@
       "pffTied": true,
       "cfb27Rating": 78,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
+      "transferLookedUp": true,
       "recruitLookedUp": false
     },
     {
@@ -1788,7 +1788,7 @@
       "pffTied": true,
       "cfb27Rating": 83,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
+      "transferLookedUp": true,
       "recruitLookedUp": false
     },
     {
@@ -1842,7 +1842,7 @@
       "pffTied": false,
       "cfb27Rating": 81,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
+      "transferLookedUp": true,
       "recruitLookedUp": false
     },
     {
@@ -1869,8 +1869,8 @@
       "pffTied": null,
       "cfb27Rating": null,
       "cfb27Dev": null,
-      "transferLookedUp": false,
-      "recruitLookedUp": false
+      "transferLookedUp": true,
+      "recruitLookedUp": true
     },
     {
       "position": "PK",
@@ -1896,8 +1896,8 @@
       "pffTied": false,
       "cfb27Rating": 81,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
-      "recruitLookedUp": false
+      "transferLookedUp": true,
+      "recruitLookedUp": true
     },
     {
       "position": "PK",
@@ -1924,7 +1924,7 @@
       "cfb27Rating": null,
       "cfb27Dev": null,
       "transferLookedUp": null,
-      "recruitLookedUp": false
+      "recruitLookedUp": true
     },
     {
       "position": "KO",
@@ -1950,8 +1950,8 @@
       "pffTied": false,
       "cfb27Rating": 81,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
-      "recruitLookedUp": false
+      "transferLookedUp": true,
+      "recruitLookedUp": true
     },
     {
       "position": "KO",
@@ -1978,7 +1978,7 @@
       "cfb27Rating": null,
       "cfb27Dev": null,
       "transferLookedUp": null,
-      "recruitLookedUp": false
+      "recruitLookedUp": true
     },
     {
       "position": "LS",
@@ -2004,7 +2004,7 @@
       "pffTied": null,
       "cfb27Rating": 66,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
+      "transferLookedUp": true,
       "recruitLookedUp": false
     },
     {
@@ -2032,7 +2032,7 @@
       "cfb27Rating": null,
       "cfb27Dev": null,
       "transferLookedUp": null,
-      "recruitLookedUp": false
+      "recruitLookedUp": true
     },
     {
       "position": "H",
@@ -2058,7 +2058,7 @@
       "pffTied": false,
       "cfb27Rating": 81,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
+      "transferLookedUp": true,
       "recruitLookedUp": false
     },
     {
@@ -2085,8 +2085,8 @@
       "pffTied": null,
       "cfb27Rating": null,
       "cfb27Dev": null,
-      "transferLookedUp": false,
-      "recruitLookedUp": false
+      "transferLookedUp": true,
+      "recruitLookedUp": true
     },
     {
       "position": "PR",
@@ -2112,8 +2112,8 @@
       "pffTied": null,
       "cfb27Rating": 76,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
-      "recruitLookedUp": false
+      "transferLookedUp": true,
+      "recruitLookedUp": true
     },
     {
       "position": "PR",
@@ -2139,7 +2139,7 @@
       "pffTied": null,
       "cfb27Rating": 75,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
+      "transferLookedUp": true,
       "recruitLookedUp": false
     },
     {
@@ -2153,7 +2153,7 @@
       "compositeScore": null,
       "transferScore": 85,
       "profileUrl": null,
-      "transferRank": 1939,
+      "transferRank": 1936,
       "transferPosRank": 152,
       "hsNationalRank": null,
       "hsPositionRank": null,
@@ -2166,8 +2166,8 @@
       "pffTied": false,
       "cfb27Rating": 82,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
-      "recruitLookedUp": false
+      "transferLookedUp": true,
+      "recruitLookedUp": true
     },
     {
       "position": "KR",
@@ -2193,8 +2193,8 @@
       "pffTied": null,
       "cfb27Rating": 76,
       "cfb27Dev": "Normal",
-      "transferLookedUp": false,
-      "recruitLookedUp": false
+      "transferLookedUp": true,
+      "recruitLookedUp": true
     }
   ]
 }
