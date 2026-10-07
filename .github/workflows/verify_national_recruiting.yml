@@ -1,0 +1,23 @@
+name: Verify National Recruiting Pull (one-off)
+on:
+  workflow_dispatch: {}
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: depth-data-cfb
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests beautifulsoup4
+      - name: Verify
+        working-directory: scripts
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+          CFBD_CACHE_DIR: ${{ runner.temp }}/cfbd_cache
+        run: python3 verify_national_recruiting.py alabama smu ohio-state vanderbilt miami-fl virginia-tech
