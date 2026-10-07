@@ -70,11 +70,44 @@ def _scrape_team_page(url, delay=1.0):
     return out
 
 
-def get_cfb27_ratings(team_id, version="freshmen-update-v2"):
+_DATED_VERSION = re.compile(r"^(\d{2})-?(\d{2})-?(\d{2})$")  # 10-02-26 or 100226
+_latest_cache = {}
+
+
+def latest_version(game, fallback):
+    """Newest dated roster teamcrafters links from its index for `game`
+    (CFB27 or MADDEN27). Roster updates are published as new dated versions
+    (e.g. 09-04-26, 10-02-26); pinning one version meant the scheduled
+    ratings refresh kept re-reading the same pre-season roster. Falls back to
+    `fallback` if the index can't be read or lists no dated versions."""
+    if game in _latest_cache:
+        return _latest_cache[game]
+    version = fallback
+    try:
+        resp = requests.get(f"https://www.teamcrafters.net/rosters/{game}", headers=HEADERS, timeout=20)
+        resp.raise_for_status()
+        dated = []
+        for slug in set(re.findall(rf"/rosters/{game}/([A-Za-z0-9._-]+)/", resp.text)):
+            m = _DATED_VERSION.match(slug)
+            if m:
+                mm, dd, yy = (int(x) for x in m.groups())
+                dated.append(((2000 + yy, mm, dd), slug))
+        if dated:
+            version = max(dated)[1]
+    except Exception as e:
+        print(f"  could not read {game} roster index ({e}); using {fallback}")
+    _latest_cache[game] = version
+    print(f"  {game} roster version: {version}")
+    return version
+
+
+def get_cfb27_ratings(team_id, version=None):
+    version = version or latest_version("CFB27", fallback="10-02-26")
     url = f"https://www.teamcrafters.net/rosters/CFB27/{version}/{team_id}"
     return _scrape_team_page(url)
 
 
-def get_madden27_ratings(team_id, version="082726"):
+def get_madden27_ratings(team_id, version=None):
+    version = version or latest_version("MADDEN27", fallback="082726")
     url = f"https://www.teamcrafters.net/rosters/MADDEN27/{version}/{team_id}"
     return _scrape_team_page(url)
