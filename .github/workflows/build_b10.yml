@@ -6,12 +6,22 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Serialize every job that writes CFB depth chart files.
+    # Never cancel: a queued run must still execute after the one ahead of it.
+    concurrency:
+      group: depth-data-cfb
+      cancel-in-progress: false
     permissions:
       contents: write
     timeout-minutes: 60
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
+        with:
+          # Latest main at job start, not the commit that existed when the
+          # schedule fired. A run that waited in the concurrency queue must
+          # build on whatever the run ahead of it pushed.
+          ref: main
       - name: Set up Python
         uses: actions/setup-python@v5
         with:

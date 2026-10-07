@@ -12,11 +12,21 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
+    # Serialize every job that writes NFL depth chart files.
+    # Never cancel: a queued run must still execute after the one ahead of it.
+    concurrency:
+      group: depth-data-nfl
+      cancel-in-progress: false
     permissions:
       contents: write
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
+        with:
+          # Latest main at job start, not the commit that existed when the
+          # schedule fired. A run that waited in the concurrency queue must
+          # build on whatever the run ahead of it pushed.
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -44,19 +54,6 @@ jobs:
         run: |
           git config user.name "depth-chart-bot"
           git config user.email "actions@github.com"
-          git add depth_chart_data_nfl/ depth_chart_scrape_log_nfl.txt
-          if git diff --staged --quiet; then
-            echo "No changes to commit."
-            exit 0
-          fi
-          git commit -m "Weekly NFL depth chart update - $(date -u +%Y-%m-%d)"
-          for attempt in 1 2 3; do
-            if git push; then
-              echo "Pushed successfully."
-              exit 0
-            fi
-            echo "Push rejected (attempt $attempt) -- rebasing onto latest main and retrying."
-            git pull --rebase origin main
-          done
-          echo "Push failed after 3 attempts." >&2
-          exit 1
+          scripts/push_depth_data.sh ours \
+            "Weekly NFL depth chart update - $(date -u +%Y-%m-%d)" \
+            depth_chart_data_nfl depth_chart_scrape_log_nfl.txt

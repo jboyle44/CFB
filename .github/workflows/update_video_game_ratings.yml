@@ -2,27 +2,37 @@ name: Update Video Game Ratings (CFB27 / Madden27)
 
 on:
   schedule:
-    # Oct 6, 9am ET (13:00 UTC, still EDT) -- both games
-    - cron: '0 13 6 10 *'
-    # Nov 3, 9am ET (14:00 UTC, EST after clocks fall back Nov 1) -- both games
-    - cron: '0 14 3 11 *'
-    # Dec 2, 9am ET (14:00 UTC, EST) -- both games
+    # Monthly refreshes, kept off Tuesday/Friday mornings when the depth chart,
+    # NFL depth chart and draft prospects workflows run against the same files.
+    # Nov 4 (Wed), 9am ET (14:00 UTC, EST after clocks fall back Nov 1) -- both games
+    - cron: '0 14 4 11 *'
+    # Dec 2 (Wed), 9am ET (14:00 UTC, EST) -- both games
     - cron: '0 14 2 12 *'
-    # Jan 5, 9am ET (14:00 UTC, EST) -- NFL/Madden only
-    - cron: '0 14 5 1 *'
+    # Jan 6 (Wed), 9am ET (14:00 UTC, EST) -- NFL/Madden only
+    - cron: '0 14 6 1 *'
 
   workflow_dispatch: {}
 
 jobs:
   update-cfb27:
-    # Runs for every trigger except the Jan 5 NFL-only schedule.
-    if: github.event_name == 'workflow_dispatch' || github.event.schedule != '0 14 5 1 *'
+    # Runs for every trigger except the Jan 6 NFL-only schedule.
+    if: github.event_name == 'workflow_dispatch' || github.event.schedule != '0 14 6 1 *'
     runs-on: ubuntu-latest
+    # Serialize every job that writes CFB depth chart files.
+    # Never cancel: a queued run must still execute after the one ahead of it.
+    concurrency:
+      group: depth-data-cfb
+      cancel-in-progress: false
     permissions:
       contents: write
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
+        with:
+          # Latest main at job start, not the commit that existed when the
+          # schedule fired. A run that waited in the concurrency queue must
+          # build on whatever the run ahead of it pushed.
+          ref: main
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -41,23 +51,28 @@ jobs:
             echo "No CFB27 rating changes to commit."
             exit 0
           fi
-          git commit -m "CFB27 ratings update - $(date -u +%Y-%m-%d)"
-          for attempt in 1 2 3; do
-            if git push; then
-              exit 0
-            fi
-            git pull --rebase origin main
-          done
-          exit 1
+          scripts/push_depth_data.sh theirs \
+            "CFB27 ratings update - $(date -u +%Y-%m-%d)" \
+            depth_chart_data
 
   update-madden27:
-    # Runs on every trigger, including the Jan 5 NFL-only schedule.
+    # Runs on every trigger, including the Jan 6 NFL-only schedule.
     runs-on: ubuntu-latest
+    # Serialize every job that writes NFL depth chart files.
+    # Never cancel: a queued run must still execute after the one ahead of it.
+    concurrency:
+      group: depth-data-nfl
+      cancel-in-progress: false
     permissions:
       contents: write
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
+        with:
+          # Latest main at job start, not the commit that existed when the
+          # schedule fired. A run that waited in the concurrency queue must
+          # build on whatever the run ahead of it pushed.
+          ref: main
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -76,11 +91,6 @@ jobs:
             echo "No Madden27 rating changes to commit."
             exit 0
           fi
-          git commit -m "Madden27 ratings update - $(date -u +%Y-%m-%d)"
-          for attempt in 1 2 3; do
-            if git push; then
-              exit 0
-            fi
-            git pull --rebase origin main
-          done
-          exit 1
+          scripts/push_depth_data.sh theirs \
+            "Madden27 ratings update - $(date -u +%Y-%m-%d)" \
+            depth_chart_data_nfl
