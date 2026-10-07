@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-07T01:17:05.515500+00:00",
   "ourladsUpdatedAt": "2026-10-07T01:17:05.515500+00:00",
   "cfbdUpdatedAt": "2026-10-07T00:51:23.824210+00:00",
-  "cfb27UpdatedAt": "2026-10-06T13:17:24.090455+00:00",
+  "cfb27UpdatedAt": "2026-10-07T03:19:48.023756+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Northwestern",
@@ -598,7 +598,7 @@
       "pffPositionTotal": 166,
       "pffPositionLabel": "QB",
       "pffTied": false,
-      "cfb27Rating": 80,
+      "cfb27Rating": 82,
       "cfb27Dev": "Star",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -733,7 +733,7 @@
       "pffPositionTotal": 341,
       "pffPositionLabel": "HB",
       "pffTied": true,
-      "cfb27Rating": 81,
+      "cfb27Rating": 82,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -976,7 +976,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "DI",
       "pffTied": false,
-      "cfb27Rating": 70,
+      "cfb27Rating": 71,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1570,7 +1570,7 @@
       "pffPositionTotal": 217,
       "pffPositionLabel": "K",
       "pffTied": false,
-      "cfb27Rating": 79,
+      "cfb27Rating": 80,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1597,7 +1597,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 79,
+      "cfb27Rating": 67,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1651,7 +1651,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 79,
+      "cfb27Rating": 67,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1867,7 +1867,7 @@
       "pffPositionTotal": 341,
       "pffPositionLabel": "HB",
       "pffTied": true,
-      "cfb27Rating": 81,
+      "cfb27Rating": 82,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1927,7 +1927,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "DT",
       "player": "Glory Stephen-Wangboje",
       "jersey": "93",
       "class": "RS JR",
@@ -1954,7 +1954,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "C",
       "player": "Ezomo Oratokhai",
       "jersey": "62",
       "class": "RS SO",
@@ -2035,7 +2035,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "LE",
       "player": "Troy Regovich",
       "jersey": "99",
       "class": "RS SO",
@@ -2062,7 +2062,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "ROLB",
       "player": "Nigel Glover",
       "jersey": "42",
       "class": "RS JR",
@@ -2089,7 +2089,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Chase Farrell",
       "jersey": "20",
       "class": "RS SO",
@@ -2116,7 +2116,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "Callen Campbell",
       "jersey": "44",
       "class": "RS SO",
@@ -2143,7 +2143,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Braden Turner",
       "jersey": "9",
       "class": "RS SR",
@@ -2164,7 +2164,7 @@
       "pffPositionTotal": 524,
       "pffPositionLabel": "CB",
       "pffTied": true,
-      "cfb27Rating": 83,
+      "cfb27Rating": 84,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -2197,7 +2197,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "LOLB",
       "player": "Jason Reynolds II",
       "jersey": "40",
       "class": "RS SR",
@@ -2278,7 +2278,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "LT",
       "player": "Jacob Miller",
       "jersey": "79",
       "class": "FR",
@@ -2305,7 +2305,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "RT",
       "player": "David Anchondo",
       "jersey": "61",
       "class": "RS JR",
@@ -2332,7 +2332,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "TE",
       "player": "Tom McGlinchey",
       "jersey": "85",
       "class": "FR",
@@ -2359,7 +2359,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Jaden McDuffie",
       "jersey": "82",
       "class": "FR",
@@ -2386,7 +2386,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "SS",
       "player": "Damon Walters",
       "jersey": "21",
       "class": "RS JR",
@@ -2413,7 +2413,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Josh Fussell",
       "jersey": "13",
       "class": "RS JR",

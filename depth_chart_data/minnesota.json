@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-07T01:17:01.772632+00:00",
   "ourladsUpdatedAt": "2026-10-07T01:17:01.772632+00:00",
   "cfbdUpdatedAt": "2026-10-07T00:50:57.672001+00:00",
-  "cfb27UpdatedAt": "2026-10-06T13:17:20.386226+00:00",
+  "cfb27UpdatedAt": "2026-10-07T03:19:45.141389+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Minnesota",
@@ -85,7 +85,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 70,
+      "cfb27Rating": 75,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -166,7 +166,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 86,
+      "cfb27Rating": 87,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -247,7 +247,7 @@
       "pffPositionTotal": 334,
       "pffPositionLabel": "T",
       "pffTied": true,
-      "cfb27Rating": 78,
+      "cfb27Rating": 80,
       "cfb27Dev": "Star",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -301,7 +301,7 @@
       "pffPositionTotal": 374,
       "pffPositionLabel": "G",
       "pffTied": true,
-      "cfb27Rating": 92,
+      "cfb27Rating": 93,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -517,7 +517,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "T",
       "pffTied": false,
-      "cfb27Rating": 72,
+      "cfb27Rating": 71,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -706,7 +706,7 @@
       "pffPositionTotal": 166,
       "pffPositionLabel": "QB",
       "pffTied": false,
-      "cfb27Rating": 81,
+      "cfb27Rating": 83,
       "cfb27Dev": "Star",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1273,7 +1273,7 @@
       "pffPositionTotal": 544,
       "pffPositionLabel": "ED",
       "pffTied": true,
-      "cfb27Rating": 76,
+      "cfb27Rating": 79,
       "cfb27Dev": "Star",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1705,7 +1705,7 @@
       "pffPositionTotal": 516,
       "pffPositionLabel": "S",
       "pffTied": true,
-      "cfb27Rating": 87,
+      "cfb27Rating": 86,
       "cfb27Dev": "Star",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1975,7 +1975,7 @@
       "pffPositionTotal": 144,
       "pffPositionLabel": "P",
       "pffTied": false,
-      "cfb27Rating": 77,
+      "cfb27Rating": 76,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -2083,7 +2083,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 75,
+      "cfb27Rating": 67,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -2164,7 +2164,7 @@
       "pffPositionTotal": 144,
       "pffPositionLabel": "P",
       "pffTied": false,
-      "cfb27Rating": 77,
+      "cfb27Rating": 76,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -2218,7 +2218,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 86,
+      "cfb27Rating": 87,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -2305,7 +2305,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "Enoch Atewogbola",
       "jersey": "47",
       "class": "RS FR",
@@ -2332,7 +2332,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "C",
       "player": "Brett Carroll",
       "jersey": "56",
       "class": "RS SO",
@@ -2359,7 +2359,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Ryan Estrada",
       "jersey": "20",
       "class": "FR",
@@ -2386,7 +2386,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Hayden Moore",
       "jersey": "84",
       "class": "FR",

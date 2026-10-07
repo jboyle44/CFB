@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-07T01:17:58.638728+00:00",
   "ourladsUpdatedAt": "2026-10-07T01:17:58.638728+00:00",
   "cfbdUpdatedAt": "2026-10-07T00:57:13.282997+00:00",
-  "cfb27UpdatedAt": "2026-10-06T13:18:14.126676+00:00",
+  "cfb27UpdatedAt": "2026-10-07T03:20:32.433416+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Clemson",
@@ -166,7 +166,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 81,
+      "cfb27Rating": 82,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -409,7 +409,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "G",
       "pffTied": false,
-      "cfb27Rating": 73,
+      "cfb27Rating": 72,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -625,7 +625,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "QB",
       "pffTied": false,
-      "cfb27Rating": 75,
+      "cfb27Rating": 74,
       "cfb27Dev": "Star",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -976,7 +976,7 @@
       "pffPositionTotal": 544,
       "pffPositionLabel": "ED",
       "pffTied": false,
-      "cfb27Rating": 90,
+      "cfb27Rating": 91,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1192,7 +1192,7 @@
       "pffPositionTotal": 524,
       "pffPositionLabel": "CB",
       "pffTied": true,
-      "cfb27Rating": 86,
+      "cfb27Rating": 88,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1462,7 +1462,7 @@
       "pffPositionTotal": 144,
       "pffPositionLabel": "P",
       "pffTied": false,
-      "cfb27Rating": 68,
+      "cfb27Rating": 70,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1516,7 +1516,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 77,
+      "cfb27Rating": 73,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1543,7 +1543,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 77,
+      "cfb27Rating": 73,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1759,13 +1759,13 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 81,
+      "cfb27Rating": 82,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "DT",
       "player": "Kourtney Kelly",
       "jersey": "44",
       "class": "RS SO",
@@ -1792,7 +1792,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "FS",
       "player": "Polo Anderson",
       "jersey": "11",
       "class": "FR",
@@ -1846,7 +1846,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Cole Turner",
       "jersey": "22",
       "class": "RS SR",
@@ -1900,7 +1900,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "DT",
       "player": "Markus Strong",
       "jersey": "99",
       "class": "RS JR",
@@ -1927,7 +1927,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Corian Gipson",
       "jersey": "8",
       "class": "RS SO",
@@ -1948,7 +1948,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "CB",
       "pffTied": false,
-      "cfb27Rating": 78,
+      "cfb27Rating": 77,
       "cfb27Dev": "Star",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -2008,7 +2008,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Jay Haynes",
       "jersey": "26",
       "class": "RS JR",
@@ -2029,7 +2029,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 84,
+      "cfb27Rating": 83,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -2062,7 +2062,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "DT",
       "player": "Devarrick Woods",
       "jersey": "92",
       "class": "RS SR",
@@ -2083,13 +2083,13 @@
       "pffPositionTotal": 546,
       "pffPositionLabel": "DI",
       "pffTied": false,
-      "cfb27Rating": 73,
+      "cfb27Rating": 70,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "RT",
       "player": "Mason Wade",
       "jersey": "76",
       "class": "RS SO",
@@ -2116,7 +2116,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "RT",
       "player": "Adam Guthrie",
       "jersey": "72",
       "class": "FR",

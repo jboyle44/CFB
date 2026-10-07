@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-07T01:18:06.153025+00:00",
   "ourladsUpdatedAt": "2026-10-07T01:18:06.153025+00:00",
   "cfbdUpdatedAt": "2026-10-07T00:57:59.472196+00:00",
-  "cfb27UpdatedAt": "2026-10-06T13:18:20.741517+00:00",
+  "cfb27UpdatedAt": "2026-10-07T03:20:40.880041+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Louisville",
@@ -274,7 +274,7 @@
       "pffPositionTotal": 374,
       "pffPositionLabel": "G",
       "pffTied": true,
-      "cfb27Rating": 78,
+      "cfb27Rating": 80,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -355,7 +355,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "C",
       "pffTied": false,
-      "cfb27Rating": 73,
+      "cfb27Rating": 74,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -598,7 +598,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "QB",
       "pffTied": false,
-      "cfb27Rating": 81,
+      "cfb27Rating": 84,
       "cfb27Dev": "Star",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -706,7 +706,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 87,
+      "cfb27Rating": 88,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -814,7 +814,7 @@
       "pffPositionTotal": 544,
       "pffPositionLabel": "ED",
       "pffTied": false,
-      "cfb27Rating": 79,
+      "cfb27Rating": 80,
       "cfb27Dev": "Star",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -922,7 +922,7 @@
       "pffPositionTotal": 546,
       "pffPositionLabel": "DI",
       "pffTied": true,
-      "cfb27Rating": 75,
+      "cfb27Rating": 74,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -976,7 +976,7 @@
       "pffPositionTotal": 544,
       "pffPositionLabel": "ED",
       "pffTied": true,
-      "cfb27Rating": 92,
+      "cfb27Rating": 93,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -1165,8 +1165,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "LB",
       "pffTied": false,
-      "cfb27Rating": null,
-      "cfb27Dev": null,
+      "cfb27Rating": 70,
+      "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": false
     },
@@ -1327,7 +1327,7 @@
       "pffPositionTotal": 516,
       "pffPositionLabel": "S",
       "pffTied": false,
-      "cfb27Rating": 73,
+      "cfb27Rating": 76,
       "cfb27Dev": "Star",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1354,8 +1354,8 @@
       "pffPositionTotal": 516,
       "pffPositionLabel": "S",
       "pffTied": true,
-      "cfb27Rating": null,
-      "cfb27Dev": null,
+      "cfb27Rating": 75,
+      "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": true
     },
@@ -1435,7 +1435,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 72,
+      "cfb27Rating": 75,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1597,7 +1597,7 @@
       "pffPositionTotal": 217,
       "pffPositionLabel": "K",
       "pffTied": false,
-      "cfb27Rating": 77,
+      "cfb27Rating": 74,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": true
@@ -1678,8 +1678,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null,
+      "cfb27Rating": 67,
+      "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": true
     },
@@ -1786,7 +1786,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 87,
+      "cfb27Rating": 88,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1819,7 +1819,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Kris Hughes",
       "jersey": "14",
       "class": "RS JR",
@@ -1846,7 +1846,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Montavin Quisenberry",
       "jersey": "82",
       "class": "RS FR",
@@ -1873,7 +1873,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "LOLB",
       "player": "Antonio Watts",
       "jersey": "9",
       "class": "RS SR",

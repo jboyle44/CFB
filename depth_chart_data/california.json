@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-07T01:17:56.670661+00:00",
   "ourladsUpdatedAt": "2026-10-07T01:17:56.670661+00:00",
   "cfbdUpdatedAt": "2026-10-07T00:57:05.627034+00:00",
-  "cfb27UpdatedAt": "2026-10-06T13:18:12.315435+00:00",
+  "cfb27UpdatedAt": "2026-10-07T03:20:31.009803+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "California",
@@ -220,7 +220,7 @@
       "pffPositionTotal": 334,
       "pffPositionLabel": "T",
       "pffTied": false,
-      "cfb27Rating": 75,
+      "cfb27Rating": 77,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -382,7 +382,7 @@
       "pffPositionTotal": 374,
       "pffPositionLabel": "G",
       "pffTied": false,
-      "cfb27Rating": 81,
+      "cfb27Rating": 82,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -652,7 +652,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 81,
+      "cfb27Rating": 83,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1273,7 +1273,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "S",
       "pffTied": false,
-      "cfb27Rating": 78,
+      "cfb27Rating": 86,
       "cfb27Dev": "Star",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1489,7 +1489,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "S",
       "pffTied": false,
-      "cfb27Rating": 72,
+      "cfb27Rating": 73,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1597,7 +1597,7 @@
       "pffPositionTotal": 217,
       "pffPositionLabel": "K",
       "pffTied": false,
-      "cfb27Rating": 78,
+      "cfb27Rating": 74,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -1624,7 +1624,7 @@
       "pffPositionTotal": 217,
       "pffPositionLabel": "K",
       "pffTied": true,
-      "cfb27Rating": 83,
+      "cfb27Rating": 78,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1651,7 +1651,7 @@
       "pffPositionTotal": 217,
       "pffPositionLabel": "K",
       "pffTied": true,
-      "cfb27Rating": 83,
+      "cfb27Rating": 78,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1678,7 +1678,7 @@
       "pffPositionTotal": 217,
       "pffPositionLabel": "K",
       "pffTied": false,
-      "cfb27Rating": 78,
+      "cfb27Rating": 74,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -1894,13 +1894,13 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 81,
+      "cfb27Rating": 83,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Carter Vargas",
       "jersey": "1",
       "class": "RS SO",
@@ -1927,7 +1927,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "LE",
       "player": "Nate Burrell",
       "jersey": "98",
       "class": "RS SR",
@@ -1954,7 +1954,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "C",
       "player": "Lamar Robinson",
       "jersey": "78",
       "class": "RS SR",

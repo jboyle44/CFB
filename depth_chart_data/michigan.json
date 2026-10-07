@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-07T01:16:58.030147+00:00",
   "ourladsUpdatedAt": "2026-10-07T01:16:58.030147+00:00",
   "cfbdUpdatedAt": "2026-10-07T00:49:53.063693+00:00",
-  "cfb27UpdatedAt": "2026-10-06T13:17:16.851772+00:00",
+  "cfb27UpdatedAt": "2026-10-07T03:19:42.275229+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Michigan",
@@ -220,7 +220,7 @@
       "pffPositionTotal": 569,
       "pffPositionLabel": "WR",
       "pffTied": true,
-      "cfb27Rating": 79,
+      "cfb27Rating": 86,
       "cfb27Dev": "Star",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -301,7 +301,7 @@
       "pffPositionTotal": 334,
       "pffPositionLabel": "T",
       "pffTied": false,
-      "cfb27Rating": 82,
+      "cfb27Rating": 83,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -463,8 +463,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "C",
       "pffTied": false,
-      "cfb27Rating": null,
-      "cfb27Dev": null,
+      "cfb27Rating": 70,
+      "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
     },
@@ -841,8 +841,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null,
+      "cfb27Rating": 62,
+      "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": false
     },
@@ -1030,8 +1030,8 @@
       "pffPositionTotal": 544,
       "pffPositionLabel": "ED",
       "pffTied": false,
-      "cfb27Rating": null,
-      "cfb27Dev": null,
+      "cfb27Rating": 79,
+      "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": true
     },
@@ -1057,8 +1057,8 @@
       "pffPositionTotal": 544,
       "pffPositionLabel": "ED",
       "pffTied": false,
-      "cfb27Rating": null,
-      "cfb27Dev": null,
+      "cfb27Rating": 79,
+      "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
     },
@@ -1219,7 +1219,7 @@
       "pffPositionTotal": 546,
       "pffPositionLabel": "DI",
       "pffTied": true,
-      "cfb27Rating": 76,
+      "cfb27Rating": 77,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1894,7 +1894,7 @@
       "pffPositionTotal": 524,
       "pffPositionLabel": "CB",
       "pffTied": true,
-      "cfb27Rating": 82,
+      "cfb27Rating": 83,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1975,8 +1975,8 @@
       "pffPositionTotal": 144,
       "pffPositionLabel": "P",
       "pffTied": false,
-      "cfb27Rating": null,
-      "cfb27Dev": null,
+      "cfb27Rating": 73,
+      "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
     },
@@ -2056,7 +2056,7 @@
       "pffPositionTotal": 217,
       "pffPositionLabel": "K",
       "pffTied": false,
-      "cfb27Rating": 77,
+      "cfb27Rating": 75,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -2110,7 +2110,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 73,
+      "cfb27Rating": 64,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -2137,7 +2137,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 73,
+      "cfb27Rating": 64,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -2164,7 +2164,7 @@
       "pffPositionTotal": 217,
       "pffPositionLabel": "K",
       "pffTied": false,
-      "cfb27Rating": 77,
+      "cfb27Rating": 75,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -2299,8 +2299,8 @@
       "pffPositionTotal": 144,
       "pffPositionLabel": "P",
       "pffTied": false,
-      "cfb27Rating": null,
-      "cfb27Dev": null,
+      "cfb27Rating": 73,
+      "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
     },
@@ -2467,7 +2467,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Micah Ka'apana",
       "jersey": "25",
       "class": "RS SO",
@@ -2521,7 +2521,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Jonathan Brown",
       "jersey": "29",
       "class": "FR",
@@ -2548,7 +2548,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "LE",
       "player": "Julius Holly",
       "jersey": "37",
       "class": "RS FR",
@@ -2575,7 +2575,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "C",
       "player": "Ace Hamilton",
       "jersey": "52",
       "class": "FR",
@@ -2602,7 +2602,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "LT",
       "player": "Andrew Babalola",
       "jersey": "65",
       "class": "RS FR",
@@ -2656,7 +2656,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "RT",
       "player": "Andrew Sprague",
       "jersey": "54",
       "class": "RS SO",

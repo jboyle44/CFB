@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-07T01:18:51.211250+00:00",
   "ourladsUpdatedAt": "2026-10-07T01:18:51.211250+00:00",
   "cfbdUpdatedAt": "2026-10-07T01:03:07.043169+00:00",
-  "cfb27UpdatedAt": "2026-10-06T13:19:01.075072+00:00",
+  "cfb27UpdatedAt": "2026-10-07T03:21:15.804599+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "TCU",
@@ -31,7 +31,7 @@
       "pffPositionTotal": 569,
       "pffPositionLabel": "WR",
       "pffTied": true,
-      "cfb27Rating": 78,
+      "cfb27Rating": 79,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -58,8 +58,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null,
+      "cfb27Rating": 68,
+      "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": true
     },
@@ -193,7 +193,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 80,
+      "cfb27Rating": 81,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -301,7 +301,7 @@
       "pffPositionTotal": 374,
       "pffPositionLabel": "G",
       "pffTied": false,
-      "cfb27Rating": 78,
+      "cfb27Rating": 80,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -436,8 +436,8 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": null,
-      "cfb27Dev": null,
+      "cfb27Rating": 65,
+      "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": true
     },
@@ -814,7 +814,7 @@
       "pffPositionTotal": 341,
       "pffPositionLabel": "HB",
       "pffTied": true,
-      "cfb27Rating": 84,
+      "cfb27Rating": 85,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -841,7 +841,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 75,
+      "cfb27Rating": 74,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1057,7 +1057,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "DI",
       "pffTied": false,
-      "cfb27Rating": 74,
+      "cfb27Rating": 73,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -1111,7 +1111,7 @@
       "pffPositionTotal": 546,
       "pffPositionLabel": "DI",
       "pffTied": true,
-      "cfb27Rating": 82,
+      "cfb27Rating": 83,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1192,7 +1192,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 72,
+      "cfb27Rating": 73,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1246,7 +1246,7 @@
       "pffPositionTotal": 474,
       "pffPositionLabel": "LB",
       "pffTied": true,
-      "cfb27Rating": 75,
+      "cfb27Rating": 76,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1543,7 +1543,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "S",
       "pffTied": false,
-      "cfb27Rating": 76,
+      "cfb27Rating": 77,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1597,7 +1597,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "CB",
       "pffTied": false,
-      "cfb27Rating": 72,
+      "cfb27Rating": 73,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": true
@@ -1651,7 +1651,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "S",
       "pffTied": false,
-      "cfb27Rating": 70,
+      "cfb27Rating": 68,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1705,7 +1705,7 @@
       "pffPositionTotal": 144,
       "pffPositionLabel": "P",
       "pffTied": true,
-      "cfb27Rating": 82,
+      "cfb27Rating": 80,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -1759,7 +1759,7 @@
       "pffPositionTotal": 217,
       "pffPositionLabel": "K",
       "pffTied": false,
-      "cfb27Rating": 78,
+      "cfb27Rating": 75,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1813,7 +1813,7 @@
       "pffPositionTotal": 144,
       "pffPositionLabel": "P",
       "pffTied": true,
-      "cfb27Rating": 82,
+      "cfb27Rating": 80,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -1948,7 +1948,7 @@
       "pffPositionTotal": 144,
       "pffPositionLabel": "P",
       "pffTied": true,
-      "cfb27Rating": 82,
+      "cfb27Rating": 80,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -1975,7 +1975,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 80,
+      "cfb27Rating": 81,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -2035,7 +2035,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "Zach Chapman",
       "jersey": "0",
       "class": "RS JR",
@@ -2062,7 +2062,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Dozie Ezukanma",
       "jersey": "0",
       "class": "RS SO",

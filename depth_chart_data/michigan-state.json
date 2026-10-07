@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-07T01:16:59.899429+00:00",
   "ourladsUpdatedAt": "2026-10-07T01:16:59.899429+00:00",
   "cfbdUpdatedAt": "2026-10-07T00:50:39.187747+00:00",
-  "cfb27UpdatedAt": "2026-10-06T13:17:18.586657+00:00",
+  "cfb27UpdatedAt": "2026-10-07T03:19:43.709404+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Michigan State",
@@ -382,7 +382,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 75,
+      "cfb27Rating": 77,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -436,7 +436,7 @@
       "pffPositionTotal": 374,
       "pffPositionLabel": "G",
       "pffTied": true,
-      "cfb27Rating": 77,
+      "cfb27Rating": 78,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -490,7 +490,7 @@
       "pffPositionTotal": 374,
       "pffPositionLabel": "G",
       "pffTied": true,
-      "cfb27Rating": 71,
+      "cfb27Rating": 70,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -652,7 +652,7 @@
       "pffPositionTotal": 166,
       "pffPositionLabel": "QB",
       "pffTied": true,
-      "cfb27Rating": 75,
+      "cfb27Rating": 72,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -679,7 +679,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "QB",
       "pffTied": false,
-      "cfb27Rating": 72,
+      "cfb27Rating": 71,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -949,7 +949,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "DI",
       "pffTied": false,
-      "cfb27Rating": 83,
+      "cfb27Rating": 84,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1003,7 +1003,7 @@
       "pffPositionTotal": 546,
       "pffPositionLabel": "DI",
       "pffTied": true,
-      "cfb27Rating": 75,
+      "cfb27Rating": 77,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -1462,7 +1462,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "CB",
       "pffTied": false,
-      "cfb27Rating": 85,
+      "cfb27Rating": 83,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1570,7 +1570,7 @@
       "pffPositionTotal": 144,
       "pffPositionLabel": "P",
       "pffTied": false,
-      "cfb27Rating": 84,
+      "cfb27Rating": 85,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1624,7 +1624,7 @@
       "pffPositionTotal": 217,
       "pffPositionLabel": "K",
       "pffTied": false,
-      "cfb27Rating": 74,
+      "cfb27Rating": 72,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -1651,7 +1651,7 @@
       "pffPositionTotal": 217,
       "pffPositionLabel": "K",
       "pffTied": false,
-      "cfb27Rating": 74,
+      "cfb27Rating": 72,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -1705,7 +1705,7 @@
       "pffPositionTotal": 144,
       "pffPositionLabel": "P",
       "pffTied": false,
-      "cfb27Rating": 84,
+      "cfb27Rating": 85,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1873,7 +1873,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "FB",
       "player": "Jay Coyne",
       "jersey": "44",
       "class": "RS SR",
@@ -1927,7 +1927,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "MLB",
       "player": "Jordan Hall",
       "jersey": "5",
       "class": "SR",

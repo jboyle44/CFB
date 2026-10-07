@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-07T01:17:16.876207+00:00",
   "ourladsUpdatedAt": "2026-10-07T01:17:16.876207+00:00",
   "cfbdUpdatedAt": "2026-10-07T00:52:56.580416+00:00",
-  "cfb27UpdatedAt": "2026-10-06T13:17:34.502189+00:00",
+  "cfb27UpdatedAt": "2026-10-07T03:19:56.699364+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "UCLA",
@@ -58,7 +58,7 @@
       "pffPositionTotal": 569,
       "pffPositionLabel": "WR",
       "pffTied": true,
-      "cfb27Rating": 78,
+      "cfb27Rating": 80,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -193,7 +193,7 @@
       "pffPositionTotal": 569,
       "pffPositionLabel": "WR",
       "pffTied": true,
-      "cfb27Rating": 77,
+      "cfb27Rating": 78,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -274,7 +274,7 @@
       "pffPositionTotal": 334,
       "pffPositionLabel": "T",
       "pffTied": true,
-      "cfb27Rating": 80,
+      "cfb27Rating": 79,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -544,7 +544,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "T",
       "pffTied": false,
-      "cfb27Rating": 74,
+      "cfb27Rating": 76,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -841,7 +841,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 90,
+      "cfb27Rating": 91,
       "cfb27Dev": "Star",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -868,7 +868,7 @@
       "pffPositionTotal": 341,
       "pffPositionLabel": "HB",
       "pffTied": true,
-      "cfb27Rating": 80,
+      "cfb27Rating": 81,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -922,7 +922,7 @@
       "pffPositionTotal": 544,
       "pffPositionLabel": "ED",
       "pffTied": false,
-      "cfb27Rating": 84,
+      "cfb27Rating": 85,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -1300,7 +1300,7 @@
       "pffPositionTotal": 474,
       "pffPositionLabel": "LB",
       "pffTied": true,
-      "cfb27Rating": 77,
+      "cfb27Rating": 81,
       "cfb27Dev": "Star",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1462,7 +1462,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 78,
+      "cfb27Rating": 77,
       "cfb27Dev": "Star",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1624,7 +1624,7 @@
       "pffPositionTotal": 524,
       "pffPositionLabel": "CB",
       "pffTied": true,
-      "cfb27Rating": 83,
+      "cfb27Rating": 85,
       "cfb27Dev": "Star",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1759,7 +1759,7 @@
       "pffPositionTotal": 144,
       "pffPositionLabel": "P",
       "pffTied": false,
-      "cfb27Rating": 72,
+      "cfb27Rating": 74,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -1840,7 +1840,7 @@
       "pffPositionTotal": 217,
       "pffPositionLabel": "K",
       "pffTied": false,
-      "cfb27Rating": 82,
+      "cfb27Rating": 83,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -1894,7 +1894,7 @@
       "pffPositionTotal": 217,
       "pffPositionLabel": "K",
       "pffTied": false,
-      "cfb27Rating": 82,
+      "cfb27Rating": 83,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -2029,7 +2029,7 @@
       "pffPositionTotal": 144,
       "pffPositionLabel": "P",
       "pffTied": false,
-      "cfb27Rating": 72,
+      "cfb27Rating": 74,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -2110,7 +2110,7 @@
       "pffPositionTotal": 569,
       "pffPositionLabel": "WR",
       "pffTied": true,
-      "cfb27Rating": 77,
+      "cfb27Rating": 78,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -2137,7 +2137,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 90,
+      "cfb27Rating": 91,
       "cfb27Dev": "Star",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -2197,7 +2197,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "FS",
       "player": "Tao Johnson",
       "jersey": "6",
       "class": "RS SR",
@@ -2224,7 +2224,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Mikey Matthews",
       "jersey": "7",
       "class": "SR",
@@ -2245,7 +2245,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 83,
+      "cfb27Rating": 81,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -2332,7 +2332,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "C",
       "player": "Sam Yoon",
       "jersey": "64",
       "class": "RS SR",

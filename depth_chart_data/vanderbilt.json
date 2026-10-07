@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-07T01:17:52.928677+00:00",
   "ourladsUpdatedAt": "2026-10-07T01:17:52.928677+00:00",
   "cfbdUpdatedAt": "2026-10-07T00:56:41.752698+00:00",
-  "cfb27UpdatedAt": "2026-10-06T13:18:08.693865+00:00",
+  "cfb27UpdatedAt": "2026-10-07T03:20:28.038140+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Vanderbilt",
@@ -31,7 +31,7 @@
       "pffPositionTotal": 569,
       "pffPositionLabel": "WR",
       "pffTied": true,
-      "cfb27Rating": 87,
+      "cfb27Rating": 88,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -193,7 +193,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 75,
+      "cfb27Rating": 77,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -247,7 +247,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "T",
       "pffTied": false,
-      "cfb27Rating": 69,
+      "cfb27Rating": 72,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -706,7 +706,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 81,
+      "cfb27Rating": 80,
       "cfb27Dev": "Elite",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -733,7 +733,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "QB",
       "pffTied": false,
-      "cfb27Rating": 71,
+      "cfb27Rating": 76,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -1003,7 +1003,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "DI",
       "pffTied": false,
-      "cfb27Rating": 75,
+      "cfb27Rating": 76,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1570,7 +1570,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 75,
+      "cfb27Rating": 71,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -1624,7 +1624,7 @@
       "pffPositionTotal": 217,
       "pffPositionLabel": "K",
       "pffTied": false,
-      "cfb27Rating": 86,
+      "cfb27Rating": 85,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1651,7 +1651,7 @@
       "pffPositionTotal": 217,
       "pffPositionLabel": "K",
       "pffTied": true,
-      "cfb27Rating": 73,
+      "cfb27Rating": 70,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": true
@@ -1678,7 +1678,7 @@
       "pffPositionTotal": 217,
       "pffPositionLabel": "K",
       "pffTied": false,
-      "cfb27Rating": 86,
+      "cfb27Rating": 85,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1705,7 +1705,7 @@
       "pffPositionTotal": 217,
       "pffPositionLabel": "K",
       "pffTied": true,
-      "cfb27Rating": 73,
+      "cfb27Rating": 70,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": true
@@ -1786,7 +1786,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 75,
+      "cfb27Rating": 71,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -1894,7 +1894,7 @@
       "pffPositionTotal": 569,
       "pffPositionLabel": "WR",
       "pffTied": true,
-      "cfb27Rating": 87,
+      "cfb27Rating": 88,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1954,7 +1954,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Cobey Sellers",
       "jersey": "0",
       "class": "RS FR",
@@ -1981,7 +1981,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Jaylin Lackey",
       "jersey": "2",
       "class": "JR",

@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-07T01:16:50.358538+00:00",
   "ourladsUpdatedAt": "2026-10-07T01:16:50.358538+00:00",
   "cfbdUpdatedAt": "2026-10-07T00:48:19.838823+00:00",
-  "cfb27UpdatedAt": "2026-10-06T13:17:10.147190+00:00",
+  "cfb27UpdatedAt": "2026-10-07T03:19:36.308937+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Illinois",
@@ -31,7 +31,7 @@
       "pffPositionTotal": 569,
       "pffPositionLabel": "WR",
       "pffTied": true,
-      "cfb27Rating": 84,
+      "cfb27Rating": 87,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -112,7 +112,7 @@
       "pffPositionTotal": 569,
       "pffPositionLabel": "WR",
       "pffTied": true,
-      "cfb27Rating": 83,
+      "cfb27Rating": 84,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -193,7 +193,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 74,
+      "cfb27Rating": 79,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -301,7 +301,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "G",
       "pffTied": false,
-      "cfb27Rating": 78,
+      "cfb27Rating": 76,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -625,7 +625,7 @@
       "pffPositionTotal": 166,
       "pffPositionLabel": "QB",
       "pffTied": false,
-      "cfb27Rating": 83,
+      "cfb27Rating": 84,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1840,7 +1840,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 69,
+      "cfb27Rating": 73,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -1921,7 +1921,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 75,
+      "cfb27Rating": 66,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1975,7 +1975,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 75,
+      "cfb27Rating": 66,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -2056,7 +2056,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 69,
+      "cfb27Rating": 73,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -2170,7 +2170,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "ROLB",
       "player": "Daniel Brown",
       "jersey": "4",
       "class": "RS SR",
@@ -2197,7 +2197,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Jayshon Platt",
       "jersey": "1",
       "class": "RS SR",
@@ -2224,7 +2224,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Alex Perry",
       "jersey": "9",
       "class": "RS SR",
@@ -2251,7 +2251,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "TE",
       "player": "BJ Thurman",
       "jersey": "87",
       "class": "SO",
@@ -2332,7 +2332,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "C",
       "player": "TJ McMillen",
       "jersey": "55",
       "class": "RS JR",
@@ -2359,7 +2359,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "LG",
       "player": "Maika Matelau",
       "jersey": "70",
       "class": "SO",
@@ -2380,13 +2380,13 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 72,
+      "cfb27Rating": 76,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "RG",
       "player": "Brandon Henderson",
       "jersey": "75",
       "class": "SR",
@@ -2467,7 +2467,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "ROLB",
       "player": "Erik Gayle",
       "jersey": "34",
       "class": "RS FR",
@@ -2521,7 +2521,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "Cameron Brooks",
       "jersey": "91",
       "class": "RS FR",
