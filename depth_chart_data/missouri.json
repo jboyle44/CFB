@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-07T01:17:41.659288+00:00",
-  "ourladsUpdatedAt": "2026-10-07T01:17:41.659288+00:00",
-  "cfbdUpdatedAt": "2026-10-07T00:55:24.222562+00:00",
+  "generatedAt": "2026-10-09T18:37:06.145888+00:00",
+  "ourladsUpdatedAt": "2026-10-09T18:37:06.145888+00:00",
+  "cfbdUpdatedAt": "2026-10-09T18:37:06.145888+00:00",
   "cfb27UpdatedAt": "2026-10-07T03:20:18.897143+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
@@ -71,12 +71,12 @@
       "isTransfer": true,
       "isReserve": false,
       "reserveStatus": null,
-      "compositeScore": 88,
+      "compositeScore": 91,
       "transferScore": 85,
       "profileUrl": null,
       "transferRank": 1368,
       "transferPosRank": 214,
-      "hsNationalRank": 674,
+      "hsNationalRank": 302,
       "hsPositionRank": null,
       "hsStateRank": null,
       "pffGrade": 59.4,
@@ -1927,7 +1927,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RT",
+      "position": "RES",
       "player": "Josh Atkins",
       "jersey": "54",
       "class": "RS SR",
@@ -1954,7 +1954,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "DT",
+      "position": "RES",
       "player": "Elias Williams",
       "jersey": "91",
       "class": "RS SO",
@@ -1981,7 +1981,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "HB",
+      "position": "RES",
       "player": "Ahmad Hardy",
       "jersey": "29",
       "class": "JR",
@@ -2008,7 +2008,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RT",
+      "position": "RES",
       "player": "Logan Reichert",
       "jersey": "66",
       "class": "RS JR",
@@ -2035,7 +2035,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "HB",
+      "position": "RES",
       "player": "Malae Fonoti",
       "jersey": "21",
       "class": "RS SO",
@@ -2062,7 +2062,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "WR",
+      "position": "RES",
       "player": "Jabari Brady",
       "jersey": "11",
       "class": "FR",
@@ -2087,6 +2087,27 @@
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": false
+    },
+    {
+      "position": "RES",
+      "player": "DJ Jones",
+      "jersey": "78",
+      "class": "FR",
+      "isTransfer": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "compositeScore": 94,
+      "transferScore": null,
+      "profileUrl": null,
+      "transferRank": null,
+      "transferPosRank": null,
+      "hsNationalRank": 161,
+      "hsPositionRank": null,
+      "hsStateRank": null,
+      "pffGrade": null,
+      "draftRank": null,
+      "transferLookedUp": null,
+      "recruitLookedUp": true
     }
   ]
 }

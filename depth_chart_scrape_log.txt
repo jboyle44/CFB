@@ -189,9 +189,11 @@ Wrote ../depth_chart_data/mississippi-state.json
 exit_code=0
 === missouri ===
 Scraping Ourlads depth chart for Missouri...
-  77 depth chart rows
+  78 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
-Skipping CFBD recruiting call this run (no new players needing recruiting data).
+Fetching CFBD recruiting data for 2 (school, year) pairs...
+  Missouri 2025: 17 players
+  Missouri 2026: 23 players
 Wrote ../depth_chart_data/missouri.json
 exit_code=0
 === oklahoma ===
