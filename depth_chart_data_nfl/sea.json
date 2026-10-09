@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-06T13:09:05.111795+00:00",
-  "ourladsUpdatedAt": "2026-10-06T13:09:05.111795+00:00",
+  "generatedAt": "2026-10-09T18:44:18.755727+00:00",
+  "ourladsUpdatedAt": "2026-10-09T18:44:18.755727+00:00",
   "madden27UpdatedAt": "2026-10-07T03:20:28.292683+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Seattle Seahawks",
-  "offenseScheme": "11 - One RB, One TE (32%)",
+  "offenseScheme": "11 - One RB, One TE (38%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -361,8 +361,8 @@
     },
     {
       "position": "RB",
-      "player": "Jones Jr., Velus",
-      "jersey": "33",
+      "player": "Henry Jr., Robert",
+      "jersey": "34",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -692,22 +692,6 @@
       "pffTied": null
     },
     {
-      "position": "SS",
-      "player": "Finley, AJ",
-      "jersey": "30",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "FS",
       "player": "Okada, Ty",
       "jersey": "39",
@@ -981,22 +965,6 @@
     },
     {
       "position": null,
-      "player": "Charles, Irv",
-      "jersey": "85",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": null,
       "player": "Ouzts, Robbie",
       "jersey": "40",
       "code": "",
@@ -1061,6 +1029,18 @@
     },
     {
       "position": null,
+      "player": "Wright, Jacardia",
+      "jersey": "31",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "PS/IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": null,
       "player": "Arnold, Terrion",
       "jersey": "17",
       "code": "",
@@ -1079,6 +1059,22 @@
       "position": null,
       "player": "Charbonnet, Zach",
       "jersey": "26",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": null,
+      "player": "Charles, Irv",
+      "jersey": "85",
       "code": "",
       "isAcquired": false,
       "isReserve": true,

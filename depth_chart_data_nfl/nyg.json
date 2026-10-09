@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-06T13:08:00.943016+00:00",
-  "ourladsUpdatedAt": "2026-10-06T13:08:00.943016+00:00",
+  "generatedAt": "2026-10-09T18:43:11.445107+00:00",
+  "ourladsUpdatedAt": "2026-10-09T18:43:11.445107+00:00",
   "madden27UpdatedAt": "2026-10-07T03:20:19.141869+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Giants",
-  "offenseScheme": "11 - One RB, One TE (46%)",
+  "offenseScheme": "11 - One RB, One TE (43%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -310,6 +310,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "QB",
+      "player": "Haener, Jake",
+      "jersey": "13",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RB",
@@ -921,22 +933,6 @@
     },
     {
       "position": null,
-      "player": "Berrios, Braxton",
-      "jersey": "87",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": null,
       "player": "Adebo, Paulson",
       "jersey": "21",
       "code": "",
@@ -955,6 +951,22 @@
       "position": null,
       "player": "Black, Korie",
       "jersey": "38",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": null,
+      "player": "Berrios, Braxton",
+      "jersey": "87",
       "code": "",
       "isAcquired": false,
       "isReserve": true,

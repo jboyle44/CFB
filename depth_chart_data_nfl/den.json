@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-06T13:08:41.915260+00:00",
-  "ourladsUpdatedAt": "2026-10-06T13:08:41.915260+00:00",
+  "generatedAt": "2026-10-09T18:43:54.189577+00:00",
+  "ourladsUpdatedAt": "2026-10-09T18:43:54.189577+00:00",
   "madden27UpdatedAt": "2026-10-07T03:19:54.905472+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Denver Broncos",
-  "offenseScheme": "11 - One RB, One TE (56%)",
+  "offenseScheme": "11 - One RB, One TE (60%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -401,7 +401,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LDE",

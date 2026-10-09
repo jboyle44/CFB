@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-06T13:08:50.326970+00:00",
-  "ourladsUpdatedAt": "2026-10-06T13:08:50.326970+00:00",
+  "generatedAt": "2026-10-09T18:44:02.987896+00:00",
+  "ourladsUpdatedAt": "2026-10-09T18:44:02.987896+00:00",
   "madden27UpdatedAt": "2026-10-07T03:19:43.184060+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Atlanta Falcons",
-  "offenseScheme": "11 - One RB, One TE (56%)",
+  "offenseScheme": "11 - One RB, One TE (53%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -569,8 +569,8 @@
     },
     {
       "position": "RILB",
-      "player": "Daniels, Kendal",
-      "jersey": "53",
+      "player": "Perkins Jr., Harold",
+      "jersey": "56",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -585,8 +585,8 @@
     },
     {
       "position": "RILB",
-      "player": "Perkins Jr., Harold",
-      "jersey": "56",
+      "player": "Daniels, Kendal",
+      "jersey": "53",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -649,8 +649,8 @@
     },
     {
       "position": "LCB",
-      "player": "Terrell, Avieon",
-      "jersey": "12",
+      "player": "Ford Jr., Mike",
+      "jersey": "28",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -694,34 +694,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "SS",
-      "player": "Brown, Sydney",
-      "jersey": "29",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "SS",
-      "player": "Robinson, Jammie",
-      "jersey": "34",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     },
     {
       "position": "FS",
@@ -773,6 +745,22 @@
     },
     {
       "position": "RCB",
+      "player": "Terrell, Avieon",
+      "jersey": "12",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "RCB",
       "player": "DeWalt IV, Malcolm",
       "jersey": "36",
       "code": "",
@@ -805,8 +793,8 @@
     },
     {
       "position": "NB",
-      "player": "Ford Jr., Mike",
-      "jersey": "28",
+      "player": "Brown, Sydney",
+      "jersey": "29",
       "code": "",
       "isAcquired": false,
       "isReserve": false,

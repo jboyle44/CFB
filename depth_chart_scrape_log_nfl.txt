@@ -1,21 +1,21 @@
 === dal ===
 Scraping Ourlads depth chart for Dallas Cowboys...
-  60 depth chart rows
+  62 depth chart rows
 Wrote ../depth_chart_data_nfl/dal.json
 exit_code=0
 === nyg ===
 Scraping Ourlads depth chart for New York Giants...
-  57 depth chart rows
+  58 depth chart rows
 Wrote ../depth_chart_data_nfl/nyg.json
 exit_code=0
 === phi ===
 Scraping Ourlads depth chart for Philadelphia Eagles...
-  62 depth chart rows
+  59 depth chart rows
 Wrote ../depth_chart_data_nfl/phi.json
 exit_code=0
 === was ===
 Scraping Ourlads depth chart for Washington Commanders...
-  63 depth chart rows
+  59 depth chart rows
 Wrote ../depth_chart_data_nfl/was.json
 exit_code=0
 === buf ===
@@ -40,7 +40,7 @@ Wrote ../depth_chart_data_nfl/nyj.json
 exit_code=0
 === bal ===
 Scraping Ourlads depth chart for Baltimore Ravens...
-  59 depth chart rows
+  60 depth chart rows
 Wrote ../depth_chart_data_nfl/bal.json
 exit_code=0
 === cin ===
@@ -55,7 +55,7 @@ Wrote ../depth_chart_data_nfl/cle.json
 exit_code=0
 === pit ===
 Scraping Ourlads depth chart for Pittsburgh Steelers...
-  58 depth chart rows
+  59 depth chart rows
 Wrote ../depth_chart_data_nfl/pit.json
 exit_code=0
 === chi ===
@@ -70,17 +70,17 @@ Wrote ../depth_chart_data_nfl/det.json
 exit_code=0
 === gb ===
 Scraping Ourlads depth chart for Green Bay Packers...
-  58 depth chart rows
+  59 depth chart rows
 Wrote ../depth_chart_data_nfl/gb.json
 exit_code=0
 === min ===
 Scraping Ourlads depth chart for Minnesota Vikings...
-  58 depth chart rows
+  57 depth chart rows
 Wrote ../depth_chart_data_nfl/min.json
 exit_code=0
 === hou ===
 Scraping Ourlads depth chart for Houston Texans...
-  59 depth chart rows
+  60 depth chart rows
 Wrote ../depth_chart_data_nfl/hou.json
 exit_code=0
 === ind ===
@@ -120,22 +120,22 @@ Wrote ../depth_chart_data_nfl/lac.json
 exit_code=0
 === atl ===
 Scraping Ourlads depth chart for Atlanta Falcons...
-  62 depth chart rows
+  61 depth chart rows
 Wrote ../depth_chart_data_nfl/atl.json
 exit_code=0
 === car ===
 Scraping Ourlads depth chart for Carolina Panthers...
-  60 depth chart rows
+  58 depth chart rows
 Wrote ../depth_chart_data_nfl/car.json
 exit_code=0
 === no ===
 Scraping Ourlads depth chart for New Orleans Saints...
-  63 depth chart rows
+  61 depth chart rows
 Wrote ../depth_chart_data_nfl/no.json
 exit_code=0
 === tb ===
 Scraping Ourlads depth chart for Tampa Bay Buccaneers...
-  60 depth chart rows
+  62 depth chart rows
 Wrote ../depth_chart_data_nfl/tb.json
 exit_code=0
 === ari ===
@@ -155,6 +155,6 @@ Wrote ../depth_chart_data_nfl/sf.json
 exit_code=0
 === sea ===
 Scraping Ourlads depth chart for Seattle Seahawks...
-  59 depth chart rows
+  58 depth chart rows
 Wrote ../depth_chart_data_nfl/sea.json
 exit_code=0

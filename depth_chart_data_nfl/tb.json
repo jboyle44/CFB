@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-06T13:08:56.598458+00:00",
-  "ourladsUpdatedAt": "2026-10-06T13:08:56.598458+00:00",
+  "generatedAt": "2026-10-09T18:44:09.799874+00:00",
+  "ourladsUpdatedAt": "2026-10-09T18:44:09.799874+00:00",
   "madden27UpdatedAt": "2026-10-07T03:20:29.778772+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Tampa Bay Buccaneers",
-  "offenseScheme": "11 - One RB, One TE (84%)",
+  "offenseScheme": "11 - One RB, One TE (73%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -281,8 +281,8 @@
     },
     {
       "position": "TE",
-      "player": "Kieft, Ko",
-      "jersey": "41",
+      "player": "Sharp, Bauer",
+      "jersey": "84",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -297,8 +297,8 @@
     },
     {
       "position": "TE",
-      "player": "Sharp, Bauer",
-      "jersey": "84",
+      "player": "Kieft, Ko",
+      "jersey": "41",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -342,6 +342,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "QB",
+      "player": "Stick, Easton",
+      "jersey": "16",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RB",
@@ -697,8 +709,8 @@
     },
     {
       "position": "SS",
-      "player": "Melifonwu, Ifeatu",
-      "jersey": "5",
+      "player": "Killebrew, Miles",
+      "jersey": "29",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -729,8 +741,8 @@
     },
     {
       "position": "FS",
-      "player": "Killebrew, Miles",
-      "jersey": "29",
+      "player": "Melifonwu, Ifeatu",
+      "jersey": "5",
       "code": "",
       "isAcquired": false,
       "isReserve": false,
@@ -742,6 +754,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "FS",
+      "player": "Roberts, JJ",
+      "jersey": "36",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RCB",
