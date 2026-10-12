@@ -17,7 +17,18 @@ HEADERS = {
 }
 
 
+_page_cache = {}
+
+
 def _scrape_team_page(url, delay=1.0):
+    """Cached per URL for the life of the process, so a second pass over the
+    same team (e.g. the Madden league-wide name index) costs no extra fetch."""
+    if url not in _page_cache:
+        _page_cache[url] = _fetch_team_page(url, delay)
+    return {k: dict(v) for k, v in _page_cache[url].items()}
+
+
+def _fetch_team_page(url, delay=1.0):
     """
     Returns {player_name_lower: {"ovr": int, "dev": str, "position": str|None}}
     Parses the "All Players" table: each row has player name (as a link,
