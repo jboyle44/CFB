@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12T04:04:59.505597+00:00",
-  "ourladsUpdatedAt": "2026-10-12T04:04:59.505597+00:00",
+  "generatedAt": "2026-10-12T04:09:10.730877+00:00",
+  "ourladsUpdatedAt": "2026-10-12T04:09:10.730877+00:00",
   "madden27UpdatedAt": "2026-10-12T04:07:10.985571+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Miami Dolphins",
@@ -1129,19 +1129,19 @@
     },
     {
       "position": null,
-      "player": "Kenneth 25/1 Grant",
+      "player": "Kenneth Grant",
       "jersey": "78",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "DFR",
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "pffGrade": 48.5,
+      "madden27Rating": 75,
+      "madden27Dev": "Star",
+      "pffPositionRank": 112,
+      "pffPositionTotal": 146,
+      "pffPositionLabel": "DI",
+      "pffTied": false
     }
   ]
 }
