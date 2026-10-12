@@ -108,6 +108,11 @@ def parse_reserve_cell(text):
         return None
     m = RESERVE_NAME_PATTERN.match(text)
     if not m:
+        # Some reserves carry an acquisition code ("Adams, Isaiah 24/3")
+        # instead of a position; drop the code rather than keep it in the name.
+        m2 = NAME_PATTERN.match(text)
+        if m2:
+            return (f"{_smart_case(m2.group('first').strip())} {_smart_case(m2.group('last').strip())}", None)
         return (_flip_bare(text), None)
     last = _smart_case(m.group("last").strip())
     first = _smart_case(m.group("first").strip())
