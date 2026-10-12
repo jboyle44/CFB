@@ -1,0 +1,24 @@
+name: Dump Madden Rosters (one-off)
+on:
+  workflow_dispatch: {}
+jobs:
+  dump:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install requests beautifulsoup4
+      - working-directory: scripts
+        run: python3 dump_madden_rosters.py
+      - run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add madden_roster_dump.json
+          git commit -m "Madden roster dump (temporary)"
+          git push origin HEAD:main
