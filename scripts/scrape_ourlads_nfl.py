@@ -42,6 +42,33 @@ SKIP_TABLE_TITLES = {"practice squad"}
 
 ROMAN_NUMERAL_SUFFIXES = {"ii", "iii", "iv", "v", "vi", "vii"}
 
+# "Last, First" with no trailing code (a cell with no dc-key span).
+BARE_NAME_PATTERN = re.compile(r"^(?P<last>[^,]+),\s*(?P<first>[^,]+)$")
+
+
+def _cell_text(player_cell):
+    """Player link text plus the acquisition/position key. Since Sep 2026
+    Ourlads renders the key in its own <span class="dc-key"> outside the
+    link ("<a>Wicks, Dontayvion</a> <span class="dc-key">T/GB</span>");
+    reading only the link left names as "Last, First" with no code, which
+    broke every name-based match (Madden, PFF carry-forward). Rejoining
+    them restores the original "Last, First CODE" format the patterns
+    expect. Injury badges (span.badge) are deliberately left out."""
+    link = player_cell.find("a")
+    if not link:
+        return player_cell.get_text(" ", strip=True)
+    name = link.get_text(" ", strip=True)
+    key = player_cell.find("span", class_="dc-key")
+    key_text = key.get_text(strip=True) if key else ""
+    return f"{name} {key_text}".strip()
+
+
+def _flip_bare(text):
+    m = BARE_NAME_PATTERN.match(text)
+    if not m:
+        return _smart_case(text)
+    return f"{_smart_case(m.group('first').strip())} {_smart_case(m.group('last').strip())}"
+
 
 def _smart_case(s):
     """Title-case only if the source was ALL CAPS -- leaves already-correct
@@ -65,7 +92,7 @@ def parse_player_cell(text):
         return None
     m = NAME_PATTERN.match(text)
     if not m:
-        return (_smart_case(text), "", False)
+        return (_flip_bare(text), "", False)
     last = _smart_case(m.group("last").strip())
     first = _smart_case(m.group("first").strip())
     code = m.group("code").strip()
@@ -81,7 +108,7 @@ def parse_reserve_cell(text):
         return None
     m = RESERVE_NAME_PATTERN.match(text)
     if not m:
-        return (_smart_case(text), None)
+        return (_flip_bare(text), None)
     last = _smart_case(m.group("last").strip())
     first = _smart_case(m.group("first").strip())
     position = m.group("position").strip()
@@ -151,9 +178,7 @@ def scrape_ourlads_nfl_depth_chart(team_abbr, delay=1.5):
                 for i in range(0, len(slot_cells) - 1, 2):
                     jersey = slot_cells[i].get_text(strip=True)
                     player_cell = slot_cells[i + 1]
-                    player_link = player_cell.find("a")
-                    raw_text = (player_link.get_text(strip=True) if player_link
-                                else player_cell.get_text(strip=True))
+                    raw_text = _cell_text(player_cell)
                     if not raw_text:
                         continue
                     parsed = parse_reserve_cell(raw_text)
@@ -171,9 +196,7 @@ def scrape_ourlads_nfl_depth_chart(team_abbr, delay=1.5):
             for i in range(0, len(slot_cells) - 1, 2):
                 jersey = slot_cells[i].get_text(strip=True)
                 player_cell = slot_cells[i + 1]
-                player_link = player_cell.find("a")
-                raw_text = (player_link.get_text(strip=True) if player_link
-                            else player_cell.get_text(strip=True))
+                raw_text = _cell_text(player_cell)
                 if not raw_text:
                     continue
                 parsed = parse_player_cell(raw_text)
