@@ -27,9 +27,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 49.9,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "WR",
+      "pffTied": false
     },
     {
       "position": "RWR",
@@ -39,9 +43,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 67.0,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 64,
+      "pffPositionTotal": 143,
+      "pffPositionLabel": "WR",
+      "pffTied": false
     },
     {
       "position": "RWR",
@@ -63,9 +71,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 76.4,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 28,
+      "pffPositionTotal": 143,
+      "pffPositionLabel": "WR",
+      "pffTied": true
     },
     {
       "position": "SWR",
@@ -87,9 +99,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 62.6,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 64,
+      "pffPositionTotal": 95,
+      "pffPositionLabel": "T",
+      "pffTied": true
     },
     {
       "position": "LT",
@@ -111,9 +127,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 64.9,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 37,
+      "pffPositionTotal": 87,
+      "pffPositionLabel": "G",
+      "pffTied": false
     },
     {
       "position": "LG",
@@ -123,9 +143,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 54.5,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 63,
+      "pffPositionTotal": 87,
+      "pffPositionLabel": "G",
+      "pffTied": true
     },
     {
       "position": "C",
@@ -135,9 +159,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 88.8,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 1,
+      "pffPositionTotal": 41,
+      "pffPositionLabel": "C",
+      "pffTied": false
     },
     {
       "position": "C",
@@ -147,9 +175,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 60.1,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "G",
+      "pffTied": false
     },
     {
       "position": "RG",
@@ -159,9 +191,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 68.5,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 28,
+      "pffPositionTotal": 87,
+      "pffPositionLabel": "G",
+      "pffTied": true
     },
     {
       "position": "RG",
@@ -183,9 +219,13 @@
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 63.0,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 60,
+      "pffPositionTotal": 95,
+      "pffPositionLabel": "T",
+      "pffTied": false
     },
     {
       "position": "RT",
@@ -207,9 +247,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 72.0,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 17,
+      "pffPositionTotal": 68,
+      "pffPositionLabel": "TE",
+      "pffTied": false
     },
     {
       "position": "TE",
@@ -219,9 +263,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 57.7,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 50,
+      "pffPositionTotal": 68,
+      "pffPositionLabel": "TE",
+      "pffTied": false
     },
     {
       "position": "TE",
@@ -243,9 +291,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 61.7,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "TE",
+      "pffTied": false
     },
     {
       "position": "QB",
@@ -255,9 +307,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 70.7,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 20,
+      "pffPositionTotal": 45,
+      "pffPositionLabel": "QB",
+      "pffTied": false
     },
     {
       "position": "QB",
@@ -267,9 +323,13 @@
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 65.5,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 32,
+      "pffPositionTotal": 45,
+      "pffPositionLabel": "QB",
+      "pffTied": false
     },
     {
       "position": "QB",
@@ -291,9 +351,13 @@
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 88.4,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 2,
+      "pffPositionTotal": 73,
+      "pffPositionLabel": "HB",
+      "pffTied": false
     },
     {
       "position": "RB",
@@ -315,9 +379,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 67.3,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 49,
+      "pffPositionTotal": 73,
+      "pffPositionLabel": "HB",
+      "pffTied": false
     },
     {
       "position": "FB",
@@ -339,9 +407,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 76.2,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 25,
+      "pffPositionTotal": 129,
+      "pffPositionLabel": "ED",
+      "pffTied": false
     },
     {
       "position": "LDE",
@@ -375,9 +447,13 @@
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 67.9,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 38,
+      "pffPositionTotal": 146,
+      "pffPositionLabel": "DI",
+      "pffTied": false
     },
     {
       "position": "NT",
@@ -399,9 +475,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 70.5,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 30,
+      "pffPositionTotal": 146,
+      "pffPositionLabel": "DI",
+      "pffTied": false
     },
     {
       "position": "DT",
@@ -435,9 +515,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 58.5,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 92,
+      "pffPositionTotal": 129,
+      "pffPositionLabel": "ED",
+      "pffTied": false
     },
     {
       "position": "WLB",
@@ -447,9 +531,13 @@
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 76.6,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 13,
+      "pffPositionTotal": 94,
+      "pffPositionLabel": "LB",
+      "pffTied": true
     },
     {
       "position": "WLB",
@@ -459,9 +547,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 78.5,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "LB",
+      "pffTied": false
     },
     {
       "position": "MLB",
@@ -471,9 +563,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 78.9,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 8,
+      "pffPositionTotal": 94,
+      "pffPositionLabel": "LB",
+      "pffTied": true
     },
     {
       "position": "MLB",
@@ -483,9 +579,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 85.7,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "LB",
+      "pffTied": false
     },
     {
       "position": "LCB",
@@ -495,9 +595,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 74.5,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 15,
+      "pffPositionTotal": 122,
+      "pffPositionLabel": "CB",
+      "pffTied": false
     },
     {
       "position": "SS",
@@ -507,9 +611,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 53.4,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 89,
+      "pffPositionTotal": 107,
+      "pffPositionLabel": "S",
+      "pffTied": false
     },
     {
       "position": "SS",
@@ -519,9 +627,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 62.2,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 62,
+      "pffPositionTotal": 107,
+      "pffPositionLabel": "S",
+      "pffTied": false
     },
     {
       "position": "SS",
@@ -543,9 +655,13 @@
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 70.4,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 26,
+      "pffPositionTotal": 107,
+      "pffPositionLabel": "S",
+      "pffTied": true
     },
     {
       "position": "FS",
@@ -579,9 +695,13 @@
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 60.4,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "CB",
+      "pffTied": false
     },
     {
       "position": "NB",
@@ -591,9 +711,13 @@
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 50.4,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 110,
+      "pffPositionTotal": 122,
+      "pffPositionLabel": "CB",
+      "pffTied": false
     },
     {
       "position": "NB",
@@ -615,9 +739,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 68.7,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 19,
+      "pffPositionTotal": 36,
+      "pffPositionLabel": "P",
+      "pffTied": true
     },
     {
       "position": "PK",
@@ -627,9 +755,13 @@
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 68.6,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 27,
+      "pffPositionTotal": 42,
+      "pffPositionLabel": "K",
+      "pffTied": false
     },
     {
       "position": "LS",
@@ -651,9 +783,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 68.7,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 19,
+      "pffPositionTotal": 36,
+      "pffPositionLabel": "P",
+      "pffTied": true
     },
     {
       "position": "KO",
@@ -663,9 +799,13 @@
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 68.6,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 27,
+      "pffPositionTotal": 42,
+      "pffPositionLabel": "K",
+      "pffTied": false
     },
     {
       "position": "PR",
@@ -687,9 +827,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 67.3,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 49,
+      "pffPositionTotal": 73,
+      "pffPositionLabel": "HB",
+      "pffTied": false
     },
     {
       "position": "PR",
@@ -711,9 +855,13 @@
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
+      "pffGrade": 67.3,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": 49,
+      "pffPositionTotal": 73,
+      "pffPositionLabel": "HB",
+      "pffTied": false
     },
     {
       "position": "KR",
@@ -807,9 +955,13 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "pffGrade": null,
+      "pffGrade": 59.8,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "ED",
+      "pffTied": false
     },
     {
       "position": "DT",
@@ -819,9 +971,13 @@
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "PUP",
-      "pffGrade": null,
+      "pffGrade": 54.3,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "DI",
+      "pffTied": false
     }
   ]
 }
