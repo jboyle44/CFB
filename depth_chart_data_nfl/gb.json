@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-10-12T04:09:30.429247+00:00",
   "ourladsUpdatedAt": "2026-10-12T04:09:30.429247+00:00",
-  "madden27UpdatedAt": "2026-10-12T04:06:59.126873+00:00",
+  "madden27UpdatedAt": "2026-10-12T04:11:38.462180+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Green Bay Packers",
   "offenseScheme": "11 - One RB, One TE (58%)",
@@ -48,8 +48,8 @@
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "madden27Rating": 68,
+      "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,
@@ -1056,8 +1056,8 @@
       "isReserve": true,
       "reserveStatus": "IR",
       "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 68,
+      "madden27Dev": "Normal"
     },
     {
       "position": "OLB",

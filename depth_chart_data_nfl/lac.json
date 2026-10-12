@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-10-12T04:09:50.143766+00:00",
   "ourladsUpdatedAt": "2026-10-12T04:09:50.143766+00:00",
-  "madden27UpdatedAt": "2026-10-12T04:07:07.912480+00:00",
+  "madden27UpdatedAt": "2026-10-12T04:11:38.472531+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Los Angeles Chargers",
   "offenseScheme": "11 - One RB, One TE (45%)",
@@ -784,8 +784,8 @@
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": 70.0,
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "madden27Rating": 70,
+      "madden27Dev": "Normal",
       "pffPositionRank": 30,
       "pffPositionTotal": 107,
       "pffPositionLabel": "S",
@@ -1120,8 +1120,8 @@
       "isReserve": true,
       "reserveStatus": "IR",
       "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 64,
+      "madden27Dev": "Normal"
     },
     {
       "position": null,
@@ -1132,8 +1132,8 @@
       "isReserve": true,
       "reserveStatus": "IR",
       "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Rating": 71,
+      "madden27Dev": "Normal"
     },
     {
       "position": "OT",
