@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-09T18:36:05.056729+00:00",
   "ourladsUpdatedAt": "2026-10-09T18:36:05.056729+00:00",
   "cfbdUpdatedAt": "2026-10-07T00:48:19.838823+00:00",
-  "cfb27UpdatedAt": "2026-10-07T03:19:36.308937+00:00",
+  "cfb27UpdatedAt": "2026-10-12T03:57:41.606988+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Illinois",
@@ -31,7 +31,7 @@
       "pffPositionTotal": 569,
       "pffPositionLabel": "WR",
       "pffTied": true,
-      "cfb27Rating": 87,
+      "cfb27Rating": 88,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1624,7 +1624,7 @@
       "pffPositionTotal": 516,
       "pffPositionLabel": "S",
       "pffTied": false,
-      "cfb27Rating": 73,
+      "cfb27Rating": 76,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -2110,7 +2110,7 @@
       "pffPositionTotal": 516,
       "pffPositionLabel": "S",
       "pffTied": false,
-      "cfb27Rating": 73,
+      "cfb27Rating": 76,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -2170,7 +2170,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "ROLB",
       "player": "Daniel Brown",
       "jersey": "4",
       "class": "RS SR",
@@ -2197,7 +2197,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Jayshon Platt",
       "jersey": "1",
       "class": "RS SR",
@@ -2224,7 +2224,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Alex Perry",
       "jersey": "9",
       "class": "RS SR",
@@ -2251,7 +2251,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "TE",
       "player": "BJ Thurman",
       "jersey": "87",
       "class": "SO",
@@ -2332,7 +2332,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "C",
       "player": "TJ McMillen",
       "jersey": "55",
       "class": "RS JR",
@@ -2359,7 +2359,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "LG",
       "player": "Maika Matelau",
       "jersey": "70",
       "class": "SO",
@@ -2386,7 +2386,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "RG",
       "player": "Brandon Henderson",
       "jersey": "75",
       "class": "SR",
@@ -2467,7 +2467,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "ROLB",
       "player": "Erik Gayle",
       "jersey": "34",
       "class": "RS FR",
@@ -2521,7 +2521,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "Cameron Brooks",
       "jersey": "91",
       "class": "RS FR",

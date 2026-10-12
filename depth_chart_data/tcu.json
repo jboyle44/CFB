@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-09T18:38:26.403009+00:00",
   "ourladsUpdatedAt": "2026-10-09T18:38:26.403009+00:00",
   "cfbdUpdatedAt": "2026-10-07T01:03:07.043169+00:00",
-  "cfb27UpdatedAt": "2026-10-07T03:21:15.804599+00:00",
+  "cfb27UpdatedAt": "2026-10-12T03:59:09.944955+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "TCU",
@@ -679,7 +679,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "TE",
       "pffTied": false,
-      "cfb27Rating": 76,
+      "cfb27Rating": 75,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -733,7 +733,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 80,
+      "cfb27Rating": 79,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -1111,7 +1111,7 @@
       "pffPositionTotal": 546,
       "pffPositionLabel": "DI",
       "pffTied": true,
-      "cfb27Rating": 83,
+      "cfb27Rating": 82,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -2035,7 +2035,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "Zach Chapman",
       "jersey": "0",
       "class": "RS JR",
@@ -2062,7 +2062,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Dozie Ezukanma",
       "jersey": "0",
       "class": "RS SO",

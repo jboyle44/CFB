@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-09T18:37:51.770682+00:00",
   "ourladsUpdatedAt": "2026-10-09T18:37:51.770682+00:00",
   "cfbdUpdatedAt": "2026-10-07T00:59:17.712146+00:00",
-  "cfb27UpdatedAt": "2026-10-07T03:20:52.371584+00:00",
+  "cfb27UpdatedAt": "2026-10-12T03:58:47.475789+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Virginia",
@@ -787,7 +787,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "HB",
       "pffTied": false,
-      "cfb27Rating": 77,
+      "cfb27Rating": 76,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -841,7 +841,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 79,
+      "cfb27Rating": 78,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1624,7 +1624,7 @@
       "pffPositionTotal": 144,
       "pffPositionLabel": "P",
       "pffTied": true,
-      "cfb27Rating": 80,
+      "cfb27Rating": 82,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -1840,7 +1840,7 @@
       "pffPositionTotal": 144,
       "pffPositionLabel": "P",
       "pffTied": true,
-      "cfb27Rating": 80,
+      "cfb27Rating": 82,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -1975,7 +1975,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 79,
+      "cfb27Rating": 78,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -2008,7 +2008,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Dillon Newton-Short",
       "jersey": "15",
       "class": "SO",
@@ -2035,7 +2035,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "RG",
       "player": "Grant Ellinger",
       "jersey": "65",
       "class": "RS SO",
@@ -2062,7 +2062,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "LE",
       "player": "Ezekiel Larry",
       "jersey": "94",
       "class": "GR",

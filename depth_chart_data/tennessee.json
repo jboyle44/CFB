@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-09T18:37:12.653677+00:00",
   "ourladsUpdatedAt": "2026-10-09T18:37:12.653677+00:00",
   "cfbdUpdatedAt": "2026-10-07T00:56:16.024261+00:00",
-  "cfb27UpdatedAt": "2026-10-07T03:20:23.384814+00:00",
+  "cfb27UpdatedAt": "2026-10-12T03:58:22.607776+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Tennessee",
@@ -814,7 +814,7 @@
       "pffPositionTotal": 341,
       "pffPositionLabel": "HB",
       "pffTied": true,
-      "cfb27Rating": 91,
+      "cfb27Rating": 92,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -841,7 +841,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 79,
+      "cfb27Rating": 78,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1030,7 +1030,7 @@
       "pffPositionTotal": 546,
       "pffPositionLabel": "DI",
       "pffTied": true,
-      "cfb27Rating": 86,
+      "cfb27Rating": 87,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -2218,7 +2218,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 79,
+      "cfb27Rating": 78,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -2245,7 +2245,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 79,
+      "cfb27Rating": 78,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -2278,7 +2278,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "TE",
       "player": "Ethan Davis",
       "jersey": "0",
       "class": "RS JR",
@@ -2305,7 +2305,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "SS",
       "player": "Edrees Farooq",
       "jersey": "15",
       "class": "JR",
@@ -2332,7 +2332,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Jadais Richard",
       "jersey": "8",
       "class": "RS SR",
@@ -2359,7 +2359,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "ROLB",
       "player": "Jaedon Harmon",
       "jersey": "12",
       "class": "SO",
@@ -2386,7 +2386,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Joakim Dodson",
       "jersey": "9",
       "class": "RS FR",
@@ -2413,7 +2413,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "SS",
       "player": "Dylan Lewis",
       "jersey": "24",
       "class": "SO",
@@ -2467,7 +2467,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Javin Gordon",
       "jersey": "6",
       "class": "SO",

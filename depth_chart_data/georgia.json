@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-09T18:36:53.150956+00:00",
   "ourladsUpdatedAt": "2026-10-09T18:36:53.150956+00:00",
   "cfbdUpdatedAt": "2026-10-07T00:54:24.796162+00:00",
-  "cfb27UpdatedAt": "2026-10-07T03:20:08.192067+00:00",
+  "cfb27UpdatedAt": "2026-10-12T03:58:11.741678+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Georgia",
@@ -382,7 +382,7 @@
       "pffPositionTotal": 334,
       "pffPositionLabel": "T",
       "pffTied": true,
-      "cfb27Rating": 92,
+      "cfb27Rating": 93,
       "cfb27Dev": "Star",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -733,7 +733,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 78,
+      "cfb27Rating": 82,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1030,7 +1030,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 91,
+      "cfb27Rating": 92,
       "cfb27Dev": "Star",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -2083,7 +2083,7 @@
       "pffPositionTotal": 524,
       "pffPositionLabel": "CB",
       "pffTied": true,
-      "cfb27Rating": 79,
+      "cfb27Rating": 80,
       "cfb27Dev": "Star",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -2110,7 +2110,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "CB",
       "pffTied": false,
-      "cfb27Rating": 80,
+      "cfb27Rating": 78,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -2299,7 +2299,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "CB",
       "pffTied": false,
-      "cfb27Rating": 74,
+      "cfb27Rating": 80,
       "cfb27Dev": "Normal",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -2407,7 +2407,7 @@
       "pffPositionTotal": 524,
       "pffPositionLabel": "CB",
       "pffTied": false,
-      "cfb27Rating": 68,
+      "cfb27Rating": 78,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -2785,7 +2785,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 91,
+      "cfb27Rating": 92,
       "cfb27Dev": "Star",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -2980,7 +2980,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Dante Dowdell",
       "jersey": "22",
       "class": "SR",
@@ -3007,7 +3007,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "Amaris Williams",
       "jersey": "17",
       "class": "JR",
@@ -3034,7 +3034,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "ROLB",
       "player": "Chase Linton",
       "jersey": "85",
       "class": "RS FR",
@@ -3088,7 +3088,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "RG",
       "player": "Marcus Harrison",
       "jersey": "76",
       "class": "RS SO",
@@ -3115,7 +3115,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "SS",
       "player": "Tyriq Green",
       "jersey": "23",
       "class": "FR",

@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-09T18:38:13.421093+00:00",
   "ourladsUpdatedAt": "2026-10-09T18:38:13.421093+00:00",
   "cfbdUpdatedAt": "2026-10-07T01:01:58.684344+00:00",
-  "cfb27UpdatedAt": "2026-10-07T03:21:07.359969+00:00",
+  "cfb27UpdatedAt": "2026-10-12T03:59:01.758256+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Colorado",
@@ -598,7 +598,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "QB",
       "pffTied": false,
-      "cfb27Rating": 71,
+      "cfb27Rating": 72,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -679,7 +679,7 @@
       "pffPositionTotal": 341,
       "pffPositionLabel": "HB",
       "pffTied": false,
-      "cfb27Rating": 80,
+      "cfb27Rating": 79,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -787,7 +787,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "HB",
       "pffTied": false,
-      "cfb27Rating": 82,
+      "cfb27Rating": 81,
       "cfb27Dev": "Star",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -976,7 +976,7 @@
       "pffPositionTotal": 546,
       "pffPositionLabel": "DI",
       "pffTied": true,
-      "cfb27Rating": 85,
+      "cfb27Rating": 86,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1900,7 +1900,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "TE",
       "player": "Zach Atkins",
       "jersey": "85",
       "class": "RS SR",
@@ -1927,7 +1927,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Hykeem Williams",
       "jersey": "5",
       "class": "SR",
@@ -1954,7 +1954,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "FS",
       "player": "Jaydan Hardy",
       "jersey": "9",
       "class": "JR",
@@ -1981,7 +1981,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "LG",
       "player": "Taj White",
       "jersey": "54",
       "class": "RS SR",
@@ -2008,7 +2008,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "RG",
       "player": "Jose Soto",
       "jersey": "73",
       "class": "RS JR",
@@ -2062,7 +2062,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "Vili Taufatofua",
       "jersey": "45",
       "class": "RS SR",
@@ -2089,7 +2089,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "Yamil Talib",
       "jersey": "95",
       "class": "RS SO",
@@ -2170,7 +2170,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "DT",
       "player": "Sedrick Smith",
       "jersey": "91",
       "class": "RS JR",

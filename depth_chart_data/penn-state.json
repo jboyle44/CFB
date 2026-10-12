@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-09T18:36:29.193090+00:00",
   "ourladsUpdatedAt": "2026-10-09T18:36:29.193090+00:00",
   "cfbdUpdatedAt": "2026-10-07T00:52:07.391336+00:00",
-  "cfb27UpdatedAt": "2026-10-07T03:19:52.340651+00:00",
+  "cfb27UpdatedAt": "2026-10-12T03:57:56.599315+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Penn State",
@@ -841,7 +841,7 @@
       "pffPositionTotal": 166,
       "pffPositionLabel": "QB",
       "pffTied": false,
-      "cfb27Rating": 87,
+      "cfb27Rating": 86,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1543,7 +1543,7 @@
       "pffPositionTotal": 524,
       "pffPositionLabel": "CB",
       "pffTied": true,
-      "cfb27Rating": 78,
+      "cfb27Rating": 82,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1570,7 +1570,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "CB",
       "pffTied": false,
-      "cfb27Rating": 67,
+      "cfb27Rating": 72,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1813,7 +1813,7 @@
       "pffPositionTotal": 524,
       "pffPositionLabel": "CB",
       "pffTied": false,
-      "cfb27Rating": 78,
+      "cfb27Rating": 82,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -2332,7 +2332,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "LaVar Arrington II",
       "jersey": "11",
       "class": "SO",
@@ -2359,7 +2359,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "Max Granville",
       "jersey": "18",
       "class": "RS SO",
@@ -2386,7 +2386,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "TE",
       "player": "Cooper Alexander",
       "jersey": "80",
       "class": "RS SO",
@@ -2440,7 +2440,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "ROLB",
       "player": "Cam Smith",
       "jersey": "26",
       "class": "RS FR",
@@ -2467,7 +2467,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Koby Howard",
       "jersey": "6",
       "class": "SO",
@@ -2494,7 +2494,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Christian Askew",
       "jersey": "30",
       "class": "FR",
@@ -2521,7 +2521,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Tyler Armstead",
       "jersey": "35",
       "class": "RS SO",
@@ -2575,7 +2575,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "RG",
       "player": "Will Tompkins",
       "jersey": "66",
       "class": "RS FR",
@@ -2602,7 +2602,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "MLB",
       "player": "Dayshaun Burnett",
       "jersey": "43",
       "class": "RS FR",
@@ -2629,7 +2629,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "K",
       "player": "Cristiano Rosa",
       "jersey": "95",
       "class": "RS SR",

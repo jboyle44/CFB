@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-09T18:36:46.604380+00:00",
   "ourladsUpdatedAt": "2026-10-09T18:36:46.604380+00:00",
   "cfbdUpdatedAt": "2026-10-07T00:53:56.060059+00:00",
-  "cfb27UpdatedAt": "2026-10-07T03:20:03.845242+00:00",
+  "cfb27UpdatedAt": "2026-10-12T03:58:07.624446+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Arkansas",
@@ -112,7 +112,7 @@
       "pffPositionTotal": 569,
       "pffPositionLabel": "WR",
       "pffTied": true,
-      "cfb27Rating": 80,
+      "cfb27Rating": 79,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -193,7 +193,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 77,
+      "cfb27Rating": 76,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1219,7 +1219,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "CB",
       "pffTied": false,
-      "cfb27Rating": 76,
+      "cfb27Rating": 79,
       "cfb27Dev": "Star",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1246,7 +1246,7 @@
       "pffPositionTotal": 524,
       "pffPositionLabel": "CB",
       "pffTied": true,
-      "cfb27Rating": 78,
+      "cfb27Rating": 75,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1273,7 +1273,7 @@
       "pffPositionTotal": 516,
       "pffPositionLabel": "S",
       "pffTied": true,
-      "cfb27Rating": 80,
+      "cfb27Rating": 81,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1327,7 +1327,7 @@
       "pffPositionTotal": 516,
       "pffPositionLabel": "S",
       "pffTied": true,
-      "cfb27Rating": 76,
+      "cfb27Rating": 81,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1489,7 +1489,7 @@
       "pffPositionTotal": 516,
       "pffPositionLabel": "S",
       "pffTied": false,
-      "cfb27Rating": 83,
+      "cfb27Rating": 77,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1846,7 +1846,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "TE",
       "player": "Maddox Lassiter",
       "jersey": "47",
       "class": "RS JR",
@@ -1873,7 +1873,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "MLB",
       "player": "Bradley Shaw",
       "jersey": "7",
       "class": "JR",
@@ -1900,7 +1900,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "ROLB",
       "player": "Wyatt Simmons",
       "jersey": "10",
       "class": "RS SO",
@@ -1927,7 +1927,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "RE",
       "player": "Charlie Collins",
       "jersey": "9",
       "class": "JR",

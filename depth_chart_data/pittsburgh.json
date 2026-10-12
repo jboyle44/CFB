@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-09T18:37:43.085591+00:00",
   "ourladsUpdatedAt": "2026-10-09T18:37:43.085591+00:00",
   "cfbdUpdatedAt": "2026-10-07T00:58:41.443302+00:00",
-  "cfb27UpdatedAt": "2026-10-07T03:20:46.647212+00:00",
+  "cfb27UpdatedAt": "2026-10-12T03:58:42.038276+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Pittsburgh",
@@ -760,7 +760,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "QB",
       "pffTied": false,
-      "cfb27Rating": 72,
+      "cfb27Rating": 74,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -949,7 +949,7 @@
       "pffPositionTotal": 544,
       "pffPositionLabel": "ED",
       "pffTied": true,
-      "cfb27Rating": 81,
+      "cfb27Rating": 82,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1192,7 +1192,7 @@
       "pffPositionTotal": 546,
       "pffPositionLabel": "DI",
       "pffTied": true,
-      "cfb27Rating": 85,
+      "cfb27Rating": 86,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1840,7 +1840,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "S",
       "pffTied": false,
-      "cfb27Rating": 71,
+      "cfb27Rating": 75,
       "cfb27Dev": "Star",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -2002,7 +2002,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "CB",
       "pffTied": false,
-      "cfb27Rating": 71,
+      "cfb27Rating": 75,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -2056,7 +2056,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 74,
+      "cfb27Rating": 79,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -2386,7 +2386,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Malik Knight",
       "jersey": "7",
       "class": "RS SR",

@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-09T18:37:38.736645+00:00",
   "ourladsUpdatedAt": "2026-10-09T18:37:38.736645+00:00",
   "cfbdUpdatedAt": "2026-10-07T00:58:15.356677+00:00",
-  "cfb27UpdatedAt": "2026-10-07T03:20:43.835817+00:00",
+  "cfb27UpdatedAt": "2026-10-12T03:58:39.321049+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "North Carolina",
@@ -112,7 +112,7 @@
       "pffPositionTotal": 569,
       "pffPositionLabel": "WR",
       "pffTied": true,
-      "cfb27Rating": 83,
+      "cfb27Rating": 84,
       "cfb27Dev": "Star",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -598,7 +598,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "TE",
       "pffTied": false,
-      "cfb27Rating": 84,
+      "cfb27Rating": 85,
       "cfb27Dev": "Star",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1219,7 +1219,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "LB",
       "pffTied": false,
-      "cfb27Rating": 79,
+      "cfb27Rating": 80,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1489,7 +1489,7 @@
       "pffPositionTotal": 516,
       "pffPositionLabel": "S",
       "pffTied": true,
-      "cfb27Rating": 80,
+      "cfb27Rating": 82,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -2197,7 +2197,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "TE",
       "player": "Jaxxon Warren",
       "jersey": "19",
       "class": "RS SO",
@@ -2224,7 +2224,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "TE",
       "player": "Jordan Washington",
       "jersey": "80",
       "class": "RS SO",

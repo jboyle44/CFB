@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-09T18:36:13.825609+00:00",
   "ourladsUpdatedAt": "2026-10-09T18:36:13.825609+00:00",
   "cfbdUpdatedAt": "2026-10-07T00:49:53.063693+00:00",
-  "cfb27UpdatedAt": "2026-10-07T03:19:42.275229+00:00",
+  "cfb27UpdatedAt": "2026-10-12T03:57:47.040519+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Michigan",
@@ -760,7 +760,7 @@
       "pffPositionTotal": 166,
       "pffPositionLabel": "QB",
       "pffTied": true,
-      "cfb27Rating": 83,
+      "cfb27Rating": 81,
       "cfb27Dev": "Elite",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -922,7 +922,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 83,
+      "cfb27Rating": 82,
       "cfb27Dev": "Elite",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1678,7 +1678,7 @@
       "pffPositionTotal": 516,
       "pffPositionLabel": "S",
       "pffTied": true,
-      "cfb27Rating": 78,
+      "cfb27Rating": 81,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -2467,7 +2467,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Micah Ka'apana",
       "jersey": "25",
       "class": "RS SO",
@@ -2521,7 +2521,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Jonathan Brown",
       "jersey": "29",
       "class": "FR",
@@ -2548,7 +2548,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "LE",
       "player": "Julius Holly",
       "jersey": "37",
       "class": "RS FR",
@@ -2575,7 +2575,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "C",
       "player": "Ace Hamilton",
       "jersey": "52",
       "class": "FR",
@@ -2602,7 +2602,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "LT",
       "player": "Andrew Babalola",
       "jersey": "65",
       "class": "RS FR",
@@ -2656,7 +2656,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "RT",
       "player": "Andrew Sprague",
       "jersey": "54",
       "class": "RS SO",

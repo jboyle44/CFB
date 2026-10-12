@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-09T18:37:30.070145+00:00",
   "ourladsUpdatedAt": "2026-10-09T18:37:30.070145+00:00",
   "cfbdUpdatedAt": "2026-10-07T00:57:34.259807+00:00",
-  "cfb27UpdatedAt": "2026-10-07T03:20:35.323647+00:00",
+  "cfb27UpdatedAt": "2026-10-12T03:58:33.887666+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Florida State",
@@ -517,7 +517,7 @@
       "pffPositionTotal": 166,
       "pffPositionLabel": "QB",
       "pffTied": false,
-      "cfb27Rating": 75,
+      "cfb27Rating": 78,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1111,7 +1111,7 @@
       "pffPositionTotal": 524,
       "pffPositionLabel": "CB",
       "pffTied": true,
-      "cfb27Rating": 80,
+      "cfb27Rating": 82,
       "cfb27Dev": "Impact",
       "transferLookedUp": null,
       "recruitLookedUp": false
@@ -1165,7 +1165,7 @@
       "pffPositionTotal": 516,
       "pffPositionLabel": "S",
       "pffTied": true,
-      "cfb27Rating": 81,
+      "cfb27Rating": 82,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": true
@@ -1354,7 +1354,7 @@
       "pffPositionTotal": 516,
       "pffPositionLabel": "S",
       "pffTied": true,
-      "cfb27Rating": 76,
+      "cfb27Rating": 78,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1765,7 +1765,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "CB",
       "player": "Karson Hobbs",
       "jersey": "16",
       "class": "JR",
@@ -1792,7 +1792,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "HB",
       "player": "Gemari Sands",
       "jersey": "22",
       "class": "RS JR",

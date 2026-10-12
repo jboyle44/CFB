@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-09T18:37:45.258345+00:00",
   "ourladsUpdatedAt": "2026-10-09T18:37:45.258345+00:00",
   "cfbdUpdatedAt": "2026-10-07T00:58:46.364291+00:00",
-  "cfb27UpdatedAt": "2026-10-07T03:20:48.057333+00:00",
+  "cfb27UpdatedAt": "2026-10-12T03:58:43.393282+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "SMU",
@@ -1165,7 +1165,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null,
-      "cfb27Rating": 80,
+      "cfb27Rating": 82,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1462,7 +1462,7 @@
       "pffPositionTotal": 544,
       "pffPositionLabel": "ED",
       "pffTied": false,
-      "cfb27Rating": 84,
+      "cfb27Rating": 85,
       "cfb27Dev": "Normal",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1705,7 +1705,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "CB",
       "pffTied": false,
-      "cfb27Rating": 79,
+      "cfb27Rating": 80,
       "cfb27Dev": "Star",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -1732,7 +1732,7 @@
       "pffPositionTotal": 524,
       "pffPositionLabel": "CB",
       "pffTied": true,
-      "cfb27Rating": 76,
+      "cfb27Rating": 74,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -2002,7 +2002,7 @@
       "pffPositionTotal": 524,
       "pffPositionLabel": "CB",
       "pffTied": true,
-      "cfb27Rating": 78,
+      "cfb27Rating": 80,
       "cfb27Dev": "Impact",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -2488,7 +2488,7 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "CB",
       "pffTied": false,
-      "cfb27Rating": 79,
+      "cfb27Rating": 80,
       "cfb27Dev": "Star",
       "transferLookedUp": true,
       "recruitLookedUp": false
@@ -2521,7 +2521,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RES",
+      "position": "WR",
       "player": "Link Rhodes",
       "jersey": "24",
       "class": "SR",
