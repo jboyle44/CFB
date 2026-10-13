@@ -16,7 +16,9 @@ exit_code=0
 Scraping Ourlads depth chart for Iowa...
   67 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
-Skipping CFBD recruiting call this run (no new players needing recruiting data).
+Fetching CFBD recruiting data for 2 (school, year) pairs...
+  Iowa 2024: 28 players
+  Iowa 2025: 18 players
 Wrote ../depth_chart_data/iowa.json
 exit_code=0
 === maryland ===
@@ -112,7 +114,7 @@ Wrote ../depth_chart_data/usc.json
 exit_code=0
 === washington ===
 Scraping Ourlads depth chart for Washington...
-  77 depth chart rows
+  76 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
 Skipping CFBD recruiting call this run (no new players needing recruiting data).
 Wrote ../depth_chart_data/washington.json
@@ -191,9 +193,7 @@ exit_code=0
 Scraping Ourlads depth chart for Missouri...
   78 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
-Fetching CFBD recruiting data for 2 (school, year) pairs...
-  Missouri 2025: 17 players
-  Missouri 2026: 23 players
+Skipping CFBD recruiting call this run (no new players needing recruiting data).
 Wrote ../depth_chart_data/missouri.json
 exit_code=0
 === oklahoma ===
@@ -422,9 +422,11 @@ Wrote ../depth_chart_data/houston.json
 exit_code=0
 === iowa-state ===
 Scraping Ourlads depth chart for Iowa State...
-  70 depth chart rows
+  68 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
-Skipping CFBD recruiting call this run (no new players needing recruiting data).
+Fetching CFBD recruiting data for 2 (school, year) pairs...
+  Iowa State 2023: 26 players
+  Iowa State 2024: 23 players
 Wrote ../depth_chart_data/iowa-state.json
 exit_code=0
 === kansas ===

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-09T18:37:06.145888+00:00",
-  "ourladsUpdatedAt": "2026-10-09T18:37:06.145888+00:00",
+  "generatedAt": "2026-10-13T19:48:43.375158+00:00",
+  "ourladsUpdatedAt": "2026-10-13T19:48:43.375158+00:00",
   "cfbdUpdatedAt": "2026-10-09T18:37:06.145888+00:00",
   "cfb27UpdatedAt": "2026-10-12T04:11:36.228709+00:00",
   "draftRankUpdatedAt": "2026-10-13T19:47:15.397209+00:00",
@@ -1927,7 +1927,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "RT",
+      "position": "RES",
       "player": "Josh Atkins",
       "jersey": "54",
       "class": "RS SR",
@@ -1954,7 +1954,7 @@
       "recruitLookedUp": true
     },
     {
-      "position": "DT",
+      "position": "RES",
       "player": "Elias Williams",
       "jersey": "91",
       "class": "RS SO",
@@ -1981,7 +1981,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "HB",
+      "position": "RES",
       "player": "Ahmad Hardy",
       "jersey": "29",
       "class": "JR",
@@ -2008,7 +2008,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "RT",
+      "position": "RES",
       "player": "Logan Reichert",
       "jersey": "66",
       "class": "RS JR",
@@ -2035,7 +2035,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "HB",
+      "position": "RES",
       "player": "Malae Fonoti",
       "jersey": "21",
       "class": "RS SO",
@@ -2062,7 +2062,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "WR",
+      "position": "RES",
       "player": "Jabari Brady",
       "jersey": "11",
       "class": "FR",
@@ -2089,7 +2089,7 @@
       "recruitLookedUp": false
     },
     {
-      "position": "LG",
+      "position": "RES",
       "player": "DJ Jones",
       "jersey": "78",
       "class": "FR",
@@ -2106,10 +2106,14 @@
       "hsStateRank": null,
       "pffGrade": null,
       "draftRank": null,
-      "transferLookedUp": null,
-      "recruitLookedUp": true,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": 70,
-      "cfb27Dev": "Impact"
+      "cfb27Dev": "Impact",
+      "transferLookedUp": null,
+      "recruitLookedUp": true
     }
   ]
 }
