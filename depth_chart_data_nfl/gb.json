@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12T04:09:30.429247+00:00",
-  "ourladsUpdatedAt": "2026-10-12T04:09:30.429247+00:00",
+  "generatedAt": "2026-10-13T19:41:19.554436+00:00",
+  "ourladsUpdatedAt": "2026-10-13T19:41:19.554436+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.462180+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Green Bay Packers",
@@ -936,6 +936,22 @@
       "pffTied": false
     },
     {
+      "position": "RB",
+      "player": "Chris Brooks",
+      "jersey": "30",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": 68,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
       "position": "DE",
       "player": "Warren Brinson",
       "jersey": "91",
@@ -1046,18 +1062,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": null,
-      "player": "Chris Brooks",
-      "jersey": "30",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 68,
-      "madden27Dev": "Normal"
     },
     {
       "position": "OLB",

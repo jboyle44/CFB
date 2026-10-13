@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12T04:09:08.537546+00:00",
-  "ourladsUpdatedAt": "2026-10-12T04:09:08.537546+00:00",
+  "generatedAt": "2026-10-13T19:40:59.974762+00:00",
+  "ourladsUpdatedAt": "2026-10-13T19:40:59.974762+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.448485+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Buffalo Bills",
@@ -536,22 +536,6 @@
       "pffTied": false
     },
     {
-      "position": "LOLB",
-      "player": "Mike Danna",
-      "jersey": "51",
-      "code": "CC/KC",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 57.4,
-      "madden27Rating": 77,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 99,
-      "pffPositionTotal": 129,
-      "pffPositionLabel": "ED",
-      "pffTied": false
-    },
-    {
       "position": "WLB",
       "player": "Dorian Williams",
       "jersey": "42",
@@ -713,22 +697,6 @@
     },
     {
       "position": "SS",
-      "player": "Damar Hamlin",
-      "jersey": "3",
-      "code": "21/6",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 42.8,
-      "madden27Rating": 73,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "S",
-      "pffTied": false
-    },
-    {
-      "position": "SS",
       "player": "Jalon Kilgore",
       "jersey": "29",
       "code": "26/5",
@@ -792,6 +760,18 @@
       "pffTied": false
     },
     {
+      "position": "RCB",
+      "player": "Anthony Kendall",
+      "jersey": "30",
+      "code": "U/Cle",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "NB",
       "player": "Dee Alford",
       "jersey": "23",
@@ -805,6 +785,22 @@
       "pffPositionRank": 101,
       "pffPositionTotal": 122,
       "pffPositionLabel": "CB",
+      "pffTied": false
+    },
+    {
+      "position": "NB",
+      "player": "Damar Hamlin",
+      "jersey": "3",
+      "code": "21/6",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 42.8,
+      "madden27Rating": 73,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "S",
       "pffTied": false
     },
     {

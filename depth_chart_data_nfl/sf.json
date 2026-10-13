@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12T04:10:05.292421+00:00",
-  "ourladsUpdatedAt": "2026-10-12T04:10:05.292421+00:00",
+  "generatedAt": "2026-10-13T19:41:50.754203+00:00",
+  "ourladsUpdatedAt": "2026-10-13T19:41:50.754203+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.489514+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "San Francisco 49ers",
@@ -280,22 +280,6 @@
       "pffTied": null
     },
     {
-      "position": "TE",
-      "player": "Jack Stoll",
-      "jersey": "83",
-      "code": "SF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "QB",
       "player": "Brock Purdy",
       "jersey": "13",
@@ -440,22 +424,6 @@
       "pffTied": false
     },
     {
-      "position": "LDE",
-      "player": "Ogbo Okoronkwo",
-      "jersey": "59",
-      "code": "U/Phi",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 72,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "LDT",
       "player": "Osa Odighizuwa",
       "jersey": "92",
@@ -585,22 +553,6 @@
     },
     {
       "position": "WLB",
-      "player": "Dre Greenlaw",
-      "jersey": "57",
-      "code": "CC/Den",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 74.8,
-      "madden27Rating": 85,
-      "madden27Dev": "Star",
-      "pffPositionRank": 21,
-      "pffPositionTotal": 94,
-      "pffPositionLabel": "LB",
-      "pffTied": false
-    },
-    {
-      "position": "WLB",
       "player": "Jaden Dugger",
       "jersey": "53",
       "code": "26/5",
@@ -614,6 +566,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "WLB",
+      "player": "Luke Gifford",
+      "jersey": "51",
+      "code": "U/Ten",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 42.8,
+      "madden27Rating": 66,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "LB",
+      "pffTied": false
     },
     {
       "position": "WLB",
@@ -657,22 +625,6 @@
       "reserveStatus": null,
       "pffGrade": 29.9,
       "madden27Rating": 63,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "LB",
-      "pffTied": false
-    },
-    {
-      "position": "MLB",
-      "player": "Luke Gifford",
-      "jersey": "51",
-      "code": "U/Ten",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 42.8,
-      "madden27Rating": 66,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -1286,6 +1238,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "LB",
+      "player": "Dre Greenlaw",
+      "jersey": "57",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "SUS",
+      "pffGrade": 74.8,
+      "madden27Rating": 85,
+      "madden27Dev": "Star",
+      "pffPositionRank": 21,
+      "pffPositionTotal": 94,
+      "pffPositionLabel": "LB",
+      "pffTied": false
     }
   ]
 }

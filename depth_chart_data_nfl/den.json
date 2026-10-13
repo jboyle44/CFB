@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12T04:09:43.561433+00:00",
-  "ourladsUpdatedAt": "2026-10-12T04:09:43.561433+00:00",
+  "generatedAt": "2026-10-13T19:41:31.244988+00:00",
+  "ourladsUpdatedAt": "2026-10-13T19:41:31.244988+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.458861+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Denver Broncos",
@@ -680,22 +680,6 @@
       "pffTied": false
     },
     {
-      "position": "LCB",
-      "player": "Sean Fresch Jr.",
-      "jersey": "37",
-      "code": "SF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "SS",
       "player": "Talanoa Hufanga",
       "jersey": "9",
@@ -806,22 +790,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "CB",
       "pffTied": false
-    },
-    {
-      "position": "RCB",
-      "player": "Brent Austin",
-      "jersey": "33",
-      "code": "CF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     },
     {
       "position": "NB",
@@ -1000,6 +968,22 @@
       "pffTied": null
     },
     {
+      "position": "WR",
+      "player": "Pat Bryant",
+      "jersey": "13",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 60.9,
+      "madden27Rating": 73,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 94,
+      "pffPositionTotal": 143,
+      "pffPositionLabel": "WR",
+      "pffTied": true
+    },
+    {
       "position": "RB",
       "player": "Jonah Coleman",
       "jersey": "20",
@@ -1094,22 +1078,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "WR",
-      "player": "Pat Bryant",
-      "jersey": "13",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 60.9,
-      "madden27Rating": 73,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 94,
-      "pffPositionTotal": 143,
-      "pffPositionLabel": "WR",
-      "pffTied": true
     },
     {
       "position": "OG",

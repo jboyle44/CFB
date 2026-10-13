@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12T04:09:10.730877+00:00",
-  "ourladsUpdatedAt": "2026-10-12T04:09:10.730877+00:00",
+  "generatedAt": "2026-10-13T19:41:01.939524+00:00",
+  "ourladsUpdatedAt": "2026-10-13T19:41:01.939524+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.475879+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Miami Dolphins",
@@ -393,24 +393,8 @@
     },
     {
       "position": "RB",
-      "player": "Carlos Washington Jr.",
-      "jersey": "26",
-      "code": "SF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "RB",
       "player": "Kaytron Allen",
-      "jersey": "",
+      "jersey": "30",
       "code": "P/Was",
       "isAcquired": true,
       "isReserve": false,
@@ -582,22 +566,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "ED",
       "pffTied": false
-    },
-    {
-      "position": "RDE",
-      "player": "Rodney McGraw",
-      "jersey": "59",
-      "code": "CF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     },
     {
       "position": "WLB",
@@ -1126,22 +1094,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": null,
-      "player": "Kenneth Grant",
-      "jersey": "78",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 48.5,
-      "madden27Rating": 75,
-      "madden27Dev": "Star",
-      "pffPositionRank": 112,
-      "pffPositionTotal": 146,
-      "pffPositionLabel": "DI",
-      "pffTied": false
     }
   ]
 }

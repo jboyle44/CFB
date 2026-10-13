@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12T04:09:36.915600+00:00",
-  "ourladsUpdatedAt": "2026-10-12T04:09:36.915600+00:00",
+  "generatedAt": "2026-10-13T19:41:25.403806+00:00",
+  "ourladsUpdatedAt": "2026-10-13T19:41:25.403806+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.465965+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Indianapolis Colts",
@@ -82,22 +82,6 @@
       "pffGrade": null,
       "madden27Rating": 72,
       "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "RWR",
-      "player": "Nick Westbrook-Ikhine",
-      "jersey": "12",
-      "code": "CC/Mia",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,
@@ -1016,6 +1000,22 @@
       "pffTied": null
     },
     {
+      "position": "DE",
+      "player": "Arden Key",
+      "jersey": "98",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": 75,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
       "position": "WR",
       "player": "Alec Pierce",
       "jersey": "14",
@@ -1094,18 +1094,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": null,
-      "player": "Arden Key",
-      "jersey": "98",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 75,
-      "madden27Dev": "Normal"
     },
     {
       "position": "TE",

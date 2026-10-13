@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12T04:09:02.007329+00:00",
-  "ourladsUpdatedAt": "2026-10-12T04:09:02.007329+00:00",
+  "generatedAt": "2026-10-13T19:40:54.055245+00:00",
+  "ourladsUpdatedAt": "2026-10-13T19:40:54.055245+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.482611+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Giants",
@@ -22,22 +22,6 @@
       "pffPositionTotal": 143,
       "pffPositionLabel": "WR",
       "pffTied": false
-    },
-    {
-      "position": "LWR",
-      "player": "Dalen Cambre",
-      "jersey": "83",
-      "code": "CF25",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     },
     {
       "position": "RWR",
@@ -632,22 +616,6 @@
       "pffTied": false
     },
     {
-      "position": "SLB",
-      "player": "Trace Ford",
-      "jersey": "48",
-      "code": "CF25",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "LCB",
       "player": "Deonte Banks",
       "jersey": "2",
@@ -952,6 +920,22 @@
       "pffTied": true
     },
     {
+      "position": "DE",
+      "player": "Chauncey Golston",
+      "jersey": "57",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": 73,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
       "position": "CB",
       "player": "Paulson Adebo",
       "jersey": "21",
@@ -1126,18 +1110,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": null,
-      "player": "Chauncey Golston",
-      "jersey": "57",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 73,
-      "madden27Dev": "Normal"
     }
   ]
 }

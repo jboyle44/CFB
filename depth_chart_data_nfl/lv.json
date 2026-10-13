@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12T04:09:47.951417+00:00",
-  "ourladsUpdatedAt": "2026-10-12T04:09:47.951417+00:00",
+  "generatedAt": "2026-10-13T19:41:35.139279+00:00",
+  "ourladsUpdatedAt": "2026-10-13T19:41:35.139279+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.470898+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Las Vegas Raiders",
@@ -22,22 +22,6 @@
       "pffPositionTotal": 143,
       "pffPositionLabel": "WR",
       "pffTied": false
-    },
-    {
-      "position": "LWR",
-      "player": "Deven Thompkins",
-      "jersey": "83",
-      "code": "SF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     },
     {
       "position": "RWR",
@@ -386,22 +370,6 @@
       "pffGrade": null,
       "madden27Rating": 68,
       "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "RB",
-      "player": "Roman Hemby",
-      "jersey": "37",
-      "code": "CF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,
@@ -1126,6 +1094,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "WR",
+      "player": "Tyler Scott",
+      "jersey": "13",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "PS/IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "WR",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-12T04:10:00.961928+00:00",
-  "ourladsUpdatedAt": "2026-10-12T04:10:00.961928+00:00",
+  "generatedAt": "2026-10-13T19:41:46.868063+00:00",
+  "ourladsUpdatedAt": "2026-10-13T19:41:46.868063+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.442955+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Arizona Cardinals",
@@ -648,22 +648,6 @@
       "pffTied": false
     },
     {
-      "position": "LCB",
-      "player": "Art Green",
-      "jersey": "23",
-      "code": "SF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "SS",
       "player": "Budda Baker",
       "jersey": "3",
@@ -952,6 +936,22 @@
       "pffTied": null
     },
     {
+      "position": "OG",
+      "player": "Isaiah Adams",
+      "jersey": "74",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": 69,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
       "position": "TE",
       "player": "Hunter Long",
       "jersey": "89",
@@ -1048,22 +1048,6 @@
       "pffTied": true
     },
     {
-      "position": "S",
-      "player": "Joey Blount",
-      "jersey": "32",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 63,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "RB",
       "player": "Trey Benson",
       "jersey": "33",
@@ -1128,16 +1112,20 @@
       "pffTied": null
     },
     {
-      "position": null,
-      "player": "Isaiah Adams",
-      "jersey": "74",
+      "position": "S",
+      "player": "Joey Blount",
+      "jersey": "32",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
       "pffGrade": null,
-      "madden27Rating": 69,
-      "madden27Dev": "Normal"
+      "madden27Rating": 63,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "TE",
