@@ -16,9 +16,7 @@ exit_code=0
 Scraping Ourlads depth chart for Iowa...
   67 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
-Fetching CFBD recruiting data for 2 (school, year) pairs...
-  Iowa 2024: 28 players
-  Iowa 2025: 18 players
+Skipping CFBD recruiting call this run (no new players needing recruiting data).
 Wrote ../depth_chart_data/iowa.json
 exit_code=0
 === maryland ===
@@ -156,9 +154,12 @@ Wrote ../depth_chart_data/florida.json
 exit_code=0
 === georgia ===
 Scraping Ourlads depth chart for Georgia...
-  116 depth chart rows
+  115 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
-Skipping CFBD recruiting call this run (no new players needing recruiting data).
+Fetching CFBD recruiting data for 3 (school, year) pairs...
+  Georgia 2024: 32 players
+  Georgia 2025: 29 players
+  Georgia 2026: 32 players
 Wrote ../depth_chart_data/georgia.json
 exit_code=0
 === kentucky ===
@@ -254,9 +255,14 @@ Wrote ../depth_chart_data/california.json
 exit_code=0
 === clemson ===
 Scraping Ourlads depth chart for Clemson...
-  79 depth chart rows
-Skipping CFBD portal call this run (no new transfers needing portal data).
-Skipping CFBD recruiting call this run (no new players needing recruiting data).
+  82 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  17 transfers in from CFBD
+Fetching CFBD recruiting data for 4 (school, year) pairs...
+  Clemson 2024: 23 players
+  Clemson 2025: 15 players
+  Howard 2021: 22 players
+  Howard 2022: 8 players
 Wrote ../depth_chart_data/clemson.json
 exit_code=0
 === duke ===
@@ -359,9 +365,14 @@ Wrote ../depth_chart_data/wake-forest.json
 exit_code=0
 === notre-dame ===
 Scraping Ourlads depth chart for Notre Dame...
-  81 depth chart rows
+  84 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
-Skipping CFBD recruiting call this run (no new players needing recruiting data).
+Fetching CFBD recruiting data for 5 (school, year) pairs...
+  Notre Dame 2022: 23 players
+  Notre Dame 2023: 24 players
+  Notre Dame 2024: 23 players
+  Notre Dame 2025: 25 players
+  Notre Dame 2026: 30 players
 Wrote ../depth_chart_data/notre-dame.json
 exit_code=0
 === arizona ===
@@ -387,7 +398,7 @@ Wrote ../depth_chart_data/baylor.json
 exit_code=0
 === byu ===
 Scraping Ourlads depth chart for BYU...
-  89 depth chart rows
+  85 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
 Skipping CFBD recruiting call this run (no new players needing recruiting data).
 Wrote ../depth_chart_data/byu.json
@@ -401,9 +412,11 @@ Wrote ../depth_chart_data/ucf.json
 exit_code=0
 === cincinnati ===
 Scraping Ourlads depth chart for Cincinnati...
-  81 depth chart rows
+  75 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
-Skipping CFBD recruiting call this run (no new players needing recruiting data).
+Fetching CFBD recruiting data for 2 (school, year) pairs...
+  Cincinnati 2025: 20 players
+  Cincinnati 2026: 25 players
 Wrote ../depth_chart_data/cincinnati.json
 exit_code=0
 === colorado ===
@@ -424,9 +437,7 @@ exit_code=0
 Scraping Ourlads depth chart for Iowa State...
   68 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
-Fetching CFBD recruiting data for 2 (school, year) pairs...
-  Iowa State 2023: 26 players
-  Iowa State 2024: 23 players
+Skipping CFBD recruiting call this run (no new players needing recruiting data).
 Wrote ../depth_chart_data/iowa-state.json
 exit_code=0
 === kansas ===
@@ -473,8 +484,13 @@ Wrote ../depth_chart_data/utah.json
 exit_code=0
 === west-virginia ===
 Scraping Ourlads depth chart for West Virginia...
-  76 depth chart rows
-Skipping CFBD portal call this run (no new transfers needing portal data).
-Skipping CFBD recruiting call this run (no new players needing recruiting data).
+  78 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  126 transfers in from CFBD
+Fetching CFBD recruiting data for 4 (school, year) pairs...
+  Campbell 2021: 8 players
+  Campbell 2022: 15 players
+  West Virginia 2021: 20 players
+  West Virginia 2022: 18 players
 Wrote ../depth_chart_data/west-virginia.json
 exit_code=0
