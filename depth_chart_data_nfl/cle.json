@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-13T19:41:11.785743+00:00",
-  "ourladsUpdatedAt": "2026-10-13T19:41:11.785743+00:00",
+  "generatedAt": "2026-10-16T17:15:40.239414+00:00",
+  "ourladsUpdatedAt": "2026-10-16T17:15:40.239414+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.455232+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Cleveland Browns",
@@ -217,22 +217,6 @@
     },
     {
       "position": "RG",
-      "player": "Teven Jenkins",
-      "jersey": "78",
-      "code": "U/Chi",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 77.7,
-      "madden27Rating": 77,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 8,
-      "pffPositionTotal": 87,
-      "pffPositionLabel": "G",
-      "pffTied": false
-    },
-    {
-      "position": "RG",
       "player": "Austin Barber",
       "jersey": "58",
       "code": "26/3",
@@ -246,6 +230,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "RG",
+      "player": "Teven Jenkins",
+      "jersey": "78",
+      "code": "U/Chi",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 77.7,
+      "madden27Rating": 77,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 8,
+      "pffPositionTotal": 87,
+      "pffPositionLabel": "G",
+      "pffTied": false
     },
     {
       "position": "RT",
@@ -377,22 +377,6 @@
     },
     {
       "position": "RB",
-      "player": "Raheim Sanders",
-      "jersey": "23",
-      "code": "W/LAC",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 73.6,
-      "madden27Rating": 69,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "HB",
-      "pffTied": false
-    },
-    {
-      "position": "RB",
       "player": "Jaleel McLaughlin",
       "jersey": "38",
       "code": "SF26",
@@ -410,14 +394,18 @@
     {
       "position": "RB",
       "player": "Audric Estim\u00e9",
-      "jersey": "",
+      "jersey": "36",
       "code": "P/Min",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "FB",
@@ -949,22 +937,6 @@
     },
     {
       "position": "KR",
-      "player": "Raheim Sanders",
-      "jersey": "23",
-      "code": "W/LAC",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 73.6,
-      "madden27Rating": 69,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "HB",
-      "pffTied": false
-    },
-    {
-      "position": "KR",
       "player": "Malachi Corley",
       "jersey": "11",
       "code": "SF25",
@@ -981,19 +953,19 @@
     },
     {
       "position": "RB",
-      "player": "Dylan Sampson",
-      "jersey": "22",
+      "player": "Raheim Sanders",
+      "jersey": "23",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 75,
-      "madden27Dev": "Star",
+      "pffGrade": 73.6,
+      "madden27Rating": 69,
+      "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "pffPositionLabel": "HB",
+      "pffTied": false
     },
     {
       "position": "DE",
@@ -1010,22 +982,6 @@
       "pffPositionTotal": 129,
       "pffPositionLabel": "ED",
       "pffTied": false
-    },
-    {
-      "position": "CB",
-      "player": "Damarri Mathis",
-      "jersey": "37",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 70,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     },
     {
       "position": "LB",
@@ -1058,6 +1014,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "DI",
       "pffTied": false
+    },
+    {
+      "position": "CB",
+      "player": "Damarri Mathis",
+      "jersey": "37",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": 70,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LB",
@@ -1138,6 +1110,22 @@
       "pffPositionTotal": 146,
       "pffPositionLabel": "DI",
       "pffTied": false
+    },
+    {
+      "position": "RB",
+      "player": "Dylan Sampson",
+      "jersey": "22",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": null,
+      "madden27Rating": 75,
+      "madden27Dev": "Star",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-13T19:41:19.554436+00:00",
-  "ourladsUpdatedAt": "2026-10-13T19:41:19.554436+00:00",
+  "generatedAt": "2026-10-16T17:15:47.904142+00:00",
+  "ourladsUpdatedAt": "2026-10-16T17:15:47.904142+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.462180+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Green Bay Packers",
@@ -152,6 +152,22 @@
       "pffTied": null
     },
     {
+      "position": "LG",
+      "player": "Donovan Jennings",
+      "jersey": "67",
+      "code": "CF24",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 60.9,
+      "madden27Rating": 64,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "G",
+      "pffTied": false
+    },
+    {
       "position": "C",
       "player": "Sean Rhyan",
       "jersey": "75",
@@ -177,6 +193,22 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": 67,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "RG",
+      "player": "Travis Glover",
+      "jersey": "79",
+      "code": "24/6",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 64,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -216,22 +248,6 @@
       "pffTied": false
     },
     {
-      "position": "RG",
-      "player": "Donovan Jennings",
-      "jersey": "67",
-      "code": "CF24",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 60.9,
-      "madden27Rating": 64,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "G",
-      "pffTied": false
-    },
-    {
       "position": "RT",
       "player": "Anthony Belton",
       "jersey": "71",
@@ -246,22 +262,6 @@
       "pffPositionTotal": 87,
       "pffPositionLabel": "G",
       "pffTied": false
-    },
-    {
-      "position": "RT",
-      "player": "Travis Glover",
-      "jersey": "79",
-      "code": "24/6",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 64,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     },
     {
       "position": "TE",
@@ -377,22 +377,6 @@
     },
     {
       "position": "RB",
-      "player": "Kaleb Johnson",
-      "jersey": "26",
-      "code": "T/Pit",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 40.2,
-      "madden27Rating": 74,
-      "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "HB",
-      "pffTied": false
-    },
-    {
-      "position": "RB",
       "player": "Pierre Strong Jr.",
       "jersey": "22",
       "code": "SF25",
@@ -406,6 +390,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "RB",
+      "player": "Kaleb Johnson",
+      "jersey": "26",
+      "code": "T/Pit",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 40.2,
+      "madden27Rating": 74,
+      "madden27Dev": "Star",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "HB",
+      "pffTied": false
     },
     {
       "position": "LDE",
@@ -888,6 +888,22 @@
       "pffTied": null
     },
     {
+      "position": "PR",
+      "player": "Matthew Golden",
+      "jersey": "0",
+      "code": "25/1",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 66.1,
+      "madden27Rating": 79,
+      "madden27Dev": "Star",
+      "pffPositionRank": 67,
+      "pffPositionTotal": 143,
+      "pffPositionLabel": "WR",
+      "pffTied": true
+    },
+    {
       "position": "KR",
       "player": "Bo Melton",
       "jersey": "16",
@@ -1096,22 +1112,6 @@
       "pffTied": false
     },
     {
-      "position": "DT",
-      "player": "Jordon Riley",
-      "jersey": "97",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "PUP",
-      "pffGrade": 34.7,
-      "madden27Rating": 68,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "DI",
-      "pffTied": false
-    },
-    {
       "position": "RB",
       "player": "Josh Jacobs",
       "jersey": "8",
@@ -1142,6 +1142,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "DT",
+      "player": "Jordon Riley",
+      "jersey": "97",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 34.7,
+      "madden27Rating": 68,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "DI",
+      "pffTied": false
     }
   ]
 }

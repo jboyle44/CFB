@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-13T19:41:52.742414+00:00",
-  "ourladsUpdatedAt": "2026-10-13T19:41:52.742414+00:00",
+  "generatedAt": "2026-10-16T17:16:20.274863+00:00",
+  "ourladsUpdatedAt": "2026-10-16T17:16:20.274863+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.491396+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Seattle Seahawks",
@@ -57,15 +57,15 @@
     },
     {
       "position": "RWR",
-      "player": "Tory Horton",
-      "jersey": "15",
-      "code": "25/5",
-      "isAcquired": false,
+      "player": "Irvin Charles",
+      "jersey": "85",
+      "code": "T/NYJ",
+      "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 75,
-      "madden27Dev": "Normal",
+      "madden27Rating": null,
+      "madden27Dev": null,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,
@@ -86,6 +86,22 @@
       "pffPositionTotal": 143,
       "pffPositionLabel": "WR",
       "pffTied": true
+    },
+    {
+      "position": "SWR",
+      "player": "Tory Horton",
+      "jersey": "15",
+      "code": "25/5",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 75,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LT",
@@ -361,6 +377,18 @@
     },
     {
       "position": "RB",
+      "player": "Velus Jones Jr.",
+      "jersey": "33",
+      "code": "SF25",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "RB",
       "player": "Robert Henry Jr.",
       "jersey": "34",
       "code": "P/Was",
@@ -553,19 +581,15 @@
     },
     {
       "position": "WLB",
-      "player": "Chazz Surratt",
-      "jersey": "44",
-      "code": "U/NYJ",
-      "isAcquired": true,
+      "player": "Jimmy Ciarlo",
+      "jersey": "46",
+      "code": "SF26",
+      "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 50.5,
-      "madden27Rating": 64,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "LB",
-      "pffTied": false
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "MLB",
@@ -593,6 +617,22 @@
       "reserveStatus": null,
       "pffGrade": 72.6,
       "madden27Rating": 57,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "LB",
+      "pffTied": false
+    },
+    {
+      "position": "MLB",
+      "player": "Chazz Surratt",
+      "jersey": "44",
+      "code": "U/NYJ",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 50.5,
+      "madden27Rating": 64,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -1094,18 +1134,6 @@
       "pffPositionTotal": 73,
       "pffPositionLabel": "HB",
       "pffTied": false
-    },
-    {
-      "position": "WR",
-      "player": "Irvin Charles",
-      "jersey": "85",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-13T19:41:27.367227+00:00",
-  "ourladsUpdatedAt": "2026-10-13T19:41:27.367227+00:00",
+  "generatedAt": "2026-10-16T17:15:55.685855+00:00",
+  "ourladsUpdatedAt": "2026-10-16T17:15:55.685855+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.467613+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Jacksonville Jaguars",
@@ -102,22 +102,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "LT",
-      "player": "Anton Harrison",
-      "jersey": "77",
-      "code": "23/1",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 71.9,
-      "madden27Rating": 79,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 36,
-      "pffPositionTotal": 95,
-      "pffPositionLabel": "T",
-      "pffTied": false
     },
     {
       "position": "LT",
@@ -982,6 +966,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "OT",
+      "player": "Anton Harrison",
+      "jersey": "77",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 71.9,
+      "madden27Rating": 79,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 36,
+      "pffPositionTotal": 95,
+      "pffPositionLabel": "T",
+      "pffTied": false
     },
     {
       "position": "S",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-13T19:41:46.868063+00:00",
-  "ourladsUpdatedAt": "2026-10-13T19:41:46.868063+00:00",
+  "generatedAt": "2026-10-16T17:16:14.573959+00:00",
+  "ourladsUpdatedAt": "2026-10-16T17:16:14.573959+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.442955+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Arizona Cardinals",
@@ -278,6 +278,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "TE",
+      "player": "Shawn Bowman",
+      "jersey": "44",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "QB",
@@ -617,19 +629,19 @@
     },
     {
       "position": "LCB",
-      "player": "Denzel Burke",
-      "jersey": "29",
-      "code": "25/5",
+      "player": "Max Melton",
+      "jersey": "16",
+      "code": "24/2",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 55.6,
-      "madden27Rating": 72,
+      "pffGrade": null,
+      "madden27Rating": 74,
       "madden27Dev": "Normal",
-      "pffPositionRank": 88,
-      "pffPositionTotal": 122,
-      "pffPositionLabel": "CB",
-      "pffTied": true
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LCB",
@@ -713,19 +725,19 @@
     },
     {
       "position": "RCB",
-      "player": "Max Melton",
-      "jersey": "16",
-      "code": "24/2",
+      "player": "Denzel Burke",
+      "jersey": "29",
+      "code": "25/5",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 74,
+      "pffGrade": 55.6,
+      "madden27Rating": 72,
       "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "pffPositionRank": 88,
+      "pffPositionTotal": 122,
+      "pffPositionLabel": "CB",
+      "pffTied": true
     },
     {
       "position": "RCB",
@@ -984,22 +996,6 @@
       "pffTied": true
     },
     {
-      "position": "S",
-      "player": "Kitan Crawford",
-      "jersey": "36",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 70.8,
-      "madden27Rating": 66,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "S",
-      "pffTied": false
-    },
-    {
       "position": "RB",
       "player": "James Conner",
       "jersey": "6",
@@ -1141,6 +1137,22 @@
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "TE",
+      "pffTied": false
+    },
+    {
+      "position": "S",
+      "player": "Kitan Crawford",
+      "jersey": "36",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 70.8,
+      "madden27Rating": 66,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "S",
       "pffTied": false
     }
   ]

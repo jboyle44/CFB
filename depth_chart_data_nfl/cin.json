@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-13T19:41:09.767703+00:00",
-  "ourladsUpdatedAt": "2026-10-13T19:41:09.767703+00:00",
+  "generatedAt": "2026-10-16T17:15:38.362672+00:00",
+  "ourladsUpdatedAt": "2026-10-16T17:15:38.362672+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.453480+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Cincinnati Bengals",
@@ -618,14 +618,18 @@
     {
       "position": "WLB",
       "player": "Jack Kiser",
-      "jersey": "",
+      "jersey": "45",
       "code": "W/Jax",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "MLB",
@@ -661,6 +665,22 @@
     },
     {
       "position": "LCB",
+      "player": "Dj Ivey",
+      "jersey": "38",
+      "code": "23/7",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 69.3,
+      "madden27Rating": 67,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "CB",
+      "pffTied": false
+    },
+    {
+      "position": "LCB",
       "player": "Tacario Davis",
       "jersey": "20",
       "code": "26/3",
@@ -674,22 +694,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "LCB",
-      "player": "Josh Newton",
-      "jersey": "28",
-      "code": "24/5",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 58.4,
-      "madden27Rating": 71,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 76,
-      "pffPositionTotal": 122,
-      "pffPositionLabel": "CB",
-      "pffTied": true
     },
     {
       "position": "SS",
@@ -773,19 +777,19 @@
     },
     {
       "position": "RCB",
-      "player": "Dj Ivey",
-      "jersey": "38",
-      "code": "23/7",
+      "player": "Josh Newton",
+      "jersey": "28",
+      "code": "24/5",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 69.3,
-      "madden27Rating": 67,
+      "pffGrade": 58.4,
+      "madden27Rating": 71,
       "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
+      "pffPositionRank": 76,
+      "pffPositionTotal": 122,
       "pffPositionLabel": "CB",
-      "pffTied": false
+      "pffTied": true
     },
     {
       "position": "NB",

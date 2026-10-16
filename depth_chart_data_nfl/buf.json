@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-13T19:40:59.974762+00:00",
-  "ourladsUpdatedAt": "2026-10-13T19:40:59.974762+00:00",
+  "generatedAt": "2026-10-16T17:15:28.790506+00:00",
+  "ourladsUpdatedAt": "2026-10-16T17:15:28.790506+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.448485+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Buffalo Bills",
@@ -536,6 +536,18 @@
       "pffTied": false
     },
     {
+      "position": "LOLB",
+      "player": "Mike Danna",
+      "jersey": "51",
+      "code": "CC/KC",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "WLB",
       "player": "Dorian Williams",
       "jersey": "42",
@@ -758,18 +770,6 @@
       "pffPositionTotal": 122,
       "pffPositionLabel": "CB",
       "pffTied": false
-    },
-    {
-      "position": "RCB",
-      "player": "Anthony Kendall",
-      "jersey": "30",
-      "code": "U/Cle",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     },
     {
       "position": "NB",

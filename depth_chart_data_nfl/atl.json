@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-13T19:41:39.031445+00:00",
-  "ourladsUpdatedAt": "2026-10-13T19:41:39.031445+00:00",
+  "generatedAt": "2026-10-16T17:16:07.046389+00:00",
+  "ourladsUpdatedAt": "2026-10-16T17:16:07.046389+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.444939+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Atlanta Falcons",
@@ -385,7 +385,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "DE",
@@ -676,22 +680,6 @@
       "pffTied": true
     },
     {
-      "position": "SS",
-      "player": "Jammie Robinson",
-      "jersey": "34",
-      "code": "SF25",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "FS",
       "player": "Xavier Watts",
       "jersey": "31",
@@ -941,7 +929,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "KR",

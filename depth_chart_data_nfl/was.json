@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-13T19:40:58.060703+00:00",
-  "ourladsUpdatedAt": "2026-10-13T19:40:58.060703+00:00",
+  "generatedAt": "2026-10-16T17:15:26.884063+00:00",
+  "ourladsUpdatedAt": "2026-10-16T17:15:26.884063+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.496677+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Washington Commanders",
@@ -1000,22 +1000,6 @@
       "pffTied": true
     },
     {
-      "position": "ILB",
-      "player": "Jordan Magee",
-      "jersey": "58",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 55.0,
-      "madden27Rating": 68,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 65,
-      "pffPositionTotal": 94,
-      "pffPositionLabel": "LB",
-      "pffTied": false
-    },
-    {
       "position": "OT",
       "player": "Laremy Tunsil",
       "jersey": "78",
@@ -1110,6 +1094,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "ILB",
+      "player": "Jordan Magee",
+      "jersey": "58",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 55.0,
+      "madden27Rating": 68,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 65,
+      "pffPositionTotal": 94,
+      "pffPositionLabel": "LB",
+      "pffTied": false
     }
   ]
 }
