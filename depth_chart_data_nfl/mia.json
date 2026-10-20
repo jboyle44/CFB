@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-16T17:15:30.702567+00:00",
-  "ourladsUpdatedAt": "2026-10-16T17:15:30.702567+00:00",
+  "generatedAt": "2026-10-20T17:39:51.709984+00:00",
+  "ourladsUpdatedAt": "2026-10-20T17:39:51.709984+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.475879+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Miami Dolphins",
@@ -26,14 +26,18 @@
     {
       "position": "LWR",
       "player": "Jared Wayne",
-      "jersey": "",
+      "jersey": "86",
       "code": "W/Hou",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RWR",

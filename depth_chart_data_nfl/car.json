@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-16T17:16:08.916623+00:00",
-  "ourladsUpdatedAt": "2026-10-16T17:16:08.916623+00:00",
+  "generatedAt": "2026-10-20T17:40:36.560754+00:00",
+  "ourladsUpdatedAt": "2026-10-20T17:40:36.560754+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.450108+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Carolina Panthers",
@@ -217,6 +217,22 @@
     },
     {
       "position": "RT",
+      "player": "Taylor Moton",
+      "jersey": "72",
+      "code": "17/2",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 84,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "RT",
       "player": "Monroe Freeling",
       "jersey": "57",
       "code": "26/1",
@@ -393,6 +409,22 @@
     },
     {
       "position": "RB",
+      "player": "Trevor Etienne",
+      "jersey": "23",
+      "code": "25/4",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 69.7,
+      "madden27Rating": 71,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "HB",
+      "pffTied": false
+    },
+    {
+      "position": "RB",
       "player": "Aj Dillon",
       "jersey": "28",
       "code": "U/Phi",
@@ -456,7 +488,7 @@
       "pffTied": null
     },
     {
-      "position": "RDE",
+      "position": "NT",
       "player": "Bobby Brown III",
       "jersey": "97",
       "code": "U/LAR",
@@ -467,6 +499,22 @@
       "madden27Rating": 74,
       "madden27Dev": "Normal",
       "pffPositionRank": 83,
+      "pffPositionTotal": 146,
+      "pffPositionLabel": "DI",
+      "pffTied": false
+    },
+    {
+      "position": "RDE",
+      "player": "Tershawn Wharton",
+      "jersey": "98",
+      "code": "U/KC",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 40.8,
+      "madden27Rating": 74,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 136,
       "pffPositionTotal": 146,
       "pffPositionLabel": "DI",
       "pffTied": false
@@ -1078,54 +1126,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "OT",
-      "player": "Taylor Moton",
-      "jersey": "72",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": null,
-      "madden27Rating": 84,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "DE",
-      "player": "Tershawn Wharton",
-      "jersey": "98",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 40.8,
-      "madden27Rating": 74,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 136,
-      "pffPositionTotal": 146,
-      "pffPositionLabel": "DI",
-      "pffTied": false
-    },
-    {
-      "position": "RB",
-      "player": "Trevor Etienne",
-      "jersey": "23",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 69.7,
-      "madden27Rating": 71,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "HB",
-      "pffTied": false
     }
   ]
 }

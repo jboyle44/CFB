@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-16T17:16:10.809791+00:00",
-  "ourladsUpdatedAt": "2026-10-16T17:16:10.809791+00:00",
+  "generatedAt": "2026-10-20T17:40:38.834316+00:00",
+  "ourladsUpdatedAt": "2026-10-20T17:40:38.834316+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.480907+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New Orleans Saints",
@@ -769,7 +769,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "NB",
@@ -789,19 +793,15 @@
     },
     {
       "position": "NB",
-      "player": "Lorenzo Styles Jr.",
+      "player": "Lorenzo Styles",
       "jersey": "36",
       "code": "26/5",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 66,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "PT",
@@ -834,6 +834,22 @@
       "pffPositionTotal": 42,
       "pffPositionLabel": "K",
       "pffTied": true
+    },
+    {
+      "position": "LS",
+      "player": "Zach Wood",
+      "jersey": "49",
+      "code": "SF17",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 79,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "H",
@@ -1102,22 +1118,6 @@
       "pffGrade": null,
       "madden27Rating": null,
       "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "LS",
-      "player": "Zach Wood",
-      "jersey": "49",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": null,
-      "madden27Rating": 79,
-      "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,

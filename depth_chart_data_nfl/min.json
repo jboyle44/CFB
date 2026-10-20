@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-16T17:15:49.796057+00:00",
-  "ourladsUpdatedAt": "2026-10-16T17:15:49.796057+00:00",
+  "generatedAt": "2026-10-20T17:40:14.007268+00:00",
+  "ourladsUpdatedAt": "2026-10-20T17:40:14.007268+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.477549+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Minnesota Vikings",
@@ -984,22 +984,6 @@
       "pffTied": null
     },
     {
-      "position": "RB",
-      "player": "Jordan Mason",
-      "jersey": "27",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 74.4,
-      "madden27Rating": 80,
-      "madden27Dev": "Star",
-      "pffPositionRank": 24,
-      "pffPositionTotal": 73,
-      "pffPositionLabel": "HB",
-      "pffTied": false
-    },
-    {
       "position": "OG",
       "player": "Donovan Jackson",
       "jersey": "74",
@@ -1046,6 +1030,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "RB",
+      "player": "Jordan Mason",
+      "jersey": "27",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 74.4,
+      "madden27Rating": 80,
+      "madden27Dev": "Star",
+      "pffPositionRank": 24,
+      "pffPositionTotal": 73,
+      "pffPositionLabel": "HB",
+      "pffTied": false
     }
   ]
 }

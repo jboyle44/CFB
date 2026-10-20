@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-16T17:16:05.168896+00:00",
-  "ourladsUpdatedAt": "2026-10-16T17:16:05.168896+00:00",
+  "generatedAt": "2026-10-20T17:40:32.061356+00:00",
+  "ourladsUpdatedAt": "2026-10-20T17:40:32.061356+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.472531+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Los Angeles Chargers",
@@ -25,14 +25,14 @@
     },
     {
       "position": "LWR",
-      "player": "Marquez Valdes-Scantling",
-      "jersey": "13",
-      "code": "SF26",
+      "player": "KeAndre Lambert-Smith",
+      "jersey": "84",
+      "code": "25/5",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 72,
+      "madden27Rating": 70,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -518,6 +518,18 @@
       "pffPositionTotal": 129,
       "pffPositionLabel": "ED",
       "pffTied": true
+    },
+    {
+      "position": "LOLB",
+      "player": "Caleb Murphy",
+      "jersey": "50",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LILB",
@@ -1112,7 +1124,7 @@
       "pffTied": null
     },
     {
-      "position": "WR",
+      "position": null,
       "player": "KeAndre Lambert-Smith",
       "jersey": "84",
       "code": "",

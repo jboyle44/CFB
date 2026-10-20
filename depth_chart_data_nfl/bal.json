@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-16T17:15:36.473074+00:00",
-  "ourladsUpdatedAt": "2026-10-16T17:15:36.473074+00:00",
+  "generatedAt": "2026-10-20T17:39:58.425970+00:00",
+  "ourladsUpdatedAt": "2026-10-20T17:39:58.425970+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.446676+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Baltimore Ravens",
@@ -54,6 +54,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "WR",
       "pffTied": false
+    },
+    {
+      "position": "RWR",
+      "player": "Ja'Kobi Lane",
+      "jersey": "6",
+      "code": "26/3",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 72,
+      "madden27Dev": "Star",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "SWR",
@@ -136,20 +152,20 @@
       "pffTied": false
     },
     {
-      "position": "LG",
-      "player": "Emery Jones Jr.",
-      "jersey": "51",
-      "code": "25/3",
+      "position": "C",
+      "player": "Vega Ioane",
+      "jersey": "71",
+      "code": "26/1",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 50.1,
-      "madden27Rating": 71,
-      "madden27Dev": "Normal",
+      "pffGrade": null,
+      "madden27Rating": 78,
+      "madden27Dev": "Star",
       "pffPositionRank": null,
       "pffPositionTotal": null,
-      "pffPositionLabel": "G",
-      "pffTied": false
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "C",
@@ -169,19 +185,19 @@
     },
     {
       "position": "RG",
-      "player": "Vega Ioane",
-      "jersey": "71",
-      "code": "26/1",
+      "player": "Emery Jones Jr.",
+      "jersey": "51",
+      "code": "25/3",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 78,
-      "madden27Dev": "Star",
+      "pffGrade": 50.1,
+      "madden27Rating": 71,
+      "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "pffPositionLabel": "G",
+      "pffTied": false
     },
     {
       "position": "RG",
@@ -566,6 +582,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "LB",
       "pffTied": false
+    },
+    {
+      "position": "MLB",
+      "player": "Carl Jones Jr.",
+      "jersey": "48",
+      "code": "W/Chi",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "SLB",
@@ -1062,22 +1090,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "C",
       "pffTied": false
-    },
-    {
-      "position": "WR",
-      "player": "Ja'Kobi Lane",
-      "jersey": "6",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": null,
-      "madden27Rating": 72,
-      "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     }
   ]
 }

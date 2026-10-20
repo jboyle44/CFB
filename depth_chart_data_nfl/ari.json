@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-16T17:16:14.573959+00:00",
-  "ourladsUpdatedAt": "2026-10-16T17:16:14.573959+00:00",
+  "generatedAt": "2026-10-20T17:40:43.297927+00:00",
+  "ourladsUpdatedAt": "2026-10-20T17:40:43.297927+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.442955+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Arizona Cardinals",
@@ -289,7 +289,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "QB",
@@ -672,6 +676,22 @@
       "madden27Dev": "X-Factor",
       "pffPositionRank": 91,
       "pffPositionTotal": 107,
+      "pffPositionLabel": "S",
+      "pffTied": false
+    },
+    {
+      "position": "SS",
+      "player": "Kitan Crawford",
+      "jersey": "36",
+      "code": "25/7",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 70.8,
+      "madden27Rating": 66,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
       "pffPositionLabel": "S",
       "pffTied": false
     },
@@ -1137,22 +1157,6 @@
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "TE",
-      "pffTied": false
-    },
-    {
-      "position": "S",
-      "player": "Kitan Crawford",
-      "jersey": "36",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 70.8,
-      "madden27Rating": 66,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "S",
       "pffTied": false
     }
   ]

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-16T17:15:59.446672+00:00",
-  "ourladsUpdatedAt": "2026-10-16T17:15:59.446672+00:00",
+  "generatedAt": "2026-10-20T17:40:25.272634+00:00",
+  "ourladsUpdatedAt": "2026-10-20T17:40:25.272634+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.458861+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Denver Broncos",
@@ -521,6 +521,22 @@
     },
     {
       "position": "LOLB",
+      "player": "Jonathon Cooper",
+      "jersey": "0",
+      "code": "21/7",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 84,
+      "madden27Dev": "Superstar",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "LOLB",
       "player": "Jonah Elliss",
       "jersey": "52",
       "code": "24/3",
@@ -680,18 +696,6 @@
       "pffTied": false
     },
     {
-      "position": "LCB",
-      "player": "Sean Fresch Jr.",
-      "jersey": "37",
-      "code": "SF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
-    },
-    {
       "position": "SS",
       "player": "Talanoa Hufanga",
       "jersey": "9",
@@ -722,18 +726,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "S",
       "pffTied": false
-    },
-    {
-      "position": "SS",
-      "player": "Taylor Rapp",
-      "jersey": "30",
-      "code": "CC/Buf",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     },
     {
       "position": "FS",
@@ -1114,22 +1106,6 @@
       "pffGrade": null,
       "madden27Rating": 66,
       "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "OLB",
-      "player": "Jonathon Cooper",
-      "jersey": "0",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "CE",
-      "pffGrade": null,
-      "madden27Rating": 84,
-      "madden27Dev": "Superstar",
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,

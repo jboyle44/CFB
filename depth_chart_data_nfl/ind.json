@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-16T17:15:53.762006+00:00",
-  "ourladsUpdatedAt": "2026-10-16T17:15:53.762006+00:00",
+  "generatedAt": "2026-10-20T17:40:18.480337+00:00",
+  "ourladsUpdatedAt": "2026-10-20T17:40:18.480337+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.465965+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Indianapolis Colts",
@@ -297,6 +297,22 @@
     },
     {
       "position": "TE",
+      "player": "Will Mallory",
+      "jersey": "86",
+      "code": "23/5",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 82.0,
+      "madden27Rating": 65,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "TE",
+      "pffTied": false
+    },
+    {
+      "position": "TE",
       "player": "Pharaoh Brown",
       "jersey": "49",
       "code": "U/Arz",
@@ -305,7 +321,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "QB",
@@ -1090,22 +1110,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "TE",
-      "player": "Will Mallory",
-      "jersey": "86",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 82.0,
-      "madden27Rating": 65,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "TE",
-      "pffTied": false
     }
   ]
 }

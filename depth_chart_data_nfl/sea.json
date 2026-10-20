@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-16T17:16:20.274863+00:00",
-  "ourladsUpdatedAt": "2026-10-16T17:16:20.274863+00:00",
+  "generatedAt": "2026-10-20T17:40:49.990876+00:00",
+  "ourladsUpdatedAt": "2026-10-20T17:40:49.990876+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.491396+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Seattle Seahawks",
@@ -50,22 +50,6 @@
       "pffGrade": null,
       "madden27Rating": 78,
       "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "RWR",
-      "player": "Irvin Charles",
-      "jersey": "85",
-      "code": "T/NYJ",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,
@@ -385,7 +369,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RB",
@@ -578,18 +566,6 @@
       "pffPositionTotal": 94,
       "pffPositionLabel": "LB",
       "pffTied": false
-    },
-    {
-      "position": "WLB",
-      "player": "Jimmy Ciarlo",
-      "jersey": "46",
-      "code": "SF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     },
     {
       "position": "MLB",
@@ -1008,22 +984,6 @@
       "pffTied": null
     },
     {
-      "position": "OG",
-      "player": "Anthony Bradford",
-      "jersey": "75",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 50.6,
-      "madden27Rating": 72,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 75,
-      "pffPositionTotal": 87,
-      "pffPositionLabel": "G",
-      "pffTied": false
-    },
-    {
       "position": "FB",
       "player": "Robbie Ouzts",
       "jersey": "40",
@@ -1133,6 +1093,22 @@
       "pffPositionRank": 6,
       "pffPositionTotal": 73,
       "pffPositionLabel": "HB",
+      "pffTied": false
+    },
+    {
+      "position": "OG",
+      "player": "Anthony Bradford",
+      "jersey": "75",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 50.6,
+      "madden27Rating": 72,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 75,
+      "pffPositionTotal": 87,
+      "pffPositionLabel": "G",
       "pffTied": false
     }
   ]

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-16T17:16:18.371983+00:00",
-  "ourladsUpdatedAt": "2026-10-16T17:16:18.371983+00:00",
+  "generatedAt": "2026-10-20T17:40:47.733638+00:00",
+  "ourladsUpdatedAt": "2026-10-20T17:40:47.733638+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.489514+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "San Francisco 49ers",
@@ -54,6 +54,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "RWR",
+      "player": "Malik Turner",
+      "jersey": "86",
+      "code": "SF24",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "SWR",
@@ -433,7 +445,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LDT",
@@ -642,6 +658,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "LB",
       "pffTied": false
+    },
+    {
+      "position": "MLB",
+      "player": "Jalen Graham",
+      "jersey": "41",
+      "code": "P/Was",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LCB",
@@ -1117,22 +1145,6 @@
       "reserveStatus": "IR",
       "pffGrade": null,
       "madden27Rating": 80,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "OG",
-      "player": "Brett Toth",
-      "jersey": "78",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 62,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,

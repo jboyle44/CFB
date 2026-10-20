@@ -1,28 +1,12 @@
 {
-  "generatedAt": "2026-10-16T17:15:55.685855+00:00",
-  "ourladsUpdatedAt": "2026-10-16T17:15:55.685855+00:00",
+  "generatedAt": "2026-10-20T17:40:20.753090+00:00",
+  "ourladsUpdatedAt": "2026-10-20T17:40:20.753090+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.467613+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Jacksonville Jaguars",
   "offenseScheme": "11 - One RB, One TE (57%)",
   "defenseScheme": "Base 4-3",
   "rows": [
-    {
-      "position": "LWR",
-      "player": "Brian Thomas Jr.",
-      "jersey": "7",
-      "code": "24/1",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 65.5,
-      "madden27Rating": 80,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 72,
-      "pffPositionTotal": 143,
-      "pffPositionLabel": "WR",
-      "pffTied": false
-    },
     {
       "position": "LWR",
       "player": "Josh Cameron",
@@ -38,6 +22,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "LWR",
+      "player": "Brian Thomas Jr.",
+      "jersey": "7",
+      "code": "24/1",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 65.5,
+      "madden27Rating": 80,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 72,
+      "pffPositionTotal": 143,
+      "pffPositionLabel": "WR",
+      "pffTied": false
     },
     {
       "position": "RWR",

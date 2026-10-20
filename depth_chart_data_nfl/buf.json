@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-16T17:15:28.790506+00:00",
-  "ourladsUpdatedAt": "2026-10-16T17:15:28.790506+00:00",
+  "generatedAt": "2026-10-20T17:39:49.440133+00:00",
+  "ourladsUpdatedAt": "2026-10-20T17:39:49.440133+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.448485+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Buffalo Bills",
@@ -545,7 +545,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "WLB",
@@ -676,55 +680,7 @@
       "pffTied": true
     },
     {
-      "position": "LCB",
-      "player": "Davison Igbinosun",
-      "jersey": "21",
-      "code": "26/2",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 74,
-      "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "SS",
-      "player": "C.J. Gardner-Johnson",
-      "jersey": "22",
-      "code": "U/Chi",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 51.6,
-      "madden27Rating": 75,
-      "madden27Dev": "Star",
-      "pffPositionRank": 93,
-      "pffPositionTotal": 107,
-      "pffPositionLabel": "S",
-      "pffTied": false
-    },
-    {
-      "position": "SS",
-      "player": "Jalon Kilgore",
-      "jersey": "29",
-      "code": "26/5",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 67,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "FS",
       "player": "Cole Bishop",
       "jersey": "24",
       "code": "24/2",
@@ -740,7 +696,7 @@
       "pffTied": false
     },
     {
-      "position": "FS",
+      "position": "SS",
       "player": "Sam Franklin Jr.",
       "jersey": "28",
       "code": "SF25",
@@ -754,6 +710,54 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "S",
       "pffTied": false
+    },
+    {
+      "position": "FS",
+      "player": "Damar Hamlin",
+      "jersey": "3",
+      "code": "21/6",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 42.8,
+      "madden27Rating": 73,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "S",
+      "pffTied": false
+    },
+    {
+      "position": "FS",
+      "player": "Jalon Kilgore",
+      "jersey": "29",
+      "code": "26/5",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 67,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "RCB",
+      "player": "Davison Igbinosun",
+      "jersey": "21",
+      "code": "26/2",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 74,
+      "madden27Dev": "Star",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RCB",
@@ -785,22 +789,6 @@
       "pffPositionRank": 101,
       "pffPositionTotal": 122,
       "pffPositionLabel": "CB",
-      "pffTied": false
-    },
-    {
-      "position": "NB",
-      "player": "Damar Hamlin",
-      "jersey": "3",
-      "code": "21/6",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 42.8,
-      "madden27Rating": 73,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "S",
       "pffTied": false
     },
     {
@@ -1042,6 +1030,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "S",
+      "player": "C.J. Gardner-Johnson",
+      "jersey": "22",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "SUS",
+      "pffGrade": 51.6,
+      "madden27Rating": 75,
+      "madden27Dev": "Star",
+      "pffPositionRank": 93,
+      "pffPositionTotal": 107,
+      "pffPositionLabel": "S",
+      "pffTied": false
     }
   ]
 }

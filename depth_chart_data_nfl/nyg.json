@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-16T17:15:23.012159+00:00",
-  "ourladsUpdatedAt": "2026-10-16T17:15:23.012159+00:00",
+  "generatedAt": "2026-10-20T17:39:42.743156+00:00",
+  "ourladsUpdatedAt": "2026-10-20T17:39:42.743156+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.482611+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Giants",
@@ -561,7 +561,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "MLB",
@@ -692,6 +696,22 @@
       "pffTied": false
     },
     {
+      "position": "SS",
+      "player": "Elijah Campbell",
+      "jersey": "28",
+      "code": "U/Mia",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 29.8,
+      "madden27Rating": 62,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "S",
+      "pffTied": false
+    },
+    {
       "position": "FS",
       "player": "Jev\u00f3n Holland",
       "jersey": "8",
@@ -706,22 +726,6 @@
       "pffPositionTotal": 107,
       "pffPositionLabel": "S",
       "pffTied": true
-    },
-    {
-      "position": "FS",
-      "player": "Elijah Campbell",
-      "jersey": "28",
-      "code": "U/Mia",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 29.8,
-      "madden27Rating": 62,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "S",
-      "pffTied": false
     },
     {
       "position": "FS",
