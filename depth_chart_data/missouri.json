@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T17:52:08.402042+00:00",
-  "ourladsUpdatedAt": "2026-10-20T17:52:08.402042+00:00",
+  "generatedAt": "2026-10-23T17:38:45.140511+00:00",
+  "ourladsUpdatedAt": "2026-10-23T17:38:45.140511+00:00",
   "cfbdUpdatedAt": "2026-10-20T17:52:08.402042+00:00",
   "cfb27UpdatedAt": "2026-10-12T04:11:36.228709+00:00",
   "draftRankUpdatedAt": "2026-10-20T17:50:03.829094+00:00",
@@ -1971,6 +1971,12 @@
       "hsStateRank": null,
       "pffGrade": null,
       "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null,
       "transferLookedUp": true,
       "recruitLookedUp": true
     },
