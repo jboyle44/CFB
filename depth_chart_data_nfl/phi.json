@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T17:39:44.968367+00:00",
-  "ourladsUpdatedAt": "2026-10-20T17:39:44.968367+00:00",
+  "generatedAt": "2026-10-23T17:48:35.286333+00:00",
+  "ourladsUpdatedAt": "2026-10-23T17:48:35.286333+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.485929+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Philadelphia Eagles",
@@ -280,22 +280,6 @@
       "pffTied": false
     },
     {
-      "position": "TE",
-      "player": "E.J. Jenkins",
-      "jersey": "84",
-      "code": "SF24",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 58,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "QB",
       "player": "Tanner McKee",
       "jersey": "16",
@@ -337,7 +321,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RB",
@@ -370,34 +358,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "RB",
-      "player": "Carson Steele",
-      "jersey": "34",
-      "code": "SF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "RB",
-      "player": "Jaydon Blue",
-      "jersey": "30",
-      "code": "SF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     },
     {
       "position": "DE",
@@ -1011,6 +971,22 @@
       "position": "S",
       "player": "Andre' Sam",
       "jersey": "32",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "RB",
+      "player": "Carson Steele",
+      "jersey": "34",
       "code": "",
       "isAcquired": false,
       "isReserve": true,

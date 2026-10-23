@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T17:39:51.709984+00:00",
-  "ourladsUpdatedAt": "2026-10-20T17:39:51.709984+00:00",
+  "generatedAt": "2026-10-23T17:48:41.243774+00:00",
+  "ourladsUpdatedAt": "2026-10-23T17:48:41.243774+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.475879+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Miami Dolphins",
@@ -457,19 +457,15 @@
     },
     {
       "position": "LDE",
-      "player": "Andre Jones Jr.",
-      "jersey": "58",
-      "code": "P/Buf",
-      "isAcquired": true,
+      "player": "Rodney McGraw",
+      "jersey": "59",
+      "code": "CF26",
+      "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 63,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LDT",
@@ -824,22 +820,6 @@
       "pffTied": false
     },
     {
-      "position": "PK",
-      "player": "Riley Patterson",
-      "jersey": "47",
-      "code": "U/Atl",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 76.1,
-      "madden27Rating": 72,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 21,
-      "pffPositionTotal": 42,
-      "pffPositionLabel": "K",
-      "pffTied": true
-    },
-    {
       "position": "LS",
       "player": "Tucker Addington",
       "jersey": "46",
@@ -870,22 +850,6 @@
       "pffPositionTotal": 36,
       "pffPositionLabel": "P",
       "pffTied": false
-    },
-    {
-      "position": "KO",
-      "player": "Riley Patterson",
-      "jersey": "47",
-      "code": "U/Atl",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 76.1,
-      "madden27Rating": 72,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 21,
-      "pffPositionTotal": 42,
-      "pffPositionLabel": "K",
-      "pffTied": true
     },
     {
       "position": "PR",
@@ -984,22 +948,6 @@
       "pffTied": true
     },
     {
-      "position": "S",
-      "player": "Kyle Louis",
-      "jersey": "19",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 71,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "LB",
       "player": "Trey Moore",
       "jersey": "17",
@@ -1080,15 +1028,15 @@
       "pffTied": null
     },
     {
-      "position": "CB",
-      "player": "Storm Duck",
-      "jersey": "29",
+      "position": "S",
+      "player": "Kyle Louis",
+      "jersey": "19",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "DFR",
       "pffGrade": null,
-      "madden27Rating": 63,
+      "madden27Rating": 71,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,

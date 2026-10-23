@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T17:40:16.221083+00:00",
-  "ourladsUpdatedAt": "2026-10-20T17:40:16.221083+00:00",
+  "generatedAt": "2026-10-23T17:49:03.028980+00:00",
+  "ourladsUpdatedAt": "2026-10-23T17:49:03.028980+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.464068+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Houston Texans",
@@ -632,22 +632,6 @@
       "pffTied": false
     },
     {
-      "position": "WLB",
-      "player": "Jamal Hill",
-      "jersey": "56",
-      "code": "24/6",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 66,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "MLB",
       "player": "Azeez Al-Shaair",
       "jersey": "0",
@@ -1174,6 +1158,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "RB",
+      "player": "Jawhar Jordan",
+      "jersey": "25",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "PS/IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LB",

@@ -1,28 +1,12 @@
 {
-  "generatedAt": "2026-10-20T17:40:45.526066+00:00",
-  "ourladsUpdatedAt": "2026-10-20T17:40:45.526066+00:00",
+  "generatedAt": "2026-10-23T17:49:28.618617+00:00",
+  "ourladsUpdatedAt": "2026-10-23T17:49:28.618617+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.474213+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Los Angeles Rams",
   "offenseScheme": "11 - One RB, One TE (64%)",
   "defenseScheme": "Base 3-4",
   "rows": [
-    {
-      "position": "LWR",
-      "player": "Davante Adams",
-      "jersey": "17",
-      "code": "CC/NYJ",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 85.2,
-      "madden27Rating": 91,
-      "madden27Dev": "Superstar",
-      "pffPositionRank": 11,
-      "pffPositionTotal": 143,
-      "pffPositionLabel": "WR",
-      "pffTied": false
-    },
     {
       "position": "LWR",
       "player": "Jordan Whittington",
@@ -552,6 +536,18 @@
       "pffTied": null
     },
     {
+      "position": "LOLB",
+      "player": "Darryl Peterson III",
+      "jersey": "59",
+      "code": "CF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "LILB",
       "player": "Nate Landman",
       "jersey": "53",
@@ -785,7 +781,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "NB",
@@ -818,6 +818,18 @@
       "pffPositionTotal": 36,
       "pffPositionLabel": "P",
       "pffTied": false
+    },
+    {
+      "position": "PK",
+      "player": "Brandon Mcmanus",
+      "jersey": "",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LS",
@@ -946,6 +958,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "WR",
+      "player": "Davante Adams",
+      "jersey": "17",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 85.2,
+      "madden27Rating": 91,
+      "madden27Dev": "Superstar",
+      "pffPositionRank": 11,
+      "pffPositionTotal": 143,
+      "pffPositionLabel": "WR",
+      "pffTied": false
     },
     {
       "position": "DT",
@@ -1086,22 +1114,6 @@
       "pffGrade": null,
       "madden27Rating": null,
       "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "OLB",
-      "player": "Keir Thomas",
-      "jersey": "11",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 62,
-      "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,

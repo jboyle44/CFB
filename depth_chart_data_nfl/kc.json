@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T17:40:27.546039+00:00",
-  "ourladsUpdatedAt": "2026-10-20T17:40:27.546039+00:00",
+  "generatedAt": "2026-10-23T17:49:12.830829+00:00",
+  "ourladsUpdatedAt": "2026-10-23T17:49:12.830829+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.469260+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Kansas City Chiefs",
@@ -86,22 +86,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "LT",
-      "player": "Josh Simmons",
-      "jersey": "71",
-      "code": "25/1",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 62.6,
-      "madden27Rating": 81,
-      "madden27Dev": "Star",
-      "pffPositionRank": 64,
-      "pffPositionTotal": 95,
-      "pffPositionLabel": "T",
-      "pffTied": true
     },
     {
       "position": "LT",
@@ -600,22 +584,6 @@
       "pffTied": false
     },
     {
-      "position": "WLB",
-      "player": "Cam Jones",
-      "jersey": "45",
-      "code": "SF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "MLB",
       "player": "Nick Bolton",
       "jersey": "32",
@@ -1000,20 +968,20 @@
       "pffTied": null
     },
     {
-      "position": "LB",
-      "player": "Cooper McDonald",
-      "jersey": "44",
+      "position": "OT",
+      "player": "Josh Simmons",
+      "jersey": "71",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 64,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "pffGrade": 62.6,
+      "madden27Rating": 81,
+      "madden27Dev": "Star",
+      "pffPositionRank": 64,
+      "pffPositionTotal": 95,
+      "pffPositionLabel": "T",
+      "pffTied": true
     },
     {
       "position": "TE",
@@ -1110,6 +1078,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "DI",
       "pffTied": false
+    },
+    {
+      "position": "LB",
+      "player": "Cooper McDonald",
+      "jersey": "44",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": null,
+      "madden27Rating": 64,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     }
   ]
 }

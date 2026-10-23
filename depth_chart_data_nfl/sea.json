@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T17:40:49.990876+00:00",
-  "ourladsUpdatedAt": "2026-10-20T17:40:49.990876+00:00",
+  "generatedAt": "2026-10-23T17:49:32.538700+00:00",
+  "ourladsUpdatedAt": "2026-10-23T17:49:32.538700+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.491396+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Seattle Seahawks",
@@ -249,22 +249,6 @@
     },
     {
       "position": "TE",
-      "player": "Elijah Arroyo",
-      "jersey": "18",
-      "code": "25/2",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 55.2,
-      "madden27Rating": 71,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 62,
-      "pffPositionTotal": 68,
-      "pffPositionLabel": "TE",
-      "pffTied": false
-    },
-    {
-      "position": "TE",
       "player": "Nick Kallerup",
       "jersey": "89",
       "code": "CF25",
@@ -326,6 +310,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "RB",
+      "player": "Zach Charbonnet",
+      "jersey": "26",
+      "code": "23/2",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 85.2,
+      "madden27Rating": 83,
+      "madden27Dev": "Star",
+      "pffPositionRank": 6,
+      "pffPositionTotal": 73,
+      "pffPositionLabel": "HB",
+      "pffTied": false
     },
     {
       "position": "RB",
@@ -984,6 +984,22 @@
       "pffTied": null
     },
     {
+      "position": "TE",
+      "player": "Elijah Arroyo",
+      "jersey": "18",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 55.2,
+      "madden27Rating": 71,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 62,
+      "pffPositionTotal": 68,
+      "pffPositionLabel": "TE",
+      "pffTied": false
+    },
+    {
       "position": "FB",
       "player": "Robbie Ouzts",
       "jersey": "40",
@@ -1078,22 +1094,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "RB",
-      "player": "Zach Charbonnet",
-      "jersey": "26",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 85.2,
-      "madden27Rating": 83,
-      "madden27Dev": "Star",
-      "pffPositionRank": 6,
-      "pffPositionTotal": 73,
-      "pffPositionLabel": "HB",
-      "pffTied": false
     },
     {
       "position": "OG",

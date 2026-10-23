@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T17:39:58.425970+00:00",
-  "ourladsUpdatedAt": "2026-10-20T17:39:58.425970+00:00",
+  "generatedAt": "2026-10-23T17:48:47.166282+00:00",
+  "ourladsUpdatedAt": "2026-10-23T17:48:47.166282+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.446676+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Baltimore Ravens",
@@ -584,18 +584,6 @@
       "pffTied": false
     },
     {
-      "position": "MLB",
-      "player": "Carl Jones Jr.",
-      "jersey": "48",
-      "code": "W/Chi",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
-    },
-    {
       "position": "SLB",
       "player": "Tavius Robinson",
       "jersey": "95",
@@ -980,22 +968,6 @@
       "pffTied": false
     },
     {
-      "position": "CB",
-      "player": "T.J. Tampa Jr.",
-      "jersey": "27",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 65.1,
-      "madden27Rating": 70,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "CB",
-      "pffTied": false
-    },
-    {
       "position": "RB",
       "player": "Adam Randall",
       "jersey": "23",
@@ -1089,6 +1061,22 @@
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "C",
+      "pffTied": false
+    },
+    {
+      "position": "CB",
+      "player": "T.J. Tampa Jr.",
+      "jersey": "27",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 65.1,
+      "madden27Rating": 70,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "CB",
       "pffTied": false
     }
   ]

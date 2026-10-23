@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T17:39:42.743156+00:00",
-  "ourladsUpdatedAt": "2026-10-20T17:39:42.743156+00:00",
+  "generatedAt": "2026-10-23T17:48:33.283167+00:00",
+  "ourladsUpdatedAt": "2026-10-23T17:48:33.283167+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.482611+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Giants",
@@ -184,6 +184,18 @@
       "pffTied": null
     },
     {
+      "position": "RG",
+      "player": "Josh Sills",
+      "jersey": "",
+      "code": "P/Ind",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "RT",
       "player": "Jermaine Eluemunor",
       "jersey": "72",
@@ -281,22 +293,6 @@
     },
     {
       "position": "QB",
-      "player": "Jameis Winston",
-      "jersey": "19",
-      "code": "U/Cle",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 66.3,
-      "madden27Rating": 72,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "QB",
-      "pffTied": false
-    },
-    {
-      "position": "QB",
       "player": "J.J. McCarthy",
       "jersey": "18",
       "code": "T/Min",
@@ -310,6 +306,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "QB",
+      "player": "Jameis Winston",
+      "jersey": "19",
+      "code": "U/Cle",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 66.3,
+      "madden27Rating": 72,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "QB",
+      "pffTied": false
     },
     {
       "position": "QB",
@@ -340,22 +352,6 @@
       "madden27Dev": "Star",
       "pffPositionRank": 13,
       "pffPositionTotal": 73,
-      "pffPositionLabel": "HB",
-      "pffTied": false
-    },
-    {
-      "position": "RB",
-      "player": "Najee Harris",
-      "jersey": "23",
-      "code": "U/LAC",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 81.4,
-      "madden27Rating": 77,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
       "pffPositionLabel": "HB",
       "pffTied": false
     },
@@ -504,22 +500,6 @@
       "pffTied": false
     },
     {
-      "position": "RUSH",
-      "player": "Jihad Ward",
-      "jersey": "53",
-      "code": "P/Min",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 68,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "WLB",
       "player": "Arvell Reese",
       "jersey": "52",
@@ -630,6 +610,18 @@
       "pffPositionTotal": 129,
       "pffPositionLabel": "ED",
       "pffTied": false
+    },
+    {
+      "position": "SLB",
+      "player": "Trace Ford",
+      "jersey": "48",
+      "code": "CF25",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LCB",
@@ -953,22 +945,6 @@
     },
     {
       "position": "CB",
-      "player": "Paulson Adebo",
-      "jersey": "21",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 58.4,
-      "madden27Rating": 76,
-      "madden27Dev": "Star",
-      "pffPositionRank": 76,
-      "pffPositionTotal": 122,
-      "pffPositionLabel": "CB",
-      "pffTied": true
-    },
-    {
-      "position": "CB",
       "player": "Korie Black",
       "jersey": "38",
       "code": "",
@@ -1126,6 +1102,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "CB",
+      "player": "Paulson Adebo",
+      "jersey": "21",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 58.4,
+      "madden27Rating": 76,
+      "madden27Dev": "Star",
+      "pffPositionRank": 76,
+      "pffPositionTotal": 122,
+      "pffPositionLabel": "CB",
+      "pffTied": true
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T17:40:09.541425+00:00",
-  "ourladsUpdatedAt": "2026-10-20T17:40:09.541425+00:00",
+  "generatedAt": "2026-10-23T17:48:57.128286+00:00",
+  "ourladsUpdatedAt": "2026-10-23T17:48:57.128286+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.460521+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Detroit Lions",
@@ -72,6 +72,18 @@
       "pffTied": false
     },
     {
+      "position": "SWR",
+      "player": "Deandre Carter",
+      "jersey": "86",
+      "code": "U/Cle",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "LT",
       "player": "Penei Sewell",
       "jersey": "58",
@@ -101,6 +113,22 @@
       "pffPositionRank": 48,
       "pffPositionTotal": 87,
       "pffPositionLabel": "G",
+      "pffTied": true
+    },
+    {
+      "position": "C",
+      "player": "Cade Mays",
+      "jersey": "64",
+      "code": "22/6",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 62.4,
+      "madden27Rating": 74,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 23,
+      "pffPositionTotal": 41,
+      "pffPositionLabel": "C",
       "pffTied": true
     },
     {
@@ -665,19 +693,35 @@
     },
     {
       "position": "SS",
-      "player": "Christian Izien",
-      "jersey": "5",
-      "code": "U/TB",
+      "player": "Bishop Fitzgerald",
+      "jersey": "34",
+      "code": "P/Pit",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 51.3,
-      "madden27Rating": 74,
+      "pffGrade": null,
+      "madden27Rating": 62,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
-      "pffPositionLabel": "S",
-      "pffTied": false
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "FS",
+      "player": "Brian Branch",
+      "jersey": "32",
+      "code": "23/2",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 91,
+      "madden27Dev": "Superstar",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "FS",
@@ -689,22 +733,6 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": 68,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "FS",
-      "player": "Bishop Fitzgerald",
-      "jersey": "34",
-      "code": "P/Pit",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 62,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -758,6 +786,22 @@
       "pffPositionTotal": 122,
       "pffPositionLabel": "CB",
       "pffTied": true
+    },
+    {
+      "position": "NB",
+      "player": "Christian Izien",
+      "jersey": "5",
+      "code": "U/TB",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 51.3,
+      "madden27Rating": 74,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "S",
+      "pffTied": false
     },
     {
       "position": "PT",
@@ -841,6 +885,18 @@
     },
     {
       "position": "PR",
+      "player": "Deandre Carter",
+      "jersey": "86",
+      "code": "U/Cle",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "PR",
       "player": "Amon-Ra St. Brown",
       "jersey": "14",
       "code": "21/4",
@@ -870,6 +926,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "KR",
+      "player": "Deandre Carter",
+      "jersey": "86",
+      "code": "U/Cle",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "OG",
@@ -1062,38 +1130,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "S",
-      "player": "Brian Branch",
-      "jersey": "32",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": null,
-      "madden27Rating": 91,
-      "madden27Dev": "Superstar",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "C",
-      "player": "Cade Mays",
-      "jersey": "64",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 62.4,
-      "madden27Rating": 74,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 23,
-      "pffPositionTotal": 41,
-      "pffPositionLabel": "C",
-      "pffTied": true
     }
   ]
 }

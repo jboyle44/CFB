@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T17:39:40.508148+00:00",
-  "ourladsUpdatedAt": "2026-10-20T17:39:40.508148+00:00",
+  "generatedAt": "2026-10-23T17:48:31.249570+00:00",
+  "ourladsUpdatedAt": "2026-10-23T17:48:31.249570+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.457028+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Dallas Cowboys",
@@ -680,22 +680,6 @@
       "pffTied": false
     },
     {
-      "position": "LCB",
-      "player": "Caelen Carson",
-      "jersey": "21",
-      "code": "24/5",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 56.1,
-      "madden27Rating": 71,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "CB",
-      "pffTied": false
-    },
-    {
       "position": "SS",
       "player": "Markquese Bell",
       "jersey": "14",
@@ -710,6 +694,18 @@
       "pffPositionTotal": 107,
       "pffPositionLabel": "S",
       "pffTied": false
+    },
+    {
+      "position": "SS",
+      "player": "Juanyeh Thomas",
+      "jersey": "43",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "FS",
@@ -1048,22 +1044,6 @@
       "pffTied": null
     },
     {
-      "position": "OLB",
-      "player": "Marist Liufau",
-      "jersey": "35",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 69,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "TE",
       "player": "Princeton Fant",
       "jersey": "85",
@@ -1126,6 +1106,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "C",
       "pffTied": false
+    },
+    {
+      "position": "OLB",
+      "player": "Marist Liufau",
+      "jersey": "35",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": null,
+      "madden27Rating": 69,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     }
   ]
 }

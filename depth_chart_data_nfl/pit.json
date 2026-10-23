@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T17:40:05.142575+00:00",
-  "ourladsUpdatedAt": "2026-10-20T17:40:05.142575+00:00",
+  "generatedAt": "2026-10-23T17:48:53.153796+00:00",
+  "ourladsUpdatedAt": "2026-10-23T17:48:53.153796+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.487690+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Pittsburgh Steelers",
@@ -353,7 +353,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RB",
@@ -405,19 +409,19 @@
     },
     {
       "position": "DE",
-      "player": "Sebastian Joseph-Day",
-      "jersey": "69",
-      "code": "U/Ten",
-      "isAcquired": true,
+      "player": "Keeanu Benton",
+      "jersey": "95",
+      "code": "23/2",
+      "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 66.7,
-      "madden27Rating": 78,
+      "pffGrade": 58.7,
+      "madden27Rating": 77,
       "madden27Dev": "Normal",
-      "pffPositionRank": 41,
+      "pffPositionRank": 63,
       "pffPositionTotal": 146,
       "pffPositionLabel": "DI",
-      "pffTied": false
+      "pffTied": true
     },
     {
       "position": "DE",
@@ -434,22 +438,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "NT",
-      "player": "Keeanu Benton",
-      "jersey": "95",
-      "code": "23/2",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 58.7,
-      "madden27Rating": 77,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 63,
-      "pffPositionTotal": 146,
-      "pffPositionLabel": "DI",
-      "pffTied": true
     },
     {
       "position": "NT",
@@ -677,22 +665,6 @@
     },
     {
       "position": "SS",
-      "player": "Rayshawn Jenkins",
-      "jersey": "20",
-      "code": "U/Cle",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 55.0,
-      "madden27Rating": 77,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 87,
-      "pffPositionTotal": 107,
-      "pffPositionLabel": "S",
-      "pffTied": false
-    },
-    {
-      "position": "FS",
       "player": "Jaquan Brisker",
       "jersey": "3",
       "code": "U/Chi",
@@ -1026,6 +998,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "DE",
+      "player": "Sebastian Joseph-Day",
+      "jersey": "69",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 66.7,
+      "madden27Rating": 78,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 41,
+      "pffPositionTotal": 146,
+      "pffPositionLabel": "DI",
+      "pffTied": false
     },
     {
       "position": "CB",

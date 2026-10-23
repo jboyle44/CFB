@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-20T17:40:02.909214+00:00",
-  "ourladsUpdatedAt": "2026-10-20T17:40:02.909214+00:00",
+  "generatedAt": "2026-10-23T17:48:51.170993+00:00",
+  "ourladsUpdatedAt": "2026-10-23T17:48:51.170993+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.455232+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Cleveland Browns",
@@ -1046,6 +1046,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "WR",
+      "player": "Bub Means",
+      "jersey": "81",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "PS/IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LB",
