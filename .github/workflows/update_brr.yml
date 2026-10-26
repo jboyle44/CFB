@@ -30,6 +30,12 @@ on:
   # testing.
   workflow_dispatch: {}
 
+  # Push-based manual trigger for sessions without an API token: commit
+  # any change to this file and the workflow runs once.
+  push:
+    branches: [main]
+    paths: ['.github/triggers/brr']
+
 jobs:
   update:
     runs-on: ubuntu-latest
