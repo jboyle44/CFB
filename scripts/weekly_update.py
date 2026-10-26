@@ -179,6 +179,29 @@ def main():
         r["brrRank"] = i
         r["diff"] = r["brrRank"] - r["rank"]
 
+    # Stale-poll guard. CFBD can lag the real AP release by hours, so a
+    # Sunday run may still see last week's poll. If the newest poll's week
+    # is one we already snapshotted, but ranked teams have played games
+    # since that snapshot, the poll predates this weekend's results:
+    # writing it would pair old ranks with new records (e.g. a team that
+    # just lost still sitting at #2) and overwrite the good snapshot.
+    # Skip the write and let the next scheduled run pick up the new poll.
+    try:
+        with open(HISTORY_FILE) as f:
+            prior = {(h["year"], h["week"]): h for h in json.load(f)}.get((year, week))
+    except FileNotFoundError:
+        prior = None
+    if prior:
+        prior_gp = {r["team"]: r["w"] + r["l"] for r in prior["rows"]}
+        advanced = [r["team"] for r in rows
+                    if r["team"] in prior_gp and r["w"] + r["l"] > prior_gp[r["team"]]]
+        if advanced:
+            print(f"STALE POLL: latest {source} poll is still week {week}, but "
+                  f"{len(advanced)} ranked teams have played since it was captured "
+                  f"({', '.join(advanced[:5])}...). New poll not in CFBD yet; "
+                  f"leaving existing data untouched.")
+            return
+
     try:
         with open(DATA_FILE) as f:
             existing_data = json.load(f)
