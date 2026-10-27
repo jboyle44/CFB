@@ -140,15 +140,29 @@ Wrote ../depth_chart_data/arkansas.json
 exit_code=0
 === auburn ===
 Scraping Ourlads depth chart for Auburn...
-  79 depth chart rows
+  113 depth chart rows
 Fetching CFBD transfer portal data for new transfers...
   116 transfers in from CFBD
-Fetching CFBD recruiting data for 5 (school, year) pairs...
+Fetching CFBD recruiting data for 19 (school, year) pairs...
+  Auburn 2022: 15 players
+  Auburn 2023: 19 players
   Auburn 2024: 22 players
   Auburn 2025: 26 players
   Auburn 2026: 20 players
-  Howard 2024: 9 players
-  Howard 2025: 8 players
+  Chattanooga 2024: 5 players
+  Chattanooga 2025: 7 players
+  Hampton 2022: 0 players
+  Hampton 2023: 0 players
+  Louisiana 2021: 19 players
+  Louisiana 2022: 12 players
+  Miami 2023: 25 players
+  Miami 2024: 27 players
+  Notre Dame 2024: 23 players
+  Notre Dame 2025: 25 players
+  South Florida 2024: 27 players
+  South Florida 2025: 26 players
+  Troy 2021: 14 players
+  Troy 2022: 9 players
 Wrote ../depth_chart_data/auburn.json
 exit_code=0
 === florida ===
@@ -244,9 +258,21 @@ Wrote ../depth_chart_data/vanderbilt.json
 exit_code=0
 === boston-college ===
 Scraping Ourlads depth chart for Boston College...
-  81 depth chart rows
-Skipping CFBD portal call this run (no new transfers needing portal data).
-Skipping CFBD recruiting call this run (no new players needing recruiting data).
+  83 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  70 transfers in from CFBD
+Fetching CFBD recruiting data for 11 (school, year) pairs...
+  Boston College 2021: 28 players
+  Boston College 2022: 23 players
+  Boston College 2023: 18 players
+  Boston College 2025: 27 players
+  Boston College 2026: 24 players
+  Florida 2024: 19 players
+  Florida 2025: 27 players
+  Georgia State 2024: 11 players
+  Georgia State 2025: 26 players
+  Utah 2021: 18 players
+  Utah 2022: 18 players
 Wrote ../depth_chart_data/boston-college.json
 exit_code=0
 === california ===
@@ -272,7 +298,7 @@ Wrote ../depth_chart_data/duke.json
 exit_code=0
 === florida-state ===
 Scraping Ourlads depth chart for Florida State...
-  67 depth chart rows
+  66 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
 Skipping CFBD recruiting call this run (no new players needing recruiting data).
 Wrote ../depth_chart_data/florida-state.json
@@ -370,9 +396,13 @@ Wrote ../depth_chart_data/notre-dame.json
 exit_code=0
 === arizona ===
 Scraping Ourlads depth chart for Arizona...
-  82 depth chart rows
+  79 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
-Skipping CFBD recruiting call this run (no new players needing recruiting data).
+Fetching CFBD recruiting data for 4 (school, year) pairs...
+  Arizona 2022: 30 players
+  Arizona 2023: 27 players
+  Arizona 2025: 25 players
+  Arizona 2026: 20 players
 Wrote ../depth_chart_data/arizona.json
 exit_code=0
 === arizona-state ===
@@ -384,9 +414,27 @@ Wrote ../depth_chart_data/arizona-state.json
 exit_code=0
 === baylor ===
 Scraping Ourlads depth chart for Baylor...
-  84 depth chart rows
-Skipping CFBD portal call this run (no new transfers needing portal data).
-Skipping CFBD recruiting call this run (no new players needing recruiting data).
+  92 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  92 transfers in from CFBD
+Fetching CFBD recruiting data for 17 (school, year) pairs...
+  Arkansas 2024: 17 players
+  Arkansas 2025: 21 players
+  Baylor 2022: 23 players
+  Baylor 2023: 21 players
+  Baylor 2024: 13 players
+  Baylor 2025: 21 players
+  Baylor 2026: 14 players
+  Florida Atlantic 2023: 20 players
+  Florida Atlantic 2024: 16 players
+  Oklahoma 2021: 16 players
+  Oklahoma 2022: 22 players
+  Purdue 2022: 22 players
+  Purdue 2023: 18 players
+  SMU 2022: 13 players
+  SMU 2023: 17 players
+  West Florida 2021: 0 players
+  West Florida 2022: 0 players
 Wrote ../depth_chart_data/baylor.json
 exit_code=0
 === byu ===
@@ -413,13 +461,8 @@ exit_code=0
 === colorado ===
 Scraping Ourlads depth chart for Colorado...
   79 depth chart rows
-Fetching CFBD transfer portal data for new transfers...
-  175 transfers in from CFBD
-Fetching CFBD recruiting data for 4 (school, year) pairs...
-  Bowling Green 2021: 23 players
-  Bowling Green 2022: 10 players
-  Colorado 2024: 12 players
-  Colorado 2025: 16 players
+Skipping CFBD portal call this run (no new transfers needing portal data).
+Skipping CFBD recruiting call this run (no new players needing recruiting data).
 Wrote ../depth_chart_data/colorado.json
 exit_code=0
 === houston ===
@@ -452,9 +495,23 @@ Wrote ../depth_chart_data/kansas-state.json
 exit_code=0
 === oklahoma-state ===
 Scraping Ourlads depth chart for Oklahoma State...
-  73 depth chart rows
-Skipping CFBD portal call this run (no new transfers needing portal data).
-Skipping CFBD recruiting call this run (no new players needing recruiting data).
+  87 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  126 transfers in from CFBD
+Fetching CFBD recruiting data for 13 (school, year) pairs...
+  Central Oklahoma 2022: 0 players
+  Central Oklahoma 2023: 0 players
+  Indiana State 2023: 14 players
+  Indiana State 2024: 4 players
+  North Texas 2023: 13 players
+  North Texas 2024: 30 players
+  Oklahoma State 2021: 18 players
+  Oklahoma State 2022: 17 players
+  Oklahoma State 2024: 20 players
+  Oklahoma State 2025: 16 players
+  Oklahoma State 2026: 18 players
+  Pittsburgh 2022: 11 players
+  Pittsburgh 2023: 19 players
 Wrote ../depth_chart_data/oklahoma-state.json
 exit_code=0
 === tcu ===
@@ -466,9 +523,12 @@ Wrote ../depth_chart_data/tcu.json
 exit_code=0
 === texas-tech ===
 Scraping Ourlads depth chart for Texas Tech...
-  73 depth chart rows
-Skipping CFBD portal call this run (no new transfers needing portal data).
-Skipping CFBD recruiting call this run (no new players needing recruiting data).
+  74 depth chart rows
+Fetching CFBD transfer portal data for new transfers...
+  92 transfers in from CFBD
+Fetching CFBD recruiting data for 2 (school, year) pairs...
+  Pittsburg State 2021: 0 players
+  Pittsburg State 2022: 0 players
 Wrote ../depth_chart_data/texas-tech.json
 exit_code=0
 === utah ===
