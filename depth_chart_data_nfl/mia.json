@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T17:48:41.243774+00:00",
-  "ourladsUpdatedAt": "2026-10-23T17:48:41.243774+00:00",
+  "generatedAt": "2026-10-27T18:29:45.319887+00:00",
+  "ourladsUpdatedAt": "2026-10-27T18:29:45.319887+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.475879+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Miami Dolphins",
@@ -465,7 +465,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LDT",
@@ -789,6 +793,22 @@
     },
     {
       "position": "NB",
+      "player": "Kyle Louis",
+      "jersey": "19",
+      "code": "26/4",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 71,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "NB",
       "player": "Reese Taylor",
       "jersey": "35",
       "code": "W/Den",
@@ -1021,22 +1041,6 @@
       "reserveStatus": "PUP",
       "pffGrade": null,
       "madden27Rating": 74,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "S",
-      "player": "Kyle Louis",
-      "jersey": "19",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": null,
-      "madden27Rating": 71,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,

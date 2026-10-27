@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T17:48:51.170993+00:00",
-  "ourladsUpdatedAt": "2026-10-23T17:48:51.170993+00:00",
+  "generatedAt": "2026-10-27T18:29:55.173241+00:00",
+  "ourladsUpdatedAt": "2026-10-27T18:29:55.173241+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.455232+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Cleveland Browns",
@@ -232,22 +232,6 @@
       "pffTied": null
     },
     {
-      "position": "RG",
-      "player": "Teven Jenkins",
-      "jersey": "78",
-      "code": "U/Chi",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 77.7,
-      "madden27Rating": 77,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 8,
-      "pffPositionTotal": 87,
-      "pffPositionLabel": "G",
-      "pffTied": false
-    },
-    {
       "position": "RT",
       "player": "Tytus Howard",
       "jersey": "71",
@@ -296,22 +280,6 @@
       "pffTied": false
     },
     {
-      "position": "TE",
-      "player": "Carsen Ryan",
-      "jersey": "48",
-      "code": "26/7",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 62,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "QB",
       "player": "Deshaun Watson",
       "jersey": "4",
@@ -339,6 +307,22 @@
       "madden27Rating": 69,
       "madden27Dev": "Normal",
       "pffPositionRank": 44,
+      "pffPositionTotal": 45,
+      "pffPositionLabel": "QB",
+      "pffTied": false
+    },
+    {
+      "position": "QB",
+      "player": "Dillon Gabriel",
+      "jersey": "6",
+      "code": "25/3",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 49.6,
+      "madden27Rating": 66,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 43,
       "pffPositionTotal": 45,
       "pffPositionLabel": "QB",
       "pffTied": false
@@ -374,6 +358,22 @@
       "pffPositionTotal": 73,
       "pffPositionLabel": "HB",
       "pffTied": true
+    },
+    {
+      "position": "RB",
+      "player": "Dylan Sampson",
+      "jersey": "22",
+      "code": "25/4",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 75,
+      "madden27Dev": "Star",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RB",
@@ -952,6 +952,38 @@
       "pffTied": null
     },
     {
+      "position": "KR",
+      "player": "Dylan Sampson",
+      "jersey": "22",
+      "code": "25/4",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 75,
+      "madden27Dev": "Star",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "OG",
+      "player": "Teven Jenkins",
+      "jersey": "78",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 77.7,
+      "madden27Rating": 77,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 8,
+      "pffPositionTotal": 87,
+      "pffPositionLabel": "G",
+      "pffTied": false
+    },
+    {
       "position": "RB",
       "player": "Raheim Sanders",
       "jersey": "23",
@@ -1057,7 +1089,11 @@
       "reserveStatus": "PS/IR",
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LB",
@@ -1092,22 +1128,6 @@
       "pffTied": null
     },
     {
-      "position": "QB",
-      "player": "Dillon Gabriel",
-      "jersey": "6",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 49.6,
-      "madden27Rating": 66,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 43,
-      "pffPositionTotal": 45,
-      "pffPositionLabel": "QB",
-      "pffTied": false
-    },
-    {
       "position": "DT",
       "player": "Kalia Davis",
       "jersey": "93",
@@ -1122,22 +1142,6 @@
       "pffPositionTotal": 146,
       "pffPositionLabel": "DI",
       "pffTied": false
-    },
-    {
-      "position": "RB",
-      "player": "Dylan Sampson",
-      "jersey": "22",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": null,
-      "madden27Rating": 75,
-      "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     }
   ]
 }

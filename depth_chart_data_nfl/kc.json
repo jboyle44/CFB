@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T17:49:12.830829+00:00",
-  "ourladsUpdatedAt": "2026-10-23T17:49:12.830829+00:00",
+  "generatedAt": "2026-10-27T18:30:16.649901+00:00",
+  "ourladsUpdatedAt": "2026-10-27T18:30:16.649901+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.469260+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Kansas City Chiefs",
@@ -22,6 +22,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "WR",
       "pffTied": false
+    },
+    {
+      "position": "LWR",
+      "player": "Cyrus Allen",
+      "jersey": "13",
+      "code": "26/5",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 70,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RWR",
@@ -73,19 +89,15 @@
     },
     {
       "position": "SWR",
-      "player": "Cyrus Allen",
-      "jersey": "13",
-      "code": "26/5",
+      "player": "Andrew Armstrong",
+      "jersey": "85",
+      "code": "SF26",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 70,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LT",
@@ -377,19 +389,15 @@
     },
     {
       "position": "RB",
-      "player": "Brashard Smith",
-      "jersey": "24",
-      "code": "25/7",
+      "player": "Jaydn Ott",
+      "jersey": "34",
+      "code": "CF26",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 67.3,
-      "madden27Rating": 74,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 49,
-      "pffPositionTotal": 73,
-      "pffPositionLabel": "HB",
-      "pffTied": false
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "FB",
@@ -614,6 +622,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "LB",
       "pffTied": false
+    },
+    {
+      "position": "MLB",
+      "player": "Cooper McDonald",
+      "jersey": "44",
+      "code": "CF25",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 64,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LCB",
@@ -873,22 +897,6 @@
     },
     {
       "position": "PR",
-      "player": "Brashard Smith",
-      "jersey": "24",
-      "code": "25/7",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 67.3,
-      "madden27Rating": 74,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 49,
-      "pffPositionTotal": 73,
-      "pffPositionLabel": "HB",
-      "pffTied": false
-    },
-    {
-      "position": "PR",
       "player": "Cyrus Allen",
       "jersey": "13",
       "code": "26/5",
@@ -902,22 +910,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "KR",
-      "player": "Brashard Smith",
-      "jersey": "24",
-      "code": "25/7",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 67.3,
-      "madden27Rating": 74,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 49,
-      "pffPositionTotal": 73,
-      "pffPositionLabel": "HB",
-      "pffTied": false
     },
     {
       "position": "KR",
@@ -950,6 +942,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "RB",
+      "player": "Brashard Smith",
+      "jersey": "24",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 67.3,
+      "madden27Rating": 74,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 49,
+      "pffPositionTotal": 73,
+      "pffPositionLabel": "HB",
+      "pffTied": false
     },
     {
       "position": "WR",
@@ -1078,22 +1086,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "DI",
       "pffTied": false
-    },
-    {
-      "position": "LB",
-      "player": "Cooper McDonald",
-      "jersey": "44",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": null,
-      "madden27Rating": 64,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     }
   ]
 }

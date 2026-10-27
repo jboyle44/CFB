@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T17:49:01.063049+00:00",
-  "ourladsUpdatedAt": "2026-10-23T17:49:01.063049+00:00",
+  "generatedAt": "2026-10-27T18:30:04.903655+00:00",
+  "ourladsUpdatedAt": "2026-10-27T18:30:04.903655+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.477549+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Minnesota Vikings",
@@ -345,19 +345,19 @@
     },
     {
       "position": "RB",
-      "player": "DeeJay Dallas",
-      "jersey": "31",
-      "code": "SF26",
-      "isAcquired": false,
+      "player": "Jordan Mason",
+      "jersey": "27",
+      "code": "T/SF",
+      "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 67,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "pffGrade": 74.4,
+      "madden27Rating": 80,
+      "madden27Dev": "Star",
+      "pffPositionRank": 24,
+      "pffPositionTotal": 73,
+      "pffPositionLabel": "HB",
+      "pffTied": false
     },
     {
       "position": "RB",
@@ -1030,22 +1030,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "RB",
-      "player": "Jordan Mason",
-      "jersey": "27",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 74.4,
-      "madden27Rating": 80,
-      "madden27Dev": "Star",
-      "pffPositionRank": 24,
-      "pffPositionTotal": 73,
-      "pffPositionLabel": "HB",
-      "pffTied": false
     }
   ]
 }

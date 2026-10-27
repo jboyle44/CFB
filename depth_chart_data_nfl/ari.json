@@ -1,28 +1,12 @@
 {
-  "generatedAt": "2026-10-23T17:49:26.661857+00:00",
-  "ourladsUpdatedAt": "2026-10-23T17:49:26.661857+00:00",
+  "generatedAt": "2026-10-27T18:30:30.355059+00:00",
+  "ourladsUpdatedAt": "2026-10-27T18:30:30.355059+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.442955+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Arizona Cardinals",
   "offenseScheme": "11 - One RB, One TE (62%)",
   "defenseScheme": "Base 3-4",
   "rows": [
-    {
-      "position": "LWR",
-      "player": "Jalen Brooks",
-      "jersey": "86",
-      "code": "SF25",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 59.7,
-      "madden27Rating": 68,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "WR",
-      "pffTied": false
-    },
     {
       "position": "LWR",
       "player": "Simi Fehoko",
@@ -152,22 +136,6 @@
       "pffTied": false
     },
     {
-      "position": "LG",
-      "player": "Hayden Conner",
-      "jersey": "58",
-      "code": "25/6",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 65.8,
-      "madden27Rating": 65,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "G",
-      "pffTied": false
-    },
-    {
       "position": "C",
       "player": "Hjalte Froholdt",
       "jersey": "72",
@@ -196,6 +164,22 @@
       "madden27Dev": "Normal",
       "pffPositionRank": 44,
       "pffPositionTotal": 87,
+      "pffPositionLabel": "G",
+      "pffTied": false
+    },
+    {
+      "position": "RG",
+      "player": "Hayden Conner",
+      "jersey": "58",
+      "code": "25/6",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 65.8,
+      "madden27Rating": 65,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
       "pffPositionLabel": "G",
       "pffTied": false
     },
@@ -234,14 +218,18 @@
     {
       "position": "RT",
       "player": "Albert Reese",
-      "jersey": "",
+      "jersey": "76",
       "code": "P/Car",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "TE",
@@ -386,6 +374,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "RB",
+      "player": "Evan Hull",
+      "jersey": "26",
+      "code": "W/Hou",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LDE",
@@ -692,22 +692,6 @@
       "pffTied": false
     },
     {
-      "position": "SS",
-      "player": "Wydett Williams Jr.",
-      "jersey": "31",
-      "code": "CF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 62,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "FS",
       "player": "Andrew Wingard",
       "jersey": "28",
@@ -933,22 +917,6 @@
     },
     {
       "position": "KR",
-      "player": "Jalen Brooks",
-      "jersey": "86",
-      "code": "SF25",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 59.7,
-      "madden27Rating": 68,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "WR",
-      "pffTied": false
-    },
-    {
-      "position": "KR",
       "player": "Max Melton",
       "jersey": "16",
       "code": "24/2",
@@ -1041,6 +1009,22 @@
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "DI",
+      "pffTied": false
+    },
+    {
+      "position": "WR",
+      "player": "Jalen Brooks",
+      "jersey": "86",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 59.7,
+      "madden27Rating": 68,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "WR",
       "pffTied": false
     },
     {

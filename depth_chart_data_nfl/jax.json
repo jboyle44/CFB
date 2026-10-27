@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T17:49:06.947852+00:00",
-  "ourladsUpdatedAt": "2026-10-23T17:49:06.947852+00:00",
+  "generatedAt": "2026-10-27T18:30:10.787988+00:00",
+  "ourladsUpdatedAt": "2026-10-27T18:30:10.787988+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.467613+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Jacksonville Jaguars",
@@ -968,22 +968,6 @@
       "pffTied": null
     },
     {
-      "position": "OT",
-      "player": "Anton Harrison",
-      "jersey": "77",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 71.9,
-      "madden27Rating": 79,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 36,
-      "pffPositionTotal": 95,
-      "pffPositionLabel": "T",
-      "pffTied": false
-    },
-    {
       "position": "S",
       "player": "Caleb Ransaw",
       "jersey": "27",
@@ -1046,6 +1030,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "OT",
+      "player": "Anton Harrison",
+      "jersey": "77",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 71.9,
+      "madden27Rating": 79,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 36,
+      "pffPositionTotal": 95,
+      "pffPositionLabel": "T",
+      "pffTied": false
     },
     {
       "position": "LB",

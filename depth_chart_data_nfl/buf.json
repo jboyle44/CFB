@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T17:48:39.247355+00:00",
-  "ourladsUpdatedAt": "2026-10-23T17:48:39.247355+00:00",
+  "generatedAt": "2026-10-27T18:29:43.344652+00:00",
+  "ourladsUpdatedAt": "2026-10-27T18:29:43.344652+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.448485+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Buffalo Bills",
@@ -696,6 +696,22 @@
       "pffTied": false
     },
     {
+      "position": "SS",
+      "player": "Sam Franklin Jr.",
+      "jersey": "28",
+      "code": "SF25",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 67.7,
+      "madden27Rating": 68,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "S",
+      "pffTied": false
+    },
+    {
       "position": "FS",
       "player": "Damar Hamlin",
       "jersey": "3",
@@ -1028,22 +1044,6 @@
       "madden27Dev": "Star",
       "pffPositionRank": 93,
       "pffPositionTotal": 107,
-      "pffPositionLabel": "S",
-      "pffTied": false
-    },
-    {
-      "position": "S",
-      "player": "Sam Franklin Jr.",
-      "jersey": "28",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "SUS",
-      "pffGrade": 67.7,
-      "madden27Rating": 68,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
       "pffPositionLabel": "S",
       "pffTied": false
     }

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T17:48:45.182224+00:00",
-  "ourladsUpdatedAt": "2026-10-23T17:48:45.182224+00:00",
+  "generatedAt": "2026-10-27T18:29:49.265475+00:00",
+  "ourladsUpdatedAt": "2026-10-27T18:29:49.265475+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.484275+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Jets",
@@ -601,19 +601,15 @@
     },
     {
       "position": "MLB",
-      "player": "Kiko Mauigoa",
-      "jersey": "51",
-      "code": "25/5",
+      "player": "Jaden Keller",
+      "jersey": "48",
+      "code": "CF26",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 42.7,
-      "madden27Rating": 66,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 86,
-      "pffPositionTotal": 94,
-      "pffPositionLabel": "LB",
-      "pffTied": false
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "ROLB",
@@ -966,6 +962,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "ILB",
+      "player": "Kiko Mauigoa",
+      "jersey": "51",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 42.7,
+      "madden27Rating": 66,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 86,
+      "pffPositionTotal": 94,
+      "pffPositionLabel": "LB",
+      "pffTied": false
     },
     {
       "position": "DE",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T17:49:04.998069+00:00",
-  "ourladsUpdatedAt": "2026-10-23T17:49:04.998069+00:00",
+  "generatedAt": "2026-10-27T18:30:08.834631+00:00",
+  "ourladsUpdatedAt": "2026-10-27T18:30:08.834631+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.465965+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Indianapolis Colts",
@@ -680,22 +680,6 @@
       "pffTied": false
     },
     {
-      "position": "LCB",
-      "player": "Cam Taylor-Britt",
-      "jersey": "29",
-      "code": "U/Cin",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 81,
-      "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "SS",
       "player": "Aj Haulcy",
       "jersey": "25",
@@ -774,6 +758,22 @@
       "pffPositionTotal": 122,
       "pffPositionLabel": "CB",
       "pffTied": false
+    },
+    {
+      "position": "RCB",
+      "player": "Cam Taylor-Britt",
+      "jersey": "29",
+      "code": "U/Cin",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 81,
+      "madden27Dev": "Star",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "NB",

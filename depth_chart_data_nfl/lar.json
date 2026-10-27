@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T17:49:28.618617+00:00",
-  "ourladsUpdatedAt": "2026-10-23T17:49:28.618617+00:00",
+  "generatedAt": "2026-10-27T18:30:32.337047+00:00",
+  "ourladsUpdatedAt": "2026-10-27T18:30:32.337047+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.474213+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Los Angeles Rams",
@@ -545,7 +545,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LILB",
@@ -772,22 +776,6 @@
       "pffTied": false
     },
     {
-      "position": "RCB",
-      "player": "Cam Lampkin",
-      "jersey": "21",
-      "code": "CF24",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "NB",
       "player": "Josh Wallace",
       "jersey": "30",
@@ -822,14 +810,18 @@
     {
       "position": "PK",
       "player": "Brandon Mcmanus",
-      "jersey": "",
+      "jersey": "19",
       "code": "SF26",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LS",

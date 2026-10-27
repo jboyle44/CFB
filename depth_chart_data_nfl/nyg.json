@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T17:48:33.283167+00:00",
-  "ourladsUpdatedAt": "2026-10-23T17:48:33.283167+00:00",
+  "generatedAt": "2026-10-27T18:29:37.476396+00:00",
+  "ourladsUpdatedAt": "2026-10-27T18:29:37.476396+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.482611+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Giants",
@@ -40,22 +40,6 @@
       "pffTied": null
     },
     {
-      "position": "RWR",
-      "player": "Charlie Jones",
-      "jersey": "89",
-      "code": "SF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 70,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "SWR",
       "player": "Darnell Mooney",
       "jersey": "17",
@@ -70,6 +54,22 @@
       "pffPositionTotal": 143,
       "pffPositionLabel": "WR",
       "pffTied": false
+    },
+    {
+      "position": "SWR",
+      "player": "Charlie Jones",
+      "jersey": "89",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 70,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LT",
@@ -186,14 +186,18 @@
     {
       "position": "RG",
       "player": "Josh Sills",
-      "jersey": "",
+      "jersey": "67",
       "code": "P/Ind",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RT",
@@ -549,22 +553,6 @@
     },
     {
       "position": "MLB",
-      "player": "Tremaine Edmunds",
-      "jersey": "49",
-      "code": "CC/Chi",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 66.5,
-      "madden27Rating": 82,
-      "madden27Dev": "Star",
-      "pffPositionRank": 37,
-      "pffPositionTotal": 94,
-      "pffPositionLabel": "LB",
-      "pffTied": false
-    },
-    {
-      "position": "MLB",
       "player": "Micah McFadden",
       "jersey": "41",
       "code": "22/5",
@@ -621,7 +609,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LCB",
@@ -641,15 +633,31 @@
     },
     {
       "position": "LCB",
-      "player": "Colton Hood",
-      "jersey": "12",
-      "code": "26/2",
-      "isAcquired": false,
+      "player": "Paulson Adebo",
+      "jersey": "21",
+      "code": "U/NO",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 58.4,
+      "madden27Rating": 76,
+      "madden27Dev": "Star",
+      "pffPositionRank": 76,
+      "pffPositionTotal": 122,
+      "pffPositionLabel": "CB",
+      "pffTied": true
+    },
+    {
+      "position": "LCB",
+      "player": "Nikko Reed",
+      "jersey": "35",
+      "code": "P/LAC",
+      "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 75,
-      "madden27Dev": "Star",
+      "madden27Rating": 64,
+      "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,
@@ -753,15 +761,15 @@
     },
     {
       "position": "RCB",
-      "player": "Nikko Reed",
-      "jersey": "35",
-      "code": "P/LAC",
-      "isAcquired": true,
+      "player": "Colton Hood",
+      "jersey": "12",
+      "code": "26/2",
+      "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 64,
-      "madden27Dev": "Normal",
+      "madden27Rating": 75,
+      "madden27Dev": "Star",
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,
@@ -960,6 +968,22 @@
       "pffTied": null
     },
     {
+      "position": "ILB",
+      "player": "Tremaine Edmunds",
+      "jersey": "49",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 66.5,
+      "madden27Rating": 82,
+      "madden27Dev": "Star",
+      "pffPositionRank": 37,
+      "pffPositionTotal": 94,
+      "pffPositionLabel": "LB",
+      "pffTied": false
+    },
+    {
       "position": "WR",
       "player": "Braxton Berrios",
       "jersey": "87",
@@ -1102,22 +1126,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "CB",
-      "player": "Paulson Adebo",
-      "jersey": "21",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 58.4,
-      "madden27Rating": 76,
-      "madden27Dev": "Star",
-      "pffPositionRank": 76,
-      "pffPositionTotal": 122,
-      "pffPositionLabel": "CB",
-      "pffTied": true
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T17:49:32.538700+00:00",
-  "ourladsUpdatedAt": "2026-10-23T17:49:32.538700+00:00",
+  "generatedAt": "2026-10-27T18:30:36.231901+00:00",
+  "ourladsUpdatedAt": "2026-10-27T18:30:36.231901+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.491396+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Seattle Seahawks",
@@ -24,22 +24,6 @@
       "pffTied": false
     },
     {
-      "position": "LWR",
-      "player": "Montorie Foster Jr.",
-      "jersey": "87",
-      "code": "CF25",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 66,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "RWR",
       "player": "Rashid Shaheed",
       "jersey": "22",
@@ -54,6 +38,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "RWR",
+      "player": "Irvin Charles",
+      "jersey": "85",
+      "code": "T/NYJ",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "SWR",
@@ -182,6 +178,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "RG",
+      "player": "Anthony Bradford",
+      "jersey": "75",
+      "code": "23/4",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 50.6,
+      "madden27Rating": 72,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 75,
+      "pffPositionTotal": 87,
+      "pffPositionLabel": "G",
+      "pffTied": false
     },
     {
       "position": "RG",
@@ -760,22 +772,6 @@
       "pffTied": false
     },
     {
-      "position": "RCB",
-      "player": "Trevon Diggs",
-      "jersey": "16",
-      "code": "SF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "NB",
       "player": "Nick Emmanwori",
       "jersey": "3",
@@ -968,22 +964,6 @@
       "pffTied": null
     },
     {
-      "position": "RB",
-      "player": "Jadarian Price",
-      "jersey": "8",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 76,
-      "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "TE",
       "player": "Elijah Arroyo",
       "jersey": "18",
@@ -1096,20 +1076,20 @@
       "pffTied": null
     },
     {
-      "position": "OG",
-      "player": "Anthony Bradford",
-      "jersey": "75",
+      "position": "RB",
+      "player": "Jadarian Price",
+      "jersey": "8",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "DFR",
-      "pffGrade": 50.6,
-      "madden27Rating": 72,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 75,
-      "pffPositionTotal": 87,
-      "pffPositionLabel": "G",
-      "pffTied": false
+      "pffGrade": null,
+      "madden27Rating": 76,
+      "madden27Dev": "Star",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     }
   ]
 }

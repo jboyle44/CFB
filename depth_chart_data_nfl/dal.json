@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T17:48:31.249570+00:00",
-  "ourladsUpdatedAt": "2026-10-23T17:48:31.249570+00:00",
+  "generatedAt": "2026-10-27T18:29:35.484247+00:00",
+  "ourladsUpdatedAt": "2026-10-27T18:29:35.484247+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.457028+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Dallas Cowboys",
@@ -537,19 +537,19 @@
     },
     {
       "position": "WLB",
-      "player": "Shemar James",
-      "jersey": "50",
-      "code": "25/5",
+      "player": "Jaishawn Barham",
+      "jersey": "55",
+      "code": "26/3",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 40.1,
-      "madden27Rating": 69,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 90,
-      "pffPositionTotal": 94,
-      "pffPositionLabel": "LB",
-      "pffTied": false
+      "pffGrade": null,
+      "madden27Rating": 73,
+      "madden27Dev": "Star",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "MLB",
@@ -569,19 +569,19 @@
     },
     {
       "position": "MLB",
-      "player": "Jaishawn Barham",
-      "jersey": "55",
-      "code": "26/3",
+      "player": "Shemar James",
+      "jersey": "50",
+      "code": "25/5",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 73,
-      "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "pffGrade": 40.1,
+      "madden27Rating": 69,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 90,
+      "pffPositionTotal": 94,
+      "pffPositionLabel": "LB",
+      "pffTied": false
     },
     {
       "position": "MLB",
@@ -680,6 +680,22 @@
       "pffTied": false
     },
     {
+      "position": "LCB",
+      "player": "Ameer Speed",
+      "jersey": "23",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 65,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
       "position": "SS",
       "player": "Markquese Bell",
       "jersey": "14",
@@ -705,7 +721,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "FS",
@@ -770,22 +790,6 @@
       "pffPositionTotal": 122,
       "pffPositionLabel": "CB",
       "pffTied": false
-    },
-    {
-      "position": "RCB",
-      "player": "Ameer Speed",
-      "jersey": "23",
-      "code": "SF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 65,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     },
     {
       "position": "NB",
@@ -996,22 +1000,6 @@
       "pffTied": false
     },
     {
-      "position": "S",
-      "player": "P.J. Locke",
-      "jersey": "1",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 50.9,
-      "madden27Rating": 74,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "S",
-      "pffTied": false
-    },
-    {
       "position": "RB",
       "player": "Malik Davis",
       "jersey": "20",
@@ -1122,6 +1110,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "S",
+      "player": "P.J. Locke",
+      "jersey": "1",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 50.9,
+      "madden27Rating": 74,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "S",
+      "pffTied": false
     }
   ]
 }

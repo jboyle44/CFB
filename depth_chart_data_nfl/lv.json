@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T17:49:14.840165+00:00",
-  "ourladsUpdatedAt": "2026-10-23T17:49:14.840165+00:00",
+  "generatedAt": "2026-10-27T18:30:18.582076+00:00",
+  "ourladsUpdatedAt": "2026-10-27T18:30:18.582076+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.470898+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Las Vegas Raiders",
@@ -968,22 +968,6 @@
       "pffTied": false
     },
     {
-      "position": "WR",
-      "player": "Jack Bech",
-      "jersey": "18",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 59.9,
-      "madden27Rating": 73,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 98,
-      "pffPositionTotal": 143,
-      "pffPositionLabel": "WR",
-      "pffTied": false
-    },
-    {
       "position": "OG",
       "player": "Justin Pickett",
       "jersey": "77",
@@ -1093,6 +1077,22 @@
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "TE",
+      "pffTied": false
+    },
+    {
+      "position": "WR",
+      "player": "Jack Bech",
+      "jersey": "18",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 59.9,
+      "madden27Rating": 73,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 98,
+      "pffPositionTotal": 143,
+      "pffPositionLabel": "WR",
       "pffTied": false
     }
   ]

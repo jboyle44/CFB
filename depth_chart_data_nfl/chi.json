@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-23T17:48:55.121766+00:00",
-  "ourladsUpdatedAt": "2026-10-23T17:48:55.121766+00:00",
+  "generatedAt": "2026-10-27T18:29:59.058802+00:00",
+  "ourladsUpdatedAt": "2026-10-27T18:29:59.058802+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.451826+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Chicago Bears",
@@ -249,22 +249,6 @@
     },
     {
       "position": "TE",
-      "player": "Cole Kmet",
-      "jersey": "85",
-      "code": "20/2",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 65.1,
-      "madden27Rating": 78,
-      "madden27Dev": "Star",
-      "pffPositionRank": 34,
-      "pffPositionTotal": 68,
-      "pffPositionLabel": "TE",
-      "pffTied": false
-    },
-    {
-      "position": "TE",
       "player": "Sam Roush",
       "jersey": "87",
       "code": "26/3",
@@ -376,18 +360,6 @@
       "pffTied": false
     },
     {
-      "position": "RB",
-      "player": "Zavier Scott",
-      "jersey": "30",
-      "code": "SF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
-    },
-    {
       "position": "LDE",
       "player": "Austin Booker",
       "jersey": "94",
@@ -400,6 +372,22 @@
       "madden27Dev": "Normal",
       "pffPositionRank": 78,
       "pffPositionTotal": 129,
+      "pffPositionLabel": "ED",
+      "pffTied": false
+    },
+    {
+      "position": "LDE",
+      "player": "Shemar Turner",
+      "jersey": "95",
+      "code": "25/2",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 34.4,
+      "madden27Rating": 72,
+      "madden27Dev": "Star",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
       "pffPositionLabel": "ED",
       "pffTied": false
     },
@@ -517,17 +505,17 @@
     },
     {
       "position": "RDE",
-      "player": "Shemar Turner",
-      "jersey": "95",
-      "code": "25/2",
-      "isAcquired": false,
+      "player": "Montez Sweat",
+      "jersey": "98",
+      "code": "T/Was",
+      "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 34.4,
-      "madden27Rating": 72,
+      "pffGrade": 71.2,
+      "madden27Rating": 81,
       "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
+      "pffPositionRank": 44,
+      "pffPositionTotal": 129,
       "pffPositionLabel": "ED",
       "pffTied": false
     },
@@ -642,18 +630,6 @@
       "pffPositionTotal": 94,
       "pffPositionLabel": "LB",
       "pffTied": true
-    },
-    {
-      "position": "MLB",
-      "player": "Buddy Johnson",
-      "jersey": "47",
-      "code": "SF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     },
     {
       "position": "LCB",
@@ -1041,6 +1017,22 @@
     },
     {
       "position": "TE",
+      "player": "Cole Kmet",
+      "jersey": "85",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 65.1,
+      "madden27Rating": 78,
+      "madden27Dev": "Star",
+      "pffPositionRank": 34,
+      "pffPositionTotal": 68,
+      "pffPositionLabel": "TE",
+      "pffTied": false
+    },
+    {
+      "position": "TE",
       "player": "Nikola Kalinic",
       "jersey": "86",
       "code": "",
@@ -1150,22 +1142,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "DE",
-      "player": "Montez Sweat",
-      "jersey": "98",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "SUS",
-      "pffGrade": 71.2,
-      "madden27Rating": 81,
-      "madden27Dev": "Star",
-      "pffPositionRank": 44,
-      "pffPositionTotal": 129,
-      "pffPositionLabel": "ED",
-      "pffTied": false
     }
   ]
 }
