@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-27T18:29:45.319887+00:00",
-  "ourladsUpdatedAt": "2026-10-27T18:29:45.319887+00:00",
+  "generatedAt": "2026-10-30T18:30:04.659650+00:00",
+  "ourladsUpdatedAt": "2026-10-30T18:30:04.659650+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.475879+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Miami Dolphins",
-  "offenseScheme": "11 - One RB, One TE (58%)",
+  "offenseScheme": "11 - One RB, One TE (56%)",
   "defenseScheme": "Base 4-3",
   "rows": [
     {
@@ -217,19 +217,15 @@
     },
     {
       "position": "RG",
-      "player": "Dj Campbell",
-      "jersey": "63",
-      "code": "26/6",
-      "isAcquired": false,
+      "player": "Christian Haynes",
+      "jersey": "64",
+      "code": "W/Sea",
+      "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 67,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RT",

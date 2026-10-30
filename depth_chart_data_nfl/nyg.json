@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-27T18:29:37.476396+00:00",
-  "ourladsUpdatedAt": "2026-10-27T18:29:37.476396+00:00",
+  "generatedAt": "2026-10-30T18:29:55.691486+00:00",
+  "ourladsUpdatedAt": "2026-10-30T18:29:55.691486+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.482611+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Giants",
-  "offenseScheme": "11 - One RB, One TE (43%)",
+  "offenseScheme": "11 - One RB, One TE (41%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -137,22 +137,6 @@
     },
     {
       "position": "C",
-      "player": "John Michael Schmitz Jr.",
-      "jersey": "61",
-      "code": "23/2",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 60.8,
-      "madden27Rating": 72,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 29,
-      "pffPositionTotal": 41,
-      "pffPositionLabel": "C",
-      "pffTied": false
-    },
-    {
-      "position": "C",
       "player": "Bryan Hudson",
       "jersey": "60",
       "code": "SF24",
@@ -164,6 +148,22 @@
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
+      "pffPositionLabel": "C",
+      "pffTied": false
+    },
+    {
+      "position": "C",
+      "player": "John Michael Schmitz Jr.",
+      "jersey": "61",
+      "code": "23/2",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 60.8,
+      "madden27Rating": 72,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 29,
+      "pffPositionTotal": 41,
       "pffPositionLabel": "C",
       "pffTied": false
     },
@@ -361,22 +361,6 @@
     },
     {
       "position": "RB",
-      "player": "Tyrone Tracy Jr.",
-      "jersey": "29",
-      "code": "24/5",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 69.5,
-      "madden27Rating": 78,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 39,
-      "pffPositionTotal": 73,
-      "pffPositionLabel": "HB",
-      "pffTied": true
-    },
-    {
-      "position": "RB",
       "player": "Devin Singletary",
       "jersey": "26",
       "code": "U/Hou",
@@ -390,6 +374,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "RB",
+      "player": "Gregory Desrosiers",
+      "jersey": "",
+      "code": "P/LAC",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "FB",
@@ -920,13 +916,13 @@
       "pffTied": null
     },
     {
-      "position": "KR",
+      "position": "RB",
       "player": "Tyrone Tracy Jr.",
       "jersey": "29",
-      "code": "24/5",
+      "code": "",
       "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
+      "isReserve": true,
+      "reserveStatus": "IR",
       "pffGrade": 69.5,
       "madden27Rating": 78,
       "madden27Dev": "Normal",

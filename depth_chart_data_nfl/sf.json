@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-27T18:30:34.271947+00:00",
-  "ourladsUpdatedAt": "2026-10-27T18:30:34.271947+00:00",
+  "generatedAt": "2026-10-30T18:31:00.759150+00:00",
+  "ourladsUpdatedAt": "2026-10-30T18:31:00.759150+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.489514+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "San Francisco 49ers",
@@ -457,9 +457,9 @@
     },
     {
       "position": "LDT",
-      "player": "James Thompson Jr.",
-      "jersey": "96",
-      "code": "CF26",
+      "player": "Sebastian Valdez",
+      "jersey": "55",
+      "code": "CF25",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
@@ -470,6 +470,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "RDT",
+      "player": "Deforest Buckner",
+      "jersey": "99",
+      "code": "T/Ind",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RDT",
@@ -489,9 +501,9 @@
     },
     {
       "position": "RDT",
-      "player": "Sebastian Valdez",
-      "jersey": "55",
-      "code": "CF25",
+      "player": "James Thompson Jr.",
+      "jersey": "96",
+      "code": "CF26",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
@@ -659,22 +671,6 @@
       "madden27Rating": 77,
       "madden27Dev": "Star",
       "pffPositionRank": 98,
-      "pffPositionTotal": 122,
-      "pffPositionLabel": "CB",
-      "pffTied": false
-    },
-    {
-      "position": "LCB",
-      "player": "Jack Jones",
-      "jersey": "25",
-      "code": "U/Mia",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 60.2,
-      "madden27Rating": 76,
-      "madden27Dev": "Star",
-      "pffPositionRank": 70,
       "pffPositionTotal": 122,
       "pffPositionLabel": "CB",
       "pffTied": false

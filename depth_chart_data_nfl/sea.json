@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-27T18:30:36.231901+00:00",
-  "ourladsUpdatedAt": "2026-10-27T18:30:36.231901+00:00",
+  "generatedAt": "2026-10-30T18:31:02.998672+00:00",
+  "ourladsUpdatedAt": "2026-10-30T18:31:02.998672+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.491396+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Seattle Seahawks",
-  "offenseScheme": "11 - One RB, One TE (38%)",
+  "offenseScheme": "11 - One RB, One TE (45%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -49,7 +49,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "SWR",
@@ -117,19 +121,15 @@
     },
     {
       "position": "LG",
-      "player": "Grey Zabel",
-      "jersey": "76",
-      "code": "25/1",
-      "isAcquired": false,
+      "player": "Quenton Nelson",
+      "jersey": "53",
+      "code": "T/Ind",
+      "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 57.2,
-      "madden27Rating": 76,
-      "madden27Dev": "Star",
-      "pffPositionRank": 54,
-      "pffPositionTotal": 87,
-      "pffPositionLabel": "G",
-      "pffTied": true
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LG",
@@ -181,6 +181,22 @@
     },
     {
       "position": "RG",
+      "player": "Grey Zabel",
+      "jersey": "76",
+      "code": "25/1",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 57.2,
+      "madden27Rating": 76,
+      "madden27Dev": "Star",
+      "pffPositionRank": 54,
+      "pffPositionTotal": 87,
+      "pffPositionLabel": "G",
+      "pffTied": true
+    },
+    {
+      "position": "RG",
       "player": "Anthony Bradford",
       "jersey": "75",
       "code": "23/4",
@@ -192,22 +208,6 @@
       "madden27Dev": "Normal",
       "pffPositionRank": 75,
       "pffPositionTotal": 87,
-      "pffPositionLabel": "G",
-      "pffTied": false
-    },
-    {
-      "position": "RG",
-      "player": "Christian Haynes",
-      "jersey": "64",
-      "code": "24/3",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 43.9,
-      "madden27Rating": 71,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
       "pffPositionLabel": "G",
       "pffTied": false
     },

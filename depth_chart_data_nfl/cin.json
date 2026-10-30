@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-27T18:29:53.178466+00:00",
-  "ourladsUpdatedAt": "2026-10-27T18:29:53.178466+00:00",
+  "generatedAt": "2026-10-30T18:30:13.678244+00:00",
+  "ourladsUpdatedAt": "2026-10-30T18:30:13.678244+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.453480+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Cincinnati Bengals",
-  "offenseScheme": "11 - One RB, One TE (49%)",
+  "offenseScheme": "11 - One RB, One TE (45%)",
   "defenseScheme": "Base 4-3",
   "rows": [
     {
@@ -281,22 +281,6 @@
     },
     {
       "position": "TE",
-      "player": "Erick All Jr.",
-      "jersey": "83",
-      "code": "24/4",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 68,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "TE",
       "player": "Jack Endries",
       "jersey": "84",
       "code": "26/7",
@@ -314,14 +298,18 @@
     {
       "position": "TE",
       "player": "Cam Grandy",
-      "jersey": "",
+      "jersey": "85",
       "code": "P/Min",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "QB",
@@ -1045,6 +1033,22 @@
     },
     {
       "position": "TE",
+      "player": "Erick All Jr.",
+      "jersey": "83",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": 68,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "TE",
       "player": "Tanner Hudson",
       "jersey": "87",
       "code": "",
@@ -1058,6 +1062,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "TE",
+      "player": "Josh Kattus",
+      "jersey": "48",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "PS/IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     }
   ]
 }

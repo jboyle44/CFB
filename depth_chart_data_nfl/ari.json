@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-27T18:30:30.355059+00:00",
-  "ourladsUpdatedAt": "2026-10-27T18:30:30.355059+00:00",
+  "generatedAt": "2026-10-30T18:30:56.318594+00:00",
+  "ourladsUpdatedAt": "2026-10-30T18:30:56.318594+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.442955+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Arizona Cardinals",
-  "offenseScheme": "11 - One RB, One TE (62%)",
+  "offenseScheme": "11 - One RB, One TE (59%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -150,6 +150,18 @@
       "pffPositionTotal": 41,
       "pffPositionLabel": "C",
       "pffTied": false
+    },
+    {
+      "position": "C",
+      "player": "Kingsley Eguakun",
+      "jersey": "64",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RG",
@@ -385,7 +397,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LDE",
@@ -1086,22 +1102,6 @@
       "pffGrade": null,
       "madden27Rating": 75,
       "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "TE",
-      "player": "Jameson Geers",
-      "jersey": "46",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,

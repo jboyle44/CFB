@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-27T18:29:55.173241+00:00",
-  "ourladsUpdatedAt": "2026-10-27T18:29:55.173241+00:00",
+  "generatedAt": "2026-10-30T18:30:15.896827+00:00",
+  "ourladsUpdatedAt": "2026-10-30T18:30:15.896827+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.455232+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Cleveland Browns",
-  "offenseScheme": "11 - One RB, One TE (64%)",
+  "offenseScheme": "11 - One RB, One TE (72%)",
   "defenseScheme": "Base 4-3",
   "rows": [
     {
@@ -1000,6 +1000,22 @@
       "pffTied": false
     },
     {
+      "position": "DT",
+      "player": "Kalia Davis",
+      "jersey": "93",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 39.8,
+      "madden27Rating": 67,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 138,
+      "pffPositionTotal": 146,
+      "pffPositionLabel": "DI",
+      "pffTied": false
+    },
+    {
       "position": "DE",
       "player": "Alex Wright",
       "jersey": "91",
@@ -1126,22 +1142,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "DT",
-      "player": "Kalia Davis",
-      "jersey": "93",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 39.8,
-      "madden27Rating": 67,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 138,
-      "pffPositionTotal": 146,
-      "pffPositionLabel": "DI",
-      "pffTied": false
     }
   ]
 }

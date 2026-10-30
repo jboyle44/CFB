@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-27T18:30:00.991981+00:00",
-  "ourladsUpdatedAt": "2026-10-27T18:30:00.991981+00:00",
+  "generatedAt": "2026-10-30T18:30:22.580735+00:00",
+  "ourladsUpdatedAt": "2026-10-30T18:30:22.580735+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.460521+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Detroit Lions",
-  "offenseScheme": "11 - One RB, One TE (64%)",
+  "offenseScheme": "11 - One RB, One TE (55%)",
   "defenseScheme": "Base 4-3",
   "rows": [
     {
@@ -1112,22 +1112,6 @@
       "pffTied": null
     },
     {
-      "position": "S",
-      "player": "Kerby Joseph",
-      "jersey": "31",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "PUP",
-      "pffGrade": null,
-      "madden27Rating": 91,
-      "madden27Dev": "Superstar",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "OT",
       "player": "Giovanni Manu",
       "jersey": "59",
@@ -1138,6 +1122,22 @@
       "pffGrade": null,
       "madden27Rating": 67,
       "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "S",
+      "player": "Kerby Joseph",
+      "jersey": "31",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": null,
+      "madden27Rating": 91,
+      "madden27Dev": "Superstar",
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-27T18:30:12.773854+00:00",
-  "ourladsUpdatedAt": "2026-10-27T18:30:12.773854+00:00",
+  "generatedAt": "2026-10-30T18:30:35.995310+00:00",
+  "ourladsUpdatedAt": "2026-10-30T18:30:35.995310+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.494916+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Tennessee Titans",
-  "offenseScheme": "11 - One RB, One TE (72%)",
+  "offenseScheme": "11 - One RB, One TE (74%)",
   "defenseScheme": "Base 4-3",
   "rows": [
     {
@@ -361,19 +361,15 @@
     },
     {
       "position": "RB",
-      "player": "Nicholas Singleton",
+      "player": "Nick Singleton",
       "jersey": "32",
       "code": "26/5",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 69,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RB",
@@ -441,22 +437,6 @@
     },
     {
       "position": "LDT",
-      "player": "Jeffery Simmons",
-      "jersey": "98",
-      "code": "19/1",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 88.3,
-      "madden27Rating": 96,
-      "madden27Dev": "Superstar",
-      "pffPositionRank": 3,
-      "pffPositionTotal": 146,
-      "pffPositionLabel": "DI",
-      "pffTied": false
-    },
-    {
-      "position": "LDT",
       "player": "Solomon Thomas",
       "jersey": "90",
       "code": "T/Dal",
@@ -470,6 +450,22 @@
       "pffPositionTotal": 146,
       "pffPositionLabel": "DI",
       "pffTied": false
+    },
+    {
+      "position": "LDT",
+      "player": "Timmy Horne",
+      "jersey": "94",
+      "code": "U/NYG",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LDT",
@@ -521,9 +517,9 @@
     },
     {
       "position": "RDT",
-      "player": "Timmy Horne",
-      "jersey": "94",
-      "code": "U/NYG",
+      "player": "Jonah Laulu",
+      "jersey": "99",
+      "code": "W/LV",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
@@ -676,6 +672,22 @@
       "pffTied": false
     },
     {
+      "position": "LCB",
+      "player": "Jaylon Jones",
+      "jersey": "42",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 73,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
       "position": "SS",
       "player": "Amani Hooker",
       "jersey": "37",
@@ -749,22 +761,6 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": 75,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "RCB",
-      "player": "Jaylon Jones",
-      "jersey": "42",
-      "code": "SF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 73,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,

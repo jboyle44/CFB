@@ -1,28 +1,12 @@
 {
-  "generatedAt": "2026-10-27T18:29:41.390162+00:00",
-  "ourladsUpdatedAt": "2026-10-27T18:29:41.390162+00:00",
+  "generatedAt": "2026-10-30T18:30:00.176249+00:00",
+  "ourladsUpdatedAt": "2026-10-30T18:30:00.176249+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.496677+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Washington Commanders",
   "offenseScheme": "11 - One RB, One TE (63%)",
   "defenseScheme": "Base 3-4",
   "rows": [
-    {
-      "position": "LWR",
-      "player": "Terry Mclaurin",
-      "jersey": "17",
-      "code": "19/3",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 86.5,
-      "madden27Rating": 91,
-      "madden27Dev": "X-Factor",
-      "pffPositionRank": 9,
-      "pffPositionTotal": 143,
-      "pffPositionLabel": "WR",
-      "pffTied": false
-    },
     {
       "position": "LWR",
       "player": "Antonio Williams",
@@ -40,20 +24,16 @@
       "pffTied": null
     },
     {
-      "position": "RWR",
-      "player": "Dyami Brown",
-      "jersey": "6",
-      "code": "U/Jax",
+      "position": "LWR",
+      "player": "Van Jefferson",
+      "jersey": "12",
+      "code": "U/Ten",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 73,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RWR",
@@ -65,6 +45,22 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": 74,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "RWR",
+      "player": "Dyami Brown",
+      "jersey": "6",
+      "code": "U/Jax",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 73,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -1048,22 +1044,6 @@
       "pffTied": null
     },
     {
-      "position": "DT",
-      "player": "Jer'Zhan Newton",
-      "jersey": "95",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 47.5,
-      "madden27Rating": 76,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 114,
-      "pffPositionTotal": 146,
-      "pffPositionLabel": "DI",
-      "pffTied": false
-    },
-    {
       "position": "WR",
       "player": "Jaylin Lane",
       "jersey": "83",
@@ -1080,6 +1060,22 @@
       "pffTied": null
     },
     {
+      "position": "WR",
+      "player": "Terry Mclaurin",
+      "jersey": "17",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 86.5,
+      "madden27Rating": 91,
+      "madden27Dev": "X-Factor",
+      "pffPositionRank": 9,
+      "pffPositionTotal": 143,
+      "pffPositionLabel": "WR",
+      "pffTied": false
+    },
+    {
       "position": "OLB",
       "player": "Marvin Jones Jr.",
       "jersey": "53",
@@ -1094,6 +1090,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "DT",
+      "player": "Jer'Zhan Newton",
+      "jersey": "95",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 47.5,
+      "madden27Rating": 76,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 114,
+      "pffPositionTotal": 146,
+      "pffPositionLabel": "DI",
+      "pffTied": false
     }
   ]
 }

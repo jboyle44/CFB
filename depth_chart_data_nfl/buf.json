@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-27T18:29:43.344652+00:00",
-  "ourladsUpdatedAt": "2026-10-27T18:29:43.344652+00:00",
+  "generatedAt": "2026-10-30T18:30:02.418015+00:00",
+  "ourladsUpdatedAt": "2026-10-30T18:30:02.418015+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.448485+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Buffalo Bills",
-  "offenseScheme": "11 - One RB, One TE (47%)",
+  "offenseScheme": "11 - One RB, One TE (46%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -1000,22 +1000,6 @@
       "pffTied": null
     },
     {
-      "position": "WR",
-      "player": "Tyrell Shavers",
-      "jersey": "14",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "PUP",
-      "pffGrade": null,
-      "madden27Rating": 65,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "CB",
       "player": "Dorian Strong",
       "jersey": "43",
@@ -1046,6 +1030,22 @@
       "pffPositionTotal": 107,
       "pffPositionLabel": "S",
       "pffTied": false
+    },
+    {
+      "position": "WR",
+      "player": "Tyrell Shavers",
+      "jersey": "14",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": null,
+      "madden27Rating": 65,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-27T18:30:04.903655+00:00",
-  "ourladsUpdatedAt": "2026-10-27T18:30:04.903655+00:00",
+  "generatedAt": "2026-10-30T18:30:27.075584+00:00",
+  "ourladsUpdatedAt": "2026-10-30T18:30:27.075584+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.477549+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Minnesota Vikings",
-  "offenseScheme": "11 - One RB, One TE (55%)",
+  "offenseScheme": "11 - One RB, One TE (56%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -1030,6 +1030,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "WR",
+      "player": "Michael Briscoe",
+      "jersey": "81",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "PS/IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-27T18:30:16.649901+00:00",
-  "ourladsUpdatedAt": "2026-10-27T18:30:16.649901+00:00",
+  "generatedAt": "2026-10-30T18:30:40.452600+00:00",
+  "ourladsUpdatedAt": "2026-10-30T18:30:40.452600+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.469260+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Kansas City Chiefs",
-  "offenseScheme": "11 - One RB, One TE (47%)",
+  "offenseScheme": "11 - One RB, One TE (50%)",
   "defenseScheme": "Base 4-3",
   "rows": [
     {
@@ -97,7 +97,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LT",
@@ -109,6 +113,22 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": 67,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "LT",
+      "player": "Diego Pounds",
+      "jersey": "61",
+      "code": "T/Bal",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 60,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -196,22 +216,6 @@
       "pffTied": true
     },
     {
-      "position": "RG",
-      "player": "Joshua Ezeudu",
-      "jersey": "73",
-      "code": "T/NYG",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 66,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "RT",
       "player": "Jaylon Moore",
       "jersey": "77",
@@ -229,14 +233,14 @@
     },
     {
       "position": "RT",
-      "player": "Diego Pounds",
-      "jersey": "61",
-      "code": "T/Bal",
+      "player": "Joshua Ezeudu",
+      "jersey": "73",
+      "code": "T/NYG",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 60,
+      "madden27Rating": 66,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -397,7 +401,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "FB",
@@ -688,22 +696,6 @@
       "pffTied": false
     },
     {
-      "position": "SS",
-      "player": "Xavier Nwankpa",
-      "jersey": "29",
-      "code": "CF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 63,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "FS",
       "player": "Alohi Gilman",
       "jersey": "17",
@@ -782,6 +774,22 @@
       "pffPositionTotal": 122,
       "pffPositionLabel": "CB",
       "pffTied": false
+    },
+    {
+      "position": "NB",
+      "player": "Xavier Nwankpa",
+      "jersey": "29",
+      "code": "CF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 63,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "NB",
@@ -1078,7 +1086,7 @@
       "code": "",
       "isAcquired": false,
       "isReserve": true,
-      "reserveStatus": "PUP",
+      "reserveStatus": "DFR",
       "pffGrade": 54.3,
       "madden27Rating": 71,
       "madden27Dev": "Normal",
