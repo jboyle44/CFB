@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T18:30:13.678244+00:00",
-  "ourladsUpdatedAt": "2026-10-30T18:30:13.678244+00:00",
+  "generatedAt": "2026-11-03T19:54:40.544935+00:00",
+  "ourladsUpdatedAt": "2026-11-03T19:54:40.544935+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.453480+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Cincinnati Bengals",
@@ -424,22 +424,6 @@
       "pffTied": true
     },
     {
-      "position": "LDE",
-      "player": "Shemar Stewart",
-      "jersey": "94",
-      "code": "25/1",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 41.2,
-      "madden27Rating": 74,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 129,
-      "pffPositionTotal": 129,
-      "pffPositionLabel": "ED",
-      "pffTied": false
-    },
-    {
       "position": "NT",
       "player": "Dexter Lawrence II",
       "jersey": "97",
@@ -553,19 +537,19 @@
     },
     {
       "position": "RDE",
-      "player": "Cashius Howell",
-      "jersey": "55",
-      "code": "26/2",
+      "player": "Shemar Stewart",
+      "jersey": "94",
+      "code": "25/1",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 77,
-      "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "pffGrade": 41.2,
+      "madden27Rating": 74,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 129,
+      "pffPositionTotal": 129,
+      "pffPositionLabel": "ED",
+      "pffTied": false
     },
     {
       "position": "WLB",
@@ -697,6 +681,22 @@
     },
     {
       "position": "SS",
+      "player": "Russ Yeast",
+      "jersey": "22",
+      "code": "SF25",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "SS",
       "player": "Kyle Dugger",
       "jersey": "29",
       "code": "U/Pit",
@@ -742,22 +742,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "S",
       "pffTied": false
-    },
-    {
-      "position": "FS",
-      "player": "Russ Yeast",
-      "jersey": "22",
-      "code": "SF25",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     },
     {
       "position": "RCB",
@@ -952,6 +936,22 @@
       "pffTied": null
     },
     {
+      "position": "DE",
+      "player": "Cashius Howell",
+      "jersey": "55",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": 77,
+      "madden27Dev": "Star",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
       "position": "LB",
       "player": "Swayze Bozeman",
       "jersey": "47",
@@ -1073,7 +1073,11 @@
       "reserveStatus": "PS/IR",
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     }
   ]
 }

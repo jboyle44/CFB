@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T18:30:04.659650+00:00",
-  "ourladsUpdatedAt": "2026-10-30T18:30:04.659650+00:00",
+  "generatedAt": "2026-11-03T19:54:32.506817+00:00",
+  "ourladsUpdatedAt": "2026-11-03T19:54:32.506817+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.475879+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Miami Dolphins",
@@ -225,7 +225,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RT",
@@ -437,22 +441,6 @@
     },
     {
       "position": "LDE",
-      "player": "Rob Beal Jr.",
-      "jersey": "51",
-      "code": "U/SF",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 63,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "LDE",
       "player": "Rodney McGraw",
       "jersey": "59",
       "code": "CF26",
@@ -466,6 +454,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "LDE",
+      "player": "Jamree Kromah",
+      "jersey": "58",
+      "code": "W/Chi",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LDT",

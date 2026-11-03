@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T18:30:18.123496+00:00",
-  "ourladsUpdatedAt": "2026-10-30T18:30:18.123496+00:00",
+  "generatedAt": "2026-11-03T19:54:44.615599+00:00",
+  "ourladsUpdatedAt": "2026-11-03T19:54:44.615599+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.487690+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Pittsburgh Steelers",
@@ -25,22 +25,18 @@
     },
     {
       "position": "RWR",
-      "player": "Germie Bernard",
-      "jersey": "17",
-      "code": "26/2",
+      "player": "Brandon Smith",
+      "jersey": "87",
+      "code": "SF26",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 75,
-      "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
-      "position": "SWR",
+      "position": "RWR",
       "player": "Ben Skowronek",
       "jersey": "15",
       "code": "SF24",
@@ -54,6 +50,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "WR",
       "pffTied": false
+    },
+    {
+      "position": "SWR",
+      "player": "Germie Bernard",
+      "jersey": "17",
+      "code": "26/2",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 75,
+      "madden27Dev": "Star",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "SWR",

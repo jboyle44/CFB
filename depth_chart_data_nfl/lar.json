@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T18:30:58.540132+00:00",
-  "ourladsUpdatedAt": "2026-10-30T18:30:58.540132+00:00",
+  "generatedAt": "2026-11-03T19:55:19.840375+00:00",
+  "ourladsUpdatedAt": "2026-11-03T19:55:19.840375+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.474213+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Los Angeles Rams",
@@ -536,22 +536,6 @@
       "pffTied": null
     },
     {
-      "position": "LOLB",
-      "player": "Darryl Peterson III",
-      "jersey": "59",
-      "code": "CF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "LILB",
       "player": "Nate Landman",
       "jersey": "53",
@@ -646,6 +630,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "ED",
       "pffTied": false
+    },
+    {
+      "position": "ROLB",
+      "player": "Darryl Peterson III",
+      "jersey": "59",
+      "code": "CF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LCB",
@@ -857,19 +857,19 @@
     },
     {
       "position": "KO",
-      "player": "Ethan Evans",
-      "jersey": "42",
-      "code": "23/7",
+      "player": "Brandon Mcmanus",
+      "jersey": "19",
+      "code": "SF26",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 67.9,
-      "madden27Rating": 80,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 22,
-      "pffPositionTotal": 36,
-      "pffPositionLabel": "P",
-      "pffTied": false
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "PR",

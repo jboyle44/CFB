@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T18:30:42.791452+00:00",
-  "ourladsUpdatedAt": "2026-10-30T18:30:42.791452+00:00",
+  "generatedAt": "2026-11-03T19:55:06.140267+00:00",
+  "ourladsUpdatedAt": "2026-11-03T19:55:06.140267+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.470898+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Las Vegas Raiders",
@@ -41,6 +41,22 @@
     },
     {
       "position": "RWR",
+      "player": "Tre Tucker",
+      "jersey": "1",
+      "code": "23/3",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 78,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "RWR",
       "player": "Cody White",
       "jersey": "82",
       "code": "SF26",
@@ -73,19 +89,19 @@
     },
     {
       "position": "SWR",
-      "player": "Tre Tucker",
-      "jersey": "1",
-      "code": "23/3",
+      "player": "Jack Bech",
+      "jersey": "18",
+      "code": "25/2",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 78,
+      "pffGrade": 59.9,
+      "madden27Rating": 73,
       "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "pffPositionRank": 98,
+      "pffPositionTotal": 143,
+      "pffPositionLabel": "WR",
+      "pffTied": false
     },
     {
       "position": "SWR",
@@ -472,22 +488,6 @@
       "pffTied": false
     },
     {
-      "position": "NT",
-      "player": "Jj Pegues",
-      "jersey": "92",
-      "code": "25/6",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 40.4,
-      "madden27Rating": 67,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "DI",
-      "pffTied": false
-    },
-    {
       "position": "DT",
       "player": "Tonka Hemingway",
       "jersey": "97",
@@ -520,6 +520,22 @@
       "pffTied": false
     },
     {
+      "position": "DT",
+      "player": "Jj Pegues",
+      "jersey": "92",
+      "code": "25/6",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 40.4,
+      "madden27Rating": 67,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "DI",
+      "pffTied": false
+    },
+    {
       "position": "RDE",
       "player": "Kwity Paye",
       "jersey": "95",
@@ -532,22 +548,6 @@
       "madden27Dev": "Normal",
       "pffPositionRank": 87,
       "pffPositionTotal": 129,
-      "pffPositionLabel": "ED",
-      "pffTied": false
-    },
-    {
-      "position": "RDE",
-      "player": "Patrick Johnson",
-      "jersey": "93",
-      "code": "SF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 39.4,
-      "madden27Rating": 66,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
       "pffPositionLabel": "ED",
       "pffTied": false
     },
@@ -937,22 +937,6 @@
     },
     {
       "position": "KR",
-      "player": "Tre Tucker",
-      "jersey": "1",
-      "code": "23/3",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 78,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "KR",
       "player": "Dareke Young",
       "jersey": "81",
       "code": "U/Sea",
@@ -965,6 +949,22 @@
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "WR",
+      "pffTied": false
+    },
+    {
+      "position": "DE",
+      "player": "Patrick Johnson",
+      "jersey": "93",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 39.4,
+      "madden27Rating": 66,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "ED",
       "pffTied": false
     },
     {
@@ -1061,22 +1061,6 @@
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "TE",
-      "pffTied": false
-    },
-    {
-      "position": "WR",
-      "player": "Jack Bech",
-      "jersey": "18",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 59.9,
-      "madden27Rating": 73,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 98,
-      "pffPositionTotal": 143,
-      "pffPositionLabel": "WR",
       "pffTied": false
     }
   ]

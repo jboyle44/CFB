@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T18:30:29.293978+00:00",
-  "ourladsUpdatedAt": "2026-10-30T18:30:29.293978+00:00",
+  "generatedAt": "2026-11-03T19:54:54.400645+00:00",
+  "ourladsUpdatedAt": "2026-11-03T19:54:54.400645+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.464068+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Houston Texans",
@@ -426,14 +426,18 @@
     {
       "position": "RB",
       "player": "Emari Demercado",
-      "jersey": "",
+      "jersey": "21",
       "code": "W/Dal",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LDE",
@@ -533,19 +537,15 @@
     },
     {
       "position": "RDT",
-      "player": "Jaden Crumedy",
-      "jersey": "95",
-      "code": "P/GB",
+      "player": "Naquan Jones",
+      "jersey": "91",
+      "code": "P/SF",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 70,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RDE",
@@ -964,22 +964,6 @@
       "pffTied": null
     },
     {
-      "position": "WR",
-      "player": "Jaylin Noel",
-      "jersey": "13",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 73,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "CB",
       "player": "Jaylin Smith",
       "jersey": "22",
@@ -1037,6 +1021,22 @@
       "reserveStatus": "IR",
       "pffGrade": null,
       "madden27Rating": 62,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "WR",
+      "player": "Jaylin Noel",
+      "jersey": "13",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": 73,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T18:30:31.507974+00:00",
-  "ourladsUpdatedAt": "2026-10-30T18:30:31.507974+00:00",
+  "generatedAt": "2026-11-03T19:54:56.389536+00:00",
+  "ourladsUpdatedAt": "2026-11-03T19:54:56.389536+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.465965+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Indianapolis Colts",
@@ -129,7 +129,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LG",
@@ -516,6 +520,18 @@
       "pffTied": true
     },
     {
+      "position": "DT",
+      "player": "Kevin Givens",
+      "jersey": "74",
+      "code": "P/SF",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "RDE",
       "player": "Laiatu Latu",
       "jersey": "97",
@@ -749,7 +765,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "NB",

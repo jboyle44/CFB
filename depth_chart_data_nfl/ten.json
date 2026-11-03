@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T18:30:35.995310+00:00",
-  "ourladsUpdatedAt": "2026-10-30T18:30:35.995310+00:00",
+  "generatedAt": "2026-11-03T19:55:00.269191+00:00",
+  "ourladsUpdatedAt": "2026-11-03T19:55:00.269191+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.494916+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Tennessee Titans",
@@ -56,6 +56,22 @@
       "pffTied": null
     },
     {
+      "position": "RWR",
+      "player": "Chimere Dike",
+      "jersey": "17",
+      "code": "25/4",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 74,
+      "madden27Dev": "Star",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
       "position": "SWR",
       "player": "Wan'Dale Robinson",
       "jersey": "4",
@@ -70,22 +86,6 @@
       "pffPositionTotal": 143,
       "pffPositionLabel": "WR",
       "pffTied": true
-    },
-    {
-      "position": "SWR",
-      "player": "Chimere Dike",
-      "jersey": "17",
-      "code": "25/4",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 74,
-      "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     },
     {
       "position": "LT",
@@ -369,19 +369,7 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
-    },
-    {
-      "position": "RB",
-      "player": "Julius Chestnut",
-      "jersey": "36",
-      "code": "CF22",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 68,
-      "madden27Dev": "Normal",
+      "madden27Dev": null,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,
@@ -397,6 +385,22 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": 71,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "RB",
+      "player": "Julius Chestnut",
+      "jersey": "36",
+      "code": "CF22",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 68,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -525,7 +529,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RDE",

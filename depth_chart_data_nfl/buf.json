@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T18:30:02.418015+00:00",
-  "ourladsUpdatedAt": "2026-10-30T18:30:02.418015+00:00",
+  "generatedAt": "2026-11-03T19:54:30.465440+00:00",
+  "ourladsUpdatedAt": "2026-11-03T19:54:30.465440+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.448485+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Buffalo Bills",
@@ -712,6 +712,38 @@
       "pffTied": false
     },
     {
+      "position": "SS",
+      "player": "Jalon Kilgore",
+      "jersey": "29",
+      "code": "26/5",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 67,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "FS",
+      "player": "C.J. Gardner-Johnson",
+      "jersey": "22",
+      "code": "U/Chi",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 51.6,
+      "madden27Rating": 75,
+      "madden27Dev": "Star",
+      "pffPositionRank": 93,
+      "pffPositionTotal": 107,
+      "pffPositionLabel": "S",
+      "pffTied": false
+    },
+    {
       "position": "FS",
       "player": "Damar Hamlin",
       "jersey": "3",
@@ -726,22 +758,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "S",
       "pffTied": false
-    },
-    {
-      "position": "FS",
-      "player": "Jalon Kilgore",
-      "jersey": "29",
-      "code": "26/5",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 67,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     },
     {
       "position": "RCB",
@@ -790,6 +806,18 @@
       "pffPositionTotal": 122,
       "pffPositionLabel": "CB",
       "pffTied": false
+    },
+    {
+      "position": "NB",
+      "player": "Te'Cory Couch",
+      "jersey": "33",
+      "code": "CF24",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "PT",
@@ -1014,22 +1042,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "S",
-      "player": "C.J. Gardner-Johnson",
-      "jersey": "22",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "SUS",
-      "pffGrade": 51.6,
-      "madden27Rating": 75,
-      "madden27Dev": "Star",
-      "pffPositionRank": 93,
-      "pffPositionTotal": 107,
-      "pffPositionLabel": "S",
-      "pffTied": false
     },
     {
       "position": "WR",

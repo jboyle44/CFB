@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T18:30:45.093895+00:00",
-  "ourladsUpdatedAt": "2026-10-30T18:30:45.093895+00:00",
+  "generatedAt": "2026-11-03T19:55:08.088452+00:00",
+  "ourladsUpdatedAt": "2026-11-03T19:55:08.088452+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.472531+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Los Angeles Chargers",
@@ -664,20 +664,16 @@
       "pffTied": false
     },
     {
-      "position": "SS",
-      "player": "Derwin James Jr.",
-      "jersey": "3",
-      "code": "18/1",
+      "position": "LCB",
+      "player": "Isas Waxter",
+      "jersey": "37",
+      "code": "SF25",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 81.3,
-      "madden27Rating": 93,
-      "madden27Dev": "X-Factor",
-      "pffPositionRank": 8,
-      "pffPositionTotal": 107,
-      "pffPositionLabel": "S",
-      "pffTied": true
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "SS",
@@ -694,6 +690,22 @@
       "pffPositionTotal": 107,
       "pffPositionLabel": "S",
       "pffTied": true
+    },
+    {
+      "position": "SS",
+      "player": "Genesis Smith",
+      "jersey": "22",
+      "code": "26/4",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 72,
+      "madden27Dev": "Star",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "SS",
@@ -726,22 +738,6 @@
       "pffPositionTotal": 107,
       "pffPositionLabel": "S",
       "pffTied": false
-    },
-    {
-      "position": "FS",
-      "player": "Genesis Smith",
-      "jersey": "22",
-      "code": "26/4",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 72,
-      "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     },
     {
       "position": "FS",
@@ -982,6 +978,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "S",
+      "player": "Derwin James Jr.",
+      "jersey": "3",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 81.3,
+      "madden27Rating": 93,
+      "madden27Dev": "X-Factor",
+      "pffPositionRank": 8,
+      "pffPositionTotal": 107,
+      "pffPositionLabel": "S",
+      "pffTied": true
     },
     {
       "position": "FB",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T18:30:27.075584+00:00",
-  "ourladsUpdatedAt": "2026-10-30T18:30:27.075584+00:00",
+  "generatedAt": "2026-11-03T19:54:52.458959+00:00",
+  "ourladsUpdatedAt": "2026-11-03T19:54:52.458959+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.477549+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Minnesota Vikings",
@@ -329,22 +329,6 @@
     },
     {
       "position": "RB",
-      "player": "Aaron Jones Sr.",
-      "jersey": "33",
-      "code": "CC/GB",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 65.0,
-      "madden27Rating": 81,
-      "madden27Dev": "Star",
-      "pffPositionRank": 56,
-      "pffPositionTotal": 73,
-      "pffPositionLabel": "HB",
-      "pffTied": true
-    },
-    {
-      "position": "RB",
       "player": "Jordan Mason",
       "jersey": "27",
       "code": "T/SF",
@@ -358,6 +342,22 @@
       "pffPositionTotal": 73,
       "pffPositionLabel": "HB",
       "pffTied": false
+    },
+    {
+      "position": "RB",
+      "player": "Aaron Jones Sr.",
+      "jersey": "33",
+      "code": "CC/GB",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 65.0,
+      "madden27Rating": 81,
+      "madden27Dev": "Star",
+      "pffPositionRank": 56,
+      "pffPositionTotal": 73,
+      "pffPositionLabel": "HB",
+      "pffTied": true
     },
     {
       "position": "RB",
@@ -1041,7 +1041,11 @@
       "reserveStatus": "PS/IR",
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-30T18:30:00.176249+00:00",
-  "ourladsUpdatedAt": "2026-10-30T18:30:00.176249+00:00",
+  "generatedAt": "2026-11-03T19:54:28.525631+00:00",
+  "ourladsUpdatedAt": "2026-11-03T19:54:28.525631+00:00",
   "madden27UpdatedAt": "2026-10-12T04:11:38.496677+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Washington Commanders",
@@ -33,7 +33,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RWR",
@@ -165,22 +169,6 @@
     },
     {
       "position": "C",
-      "player": "Nick Allegretti",
-      "jersey": "67",
-      "code": "U/KC",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 42.3,
-      "madden27Rating": 71,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 84,
-      "pffPositionTotal": 87,
-      "pffPositionLabel": "G",
-      "pffTied": false
-    },
-    {
-      "position": "C",
       "player": "Lucas Patrick",
       "jersey": "63",
       "code": "SF26",
@@ -194,6 +182,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "C",
+      "player": "Nick Allegretti",
+      "jersey": "67",
+      "code": "U/KC",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 42.3,
+      "madden27Rating": 71,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 84,
+      "pffPositionTotal": 87,
+      "pffPositionLabel": "G",
+      "pffTied": false
     },
     {
       "position": "RG",
