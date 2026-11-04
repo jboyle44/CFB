@@ -2,7 +2,7 @@
   "generatedAt": "2026-11-03T19:59:55.597736+00:00",
   "ourladsUpdatedAt": "2026-11-03T19:59:55.597736+00:00",
   "cfbdUpdatedAt": "2026-11-03T19:59:55.597736+00:00",
-  "cfb27UpdatedAt": "2026-10-12T04:11:00.828448+00:00",
+  "cfb27UpdatedAt": "2026-11-04T20:34:51.474436+00:00",
   "draftRankUpdatedAt": null,
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Maryland",
@@ -2539,7 +2539,9 @@
       "pffGrade": null,
       "draftRank": null,
       "transferLookedUp": null,
-      "recruitLookedUp": true
+      "recruitLookedUp": true,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RES",

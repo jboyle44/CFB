@@ -2,7 +2,7 @@
   "generatedAt": "2026-11-03T19:59:57.592134+00:00",
   "ourladsUpdatedAt": "2026-11-03T19:59:57.592134+00:00",
   "cfbdUpdatedAt": "2026-11-03T19:59:57.592134+00:00",
-  "cfb27UpdatedAt": "2026-10-12T04:11:02.234674+00:00",
+  "cfb27UpdatedAt": "2026-11-04T20:34:52.645968+00:00",
   "draftRankUpdatedAt": "2026-11-03T19:59:18.503617+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Michigan",
@@ -1216,7 +1216,9 @@
       "pffGrade": null,
       "draftRank": null,
       "transferLookedUp": null,
-      "recruitLookedUp": true
+      "recruitLookedUp": true,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "WLB",
@@ -1642,7 +1644,9 @@
       "pffGrade": null,
       "draftRank": null,
       "transferLookedUp": null,
-      "recruitLookedUp": true
+      "recruitLookedUp": true,
+      "cfb27Rating": null,
+      "cfb27Dev": null
     },
     {
       "position": "RCB",
