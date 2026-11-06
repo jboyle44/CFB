@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-03T19:55:10.053692+00:00",
-  "ourladsUpdatedAt": "2026-11-03T19:55:10.053692+00:00",
+  "generatedAt": "2026-11-06T19:54:46.557651+00:00",
+  "ourladsUpdatedAt": "2026-11-06T19:54:46.557651+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.237524+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Atlanta Falcons",
@@ -473,22 +473,6 @@
     },
     {
       "position": "LOLB",
-      "player": "Za'Darius Smith",
-      "jersey": "55",
-      "code": "SF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 77.7,
-      "madden27Rating": 77,
-      "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "ED",
-      "pffTied": false
-    },
-    {
-      "position": "LOLB",
       "player": "Charles Snowden",
       "jersey": "47",
       "code": "P/Was",
@@ -601,19 +585,19 @@
     },
     {
       "position": "ROLB",
-      "player": "Samson Ebukam",
-      "jersey": "52",
-      "code": "U/Ind",
-      "isAcquired": true,
+      "player": "Za'Darius Smith",
+      "jersey": "55",
+      "code": "SF26",
+      "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 64.1,
-      "madden27Rating": 76,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 69,
-      "pffPositionTotal": 129,
+      "pffGrade": 77.7,
+      "madden27Rating": 77,
+      "madden27Dev": "Star",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
       "pffPositionLabel": "ED",
-      "pffTied": true
+      "pffTied": false
     },
     {
       "position": "LCB",
@@ -968,6 +952,22 @@
       "pffTied": null
     },
     {
+      "position": "OLB",
+      "player": "Samson Ebukam",
+      "jersey": "52",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 64.1,
+      "madden27Rating": 76,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 69,
+      "pffPositionTotal": 129,
+      "pffPositionLabel": "ED",
+      "pffTied": true
+    },
+    {
       "position": "OT",
       "player": "Michael Jerrell",
       "jersey": "72",
@@ -977,22 +977,6 @@
       "reserveStatus": "IR",
       "pffGrade": null,
       "madden27Rating": 65,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "OLB",
-      "player": "Yasir Abdullah",
-      "jersey": "22",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 64,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -1142,6 +1126,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "T",
       "pffTied": false
+    },
+    {
+      "position": "OLB",
+      "player": "Yasir Abdullah",
+      "jersey": "22",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": null,
+      "madden27Rating": 64,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     }
   ]
 }

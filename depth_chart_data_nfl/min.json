@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-03T19:54:52.458959+00:00",
-  "ourladsUpdatedAt": "2026-11-03T19:54:52.458959+00:00",
+  "generatedAt": "2026-11-06T19:54:28.737176+00:00",
+  "ourladsUpdatedAt": "2026-11-06T19:54:28.737176+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.269113+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Minnesota Vikings",
@@ -184,22 +184,6 @@
       "pffTied": false
     },
     {
-      "position": "RG",
-      "player": "Trevor Keegan",
-      "jersey": "69",
-      "code": "W/Dal",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 58.2,
-      "madden27Rating": 66,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "G",
-      "pffTied": false
-    },
-    {
       "position": "RT",
       "player": "Brian O'Neill",
       "jersey": "75",
@@ -358,6 +342,18 @@
       "pffPositionTotal": 73,
       "pffPositionLabel": "HB",
       "pffTied": true
+    },
+    {
+      "position": "RB",
+      "player": "DeeJay Dallas",
+      "jersey": "31",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RB",

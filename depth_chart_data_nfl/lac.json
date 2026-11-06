@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-03T19:55:08.088452+00:00",
-  "ourladsUpdatedAt": "2026-11-03T19:55:08.088452+00:00",
+  "generatedAt": "2026-11-06T19:54:44.561398+00:00",
+  "ourladsUpdatedAt": "2026-11-06T19:54:44.561398+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.264514+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Los Angeles Chargers",
@@ -673,7 +673,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "SS",
@@ -1076,38 +1080,6 @@
       "pffTied": true
     },
     {
-      "position": "TE",
-      "player": "David Njoku",
-      "jersey": "83",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 55.9,
-      "madden27Rating": 77,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 61,
-      "pffPositionTotal": 68,
-      "pffPositionLabel": "TE",
-      "pffTied": false
-    },
-    {
-      "position": "ILB",
-      "player": "Denzel Perryman",
-      "jersey": "6",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 76,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "C",
       "player": "Tyler Biadasz",
       "jersey": "63",
@@ -1140,20 +1112,36 @@
       "pffTied": null
     },
     {
-      "position": null,
-      "player": "KeAndre Lambert-Smith",
-      "jersey": "84",
+      "position": "ILB",
+      "player": "Denzel Perryman",
+      "jersey": "6",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "DFR",
       "pffGrade": null,
-      "madden27Rating": 70,
+      "madden27Rating": 76,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "TE",
+      "player": "David Njoku",
+      "jersey": "83",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 55.9,
+      "madden27Rating": 77,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 61,
+      "pffPositionTotal": 68,
+      "pffPositionLabel": "TE",
+      "pffTied": false
     }
   ]
 }

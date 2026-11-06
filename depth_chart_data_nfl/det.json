@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-03T19:54:48.521551+00:00",
-  "ourladsUpdatedAt": "2026-11-03T19:54:48.521551+00:00",
+  "generatedAt": "2026-11-06T19:54:24.798493+00:00",
+  "ourladsUpdatedAt": "2026-11-06T19:54:24.798493+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.253354+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Detroit Lions",
@@ -633,19 +633,15 @@
     },
     {
       "position": "MLB",
-      "player": "Jimmy Rolder",
-      "jersey": "41",
-      "code": "26/4",
-      "isAcquired": false,
+      "player": "Joe Bachie",
+      "jersey": "35",
+      "code": "U/Ten",
+      "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 69,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "MLB",
@@ -657,7 +653,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LCB",
@@ -706,22 +706,6 @@
       "pffPositionTotal": 107,
       "pffPositionLabel": "S",
       "pffTied": true
-    },
-    {
-      "position": "SS",
-      "player": "Bishop Fitzgerald",
-      "jersey": "34",
-      "code": "P/Pit",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 62,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     },
     {
       "position": "FS",
@@ -957,6 +941,22 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": 71,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "LB",
+      "player": "Jimmy Rolder",
+      "jersey": "41",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": 69,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,

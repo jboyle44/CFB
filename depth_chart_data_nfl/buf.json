@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-03T19:54:30.465440+00:00",
-  "ourladsUpdatedAt": "2026-11-03T19:54:30.465440+00:00",
+  "generatedAt": "2026-11-06T19:54:06.936392+00:00",
+  "ourladsUpdatedAt": "2026-11-06T19:54:06.936392+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.240940+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Buffalo Bills",
@@ -697,22 +697,6 @@
     },
     {
       "position": "SS",
-      "player": "Sam Franklin Jr.",
-      "jersey": "28",
-      "code": "SF25",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 67.7,
-      "madden27Rating": 68,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "S",
-      "pffTied": false
-    },
-    {
-      "position": "SS",
       "player": "Jalon Kilgore",
       "jersey": "29",
       "code": "26/5",
@@ -729,22 +713,6 @@
     },
     {
       "position": "FS",
-      "player": "C.J. Gardner-Johnson",
-      "jersey": "22",
-      "code": "U/Chi",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 51.6,
-      "madden27Rating": 75,
-      "madden27Dev": "Star",
-      "pffPositionRank": 93,
-      "pffPositionTotal": 107,
-      "pffPositionLabel": "S",
-      "pffTied": false
-    },
-    {
-      "position": "FS",
       "player": "Damar Hamlin",
       "jersey": "3",
       "code": "21/6",
@@ -753,6 +721,22 @@
       "reserveStatus": null,
       "pffGrade": 42.8,
       "madden27Rating": 73,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "S",
+      "pffTied": false
+    },
+    {
+      "position": "FS",
+      "player": "Sam Franklin Jr.",
+      "jersey": "28",
+      "code": "SF25",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 67.7,
+      "madden27Rating": 68,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -817,7 +801,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "PT",
@@ -996,22 +984,6 @@
       "pffTied": null
     },
     {
-      "position": "S",
-      "player": "Jordan Hancock",
-      "jersey": "37",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 70.2,
-      "madden27Rating": 70,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "S",
-      "pffTied": false
-    },
-    {
       "position": "DT",
       "player": "Zane Durant",
       "jersey": "92",
@@ -1058,6 +1030,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "S",
+      "player": "Jordan Hancock",
+      "jersey": "37",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 70.2,
+      "madden27Rating": 70,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "S",
+      "pffTied": false
     }
   ]
 }

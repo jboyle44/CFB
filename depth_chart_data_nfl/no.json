@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-03T19:55:13.966249+00:00",
-  "ourladsUpdatedAt": "2026-11-03T19:55:13.966249+00:00",
+  "generatedAt": "2026-11-06T19:54:50.515418+00:00",
+  "ourladsUpdatedAt": "2026-11-06T19:54:50.515418+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.272249+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New Orleans Saints",
@@ -358,6 +358,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "RB",
+      "player": "Audric Estim\u00e9",
+      "jersey": "30",
+      "code": "W/Cle",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "DE",
@@ -824,22 +836,6 @@
       "pffTied": false
     },
     {
-      "position": "PK",
-      "player": "Daniel Carlson",
-      "jersey": "10",
-      "code": "U/LV",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 76.1,
-      "madden27Rating": 77,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 21,
-      "pffPositionTotal": 42,
-      "pffPositionLabel": "K",
-      "pffTied": true
-    },
-    {
       "position": "LS",
       "player": "Zach Wood",
       "jersey": "49",
@@ -870,22 +866,6 @@
       "pffPositionTotal": 36,
       "pffPositionLabel": "P",
       "pffTied": false
-    },
-    {
-      "position": "KO",
-      "player": "Daniel Carlson",
-      "jersey": "10",
-      "code": "U/LV",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 76.1,
-      "madden27Rating": 77,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 21,
-      "pffPositionTotal": 42,
-      "pffPositionLabel": "K",
-      "pffTied": true
     },
     {
       "position": "PR",
@@ -946,38 +926,6 @@
       "pffGrade": null,
       "madden27Rating": 70,
       "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "OT",
-      "player": "Kelvin Banks Jr.",
-      "jersey": "71",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 73.5,
-      "madden27Rating": 78,
-      "madden27Dev": "Star",
-      "pffPositionRank": 31,
-      "pffPositionTotal": 95,
-      "pffPositionLabel": "T",
-      "pffTied": false
-    },
-    {
-      "position": "WR",
-      "player": "Jordyn Tyson",
-      "jersey": "0",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 76,
-      "madden27Dev": "Star",
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,
@@ -1110,6 +1058,38 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "WR",
+      "player": "Jordyn Tyson",
+      "jersey": "0",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": null,
+      "madden27Rating": 76,
+      "madden27Dev": "Star",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "OT",
+      "player": "Kelvin Banks Jr.",
+      "jersey": "71",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 73.5,
+      "madden27Rating": 78,
+      "madden27Dev": "Star",
+      "pffPositionRank": 31,
+      "pffPositionTotal": 95,
+      "pffPositionLabel": "T",
+      "pffTied": false
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-03T19:55:17.869218+00:00",
-  "ourladsUpdatedAt": "2026-11-03T19:55:17.869218+00:00",
+  "generatedAt": "2026-11-06T19:54:54.437144+00:00",
+  "ourladsUpdatedAt": "2026-11-06T19:54:54.437144+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.235743+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Arizona Cardinals",
@@ -57,22 +57,6 @@
     },
     {
       "position": "SWR",
-      "player": "Kendrick Bourne",
-      "jersey": "17",
-      "code": "U/SF",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 63.8,
-      "madden27Rating": 75,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 76,
-      "pffPositionTotal": 143,
-      "pffPositionLabel": "WR",
-      "pffTied": false
-    },
-    {
-      "position": "SWR",
       "player": "Devin Duvernay",
       "jersey": "81",
       "code": "U/Chi",
@@ -86,6 +70,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "SWR",
+      "player": "Harrison Wallace III",
+      "jersey": "83",
+      "code": "CF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LT",
@@ -326,22 +322,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "QB",
-      "player": "Jacoby Brissett",
-      "jersey": "7",
-      "code": "U/NE",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 69.1,
-      "madden27Rating": 74,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 24,
-      "pffPositionTotal": 45,
-      "pffPositionLabel": "QB",
-      "pffTied": false
     },
     {
       "position": "RB",
@@ -952,22 +932,6 @@
       "pffTied": null
     },
     {
-      "position": "OG",
-      "player": "Isaiah Adams",
-      "jersey": "74",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 69,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "TE",
       "player": "Hunter Long",
       "jersey": "89",
@@ -1029,6 +993,22 @@
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "DI",
+      "pffTied": false
+    },
+    {
+      "position": "WR",
+      "player": "Kendrick Bourne",
+      "jersey": "17",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 63.8,
+      "madden27Rating": 75,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 76,
+      "pffPositionTotal": 143,
+      "pffPositionLabel": "WR",
       "pffTied": false
     },
     {
@@ -1129,6 +1109,18 @@
     },
     {
       "position": "TE",
+      "player": "Kenny Yeboah",
+      "jersey": "45",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "PS/IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "TE",
       "player": "Tip Reiman",
       "jersey": "87",
       "code": "",
@@ -1142,6 +1134,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "TE",
       "pffTied": false
+    },
+    {
+      "position": "OG",
+      "player": "Isaiah Adams",
+      "jersey": "74",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": null,
+      "madden27Rating": 69,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     }
   ]
 }

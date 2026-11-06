@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-03T19:54:36.537250+00:00",
-  "ourladsUpdatedAt": "2026-11-03T19:54:36.537250+00:00",
+  "generatedAt": "2026-11-06T19:54:12.964617+00:00",
+  "ourladsUpdatedAt": "2026-11-06T19:54:12.964617+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.275446+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Jets",
@@ -121,19 +121,15 @@
     },
     {
       "position": "LT",
-      "player": "Max Mitchell",
-      "jersey": "61",
-      "code": "22/4",
-      "isAcquired": false,
+      "player": "Blake Freeland",
+      "jersey": "76",
+      "code": "P/Cin",
+      "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 69.6,
-      "madden27Rating": 66,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "T",
-      "pffTied": false
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LG",
@@ -481,7 +477,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "DT",
@@ -964,6 +964,22 @@
       "pffTied": null
     },
     {
+      "position": "OT",
+      "player": "Max Mitchell",
+      "jersey": "61",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 69.6,
+      "madden27Rating": 66,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "T",
+      "pffTied": false
+    },
+    {
       "position": "DT",
       "player": "T'Vondre Sweat",
       "jersey": "99",
@@ -1060,22 +1076,6 @@
       "pffTied": null
     },
     {
-      "position": "S",
-      "player": "Vj Payne",
-      "jersey": "34",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 65,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "OLB",
       "player": "Braiden McGregor",
       "jersey": "55",
@@ -1124,22 +1124,6 @@
       "pffTied": null
     },
     {
-      "position": "CB",
-      "player": "Tre Brown",
-      "jersey": "30",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 71,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "OLB",
       "player": "Tyler Baron",
       "jersey": "94",
@@ -1149,6 +1133,22 @@
       "reserveStatus": "PUP",
       "pffGrade": null,
       "madden27Rating": 69,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "S",
+      "player": "Vj Payne",
+      "jersey": "34",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": null,
+      "madden27Rating": 65,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,

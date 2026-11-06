@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-03T19:55:15.922459+00:00",
-  "ourladsUpdatedAt": "2026-11-03T19:55:15.922459+00:00",
+  "generatedAt": "2026-11-06T19:54:52.468871+00:00",
+  "ourladsUpdatedAt": "2026-11-06T19:54:52.468871+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.283395+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Tampa Bay Buccaneers",
@@ -217,19 +217,15 @@
     },
     {
       "position": "RG",
-      "player": "Luke Haggard",
-      "jersey": "72",
-      "code": "CF23",
-      "isAcquired": false,
+      "player": "Trevor Keegan",
+      "jersey": "",
+      "code": "W/Min",
+      "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 53.0,
-      "madden27Rating": 64,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 71,
-      "pffPositionTotal": 87,
-      "pffPositionLabel": "G",
-      "pffTied": true
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RT",
