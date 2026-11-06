@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-03T20:01:19.423679+00:00",
-  "ourladsUpdatedAt": "2026-11-03T20:01:19.423679+00:00",
+  "generatedAt": "2026-11-06T19:48:13.711252+00:00",
+  "ourladsUpdatedAt": "2026-11-06T19:48:13.711252+00:00",
   "cfbdUpdatedAt": "2026-11-03T20:01:19.423679+00:00",
   "cfb27UpdatedAt": "2026-11-04T20:35:43.811668+00:00",
   "draftRankUpdatedAt": "2026-11-03T19:59:18.503617+00:00",
@@ -1107,10 +1107,14 @@
       "hsStateRank": null,
       "pffGrade": null,
       "draftRank": null,
-      "transferLookedUp": null,
-      "recruitLookedUp": true,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Dev": null,
+      "transferLookedUp": null,
+      "recruitLookedUp": true
     },
     {
       "position": "RB",
@@ -2399,10 +2403,14 @@
       "hsStateRank": null,
       "pffGrade": null,
       "draftRank": null,
-      "transferLookedUp": null,
-      "recruitLookedUp": true,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
       "cfb27Rating": null,
-      "cfb27Dev": null
+      "cfb27Dev": null,
+      "transferLookedUp": null,
+      "recruitLookedUp": true
     },
     {
       "position": "RES",
