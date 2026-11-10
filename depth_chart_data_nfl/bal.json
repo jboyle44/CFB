@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-06T19:54:14.968397+00:00",
-  "ourladsUpdatedAt": "2026-11-06T19:54:14.968397+00:00",
+  "generatedAt": "2026-11-10T20:07:35.255019+00:00",
+  "ourladsUpdatedAt": "2026-11-10T20:07:35.255019+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.239139+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Baltimore Ravens",
@@ -314,14 +314,18 @@
     {
       "position": "QB",
       "player": "Jacoby Brissett",
-      "jersey": "",
+      "jersey": "11",
       "code": "T/Arz",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "QB",
@@ -338,18 +342,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "QB",
-      "player": "Austin Reed",
-      "jersey": "16",
-      "code": "SF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
     },
     {
       "position": "QB",

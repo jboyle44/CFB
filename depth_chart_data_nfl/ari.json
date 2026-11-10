@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-06T19:54:54.437144+00:00",
-  "ourladsUpdatedAt": "2026-11-06T19:54:54.437144+00:00",
+  "generatedAt": "2026-11-10T20:08:14.558601+00:00",
+  "ourladsUpdatedAt": "2026-11-10T20:08:14.558601+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.235743+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Arizona Cardinals",
@@ -24,7 +24,7 @@
       "pffTied": null
     },
     {
-      "position": "LWR",
+      "position": "RWR",
       "player": "Reggie Virgil",
       "jersey": "82",
       "code": "26/5",
@@ -34,22 +34,6 @@
       "pffGrade": null,
       "madden27Rating": 69,
       "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "RWR",
-      "player": "Michael Wilson",
-      "jersey": "14",
-      "code": "23/3",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 82,
-      "madden27Dev": "Star",
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,
@@ -81,7 +65,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LT",
@@ -132,6 +120,22 @@
       "pffTied": false
     },
     {
+      "position": "LG",
+      "player": "Hayden Conner",
+      "jersey": "58",
+      "code": "25/6",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 65.8,
+      "madden27Rating": 65,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "G",
+      "pffTied": false
+    },
+    {
       "position": "C",
       "player": "Hjalte Froholdt",
       "jersey": "72",
@@ -165,6 +169,22 @@
     },
     {
       "position": "RG",
+      "player": "Isaiah Adams",
+      "jersey": "74",
+      "code": "24/3",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 69,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "RG",
       "player": "Jon Gaines II",
       "jersey": "71",
       "code": "23/4",
@@ -176,22 +196,6 @@
       "madden27Dev": "Normal",
       "pffPositionRank": 44,
       "pffPositionTotal": 87,
-      "pffPositionLabel": "G",
-      "pffTied": false
-    },
-    {
-      "position": "RG",
-      "player": "Hayden Conner",
-      "jersey": "58",
-      "code": "25/6",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 65.8,
-      "madden27Rating": 65,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
       "pffPositionLabel": "G",
       "pffTied": false
     },
@@ -322,6 +326,30 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "QB",
+      "player": "Josh Johnson",
+      "jersey": "",
+      "code": "P/Cin",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "QB",
+      "player": "Joey Aguilar",
+      "jersey": "",
+      "code": "P/Jax",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RB",
@@ -741,22 +769,6 @@
     },
     {
       "position": "NB",
-      "player": "Garrett Williams",
-      "jersey": "21",
-      "code": "23/3",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 62.5,
-      "madden27Rating": 77,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 60,
-      "pffPositionTotal": 122,
-      "pffPositionLabel": "CB",
-      "pffTied": false
-    },
-    {
-      "position": "NB",
       "player": "Kalen King",
       "jersey": "35",
       "code": "P/Car",
@@ -770,6 +782,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "NB",
+      "player": "Garrett Williams",
+      "jersey": "21",
+      "code": "23/3",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 62.5,
+      "madden27Rating": 77,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 60,
+      "pffPositionTotal": 122,
+      "pffPositionLabel": "CB",
+      "pffTied": false
     },
     {
       "position": "PT",
@@ -997,6 +1025,22 @@
     },
     {
       "position": "WR",
+      "player": "Michael Wilson",
+      "jersey": "14",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": 82,
+      "madden27Dev": "Star",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "WR",
       "player": "Kendrick Bourne",
       "jersey": "17",
       "code": "",
@@ -1117,7 +1161,11 @@
       "reserveStatus": "PS/IR",
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "TE",
@@ -1134,22 +1182,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "TE",
       "pffTied": false
-    },
-    {
-      "position": "OG",
-      "player": "Isaiah Adams",
-      "jersey": "74",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": null,
-      "madden27Rating": 69,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     }
   ]
 }

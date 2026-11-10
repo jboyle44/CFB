@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-06T19:54:06.936392+00:00",
-  "ourladsUpdatedAt": "2026-11-06T19:54:06.936392+00:00",
+  "generatedAt": "2026-11-10T20:07:27.344741+00:00",
+  "ourladsUpdatedAt": "2026-11-10T20:07:27.344741+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.240940+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Buffalo Bills",
@@ -22,22 +22,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "LWR",
-      "player": "Joshua Palmer",
-      "jersey": "5",
-      "code": "U/LAC",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 58.4,
-      "madden27Rating": 75,
-      "madden27Dev": "Star",
-      "pffPositionRank": 104,
-      "pffPositionTotal": 143,
-      "pffPositionLabel": "WR",
-      "pffTied": true
     },
     {
       "position": "RWR",
@@ -121,19 +105,19 @@
     },
     {
       "position": "LT",
-      "player": "Jude Bowry",
-      "jersey": "74",
-      "code": "26/4",
+      "player": "Tylan Grable",
+      "jersey": "68",
+      "code": "24/6",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 69,
+      "pffGrade": 70.0,
+      "madden27Rating": 63,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "pffPositionLabel": "T",
+      "pffTied": false
     },
     {
       "position": "LG",
@@ -249,19 +233,19 @@
     },
     {
       "position": "RT",
-      "player": "Tylan Grable",
-      "jersey": "68",
-      "code": "24/6",
+      "player": "Jude Bowry",
+      "jersey": "74",
+      "code": "26/4",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 70.0,
-      "madden27Rating": 63,
+      "pffGrade": null,
+      "madden27Rating": 69,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
-      "pffPositionLabel": "T",
-      "pffTied": false
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "TE",
@@ -982,6 +966,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "WR",
+      "player": "Joshua Palmer",
+      "jersey": "5",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 58.4,
+      "madden27Rating": 75,
+      "madden27Dev": "Star",
+      "pffPositionRank": 104,
+      "pffPositionTotal": 143,
+      "pffPositionLabel": "WR",
+      "pffTied": true
     },
     {
       "position": "DT",

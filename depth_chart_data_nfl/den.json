@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-06T19:54:38.643604+00:00",
-  "ourladsUpdatedAt": "2026-11-06T19:54:38.643604+00:00",
+  "generatedAt": "2026-11-10T20:07:58.837256+00:00",
+  "ourladsUpdatedAt": "2026-11-10T20:07:58.837256+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.251801+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Denver Broncos",
@@ -56,7 +56,7 @@
       "pffTied": false
     },
     {
-      "position": "SWR",
+      "position": "RWR",
       "player": "Troy Franklin",
       "jersey": "11",
       "code": "24/4",
@@ -70,6 +70,22 @@
       "pffPositionTotal": 143,
       "pffPositionLabel": "WR",
       "pffTied": false
+    },
+    {
+      "position": "SWR",
+      "player": "Pat Bryant",
+      "jersey": "13",
+      "code": "25/3",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 60.9,
+      "madden27Rating": 73,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 94,
+      "pffPositionTotal": 143,
+      "pffPositionLabel": "WR",
+      "pffTied": true
     },
     {
       "position": "SWR",
@@ -424,22 +440,6 @@
       "pffTied": false
     },
     {
-      "position": "LDE",
-      "player": "Tyler Onyedim",
-      "jersey": "98",
-      "code": "26/3",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 73,
-      "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "NT",
       "player": "D.J. Jones",
       "jersey": "93",
@@ -457,19 +457,19 @@
     },
     {
       "position": "NT",
-      "player": "Eyioma Uwazurike",
-      "jersey": "96",
-      "code": "22/4",
+      "player": "Tyler Onyedim",
+      "jersey": "98",
+      "code": "26/3",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 58.7,
-      "madden27Rating": 69,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 63,
-      "pffPositionTotal": 146,
-      "pffPositionLabel": "DI",
-      "pffTied": true
+      "pffGrade": null,
+      "madden27Rating": 73,
+      "madden27Dev": "Star",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RDE",
@@ -696,22 +696,6 @@
       "pffTied": false
     },
     {
-      "position": "SS",
-      "player": "Jl Skinner",
-      "jersey": "34",
-      "code": "23/6",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 42.1,
-      "madden27Rating": 66,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "S",
-      "pffTied": false
-    },
-    {
       "position": "FS",
       "player": "Brandon Jones",
       "jersey": "22",
@@ -729,19 +713,19 @@
     },
     {
       "position": "FS",
-      "player": "Taylor Rapp",
-      "jersey": "30",
-      "code": "CC/Buf",
-      "isAcquired": true,
+      "player": "Jl Skinner",
+      "jersey": "34",
+      "code": "23/6",
+      "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
+      "pffGrade": 42.1,
+      "madden27Rating": 66,
+      "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "pffPositionLabel": "S",
+      "pffTied": false
     },
     {
       "position": "FS",
@@ -806,6 +790,18 @@
       "pffPositionTotal": 122,
       "pffPositionLabel": "CB",
       "pffTied": false
+    },
+    {
+      "position": "NB",
+      "player": "Sean Fresch Jr.",
+      "jersey": "37",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "PT",
@@ -952,6 +948,22 @@
       "pffTied": null
     },
     {
+      "position": "DT",
+      "player": "Eyioma Uwazurike",
+      "jersey": "96",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 58.7,
+      "madden27Rating": 69,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 63,
+      "pffPositionTotal": 146,
+      "pffPositionLabel": "DI",
+      "pffTied": true
+    },
+    {
       "position": "RB",
       "player": "Rj Harvey",
       "jersey": "12",
@@ -1094,22 +1106,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "WR",
-      "player": "Pat Bryant",
-      "jersey": "13",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 60.9,
-      "madden27Rating": 73,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 94,
-      "pffPositionTotal": 143,
-      "pffPositionLabel": "WR",
-      "pffTied": true
     }
   ]
 }

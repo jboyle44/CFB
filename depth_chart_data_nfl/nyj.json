@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-06T19:54:12.964617+00:00",
-  "ourladsUpdatedAt": "2026-11-06T19:54:12.964617+00:00",
+  "generatedAt": "2026-11-10T20:07:33.270410+00:00",
+  "ourladsUpdatedAt": "2026-11-10T20:07:33.270410+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.275446+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Jets",
@@ -129,7 +129,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LG",
@@ -612,6 +616,18 @@
       "pffTied": null
     },
     {
+      "position": "MLB",
+      "player": "Troy Reeder",
+      "jersey": "50",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "ROLB",
       "player": "Kingsley Enagbare",
       "jersey": "52",
@@ -722,22 +738,6 @@
       "pffPositionTotal": 107,
       "pffPositionLabel": "S",
       "pffTied": false
-    },
-    {
-      "position": "FS",
-      "player": "Andre Cisco",
-      "jersey": "8",
-      "code": "U/Jax",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 61.3,
-      "madden27Rating": 77,
-      "madden27Dev": "Star",
-      "pffPositionRank": 66,
-      "pffPositionTotal": 107,
-      "pffPositionLabel": "S",
-      "pffTied": true
     },
     {
       "position": "RCB",

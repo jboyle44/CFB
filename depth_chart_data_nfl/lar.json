@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-06T19:54:56.397771+00:00",
-  "ourladsUpdatedAt": "2026-11-06T19:54:56.397771+00:00",
+  "generatedAt": "2026-11-10T20:08:16.542122+00:00",
+  "ourladsUpdatedAt": "2026-11-10T20:08:16.542122+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.266094+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Los Angeles Rams",
@@ -393,6 +393,22 @@
     },
     {
       "position": "RB",
+      "player": "Ronnie Rivers",
+      "jersey": "20",
+      "code": "SF22",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 66,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "RB",
       "player": "Dean Connors",
       "jersey": "33",
       "code": "CF26",
@@ -520,6 +536,22 @@
       "pffTied": null
     },
     {
+      "position": "LOLB",
+      "player": "Desjuan Johnson",
+      "jersey": "94",
+      "code": "23/7",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 71.2,
+      "madden27Rating": 65,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "ED",
+      "pffTied": false
+    },
+    {
       "position": "LILB",
       "player": "Nate Landman",
       "jersey": "53",
@@ -585,6 +617,22 @@
     },
     {
       "position": "ROLB",
+      "player": "Myles Garrett",
+      "jersey": "95",
+      "code": "T/Cle",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 92.7,
+      "madden27Rating": 99,
+      "madden27Dev": "X-Factor",
+      "pffPositionRank": 1,
+      "pffPositionTotal": 129,
+      "pffPositionLabel": "ED",
+      "pffTied": false
+    },
+    {
+      "position": "ROLB",
       "player": "Josaiah Stewart",
       "jersey": "10",
       "code": "25/3",
@@ -601,22 +649,6 @@
     },
     {
       "position": "ROLB",
-      "player": "Desjuan Johnson",
-      "jersey": "94",
-      "code": "23/7",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 71.2,
-      "madden27Rating": 65,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "ED",
-      "pffTied": false
-    },
-    {
-      "position": "ROLB",
       "player": "Darryl Peterson III",
       "jersey": "59",
       "code": "CF26",
@@ -630,22 +662,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "LCB",
-      "player": "Jaylen Watson",
-      "jersey": "35",
-      "code": "U/KC",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 74.1,
-      "madden27Rating": 81,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 17,
-      "pffPositionTotal": 122,
-      "pffPositionLabel": "CB",
-      "pffTied": false
     },
     {
       "position": "LCB",
@@ -760,6 +776,18 @@
       "pffTied": false
     },
     {
+      "position": "RCB",
+      "player": "Cam Lampkin",
+      "jersey": "21",
+      "code": "CF24",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "NB",
       "player": "Josh Wallace",
       "jersey": "30",
@@ -817,7 +845,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LS",
@@ -861,7 +893,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "KO",
@@ -976,6 +1012,22 @@
       "pffTied": null
     },
     {
+      "position": "CB",
+      "player": "Jaylen Watson",
+      "jersey": "35",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 74.1,
+      "madden27Rating": 81,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 17,
+      "pffPositionTotal": 122,
+      "pffPositionLabel": "CB",
+      "pffTied": false
+    },
+    {
       "position": "DT",
       "player": "Poona Ford",
       "jersey": "97",
@@ -1056,22 +1108,6 @@
       "pffTied": null
     },
     {
-      "position": "OLB",
-      "player": "Myles Garrett",
-      "jersey": "95",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 92.7,
-      "madden27Rating": 99,
-      "madden27Dev": "X-Factor",
-      "pffPositionRank": 1,
-      "pffPositionTotal": 129,
-      "pffPositionLabel": "ED",
-      "pffTied": false
-    },
-    {
       "position": "TE",
       "player": "Terrance Ferguson",
       "jersey": "18",
@@ -1081,22 +1117,6 @@
       "reserveStatus": "DFR",
       "pffGrade": null,
       "madden27Rating": 70,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "RB",
-      "player": "Ronnie Rivers",
-      "jersey": "20",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": null,
-      "madden27Rating": 66,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-06T19:54:04.956966+00:00",
-  "ourladsUpdatedAt": "2026-11-06T19:54:04.956966+00:00",
+  "generatedAt": "2026-11-10T20:07:25.372146+00:00",
+  "ourladsUpdatedAt": "2026-11-10T20:07:25.372146+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.286410+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Washington Commanders",
@@ -24,22 +24,6 @@
       "pffTied": null
     },
     {
-      "position": "LWR",
-      "player": "Van Jefferson",
-      "jersey": "12",
-      "code": "U/Ten",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 73,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "RWR",
       "player": "Treylon Burks",
       "jersey": "13",
@@ -57,9 +41,9 @@
     },
     {
       "position": "RWR",
-      "player": "Dyami Brown",
-      "jersey": "6",
-      "code": "U/Jax",
+      "player": "Van Jefferson",
+      "jersey": "12",
+      "code": "U/Ten",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
@@ -401,7 +385,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LDE",
@@ -437,6 +425,22 @@
     },
     {
       "position": "NT",
+      "player": "Tim Settle",
+      "jersey": "97",
+      "code": "U/Hou",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 71.5,
+      "madden27Rating": 72,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 28,
+      "pffPositionTotal": 146,
+      "pffPositionLabel": "DI",
+      "pffTied": false
+    },
+    {
+      "position": "NT",
       "player": "Shy Tuttle",
       "jersey": "96",
       "code": "W/Ten",
@@ -452,7 +456,23 @@
       "pffTied": false
     },
     {
-      "position": "NT",
+      "position": "RDE",
+      "player": "Jer'Zhan Newton",
+      "jersey": "95",
+      "code": "24/2",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 47.5,
+      "madden27Rating": 76,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 114,
+      "pffPositionTotal": 146,
+      "pffPositionLabel": "DI",
+      "pffTied": false
+    },
+    {
+      "position": "RDE",
       "player": "Ricky Barber",
       "jersey": "50",
       "code": "CF25",
@@ -461,23 +481,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
-    },
-    {
-      "position": "RDE",
-      "player": "Tim Settle",
-      "jersey": "97",
-      "code": "U/Hou",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 71.5,
-      "madden27Rating": 72,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 28,
-      "pffPositionTotal": 146,
-      "pffPositionLabel": "DI",
-      "pffTied": false
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LOLB",
@@ -944,13 +952,13 @@
       "pffTied": null
     },
     {
-      "position": "KR",
+      "position": "WR",
       "player": "Dyami Brown",
       "jersey": "6",
-      "code": "U/Jax",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
       "pffGrade": null,
       "madden27Rating": 73,
       "madden27Dev": "Normal",
@@ -1118,22 +1126,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "DT",
-      "player": "Jer'Zhan Newton",
-      "jersey": "95",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 47.5,
-      "madden27Rating": 76,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 114,
-      "pffPositionTotal": 146,
-      "pffPositionLabel": "DI",
-      "pffTied": false
     }
   ]
 }

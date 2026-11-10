@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-06T19:54:48.535528+00:00",
-  "ourladsUpdatedAt": "2026-11-06T19:54:48.535528+00:00",
+  "generatedAt": "2026-11-10T20:08:08.721740+00:00",
+  "ourladsUpdatedAt": "2026-11-10T20:08:08.721740+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.243392+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Carolina Panthers",
@@ -1016,22 +1016,6 @@
       "pffTied": false
     },
     {
-      "position": "WR",
-      "player": "Xavier Legette",
-      "jersey": "17",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 52.6,
-      "madden27Rating": 74,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 132,
-      "pffPositionTotal": 143,
-      "pffPositionLabel": "WR",
-      "pffTied": false
-    },
-    {
       "position": "CB",
       "player": "Jaycee Horn",
       "jersey": "8",
@@ -1158,6 +1142,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "WR",
+      "player": "Xavier Legette",
+      "jersey": "17",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 52.6,
+      "madden27Rating": 74,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 132,
+      "pffPositionTotal": 143,
+      "pffPositionLabel": "WR",
+      "pffTied": false
     }
   ]
 }

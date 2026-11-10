@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-06T19:54:34.705974+00:00",
-  "ourladsUpdatedAt": "2026-11-06T19:54:34.705974+00:00",
+  "generatedAt": "2026-11-10T20:07:54.933080+00:00",
+  "ourladsUpdatedAt": "2026-11-10T20:07:54.933080+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.259916+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Jacksonville Jaguars",
@@ -441,6 +441,30 @@
     },
     {
       "position": "NT",
+      "player": "Jordan Davis",
+      "jersey": "",
+      "code": "T/Phi",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "NT",
+      "player": "Davon Godchaux",
+      "jersey": "",
+      "code": "T/NO",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "NT",
       "player": "Matt Dickerson",
       "jersey": "93",
       "code": "SF25",
@@ -454,22 +478,6 @@
       "pffPositionTotal": 146,
       "pffPositionLabel": "DI",
       "pffTied": true
-    },
-    {
-      "position": "NT",
-      "player": "Albert Regis",
-      "jersey": "98",
-      "code": "26/3",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 73,
-      "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     },
     {
       "position": "DT",
@@ -502,6 +510,22 @@
       "pffPositionTotal": 146,
       "pffPositionLabel": "DI",
       "pffTied": false
+    },
+    {
+      "position": "DT",
+      "player": "Albert Regis",
+      "jersey": "98",
+      "code": "26/3",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 73,
+      "madden27Dev": "Star",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RDE",
@@ -665,19 +689,15 @@
     },
     {
       "position": "SS",
-      "player": "Antonio Johnson",
-      "jersey": "6",
-      "code": "23/5",
-      "isAcquired": false,
+      "player": "Jessie Bates III",
+      "jersey": "",
+      "code": "T/Atl",
+      "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 87.3,
-      "madden27Rating": 81,
-      "madden27Dev": "Star",
-      "pffPositionRank": 1,
-      "pffPositionTotal": 107,
-      "pffPositionLabel": "S",
-      "pffTied": false
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "SS",
@@ -694,6 +714,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "FS",
+      "player": "Antonio Johnson",
+      "jersey": "6",
+      "code": "23/5",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 87.3,
+      "madden27Rating": 81,
+      "madden27Dev": "Star",
+      "pffPositionRank": 1,
+      "pffPositionTotal": 107,
+      "pffPositionLabel": "S",
+      "pffTied": false
     },
     {
       "position": "FS",
