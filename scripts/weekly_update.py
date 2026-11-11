@@ -53,12 +53,11 @@ def current_season_year():
     return now.year if now.month >= 7 else now.year - 1
 
 
-def fetch_latest_poll(year, keyword):
-    """Generic helper: find the most recent week that has a poll whose name
-    contains `keyword`, and return its rankings."""
-    data = get("/rankings", {"year": year, "seasonType": "regular"})
+def latest_poll(rankings, keyword):
+    """From one /rankings response, return (ranks, week) for the most recent
+    week that has a poll whose name contains `keyword`."""
     weeks = [
-        w for w in data
+        w for w in rankings
         if any(keyword in p.get("poll", "") for p in w.get("polls", []))
     ]
     if not weeks:
@@ -70,15 +69,20 @@ def fetch_latest_poll(year, keyword):
 
 
 def fetch_latest_ranking(year):
-    """Prefer the official CFP committee ranking once it starts releasing
-    each season; fall back to the AP poll before that. Returns
-    (ranks, week, source_label)."""
-    ranks, week = fetch_latest_poll(year, "Playoff Committee")
-    if ranks:
-        return ranks, week, "committee"
-    ranks, week = fetch_latest_poll(year, "AP")
-    if ranks:
-        return ranks, week, "AP"
+    """Use whichever ranking is newest. The AP poll drops Sunday after games
+    and the CFP committee ranking drops Tuesday for the same week, so:
+      - Sunday/Monday (AP week ahead of committee) -> AP poll, giving the
+        BRR read on the new results before the committee weighs in
+      - Tuesday onward (committee caught up)        -> committee ranking
+      - before the committee's first release         -> AP poll
+    One /rankings call covers both polls. Returns (ranks, week, source)."""
+    rankings = get("/rankings", {"year": year, "seasonType": "regular"})
+    c_ranks, c_week = latest_poll(rankings, "Playoff Committee")
+    a_ranks, a_week = latest_poll(rankings, "AP")
+    if c_ranks and (not a_ranks or c_week >= a_week):
+        return c_ranks, c_week, "committee"
+    if a_ranks:
+        return a_ranks, a_week, "AP"
     return None, None, None
 
 
@@ -188,7 +192,8 @@ def main():
     # Skip the write and let the next scheduled run pick up the new poll.
     try:
         with open(HISTORY_FILE) as f:
-            prior = {(h["year"], h["week"]): h for h in json.load(f)}.get((year, week))
+            prior = {(h["year"], h["week"], h.get("rankSource")): h
+                     for h in json.load(f)}.get((year, week, source))
     except FileNotFoundError:
         prior = None
     if prior:
@@ -236,8 +241,11 @@ def main():
     except FileNotFoundError:
         existing_history = []
 
-    history_by_key = {(h["year"], h["week"]): h for h in existing_history}
-    history_by_key[(year, week)] = {
+    # Keyed by source too: the AP (Sunday) and committee (Tuesday) versions
+    # of the same week are separate snapshots, so Tuesday doesn't erase
+    # Sunday's pre-committee BRR.
+    history_by_key = {(h["year"], h["week"], h.get("rankSource")): h for h in existing_history}
+    history_by_key[(year, week, source)] = {
         "year": year,
         "week": week,
         "rankSource": source,
@@ -245,13 +253,13 @@ def main():
         "rows": rows,
     }
     all_history = list(history_by_key.values())
-    all_history.sort(key=lambda h: (h["year"], h["week"]))
+    all_history.sort(key=lambda h: (h["year"], h["week"], h.get("rankSource") == "committee"))
 
     with open(HISTORY_FILE, "w") as f:
         json.dump(all_history, f, separators=(",", ":"))
 
     print(f"Wrote {len(rows)} rows for {year} (week {week}). Total rows in file: {len(existing)}")
-    print(f"Wrote weekly snapshot for {year} week {week}. Total snapshots in history: {len(all_history)}")
+    print(f"Wrote weekly snapshot for {year} week {week} ({source}). Total snapshots in history: {len(all_history)}")
 
 
 if __name__ == "__main__":

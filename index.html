@@ -459,15 +459,20 @@ const searchBox = document.getElementById("searchBox");
 const tbody = document.getElementById("tbody");
 const emptyState = document.getElementById("emptyState");
 
+function snapKey(h){ return `${h.week}|${h.rankSource || 'AP'}`; }
+function findSnapshot(){ return HISTORY.find(h => h.year === state.year && snapKey(h) === state.week); }
+
 function populateWeekOptions(){
   weekSelect.innerHTML = '<option value="latest">Latest</option>';
-  const weeksForYear = HISTORY
+  // One option per snapshot: a week can have an AP (Sunday) and a
+  // committee (Tuesday) version. Newest week first, committee above AP.
+  const snaps = HISTORY
     .filter(h => h.year === state.year)
-    .map(h => h.week)
-    .sort((a,b) => b - a);
-  weeksForYear.forEach(w => {
+    .sort((a,b) => b.week - a.week || (b.rankSource === 'committee') - (a.rankSource === 'committee'));
+  snaps.forEach(h => {
     const opt = document.createElement("option");
-    opt.value = w; opt.textContent = `Week ${w}`;
+    opt.value = snapKey(h);
+    opt.textContent = `Week ${h.week} · ${h.rankSource === 'committee' ? 'Committee' : 'AP'}`;
     weekSelect.appendChild(opt);
   });
   weekSelect.value = "latest";
@@ -498,7 +503,7 @@ function init(){
     render();
   });
   weekSelect.addEventListener("change", () => {
-    state.week = weekSelect.value === "latest" ? "latest" : Number(weekSelect.value);
+    state.week = weekSelect.value;
     render();
   });
   confSelect.addEventListener("change", () => { state.conf = confSelect.value; render(); });
@@ -522,7 +527,7 @@ function getFiltered(){
   if(state.week === "latest"){
     base = DATA.filter(d => d.year === state.year);
   } else {
-    const snapshot = HISTORY.find(h => h.year === state.year && h.week === state.week);
+    const snapshot = findSnapshot();
     base = snapshot ? snapshot.rows : [];
   }
   return base.filter(d =>
@@ -536,11 +541,11 @@ function render(){
 
   const statusText = document.getElementById('statusText');
   if(state.week !== "latest" && statusText){
-    const snapshot = HISTORY.find(h => h.year === state.year && h.week === state.week);
+    const snapshot = findSnapshot();
     const capturedTs = snapshot ? fmtTimestamp(snapshot.capturedAt) : null;
     const sourceLabel = snapshot && snapshot.rankSource === 'committee' ? 'CFP Committee Rankings'
                        : snapshot && snapshot.rankSource === 'AP' ? 'AP Poll' : null;
-    const parts = [`Viewing archived Week ${state.week}, ${state.year} snapshot`];
+    const parts = [`Viewing archived Week ${snapshot ? snapshot.week : ''}, ${state.year} snapshot`];
     if(capturedTs) parts.push(`captured ${capturedTs}`);
     if(sourceLabel) parts.push(`using ${sourceLabel}`);
     statusText.textContent = parts.join(' · ');
