@@ -19,6 +19,18 @@ jobs:
           use-public-rspm: true
       - name: Install R packages
         run: Rscript -e 'install.packages(c("data.table","jsonlite","R.utils"), repos="https://packagemanager.posit.co/cran/__linux__/noble/latest")'
+      - name: Diagnose releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p cbb/raw
+          {
+            echo "== release list"; gh release list -R john-b-edwards/cbbd-data -L 50 || true
+            echo "== lines assets"; gh release view lines -R john-b-edwards/cbbd-data --json assets -q '.assets[] | .name + " " + (.size|tostring)' || true
+            echo "== team_box assets"; gh release view team_box_scores -R john-b-edwards/cbbd-data --json assets -q '.assets[] | .name + " " + (.size|tostring)' || true
+            echo "== games assets"; gh release view games -R john-b-edwards/cbbd-data --json assets -q '.assets[] | .name + " " + (.size|tostring)' || true
+            echo "== curl head"; curl -sIL https://github.com/john-b-edwards/cbbd-data/releases/download/lines/lines_2025.rds | grep -iE "^HTTP|^location|content-length" || true
+          } > cbb/raw/debug.txt 2>&1
       - name: Fetch history
         run: Rscript cbb/scripts/fetch_history.R
       - name: Commit

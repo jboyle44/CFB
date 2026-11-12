@@ -29,8 +29,7 @@ for (r in resources) {
   for (s in seasons) {
     url <- sprintf("%s/%s/%s_%d.rds", base, r, r, s)
     tmp <- tempfile(fileext = ".rds")
-    ok <- tryCatch({ download.file(url, tmp, mode = "wb", quiet = TRUE); TRUE },
-                   error = function(e) FALSE, warning = function(w) FALSE)
+    ok <- system2("curl", c("-sSfL", "--retry", "2", "-o", tmp, url)) == 0 && file.size(tmp) > 100
     if (!ok) { say(sprintf("MISS %s %d", r, s)); next }
     df <- tryCatch(readRDS(tmp), error = function(e) NULL)
     if (is.null(df)) { say(sprintf("BADREAD %s %d", r, s)); next }
