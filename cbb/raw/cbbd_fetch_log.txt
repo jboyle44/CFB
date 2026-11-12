@@ -11,3 +11,156 @@ call 9: /lines {'season': 2025, 'startDateRange': '2025-02-01', 'endDateRange': 
 call 10: /lines {'season': 2025, 'startDateRange': '2025-03-01', 'endDateRange': '2025-04-14'} -> 802 rows
 OK lines 2025: 6120 rows
 total calls this run: 10
+call 1: /games/teams {'season': 2014, 'startDateRange': '2013-11-01', 'endDateRange': '2013-11-30'} -> 2402 rows
+call 2: /games/teams {'season': 2014, 'startDateRange': '2013-12-01', 'endDateRange': '2013-12-31'} -> 2180 rows
+call 3: /games/teams {'season': 2014, 'startDateRange': '2014-01-01', 'endDateRange': '2014-01-31'} -> 2724 rows
+call 4: /games/teams {'season': 2014, 'startDateRange': '2014-02-01', 'endDateRange': '2014-02-28'} -> 2582 rows
+call 5: /games/teams {'season': 2014, 'startDateRange': '2014-03-01', 'endDateRange': '2014-04-14'} -> 1624 rows
+OK team_box 2014: 11512 rows
+call 6: /lines {'season': 2014, 'startDateRange': '2013-11-01', 'endDateRange': '2013-11-30'} -> 1201 rows
+call 7: /lines {'season': 2014, 'startDateRange': '2013-12-01', 'endDateRange': '2013-12-31'} -> 1091 rows
+call 8: /lines {'season': 2014, 'startDateRange': '2014-01-01', 'endDateRange': '2014-01-31'} -> 1366 rows
+call 9: /lines {'season': 2014, 'startDateRange': '2014-02-01', 'endDateRange': '2014-02-28'} -> 1295 rows
+call 10: /lines {'season': 2014, 'startDateRange': '2014-03-01', 'endDateRange': '2014-04-14'} -> 813 rows
+OK lines 2014: 5766 rows
+call 11: /games/teams {'season': 2015, 'startDateRange': '2014-11-01', 'endDateRange': '2014-11-30'} -> 2120 rows
+call 12: /games/teams {'season': 2015, 'startDateRange': '2014-12-01', 'endDateRange': '2014-12-31'} -> 2388 rows
+call 13: /games/teams {'season': 2015, 'startDateRange': '2015-01-01', 'endDateRange': '2015-01-31'} -> 2794 rows
+call 14: /games/teams {'season': 2015, 'startDateRange': '2015-02-01', 'endDateRange': '2015-02-28'} -> 2474 rows
+call 15: /games/teams {'season': 2015, 'startDateRange': '2015-03-01', 'endDateRange': '2015-04-14'} -> 1426 rows
+OK team_box 2015: 11202 rows
+call 16: /lines {'season': 2015, 'startDateRange': '2014-11-01', 'endDateRange': '2014-11-30'} -> 1060 rows
+call 17: /lines {'season': 2015, 'startDateRange': '2014-12-01', 'endDateRange': '2014-12-31'} -> 1195 rows
+call 18: /lines {'season': 2015, 'startDateRange': '2015-01-01', 'endDateRange': '2015-01-31'} -> 1397 rows
+call 19: /lines {'season': 2015, 'startDateRange': '2015-02-01', 'endDateRange': '2015-02-28'} -> 1237 rows
+call 20: /lines {'season': 2015, 'startDateRange': '2015-03-01', 'endDateRange': '2015-04-14'} -> 713 rows
+OK lines 2015: 5602 rows
+call 21: /games/teams {'season': 2016, 'startDateRange': '2015-11-01', 'endDateRange': '2015-11-30'} -> 2254 rows
+call 22: /games/teams {'season': 2016, 'startDateRange': '2015-12-01', 'endDateRange': '2015-12-31'} -> 2494 rows
+call 23: /games/teams {'season': 2016, 'startDateRange': '2016-01-01', 'endDateRange': '2016-01-31'} -> 2982 rows
+call 24: /games/teams {'season': 2016, 'startDateRange': '2016-02-01', 'endDateRange': '2016-02-29'} -> 2698 rows
+call 25: /games/teams {'season': 2016, 'startDateRange': '2016-03-01', 'endDateRange': '2016-04-14'} -> 1302 rows
+OK team_box 2016: 11730 rows
+call 26: /lines {'season': 2016, 'startDateRange': '2015-11-01', 'endDateRange': '2015-11-30'} -> 1127 rows
+call 27: /lines {'season': 2016, 'startDateRange': '2015-12-01', 'endDateRange': '2015-12-31'} -> 1247 rows
+call 28: /lines {'season': 2016, 'startDateRange': '2016-01-01', 'endDateRange': '2016-01-31'} -> 1491 rows
+call 29: /lines {'season': 2016, 'startDateRange': '2016-02-01', 'endDateRange': '2016-02-29'} -> 1349 rows
+call 30: /lines {'season': 2016, 'startDateRange': '2016-03-01', 'endDateRange': '2016-04-14'} -> 651 rows
+OK lines 2016: 5865 rows
+call 31: /games/teams {'season': 2017, 'startDateRange': '2016-11-01', 'endDateRange': '2016-11-30'} -> 2352 rows
+call 32: /games/teams {'season': 2017, 'startDateRange': '2016-12-01', 'endDateRange': '2016-12-31'} -> 2546 rows
+call 33: /games/teams {'season': 2017, 'startDateRange': '2017-01-01', 'endDateRange': '2017-01-31'} -> 2812 rows
+call 34: /games/teams {'season': 2017, 'startDateRange': '2017-02-01', 'endDateRange': '2017-02-28'} -> 2636 rows
+call 35: /games/teams {'season': 2017, 'startDateRange': '2017-03-01', 'endDateRange': '2017-04-14'} -> 1216 rows
+OK team_box 2017: 11562 rows
+call 36: /lines {'season': 2017, 'startDateRange': '2016-11-01', 'endDateRange': '2016-11-30'} -> 1183 rows
+call 37: /lines {'season': 2017, 'startDateRange': '2016-12-01', 'endDateRange': '2016-12-31'} -> 1279 rows
+call 38: /lines {'season': 2017, 'startDateRange': '2017-01-01', 'endDateRange': '2017-01-31'} -> 1414 rows
+call 39: /lines {'season': 2017, 'startDateRange': '2017-02-01', 'endDateRange': '2017-02-28'} -> 1325 rows
+call 40: /lines {'season': 2017, 'startDateRange': '2017-03-01', 'endDateRange': '2017-04-14'} -> 613 rows
+OK lines 2017: 5814 rows
+call 41: /games/teams {'season': 2018, 'startDateRange': '2017-11-01', 'endDateRange': '2017-11-30'} -> 2476 rows
+call 42: /games/teams {'season': 2018, 'startDateRange': '2017-12-01', 'endDateRange': '2017-12-31'} -> 2582 rows
+call 43: /games/teams {'season': 2018, 'startDateRange': '2018-01-01', 'endDateRange': '2018-01-31'} -> 2802 rows
+call 44: /games/teams {'season': 2018, 'startDateRange': '2018-02-01', 'endDateRange': '2018-02-28'} -> 2676 rows
+call 45: /games/teams {'season': 2018, 'startDateRange': '2018-03-01', 'endDateRange': '2018-04-14'} -> 1176 rows
+OK team_box 2018: 11712 rows
+call 46: /lines {'season': 2018, 'startDateRange': '2017-11-01', 'endDateRange': '2017-11-30'} -> 1238 rows
+call 47: /lines {'season': 2018, 'startDateRange': '2017-12-01', 'endDateRange': '2017-12-31'} -> 1291 rows
+call 48: /lines {'season': 2018, 'startDateRange': '2018-01-01', 'endDateRange': '2018-01-31'} -> 1401 rows
+call 49: /lines {'season': 2018, 'startDateRange': '2018-02-01', 'endDateRange': '2018-02-28'} -> 1338 rows
+call 50: /lines {'season': 2018, 'startDateRange': '2018-03-01', 'endDateRange': '2018-04-14'} -> 588 rows
+OK lines 2018: 5856 rows
+call 51: /games/teams {'season': 2019, 'startDateRange': '2018-11-01', 'endDateRange': '2018-11-30'} -> 2644 rows
+call 52: /games/teams {'season': 2019, 'startDateRange': '2018-12-01', 'endDateRange': '2018-12-31'} -> 2330 rows
+call 53: /games/teams {'season': 2019, 'startDateRange': '2019-01-01', 'endDateRange': '2019-01-31'} -> 2682 rows
+call 54: /games/teams {'season': 2019, 'startDateRange': '2019-02-01', 'endDateRange': '2019-02-28'} -> 2530 rows
+call 55: /games/teams {'season': 2019, 'startDateRange': '2019-03-01', 'endDateRange': '2019-04-14'} -> 1752 rows
+OK team_box 2019: 11938 rows
+call 56: /lines {'season': 2019, 'startDateRange': '2018-11-01', 'endDateRange': '2018-11-30'} -> 1322 rows
+call 57: /lines {'season': 2019, 'startDateRange': '2018-12-01', 'endDateRange': '2018-12-31'} -> 1165 rows
+call 58: /lines {'season': 2019, 'startDateRange': '2019-01-01', 'endDateRange': '2019-01-31'} -> 1341 rows
+call 59: /lines {'season': 2019, 'startDateRange': '2019-02-01', 'endDateRange': '2019-02-28'} -> 1265 rows
+call 60: /lines {'season': 2019, 'startDateRange': '2019-03-01', 'endDateRange': '2019-04-14'} -> 876 rows
+OK lines 2019: 5969 rows
+call 61: /games/teams {'season': 2020, 'startDateRange': '2019-11-01', 'endDateRange': '2019-11-30'} -> 2676 rows
+call 62: /games/teams {'season': 2020, 'startDateRange': '2019-12-01', 'endDateRange': '2019-12-31'} -> 2152 rows
+call 63: /games/teams {'season': 2020, 'startDateRange': '2020-01-01', 'endDateRange': '2020-01-31'} -> 2752 rows
+call 64: /games/teams {'season': 2020, 'startDateRange': '2020-02-01', 'endDateRange': '2020-02-29'} -> 2650 rows
+call 65: /games/teams {'season': 2020, 'startDateRange': '2020-03-01', 'endDateRange': '2020-04-14'} -> 1014 rows
+OK team_box 2020: 11244 rows
+call 66: /lines {'season': 2020, 'startDateRange': '2019-11-01', 'endDateRange': '2019-11-30'} -> 1338 rows
+call 67: /lines {'season': 2020, 'startDateRange': '2019-12-01', 'endDateRange': '2019-12-31'} -> 1076 rows
+call 68: /lines {'season': 2020, 'startDateRange': '2020-01-01', 'endDateRange': '2020-01-31'} -> 1376 rows
+call 69: /lines {'season': 2020, 'startDateRange': '2020-02-01', 'endDateRange': '2020-02-29'} -> 1325 rows
+call 70: /lines {'season': 2020, 'startDateRange': '2020-03-01', 'endDateRange': '2020-04-14'} -> 507 rows
+OK lines 2020: 5622 rows
+call 71: /games/teams {'season': 2021, 'startDateRange': '2020-11-01', 'endDateRange': '2020-11-30'} -> 694 rows
+call 72: /games/teams {'season': 2021, 'startDateRange': '2020-12-01', 'endDateRange': '2020-12-31'} -> 2688 rows
+call 73: /games/teams {'season': 2021, 'startDateRange': '2021-01-01', 'endDateRange': '2021-01-31'} -> 3000 rows
+call 74: /games/teams {'season': 2021, 'startDateRange': '2021-01-01', 'endDateRange': '2021-01-16'} -> 1406 rows
+call 75: /games/teams {'season': 2021, 'startDateRange': '2021-01-17', 'endDateRange': '2021-01-31'} -> 1388 rows
+call 76: /games/teams {'season': 2021, 'startDateRange': '2021-02-01', 'endDateRange': '2021-02-28'} -> 2694 rows
+call 77: /games/teams {'season': 2021, 'startDateRange': '2021-03-01', 'endDateRange': '2021-04-14'} -> 1138 rows
+OK team_box 2021: 10008 rows
+call 78: /lines {'season': 2021, 'startDateRange': '2020-11-01', 'endDateRange': '2020-11-30'} -> 347 rows
+call 79: /lines {'season': 2021, 'startDateRange': '2020-12-01', 'endDateRange': '2020-12-31'} -> 1344 rows
+call 80: /lines {'season': 2021, 'startDateRange': '2021-01-01', 'endDateRange': '2021-01-31'} -> 1520 rows
+call 81: /lines {'season': 2021, 'startDateRange': '2021-02-01', 'endDateRange': '2021-02-28'} -> 1347 rows
+call 82: /lines {'season': 2021, 'startDateRange': '2021-03-01', 'endDateRange': '2021-04-14'} -> 569 rows
+OK lines 2021: 5127 rows
+call 83: /games/teams {'season': 2022, 'startDateRange': '2021-11-01', 'endDateRange': '2021-11-30'} -> 2572 rows
+call 84: /games/teams {'season': 2022, 'startDateRange': '2021-12-01', 'endDateRange': '2021-12-31'} -> 2502 rows
+call 85: /games/teams {'season': 2022, 'startDateRange': '2022-01-01', 'endDateRange': '2022-01-31'} -> 3000 rows
+call 86: /games/teams {'season': 2022, 'startDateRange': '2022-01-01', 'endDateRange': '2022-01-16'} -> 1612 rows
+call 87: /games/teams {'season': 2022, 'startDateRange': '2022-01-17', 'endDateRange': '2022-01-31'} -> 1532 rows
+call 88: /games/teams {'season': 2022, 'startDateRange': '2022-02-01', 'endDateRange': '2022-02-28'} -> 2988 rows
+call 89: /games/teams {'season': 2022, 'startDateRange': '2022-03-01', 'endDateRange': '2022-04-14'} -> 1316 rows
+OK team_box 2022: 12522 rows
+call 90: /lines {'season': 2022, 'startDateRange': '2021-11-01', 'endDateRange': '2021-11-30'} -> 1286 rows
+call 91: /lines {'season': 2022, 'startDateRange': '2021-12-01', 'endDateRange': '2021-12-31'} -> 1251 rows
+call 92: /lines {'season': 2022, 'startDateRange': '2022-01-01', 'endDateRange': '2022-01-31'} -> 1610 rows
+call 93: /lines {'season': 2022, 'startDateRange': '2022-02-01', 'endDateRange': '2022-02-28'} -> 1494 rows
+call 94: /lines {'season': 2022, 'startDateRange': '2022-03-01', 'endDateRange': '2022-04-14'} -> 658 rows
+OK lines 2022: 6299 rows
+call 95: /games/teams {'season': 2023, 'startDateRange': '2022-11-01', 'endDateRange': '2022-11-30'} -> 2798 rows
+call 96: /games/teams {'season': 2023, 'startDateRange': '2022-12-01', 'endDateRange': '2022-12-31'} -> 2538 rows
+call 97: /games/teams {'season': 2023, 'startDateRange': '2023-01-01', 'endDateRange': '2023-01-31'} -> 2890 rows
+call 98: /games/teams {'season': 2023, 'startDateRange': '2023-02-01', 'endDateRange': '2023-02-28'} -> 2756 rows
+call 99: /games/teams {'season': 2023, 'startDateRange': '2023-03-01', 'endDateRange': '2023-04-14'} -> 1198 rows
+OK team_box 2023: 12180 rows
+call 100: /lines {'season': 2023, 'startDateRange': '2022-11-01', 'endDateRange': '2022-11-30'} -> 1399 rows
+call 101: /lines {'season': 2023, 'startDateRange': '2022-12-01', 'endDateRange': '2022-12-31'} -> 1269 rows
+call 102: /lines {'season': 2023, 'startDateRange': '2023-01-01', 'endDateRange': '2023-01-31'} -> 1445 rows
+call 103: /lines {'season': 2023, 'startDateRange': '2023-02-01', 'endDateRange': '2023-02-28'} -> 1378 rows
+call 104: /lines {'season': 2023, 'startDateRange': '2023-03-01', 'endDateRange': '2023-04-14'} -> 600 rows
+OK lines 2023: 6091 rows
+call 105: /games/teams {'season': 2024, 'startDateRange': '2023-11-01', 'endDateRange': '2023-11-30'} -> 2700 rows
+call 106: /games/teams {'season': 2024, 'startDateRange': '2023-12-01', 'endDateRange': '2023-12-31'} -> 2412 rows
+call 107: /games/teams {'season': 2024, 'startDateRange': '2024-01-01', 'endDateRange': '2024-01-31'} -> 2700 rows
+call 108: /games/teams {'season': 2024, 'startDateRange': '2024-02-01', 'endDateRange': '2024-02-29'} -> 2722 rows
+call 109: /games/teams {'season': 2024, 'startDateRange': '2024-03-01', 'endDateRange': '2024-04-14'} -> 1708 rows
+OK team_box 2024: 12242 rows
+call 110: /lines {'season': 2024, 'startDateRange': '2023-11-01', 'endDateRange': '2023-11-30'} -> 1350 rows
+call 111: /lines {'season': 2024, 'startDateRange': '2023-12-01', 'endDateRange': '2023-12-31'} -> 1206 rows
+call 112: /lines {'season': 2024, 'startDateRange': '2024-01-01', 'endDateRange': '2024-01-31'} -> 1350 rows
+call 113: /lines {'season': 2024, 'startDateRange': '2024-02-01', 'endDateRange': '2024-02-29'} -> 1361 rows
+call 114: /lines {'season': 2024, 'startDateRange': '2024-03-01', 'endDateRange': '2024-04-14'} -> 854 rows
+OK lines 2024: 6121 rows
+SKIP cbb/raw/team_box_2025.json.gz exists
+SKIP cbb/raw/lines_2025.json.gz exists
+call 115: /games/teams {'season': 2026, 'startDateRange': '2025-11-01', 'endDateRange': '2025-11-30'} -> 3000 rows
+call 116: /games/teams {'season': 2026, 'startDateRange': '2025-11-01', 'endDateRange': '2025-11-15'} -> 1368 rows
+call 117: /games/teams {'season': 2026, 'startDateRange': '2025-11-16', 'endDateRange': '2025-11-30'} -> 1528 rows
+call 118: /games/teams {'season': 2026, 'startDateRange': '2025-12-01', 'endDateRange': '2025-12-31'} -> 2220 rows
+call 119: /games/teams {'season': 2026, 'startDateRange': '2026-01-01', 'endDateRange': '2026-01-31'} -> 2852 rows
+call 120: /games/teams {'season': 2026, 'startDateRange': '2026-02-01', 'endDateRange': '2026-02-28'} -> 2492 rows
+call 121: /games/teams {'season': 2026, 'startDateRange': '2026-03-01', 'endDateRange': '2026-04-14'} -> 1300 rows
+OK team_box 2026: 11760 rows
+call 122: /lines {'season': 2026, 'startDateRange': '2025-11-01', 'endDateRange': '2025-11-30'} -> 1533 rows
+call 123: /lines {'season': 2026, 'startDateRange': '2025-12-01', 'endDateRange': '2025-12-31'} -> 1110 rows
+call 124: /lines {'season': 2026, 'startDateRange': '2026-01-01', 'endDateRange': '2026-01-31'} -> 1426 rows
+call 125: /lines {'season': 2026, 'startDateRange': '2026-02-01', 'endDateRange': '2026-02-28'} -> 1247 rows
+call 126: /lines {'season': 2026, 'startDateRange': '2026-03-01', 'endDateRange': '2026-04-14'} -> 650 rows
+OK lines 2026: 5966 rows
+total calls this run: 126
