@@ -1,0 +1,13 @@
+call 1: /games/teams {'season': 2025, 'startDateRange': '2024-11-01', 'endDateRange': '2024-11-30'} -> 2912 rows
+call 2: /games/teams {'season': 2025, 'startDateRange': '2024-12-01', 'endDateRange': '2024-12-31'} -> 2220 rows
+call 3: /games/teams {'season': 2025, 'startDateRange': '2025-01-01', 'endDateRange': '2025-01-31'} -> 2830 rows
+call 4: /games/teams {'season': 2025, 'startDateRange': '2025-02-01', 'endDateRange': '2025-02-28'} -> 2672 rows
+call 5: /games/teams {'season': 2025, 'startDateRange': '2025-03-01', 'endDateRange': '2025-04-14'} -> 1604 rows
+OK team_box 2025: 12238 rows
+call 6: /lines {'season': 2025, 'startDateRange': '2024-11-01', 'endDateRange': '2024-11-30'} -> 1456 rows
+call 7: /lines {'season': 2025, 'startDateRange': '2024-12-01', 'endDateRange': '2024-12-31'} -> 1110 rows
+call 8: /lines {'season': 2025, 'startDateRange': '2025-01-01', 'endDateRange': '2025-01-31'} -> 1415 rows
+call 9: /lines {'season': 2025, 'startDateRange': '2025-02-01', 'endDateRange': '2025-02-28'} -> 1337 rows
+call 10: /lines {'season': 2025, 'startDateRange': '2025-03-01', 'endDateRange': '2025-04-14'} -> 802 rows
+OK lines 2025: 6120 rows
+total calls this run: 10
