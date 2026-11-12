@@ -2,6 +2,13 @@ name: CBB Fetch History
 
 on:
   workflow_dispatch:
+    inputs:
+      seasons:
+        description: "Season range, e.g. 2014-2026 (CBBD season = spring year)"
+        default: "2014-2026"
+      max_calls:
+        description: "Hard ceiling on CBBD API calls (shared CFBD quota)"
+        default: "250"
 
 concurrency:
   group: repo-writes
@@ -14,29 +21,25 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - uses: r-lib/actions/setup-r@v2
+      - uses: actions/setup-python@v5
         with:
-          use-public-rspm: true
-      - name: Install R packages
-        run: Rscript -e 'install.packages(c("data.table","jsonlite","R.utils"), repos="https://packagemanager.posit.co/cran/__linux__/noble/latest")'
-      - name: Diagnose releases
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          mkdir -p cbb/raw
-          {
-            echo "== release list"; gh release list -R john-b-edwards/cbbd-data -L 50 || true
-            echo "== lines assets"; gh release view lines -R john-b-edwards/cbbd-data --json assets -q '.assets[] | .name + " " + (.size|tostring)' || true
-            echo "== team_box assets"; gh release view team_box_scores -R john-b-edwards/cbbd-data --json assets -q '.assets[] | .name + " " + (.size|tostring)' || true
-            echo "== games assets"; gh release view games -R john-b-edwards/cbbd-data --json assets -q '.assets[] | .name + " " + (.size|tostring)' || true
-            echo "== curl head"; curl -sIL https://github.com/john-b-edwards/cbbd-data/releases/download/lines/lines_2025.rds | grep -iE "^HTTP|^location|content-length" || true
-          } > cbb/raw/debug.txt 2>&1
+          python-version: "3.12"
       - name: Fetch history
-        run: Rscript cbb/scripts/fetch_history.R
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+          SEASONS: ${{ inputs.seasons }}
+          MAX_CALLS: ${{ inputs.max_calls }}
+        run: python cbb/scripts/fetch_cbbd_history.py
+      - name: Record remaining quota
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: |
+          curl -s "https://api.collegefootballdata.com/info" -H "Authorization: Bearer ${CFBD_API_KEY}" > cfbd_usage_result.json
+          echo "Checked at: $(date -u)" >> cfbd_usage_result.json
       - name: Commit
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add cbb/raw
-          git commit -m "CBB: fetch mirrored CBBD history" || echo "no changes"
+          git add cbb/raw cfbd_usage_result.json
+          git commit -m "CBB: backfill CBBD team box + lines" || echo "no changes"
           for i in 1 2 3; do git pull --rebase && git push && break; sleep 10; done
