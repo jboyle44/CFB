@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13T16:34:50.403488Z",
+ "generated": "2026-11-13T16:40:51.035664Z",
  "games": [
   {
    "gameId": 374937,
@@ -17,6 +17,7 @@
    "tier": "strong",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     2,
     2
@@ -239,6 +240,7 @@
    "tier": "lean",
    "tempo_flag": true,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -461,6 +463,7 @@
    "tier": "lean",
    "tempo_flag": true,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -683,6 +686,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     4,
     2
@@ -905,6 +909,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -1127,6 +1132,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -1349,6 +1355,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     4,
     2
@@ -1571,6 +1578,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     1,
     2
@@ -1793,6 +1801,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -2015,6 +2024,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     4,
     3
@@ -2237,6 +2247,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     2,
     2
@@ -2459,6 +2470,7 @@
    "tier": "lean",
    "tempo_flag": true,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -2681,6 +2693,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     2,
     2
@@ -2903,6 +2916,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     1,
     2
@@ -3125,6 +3139,7 @@
    "tier": "lean",
    "tempo_flag": true,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -3347,6 +3362,7 @@
    "tier": "lean",
    "tempo_flag": true,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -3569,6 +3585,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -3791,6 +3808,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -4013,6 +4031,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -4235,6 +4254,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -4457,6 +4477,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -4670,15 +4691,16 @@
    "away": "Ohio",
    "neutral": false,
    "venue": "Mackey Arena",
-   "spread_home": -19.5,
+   "spread_home": -18.5,
    "book": "Draft Kings",
    "proj_spread_home": -14.5,
    "pick": "Purdue",
-   "pick_line": "Purdue -19.5",
-   "edge": 0.19,
+   "pick_line": "Purdue -18.5",
+   "edge": 0.31,
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -4873,7 +4895,7 @@
    "terms": [
     {
      "label": "Underdog / favorite adjustment",
-     "pts": -1.74
+     "pts": -1.61
     },
     {
      "label": "Neutral-site adjustment",
@@ -4901,6 +4923,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -5123,6 +5146,7 @@
    "tier": "lean",
    "tempo_flag": true,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     1,
     3
@@ -5345,6 +5369,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -5567,6 +5592,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -5789,6 +5815,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     2,
     2
@@ -6011,6 +6038,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     1
@@ -6233,6 +6261,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     1
@@ -6455,6 +6484,7 @@
    "tier": "strong",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     4,
     2
@@ -6677,6 +6707,7 @@
    "tier": "play",
    "tempo_flag": true,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -6899,6 +6930,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     1
@@ -7121,6 +7153,7 @@
    "tier": "strong",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -7343,6 +7376,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -7565,6 +7599,7 @@
    "tier": "strong",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     2,
     1
@@ -7778,15 +7813,16 @@
    "away": "Milwaukee",
    "neutral": false,
    "venue": "Schollmaier Arena",
-   "spread_home": -23.5,
+   "spread_home": -22.5,
    "book": "Draft Kings",
    "proj_spread_home": -19.5,
    "pick": "TCU",
-   "pick_line": "TCU -23.5",
-   "edge": 0.29,
+   "pick_line": "TCU -22.5",
+   "edge": 0.41,
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -7981,7 +8017,7 @@
    "terms": [
     {
      "label": "Underdog / favorite adjustment",
-     "pts": -2.22
+     "pts": -2.1
     },
     {
      "label": "Neutral-site adjustment",
@@ -8009,6 +8045,7 @@
    "tier": "play",
    "tempo_flag": true,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -8231,6 +8268,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     2,
     2
@@ -8453,6 +8491,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     1
@@ -8675,6 +8714,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -8897,6 +8937,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -9119,6 +9160,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     2,
     2
@@ -9341,6 +9383,7 @@
    "tier": "play",
    "tempo_flag": true,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -9563,6 +9606,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -9785,6 +9829,7 @@
    "tier": "lean",
    "tempo_flag": true,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -10007,6 +10052,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -10229,6 +10275,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     2
@@ -10451,6 +10498,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -10673,6 +10721,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     2
@@ -10895,6 +10944,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -11117,6 +11167,7 @@
    "tier": "lean",
    "tempo_flag": true,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     4,
     2
@@ -11339,6 +11390,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     2
@@ -11561,6 +11613,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     1,
     3
@@ -11783,6 +11836,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -12005,6 +12059,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "posted",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -12219,7 +12274,7 @@
    "neutral": false,
    "venue": "TU Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -16.0,
    "pick": "Towson",
    "pick_line": "Towson -16.0",
@@ -12227,6 +12282,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     4
@@ -12441,7 +12497,7 @@
    "neutral": false,
    "venue": "Newman Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -6.5,
    "pick": "UNC Greensboro",
    "pick_line": "UNC Greensboro +6.5",
@@ -12449,6 +12505,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -12663,7 +12720,7 @@
    "neutral": false,
    "venue": "James A. Rhodes Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -15.5,
    "pick": "Akron",
    "pick_line": "Akron -15.5",
@@ -12671,6 +12728,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     1
@@ -12885,7 +12943,7 @@
    "neutral": true,
    "venue": "McArthur Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -7.5,
    "pick": "George Mason",
    "pick_line": "George Mason -7.5",
@@ -12893,6 +12951,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -13107,7 +13166,7 @@
    "neutral": false,
    "venue": "Betty Engelstad Sioux Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -3.0,
    "pick": "North Dakota",
    "pick_line": "North Dakota -3.0",
@@ -13115,6 +13174,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -13329,7 +13389,7 @@
    "neutral": false,
    "venue": "The Pit in Memorial Gymnasium",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": 2.0,
    "pick": "Drexel",
    "pick_line": "Drexel -2.0",
@@ -13337,6 +13397,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     4
@@ -13551,7 +13612,7 @@
    "neutral": false,
    "venue": "United Supermarkets Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -22.5,
    "pick": "Texas Tech",
    "pick_line": "Texas Tech -22.5",
@@ -13559,6 +13620,7 @@
    "tier": "lean",
    "tempo_flag": true,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -13773,7 +13835,7 @@
    "neutral": true,
    "venue": "TU Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": 10.5,
    "pick": "Towson",
    "pick_line": "Towson -10.5",
@@ -13781,6 +13843,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     4,
     2
@@ -13995,7 +14058,7 @@
    "neutral": false,
    "venue": "Christl Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": 9.5,
    "pick": "Army",
    "pick_line": "Army +9.5",
@@ -14003,6 +14066,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     2
@@ -14217,7 +14281,7 @@
    "neutral": false,
    "venue": "Moby Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -10.0,
    "pick": "Loyola Chicago",
    "pick_line": "Loyola Chicago +10.0",
@@ -14225,6 +14289,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -14439,7 +14504,7 @@
    "neutral": false,
    "venue": "UNF Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -1.5,
    "pick": "The Citadel",
    "pick_line": "The Citadel +1.5",
@@ -14447,6 +14512,7 @@
    "tier": "strong",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     1,
     3
@@ -14661,7 +14727,7 @@
    "neutral": false,
    "venue": "Curry Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -5.5,
    "pick": "Wofford",
    "pick_line": "Wofford +5.5",
@@ -14669,6 +14735,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     4
@@ -14883,7 +14950,7 @@
    "neutral": false,
    "venue": "William R. Johnson Coliseum",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -14.0,
    "pick": "Stephen F. Austin",
    "pick_line": "Stephen F. Austin -14.0",
@@ -14891,6 +14958,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     1
@@ -15105,7 +15173,7 @@
    "neutral": false,
    "venue": "Yuengling Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -31.0,
    "pick": "South Florida",
    "pick_line": "South Florida -31.0",
@@ -15113,6 +15181,7 @@
    "tier": "play",
    "tempo_flag": true,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -15327,7 +15396,7 @@
    "neutral": false,
    "venue": "Colonial Life Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -29.5,
    "pick": "South Carolina",
    "pick_line": "South Carolina -29.5",
@@ -15335,6 +15404,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -15549,7 +15619,7 @@
    "neutral": false,
    "venue": "Ford Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": 14.0,
    "pick": "Evansville",
    "pick_line": "Evansville +14.0",
@@ -15557,6 +15627,7 @@
    "tier": "lean",
    "tempo_flag": true,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     2
@@ -15771,7 +15842,7 @@
    "neutral": false,
    "venue": "Knights Hall",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -4.0,
    "pick": "Northern Illinois",
    "pick_line": "Northern Illinois +4.0",
@@ -15779,6 +15850,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -15993,7 +16065,7 @@
    "neutral": false,
    "venue": "Winthrop Coliseum",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -19.5,
    "pick": "Winthrop",
    "pick_line": "Winthrop -19.5",
@@ -16001,6 +16073,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     4,
     3
@@ -16215,7 +16288,7 @@
    "neutral": false,
    "venue": "Hamilton Gymnasium",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": 5.5,
    "pick": "Wyoming",
    "pick_line": "Wyoming -5.5",
@@ -16223,6 +16296,7 @@
    "tier": "strong",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     2
@@ -16437,7 +16511,7 @@
    "neutral": false,
    "venue": "Spokane Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -13.5,
    "pick": "Gonzaga",
    "pick_line": "Gonzaga -13.5",
@@ -16445,6 +16519,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     2
@@ -16659,7 +16734,7 @@
    "neutral": false,
    "venue": "Truist Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -6.0,
    "pick": "Northern Kentucky",
    "pick_line": "Northern Kentucky -6.0",
@@ -16667,6 +16742,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     4
@@ -16881,7 +16957,7 @@
    "neutral": false,
    "venue": "Bank of Colorado Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -2.5,
    "pick": "South Dakota State",
    "pick_line": "South Dakota State +2.5",
@@ -16889,6 +16965,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     1
@@ -17103,7 +17180,7 @@
    "neutral": false,
    "venue": "Reilly Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -19.5,
    "pick": "St. Bonaventure",
    "pick_line": "St. Bonaventure -19.5",
@@ -17111,6 +17188,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -17325,7 +17403,7 @@
    "neutral": false,
    "venue": "LJVM Coliseum",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -19.0,
    "pick": "Wake Forest",
    "pick_line": "Wake Forest -19.0",
@@ -17333,6 +17411,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     1,
     3
@@ -17547,7 +17626,7 @@
    "neutral": false,
    "venue": "Calihan Hall",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": 4.0,
    "pick": "Toledo",
    "pick_line": "Toledo -4.0",
@@ -17555,6 +17634,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     4,
     2
@@ -17769,7 +17849,7 @@
    "neutral": false,
    "venue": "Alex G. Spanos Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -20.0,
    "pick": "Pacific",
    "pick_line": "Pacific -20.0",
@@ -17777,6 +17857,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     2
@@ -17991,7 +18072,7 @@
    "neutral": false,
    "venue": "Alumni Hall (Navy)",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -14.0,
    "pick": "Navy",
    "pick_line": "Navy -14.0",
@@ -17999,6 +18080,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -18213,7 +18295,7 @@
    "neutral": false,
    "venue": "Chartway Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -7.5,
    "pick": "Longwood",
    "pick_line": "Longwood +7.5",
@@ -18221,6 +18303,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -18435,7 +18518,7 @@
    "neutral": false,
    "venue": "McCamish Pavilion",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -11.0,
    "pick": "Georgia Tech",
    "pick_line": "Georgia Tech -11.0",
@@ -18443,6 +18526,7 @@
    "tier": "play",
    "tempo_flag": true,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -18657,7 +18741,7 @@
    "neutral": false,
    "venue": "Minges Coliseum",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -14.0,
    "pick": "East Carolina",
    "pick_line": "East Carolina -14.0",
@@ -18665,6 +18749,7 @@
    "tier": "lean",
    "tempo_flag": true,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -18879,7 +18964,7 @@
    "neutral": false,
    "venue": "John W. Pope Jr. Convocation Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -3.5,
    "pick": "South Carolina Upstate",
    "pick_line": "South Carolina Upstate +3.5",
@@ -18887,6 +18972,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -19101,7 +19187,7 @@
    "neutral": false,
    "venue": "OU Credit Union O'rena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": 8.5,
    "pick": "Northern Iowa",
    "pick_line": "Northern Iowa -8.5",
@@ -19109,6 +19195,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     5
@@ -19323,7 +19410,7 @@
    "neutral": false,
    "venue": "Haas Pavilion",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -12.0,
    "pick": "California",
    "pick_line": "California -12.0",
@@ -19331,6 +19418,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -19545,7 +19633,7 @@
    "neutral": false,
    "venue": "Save Mart Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -6.0,
    "pick": "UC Riverside",
    "pick_line": "UC Riverside +6.0",
@@ -19553,6 +19641,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     2
@@ -19767,7 +19856,7 @@
    "neutral": false,
    "venue": "Amica Mutual Pavilion",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -4.0,
    "pick": "Colorado",
    "pick_line": "Colorado +4.0",
@@ -19775,6 +19864,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -19989,7 +20079,7 @@
    "neutral": false,
    "venue": "The Super Pit",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -3.5,
    "pick": "North Texas",
    "pick_line": "North Texas -3.5",
@@ -19997,6 +20087,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     4,
     2
@@ -20211,7 +20302,7 @@
    "neutral": false,
    "venue": "Ted Grant Court",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -5.5,
    "pick": "Le Moyne",
    "pick_line": "Le Moyne -5.5",
@@ -20219,6 +20310,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     2
@@ -20433,7 +20525,7 @@
    "neutral": false,
    "venue": "Beeghly Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": 1.5,
    "pick": "Youngstown State",
    "pick_line": "Youngstown State +1.5",
@@ -20441,6 +20533,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -20655,7 +20748,7 @@
    "neutral": false,
    "venue": "Michael J. Hagan '85 Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -10.0,
    "pick": "Saint Joseph's",
    "pick_line": "Saint Joseph's -10.0",
@@ -20663,6 +20756,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -20877,7 +20971,7 @@
    "neutral": false,
    "venue": "Buccaneer Fieldhouse",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -8.0,
    "pick": "Charleston Southern",
    "pick_line": "Charleston Southern -8.0",
@@ -20885,6 +20979,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     2
@@ -21099,7 +21194,7 @@
    "neutral": false,
    "venue": "John M. Belk Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -4.5,
    "pick": "Howard",
    "pick_line": "Howard +4.5",
@@ -21107,6 +21202,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     4,
     3
@@ -21321,7 +21417,7 @@
    "neutral": false,
    "venue": "College Park Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": 1.0,
    "pick": "UT Rio Grande Valley",
    "pick_line": "UT Rio Grande Valley -1.0",
@@ -21329,6 +21425,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     2
@@ -21543,7 +21640,7 @@
    "neutral": false,
    "venue": "Finneran Pavilion",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -26.0,
    "pick": "Villanova",
    "pick_line": "Villanova -26.0",
@@ -21551,6 +21648,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -21765,7 +21863,7 @@
    "neutral": false,
    "venue": "Jon M. Huntsman Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": 3.5,
    "pick": "Washington",
    "pick_line": "Washington -3.5",
@@ -21773,6 +21871,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -21987,7 +22086,7 @@
    "neutral": false,
    "venue": "The Sobrato Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -8.5,
    "pick": "Portland State",
    "pick_line": "Portland State +8.5",
@@ -21995,6 +22094,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -22209,7 +22309,7 @@
    "neutral": false,
    "venue": "Leo D. Mahoney Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -15.0,
    "pick": "Fairfield",
    "pick_line": "Fairfield -15.0",
@@ -22217,6 +22317,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     5,
     3
@@ -22431,7 +22532,7 @@
    "neutral": false,
    "venue": "Ramsey Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -5.5,
    "pick": "Western Carolina",
    "pick_line": "Western Carolina -5.5",
@@ -22439,6 +22540,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     4,
     2
@@ -22653,7 +22755,7 @@
    "neutral": false,
    "venue": "MVP Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -11.0,
    "pick": "Brown",
    "pick_line": "Brown +11.0",
@@ -22661,6 +22763,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     4,
     3
@@ -22875,7 +22978,7 @@
    "neutral": false,
    "venue": "Pete Mathews Coliseum",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": 1.5,
    "pick": "UAB",
    "pick_line": "UAB -1.5",
@@ -22883,6 +22986,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     2
@@ -23097,7 +23201,7 @@
    "neutral": false,
    "venue": "Charles Koch Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -7.5,
    "pick": "Wichita State",
    "pick_line": "Wichita State -7.5",
@@ -23105,6 +23209,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     1,
     2
@@ -23319,7 +23424,7 @@
    "neutral": false,
    "venue": "UD Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -0.5,
    "pick": "Cincinnati",
    "pick_line": "Cincinnati +0.5",
@@ -23327,6 +23432,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -23541,7 +23647,7 @@
    "neutral": false,
    "venue": "Ellis T. Johnson Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -3.0,
    "pick": "IU Indianapolis",
    "pick_line": "IU Indianapolis +3.0",
@@ -23549,6 +23655,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     2
@@ -23763,7 +23870,7 @@
    "neutral": false,
    "venue": "TU Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -4.0,
    "pick": "Towson",
    "pick_line": "Towson -4.0",
@@ -23771,6 +23878,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     4
@@ -23985,7 +24093,7 @@
    "neutral": false,
    "venue": "UPMC Cooper Fieldhouse",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -18.0,
    "pick": "Duquesne",
    "pick_line": "Duquesne -18.0",
@@ -23993,6 +24101,7 @@
    "tier": "play",
    "tempo_flag": true,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     2
@@ -24207,7 +24316,7 @@
    "neutral": false,
    "venue": "Global Credit Union Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -23.5,
    "pick": "Grand Canyon",
    "pick_line": "Grand Canyon -23.5",
@@ -24215,6 +24324,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -24429,7 +24539,7 @@
    "neutral": false,
    "venue": "The Well",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": 1.0,
    "pick": "UC Davis",
    "pick_line": "UC Davis -1.0",
@@ -24437,6 +24547,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     1
@@ -24651,7 +24762,7 @@
    "neutral": false,
    "venue": "David R. Stopher Gymnasium",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -1.5,
    "pick": "Louisiana Tech",
    "pick_line": "Louisiana Tech +1.5",
@@ -24659,6 +24770,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     2
@@ -24873,7 +24985,7 @@
    "neutral": false,
    "venue": "Jack Stephens Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -7.5,
    "pick": "Little Rock",
    "pick_line": "Little Rock -7.5",
@@ -24881,6 +24993,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -25095,7 +25208,7 @@
    "neutral": false,
    "venue": "Curb Event Center Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -7.0,
    "pick": "Furman",
    "pick_line": "Furman +7.0",
@@ -25103,6 +25216,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     2
@@ -25317,7 +25431,7 @@
    "neutral": false,
    "venue": "Lawlor Events Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -2.0,
    "pick": "Nevada",
    "pick_line": "Nevada -2.0",
@@ -25325,6 +25439,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     1,
     3
@@ -25539,7 +25654,7 @@
    "neutral": false,
    "venue": "Redhawk Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -13.5,
    "pick": "Seattle U",
    "pick_line": "Seattle U -13.5",
@@ -25547,6 +25662,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -25761,7 +25877,7 @@
    "neutral": false,
    "venue": "Leavey Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": 2.5,
    "pick": "New Mexico",
    "pick_line": "New Mexico -2.5",
@@ -25769,6 +25885,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     4
@@ -25983,7 +26100,7 @@
    "neutral": false,
    "venue": "GSU Convocation Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -3.0,
    "pick": "Norfolk State",
    "pick_line": "Norfolk State +3.0",
@@ -25991,6 +26108,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -26205,7 +26323,7 @@
    "neutral": false,
    "venue": "Hilton Coliseum",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -30.5,
    "pick": "Iowa State",
    "pick_line": "Iowa State -30.5",
@@ -26213,6 +26331,7 @@
    "tier": "lean",
    "tempo_flag": true,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -26427,7 +26546,7 @@
    "neutral": false,
    "venue": "Bender Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": 1.5,
    "pick": "Harvard",
    "pick_line": "Harvard -1.5",
@@ -26435,6 +26554,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     1,
     3
@@ -26649,7 +26769,7 @@
    "neutral": false,
    "venue": "Case Gym",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -8.5,
    "pick": "Boston University",
    "pick_line": "Boston University -8.5",
@@ -26657,6 +26777,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -26871,7 +26992,7 @@
    "neutral": false,
    "venue": "Detrick Gymnasium",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -1.5,
    "pick": "Quinnipiac",
    "pick_line": "Quinnipiac +1.5",
@@ -26879,6 +27000,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     4,
     4
@@ -27093,7 +27215,7 @@
    "neutral": false,
    "venue": "Bob Carpenter Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": 0.5,
    "pick": "Colgate",
    "pick_line": "Colgate -0.5",
@@ -27101,6 +27223,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     2
@@ -27315,7 +27438,7 @@
    "neutral": false,
    "venue": "FedExForum",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": 9.0,
    "pick": "Louisville",
    "pick_line": "Louisville -9.0",
@@ -27323,6 +27446,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     2
@@ -27537,7 +27661,7 @@
    "neutral": true,
    "venue": "Sanford Pentagon",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -9.0,
    "pick": "Boise State",
    "pick_line": "Boise State +9.0",
@@ -27545,6 +27669,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -27759,7 +27884,7 @@
    "neutral": false,
    "venue": "Conte Forum",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -11.0,
    "pick": "Boston College",
    "pick_line": "Boston College -11.0",
@@ -27767,6 +27892,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -27981,7 +28107,7 @@
    "neutral": false,
    "venue": "Crisler Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -13.5,
    "pick": "Michigan",
    "pick_line": "Michigan -13.5",
@@ -27989,6 +28115,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -28203,7 +28330,7 @@
    "neutral": false,
    "venue": "Thomas M. Ryan Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -15.5,
    "pick": "Rhode Island",
    "pick_line": "Rhode Island -15.5",
@@ -28211,6 +28338,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     4
@@ -28425,7 +28553,7 @@
    "neutral": false,
    "venue": "Scheels Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -10.0,
    "pick": "North Dakota State",
    "pick_line": "North Dakota State -10.0",
@@ -28433,6 +28561,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -28647,7 +28776,7 @@
    "neutral": false,
    "venue": "John Glaser Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": 5.0,
    "pick": "Temple",
    "pick_line": "Temple -5.0",
@@ -28655,6 +28784,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -28869,7 +28999,7 @@
    "neutral": false,
    "venue": "Hart Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": 2.5,
    "pick": "UAlbany",
    "pick_line": "UAlbany -2.5",
@@ -28877,6 +29007,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -29091,7 +29222,7 @@
    "neutral": false,
    "venue": "TD Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -15.0,
    "pick": "Charleston",
    "pick_line": "Charleston -15.0",
@@ -29099,6 +29230,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     1
@@ -29313,7 +29445,7 @@
    "neutral": true,
    "venue": "United Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": 0.5,
    "pick": "Missouri",
    "pick_line": "Missouri -0.5",
@@ -29321,6 +29453,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -29535,7 +29668,7 @@
    "neutral": true,
    "venue": "Casey's Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": 8.0,
    "pick": "Iowa",
    "pick_line": "Iowa -8.0",
@@ -29543,6 +29676,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -29757,7 +29891,7 @@
    "neutral": false,
    "venue": "Event Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -10.0,
    "pick": "Cleveland State",
    "pick_line": "Cleveland State +10.0",
@@ -29765,6 +29899,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     2
@@ -29979,7 +30114,7 @@
    "neutral": false,
    "venue": "Chaifetz Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -4.5,
    "pick": "High Point",
    "pick_line": "High Point +4.5",
@@ -29987,6 +30122,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     4,
     3
@@ -30201,7 +30337,7 @@
    "neutral": false,
    "venue": "Groniger Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": 4.5,
    "pick": "Purdue Fort Wayne",
    "pick_line": "Purdue Fort Wayne -4.5",
@@ -30209,6 +30345,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -30423,7 +30560,7 @@
    "neutral": true,
    "venue": "Frost Bank Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -4.0,
    "pick": "Texas",
    "pick_line": "Texas -4.0",
@@ -30431,6 +30568,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -30645,7 +30783,7 @@
    "neutral": false,
    "venue": "Gersten Pavilion",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -13.5,
    "pick": "Loyola Marymount",
    "pick_line": "Loyola Marymount -13.5",
@@ -30653,6 +30791,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     4,
     3
@@ -30867,7 +31006,7 @@
    "neutral": false,
    "venue": "Atlantic Union Bank Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -10.5,
    "pick": "James Madison",
    "pick_line": "James Madison -10.5",
@@ -30875,6 +31014,7 @@
    "tier": "lean",
    "tempo_flag": true,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -31089,7 +31229,7 @@
    "neutral": true,
    "venue": "Frontwave Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": 10.5,
    "pick": "San Diego State",
    "pick_line": "San Diego State -10.5",
@@ -31097,6 +31237,7 @@
    "tier": "lean",
    "tempo_flag": true,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     2
@@ -31311,7 +31452,7 @@
    "neutral": false,
    "venue": "Screaming Eagles Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -2.5,
    "pick": "Southern Indiana",
    "pick_line": "Southern Indiana -2.5",
@@ -31319,6 +31460,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -31533,7 +31675,7 @@
    "neutral": false,
    "venue": "Bryce Jordan Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -11.0,
    "pick": "New Haven",
    "pick_line": "New Haven +11.0",
@@ -31541,6 +31683,7 @@
    "tier": "lean",
    "tempo_flag": true,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     4
@@ -31755,7 +31898,7 @@
    "neutral": false,
    "venue": "Matthew Knight Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -15.5,
    "pick": "Oregon",
    "pick_line": "Oregon -15.5",
@@ -31763,6 +31906,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -31977,7 +32121,7 @@
    "neutral": false,
    "venue": "Alumni Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -15.0,
    "pick": "Canisius",
    "pick_line": "Canisius +15.0",
@@ -31985,6 +32129,7 @@
    "tier": "lean",
    "tempo_flag": true,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     2
@@ -32199,7 +32344,7 @@
    "neutral": false,
    "venue": "Worthington Arena",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -13.0,
    "pick": "Cal Poly",
    "pick_line": "Cal Poly +13.0",
@@ -32207,6 +32352,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     2,
     3
@@ -32421,7 +32567,7 @@
    "neutral": false,
    "venue": "Galen Center",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -26.0,
    "pick": "USC",
    "pick_line": "USC -26.0",
@@ -32429,6 +32575,7 @@
    "tier": "play",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -32643,7 +32790,7 @@
    "neutral": false,
    "venue": "Madison Square Garden",
    "spread_home": null,
-   "book": NaN,
+   "book": null,
    "proj_spread_home": -11.5,
    "pick": "St. John's",
    "pick_line": "St. John's -11.5",
@@ -32651,6 +32798,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "projected",
+   "model": "early",
    "games_played": [
     3,
     3
@@ -32978,6 +33126,128 @@
    "label": "Underdog adjustment (per SD of spread)",
    "group": "Market",
    "pts_per_sd": 1.053
+  }
+ ],
+ "weights_established": [
+  {
+   "key": "pace",
+   "label": "Tempo (possessions per game)",
+   "group": "Tempo",
+   "pts_per_sd": -0.187
+  },
+  {
+   "key": "o_3par",
+   "label": "3-point attempt rate",
+   "group": "Offense",
+   "pts_per_sd": 0.389
+  },
+  {
+   "key": "o_ftr",
+   "label": "Free-throw rate (FTA/FGA)",
+   "group": "Offense",
+   "pts_per_sd": 0.128
+  },
+  {
+   "key": "o_tov",
+   "label": "Turnover rate",
+   "group": "Offense",
+   "pts_per_sd": -0.372
+  },
+  {
+   "key": "o_orb",
+   "label": "Offensive rebound %",
+   "group": "Offense",
+   "pts_per_sd": 0.469
+  },
+  {
+   "key": "o_paint",
+   "label": "Paint share of points",
+   "group": "Offense",
+   "pts_per_sd": 0.254
+  },
+  {
+   "key": "o_fb",
+   "label": "Transition share of points",
+   "group": "Offense",
+   "pts_per_sd": 0.148
+  },
+  {
+   "key": "o_ast",
+   "label": "Assist rate (assisted FGM)",
+   "group": "Offense",
+   "pts_per_sd": 0.302
+  },
+  {
+   "key": "o_efg",
+   "label": "eFG% (shooting results)",
+   "group": "Offense",
+   "pts_per_sd": -0.17
+  },
+  {
+   "key": "d_3par",
+   "label": "Opp. 3-point attempt rate allowed",
+   "group": "Defense",
+   "pts_per_sd": -0.243
+  },
+  {
+   "key": "d_ftr",
+   "label": "Opp. free-throw rate allowed",
+   "group": "Defense",
+   "pts_per_sd": -0.102
+  },
+  {
+   "key": "d_tov",
+   "label": "Turnovers forced (per poss.)",
+   "group": "Defense",
+   "pts_per_sd": 0.261
+  },
+  {
+   "key": "d_orb",
+   "label": "Opp. offensive rebound % allowed",
+   "group": "Defense",
+   "pts_per_sd": -0.324
+  },
+  {
+   "key": "d_paint",
+   "label": "Opp. paint share allowed",
+   "group": "Defense",
+   "pts_per_sd": -0.41
+  },
+  {
+   "key": "d_fb",
+   "label": "Opp. transition share allowed",
+   "group": "Defense",
+   "pts_per_sd": -0.271
+  },
+  {
+   "key": "d_ast",
+   "label": "Opp. assist rate allowed",
+   "group": "Defense",
+   "pts_per_sd": -0.305
+  },
+  {
+   "key": "d_efg",
+   "label": "Opp. eFG% allowed (shooting results)",
+   "group": "Defense",
+   "pts_per_sd": 0.221
+  },
+  {
+   "key": "d_blk",
+   "label": "Block rate (per opp. 2PA)",
+   "group": "Defense",
+   "pts_per_sd": 0.277
+  },
+  {
+   "key": "d_stl",
+   "label": "Steal rate (per poss.)",
+   "group": "Defense",
+   "pts_per_sd": 0.153
+  },
+  {
+   "key": "spread",
+   "label": "Underdog adjustment (per SD of spread)",
+   "group": "Market",
+   "pts_per_sd": 0.698
   }
  ]
 }
