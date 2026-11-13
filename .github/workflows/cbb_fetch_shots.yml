@@ -1,0 +1,50 @@
+name: CBB Fetch Shots
+
+on:
+  workflow_dispatch:
+    inputs:
+      seasons:
+        description: "Season range, e.g. 2014-2017"
+        default: "2025-2025"
+      max_calls:
+        description: "Hard ceiling on CBBD calls"
+        default: "3000"
+      probe_date:
+        description: "If set (YYYY-MM-DD), fetch just this date and log the shape"
+        default: ""
+
+concurrency:
+  group: repo-writes
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch shots
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+          SEASONS: ${{ inputs.seasons }}
+          MAX_CALLS: ${{ inputs.max_calls }}
+          PROBE_DATE: ${{ inputs.probe_date }}
+        run: python cbb/scripts/fetch_shots.py
+      - name: Record remaining quota
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: |
+          curl -s "https://api.collegefootballdata.com/info" -H "Authorization: Bearer ${CFBD_API_KEY}" > cfbd_usage_result.json
+          echo "Checked at: $(date -u)" >> cfbd_usage_result.json
+      - name: Commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add cbb/raw cfbd_usage_result.json
+          git commit -m "CBB: shot-location fetch" || echo "no changes"
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 10; done
