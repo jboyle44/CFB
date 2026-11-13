@@ -28,9 +28,14 @@ E = ledger["entries"]
 snap = ts(picks["generated"])
 
 added = updated = 0
+import os
+BACKFILL = os.environ.get("BACKFILL") == "1"
+now = datetime.now(timezone.utc)
 for g in picks["games"]:
     if g["line_status"] != "posted" or ts(g["date"]) <= snap:
         continue
+    if not BACKFILL and ts(g["date"]) <= now:
+        continue   # game already started by the real clock: never lock after tip
     key = str(g["gameId"])
     prev = E.get(key)
     if prev and prev.get("result"):
@@ -38,6 +43,7 @@ for g in picks["games"]:
     new = {k: g[k] for k in ("gameId", "date", "home", "away", "neutral", "pick", "pick_line", "spread_home",
                               "book", "edge", "tier", "tempo_flag")}
     new["locked_at"] = picks["generated"]
+    new["recorded_at"] = prev.get("recorded_at", now.isoformat()) if prev else now.isoformat()
     # line tracking: first line/edge the pick was made at (reset if the model flips sides), plus every change
     if prev and prev.get("pick") == g["pick"] and "first_spread_home" in prev:
         for k in ("first_spread_home", "first_edge", "first_at", "first_pick_line", "line_history"):

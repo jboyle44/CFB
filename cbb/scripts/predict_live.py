@@ -146,6 +146,9 @@ def main():
     line = {}
     for g in LIVE["lines"]:
         book = {x["provider"]: x for x in g["lines"] if x.get("spread") is not None}
+        vals = [float(x["spread"]) for x in book.values()]
+        if len(vals) >= 2 and max(vals) - min(vals) >= bd.LINE_DISAGREE:
+            continue   # books disagree badly: treat as no posted line (never graded)
         pick = next((p for p in bd.PROVIDER_RANK if p in book), next(iter(book), None))
         if pick:
             line[g["gameId"]] = (float(book[pick]["spread"]), pick)

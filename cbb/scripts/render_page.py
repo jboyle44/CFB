@@ -187,7 +187,7 @@ function vResults(){
  const plays=done,strong=done.filter(e=>e.tier==="strong"),mid=done.filter(e=>e.tier==="play");
  const tile=(r,lab)=>`<div class="stat"><b>${r.w}-${r.l}${r.p?"-"+r.p:""}</b><span>${lab}<br>${r.pct==null?"—":r.pct.toFixed(1)+"%"} · ${sgn1(r.u)} units</span></div>`;
  let h=`<div class="stats">${tile(rec(plays),"All plays (1+ pt)")}${tile(rec(strong),"Strong (2+ pts)")}${tile(rec(mid),"Play (1 to 2 pts)")}</div>`;
- h+=`<p class="note">Picks are graded at the last posted line on the board before tip-off, 1 unit per bet at −110. Projected-line picks are never graded. ${pend.length} picks locked and awaiting results.</p>`;
+ h+=`<p class="note">Picks are graded at the last posted line on the board before tip-off, 1 unit per bet at −110. Projected-line picks are never graded. ${pend.length} picks locked and awaiting results.${done.some(e=>e.backfilled)?" Thu Nov 12 picks were made from the 7:13 PM pre-tip snapshot but recorded into the tracker after those games ended; they predate the hybrid model and today's line-data fix.":""}</p>`;
  const byDay=[...new Set(done.map(e=>e.day))].sort().reverse();
  if(byDay.length){h+=`<h2>By day</h2><div class="box"><table><thead><tr><th>Day</th><th>Plays</th><th>Strong</th><th>Units</th></tr></thead><tbody>`+
   byDay.map(d=>{const L=done.filter(e=>e.day===d);const p=rec(L),s=rec(L.filter(e=>e.tier==="strong"));
@@ -234,6 +234,7 @@ function vHow(){
  <li>Tempo flag: a fast favorite (8.5+) vs a slow underdog. Underdogs covered about 52% historically; it supports dog picks and cuts against favorite picks.</li>
  <li>Line movement: the model treats the posted line as information, so its edge barely changes when the line moves (about 0.1 pt per point). Each card also shows the line the pick was first made at and a line-adjusted edge: the original edge plus or minus the points the line has moved since. If you are getting a worse number than the original, use the line-adjusted edge.</li>
  <li>Projected lines (before books post) come from the same profiles and miss the real close by about 3.4 pts on average. Treat those picks as previews.</li>
+ <li>Line data: about 1,100 historical games where line sources disagreed by 4+ points (mostly home/away-flipped "consensus" lines) are excluded from training and the backtest, and live games with conflicting lines get no graded pick. An independent audit rebuilt the backtest from scratch and found no leakage; its realistic estimate is about 53.8% at 1+ pt (roughly +2.7% return per bet at \u2212110), with 2025-26 the weakest recent season.</li>
  <li>Lines before 2019 cover about 65% of games. Results assume −110; real prices and limits vary, especially on low-major games and big underdogs.</li>
  <li>Style-vs-style matchups (archetypes, shot-mix clashes) were tested and do not beat the spread. Only tempo survived.</li></ul>`;
  return h}

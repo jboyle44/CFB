@@ -17,7 +17,8 @@ OUT = Path(sys.argv[2] if len(sys.argv) > 2 else "cbb/work/games.parquet")
 SEASONS = range(2014, 2027)
 import os
 MIN_PRIOR = int(os.environ.get("MIN_PRIOR", "5"))
-BLEND_K = float(os.environ.get("BLEND_K", "0"))  # >0: shrink early-season profiles toward last season
+BLEND_K = float(os.environ.get("BLEND_K", "0"))
+LINE_DISAGREE = float(os.environ.get("LINE_DISAGREE", "4"))  # drop games whose providers differ by this many points
 PROVIDER_RANK = ["consensus", "ESPN BET", "Draft Kings", "Bovada", "teamrankings", "numberfire"]
 
 
@@ -127,6 +128,9 @@ def main():
     for season in SEASONS:
         for g in json.load(gzip.open(RAW / f"lines_{season}.json.gz")):
             book = {x["provider"]: x for x in g["lines"] if x.get("spread") is not None}
+            vals = [float(x["spread"]) for x in book.values()]
+            if len(vals) >= 2 and max(vals) - min(vals) >= LINE_DISAGREE:
+                continue   # providers disagree badly (e.g. home/away-flipped consensus lines): line unknowable, drop game
             pick = next((p for p in PROVIDER_RANK if p in book), None)
             if pick is None or g.get("homeScore") is None or g.get("awayScore") is None:
                 continue
