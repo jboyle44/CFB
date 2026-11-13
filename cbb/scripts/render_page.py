@@ -128,6 +128,12 @@ function profile(g){
  rows+=`<tr class="grp"><td colspan="4">Adjustments</td></tr>`;
  for(const t of g.terms)rows+=`<tr><td>${esc(t.label)}</td><td></td><td></td><td class="mono ${cls(t.pts)}">${sgn(t.pts)}</td></tr>`;
  rows+=`<tr class="total"><td>Model edge for ${esc(g.pick)}</td><td></td><td></td><td class="mono">${sgn(g.edge)}</td></tr>`;
+ const ref=g.spread_home!=null?g.spread_home:g.proj_spread_home, pickHome=g.pick===g.home;
+ const sp=pickHome?ref:-ref, fair=sp-g.edge;
+ const ln=v=>Math.abs(v)<0.05?"PK":(v>0?"+":"−")+Math.abs(v).toFixed(1);
+ rows+=`<tr class="grp"><td colspan="4">The line</td></tr>
+ <tr><td>${g.line_status==="posted"?"Posted spread"+(g.book?" ("+esc(g.book)+")":""):"Projected spread (no line posted yet)"}</td><td colspan="3" class="mono">${esc(g.pick)} ${ln(sp)}</td></tr>
+ <tr class="total"><td>Model's fair line</td><td colspan="3" class="mono">${esc(g.pick)} ${ln(fair)}</td></tr>`;
  return `<details class="prof"><summary>Full profile: all 19 traits and points</summary>
  <table><thead><tr><th>Trait (season so far, blended)</th><th>${esc(g.away)}</th><th>${esc(g.home)}</th><th>Pts to pick</th></tr></thead><tbody>${rows}</tbody></table>
  <div class="note" style="margin-top:6px">Pts to pick: how many points each trait gap adds (+) or subtracts (−) from the pick's edge. They sum to the edge.</div></details>`}
