@@ -161,7 +161,7 @@ function lineInfo(g){
 function lineBlock(g){const L=lineInfo(g);if(!L)return "";
  let t=`<div class="note" style="margin-top:6px">Picked at <b class="mono">${esc(g.pick)} ${lnf(L.first)}</b> (${g.first_at}, edge ${g.first_edge.toFixed(1)})`;
  if(L.hist.length>1)t+=` \u00b7 line history ${L.hist.map(lnf).join(" \u2192 ")}`;
- if(Math.abs(L.mv)>=0.05)t+=`<br><span class="${L.mv>0?"pos":"neg"}">Moved ${Math.abs(L.mv).toFixed(1)} ${L.mv>0?"in favor of":"against"} the pick</span> \u00b7 line-adjusted edge <b class="mono ${L.adj>=1?"pos":"neg"}">${L.adj.toFixed(1)}</b>${L.adj<1?" (below the 1-pt threshold)":""}`;
+ if(Math.abs(L.mv)>=0.05)t+=`<br><span class="${L.mv>0?"pos":"neg"}">Moved ${Math.abs(L.mv).toFixed(1)} ${L.mv>0?"in favor of":"against"} the pick</span> \u00b7 line-adjusted edge <b class="mono ${L.adj>=1.25?"pos":"neg"}">${L.adj.toFixed(1)}</b>${L.adj<1.25?" (below the 1.25-pt minimum)":""}`;
  else t+=` \u00b7 no net line movement`;
  return t+`</div>`}
 function vPicks(){
@@ -176,25 +176,27 @@ function vPicks(){
   const why=g.reasons.length?`<ul class="why">`+g.reasons.map(r=>`<li>${esc(r.text)} <span class="mono pos">+${r.pts.toFixed(1)}</span></li>`).join("")+`</ul>`:"";
   return `<div class="card"><div class="top"><span>${g.time}${g.venue?" · "+esc(g.venue):""}</span><span>Games played ${g.games_played[0]}-${g.games_played[1]}</span></div>
   <div class="match">${esc(g.away)}${sep}${esc(g.home)}</div>
-  <div class="pickrow"><span class="tier ${g.tier}">${g.tier}</span><span class="pick">${esc(g.pick_line)}</span><span class="edge">edge ${g.edge.toFixed(1)} pts</span></div>
+  <div class="pickrow"><span class="tier ${g.tier}">${g.tier}</span><span class="badge" style="font-weight:600">${g.stake||(g.tier==="strong"?2:1)} unit${(g.stake||(g.tier==="strong"?2:1))>1?"s":""}</span><span class="pick">${esc(g.pick_line)}</span><span class="edge">edge ${g.edge.toFixed(1)} pts</span></div>
   <div class="pickrow" style="margin-top:6px">${line}${tempo}<span class="badge">${g.model==="established"?"Established model (5+ games)":"Early-season model"}</span></div>${lineBlock(g)}${why}${profile(g)}</div>`}).join("");
  return h}
 
+const stakeOf=e=>e.stake!=null?e.stake:(e.tier==="strong"?2:1);
 function rec(list){const w=list.filter(e=>e.result==="W").length,l=list.filter(e=>e.result==="L").length,p=list.filter(e=>e.result==="P").length;
- return {w,l,p,n:w+l,pct:w+l?100*w/(w+l):null,u:w*100/110-l}}
+ const u=list.reduce((a,e)=>a+(e.result==="W"?stakeOf(e)*100/110:e.result==="L"?-stakeOf(e):0),0),r=list.reduce((a,e)=>a+(e.result==="P"?0:stakeOf(e)),0);
+ return {w,l,p,n:w+l,pct:w+l?100*w/(w+l):null,u,r}}
 function vResults(){
  const done=D.results.filter(e=>e.result),pend=D.results.filter(e=>!e.result);
  const plays=done,strong=done.filter(e=>e.tier==="strong"),mid=done.filter(e=>e.tier==="play");
  const tile=(r,lab)=>`<div class="stat"><b>${r.w}-${r.l}${r.p?"-"+r.p:""}</b><span>${lab}<br>${r.pct==null?"—":r.pct.toFixed(1)+"%"} · ${sgn1(r.u)} units</span></div>`;
- let h=`<div class="stats">${tile(rec(plays),"All plays (1+ pt)")}${tile(rec(strong),"Strong (2+ pts)")}${tile(rec(mid),"Play (1 to 2 pts)")}</div>`;
- h+=`<p class="note">Picks are graded at the last posted line on the board before tip-off, 1 unit per bet at −110. Projected-line picks are never graded. ${pend.length} picks locked and awaiting results.${done.some(e=>e.backfilled)?" Thu Nov 12 picks were made from the 7:13 PM pre-tip snapshot but recorded into the tracker after those games ended; they predate the hybrid model and today's line-data fix.":""}</p>`;
+ let h=`<div class="stats">${tile(rec(plays),"All picks (staked)")}${tile(rec(strong),"Strong (2+ pts, 2u)")}${tile(rec(mid),"Play (1.25 to 2, 1u)")}</div>`;
+ h+=`<p class="note">Picks are graded at the last posted line on the board before tip-off, Play picks risk 1 unit and Strong picks 2 units, at −110. Projected-line picks are never graded. ${pend.length} picks locked and awaiting results.${done.some(e=>e.backfilled)?" Thu Nov 12 picks were made from the 7:13 PM pre-tip snapshot but recorded into the tracker after those games ended; they predate the hybrid model and today's line-data fix.":""}</p>`;
  const byDay=[...new Set(done.map(e=>e.day))].sort().reverse();
  if(byDay.length){h+=`<h2>By day</h2><div class="box"><table><thead><tr><th>Day</th><th>Plays</th><th>Strong</th><th>Units</th></tr></thead><tbody>`+
   byDay.map(d=>{const L=done.filter(e=>e.day===d);const p=rec(L),s=rec(L.filter(e=>e.tier==="strong"));
    return `<tr><td>${L[0].dayLabel}</td><td>${p.w}-${p.l}${p.p?"-"+p.p:""}</td><td>${s.w}-${s.l}</td><td class="mono ${cls(p.u)}">${sgn1(p.u)}</td></tr>`}).join("")+`</tbody></table></div>`}
  const recent=done.slice().sort((a,b)=>b.ts-a.ts||b.edge-a.edge);
  h+=`<h2>Graded picks</h2><div class="box">`+
-  (recent.length?recent.map(e=>`<div style="display:flex;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)"><span class="wl ${e.result}" style="align-self:flex-start;margin-top:2px">${e.result}</span><div style="flex:1"><div><b class="mono">${esc(e.pick_line)}</b> <span class="mut">· edge ${e.edge.toFixed(1)} · ${e.tier}</span></div><div class="note">${esc(e.away)} ${e.away_score}, ${esc(e.home)} ${e.home_score} · ${e.dayLabel} · ${e.result==="P"?"push":(e.result==="W"?"covered by ":"missed by ")+Math.abs(e.margin_vs_line).toFixed(1)}</div></div></div>`).join(""):`<div class="empty">No graded picks yet.</div>`)+`</div>`;
+  (recent.length?recent.map(e=>`<div style="display:flex;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)"><span class="wl ${e.result}" style="align-self:flex-start;margin-top:2px">${e.result}</span><div style="flex:1"><div><b class="mono">${esc(e.pick_line)}</b> <span class="mut">· edge ${e.edge.toFixed(1)} · ${e.tier} · ${stakeOf(e)}u</span></div><div class="note">${esc(e.away)} ${e.away_score}, ${esc(e.home)} ${e.home_score} · ${e.dayLabel} · ${e.result==="P"?"push":(e.result==="W"?"covered by ":"missed by ")+Math.abs(e.margin_vs_line).toFixed(1)}</div></div></div>`).join(""):`<div class="empty">No graded picks yet.</div>`)+`</div>`;
  const pp=pend.slice().sort((a,b)=>a.ts-b.ts||b.edge-a.edge);
  if(pp.length)h+=`<h2>Locked, awaiting results</h2><div class="box"><table><thead><tr><th>Pick</th><th>Tier</th><th>Edge</th><th>Tip</th></tr></thead><tbody>`+
   pp.map(e=>`<tr><td>${esc(e.pick_line)}</td><td>${e.tier}</td><td class="mono">${e.edge.toFixed(1)}</td><td>${e.dayLabel}</td></tr>`).join("")+`</tbody></table></div>`;
@@ -211,24 +213,24 @@ function vHow(){
  <li>Build each team's profile: 19 traits from its games so far. Until both teams have 5 games, profiles are blended with last season (early-season model); after that, only this season counts (established model). Only games before tip-off are used.</li>
  <li>Compare the two teams trait by trait, in standard-deviation units.</li>
  <li>Multiply each gap by the trait's learned weight (table below) and add the underdog adjustment. The total is the edge: points the pick is expected to beat the line by.</li>
- <li>Pick at 1+ pt of edge (Play) and 2+ pts (Strong). Games under 1 pt get no pick.</li></ol>`;
+ <li>Pick at 1.25+ pts of edge. Play (1.25 to 2 pts) risks 1 unit; Strong (2+ pts) risks 2 units. Games under 1.25 pts get no pick. Edges of 1 to 1.25 were dropped because they only broke even historically (52.7%, about breakeven at \u2212115).</li></ol>`;
  const W=D.weights.filter(w=>w.key!=="spread").sort((a,b)=>Math.abs(b.pts_per_sd)-Math.abs(a.pts_per_sd));
  const WE=Object.fromEntries((D.weights_est||[]).map(w=>[w.key,w.pts_per_sd]));
  const mx=Math.max(...W.map(w=>Math.abs(w.pts_per_sd)));
  h+=`<h2>What the model rewards</h2><p class="note">Points of edge for being 1 standard deviation higher than the opponent in a trait, holding the rest fixed. + means the market underrates the trait, − means it overrates it.</p>`+
   tbl(["Trait","Early season","","Established"],W.map(w=>`<tr><td>${esc(w.label)}<div class="mut" style="font-size:11px">${w.group}</div></td><td class="mono ${cls(w.pts_per_sd)}">${sgn(w.pts_per_sd)}</td><td style="width:84px;text-align:left"><span class="bar" style="width:${Math.round(76*Math.abs(w.pts_per_sd)/mx)}px;background:var(--${w.pts_per_sd>0?"pos":"neg"})"></span></td><td class="mono ${cls(WE[w.key]||0)}">${WE[w.key]!=null?sgn(WE[w.key]):"—"}</td></tr>`))+`<p class="note">Early season = blended with last season (either team under 5 games). Established = this season only, once both teams have 5+ games; it relies more on fading shooting results because those numbers are no longer shrunk toward last season.</p>`;
  h+=`<h2>Backtest</h2><p class="note">${esc(T.model)}. Each season is predicted by a model trained only on earlier seasons and graded against the closing spread at −110. Breakeven is 52.4%.</p>
- <div class="stats"><div class="stat"><b>${O.plays_1plus.win_pct}%</b><span>Plays (1+ pt)<br>${O.plays_1plus.bets.toLocaleString()} bets · ${sgn1(O.plays_1plus.units)} u</span></div>
+ <div class="stats"><div class="stat"><b>${O.plays_1plus.win_pct}%</b><span>All picks (1.25+)<br>${O.plays_1plus.bets.toLocaleString()} bets · ${sgn1(O.plays_1plus.units)} u</span></div>
  <div class="stat"><b>${O.strong_2plus.win_pct}%</b><span>Strong (2+ pts)<br>${O.strong_2plus.bets.toLocaleString()} bets · ${sgn1(O.strong_2plus.units)} u</span></div>
- <div class="stat"><b>${T.by_month[0].strong.win_pct}%</b><span>November, Strong<br>${T.by_month[0].strong.bets.toLocaleString()} bets</span></div></div>
- <h3>Cumulative units, plays (1+ pt), 2016-17 to 2025-26</h3><div class="box chartwrap" id="cw"><svg id="cum" width="100%" height="220" role="img" aria-label="Cumulative units won by season"></svg><div class="tip" id="tip"></div></div>
+ <div class="stat"><b>${sgn1(O.staked.units)}u</b><span>Staked (1u/2u)<br>${O.staked.risked.toLocaleString()} u risked \u00b7 ${(100*O.staked.units/O.staked.risked).toFixed(1)}%</span></div></div>
+ <h3>Cumulative units, staked (1u Play, 2u Strong), 2016-17 to 2025-26</h3><div class="box chartwrap" id="cw"><svg id="cum" width="100%" height="220" role="img" aria-label="Cumulative units won by season"></svg><div class="tip" id="tip"></div></div>
  <h3>By month: the edge is early-season</h3>`+
-  tbl(["Month","Plays","Win %","Units","Strong win %"],T.by_month.map(m=>`<tr><td>${m.month}</td><td>${m.plays.bets.toLocaleString()}</td><td class="${pcCls(m.plays)}">${pc(m.plays)}</td><td class="mono ${cls(m.plays.units)}">${sgn1(m.plays.units)}</td><td class="${pcCls(m.strong)}">${pc(m.strong)} <span class="mut">(${m.strong.bets})</span></td></tr>`))+
+  tbl(["Month","Picks","Win %","Flat units","Strong win %"],T.by_month.map(m=>`<tr><td>${m.month}</td><td>${m.plays.bets.toLocaleString()}</td><td class="${pcCls(m.plays)}">${pc(m.plays)}</td><td class="mono ${cls(m.plays.units)}">${sgn1(m.plays.units)}</td><td class="${pcCls(m.strong)}">${pc(m.strong)} <span class="mut">(${m.strong.bets})</span></td></tr>`))+
  `<h3>By edge size: bigger edges win more</h3>`+
-  tbl(["Edge","Games","Win %","Units"],T.by_edge.filter(e=>!["Under 0.5","0.5 to 1"].includes(e.edge)).map(e=>`<tr><td>${e.edge} pts</td><td>${e.bets.toLocaleString()}</td><td class="${pcCls(e)}">${pc(e)}</td><td class="mono ${cls(e.units)}">${sgn1(e.units)}</td></tr>`))+
+  tbl(["Edge","Games","Win %","Units"],T.by_edge.filter(e=>!["Under 0.5","0.5 to 1","1 to 1.25"].includes(e.edge)).map(e=>`<tr><td>${e.edge} pts</td><td>${e.bets.toLocaleString()}</td><td class="${pcCls(e)}">${pc(e)}</td><td class="mono ${cls(e.units)}">${sgn1(e.units)}</td></tr>`))+
  `<h3>By season</h3>`+
-  tbl(["Season","Plays","Win %","Units","Strong win %"],T.by_season.map(s=>`<tr><td>${s.season}</td><td>${s.plays.bets.toLocaleString()}</td><td class="${pcCls(s.plays)}">${pc(s.plays)}</td><td class="mono ${cls(s.plays.units)}">${sgn1(s.plays.units)}</td><td class="${pcCls(s.strong)}">${pc(s.strong)}</td></tr>`))+
- `<h3>Underdog vs favorite picks (1+ pt)</h3>`+
+  tbl(["Season","Picks","Win %","Flat units","Strong win %"],T.by_season.map(s=>`<tr><td>${s.season}</td><td>${s.plays.bets.toLocaleString()}</td><td class="${pcCls(s.plays)}">${pc(s.plays)}</td><td class="mono ${cls(s.plays.units)}">${sgn1(s.plays.units)}</td><td class="${pcCls(s.strong)}">${pc(s.strong)}</td></tr>`))+
+ `<h3>Underdog vs favorite picks (1.25+ pts)</h3>`+
   tbl(["Side","Bets","Win %","Units"],T.by_side.map(s=>`<tr><td>${s.side}</td><td>${s.bets.toLocaleString()}</td><td class="${pcCls(s)}">${pc(s)}</td><td class="mono ${cls(s.units)}">${sgn1(s.units)}</td></tr>`))+
  `<h2>Fine print</h2><ul class="note" style="padding-left:18px">
  <li>Tempo flag: a fast favorite (8.5+) vs a slow underdog. Underdogs covered about 52% historically; it supports dog picks and cuts against favorite picks.</li>
@@ -245,7 +247,7 @@ function tcell(c,isLean){if(!c||!c.n)return `<td class="mut">—</td>`;
 function trow(label,t,bold){return `<tr${bold?' class="total"':""}><td>${label}</td>${tcell(t.strong)}${tcell(t.play)}</tr>`}
 function vTrends(){
  const G=D.trends.tier_grid;const seasons=Object.keys(G).filter(k=>k!=="all");
- const head=`<thead><tr><th>${"%s"}</th><th>Strong<br><span class="mut">2+ pts</span></th><th>Play<br><span class="mut">1 to 2 pts</span></th></tr></thead>`;
+ const head=`<thead><tr><th>${"%s"}</th><th>Strong<br><span class="mut">2+ pts</span></th><th>Play<br><span class="mut">1.25 to 2 pts</span></th></tr></thead>`;
  let h=`<p class="note">Backtest of the live model: each season predicted by a model trained only on earlier seasons, graded against the closing spread. Win % excludes pushes. Breakeven at −110 is 52.4% (green above, red below).</p>`;
  h+=`<h2>By season</h2><div class="box"><table>${head.replace("%s","Season")}<tbody>`+seasons.map(s=>trow(s,G[s].total)).join("")+trow("All seasons",G.all.total,true)+`</tbody></table></div>`;
  const sel=G[trSeason]?trSeason:"all";

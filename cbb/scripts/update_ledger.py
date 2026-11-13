@@ -42,6 +42,7 @@ for g in picks["games"]:
         continue
     new = {k: g[k] for k in ("gameId", "date", "home", "away", "neutral", "pick", "pick_line", "spread_home",
                               "book", "edge", "tier", "tempo_flag")}
+    new["stake"] = g.get("stake", 2 if g["tier"] == "strong" else 1 if g["tier"] == "play" else 0)
     new["locked_at"] = picks["generated"]
     new["recorded_at"] = prev.get("recorded_at", now.isoformat()) if prev else now.isoformat()
     # line tracking: first line/edge the pick was made at (reset if the model flips sides), plus every change
@@ -76,6 +77,8 @@ for key, e in E.items():
         cover = -cover
     e.update({"home_score": hs, "away_score": as_, "margin_vs_line": cover,
               "result": "W" if cover > 0 else "L" if cover < 0 else "P"})
+    st = e.get("stake", 2 if e["tier"] == "strong" else 1 if e["tier"] == "play" else 0)
+    e["units"] = round(st * 100 / 110, 2) if e["result"] == "W" else -st if e["result"] == "L" else 0.0
     graded += 1
 
 ledger["updated"] = datetime.now(timezone.utc).isoformat()

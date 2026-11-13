@@ -27,6 +27,8 @@ K = 10.0
 LAM = 500.0
 SEASON = 2027
 MIN_EST = 5
+PLAY_MIN, STRONG_MIN = 1.25, 2.0     # pick thresholds (pts of edge)
+STAKE = {"strong": 2, "play": 1, "lean": 0}  # units
 TRAIN_BLEND = Path(sys.argv[1] if len(sys.argv) > 1 else "/home/claude/cbb/work/games_blend10.parquet")
 TRAIN_RAW = Path(sys.argv[2] if len(sys.argv) > 2 else "/home/claude/cbb/work/games.parquet")
 RAW = Path("cbb/raw")
@@ -205,7 +207,8 @@ def main():
             "gameId": int(s.id), "date": s.startDate, "home": s.homeTeam, "away": s.awayTeam, "neutral": bool(s.neutralSite),
             "venue": s.venue, "spread_home": float(spread) if posted else None, "book": book, "proj_spread_home": proj,
             "pick": pick, "pick_line": f"{pick} {sp:+.1f}".replace("+0.0", " PK"), "edge": round(abs(float(lean)), 2),
-            "tier": "strong" if abs(lean) >= 2 else "play" if abs(lean) >= 1 else "lean",
+            "tier": "strong" if abs(lean) >= STRONG_MIN else "play" if abs(lean) >= PLAY_MIN else "lean",
+            "stake": STAKE["strong" if abs(lean) >= STRONG_MIN else "play" if abs(lean) >= PLAY_MIN else "lean"],
             "tempo_flag": bool(pace_gap > 1 and abs(ref) >= 8.5), "line_status": "posted" if posted else "projected",
             "model": "established" if est else "early", "games_played": [n_a, n_h], "reasons": reasons,
             "traits": traits, "terms": terms,

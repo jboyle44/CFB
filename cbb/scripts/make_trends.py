@@ -56,15 +56,18 @@ def summ(d):
             "units": round(w * 100 / 110 - (n - w), 1)}
 
 
-plays = g[g.edge >= 1]
-strong = g[g.edge >= 2]
+PLAY_MIN, STRONG_MIN = 1.25, 2.0
+g["stake"] = np.where(g.edge >= STRONG_MIN, 2, np.where(g.edge >= PLAY_MIN, 1, 0))
+plays = g[g.edge >= PLAY_MIN]
+strong = g[g.edge >= STRONG_MIN]
 out = {"model": "Live board model (hybrid): profiles blended with last season until both teams have 5 games, this season only after that; walk-forward 2017-2026, 2021 excluded",
-       "overall": {"plays_1plus": summ(plays), "strong_2plus": summ(strong)}}
+       "overall": {"plays_1plus": summ(plays), "strong_2plus": summ(strong), "play_only": summ(g[(g.edge >= PLAY_MIN) & (g.edge < STRONG_MIN)]),
+                   "staked": {"risked": int(plays.stake.sum()), "units": round(float((np.where(plays.win, plays.stake * 100 / 110, -plays.stake)).sum()), 1)}}}
 MON = [(11, "Nov"), (12, "Dec"), (1, "Jan"), (2, "Feb"), (3, "Mar")]
 out["by_month"] = [{"month": name, "plays": summ(plays[plays.mon == m]), "strong": summ(strong[strong.mon == m])} for m, name in MON]
 out["by_season"] = [{"season": f"{int(s) - 1}-{str(int(s))[2:]}", "plays": summ(plays[plays.season == s]), "strong": summ(strong[strong.season == s])}
                     for s in sorted(g.season.unique())]
-bins = [(0, 0.5, "Under 0.5"), (0.5, 1, "0.5 to 1"), (1, 1.5, "1 to 1.5"), (1.5, 2, "1.5 to 2"), (2, 3, "2 to 3"), (3, 99, "3+")]
+bins = [(0, 0.5, "Under 0.5"), (0.5, 1, "0.5 to 1"), (1, 1.25, "1 to 1.25"), (1.25, 1.5, "1.25 to 1.5"), (1.5, 2, "1.5 to 2"), (2, 2.5, "2 to 2.5"), (2.5, 99, "2.5+")]
 out["by_edge"] = [{"edge": lab, **summ(g[(g.edge >= lo) & (g.edge < hi)])} for lo, hi, lab in bins]
 # dog vs favorite picks, and tempo-flag
 fav_pick = (np.sign(g.p) > 0) == (g.spread < 0)
@@ -72,7 +75,7 @@ out["by_side"] = [{"side": "Underdog picks", **summ(plays[~fav_pick[plays.index]
                   {"side": "Favorite picks", **summ(plays[fav_pick[plays.index]])}]
 # cumulative units by date for plays (1+), for a chart
 c = plays.sort_values("date")
-c["u"] = np.where(c.win, 100 / 110, -1.0)
+c["u"] = np.where(c.win, c.stake * 100 / 110, -c.stake)   # staked: 1u play, 2u strong
 c["cum"] = c.u.cumsum()
 step = max(1, len(c) // 300)
 out["cumulative"] = [{"date": d.strftime("%Y-%m-%d"), "units": round(float(u), 1)} for d, u in zip(c.date.iloc[::step], c.cum.iloc[::step])]
@@ -83,7 +86,7 @@ print(out["by_side"])
 
 # ---- tier grid for the Trends tab: season x month x tier (Strong 2+, Play 1-2, Lean <1) ----
 def tier_of(e):
-    return np.where(e >= 2, "strong", np.where(e >= 1, "play", "lean"))
+    return np.where(e >= 2, "strong", np.where(e >= 1.25, "play", "lean"))
 
 
 g["tier"] = tier_of(g.edge.values)
@@ -92,6 +95,8 @@ MONTHS = [(11, "Nov"), (12, "Dec"), (1, "Jan"), (2, "Feb"), (3, "Mar"), (4, "Apr
 
 def cell(d):
     n = len(d)
+    if n and "stake" in d:
+        pass
     w = int(d.win.sum())
     return {"n": n, "w": w, "pct": round(100 * w / n, 1) if n else None, "units": round(w * 100 / 110 - (n - w), 1)}
 
