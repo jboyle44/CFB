@@ -31,10 +31,14 @@ for g in src["games"]:
     g["day"], g["dayLabel"], g["time"], g["ts"] = t.strftime("%Y-%m-%d"), t.strftime("%a %b %-d"), t.strftime("%-I:%M %p"), t.timestamp()
     if DAYS and g["day"] not in DAYS:
         continue
+    if g["tier"] == "lean":
+        continue
     games.append(g)
 
 results = []
 for e in ledger["entries"].values():
+    if e["tier"] == "lean":
+        continue
     t = et(e["date"])
     e["day"], e["dayLabel"], e["ts"] = t.strftime("%Y-%m-%d"), t.strftime("%a %b %-d"), t.timestamp()
     results.append(e)
@@ -107,7 +111,7 @@ const TABS=[["picks","Picks"],["results","Results"],["trends","Trends"],["how-it
 let trSeason="all";
 let tab=(location.hash||"#picks").slice(1);if(!TABS.some(t=>t[0]===tab))tab="picks";
 let st={day:null,tier:"bets",posted:false};
-try{const s=JSON.parse(localStorage.getItem("cbbf")||"{}");if(s.tier)st.tier=s.tier;if(s.posted)st.posted=s.posted}catch(e){}
+try{const s=JSON.parse(localStorage.getItem("cbbf")||"{}");if(s.tier==="strong")st.tier="strong";if(s.posted)st.posted=s.posted}catch(e){}
 const days=[...new Map(D.games.map(g=>[g.day,g.dayLabel])).entries()].sort();
 st.day=days.length?days[0][0]:null;
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -118,7 +122,7 @@ function save(){try{localStorage.setItem("cbbf",JSON.stringify({tier:st.tier,pos
 function tabs(){document.getElementById("tabs").innerHTML=TABS.map(([k,l])=>`<button class="${k===tab?"on":""}" data-t="${k}">${l}</button>`).join("");
  document.querySelectorAll("#tabs button").forEach(b=>b.onclick=()=>{tab=b.dataset.t;try{history.replaceState(null,"","#"+tab)}catch(e){location.hash=tab}render()})}
 window.addEventListener("hashchange",()=>{const h=location.hash.slice(1);if(TABS.some(t=>t[0]===h)){tab=h;render()}});
-function pass(g){if(st.posted&&g.line_status!=="posted")return false;if(st.tier==="bets")return g.tier!=="lean";if(st.tier==="strong")return g.tier==="strong";return true}
+function pass(g){if(st.posted&&g.line_status!=="posted")return false;if(st.tier==="strong")return g.tier==="strong";return true}
 
 function profile(g){
  const fmt=(t,v)=>t.kind==="pct"?v.toFixed(1)+"%":v.toFixed(1);
@@ -141,7 +145,7 @@ function profile(g){
 
 function vPicks(){
  let h=`<div class="days">`+days.map(([d,l])=>{const n=D.games.filter(g=>g.day===d&&pass(g)).length;return `<button class="${d===st.day?"on":""}" data-d="${d}">${l}<small>${n}</small></button>`}).join("")+`</div>`;
- h+=`<div class="filters">`+[["bets","Plays + Strong"],["strong","Strong only"],["all","All games"]].map(([k,l])=>`<button class="${st.tier===k?"on":""}" data-f="${k}">${l}</button>`).join("")+`<button class="${st.posted?"on":""}" data-p="1">Posted lines only</button></div>`;
+ h+=`<div class="filters">`+[["bets","All picks"],["strong","Strong only"]].map(([k,l])=>`<button class="${st.tier===k?"on":""}" data-f="${k}">${l}</button>`).join("")+`<button class="${st.posted?"on":""}" data-p="1">Posted lines only</button></div>`;
  const rows=D.games.filter(g=>g.day===st.day&&pass(g)).sort((a,b)=>b.edge-a.edge||a.ts-b.ts);
  if(!rows.length)h+=`<div class="empty">No games match these filters on this day.</div>`;
  h+=rows.map(g=>{const sep=g.neutral?" vs ":" @ ";
@@ -159,18 +163,18 @@ function rec(list){const w=list.filter(e=>e.result==="W").length,l=list.filter(e
  return {w,l,p,n:w+l,pct:w+l?100*w/(w+l):null,u:w*100/110-l}}
 function vResults(){
  const done=D.results.filter(e=>e.result),pend=D.results.filter(e=>!e.result);
- const plays=done.filter(e=>e.tier!=="lean"),strong=done.filter(e=>e.tier==="strong"),leans=done.filter(e=>e.tier==="lean");
+ const plays=done,strong=done.filter(e=>e.tier==="strong"),mid=done.filter(e=>e.tier==="play");
  const tile=(r,lab)=>`<div class="stat"><b>${r.w}-${r.l}${r.p?"-"+r.p:""}</b><span>${lab}<br>${r.pct==null?"—":r.pct.toFixed(1)+"%"} · ${sgn1(r.u)} units</span></div>`;
- let h=`<div class="stats">${tile(rec(plays),"All plays (1+ pt)")}${tile(rec(strong),"Strong (2+ pts)")}${tile(rec(leans),"Leans (not bets)")}</div>`;
- h+=`<p class="note">Picks are graded at the last posted line on the board before tip-off, 1 unit per bet at −110. Projected-line picks are never graded. ${pend.filter(e=>e.tier!=="lean").length} plays locked and awaiting results.</p>`;
+ let h=`<div class="stats">${tile(rec(plays),"All plays (1+ pt)")}${tile(rec(strong),"Strong (2+ pts)")}${tile(rec(mid),"Play (1 to 2 pts)")}</div>`;
+ h+=`<p class="note">Picks are graded at the last posted line on the board before tip-off, 1 unit per bet at −110. Projected-line picks are never graded. ${pend.length} picks locked and awaiting results.</p>`;
  const byDay=[...new Set(done.map(e=>e.day))].sort().reverse();
  if(byDay.length){h+=`<h2>By day</h2><div class="box"><table><thead><tr><th>Day</th><th>Plays</th><th>Strong</th><th>Units</th></tr></thead><tbody>`+
-  byDay.map(d=>{const L=done.filter(e=>e.day===d);const p=rec(L.filter(e=>e.tier!=="lean")),s=rec(L.filter(e=>e.tier==="strong"));
+  byDay.map(d=>{const L=done.filter(e=>e.day===d);const p=rec(L),s=rec(L.filter(e=>e.tier==="strong"));
    return `<tr><td>${L[0].dayLabel}</td><td>${p.w}-${p.l}${p.p?"-"+p.p:""}</td><td>${s.w}-${s.l}</td><td class="mono ${cls(p.u)}">${sgn1(p.u)}</td></tr>`}).join("")+`</tbody></table></div>`}
  const recent=done.slice().sort((a,b)=>b.ts-a.ts||b.edge-a.edge);
  h+=`<h2>Graded picks</h2><div class="box">`+
   (recent.length?recent.map(e=>`<div style="display:flex;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)"><span class="wl ${e.result}" style="align-self:flex-start;margin-top:2px">${e.result}</span><div style="flex:1"><div><b class="mono">${esc(e.pick_line)}</b> <span class="mut">· edge ${e.edge.toFixed(1)} · ${e.tier}</span></div><div class="note">${esc(e.away)} ${e.away_score}, ${esc(e.home)} ${e.home_score} · ${e.dayLabel} · ${e.result==="P"?"push":(e.result==="W"?"covered by ":"missed by ")+Math.abs(e.margin_vs_line).toFixed(1)}</div></div></div>`).join(""):`<div class="empty">No graded picks yet.</div>`)+`</div>`;
- const pp=pend.filter(e=>e.tier!=="lean").sort((a,b)=>a.ts-b.ts||b.edge-a.edge);
+ const pp=pend.slice().sort((a,b)=>a.ts-b.ts||b.edge-a.edge);
  if(pp.length)h+=`<h2>Locked, awaiting results</h2><div class="box"><table><thead><tr><th>Pick</th><th>Tier</th><th>Edge</th><th>Tip</th></tr></thead><tbody>`+
   pp.map(e=>`<tr><td>${esc(e.pick_line)}</td><td>${e.tier}</td><td class="mono">${e.edge.toFixed(1)}</td><td>${e.dayLabel}</td></tr>`).join("")+`</tbody></table></div>`;
  return h}
@@ -181,17 +185,17 @@ const pcCls=s=>s&&s.bets?(s.win_pct>=52.4?"pos":"neg"):"mut";
 function vHow(){
  const T=D.trends,O=T.overall;
  let h=`<h2>The idea</h2><p><b>The market prices teams on scoring margin, and the model says margin built on winning the possession battle holds up better than margin built on shot-making.</b></p>
- <p class="note">Shooting percentages, for and against, swing a lot on luck. Rebounding, turnovers, shot volume, paint scoring and rim protection are stable skills. Lines lean on margin, which mixes the two; the model reads the stable part and discounts the luck (early in the season, partly by blending each team's shooting with last season's). The gap is widest early in the season, when samples are small.</p>
+ <p class="note">Shooting percentages, for and against, swing a lot on luck. Rebounding, turnovers, shot volume, paint scoring and rim protection are stable skills. Lines rely on margin, which mixes the two; the model reads the stable part and discounts the luck (early in the season, partly by blending each team's shooting with last season's). The gap is widest early in the season, when samples are small.</p>
  <h2>How a pick is made</h2><ol class="note" style="padding-left:18px">
  <li>Build each team's profile: 19 traits from its games so far. Until both teams have 5 games, profiles are blended with last season (early-season model); after that, only this season counts (established model). Only games before tip-off are used.</li>
  <li>Compare the two teams trait by trait, in standard-deviation units.</li>
  <li>Multiply each gap by the trait's learned weight (table below) and add the underdog adjustment. The total is the edge: points the pick is expected to beat the line by.</li>
- <li>Bet at 1+ pt of edge (Play) and 2+ pts (Strong). Under 1 pt is a Lean, not a bet.</li></ol>`;
+ <li>Pick at 1+ pt of edge (Play) and 2+ pts (Strong). Games under 1 pt get no pick.</li></ol>`;
  const W=D.weights.filter(w=>w.key!=="spread").sort((a,b)=>Math.abs(b.pts_per_sd)-Math.abs(a.pts_per_sd));
  const WE=Object.fromEntries((D.weights_est||[]).map(w=>[w.key,w.pts_per_sd]));
  const mx=Math.max(...W.map(w=>Math.abs(w.pts_per_sd)));
  h+=`<h2>What the model rewards</h2><p class="note">Points of edge for being 1 standard deviation higher than the opponent in a trait, holding the rest fixed. + means the market underrates the trait, − means it overrates it.</p>`+
-  tbl(["Trait","Early season","","Established"],W.map(w=>`<tr><td>${esc(w.label)}<div class="mut" style="font-size:11px">${w.group}</div></td><td class="mono ${cls(w.pts_per_sd)}">${sgn(w.pts_per_sd)}</td><td style="width:84px;text-align:left"><span class="bar" style="width:${Math.round(76*Math.abs(w.pts_per_sd)/mx)}px;background:var(--${w.pts_per_sd>0?"pos":"neg"})"></span></td><td class="mono ${cls(WE[w.key]||0)}">${WE[w.key]!=null?sgn(WE[w.key]):"—"}</td></tr>`))+`<p class="note">Early season = blended with last season (either team under 5 games). Established = this season only, once both teams have 5+ games; it leans harder on fading shooting results because those numbers are no longer shrunk toward last season.</p>`;
+  tbl(["Trait","Early season","","Established"],W.map(w=>`<tr><td>${esc(w.label)}<div class="mut" style="font-size:11px">${w.group}</div></td><td class="mono ${cls(w.pts_per_sd)}">${sgn(w.pts_per_sd)}</td><td style="width:84px;text-align:left"><span class="bar" style="width:${Math.round(76*Math.abs(w.pts_per_sd)/mx)}px;background:var(--${w.pts_per_sd>0?"pos":"neg"})"></span></td><td class="mono ${cls(WE[w.key]||0)}">${WE[w.key]!=null?sgn(WE[w.key]):"—"}</td></tr>`))+`<p class="note">Early season = blended with last season (either team under 5 games). Established = this season only, once both teams have 5+ games; it relies more on fading shooting results because those numbers are no longer shrunk toward last season.</p>`;
  h+=`<h2>Backtest</h2><p class="note">${esc(T.model)}. Each season is predicted by a model trained only on earlier seasons and graded against the closing spread at −110. Breakeven is 52.4%.</p>
  <div class="stats"><div class="stat"><b>${O.plays_1plus.win_pct}%</b><span>Plays (1+ pt)<br>${O.plays_1plus.bets.toLocaleString()} bets · ${sgn1(O.plays_1plus.units)} u</span></div>
  <div class="stat"><b>${O.strong_2plus.win_pct}%</b><span>Strong (2+ pts)<br>${O.strong_2plus.bets.toLocaleString()} bets · ${sgn1(O.strong_2plus.units)} u</span></div>
@@ -200,7 +204,7 @@ function vHow(){
  <h3>By month: the edge is early-season</h3>`+
   tbl(["Month","Plays","Win %","Units","Strong win %"],T.by_month.map(m=>`<tr><td>${m.month}</td><td>${m.plays.bets.toLocaleString()}</td><td class="${pcCls(m.plays)}">${pc(m.plays)}</td><td class="mono ${cls(m.plays.units)}">${sgn1(m.plays.units)}</td><td class="${pcCls(m.strong)}">${pc(m.strong)} <span class="mut">(${m.strong.bets})</span></td></tr>`))+
  `<h3>By edge size: bigger edges win more</h3>`+
-  tbl(["Edge","Games","Win %","Units"],T.by_edge.map(e=>`<tr><td>${e.edge} pts</td><td>${e.bets.toLocaleString()}</td><td class="${pcCls(e)}">${pc(e)}</td><td class="mono ${cls(e.units)}">${sgn1(e.units)}</td></tr>`))+
+  tbl(["Edge","Games","Win %","Units"],T.by_edge.filter(e=>!["Under 0.5","0.5 to 1"].includes(e.edge)).map(e=>`<tr><td>${e.edge} pts</td><td>${e.bets.toLocaleString()}</td><td class="${pcCls(e)}">${pc(e)}</td><td class="mono ${cls(e.units)}">${sgn1(e.units)}</td></tr>`))+
  `<h3>By season</h3>`+
   tbl(["Season","Plays","Win %","Units","Strong win %"],T.by_season.map(s=>`<tr><td>${s.season}</td><td>${s.plays.bets.toLocaleString()}</td><td class="${pcCls(s.plays)}">${pc(s.plays)}</td><td class="mono ${cls(s.plays.units)}">${sgn1(s.plays.units)}</td><td class="${pcCls(s.strong)}">${pc(s.strong)}</td></tr>`))+
  `<h3>Underdog vs favorite picks (1+ pt)</h3>`+
@@ -215,16 +219,16 @@ function vHow(){
 function tcell(c,isLean){if(!c||!c.n)return `<td class="mut">—</td>`;
  const k=isLean?"":(c.pct>=52.4?"pos":"neg");
  return `<td><span class="mono ${k}" style="font-weight:600">${c.pct.toFixed(1)}%</span><div class="mut" style="font-size:11px">${c.n.toLocaleString()} games</div></td>`}
-function trow(label,t,bold){return `<tr${bold?' class="total"':""}><td>${label}</td>${tcell(t.strong)}${tcell(t.play)}${tcell(t.lean,true)}</tr>`}
+function trow(label,t,bold){return `<tr${bold?' class="total"':""}><td>${label}</td>${tcell(t.strong)}${tcell(t.play)}</tr>`}
 function vTrends(){
  const G=D.trends.tier_grid;const seasons=Object.keys(G).filter(k=>k!=="all");
- const head=`<thead><tr><th>${"%s"}</th><th>Strong<br><span class="mut">2+ pts</span></th><th>Play<br><span class="mut">1 to 2 pts</span></th><th>Lean<br><span class="mut">under 1 pt</span></th></tr></thead>`;
- let h=`<p class="note">Backtest of the live model: each season predicted by a model trained only on earlier seasons, graded against the closing spread. Win % excludes pushes. Breakeven at −110 is 52.4% (green above, red below). Leans are not bets; they're shown for comparison.</p>`;
+ const head=`<thead><tr><th>${"%s"}</th><th>Strong<br><span class="mut">2+ pts</span></th><th>Play<br><span class="mut">1 to 2 pts</span></th></tr></thead>`;
+ let h=`<p class="note">Backtest of the live model: each season predicted by a model trained only on earlier seasons, graded against the closing spread. Win % excludes pushes. Breakeven at −110 is 52.4% (green above, red below).</p>`;
  h+=`<h2>By season</h2><div class="box"><table>${head.replace("%s","Season")}<tbody>`+seasons.map(s=>trow(s,G[s].total)).join("")+trow("All seasons",G.all.total,true)+`</tbody></table></div>`;
  const sel=G[trSeason]?trSeason:"all";
  h+=`<h2>By month</h2><div class="days">`+[["all","All seasons"],...seasons.map(s=>[s,s])].map(([k,l])=>`<button class="${k===sel?"on":""}" data-s="${k}">${l}</button>`).join("")+`</div>`;
  const M=G[sel].months;
- h+=`<div class="box"><table>${head.replace("%s","Month")}<tbody>`+Object.keys(M).filter(m=>M[m].strong.n+M[m].play.n+M[m].lean.n>0).map(m=>trow(m,M[m])).join("")+trow(sel==="all"?"All months":sel+" total",G[sel].total,true)+`</tbody></table></div>`;
+ h+=`<div class="box"><table>${head.replace("%s","Month")}<tbody>`+Object.keys(M).filter(m=>M[m].strong.n+M[m].play.n>0).map(m=>trow(m,M[m])).join("")+trow(sel==="all"?"All months":sel+" total",G[sel].total,true)+`</tbody></table></div>`;
  h+=`<p class="note">April has only a handful of games per season (postseason), so treat its percentages as noise.</p>`;
  return h}
 
