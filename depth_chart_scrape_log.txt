@@ -107,9 +107,7 @@ exit_code=0
 Scraping Ourlads depth chart for USC...
   89 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
-Fetching CFBD recruiting data for 2 (school, year) pairs...
-  USC 2025: 28 players
-  USC 2026: 34 players
+Skipping CFBD recruiting call this run (no new players needing recruiting data).
 Wrote ../depth_chart_data/usc.json
 exit_code=0
 === washington ===
@@ -221,9 +219,7 @@ exit_code=0
 Scraping Ourlads depth chart for Texas...
   85 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
-Fetching CFBD recruiting data for 2 (school, year) pairs...
-  Texas 2025: 25 players
-  Texas 2026: 26 players
+Skipping CFBD recruiting call this run (no new players needing recruiting data).
 Wrote ../depth_chart_data/texas.json
 exit_code=0
 === texas-am ===
@@ -258,9 +254,7 @@ exit_code=0
 Scraping Ourlads depth chart for Clemson...
   82 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
-Fetching CFBD recruiting data for 2 (school, year) pairs...
-  Clemson 2025: 15 players
-  Clemson 2026: 22 players
+Skipping CFBD recruiting call this run (no new players needing recruiting data).
 Wrote ../depth_chart_data/clemson.json
 exit_code=0
 === duke ===
@@ -274,9 +268,7 @@ exit_code=0
 Scraping Ourlads depth chart for Florida State...
   75 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
-Fetching CFBD recruiting data for 2 (school, year) pairs...
-  Florida State 2025: 23 players
-  Florida State 2026: 30 players
+Skipping CFBD recruiting call this run (no new players needing recruiting data).
 Wrote ../depth_chart_data/florida-state.json
 exit_code=0
 === georgia-tech ===
@@ -316,9 +308,11 @@ Wrote ../depth_chart_data/nc-state.json
 exit_code=0
 === pittsburgh ===
 Scraping Ourlads depth chart for Pittsburgh...
-  89 depth chart rows
+  92 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
-Skipping CFBD recruiting call this run (no new players needing recruiting data).
+Fetching CFBD recruiting data for 2 (school, year) pairs...
+  Pittsburgh 2025: 25 players
+  Pittsburgh 2026: 21 players
 Wrote ../depth_chart_data/pittsburgh.json
 exit_code=0
 === smu ===
@@ -339,9 +333,7 @@ exit_code=0
 Scraping Ourlads depth chart for Syracuse...
   67 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
-Fetching CFBD recruiting data for 2 (school, year) pairs...
-  Syracuse 2025: 35 players
-  Syracuse 2026: 26 players
+Skipping CFBD recruiting call this run (no new players needing recruiting data).
 Wrote ../depth_chart_data/syracuse.json
 exit_code=0
 === virginia ===
@@ -383,18 +375,14 @@ exit_code=0
 Scraping Ourlads depth chart for Arizona State...
   104 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
-Fetching CFBD recruiting data for 2 (school, year) pairs...
-  Arizona State 2025: 22 players
-  Arizona State 2026: 17 players
+Skipping CFBD recruiting call this run (no new players needing recruiting data).
 Wrote ../depth_chart_data/arizona-state.json
 exit_code=0
 === baylor ===
 Scraping Ourlads depth chart for Baylor...
   92 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
-Fetching CFBD recruiting data for 2 (school, year) pairs...
-  Baylor 2025: 21 players
-  Baylor 2026: 14 players
+Skipping CFBD recruiting call this run (no new players needing recruiting data).
 Wrote ../depth_chart_data/baylor.json
 exit_code=0
 === byu ===
@@ -422,9 +410,7 @@ exit_code=0
 Scraping Ourlads depth chart for Colorado...
   83 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
-Fetching CFBD recruiting data for 2 (school, year) pairs...
-  Colorado 2025: 16 players
-  Colorado 2026: 14 players
+Skipping CFBD recruiting call this run (no new players needing recruiting data).
 Wrote ../depth_chart_data/colorado.json
 exit_code=0
 === houston ===
@@ -438,9 +424,7 @@ exit_code=0
 Scraping Ourlads depth chart for Iowa State...
   69 depth chart rows
 Skipping CFBD portal call this run (no new transfers needing portal data).
-Fetching CFBD recruiting data for 2 (school, year) pairs...
-  Iowa State 2025: 21 players
-  Iowa State 2026: 25 players
+Skipping CFBD recruiting call this run (no new players needing recruiting data).
 Wrote ../depth_chart_data/iowa-state.json
 exit_code=0
 === kansas ===
