@@ -18,7 +18,6 @@ import statsmodels.api as sm
 
 GAMES = Path(sys.argv[1] if len(sys.argv) > 1 else "/home/claude/cbb/work/games.parquet")
 OUT = Path(sys.argv[2] if len(sys.argv) > 2 else "/home/claude/cbb/work/results")
-OUT.mkdir(parents=True, exist_ok=True)
 EXCLUDE = [2021]          # COVID season, mirrors BRR precedent
 BREAKEVEN = 110 / 210     # 52.38% at -110
 
@@ -134,6 +133,7 @@ def bucket_table(g):
 
 
 def main():
+    OUT.mkdir(parents=True, exist_ok=True)
     g = pd.read_parquet(GAMES)
     g = g[~g.season.isin(EXCLUDE)].reset_index(drop=True)
     X = features(g)
