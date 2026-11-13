@@ -8,6 +8,8 @@ ET = ZoneInfo("America/New_York")
 src = json.load(open("cbb/live/picks.json"))
 out_path = sys.argv[1] if len(sys.argv) > 1 else "cbb/picks.html"
 
+import os
+DAYS = set(filter(None, os.environ.get("DAYS", "").split(",")))
 games = []
 for g in src["games"]:
     t = datetime.fromisoformat(g["date"].replace("Z", "+00:00")).astimezone(ET)
@@ -15,6 +17,8 @@ for g in src["games"]:
     g["dayLabel"] = t.strftime("%a %b %-d")
     g["time"] = t.strftime("%-I:%M %p")
     g["ts"] = t.timestamp()
+    if DAYS and g["day"] not in DAYS:
+        continue
     games.append(g)
 gen = datetime.fromisoformat(src["generated"].replace("Z", "+00:00")).astimezone(ET).strftime("%a %b %-d, %-I:%M %p ET")
 
@@ -54,7 +58,7 @@ ul.why{margin:8px 0 0;padding-left:18px;font-size:13.5px}ul.why li{margin:2px 0}
 .empty{color:var(--mute);text-align:center;padding:30px}
 </style></head><body><div class="wrap">
 <h1>CBB Style Model</h1>
-<div class="sub">Picks vs the spread, next two weeks. Data as of __GEN__.</div>
+<div class="sub">Picks vs the spread. Data as of __GEN__.</div>
 <div class="stats">
 <div class="stat"><b>54.0%</b><span>ATS at 1+ pt edge<br>10,270 out-of-sample bets</span></div>
 <div class="stat"><b>57.2%</b><span>ATS at 2+ pt edge<br>1,511 bets</span></div>
@@ -65,10 +69,10 @@ ul.why{margin:8px 0 0;padding-left:18px;font-size:13.5px}ul.why li{margin:2px 0}
 <ul>
 <li><b>Underpriced:</b> offensive rebounding, ball security, 3-point volume, assists, paint scoring, rim protection, and defenses that limit paint points, second chances and transition.</li>
 <li><b>Overpriced:</b> teams whose opponents have shot poorly against them, and hot-shooting teams.</li>
-<li><b>Tempo flag:</b> a fast favorite (8.5+) facing a slow underdog. Underdogs covered about 52% historically.</li>
+<li><b>Tempo flag:</b> a fast favorite (8.5+) facing a slow underdog. Underdogs covered about 52% historically, so it supports dog picks and cuts against favorite picks.</li>
 <li><b>Tiers:</b> Strong = 2+ pt edge, Play = 1 to 2, Lean = under 1 (not a bet).</li>
 <li><b>Posted vs projected:</b> posted lines come from the books. Further out, the line is projected from the same team profiles (typical miss 3.4 pts). Treat projected picks as a preview until the real number opens.</li>
-<li>Early-season profiles blend this season's games with last season, weighted toward this season as games pile up.</li>
+<li>Early-season profiles blend this season's games with last season, weighted toward this season as games pile up.</li><li><b>Best months:</b> the backtest edge is concentrated November through January (Nov 54.6%, 60.0% at 2+ pts) and fades to about breakeven by February.</li>
 </ul></details>
 <div class="days" id="days"></div>
 <div class="filters" id="filters"></div>
@@ -94,7 +98,7 @@ function render(){
  L.innerHTML=rows.map(g=>{
   const sep=g.neutral?" vs ":" @ ";
   const line=g.line_status==="posted"?'<span class="badge posted">Line posted'+(g.book?" · "+g.book:"")+'</span>':'<span class="badge">Projected line</span>';
-  const tempo=g.tempo_flag?'<span class="badge tempo">Tempo flag</span>':"";
+  const isDog=g.pick_line.includes('+');const tempo=g.tempo_flag?(isDog?'<span class="badge tempo">Tempo agrees: slow dog vs fast favorite</span>':'<span class="badge">Tempo cuts against: dog is slower</span>'):"";
   const why=g.reasons.length?'<ul class="why">'+g.reasons.map(r=>`<li>${r.text} <em>+${r.pts.toFixed(1)}</em></li>`).join("")+"</ul>":"";
   return `<div class="card"><div class="top"><span>${g.time}${g.venue?" · "+g.venue:""}</span><span>Games played ${g.games_played[0]}-${g.games_played[1]}</span></div>
   <div class="match">${g.away}${sep}${g.home}</div>

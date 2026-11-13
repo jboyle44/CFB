@@ -19,7 +19,7 @@ def cbbd(path, **p):
 
 out = {
     "fetched_at": dt.datetime.utcnow().isoformat() + "Z",
-    "team_box": cbbd("/games/teams", season=SEASON, startDateRange=start.isoformat(), endDateRange=today.isoformat()),
+    "team_box": cbbd("/games/teams", season=SEASON, startDateRange=start.isoformat(), endDateRange=(today + dt.timedelta(days=1)).isoformat()),
     "schedule": cbbd("/games", season=SEASON, startDateRange=today.isoformat(), endDateRange=ahead.isoformat()),
     "lines": cbbd("/lines", season=SEASON, startDateRange=today.isoformat(), endDateRange=ahead.isoformat()),
 }
