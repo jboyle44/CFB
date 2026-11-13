@@ -1,0 +1,36 @@
+name: CBB Live Fetch
+
+on:
+  workflow_dispatch:
+    inputs:
+      days_ahead:
+        description: "Days of upcoming schedule to pull"
+        default: "14"
+
+concurrency:
+  group: repo-writes
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch live data
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          DAYS_AHEAD: ${{ inputs.days_ahead }}
+        run: python cbb/scripts/fetch_live.py
+      - name: Commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add cbb/live
+          git commit -m "CBB: live data fetch" || echo "no changes"
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 10; done

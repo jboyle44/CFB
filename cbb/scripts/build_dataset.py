@@ -15,7 +15,9 @@ import pandas as pd
 RAW = Path(sys.argv[1] if len(sys.argv) > 1 else "cbb/raw")
 OUT = Path(sys.argv[2] if len(sys.argv) > 2 else "cbb/work/games.parquet")
 SEASONS = range(2014, 2027)
-MIN_PRIOR = 5
+import os
+MIN_PRIOR = int(os.environ.get("MIN_PRIOR", "5"))
+BLEND_K = float(os.environ.get("BLEND_K", "0"))  # >0: shrink early-season profiles toward last season
 PROVIDER_RANK = ["consensus", "ESPN BET", "Draft Kings", "Bovada", "teamrankings", "numberfire"]
 
 
@@ -88,6 +90,7 @@ STYLE = None
 def main():
     global STYLE
     frames = []
+    last_season_means = {}
     for season in SEASONS:
         df = box_rows(season)
         df = df[df.d1 & df.opp_d1].copy()
@@ -101,6 +104,17 @@ def main():
         pre.columns = [f"pre_{c}" for c in STYLE]
         df = pd.concat([df, pre], axis=1)
         df["n_prior"] = grp.cumcount()
+        if BLEND_K > 0:
+            prior = last_season_means.get(season - 1)
+            base = df[["teamId"]].merge(prior, on="teamId", how="left") if prior is not None else pd.DataFrame(index=df.index)
+            for c in STYLE:
+                lm = df[c].mean()
+                pv = base[c].values if c in base else np.full(len(df), lm)
+                pv = np.where(np.isnan(pv), lm, pv)
+                cur = df[f"pre_{c}"].fillna(0).values
+                n = df["n_prior"].values
+                df[f"pre_{c}"] = (n * cur + BLEND_K * pv) / (n + BLEND_K)
+        last_season_means[season] = df.groupby("teamId")[STYLE].mean().reset_index()
         frames.append(df)
     tg = pd.concat(frames, ignore_index=True)
 
