@@ -25,6 +25,7 @@ def et(s):
     return datetime.fromisoformat(s.replace("Z", "+00:00")).astimezone(ET)
 
 
+LEDGER = ledger["entries"]
 games = []
 for g in src["games"]:
     t = et(g["date"])
@@ -33,6 +34,11 @@ for g in src["games"]:
         continue
     if g["tier"] == "lean":
         continue
+    e = LEDGER.get(str(g["gameId"]))
+    if e and e.get("first_spread_home") is not None and e.get("pick") == g["pick"] and g["line_status"] == "posted":
+        g["first_spread_home"], g["first_edge"] = e["first_spread_home"], e["first_edge"]
+        g["first_at"] = et(e["first_at"]).strftime("%a %-I:%M %p")
+        g["line_history"] = [h["spread_home"] for h in e.get("line_history", [])]
     games.append(g)
 
 results = []
@@ -139,10 +145,25 @@ function profile(g){
  rows+=`<tr class="grp"><td colspan="4">The line</td></tr>
  <tr><td>${g.line_status==="posted"?"Posted spread"+(g.book?" ("+esc(g.book)+")":""):"Projected spread (no line posted yet)"}</td><td colspan="3" class="mono">${esc(g.pick)} ${ln(sp)}</td></tr>
  <tr class="total"><td>Model's fair line</td><td colspan="3" class="mono">${esc(g.pick)} ${ln(fair)}</td></tr>`;
+ const L=lineInfo(g);
+ if(L&&Math.abs(L.mv)>=0.05)rows+=`<tr><td>Picked at (${g.first_at})</td><td colspan="3" class="mono">${esc(g.pick)} ${ln(L.first)}, edge ${L.first.toFixed?g.first_edge.toFixed(2):""}</td></tr>
+ <tr><td>Line movement since</td><td colspan="3" class="mono ${L.mv>0?"pos":"neg"}">${L.mv>0?"+":"\u2212"}${Math.abs(L.mv).toFixed(1)} ${L.mv>0?"in favor":"against"}</td></tr>
+ <tr class="total"><td>Line-adjusted edge</td><td colspan="3" class="mono">${L.adj.toFixed(2)}</td></tr>`;
  return `<details class="prof"><summary>Full profile: all 19 traits and points</summary>
  <table><thead><tr><th>Trait (season so far, blended)</th><th>${esc(g.away)}</th><th>${esc(g.home)}</th><th>Pts to pick</th></tr></thead><tbody>${rows}</tbody></table>
  <div class="note" style="margin-top:6px">Pts to pick: how many points each trait gap adds (+) or subtracts (−) from the pick's edge. They sum to the edge.</div></details>`}
 
+const lnf=v=>Math.abs(v)<0.05?"PK":(v>0?"+":"\u2212")+Math.abs(v).toFixed(1);
+function lineInfo(g){
+ if(g.first_spread_home==null||g.spread_home==null)return null;
+ const ph=g.pick===g.home, f=ph?g.first_spread_home:-g.first_spread_home, c=ph?g.spread_home:-g.spread_home;
+ const mv=c-f; return {first:f,cur:c,mv,adj:g.first_edge+mv,hist:(g.line_history||[]).map(v=>ph?v:-v)}}
+function lineBlock(g){const L=lineInfo(g);if(!L)return "";
+ let t=`<div class="note" style="margin-top:6px">Picked at <b class="mono">${esc(g.pick)} ${lnf(L.first)}</b> (${g.first_at}, edge ${g.first_edge.toFixed(1)})`;
+ if(L.hist.length>1)t+=` \u00b7 line history ${L.hist.map(lnf).join(" \u2192 ")}`;
+ if(Math.abs(L.mv)>=0.05)t+=`<br><span class="${L.mv>0?"pos":"neg"}">Moved ${Math.abs(L.mv).toFixed(1)} ${L.mv>0?"in favor of":"against"} the pick</span> \u00b7 line-adjusted edge <b class="mono ${L.adj>=1?"pos":"neg"}">${L.adj.toFixed(1)}</b>${L.adj<1?" (below the 1-pt threshold)":""}`;
+ else t+=` \u00b7 no net line movement`;
+ return t+`</div>`}
 function vPicks(){
  let h=`<div class="days">`+days.map(([d,l])=>{const n=D.games.filter(g=>g.day===d&&pass(g)).length;return `<button class="${d===st.day?"on":""}" data-d="${d}">${l}<small>${n}</small></button>`}).join("")+`</div>`;
  h+=`<div class="filters">`+[["bets","All picks"],["strong","Strong only"]].map(([k,l])=>`<button class="${st.tier===k?"on":""}" data-f="${k}">${l}</button>`).join("")+`<button class="${st.posted?"on":""}" data-p="1">Posted lines only</button></div>`;
@@ -156,7 +177,7 @@ function vPicks(){
   return `<div class="card"><div class="top"><span>${g.time}${g.venue?" · "+esc(g.venue):""}</span><span>Games played ${g.games_played[0]}-${g.games_played[1]}</span></div>
   <div class="match">${esc(g.away)}${sep}${esc(g.home)}</div>
   <div class="pickrow"><span class="tier ${g.tier}">${g.tier}</span><span class="pick">${esc(g.pick_line)}</span><span class="edge">edge ${g.edge.toFixed(1)} pts</span></div>
-  <div class="pickrow" style="margin-top:6px">${line}${tempo}<span class="badge">${g.model==="established"?"Established model (5+ games)":"Early-season model"}</span></div>${why}${profile(g)}</div>`}).join("");
+  <div class="pickrow" style="margin-top:6px">${line}${tempo}<span class="badge">${g.model==="established"?"Established model (5+ games)":"Early-season model"}</span></div>${lineBlock(g)}${why}${profile(g)}</div>`}).join("");
  return h}
 
 function rec(list){const w=list.filter(e=>e.result==="W").length,l=list.filter(e=>e.result==="L").length,p=list.filter(e=>e.result==="P").length;
@@ -211,6 +232,7 @@ function vHow(){
   tbl(["Side","Bets","Win %","Units"],T.by_side.map(s=>`<tr><td>${s.side}</td><td>${s.bets.toLocaleString()}</td><td class="${pcCls(s)}">${pc(s)}</td><td class="mono ${cls(s.units)}">${sgn1(s.units)}</td></tr>`))+
  `<h2>Fine print</h2><ul class="note" style="padding-left:18px">
  <li>Tempo flag: a fast favorite (8.5+) vs a slow underdog. Underdogs covered about 52% historically; it supports dog picks and cuts against favorite picks.</li>
+ <li>Line movement: the model treats the posted line as information, so its edge barely changes when the line moves (about 0.1 pt per point). Each card also shows the line the pick was first made at and a line-adjusted edge: the original edge plus or minus the points the line has moved since. If you are getting a worse number than the original, use the line-adjusted edge.</li>
  <li>Projected lines (before books post) come from the same profiles and miss the real close by about 3.4 pts on average. Treat those picks as previews.</li>
  <li>Lines before 2019 cover about 65% of games. Results assume −110; real prices and limits vary, especially on low-major games and big underdogs.</li>
  <li>Style-vs-style matchups (archetypes, shot-mix clashes) were tested and do not beat the spread. Only tempo survived.</li></ul>`;

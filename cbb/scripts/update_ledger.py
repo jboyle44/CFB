@@ -35,9 +35,20 @@ for g in picks["games"]:
     prev = E.get(key)
     if prev and prev.get("result"):
         continue
-    E[key] = {k: g[k] for k in ("gameId", "date", "home", "away", "neutral", "pick", "pick_line", "spread_home",
-                                 "book", "edge", "tier", "tempo_flag")}
-    E[key]["locked_at"] = picks["generated"]
+    new = {k: g[k] for k in ("gameId", "date", "home", "away", "neutral", "pick", "pick_line", "spread_home",
+                              "book", "edge", "tier", "tempo_flag")}
+    new["locked_at"] = picks["generated"]
+    # line tracking: first line/edge the pick was made at (reset if the model flips sides), plus every change
+    if prev and prev.get("pick") == g["pick"] and "first_spread_home" in prev:
+        for k in ("first_spread_home", "first_edge", "first_at", "first_pick_line", "line_history"):
+            new[k] = prev[k]
+    else:
+        new.update({"first_spread_home": g["spread_home"], "first_edge": g["edge"], "first_at": picks["generated"],
+                    "first_pick_line": g["pick_line"], "line_history": []})
+    hist = new["line_history"]
+    if not hist or hist[-1]["spread_home"] != g["spread_home"]:
+        hist.append({"at": picks["generated"], "spread_home": g["spread_home"], "edge": g["edge"]})
+    E[key] = new
     added += prev is None
     updated += prev is not None
 

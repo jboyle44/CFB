@@ -14,6 +14,17 @@
    "tier": "lean",
    "tempo_flag": false,
    "locked_at": "2026-11-13T00:13:45.280693Z",
+   "first_spread_home": -8.5,
+   "first_edge": 0.85,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Texas A&M -8.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -8.5,
+     "edge": 0.85
+    }
+   ],
    "home_score": 88,
    "away_score": 69,
    "margin_vs_line": 10.5,
@@ -33,6 +44,17 @@
    "tier": "lean",
    "tempo_flag": false,
    "locked_at": "2026-11-13T00:13:45.280693Z",
+   "first_spread_home": 1.5,
+   "first_edge": 0.66,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "South Alabama +1.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": 1.5,
+     "edge": 0.66
+    }
+   ],
    "home_score": 79,
    "away_score": 72,
    "margin_vs_line": 8.5,
@@ -52,6 +74,17 @@
    "tier": "lean",
    "tempo_flag": false,
    "locked_at": "2026-11-13T00:13:45.280693Z",
+   "first_spread_home": -26.5,
+   "first_edge": 0.22,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Southern +26.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -26.5,
+     "edge": 0.22
+    }
+   ],
    "home_score": 91,
    "away_score": 61,
    "margin_vs_line": -3.5,
@@ -71,6 +104,17 @@
    "tier": "play",
    "tempo_flag": false,
    "locked_at": "2026-11-13T00:13:45.280693Z",
+   "first_spread_home": -4.5,
+   "first_edge": 1.51,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "West Florida +4.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -4.5,
+     "edge": 1.51
+    }
+   ],
    "home_score": 85,
    "away_score": 83,
    "margin_vs_line": 2.5,
@@ -90,6 +134,17 @@
    "tier": "play",
    "tempo_flag": false,
    "locked_at": "2026-11-13T00:13:45.280693Z",
+   "first_spread_home": 2.5,
+   "first_edge": 1.34,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Southern Illinois +2.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": 2.5,
+     "edge": 1.34
+    }
+   ],
    "home_score": 80,
    "away_score": 70,
    "margin_vs_line": 12.5,
@@ -109,6 +164,17 @@
    "tier": "lean",
    "tempo_flag": true,
    "locked_at": "2026-11-13T00:13:45.280693Z",
+   "first_spread_home": -21.5,
+   "first_edge": 0.27,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Montana State +21.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -21.5,
+     "edge": 0.27
+    }
+   ],
    "home_score": 86,
    "away_score": 71,
    "margin_vs_line": 6.5,
@@ -128,6 +194,17 @@
    "tier": "lean",
    "tempo_flag": false,
    "locked_at": "2026-11-13T00:13:45.280693Z",
+   "first_spread_home": -4.5,
+   "first_edge": 0.22,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "New Mexico State +4.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -4.5,
+     "edge": 0.22
+    }
+   ],
    "home_score": 60,
    "away_score": 58,
    "margin_vs_line": 2.5,
@@ -147,6 +224,17 @@
    "tier": "play",
    "tempo_flag": false,
    "locked_at": "2026-11-13T00:13:45.280693Z",
+   "first_spread_home": -8.5,
+   "first_edge": 1.22,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "UC Riverside +8.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -8.5,
+     "edge": 1.22
+    }
+   ],
    "home_score": 75,
    "away_score": 80,
    "margin_vs_line": 13.5,
@@ -165,7 +253,18 @@
    "edge": 0.16,
    "tier": "lean",
    "tempo_flag": true,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -33.5,
+   "first_edge": 0.16,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "North Alabama +33.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -33.5,
+     "edge": 0.16
+    }
+   ]
   },
   "372789": {
    "gameId": 372789,
@@ -180,7 +279,23 @@
    "edge": 1.31,
    "tier": "play",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -3.5,
+   "first_edge": 1.43,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Clemson -3.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -3.5,
+     "edge": 1.43
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -4.5,
+     "edge": 1.31
+    }
+   ]
   },
   "372797": {
    "gameId": 372797,
@@ -195,7 +310,18 @@
    "edge": 1.19,
    "tier": "play",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -3.5,
+   "first_edge": 1.19,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Pittsburgh +3.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -3.5,
+     "edge": 1.19
+    }
+   ]
   },
   "372783": {
    "gameId": 372783,
@@ -210,7 +336,28 @@
    "edge": 0.06,
    "tier": "lean",
    "tempo_flag": true,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -11.5,
+   "first_edge": 0.06,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Harvard +11.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -11.5,
+     "edge": 0.06
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -12.5,
+     "edge": 0.18
+    },
+    {
+     "at": "2026-11-13T16:51:34.635897Z",
+     "spread_home": -11.5,
+     "edge": 0.06
+    }
+   ]
   },
   "372795": {
    "gameId": 372795,
@@ -225,7 +372,28 @@
    "edge": 0.91,
    "tier": "lean",
    "tempo_flag": true,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -37.5,
+   "first_edge": 1.03,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Merrimack +37.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -37.5,
+     "edge": 1.03
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -38.5,
+     "edge": 1.15
+    },
+    {
+     "at": "2026-11-13T16:34:50.403488Z",
+     "spread_home": -36.5,
+     "edge": 0.91
+    }
+   ]
   },
   "374925": {
    "gameId": 374925,
@@ -240,7 +408,23 @@
    "edge": 0.5,
    "tier": "lean",
    "tempo_flag": true,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -29.5,
+   "first_edge": 0.74,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Northern Iowa +29.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -29.5,
+     "edge": 0.74
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -27.5,
+     "edge": 0.5
+    }
+   ]
   },
   "372782": {
    "gameId": 372782,
@@ -255,7 +439,23 @@
    "edge": 1.46,
    "tier": "play",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -35.5,
+   "first_edge": 1.34,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Sam Houston +35.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -35.5,
+     "edge": 1.34
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -36.5,
+     "edge": 1.46
+    }
+   ]
   },
   "374939": {
    "gameId": 374939,
@@ -270,7 +470,23 @@
    "edge": 1.66,
    "tier": "play",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -4.5,
+   "first_edge": 1.42,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Elon -4.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -4.5,
+     "edge": 1.42
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -2.5,
+     "edge": 1.66
+    }
+   ]
   },
   "374940": {
    "gameId": 374940,
@@ -285,7 +501,18 @@
    "edge": 0.54,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": 1.5,
+   "first_edge": 0.54,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Yale -1.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": 1.5,
+     "edge": 0.54
+    }
+   ]
   },
   "372794": {
    "gameId": 372794,
@@ -300,7 +527,28 @@
    "edge": 0.52,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -4.5,
+   "first_edge": 0.52,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Georgia +4.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -4.5,
+     "edge": 0.52
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -3.5,
+     "edge": 0.4
+    },
+    {
+     "at": "2026-11-13T16:51:34.635897Z",
+     "spread_home": -4.5,
+     "edge": 0.52
+    }
+   ]
   },
   "372791": {
    "gameId": 372791,
@@ -315,7 +563,23 @@
    "edge": 0.31,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -29.5,
+   "first_edge": 0.43,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Tennessee State +29.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -29.5,
+     "edge": 0.43
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -28.5,
+     "edge": 0.31
+    }
+   ]
   },
   "374933": {
    "gameId": 374933,
@@ -330,7 +594,23 @@
    "edge": 0.58,
    "tier": "lean",
    "tempo_flag": true,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -34.5,
+   "first_edge": 0.1,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Kentucky -34.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -34.5,
+     "edge": 0.1
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -30.5,
+     "edge": 0.58
+    }
+   ]
   },
   "374923": {
    "gameId": 374923,
@@ -345,7 +625,28 @@
    "edge": 0.31,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -20.5,
+   "first_edge": 0.07,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Purdue -20.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -20.5,
+     "edge": 0.07
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -19.5,
+     "edge": 0.19
+    },
+    {
+     "at": "2026-11-13T16:40:51.035664Z",
+     "spread_home": -18.5,
+     "edge": 0.31
+    }
+   ]
   },
   "374924": {
    "gameId": 374924,
@@ -360,7 +661,23 @@
    "edge": 1.6,
    "tier": "play",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -8.5,
+   "first_edge": 1.72,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "App State +8.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -8.5,
+     "edge": 1.72
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -7.5,
+     "edge": 1.6
+    }
+   ]
   },
   "374936": {
    "gameId": 374936,
@@ -375,7 +692,18 @@
    "edge": 0.53,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -7.5,
+   "first_edge": 0.53,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Hofstra -7.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -7.5,
+     "edge": 0.53
+    }
+   ]
   },
   "374946": {
    "gameId": 374946,
@@ -390,7 +718,18 @@
    "edge": 0.86,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -22.5,
+   "first_edge": 0.86,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Troy +22.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -22.5,
+     "edge": 0.86
+    }
+   ]
   },
   "378010": {
    "gameId": 378010,
@@ -405,7 +744,18 @@
    "edge": 0.17,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -13.5,
+   "first_edge": 0.17,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "South Dakota +13.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -13.5,
+     "edge": 0.17
+    }
+   ]
   },
   "372780": {
    "gameId": 372780,
@@ -420,7 +770,23 @@
    "edge": 1.01,
    "tier": "play",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -10.5,
+   "first_edge": 1.25,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "UConn -10.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -10.5,
+     "edge": 1.25
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -12.5,
+     "edge": 1.01
+    }
+   ]
   },
   "374922": {
    "gameId": 374922,
@@ -435,7 +801,23 @@
    "edge": 0.23,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -5.5,
+   "first_edge": 0.11,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Southeast Missouri State +5.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -5.5,
+     "edge": 0.11
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -6.5,
+     "edge": 0.23
+    }
+   ]
   },
   "374951": {
    "gameId": 374951,
@@ -450,7 +832,23 @@
    "edge": 0.5,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": 2.5,
+   "first_edge": 0.62,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Samford +2.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": 2.5,
+     "edge": 0.62
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": 1.5,
+     "edge": 0.5
+    }
+   ]
   },
   "372781": {
    "gameId": 372781,
@@ -465,7 +863,28 @@
    "edge": 2.14,
    "tier": "strong",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": 6.5,
+   "first_edge": 2.14,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Virginia -6.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": 6.5,
+     "edge": 2.14
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": 5.5,
+     "edge": 2.26
+    },
+    {
+     "at": "2026-11-13T16:51:34.635897Z",
+     "spread_home": 6.5,
+     "edge": 2.14
+    }
+   ]
   },
   "374948": {
    "gameId": 374948,
@@ -480,7 +899,23 @@
    "edge": 1.21,
    "tier": "play",
    "tempo_flag": true,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -26.5,
+   "first_edge": 1.45,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Central Arkansas +26.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -26.5,
+     "edge": 1.45
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -24.5,
+     "edge": 1.21
+    }
+   ]
   },
   "378008": {
    "gameId": 378008,
@@ -495,7 +930,28 @@
    "edge": 0.14,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -12.5,
+   "first_edge": 0.5,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Southern Miss +12.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -12.5,
+     "edge": 0.5
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -10.5,
+     "edge": 0.26
+    },
+    {
+     "at": "2026-11-13T16:51:34.635897Z",
+     "spread_home": -9.5,
+     "edge": 0.14
+    }
+   ]
   },
   "378015": {
    "gameId": 378015,
@@ -510,7 +966,18 @@
    "edge": 2.14,
    "tier": "strong",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": 3.5,
+   "first_edge": 2.14,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "North Dakota State +3.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": 3.5,
+     "edge": 2.14
+    }
+   ]
   },
   "374938": {
    "gameId": 374938,
@@ -525,7 +992,23 @@
    "edge": 1.25,
    "tier": "play",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -23.5,
+   "first_edge": 1.37,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Georgia Southern +23.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -23.5,
+     "edge": 1.37
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -22.5,
+     "edge": 1.25
+    }
+   ]
   },
   "374945": {
    "gameId": 374945,
@@ -540,7 +1023,28 @@
    "edge": 0.41,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -25.5,
+   "first_edge": 0.05,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "TCU -25.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -25.5,
+     "edge": 0.05
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -23.5,
+     "edge": 0.29
+    },
+    {
+     "at": "2026-11-13T16:40:51.035664Z",
+     "spread_home": -22.5,
+     "edge": 0.41
+    }
+   ]
   },
   "372788": {
    "gameId": 372788,
@@ -555,7 +1059,23 @@
    "edge": 1.16,
    "tier": "play",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -43.5,
+   "first_edge": 1.04,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "SIU Edwardsville +43.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -43.5,
+     "edge": 1.04
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -44.5,
+     "edge": 1.16
+    }
+   ]
   },
   "378016": {
    "gameId": 378016,
@@ -570,7 +1090,23 @@
    "edge": 0.64,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -3.5,
+   "first_edge": 0.52,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Lindenwood +3.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -3.5,
+     "edge": 0.52
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -4.5,
+     "edge": 0.64
+    }
+   ]
   },
   "372785": {
    "gameId": 372785,
@@ -585,7 +1121,23 @@
    "edge": 0.38,
    "tier": "lean",
    "tempo_flag": true,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -22.5,
+   "first_edge": 0.26,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Ball State +22.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -22.5,
+     "edge": 0.26
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -23.5,
+     "edge": 0.38
+    }
+   ]
   },
   "372796": {
    "gameId": 372796,
@@ -600,7 +1152,23 @@
    "edge": 1.84,
    "tier": "play",
    "tempo_flag": true,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -16.5,
+   "first_edge": 1.72,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Seton Hall +16.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -16.5,
+     "edge": 1.72
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -17.5,
+     "edge": 1.84
+    }
+   ]
   },
   "372786": {
    "gameId": 372786,
@@ -615,7 +1183,18 @@
    "edge": 0.01,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": 2.5,
+   "first_edge": 0.01,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Auburn +2.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": 2.5,
+     "edge": 0.01
+    }
+   ]
   },
   "374944": {
    "gameId": 374944,
@@ -630,7 +1209,18 @@
    "edge": 2.16,
    "tier": "strong",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -1.5,
+   "first_edge": 2.16,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Idaho -1.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -1.5,
+     "edge": 2.16
+    }
+   ]
   },
   "372793": {
    "gameId": 372793,
@@ -645,7 +1235,18 @@
    "edge": 0.76,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": 3.5,
+   "first_edge": 0.76,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Mississippi State +3.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": 3.5,
+     "edge": 0.76
+    }
+   ]
   },
   "374934": {
    "gameId": 374934,
@@ -660,7 +1261,18 @@
    "edge": 0.27,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": 1.5,
+   "first_edge": 0.27,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Stanford -1.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": 1.5,
+     "edge": 0.27
+    }
+   ]
   },
   "374947": {
    "gameId": 374947,
@@ -675,7 +1287,23 @@
    "edge": 0.37,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -31.5,
+   "first_edge": 0.61,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "UL Monroe +31.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -31.5,
+     "edge": 0.61
+    },
+    {
+     "at": "2026-11-13T16:51:34.635897Z",
+     "spread_home": -29.5,
+     "edge": 0.37
+    }
+   ]
   },
   "372790": {
    "gameId": 372790,
@@ -690,7 +1318,23 @@
    "edge": 0.56,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": 1.5,
+   "first_edge": 0.92,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Northwestern +1.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": 1.5,
+     "edge": 0.92
+    },
+    {
+     "at": "2026-11-13T16:34:50.403488Z",
+     "spread_home": -1.5,
+     "edge": 0.56
+    }
+   ]
   },
   "374943": {
    "gameId": 374943,
@@ -705,7 +1349,23 @@
    "edge": 1.48,
    "tier": "play",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -13.5,
+   "first_edge": 1.36,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "Utah State -13.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -13.5,
+     "edge": 1.36
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -12.5,
+     "edge": 1.48
+    }
+   ]
   },
   "374950": {
    "gameId": 374950,
@@ -720,7 +1380,23 @@
    "edge": 0.83,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -4.5,
+   "first_edge": 0.59,
+   "first_at": "2026-11-13T00:13:45.280693Z",
+   "first_pick_line": "UIC +4.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T00:13:45.280693Z",
+     "spread_home": -4.5,
+     "edge": 0.59
+    },
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -6.5,
+     "edge": 0.83
+    }
+   ]
   },
   "374937": {
    "gameId": 374937,
@@ -735,7 +1411,18 @@
    "edge": 2.15,
    "tier": "strong",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -3.5,
+   "first_edge": 1.98,
+   "first_at": "2026-11-13T16:20:50.810280Z",
+   "first_pick_line": "West Florida +3.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -3.5,
+     "edge": 1.98
+    }
+   ]
   },
   "372787": {
    "gameId": 372787,
@@ -750,7 +1437,18 @@
    "edge": 0.62,
    "tier": "lean",
    "tempo_flag": true,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -24.5,
+   "first_edge": 0.62,
+   "first_at": "2026-11-13T16:20:50.810280Z",
+   "first_pick_line": "Texas A&M-Corpus Christi +24.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -24.5,
+     "edge": 0.62
+    }
+   ]
   },
   "374930": {
    "gameId": 374930,
@@ -765,7 +1463,18 @@
    "edge": 0.5,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -21.5,
+   "first_edge": 0.5,
+   "first_at": "2026-11-13T16:20:50.810280Z",
+   "first_pick_line": "Bryant +21.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -21.5,
+     "edge": 0.5
+    }
+   ]
   },
   "374931": {
    "gameId": 374931,
@@ -780,7 +1489,18 @@
    "edge": 0.1,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -1.5,
+   "first_edge": 0.1,
+   "first_at": "2026-11-13T16:20:50.810280Z",
+   "first_pick_line": "Florida Gulf Coast -1.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -1.5,
+     "edge": 0.1
+    }
+   ]
   },
   "372784": {
    "gameId": 372784,
@@ -795,7 +1515,18 @@
    "edge": 0.25,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -12.5,
+   "first_edge": 0.25,
+   "first_at": "2026-11-13T16:20:50.810280Z",
+   "first_pick_line": "Long Island University +12.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -12.5,
+     "edge": 0.25
+    }
+   ]
   },
   "374942": {
    "gameId": 374942,
@@ -810,7 +1541,18 @@
    "edge": 1.57,
    "tier": "play",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -27.5,
+   "first_edge": 1.57,
+   "first_at": "2026-11-13T16:20:50.810280Z",
+   "first_pick_line": "Mount St. Mary's +27.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -27.5,
+     "edge": 1.57
+    }
+   ]
   },
   "374932": {
    "gameId": 374932,
@@ -825,7 +1567,18 @@
    "edge": 0.61,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -40.5,
+   "first_edge": 0.61,
+   "first_at": "2026-11-13T16:20:50.810280Z",
+   "first_pick_line": "Prairie View A&M +40.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -40.5,
+     "edge": 0.61
+    }
+   ]
   },
   "374952": {
    "gameId": 374952,
@@ -840,7 +1593,23 @@
    "edge": 0.01,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": 6.5,
+   "first_edge": 0.14,
+   "first_at": "2026-11-13T16:20:50.810280Z",
+   "first_pick_line": "Bucknell +6.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": 6.5,
+     "edge": 0.14
+    },
+    {
+     "at": "2026-11-13T16:51:34.635897Z",
+     "spread_home": 5.5,
+     "edge": 0.01
+    }
+   ]
   },
   "374929": {
    "gameId": 374929,
@@ -855,7 +1624,18 @@
    "edge": 1.56,
    "tier": "play",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -1.5,
+   "first_edge": 1.56,
+   "first_at": "2026-11-13T16:20:50.810280Z",
+   "first_pick_line": "Marist +1.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -1.5,
+     "edge": 1.56
+    }
+   ]
   },
   "378014": {
    "gameId": 378014,
@@ -870,7 +1650,18 @@
    "edge": 0.63,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -16.5,
+   "first_edge": 0.63,
+   "first_at": "2026-11-13T16:20:50.810280Z",
+   "first_pick_line": "Liberty -16.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -16.5,
+     "edge": 0.63
+    }
+   ]
   },
   "374927": {
    "gameId": 374927,
@@ -885,7 +1676,18 @@
    "edge": 1.08,
    "tier": "play",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -15.5,
+   "first_edge": 1.08,
+   "first_at": "2026-11-13T16:20:50.810280Z",
+   "first_pick_line": "Tarleton State -15.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -15.5,
+     "edge": 1.08
+    }
+   ]
   },
   "372792": {
    "gameId": 372792,
@@ -900,7 +1702,18 @@
    "edge": 1.25,
    "tier": "play",
    "tempo_flag": true,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -31.5,
+   "first_edge": 1.25,
+   "first_at": "2026-11-13T16:20:50.810280Z",
+   "first_pick_line": "Fairleigh Dickinson +31.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -31.5,
+     "edge": 1.25
+    }
+   ]
   },
   "378009": {
    "gameId": 378009,
@@ -915,7 +1728,18 @@
    "edge": 0.2,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -29.5,
+   "first_edge": 0.2,
+   "first_at": "2026-11-13T16:20:50.810280Z",
+   "first_pick_line": "Texas Southern +29.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -29.5,
+     "edge": 0.2
+    }
+   ]
   },
   "374926": {
    "gameId": 374926,
@@ -930,7 +1754,18 @@
    "edge": 0.3,
    "tier": "lean",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -34.5,
+   "first_edge": 0.3,
+   "first_at": "2026-11-13T16:20:50.810280Z",
+   "first_pick_line": "Mississippi Valley State +34.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -34.5,
+     "edge": 0.3
+    }
+   ]
   },
   "374949": {
    "gameId": 374949,
@@ -945,7 +1780,23 @@
    "edge": 0.44,
    "tier": "lean",
    "tempo_flag": true,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -15.5,
+   "first_edge": 0.32,
+   "first_at": "2026-11-13T16:20:50.810280Z",
+   "first_pick_line": "Chicago State +15.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -15.5,
+     "edge": 0.32
+    },
+    {
+     "at": "2026-11-13T16:34:50.403488Z",
+     "spread_home": -16.5,
+     "edge": 0.44
+    }
+   ]
   },
   "374953": {
    "gameId": 374953,
@@ -960,7 +1811,18 @@
    "edge": 1.25,
    "tier": "play",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -7.5,
+   "first_edge": 1.25,
+   "first_at": "2026-11-13T16:20:50.810280Z",
+   "first_pick_line": "East Texas A&M +7.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -7.5,
+     "edge": 1.25
+    }
+   ]
   },
   "374954": {
    "gameId": 374954,
@@ -975,8 +1837,24 @@
    "edge": 1.31,
    "tier": "play",
    "tempo_flag": false,
-   "locked_at": "2026-11-13T16:51:34.635897Z"
+   "locked_at": "2026-11-13T16:51:34.635897Z",
+   "first_spread_home": -16.5,
+   "first_edge": 1.19,
+   "first_at": "2026-11-13T16:20:50.810280Z",
+   "first_pick_line": "California Baptist -16.5",
+   "line_history": [
+    {
+     "at": "2026-11-13T16:20:50.810280Z",
+     "spread_home": -16.5,
+     "edge": 1.19
+    },
+    {
+     "at": "2026-11-13T16:34:50.403488Z",
+     "spread_home": -15.5,
+     "edge": 1.31
+    }
+   ]
   }
  },
- "updated": "2026-11-13T16:52:20.215586+00:00"
+ "updated": "2026-11-13T17:05:27.616193+00:00"
 }
