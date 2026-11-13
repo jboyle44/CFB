@@ -39,7 +39,7 @@ for e in ledger["entries"].values():
     e["day"], e["dayLabel"], e["ts"] = t.strftime("%Y-%m-%d"), t.strftime("%a %b %-d"), t.timestamp()
     results.append(e)
 
-data = {"games": games, "results": results, "trends": trends, "weights": src.get("weights", []),
+data = {"games": games, "results": results, "trends": trends, "weights": src.get("weights", []), "weights_est": src.get("weights_established", []),
         "generated": gen_dt.strftime("%a %b %-d, %-I:%M %p ET")}
 
 HTML = r"""<!DOCTYPE html>
@@ -145,7 +145,7 @@ function vPicks(){
   return `<div class="card"><div class="top"><span>${g.time}${g.venue?" · "+esc(g.venue):""}</span><span>Games played ${g.games_played[0]}-${g.games_played[1]}</span></div>
   <div class="match">${esc(g.away)}${sep}${esc(g.home)}</div>
   <div class="pickrow"><span class="tier ${g.tier}">${g.tier}</span><span class="pick">${esc(g.pick_line)}</span><span class="edge">edge ${g.edge.toFixed(1)} pts</span></div>
-  <div class="pickrow" style="margin-top:6px">${line}${tempo}</div>${why}${profile(g)}</div>`}).join("");
+  <div class="pickrow" style="margin-top:6px">${line}${tempo}<span class="badge">${g.model==="established"?"Established model (5+ games)":"Early-season model"}</span></div>${why}${profile(g)}</div>`}).join("");
  return h}
 
 function rec(list){const w=list.filter(e=>e.result==="W").length,l=list.filter(e=>e.result==="L").length,p=list.filter(e=>e.result==="P").length;
@@ -176,14 +176,15 @@ function vHow(){
  let h=`<h2>The idea</h2><p><b>The market prices teams on scoring margin, and the model says margin built on winning the possession battle holds up better than margin built on shot-making.</b></p>
  <p class="note">Shooting percentages, for and against, swing a lot on luck. Rebounding, turnovers, shot volume, paint scoring and rim protection are stable skills. Lines lean on margin, which mixes the two; the model reads the stable part and discounts the luck (early in the season, partly by blending each team's shooting with last season's). The gap is widest early in the season, when samples are small.</p>
  <h2>How a pick is made</h2><ol class="note" style="padding-left:18px">
- <li>Build each team's profile: 19 traits from its games so far, blended with last season early on. Only games before tip-off count.</li>
+ <li>Build each team's profile: 19 traits from its games so far. Until both teams have 5 games, profiles are blended with last season (early-season model); after that, only this season counts (established model). Only games before tip-off are used.</li>
  <li>Compare the two teams trait by trait, in standard-deviation units.</li>
  <li>Multiply each gap by the trait's learned weight (table below) and add the underdog adjustment. The total is the edge: points the pick is expected to beat the line by.</li>
  <li>Bet at 1+ pt of edge (Play) and 2+ pts (Strong). Under 1 pt is a Lean, not a bet.</li></ol>`;
  const W=D.weights.filter(w=>w.key!=="spread").sort((a,b)=>Math.abs(b.pts_per_sd)-Math.abs(a.pts_per_sd));
+ const WE=Object.fromEntries((D.weights_est||[]).map(w=>[w.key,w.pts_per_sd]));
  const mx=Math.max(...W.map(w=>Math.abs(w.pts_per_sd)));
  h+=`<h2>What the model rewards</h2><p class="note">Points of edge for being 1 standard deviation higher than the opponent in a trait, holding the rest fixed. + means the market underrates the trait, − means it overrates it.</p>`+
-  tbl(["Trait","Group","Pts per SD",""],W.map(w=>`<tr><td>${esc(w.label)}</td><td class="mut">${w.group}</td><td class="mono ${cls(w.pts_per_sd)}">${sgn(w.pts_per_sd)}</td><td style="width:90px;text-align:left"><span class="bar" style="width:${Math.round(80*Math.abs(w.pts_per_sd)/mx)}px;background:var(--${w.pts_per_sd>0?"pos":"neg"})"></span></td></tr>`));
+  tbl(["Trait","Early season","","Established"],W.map(w=>`<tr><td>${esc(w.label)}<div class="mut" style="font-size:11px">${w.group}</div></td><td class="mono ${cls(w.pts_per_sd)}">${sgn(w.pts_per_sd)}</td><td style="width:84px;text-align:left"><span class="bar" style="width:${Math.round(76*Math.abs(w.pts_per_sd)/mx)}px;background:var(--${w.pts_per_sd>0?"pos":"neg"})"></span></td><td class="mono ${cls(WE[w.key]||0)}">${WE[w.key]!=null?sgn(WE[w.key]):"—"}</td></tr>`))+`<p class="note">Early season = blended with last season (either team under 5 games). Established = this season only, once both teams have 5+ games; it leans harder on fading shooting results because those numbers are no longer shrunk toward last season.</p>`;
  h+=`<h2>Backtest</h2><p class="note">${esc(T.model)}. Each season is predicted by a model trained only on earlier seasons and graded against the closing spread at −110. Breakeven is 52.4%.</p>
  <div class="stats"><div class="stat"><b>${O.plays_1plus.win_pct}%</b><span>Plays (1+ pt)<br>${O.plays_1plus.bets.toLocaleString()} bets · ${sgn1(O.plays_1plus.units)} u</span></div>
  <div class="stat"><b>${O.strong_2plus.win_pct}%</b><span>Strong (2+ pts)<br>${O.strong_2plus.bets.toLocaleString()} bets · ${sgn1(O.strong_2plus.units)} u</span></div>

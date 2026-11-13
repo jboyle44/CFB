@@ -1,9 +1,10 @@
 name: CBB Daily Picks
 
-# 10:07 AM ET (EST). Off the hour and clear of the 13:00 UTC CFB/NFL jobs.
+# 7:37 AM ET (EST) so picks are up by 8 AM and the run finishes before the 13:00 UTC CFB/NFL jobs.
+# Scheduled runs stop after END_DATE (manual runs always work).
 on:
   schedule:
-    - cron: '7 15 * 11,12,1,2,3,4 *'
+    - cron: '37 12 * 11,12 *'
   workflow_dispatch:
     inputs:
       days_ahead:
@@ -20,33 +21,53 @@ jobs:
     timeout-minutes: 30
     permissions:
       contents: write
+    env:
+      END_DATE: "2026-12-31"
     steps:
+      - name: Season window check
+        id: window
+        run: |
+          today=$(TZ=America/New_York date +%F)
+          if [ "${{ github.event_name }}" = "schedule" ] && [[ "$today" > "$END_DATE" ]]; then
+            echo "run=false" >> $GITHUB_OUTPUT; echo "Past $END_DATE, skipping."
+          else
+            echo "run=true" >> $GITHUB_OUTPUT
+          fi
       - uses: actions/checkout@v4
+        if: steps.window.outputs.run == 'true'
       - uses: actions/setup-python@v5
+        if: steps.window.outputs.run == 'true'
         with:
           python-version: "3.12"
       - name: Install
+        if: steps.window.outputs.run == 'true'
         run: pip install -q pandas numpy pyarrow statsmodels
       - name: Fetch live data (3 CBBD calls + 1 odds credit)
+        if: steps.window.outputs.run == 'true'
         env:
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           DAYS_AHEAD: ${{ inputs.days_ahead || '3' }}
         run: python cbb/scripts/fetch_live.py
       - name: Build training set
+        if: steps.window.outputs.run == 'true'
         env:
           MIN_PRIOR: "0"
           BLEND_K: "10"
-        run: python cbb/scripts/build_dataset.py cbb/raw cbb/work/games_blend10.parquet
+        run: |
+          python cbb/scripts/build_dataset.py cbb/raw cbb/work/games_blend10.parquet
+          MIN_PRIOR=5 BLEND_K=0 python cbb/scripts/build_dataset.py cbb/raw cbb/work/games.parquet
       - name: Predict, lock and grade, render
+        if: steps.window.outputs.run == 'true'
         env:
           DAYS_AHEAD: ${{ inputs.days_ahead || '3' }}
         run: |
-          python cbb/scripts/predict_live.py cbb/work/games_blend10.parquet
+          python cbb/scripts/predict_live.py cbb/work/games_blend10.parquet cbb/work/games.parquet
           python cbb/scripts/update_ledger.py
           python cbb/scripts/render_page.py cbb.html
           cp cbb.html cbb/picks.html
       - name: Commit
+        if: steps.window.outputs.run == 'true'
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"

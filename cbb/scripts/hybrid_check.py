@@ -24,6 +24,7 @@ g = bl[["gameId", "season", "date", "resid", "h_n_prior", "a_n_prior"]].merge(pb
 g = g.merge(pr.rename(columns={"p": "pr"}), on="gameId", how="left").merge(pa.rename(columns={"p": "pa"}), on="gameId", how="left")
 late = (np.minimum(g.h_n_prior, g.a_n_prior) >= 5) & g.pr.notna() & g.pa.notna()
 g["hyb"] = np.where(late, (g.pr + g.pa) / 2, g.p)
+g["hybr"] = np.where(late, g.pr, g.p)
 g = g[g.p.notna() & (g.resid != 0)]
 g["mon"] = g.date.dt.tz_convert("America/New_York").dt.month
 def wr(col, d, th):
@@ -36,3 +37,8 @@ for th in (1, 2):
     print("month    blended        hybrid")
     for m, n in [(11, "Nov"), (12, "Dec"), (1, "Jan"), (2, "Feb"), (3, "Mar")]:
         d = g[g.mon == m]; print(n.ljust(8), wr("p", d, th).ljust(14), wr("hyb", d, th))
+print("\n=== raw-only hybrid vs raw+adj hybrid ===")
+for th in (1, 2):
+    print(f"edge {th}+: raw-only {wr('hybr', g, th)} | raw+adj {wr('hyb', g, th)} | blended {wr('p', g, th)}")
+    print("  by season raw-only:", [wr('hybr', g[g.season == s], th).split()[0] for s in sorted(g.season.unique())])
+    print("  by month  raw-only:", [(n, wr('hybr', g[g.mon == m], th).split()[0]) for m, n in [(11,'Nov'),(12,'Dec'),(1,'Jan'),(2,'Feb'),(3,'Mar')]])

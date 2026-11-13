@@ -16,21 +16,33 @@ from analyze import MAIN, features, ridge_fit  # noqa: E402
 
 warnings.filterwarnings("ignore")
 SRC = sys.argv[1] if len(sys.argv) > 1 else "/home/claude/cbb/work/games_blend10.parquet"
-g = pd.read_parquet(SRC)
-g = g[g.season != 2021].reset_index(drop=True)
-X = features(g).fillna(0)
-X["spread"] = g.spread
+SRC_RAW = sys.argv[2] if len(sys.argv) > 2 else "/home/claude/cbb/work/games.parquet"
 cols = [f"main_{m}" for m in MAIN] + ["neutral", "spread"]
-p = pd.Series(np.nan, index=g.index)
-for t in sorted(g.season.unique()):
-    if t < 2017:
-        continue
-    tr, te = (g.season < t).values, (g.season == t).values
-    Xt = X.loc[tr, cols].values
-    mu, sd = Xt.mean(0), Xt.std(0) + 1e-9
-    b = ridge_fit((Xt - mu) / sd, g.resid.values[tr], 500.0)
-    p[te] = b[0] + ((X.loc[te, cols].values - mu) / sd) @ b[1:]
-g["p"] = p
+
+
+def walk(g):
+    X = features(g).fillna(0)
+    X["spread"] = g.spread
+    p = pd.Series(np.nan, index=g.index)
+    for t in sorted(g.season.unique()):
+        if t < 2017:
+            continue
+        tr, te = (g.season < t).values, (g.season == t).values
+        Xt = X.loc[tr, cols].values
+        mu, sd = Xt.mean(0), Xt.std(0) + 1e-9
+        b = ridge_fit((Xt - mu) / sd, g.resid.values[tr], 500.0)
+        p[te] = b[0] + ((X.loc[te, cols].values - mu) / sd) @ b[1:]
+    return p
+
+
+load = lambda f: (lambda d: d[d.season != 2021].reset_index(drop=True))(pd.read_parquet(f))
+g = load(SRC)
+g["p_blend"] = walk(g)
+r = load(SRC_RAW)
+r["p_raw"] = walk(r)
+g = g.merge(r[["gameId", "p_raw"]], on="gameId", how="left")
+est = (np.minimum(g.h_n_prior, g.a_n_prior) >= 5) & g.p_raw.notna()
+g["p"] = np.where(est, g.p_raw, g.p_blend)     # hybrid: blended early, unblended once both teams have 5+ games
 g = g[g.p.notna() & (g.resid != 0)].copy()
 g["win"] = np.sign(g.p) == np.sign(g.resid)
 g["edge"] = g.p.abs()
@@ -46,7 +58,7 @@ def summ(d):
 
 plays = g[g.edge >= 1]
 strong = g[g.edge >= 2]
-out = {"model": "Live board model: team style profiles blended with last season, walk-forward 2017-2026 (2021 excluded)",
+out = {"model": "Live board model (hybrid): profiles blended with last season until both teams have 5 games, this season only after that; walk-forward 2017-2026, 2021 excluded",
        "overall": {"plays_1plus": summ(plays), "strong_2plus": summ(strong)}}
 MON = [(11, "Nov"), (12, "Dec"), (1, "Jan"), (2, "Feb"), (3, "Mar")]
 out["by_month"] = [{"month": name, "plays": summ(plays[plays.mon == m]), "strong": summ(strong[strong.mon == m])} for m, name in MON]
