@@ -1,0 +1,55 @@
+name: CBB Daily Picks
+
+# 10:07 AM ET (EST). Off the hour and clear of the 13:00 UTC CFB/NFL jobs.
+on:
+  schedule:
+    - cron: '7 15 * 11,12,1,2,3,4 *'
+  workflow_dispatch:
+    inputs:
+      days_ahead:
+        description: "Days of schedule to pull and show"
+        default: "3"
+
+concurrency:
+  group: repo-writes
+  cancel-in-progress: false
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: pip install -q pandas numpy pyarrow statsmodels
+      - name: Fetch live data (3 CBBD calls + 1 odds credit)
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          DAYS_AHEAD: ${{ inputs.days_ahead || '3' }}
+        run: python cbb/scripts/fetch_live.py
+      - name: Build training set
+        env:
+          MIN_PRIOR: "0"
+          BLEND_K: "10"
+        run: python cbb/scripts/build_dataset.py cbb/raw cbb/work/games_blend10.parquet
+      - name: Predict, lock and grade, render
+        env:
+          DAYS_AHEAD: ${{ inputs.days_ahead || '3' }}
+        run: |
+          python cbb/scripts/predict_live.py cbb/work/games_blend10.parquet
+          python cbb/scripts/update_ledger.py
+          python cbb/scripts/render_page.py cbb.html
+          cp cbb.html cbb/picks.html
+      - name: Commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add cbb/live cbb.html cbb/picks.html
+          git commit -m "CBB: daily picks $(date -u +%F)" || echo "no changes"
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 10; done

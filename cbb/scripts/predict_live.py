@@ -25,6 +25,19 @@ SEASON = 2027
 TRAIN = Path(sys.argv[1] if len(sys.argv) > 1 else "/home/claude/cbb/work/games_blend10.parquet")
 RAW = Path("cbb/raw")
 LIVE = json.load(open("cbb/live/live_raw.json"))
+# label, display kind, group
+TRAIT_META = {
+    "pace": ("Tempo (possessions per game)", "num", "Tempo"),
+    "o_3par": ("3-point attempt rate", "pct", "Offense"), "o_ftr": ("Free-throw rate (FTA/FGA)", "pct", "Offense"),
+    "o_tov": ("Turnover rate", "pct", "Offense"), "o_orb": ("Offensive rebound %", "pct", "Offense"),
+    "o_paint": ("Paint share of points", "pct", "Offense"), "o_fb": ("Transition share of points", "pct", "Offense"),
+    "o_ast": ("Assist rate (assisted FGM)", "pct", "Offense"), "o_efg": ("eFG% (shooting results)", "pct", "Offense"),
+    "d_3par": ("Opp. 3-point attempt rate allowed", "pct", "Defense"), "d_ftr": ("Opp. free-throw rate allowed", "pct", "Defense"),
+    "d_tov": ("Turnovers forced (per poss.)", "pct", "Defense"), "d_orb": ("Opp. offensive rebound % allowed", "pct", "Defense"),
+    "d_paint": ("Opp. paint share allowed", "pct", "Defense"), "d_fb": ("Opp. transition share allowed", "pct", "Defense"),
+    "d_ast": ("Opp. assist rate allowed", "pct", "Defense"), "d_efg": ("Opp. eFG% allowed (shooting results)", "pct", "Defense"),
+    "d_blk": ("Block rate (per opp. 2PA)", "pct", "Defense"), "d_stl": ("Steal rate (per poss.)", "pct", "Defense"),
+}
 LABELS = {
     "pace": ("plays faster", "plays slower"),
     "o_3par": ("takes more 3s", "takes fewer 3s"), "o_ftr": ("gets to the line more", "gets to the line less"),
@@ -99,6 +112,7 @@ def main():
     for c in bd.STYLE_COLS:
         z[c] = (prof[c] - center[c]) / scale[c]
     zt = z.set_index("teamId")
+    rt = prof.set_index("teamId")
 
     # --- lines ---------------------------------------------------------------------------
     line = {}
@@ -117,6 +131,7 @@ def main():
              "spread": line.get(s.id, (np.nan, None))[0], "book": line.get(s.id, (np.nan, None))[1]}
         for c in bd.STYLE_COLS:
             r[f"h_pre_{c}"], r[f"a_pre_{c}"] = h[c], a[c]
+            r[f"h_raw_{c}"], r[f"a_raw_{c}"] = rt.loc[s.homeTeamId, c], rt.loc[s.awayTeamId, c]
         up.append(r)
     up = pd.DataFrame(up)
 
@@ -168,6 +183,17 @@ def main():
             hi, lo = LABELS[m]
             better = r.home if diff > 0 else r.away
             reasons.append({"text": f"{better} {hi}", "pts": round(float(cs[j]), 2)})
+        sgn = 1 if side_home else -1
+        traits = []
+        for j, m in enumerate(MAIN):
+            lab, kind, grp = TRAIT_META[m]
+            fmt = (lambda v: round(float(v) * 100, 1)) if kind == "pct" else (lambda v: round(float(v), 1))
+            traits.append({"key": m, "label": lab, "group": grp, "kind": kind,
+                           "away": fmt(r[f"a_raw_{m}"]), "home": fmt(r[f"h_raw_{m}"]),
+                           "pts": round(float(contrib[i, j]) * sgn, 2)})
+        terms = [{"label": "Underdog / favorite adjustment", "pts": round(float(contrib[i, cols.index("spread")]) * sgn, 2)},
+                 {"label": "Neutral-site adjustment", "pts": round(float(contrib[i, cols.index("neutral")]) * sgn, 2)},
+                 {"label": "Baseline (home/away)", "pts": round(float(b[0]) * sgn, 2)}]
         ref = r.spread if has_line[i] else r.proj_spread
         sp = ref if side_home else -ref
         pick_line = f"{pick} {sp:+.1f}".replace("+0.0", " PK")
@@ -178,8 +204,12 @@ def main():
             "pick": pick, "pick_line": pick_line, "edge": round(abs(float(r.lean_home)), 2),
             "tier": "strong" if abs(r.lean_home) >= 2 else "play" if abs(r.lean_home) >= 1 else "lean",
             "tempo_flag": bool(r.tempo_flag), "line_status": "posted" if has_line[i] else "projected", "games_played": [int(r.a_n), int(r.h_n)], "reasons": reasons,
+            "traits": traits, "terms": terms,
         })
-    json.dump({"generated": LIVE["fetched_at"], "games": out}, open("cbb/live/picks.json", "w"), indent=1)
+    weights = [{"key": m, "label": TRAIT_META[m][0], "group": TRAIT_META[m][2], "pts_per_sd": round(float(b[1 + j]), 3)}
+               for j, m in enumerate(MAIN)]
+    weights.append({"key": "spread", "label": "Underdog adjustment (per SD of spread)", "group": "Market", "pts_per_sd": round(float(b[1 + cols.index("spread")]), 3)})
+    json.dump({"generated": LIVE["fetched_at"], "games": out, "weights": weights}, open("cbb/live/picks.json", "w"), indent=1)
     df = pd.DataFrame(out)
     print(len(df), "games;", df.spread_home.notna().sum(), "with lines")
     print(df.groupby(["tier", df.spread_home.notna()]).size())
