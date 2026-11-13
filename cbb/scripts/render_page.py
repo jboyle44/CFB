@@ -103,7 +103,8 @@ tr.total td{font-weight:700;border-bottom:0}
 <script>
 const D=__DATA__;
 document.getElementById("gen").textContent=D.generated;
-const TABS=[["picks","Picks"],["results","Results"],["how-it-works","How it works"]];
+const TABS=[["picks","Picks"],["results","Results"],["trends","Trends"],["how-it-works","How it works"]];
+let trSeason="all";
 let tab=(location.hash||"#picks").slice(1);if(!TABS.some(t=>t[0]===tab))tab="picks";
 let st={day:null,tier:"bets",posted:false};
 try{const s=JSON.parse(localStorage.getItem("cbbf")||"{}");if(s.tier)st.tier=s.tier;if(s.posted)st.posted=s.posted}catch(e){}
@@ -211,6 +212,22 @@ function vHow(){
  <li>Style-vs-style matchups (archetypes, shot-mix clashes) were tested and do not beat the spread. Only tempo survived.</li></ul>`;
  return h}
 
+function tcell(c,isLean){if(!c||!c.n)return `<td class="mut">—</td>`;
+ const k=isLean?"":(c.pct>=52.4?"pos":"neg");
+ return `<td><span class="mono ${k}" style="font-weight:600">${c.pct.toFixed(1)}%</span><div class="mut" style="font-size:11px">${c.n.toLocaleString()} games</div></td>`}
+function trow(label,t,bold){return `<tr${bold?' class="total"':""}><td>${label}</td>${tcell(t.strong)}${tcell(t.play)}${tcell(t.lean,true)}</tr>`}
+function vTrends(){
+ const G=D.trends.tier_grid;const seasons=Object.keys(G).filter(k=>k!=="all");
+ const head=`<thead><tr><th>${"%s"}</th><th>Strong<br><span class="mut">2+ pts</span></th><th>Play<br><span class="mut">1 to 2 pts</span></th><th>Lean<br><span class="mut">under 1 pt</span></th></tr></thead>`;
+ let h=`<p class="note">Backtest of the live model: each season predicted by a model trained only on earlier seasons, graded against the closing spread. Win % excludes pushes. Breakeven at −110 is 52.4% (green above, red below). Leans are not bets; they're shown for comparison.</p>`;
+ h+=`<h2>By season</h2><div class="box"><table>${head.replace("%s","Season")}<tbody>`+seasons.map(s=>trow(s,G[s].total)).join("")+trow("All seasons",G.all.total,true)+`</tbody></table></div>`;
+ const sel=G[trSeason]?trSeason:"all";
+ h+=`<h2>By month</h2><div class="days">`+[["all","All seasons"],...seasons.map(s=>[s,s])].map(([k,l])=>`<button class="${k===sel?"on":""}" data-s="${k}">${l}</button>`).join("")+`</div>`;
+ const M=G[sel].months;
+ h+=`<div class="box"><table>${head.replace("%s","Month")}<tbody>`+Object.keys(M).filter(m=>M[m].strong.n+M[m].play.n+M[m].lean.n>0).map(m=>trow(m,M[m])).join("")+trow(sel==="all"?"All months":sel+" total",G[sel].total,true)+`</tbody></table></div>`;
+ h+=`<p class="note">April has only a handful of games per season (postseason), so treat its percentages as noise.</p>`;
+ return h}
+
 function chart(){
  const svg=document.getElementById("cum");if(!svg)return;const P=D.trends.cumulative;if(P.length<2)return;
  const W=svg.clientWidth||700,H=220,m={l:44,r:12,t:12,b:26};
@@ -233,7 +250,8 @@ function chart(){
  const hit=document.getElementById("hit");hit.addEventListener("mousemove",move);hit.addEventListener("touchmove",move,{passive:true});hit.addEventListener("mouseleave",hide);hit.addEventListener("touchend",hide)}
 
 function render(){tabs();const v=document.getElementById("view");
- v.innerHTML=tab==="picks"?vPicks():tab==="results"?vResults():vHow();
+ v.innerHTML=tab==="picks"?vPicks():tab==="results"?vResults():tab==="trends"?vTrends():vHow();
+ if(tab==="trends")v.querySelectorAll("[data-s]").forEach(b=>b.onclick=()=>{trSeason=b.dataset.s;render()});
  if(tab==="picks"){v.querySelectorAll("[data-d]").forEach(b=>b.onclick=()=>{st.day=b.dataset.d;render()});
   v.querySelectorAll("[data-f]").forEach(b=>b.onclick=()=>{st.tier=b.dataset.f;save();render()});
   v.querySelectorAll("[data-p]").forEach(b=>b.onclick=()=>{st.posted=!st.posted;save();render()})}

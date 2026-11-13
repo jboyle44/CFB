@@ -80,3 +80,30 @@ json.dump(out, open("cbb/results/trends.json", "w"), indent=1)
 print(json.dumps(out["overall"]), "\n", [(m["month"], m["plays"]["win_pct"], m["strong"]["win_pct"]) for m in out["by_month"]])
 print([(e["edge"], e["bets"], e["win_pct"]) for e in out["by_edge"]])
 print(out["by_side"])
+
+# ---- tier grid for the Trends tab: season x month x tier (Strong 2+, Play 1-2, Lean <1) ----
+def tier_of(e):
+    return np.where(e >= 2, "strong", np.where(e >= 1, "play", "lean"))
+
+
+g["tier"] = tier_of(g.edge.values)
+MONTHS = [(11, "Nov"), (12, "Dec"), (1, "Jan"), (2, "Feb"), (3, "Mar"), (4, "Apr")]
+
+
+def cell(d):
+    n = len(d)
+    w = int(d.win.sum())
+    return {"n": n, "w": w, "pct": round(100 * w / n, 1) if n else None, "units": round(w * 100 / 110 - (n - w), 1)}
+
+
+def tiers(d):
+    return {t: cell(d[d.tier == t]) for t in ("strong", "play", "lean")}
+
+
+grid = {"all": {"total": tiers(g), "months": {name: tiers(g[g.mon == m]) for m, name in MONTHS}}}
+for s in sorted(g.season.unique()):
+    d = g[g.season == s]
+    grid[f"{int(s) - 1}-{str(int(s))[2:]}"] = {"total": tiers(d), "months": {name: tiers(d[d.mon == m]) for m, name in MONTHS}}
+out["tier_grid"] = grid
+json.dump(out, open("cbb/results/trends.json", "w"), indent=1)
+print("tier grid:", {k: {t: (v["total"][t]["pct"], v["total"][t]["n"]) for t in v["total"]} for k, v in list(grid.items())[:3]})
