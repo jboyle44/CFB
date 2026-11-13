@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13T16:22:47.458378Z",
+ "generated": "2026-11-13T16:34:50.403488Z",
  "games": [
   {
    "gameId": 374937,
@@ -3338,13 +3338,13 @@
    "away": "Merrimack",
    "neutral": false,
    "venue": "Stephen C. O'Connell Center",
-   "spread_home": -38.5,
+   "spread_home": -36.5,
    "book": "Draft Kings",
    "proj_spread_home": -17.0,
    "pick": "Merrimack",
-   "pick_line": "Merrimack +38.5",
-   "edge": 1.15,
-   "tier": "play",
+   "pick_line": "Merrimack +36.5",
+   "edge": 0.91,
+   "tier": "lean",
    "tempo_flag": true,
    "line_status": "posted",
    "games_played": [
@@ -3541,7 +3541,7 @@
    "terms": [
     {
      "label": "Underdog / favorite adjustment",
-     "pts": 4.02
+     "pts": 3.78
     },
     {
      "label": "Neutral-site adjustment",
@@ -10442,12 +10442,12 @@
    "away": "DePaul",
    "neutral": false,
    "venue": "Welsh-Ryan Arena",
-   "spread_home": 1.5,
+   "spread_home": -1.5,
    "book": "Draft Kings",
    "proj_spread_home": -6.5,
    "pick": "Northwestern",
-   "pick_line": "Northwestern +1.5",
-   "edge": 0.92,
+   "pick_line": "Northwestern -1.5",
+   "edge": 0.56,
    "tier": "lean",
    "tempo_flag": false,
    "line_status": "posted",
@@ -10645,7 +10645,7 @@
    "terms": [
     {
      "label": "Underdog / favorite adjustment",
-     "pts": 0.79
+     "pts": 0.43
     },
     {
      "label": "Neutral-site adjustment",
@@ -11108,12 +11108,12 @@
    "away": "Chicago State",
    "neutral": false,
    "venue": "Jenny Craig Pavilion",
-   "spread_home": -15.5,
+   "spread_home": -16.5,
    "book": "Draft Kings",
    "proj_spread_home": -8.5,
    "pick": "Chicago State",
-   "pick_line": "Chicago State +15.5",
-   "edge": 0.32,
+   "pick_line": "Chicago State +16.5",
+   "edge": 0.44,
    "tier": "lean",
    "tempo_flag": true,
    "line_status": "posted",
@@ -11311,7 +11311,7 @@
    "terms": [
     {
      "label": "Underdog / favorite adjustment",
-     "pts": 1.25
+     "pts": 1.37
     },
     {
      "label": "Neutral-site adjustment",
@@ -11996,12 +11996,12 @@
    "away": "Arkansas-Pine Bluff",
    "neutral": false,
    "venue": "Dale E. and Sarah Ann Fowler Events Center",
-   "spread_home": -16.5,
+   "spread_home": -15.5,
    "book": "Draft Kings",
    "proj_spread_home": -20.0,
    "pick": "California Baptist",
-   "pick_line": "California Baptist -16.5",
-   "edge": 1.19,
+   "pick_line": "California Baptist -15.5",
+   "edge": 1.31,
    "tier": "play",
    "tempo_flag": false,
    "line_status": "posted",
@@ -12199,7 +12199,7 @@
    "terms": [
     {
      "label": "Underdog / favorite adjustment",
-     "pts": -1.37
+     "pts": -1.25
     },
     {
      "label": "Neutral-site adjustment",
