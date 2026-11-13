@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-10T20:07:29.327457+00:00",
-  "ourladsUpdatedAt": "2026-11-10T20:07:29.327457+00:00",
+  "generatedAt": "2026-11-13T20:24:59.091271+00:00",
+  "ourladsUpdatedAt": "2026-11-13T20:24:59.091271+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.267630+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Miami Dolphins",
-  "offenseScheme": "11 - One RB, One TE (56%)",
+  "offenseScheme": "11 - One RB, One TE (57%)",
   "defenseScheme": "Base 4-3",
   "rows": [
     {
@@ -329,22 +329,6 @@
     },
     {
       "position": "QB",
-      "player": "Malik Willis",
-      "jersey": "2",
-      "code": "U/GB",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 90.8,
-      "madden27Rating": 72,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "QB",
-      "pffTied": false
-    },
-    {
-      "position": "QB",
       "player": "Kyle McCord",
       "jersey": "14",
       "code": "T/GB",
@@ -473,22 +457,6 @@
     },
     {
       "position": "LDT",
-      "player": "Kenneth Grant",
-      "jersey": "78",
-      "code": "25/1",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 48.5,
-      "madden27Rating": 75,
-      "madden27Dev": "Star",
-      "pffPositionRank": 112,
-      "pffPositionTotal": 146,
-      "pffPositionLabel": "DI",
-      "pffTied": false
-    },
-    {
-      "position": "LDT",
       "player": "Jordan Phillips",
       "jersey": "94",
       "code": "25/5",
@@ -504,17 +472,17 @@
       "pffTied": false
     },
     {
-      "position": "RDT",
-      "player": "Zach Sieler",
-      "jersey": "92",
-      "code": "W/Bal",
-      "isAcquired": true,
+      "position": "LDT",
+      "player": "Kenneth Grant",
+      "jersey": "78",
+      "code": "25/1",
+      "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 60.7,
-      "madden27Rating": 83,
+      "pffGrade": 48.5,
+      "madden27Rating": 75,
       "madden27Dev": "Star",
-      "pffPositionRank": 56,
+      "pffPositionRank": 112,
       "pffPositionTotal": 146,
       "pffPositionLabel": "DI",
       "pffTied": false
@@ -534,6 +502,18 @@
       "pffPositionTotal": 146,
       "pffPositionLabel": "DI",
       "pffTied": false
+    },
+    {
+      "position": "RDT",
+      "player": "Keith Cooper Jr.",
+      "jersey": "97",
+      "code": "P/Car",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RDE",
@@ -808,22 +788,6 @@
       "pffTied": null
     },
     {
-      "position": "NB",
-      "player": "Reese Taylor",
-      "jersey": "35",
-      "code": "W/Den",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 66,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "PT",
       "player": "Bradley Pinion",
       "jersey": "48",
@@ -952,6 +916,22 @@
       "pffTied": null
     },
     {
+      "position": "QB",
+      "player": "Malik Willis",
+      "jersey": "2",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 90.8,
+      "madden27Rating": 72,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "QB",
+      "pffTied": false
+    },
+    {
       "position": "LB",
       "player": "Ronnie Harrison Jr.",
       "jersey": "56",
@@ -982,6 +962,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "DT",
+      "player": "Zach Sieler",
+      "jersey": "92",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 60.7,
+      "madden27Rating": 83,
+      "madden27Dev": "Star",
+      "pffPositionRank": 56,
+      "pffPositionTotal": 146,
+      "pffPositionLabel": "DI",
+      "pffTied": false
     },
     {
       "position": "RB",
@@ -1038,7 +1034,7 @@
       "code": "",
       "isAcquired": false,
       "isReserve": true,
-      "reserveStatus": "PUP",
+      "reserveStatus": "DFR",
       "pffGrade": null,
       "madden27Rating": 74,
       "madden27Dev": "Normal",

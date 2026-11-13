@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-10T20:08:04.735685+00:00",
-  "ourladsUpdatedAt": "2026-11-10T20:08:04.735685+00:00",
+  "generatedAt": "2026-11-13T20:25:36.992582+00:00",
+  "ourladsUpdatedAt": "2026-11-13T20:25:36.992582+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.264514+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Los Angeles Chargers",
-  "offenseScheme": "11 - One RB, One TE (41%)",
+  "offenseScheme": "11 - One RB, One TE (40%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -296,22 +296,6 @@
       "pffTied": false
     },
     {
-      "position": "TE",
-      "player": "Hayden Rucci",
-      "jersey": "40",
-      "code": "P/Jax",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 61,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "QB",
       "player": "Justin Herbert",
       "jersey": "10",
@@ -505,22 +489,6 @@
     },
     {
       "position": "LOLB",
-      "player": "Bud Dupree",
-      "jersey": "48",
-      "code": "U/Atl",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 54.8,
-      "madden27Rating": 72,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 104,
-      "pffPositionTotal": 129,
-      "pffPositionLabel": "ED",
-      "pffTied": true
-    },
-    {
-      "position": "LOLB",
       "player": "Caleb Murphy",
       "jersey": "50",
       "code": "SF26",
@@ -534,6 +502,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "LOLB",
+      "player": "Bud Dupree",
+      "jersey": "48",
+      "code": "U/Atl",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 54.8,
+      "madden27Rating": 72,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 104,
+      "pffPositionTotal": 129,
+      "pffPositionLabel": "ED",
+      "pffTied": true
     },
     {
       "position": "LILB",
@@ -553,17 +537,17 @@
     },
     {
       "position": "LILB",
-      "player": "Troy Dye",
-      "jersey": "43",
-      "code": "U/Min",
-      "isAcquired": true,
+      "player": "Marlowe Wax",
+      "jersey": "58",
+      "code": "CF25",
+      "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 61.0,
-      "madden27Rating": 71,
+      "pffGrade": 69.1,
+      "madden27Rating": 64,
       "madden27Dev": "Normal",
-      "pffPositionRank": 49,
-      "pffPositionTotal": 94,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
       "pffPositionLabel": "LB",
       "pffTied": false
     },
@@ -585,17 +569,17 @@
     },
     {
       "position": "RILB",
-      "player": "Marlowe Wax",
-      "jersey": "58",
-      "code": "CF25",
-      "isAcquired": false,
+      "player": "Troy Dye",
+      "jersey": "43",
+      "code": "U/Min",
+      "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 69.1,
-      "madden27Rating": 64,
+      "pffGrade": 61.0,
+      "madden27Rating": 71,
       "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
+      "pffPositionRank": 49,
+      "pffPositionTotal": 94,
       "pffPositionLabel": "LB",
       "pffTied": false
     },
@@ -1064,22 +1048,6 @@
       "pffTied": null
     },
     {
-      "position": "OT",
-      "player": "Trey Pipkins III",
-      "jersey": "79",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 47.1,
-      "madden27Rating": 69,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 90,
-      "pffPositionTotal": 95,
-      "pffPositionLabel": "T",
-      "pffTied": true
-    },
-    {
       "position": "C",
       "player": "Tyler Biadasz",
       "jersey": "63",
@@ -1142,6 +1110,22 @@
       "pffPositionTotal": 68,
       "pffPositionLabel": "TE",
       "pffTied": false
+    },
+    {
+      "position": "OT",
+      "player": "Trey Pipkins III",
+      "jersey": "79",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 47.1,
+      "madden27Rating": 69,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 90,
+      "pffPositionTotal": 95,
+      "pffPositionLabel": "T",
+      "pffTied": true
     }
   ]
 }

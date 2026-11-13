@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-10T20:07:31.283570+00:00",
-  "ourladsUpdatedAt": "2026-11-10T20:07:31.283570+00:00",
+  "generatedAt": "2026-11-13T20:25:01.232933+00:00",
+  "ourladsUpdatedAt": "2026-11-13T20:25:01.232933+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.270699+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New England Patriots",
-  "offenseScheme": "11 - One RB, One TE (54%)",
+  "offenseScheme": "11 - One RB, One TE (55%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -984,22 +984,6 @@
       "pffTied": null
     },
     {
-      "position": "FB",
-      "player": "Reggie Gilliam",
-      "jersey": "44",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 83,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "OLB",
       "player": "Quintayvious Hutchins",
       "jersey": "45",
@@ -1126,6 +1110,22 @@
       "pffPositionTotal": 87,
       "pffPositionLabel": "G",
       "pffTied": false
+    },
+    {
+      "position": "FB",
+      "player": "Reggie Gilliam",
+      "jersey": "44",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": null,
+      "madden27Rating": 83,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     }
   ]
 }

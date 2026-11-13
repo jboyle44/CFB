@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-10T20:07:41.139988+00:00",
-  "ourladsUpdatedAt": "2026-11-10T20:07:41.139988+00:00",
+  "generatedAt": "2026-11-13T20:25:11.911066+00:00",
+  "ourladsUpdatedAt": "2026-11-13T20:25:11.911066+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.278633+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Pittsburgh Steelers",
-  "offenseScheme": "11 - One RB, One TE (60%)",
+  "offenseScheme": "11 - One RB, One TE (58%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -984,22 +984,6 @@
       "pffTied": null
     },
     {
-      "position": "DE",
-      "player": "Derrick Harmon",
-      "jersey": "99",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 53.3,
-      "madden27Rating": 78,
-      "madden27Dev": "Star",
-      "pffPositionRank": 88,
-      "pffPositionTotal": 146,
-      "pffPositionLabel": "DI",
-      "pffTied": false
-    },
-    {
       "position": "OG",
       "player": "Gennings Dunker",
       "jersey": "73",
@@ -1126,6 +1110,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "DE",
+      "player": "Derrick Harmon",
+      "jersey": "99",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 53.3,
+      "madden27Rating": 78,
+      "madden27Dev": "Star",
+      "pffPositionRank": 88,
+      "pffPositionTotal": 146,
+      "pffPositionLabel": "DI",
+      "pffTied": false
     }
   ]
 }

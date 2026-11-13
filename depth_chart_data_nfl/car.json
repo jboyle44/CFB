@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-10T20:08:08.721740+00:00",
-  "ourladsUpdatedAt": "2026-11-10T20:08:08.721740+00:00",
+  "generatedAt": "2026-11-13T20:25:41.206275+00:00",
+  "ourladsUpdatedAt": "2026-11-13T20:25:41.206275+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.243392+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Carolina Panthers",
-  "offenseScheme": "11 - One RB, One TE (58%)",
+  "offenseScheme": "11 - One RB, One TE (57%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -49,22 +49,6 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": 73,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "RWR",
-      "player": "David Moore",
-      "jersey": "83",
-      "code": "U/TB",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 71,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -457,22 +441,6 @@
     },
     {
       "position": "NT",
-      "player": "Lee Hunter",
-      "jersey": "92",
-      "code": "26/2",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 74,
-      "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "NT",
       "player": "Bobby Brown III",
       "jersey": "97",
       "code": "U/LAR",
@@ -486,6 +454,22 @@
       "pffPositionTotal": 146,
       "pffPositionLabel": "DI",
       "pffTied": false
+    },
+    {
+      "position": "NT",
+      "player": "Lee Hunter",
+      "jersey": "92",
+      "code": "26/2",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 74,
+      "madden27Dev": "Star",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RDE",
@@ -904,22 +888,6 @@
       "pffTied": false
     },
     {
-      "position": "PR",
-      "player": "David Moore",
-      "jersey": "83",
-      "code": "U/TB",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 71,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "KR",
       "player": "Anthony Tyus III",
       "jersey": "34",
@@ -950,22 +918,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "HB",
       "pffTied": false
-    },
-    {
-      "position": "KR",
-      "player": "David Moore",
-      "jersey": "83",
-      "code": "U/TB",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 71,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     },
     {
       "position": "CB",
@@ -1032,38 +984,6 @@
       "pffTied": true
     },
     {
-      "position": "CB",
-      "player": "Mike Jackson",
-      "jersey": "2",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 79.1,
-      "madden27Rating": 81,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 4,
-      "pffPositionTotal": 122,
-      "pffPositionLabel": "CB",
-      "pffTied": false
-    },
-    {
-      "position": "RB",
-      "player": "Jonathon Brooks",
-      "jersey": "25",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 75,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "DT",
       "player": "Cam Jackson",
       "jersey": "99",
@@ -1112,6 +1032,18 @@
       "pffTied": null
     },
     {
+      "position": "WR",
+      "player": "Ihmir Smith-Marsette",
+      "jersey": "15",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "PS/IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "OT",
       "player": "Ikem Ekwonu",
       "jersey": "79",
@@ -1157,6 +1089,38 @@
       "pffPositionRank": 132,
       "pffPositionTotal": 143,
       "pffPositionLabel": "WR",
+      "pffTied": false
+    },
+    {
+      "position": "RB",
+      "player": "Jonathon Brooks",
+      "jersey": "25",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": null,
+      "madden27Rating": 75,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "CB",
+      "player": "Mike Jackson",
+      "jersey": "2",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 79.1,
+      "madden27Rating": 81,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 4,
+      "pffPositionTotal": 122,
+      "pffPositionLabel": "CB",
       "pffTied": false
     }
   ]

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-10T20:08:10.656063+00:00",
-  "ourladsUpdatedAt": "2026-11-10T20:08:10.656063+00:00",
+  "generatedAt": "2026-11-13T20:25:43.293285+00:00",
+  "ourladsUpdatedAt": "2026-11-13T20:25:43.293285+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.272249+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New Orleans Saints",
@@ -345,22 +345,6 @@
     },
     {
       "position": "RB",
-      "player": "Cj Donaldson",
-      "jersey": "43",
-      "code": "CF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 63,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "RB",
       "player": "Audric Estim\u00e9",
       "jersey": "30",
       "code": "W/Cle",
@@ -370,6 +354,22 @@
       "pffGrade": null,
       "madden27Rating": null,
       "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "RB",
+      "player": "Cj Donaldson",
+      "jersey": "43",
+      "code": "CF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 63,
+      "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,
@@ -905,22 +905,6 @@
     },
     {
       "position": "RB",
-      "player": "Travis Etienne Jr.",
-      "jersey": "3",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 72.6,
-      "madden27Rating": 84,
-      "madden27Dev": "Star",
-      "pffPositionRank": 29,
-      "pffPositionTotal": 73,
-      "pffPositionLabel": "HB",
-      "pffTied": false
-    },
-    {
-      "position": "RB",
       "player": "Ty Chandler",
       "jersey": "32",
       "code": "",
@@ -1000,6 +984,18 @@
       "pffTied": null
     },
     {
+      "position": "TE",
+      "player": "Stone Smartt",
+      "jersey": "84",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "PS/IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "WR",
       "player": "Mason Tipton",
       "jersey": "15",
@@ -1030,6 +1026,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "RB",
+      "player": "Travis Etienne Jr.",
+      "jersey": "3",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 72.6,
+      "madden27Rating": 84,
+      "madden27Dev": "Star",
+      "pffPositionRank": 29,
+      "pffPositionTotal": 73,
+      "pffPositionLabel": "HB",
+      "pffTied": false
     }
   ]
 }

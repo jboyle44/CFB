@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-10T20:07:35.255019+00:00",
-  "ourladsUpdatedAt": "2026-11-10T20:07:35.255019+00:00",
+  "generatedAt": "2026-11-13T20:25:05.451116+00:00",
+  "ourladsUpdatedAt": "2026-11-13T20:25:05.451116+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.239139+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Baltimore Ravens",
@@ -152,22 +152,6 @@
       "pffTied": false
     },
     {
-      "position": "LG",
-      "player": "Emery Jones Jr.",
-      "jersey": "51",
-      "code": "25/3",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 50.1,
-      "madden27Rating": 70,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "G",
-      "pffTied": false
-    },
-    {
       "position": "C",
       "player": "Cam Jurgens",
       "jersey": "64",
@@ -185,19 +169,15 @@
     },
     {
       "position": "C",
-      "player": "Kyle Hergel",
-      "jersey": "60",
-      "code": "SF26",
-      "isAcquired": false,
+      "player": "Ryan Neuzil",
+      "jersey": "58",
+      "code": "T/Atl",
+      "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 62,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RG",
@@ -217,19 +197,19 @@
     },
     {
       "position": "RG",
-      "player": "Andrew Vorhees",
-      "jersey": "72",
-      "code": "23/7",
+      "player": "Emery Jones Jr.",
+      "jersey": "51",
+      "code": "25/3",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 54.5,
-      "madden27Rating": 71,
+      "pffGrade": 50.1,
+      "madden27Rating": 70,
       "madden27Dev": "Normal",
-      "pffPositionRank": 63,
-      "pffPositionTotal": 87,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
       "pffPositionLabel": "G",
-      "pffTied": true
+      "pffTied": false
     },
     {
       "position": "RT",
@@ -289,22 +269,6 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": 67,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "TE",
-      "player": "Nick Vannett",
-      "jersey": "87",
-      "code": "SF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 64,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -824,6 +788,18 @@
       "pffTied": null
     },
     {
+      "position": "PK",
+      "player": "Riley Patterson",
+      "jersey": "35",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "LS",
       "player": "Nick Moore",
       "jersey": "46",
@@ -854,6 +830,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "KO",
+      "player": "Riley Patterson",
+      "jersey": "35",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "PR",
@@ -1094,6 +1082,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "OT",
+      "player": "Gerad Lichtenhan",
+      "jersey": "78",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "PS/IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RB",

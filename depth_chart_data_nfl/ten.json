@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-10T20:07:56.902599+00:00",
-  "ourladsUpdatedAt": "2026-11-10T20:07:56.902599+00:00",
+  "generatedAt": "2026-11-13T20:25:28.704998+00:00",
+  "ourladsUpdatedAt": "2026-11-13T20:25:28.704998+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.284895+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Tennessee Titans",
-  "offenseScheme": "11 - One RB, One TE (74%)",
+  "offenseScheme": "11 - One RB, One TE (78%)",
   "defenseScheme": "Base 4-3",
   "rows": [
     {
@@ -616,6 +616,18 @@
       "pffTied": null
     },
     {
+      "position": "WLB",
+      "player": "Mohamoud Diabate",
+      "jersey": "44",
+      "code": "P/Car",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "MLB",
       "player": "Anthony Hill Jr.",
       "jersey": "53",
@@ -677,38 +689,6 @@
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "CB",
-      "pffTied": false
-    },
-    {
-      "position": "LCB",
-      "player": "Jaylon Jones",
-      "jersey": "42",
-      "code": "SF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 73,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "SS",
-      "player": "Amani Hooker",
-      "jersey": "37",
-      "code": "19/4",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 51.9,
-      "madden27Rating": 81,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 92,
-      "pffPositionTotal": 107,
-      "pffPositionLabel": "S",
       "pffTied": false
     },
     {
@@ -777,6 +757,22 @@
     },
     {
       "position": "RCB",
+      "player": "Jaylon Jones",
+      "jersey": "42",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 73,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "NB",
       "player": "Alontae Taylor",
       "jersey": "24",
       "code": "U/NO",

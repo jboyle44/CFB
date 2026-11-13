@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-10T20:07:51.008930+00:00",
-  "ourladsUpdatedAt": "2026-11-10T20:07:51.008930+00:00",
+  "generatedAt": "2026-11-13T20:25:22.430948+00:00",
+  "ourladsUpdatedAt": "2026-11-13T20:25:22.430948+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.256745+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Houston Texans",
-  "offenseScheme": "11 - One RB, One TE (60%)",
+  "offenseScheme": "11 - One RB, One TE (63%)",
   "defenseScheme": "Base 4-3",
   "rows": [
     {
@@ -86,6 +86,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "SWR",
+      "player": "Nikko Remigio",
+      "jersey": "88",
+      "code": "W/KC",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LT",
@@ -401,22 +413,6 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": 81,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "RB",
-      "player": "Dare Ogunbowale",
-      "jersey": "23",
-      "code": "P/LV",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 68,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -889,6 +885,18 @@
     },
     {
       "position": "PR",
+      "player": "Nikko Remigio",
+      "jersey": "88",
+      "code": "W/KC",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "PR",
       "player": "Tank Dell",
       "jersey": "1",
       "code": "23/3",
@@ -918,6 +926,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "KR",
+      "player": "Nikko Remigio",
+      "jersey": "88",
+      "code": "W/KC",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "KR",
@@ -952,38 +972,6 @@
       "pffTied": null
     },
     {
-      "position": "KR",
-      "player": "Woody Marks",
-      "jersey": "4",
-      "code": "25/4",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 81,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "CB",
-      "player": "Jaylin Smith",
-      "jersey": "22",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 68.7,
-      "madden27Rating": 70,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "CB",
-      "pffTied": false
-    },
-    {
       "position": "FB",
       "player": "British Brooks",
       "jersey": "44",
@@ -997,22 +985,6 @@
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "FB",
-      "pffTied": false
-    },
-    {
-      "position": "LB",
-      "player": "Jake Hummel",
-      "jersey": "33",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 69.1,
-      "madden27Rating": 63,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "LB",
       "pffTied": false
     },
     {
@@ -1048,22 +1020,6 @@
       "pffTied": null
     },
     {
-      "position": "DE",
-      "player": "Ali Gaye",
-      "jersey": "95",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 49.8,
-      "madden27Rating": 66,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "ED",
-      "pffTied": false
-    },
-    {
       "position": "DT",
       "player": "Mario Edwards Jr.",
       "jersey": "97",
@@ -1077,6 +1033,22 @@
       "pffPositionRank": 144,
       "pffPositionTotal": 146,
       "pffPositionLabel": "DI",
+      "pffTied": false
+    },
+    {
+      "position": "DE",
+      "player": "Ali Gaye",
+      "jersey": "95",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 49.8,
+      "madden27Rating": 66,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "ED",
       "pffTied": false
     },
     {
@@ -1206,6 +1178,38 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "LB",
+      "player": "Jake Hummel",
+      "jersey": "33",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 69.1,
+      "madden27Rating": 63,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "LB",
+      "pffTied": false
+    },
+    {
+      "position": "CB",
+      "player": "Jaylin Smith",
+      "jersey": "22",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 68.7,
+      "madden27Rating": 70,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "CB",
+      "pffTied": false
     }
   ]
 }

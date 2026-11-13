@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-10T20:08:14.558601+00:00",
-  "ourladsUpdatedAt": "2026-11-10T20:08:14.558601+00:00",
+  "generatedAt": "2026-11-13T20:25:47.483101+00:00",
+  "ourladsUpdatedAt": "2026-11-13T20:25:47.483101+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.235743+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Arizona Cardinals",
-  "offenseScheme": "11 - One RB, One TE (59%)",
+  "offenseScheme": "11 - One RB, One TE (60%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -297,22 +297,6 @@
     },
     {
       "position": "QB",
-      "player": "Gardner Minshew II",
-      "jersey": "15",
-      "code": "U/KC",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 33.6,
-      "madden27Rating": 70,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "QB",
-      "pffTied": false
-    },
-    {
-      "position": "QB",
       "player": "Carson Beck",
       "jersey": "19",
       "code": "26/3",
@@ -330,26 +314,34 @@
     {
       "position": "QB",
       "player": "Josh Johnson",
-      "jersey": "",
+      "jersey": "9",
       "code": "P/Cin",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "QB",
       "player": "Joey Aguilar",
-      "jersey": "",
+      "jersey": "18",
       "code": "P/Jax",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RB",
@@ -960,22 +952,6 @@
       "pffTied": null
     },
     {
-      "position": "TE",
-      "player": "Hunter Long",
-      "jersey": "89",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 56.1,
-      "madden27Rating": 66,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 60,
-      "pffPositionTotal": 68,
-      "pffPositionLabel": "TE",
-      "pffTied": false
-    },
-    {
       "position": "CB",
       "player": "Will Johnson",
       "jersey": "2",
@@ -1008,19 +984,19 @@
       "pffTied": false
     },
     {
-      "position": "DE",
-      "player": "Zach Carter",
-      "jersey": "90",
+      "position": "QB",
+      "player": "Gardner Minshew II",
+      "jersey": "15",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
       "reserveStatus": "IR",
-      "pffGrade": 73.5,
-      "madden27Rating": 66,
+      "pffGrade": 33.6,
+      "madden27Rating": 70,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
-      "pffPositionLabel": "DI",
+      "pffPositionLabel": "QB",
       "pffTied": false
     },
     {
@@ -1181,6 +1157,38 @@
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "TE",
+      "pffTied": false
+    },
+    {
+      "position": "TE",
+      "player": "Hunter Long",
+      "jersey": "89",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 56.1,
+      "madden27Rating": 66,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 60,
+      "pffPositionTotal": 68,
+      "pffPositionLabel": "TE",
+      "pffTied": false
+    },
+    {
+      "position": "DE",
+      "player": "Zach Carter",
+      "jersey": "90",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 73.5,
+      "madden27Rating": 66,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "DI",
       "pffTied": false
     }
   ]

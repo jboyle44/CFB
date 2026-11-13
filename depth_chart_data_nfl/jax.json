@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-10T20:07:54.933080+00:00",
-  "ourladsUpdatedAt": "2026-11-10T20:07:54.933080+00:00",
+  "generatedAt": "2026-11-13T20:25:26.632148+00:00",
+  "ourladsUpdatedAt": "2026-11-13T20:25:26.632148+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.259916+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Jacksonville Jaguars",
-  "offenseScheme": "11 - One RB, One TE (58%)",
+  "offenseScheme": "11 - One RB, One TE (57%)",
   "defenseScheme": "Base 4-3",
   "rows": [
     {
@@ -426,7 +426,7 @@
     {
       "position": "LDE",
       "player": "Wesley Williams",
-      "jersey": "90",
+      "jersey": "97",
       "code": "26/4",
       "isAcquired": false,
       "isReserve": false,
@@ -442,26 +442,34 @@
     {
       "position": "NT",
       "player": "Jordan Davis",
-      "jersey": "",
+      "jersey": "90",
       "code": "T/Phi",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "NT",
       "player": "Davon Godchaux",
-      "jersey": "",
+      "jersey": "94",
       "code": "T/NO",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "NT",
@@ -690,14 +698,18 @@
     {
       "position": "SS",
       "player": "Jessie Bates III",
-      "jersey": "",
+      "jersey": "0",
       "code": "T/Atl",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "SS",
@@ -810,22 +822,6 @@
       "pffPositionTotal": 122,
       "pffPositionLabel": "CB",
       "pffTied": true
-    },
-    {
-      "position": "NB",
-      "player": "Alijah Huzzie",
-      "jersey": "21",
-      "code": "P/Hou",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 64,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     },
     {
       "position": "PT",
@@ -988,22 +984,6 @@
       "pffTied": null
     },
     {
-      "position": "DE",
-      "player": "B.J. Green II",
-      "jersey": "95",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 59.0,
-      "madden27Rating": 64,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "ED",
-      "pffTied": false
-    },
-    {
       "position": "OG",
       "player": "Patrick Mekari",
       "jersey": "65",
@@ -1146,6 +1126,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "DE",
+      "player": "B.J. Green II",
+      "jersey": "95",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 59.0,
+      "madden27Rating": 64,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "ED",
+      "pffTied": false
     }
   ]
 }

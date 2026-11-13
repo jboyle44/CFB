@@ -1,28 +1,12 @@
 {
-  "generatedAt": "2026-11-10T20:08:16.542122+00:00",
-  "ourladsUpdatedAt": "2026-11-10T20:08:16.542122+00:00",
+  "generatedAt": "2026-11-13T20:25:49.581460+00:00",
+  "ourladsUpdatedAt": "2026-11-13T20:25:49.581460+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.266094+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Los Angeles Rams",
-  "offenseScheme": "11 - One RB, One TE (56%)",
+  "offenseScheme": "11 - One RB, One TE (53%)",
   "defenseScheme": "Base 3-4",
   "rows": [
-    {
-      "position": "LWR",
-      "player": "Jordan Whittington",
-      "jersey": "88",
-      "code": "24/6",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 72,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
     {
       "position": "LWR",
       "player": "Cj Daniels",
@@ -38,22 +22,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "RWR",
-      "player": "Puka Nacua",
-      "jersey": "12",
-      "code": "23/5",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 96.4,
-      "madden27Rating": 98,
-      "madden27Dev": "X-Factor",
-      "pffPositionRank": 1,
-      "pffPositionTotal": 143,
-      "pffPositionLabel": "WR",
-      "pffTied": false
     },
     {
       "position": "RWR",
@@ -86,6 +54,18 @@
       "pffPositionTotal": 143,
       "pffPositionLabel": "WR",
       "pffTied": true
+    },
+    {
+      "position": "SWR",
+      "player": "Xavier Smith",
+      "jersey": "14",
+      "code": "P/SF",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LT",
@@ -785,7 +765,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "NB",
@@ -933,22 +917,6 @@
     },
     {
       "position": "KR",
-      "player": "Jordan Whittington",
-      "jersey": "88",
-      "code": "24/6",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 72,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "KR",
       "player": "Dean Connors",
       "jersey": "33",
       "code": "CF26",
@@ -957,6 +925,38 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": 66,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "WR",
+      "player": "Puka Nacua",
+      "jersey": "12",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 96.4,
+      "madden27Rating": 98,
+      "madden27Dev": "X-Factor",
+      "pffPositionRank": 1,
+      "pffPositionTotal": 143,
+      "pffPositionLabel": "WR",
+      "pffTied": false
+    },
+    {
+      "position": "WR",
+      "player": "Jordan Whittington",
+      "jersey": "88",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": 72,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,

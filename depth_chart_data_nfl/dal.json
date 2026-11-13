@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-10T20:07:19.426148+00:00",
-  "ourladsUpdatedAt": "2026-11-10T20:07:19.426148+00:00",
+  "generatedAt": "2026-11-13T20:24:48.509149+00:00",
+  "ourladsUpdatedAt": "2026-11-13T20:24:48.509149+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.250218+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Dallas Cowboys",
-  "offenseScheme": "11 - One RB, One TE (71%)",
+  "offenseScheme": "11 - One RB, One TE (67%)",
   "defenseScheme": "Base 3-4",
   "rows": [
     {
@@ -1016,22 +1016,6 @@
       "pffTied": null
     },
     {
-      "position": "CB",
-      "player": "Devin Moore",
-      "jersey": "29",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 71,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "TE",
       "player": "Princeton Fant",
       "jersey": "85",
@@ -1094,6 +1078,22 @@
       "pffPositionTotal": 146,
       "pffPositionLabel": "DI",
       "pffTied": false
+    },
+    {
+      "position": "CB",
+      "player": "Devin Moore",
+      "jersey": "29",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": null,
+      "madden27Rating": 71,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-10T20:07:45.060943+00:00",
-  "ourladsUpdatedAt": "2026-11-10T20:07:45.060943+00:00",
+  "generatedAt": "2026-11-13T20:25:16.127452+00:00",
+  "ourladsUpdatedAt": "2026-11-13T20:25:16.127452+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.253354+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Detroit Lions",
-  "offenseScheme": "11 - One RB, One TE (55%)",
+  "offenseScheme": "11 - One RB, One TE (49%)",
   "defenseScheme": "Base 4-3",
   "rows": [
     {
@@ -673,7 +673,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "SS",
@@ -726,14 +730,18 @@
     {
       "position": "FS",
       "player": "Andre Cisco",
-      "jersey": "",
+      "jersey": "28",
       "code": "T/NYJ",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RCB",
