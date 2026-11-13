@@ -104,7 +104,9 @@ def per_game(df, shots=None):
             m[f"{side}_s3"] = sdiv(src.three_pointer.values, tot)
             m[f"{side}_srim"] = sdiv(src.rim.values, tot)
             m[f"{side}_smid"] = sdiv(src.jumper.values, tot)
-            m.loc[tot < 30, [f"{side}_s3", f"{side}_srim", f"{side}_smid"]] = np.nan   # incomplete PBP
+            box_fga = df["t_fga"].values if side == "o" else df["o_fga"].values
+            bad = (tot < 0.9 * box_fga) | (tot > 1.1 * box_fga)                        # incomplete PBP
+            m.loc[bad, [f"{side}_s3", f"{side}_srim", f"{side}_smid"]] = np.nan
     return m
 
 

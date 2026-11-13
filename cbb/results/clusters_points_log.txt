@@ -1,0 +1,81 @@
+FEATS=points: 44458 games, seasons [np.int64(2014), np.int64(2015), np.int64(2016), np.int64(2017), np.int64(2018), np.int64(2019), np.int64(2020), np.int64(2022), np.int64(2023), np.int64(2024), np.int64(2025), np.int64(2026)], 4272 team-seasons, 17 metrics
+silhouette by k: {3: 0.122, 4: 0.092, 5: 0.085, 6: 0.083, 7: 0.076, 8: 0.081, 9: 0.078, 10: 0.072}
+
+===== k=4 =====
+  T1 few FT pts / rarely FTs / 3PT-reliant  (1344 team-seasons)
+  T2 allows mid-range / protects paint / mid-range-reliant  (776 team-seasons)
+  T3 gets to line / FT-reliant / paint-reliant  (1231 team-seasons)
+  T4 fouls / allows FT pts / shoots poorly  (921 team-seasons)
+  matchup grid (6 pairs; significance needs |z| > 2.64):
+                                                       A                                                        B  games  A_cover     z   odd  even
+T2 allows mid-range / protects paint / mid-range-reliant             T3 gets to line / FT-reliant / paint-reliant   4858    0.485 -2.07 0.484 0.486
+                T1 few FT pts / rarely FTs / 3PT-reliant                 T4 fouls / allows FT pts / shoots poorly   4003    0.487 -1.60 0.495 0.481
+            T3 gets to line / FT-reliant / paint-reliant                 T4 fouls / allows FT pts / shoots poorly   4530    0.491 -1.16 0.496 0.488
+                T1 few FT pts / rarely FTs / 3PT-reliant T2 allows mid-range / protects paint / mid-range-reliant   3478    0.492 -0.98 0.484 0.496
+T2 allows mid-range / protects paint / mid-range-reliant                 T4 fouls / allows FT pts / shoots poorly   1932    0.499 -0.09 0.508 0.493
+                T1 few FT pts / rarely FTs / 3PT-reliant             T3 gets to line / FT-reliant / paint-reliant   8956    0.500  0.02 0.501 0.500
+  odd/even-season stability: 0.23
+  WALK-FORWARD (learned from prior seasons, graded on the next):
+    bet matchups with past cover >= 51%: 9425 bets, 0.5051 win | by season {2017: 0.493, 2018: 0.489, 2019: 0.515, 2020: 0.516, 2022: 0.492, 2023: 0.499, 2024: 0.492, 2025: 0.528, 2026: 0.516}
+    bet matchups with past cover >= 52%: 1147 bets, 0.4865 win | by season {2017: 0.479, 2018: 0.539, 2019: 0.456, 2022: 0.487}
+    threshold 53%: no matchup qualified
+    profile model: 1+pt 10270 bets 0.5403 | 2+pt 1511 bets 0.5718
+    profile + archetype matchups: 1+pt 10535 bets 0.5378 | 2+pt 1630 bets 0.5577
+
+===== k=5 =====
+  T1 gets to line / FT-reliant / paint-reliant  (1083 team-seasons)
+  T2 allows good shooting / allows paint pts / fouls  (977 team-seasons)
+  T3 allows mid-range / protects paint / mid-range-reliant  (661 team-seasons)
+  T4 fouls / allows FT pts / FT-reliant  (666 team-seasons)
+  T5 few FT pts / 3PT-reliant / few FTs allowed  (885 team-seasons)
+  matchup grid (10 pairs; significance needs |z| > 2.81):
+                                                       A                                                        B  games  A_cover     z   odd  even
+            T1 gets to line / FT-reliant / paint-reliant T3 allows mid-range / protects paint / mid-range-reliant   4184    0.514  1.82 0.520 0.511
+            T1 gets to line / FT-reliant / paint-reliant                    T4 fouls / allows FT pts / FT-reliant   2604    0.484 -1.65 0.484 0.484
+T3 allows mid-range / protects paint / mid-range-reliant            T5 few FT pts / 3PT-reliant / few FTs allowed   2152    0.516  1.47 0.507 0.521
+      T2 allows good shooting / allows paint pts / fouls                    T4 fouls / allows FT pts / FT-reliant   2181    0.486 -1.35 0.485 0.486
+                   T4 fouls / allows FT pts / FT-reliant            T5 few FT pts / 3PT-reliant / few FTs allowed   1330    0.483 -1.26 0.449 0.510
+            T1 gets to line / FT-reliant / paint-reliant            T5 few FT pts / 3PT-reliant / few FTs allowed   5458    0.505  0.81 0.498 0.512
+      T2 allows good shooting / allows paint pts / fouls            T5 few FT pts / 3PT-reliant / few FTs allowed   3901    0.496 -0.46 0.480 0.508
+T3 allows mid-range / protects paint / mid-range-reliant                    T4 fouls / allows FT pts / FT-reliant   1230    0.494 -0.40 0.515 0.480
+      T2 allows good shooting / allows paint pts / fouls T3 allows mid-range / protects paint / mid-range-reliant   1477    0.504  0.34 0.485 0.515
+            T1 gets to line / FT-reliant / paint-reliant       T2 allows good shooting / allows paint pts / fouls   5567    0.500 -0.01 0.504 0.497
+  odd/even-season stability: -0.08
+  WALK-FORWARD (learned from prior seasons, graded on the next):
+    bet matchups with past cover >= 51%: 8751 bets, 0.5109 win | by season {2017: 0.488, 2018: 0.511, 2019: 0.503, 2020: 0.515, 2022: 0.505, 2023: 0.559, 2024: 0.521, 2025: 0.515, 2026: 0.514}
+    bet matchups with past cover >= 52%: 1564 bets, 0.4827 win | by season {2017: 0.474, 2019: 0.447, 2020: 0.521, 2024: 0.465}
+    bet matchups with past cover >= 53%: 152 bets, 0.4474 win | by season {2019: 0.447}
+    profile model: 1+pt 10270 bets 0.5403 | 2+pt 1511 bets 0.5718
+    profile + archetype matchups: 1+pt 10697 bets 0.5382 | 2+pt 1632 bets 0.5607
+
+===== k=6 =====
+  T1 allows FT pts / fouls / takes away 3s  (712 team-seasons)
+  T2 allows mid-range / protects paint / mid-range-reliant  (632 team-seasons)
+  T3 allows good shooting / weak D-glass / takes away mid-range  (678 team-seasons)
+  T4 fouls / allows FT pts / FT-reliant  (592 team-seasons)
+  T5 3PT-reliant / few FT pts / few FTs allowed  (762 team-seasons)
+  T6 gets to line / FT-reliant / paint-reliant  (896 team-seasons)
+  matchup grid (15 pairs; significance needs |z| > 2.94):
+                                                            A                                                             B  games  A_cover     z   odd  even
+     T2 allows mid-range / protects paint / mid-range-reliant                  T6 gets to line / FT-reliant / paint-reliant   3481    0.482 -2.15 0.472 0.488
+                     T1 allows FT pts / fouls / takes away 3s                         T4 fouls / allows FT pts / FT-reliant   1318    0.473 -1.98 0.487 0.463
+T3 allows good shooting / weak D-glass / takes away mid-range                         T4 fouls / allows FT pts / FT-reliant   1236    0.475 -1.76 0.491 0.463
+                T5 3PT-reliant / few FT pts / few FTs allowed                  T6 gets to line / FT-reliant / paint-reliant   4095    0.488 -1.52 0.497 0.482
+                     T1 allows FT pts / fouls / takes away 3s T3 allows good shooting / weak D-glass / takes away mid-range   2398    0.510  1.02 0.527 0.497
+                        T4 fouls / allows FT pts / FT-reliant                  T6 gets to line / FT-reliant / paint-reliant   1900    0.512  1.01 0.519 0.507
+                        T4 fouls / allows FT pts / FT-reliant                 T5 3PT-reliant / few FT pts / few FTs allowed    963    0.485 -0.93 0.443 0.520
+     T2 allows mid-range / protects paint / mid-range-reliant T3 allows good shooting / weak D-glass / takes away mid-range    892    0.512  0.74 0.537 0.496
+     T2 allows mid-range / protects paint / mid-range-reliant                 T5 3PT-reliant / few FT pts / few FTs allowed   1828    0.508  0.70 0.506 0.510
+T3 allows good shooting / weak D-glass / takes away mid-range                 T5 3PT-reliant / few FT pts / few FTs allowed   2046    0.494 -0.57 0.505 0.484
+                     T1 allows FT pts / fouls / takes away 3s                  T6 gets to line / FT-reliant / paint-reliant   4197    0.498 -0.29 0.494 0.500
+                     T1 allows FT pts / fouls / takes away 3s      T2 allows mid-range / protects paint / mid-range-reliant   1344    0.504  0.27 0.492 0.510
+                     T1 allows FT pts / fouls / takes away 3s                 T5 3PT-reliant / few FT pts / few FTs allowed   2791    0.502  0.25 0.474 0.523
+T3 allows good shooting / weak D-glass / takes away mid-range                  T6 gets to line / FT-reliant / paint-reliant   2643    0.501  0.14 0.515 0.490
+     T2 allows mid-range / protects paint / mid-range-reliant                         T4 fouls / allows FT pts / FT-reliant   1024    0.500  0.00 0.520 0.487
+  odd/even-season stability: -0.21
+  WALK-FORWARD (learned from prior seasons, graded on the next):
+    bet matchups with past cover >= 51%: 9623 bets, 0.4998 win | by season {2017: 0.486, 2018: 0.515, 2019: 0.507, 2020: 0.518, 2022: 0.455, 2023: 0.502, 2024: 0.519, 2025: 0.518, 2026: 0.483}
+    bet matchups with past cover >= 52%: 2118 bets, 0.4821 win | by season {2017: 0.486, 2018: 0.558, 2019: 0.477, 2020: 0.6, 2022: 0.326, 2023: 0.508, 2026: 0.486}
+    bet matchups with past cover >= 53%: 772 bets, 0.4883 win | by season {2017: 0.466, 2019: 0.492, 2020: 0.6, 2026: 0.473}
+    profile model: 1+pt 10270 bets 0.5403 | 2+pt 1511 bets 0.5718
+    profile + archetype matchups: 1+pt 10841 bets 0.5383 | 2+pt 1702 bets 0.5582

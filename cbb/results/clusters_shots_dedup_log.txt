@@ -1,0 +1,81 @@
+FEATS=shots: 44415 games, seasons [np.int64(2014), np.int64(2015), np.int64(2016), np.int64(2017), np.int64(2018), np.int64(2019), np.int64(2020), np.int64(2022), np.int64(2023), np.int64(2024), np.int64(2025), np.int64(2026)], 4272 team-seasons, 15 metrics
+silhouette by k: {3: 0.096, 4: 0.094, 5: 0.083, 6: 0.077, 7: 0.08, 8: 0.077, 9: 0.07, 10: 0.071}
+
+===== k=4 =====
+  T1 3PT-heavy shot mix / no mid-range / gets back  (1135 team-seasons)
+  T2 concedes mid-range / walls off rim / tough shooting D  (1207 team-seasons)
+  T3 rim-attacking / gets to line / allows rim shots  (1022 team-seasons)
+  T4 shoots poorly / weak D-glass / mid-range-heavy  (908 team-seasons)
+  matchup grid (6 pairs; significance needs |z| > 2.64):
+                                                       A                                                        B  games  A_cover     z   odd  even
+        T1 3PT-heavy shot mix / no mid-range / gets back       T3 rim-attacking / gets to line / allows rim shots   5044    0.485 -2.14 0.489 0.482
+        T1 3PT-heavy shot mix / no mid-range / gets back        T4 shoots poorly / weak D-glass / mid-range-heavy   4038    0.510  1.26 0.507 0.512
+      T3 rim-attacking / gets to line / allows rim shots        T4 shoots poorly / weak D-glass / mid-range-heavy   3586    0.492 -0.94 0.499 0.487
+T2 concedes mid-range / walls off rim / tough shooting D        T4 shoots poorly / weak D-glass / mid-range-heavy   3614    0.508  0.93 0.521 0.498
+        T1 3PT-heavy shot mix / no mid-range / gets back T2 concedes mid-range / walls off rim / tough shooting D   6583    0.503  0.43 0.511 0.497
+T2 concedes mid-range / walls off rim / tough shooting D       T3 rim-attacking / gets to line / allows rim shots   6107    0.499 -0.19 0.501 0.497
+  odd/even-season stability: 0.60
+  WALK-FORWARD (learned from prior seasons, graded on the next):
+    bet matchups with past cover >= 51%: 10509 bets, 0.5025 win | by season {2017: 0.509, 2018: 0.532, 2019: 0.491, 2020: 0.508, 2022: 0.496, 2023: 0.509, 2024: 0.508, 2025: 0.485}
+    bet matchups with past cover >= 52%: 795 bets, 0.5044 win | by season {2018: 0.505, 2019: 0.504}
+    threshold 53%: no matchup qualified
+    profile model: 1+pt 10272 bets 0.5406 | 2+pt 1507 bets 0.5713
+    profile + archetype matchups: 1+pt 10500 bets 0.5382 | 2+pt 1613 bets 0.5580
+
+===== k=5 =====
+  T1 concedes mid-range / walls off rim / tough shooting D  (1039 team-seasons)
+  T2 rim-attacking / gets to line / few 3PA  (800 team-seasons)
+  T3 allows rim shots / no mid-range / 3PT-heavy shot mix  (774 team-seasons)
+  T4 3PT-heavy shot mix / gets back / allows 3PA  (868 team-seasons)
+  T5 shoots poorly / mid-range-heavy / weak D-glass  (791 team-seasons)
+  matchup grid (10 pairs; significance needs |z| > 2.81):
+                                                       A                                                       B  games  A_cover     z   odd  even
+               T2 rim-attacking / gets to line / few 3PA T3 allows rim shots / no mid-range / 3PT-heavy shot mix   2716    0.516  1.65 0.511 0.519
+T1 concedes mid-range / walls off rim / tough shooting D       T5 shoots poorly / mid-range-heavy / weak D-glass   2778    0.514  1.52 0.534 0.499
+ T3 allows rim shots / no mid-range / 3PT-heavy shot mix       T5 shoots poorly / mid-range-heavy / weak D-glass   2617    0.490 -1.00 0.492 0.489
+          T4 3PT-heavy shot mix / gets back / allows 3PA       T5 shoots poorly / mid-range-heavy / weak D-glass   2476    0.510  1.00 0.504 0.514
+               T2 rim-attacking / gets to line / few 3PA          T4 3PT-heavy shot mix / gets back / allows 3PA   2722    0.491 -0.92 0.489 0.492
+T1 concedes mid-range / walls off rim / tough shooting D          T4 3PT-heavy shot mix / gets back / allows 3PA   4715    0.494 -0.89 0.474 0.508
+T1 concedes mid-range / walls off rim / tough shooting D               T2 rim-attacking / gets to line / few 3PA   4235    0.496 -0.51 0.504 0.489
+T1 concedes mid-range / walls off rim / tough shooting D T3 allows rim shots / no mid-range / 3PT-heavy shot mix   3482    0.497 -0.41 0.510 0.487
+ T3 allows rim shots / no mid-range / 3PT-heavy shot mix          T4 3PT-heavy shot mix / gets back / allows 3PA   3606    0.503  0.33 0.494 0.510
+               T2 rim-attacking / gets to line / few 3PA       T5 shoots poorly / mid-range-heavy / weak D-glass   2343    0.501  0.14 0.528 0.485
+  odd/even-season stability: -0.21
+  WALK-FORWARD (learned from prior seasons, graded on the next):
+    bet matchups with past cover >= 51%: 10601 bets, 0.4989 win | by season {2017: 0.506, 2018: 0.521, 2019: 0.494, 2020: 0.495, 2022: 0.494, 2023: 0.491, 2024: 0.482, 2025: 0.495, 2026: 0.514}
+    bet matchups with past cover >= 52%: 1828 bets, 0.4880 win | by season {2017: 0.47, 2019: 0.488, 2023: 0.497, 2024: 0.484}
+    bet matchups with past cover >= 53%: 181 bets, 0.4696 win | by season {2017: 0.47}
+    profile model: 1+pt 10272 bets 0.5406 | 2+pt 1507 bets 0.5713
+    profile + archetype matchups: 1+pt 10694 bets 0.5396 | 2+pt 1662 bets 0.5572
+
+===== k=6 =====
+  T1 shoots well / 3PT-heavy shot mix / concedes mid-range  (665 team-seasons)
+  T2 mid-range-heavy / concedes mid-range / few rim shots  (829 team-seasons)
+  T3 allows 3PA / allows good shooting / denies mid-range  (765 team-seasons)
+  T4 shoots poorly / fouls / weak D-glass  (593 team-seasons)
+  T5 allows rim shots / no mid-range / denies mid-range  (689 team-seasons)
+  T6 rim-attacking / gets to line / crashes O-glass  (731 team-seasons)
+  matchup grid (15 pairs; significance needs |z| > 2.94):
+                                                       A                                                       B  games  A_cover     z   odd  even
+ T2 mid-range-heavy / concedes mid-range / few rim shots   T5 allows rim shots / no mid-range / denies mid-range   2114    0.520  1.87 0.527 0.515
+   T5 allows rim shots / no mid-range / denies mid-range       T6 rim-attacking / gets to line / crashes O-glass   2369    0.482 -1.79 0.473 0.488
+T1 shoots well / 3PT-heavy shot mix / concedes mid-range                 T4 shoots poorly / fouls / weak D-glass    966    0.528  1.74 0.540 0.521
+                 T4 shoots poorly / fouls / weak D-glass       T6 rim-attacking / gets to line / crashes O-glass   1583    0.519  1.48 0.500 0.530
+T1 shoots well / 3PT-heavy shot mix / concedes mid-range T3 allows 3PA / allows good shooting / denies mid-range   2512    0.492 -0.84 0.493 0.490
+T1 shoots well / 3PT-heavy shot mix / concedes mid-range   T5 allows rim shots / no mid-range / denies mid-range   1895    0.491 -0.76 0.513 0.476
+T1 shoots well / 3PT-heavy shot mix / concedes mid-range T2 mid-range-heavy / concedes mid-range / few rim shots   3591    0.505  0.65 0.532 0.487
+ T3 allows 3PA / allows good shooting / denies mid-range   T5 allows rim shots / no mid-range / denies mid-range   2693    0.495 -0.56 0.496 0.494
+                 T4 shoots poorly / fouls / weak D-glass   T5 allows rim shots / no mid-range / denies mid-range   1364    0.493 -0.54 0.505 0.483
+ T2 mid-range-heavy / concedes mid-range / few rim shots                 T4 shoots poorly / fouls / weak D-glass   1349    0.506  0.46 0.497 0.514
+ T3 allows 3PA / allows good shooting / denies mid-range                 T4 shoots poorly / fouls / weak D-glass   1429    0.506  0.45 0.495 0.512
+ T2 mid-range-heavy / concedes mid-range / few rim shots       T6 rim-attacking / gets to line / crashes O-glass   3777    0.499 -0.18 0.510 0.490
+T1 shoots well / 3PT-heavy shot mix / concedes mid-range       T6 rim-attacking / gets to line / crashes O-glass   2803    0.501  0.09 0.513 0.492
+ T2 mid-range-heavy / concedes mid-range / few rim shots T3 allows 3PA / allows good shooting / denies mid-range   2847    0.501  0.06 0.487 0.511
+ T3 allows 3PA / allows good shooting / denies mid-range       T6 rim-attacking / gets to line / crashes O-glass   2523    0.500 -0.02 0.506 0.496
+  odd/even-season stability: 0.10
+  WALK-FORWARD (learned from prior seasons, graded on the next):
+    bet matchups with past cover >= 51%: 10571 bets, 0.5052 win | by season {2017: 0.52, 2018: 0.518, 2019: 0.501, 2020: 0.49, 2022: 0.504, 2023: 0.515, 2024: 0.498, 2025: 0.505, 2026: 0.462}
+    bet matchups with past cover >= 52%: 1523 bets, 0.5036 win | by season {2017: 0.53, 2020: 0.506, 2022: 0.474, 2023: 0.514, 2025: 0.538, 2026: 0.409}
+    bet matchups with past cover >= 53%: 88 bets, 0.4091 win | by season {2026: 0.409}
+    profile model: 1+pt 10272 bets 0.5406 | 2+pt 1507 bets 0.5713
+    profile + archetype matchups: 1+pt 10583 bets 0.5433 | 2+pt 1669 bets 0.5674
