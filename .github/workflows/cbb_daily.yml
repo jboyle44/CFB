@@ -1,10 +1,10 @@
 name: CBB Daily Picks
 
 # 7:37 AM ET (EST) so picks are up by 8 AM and the run finishes before the 13:00 UTC CFB/NFL jobs.
-# Scheduled runs stop after END_DATE (manual runs always work).
+# Scheduled runs stop after END_DATE, Jan 31 2027 (manual runs always work).
 on:
   schedule:
-    - cron: '37 12 * 11,12 *'
+    - cron: '37 12 * 11,12,1 *'
   workflow_dispatch:
     inputs:
       days_ahead:
@@ -22,7 +22,7 @@ jobs:
     permissions:
       contents: write
     env:
-      END_DATE: "2026-12-31"
+      END_DATE: "2027-01-31"
     steps:
       - name: Season window check
         id: window
