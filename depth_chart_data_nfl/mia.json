@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-13T20:24:59.091271+00:00",
-  "ourladsUpdatedAt": "2026-11-13T20:24:59.091271+00:00",
+  "generatedAt": "2026-11-17T21:27:34.895060+00:00",
+  "ourladsUpdatedAt": "2026-11-17T21:27:34.895060+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.267630+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Miami Dolphins",
@@ -25,19 +25,19 @@
     },
     {
       "position": "LWR",
-      "player": "Jared Wayne",
-      "jersey": "86",
-      "code": "W/Hou",
+      "player": "Jalen Tolbert",
+      "jersey": "1",
+      "code": "U/Dal",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 67,
+      "pffGrade": 60.4,
+      "madden27Rating": 73,
       "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "pffPositionRank": 96,
+      "pffPositionTotal": 143,
+      "pffPositionLabel": "WR",
+      "pffTied": false
     },
     {
       "position": "RWR",
@@ -57,19 +57,19 @@
     },
     {
       "position": "RWR",
-      "player": "Jalen Tolbert",
-      "jersey": "1",
-      "code": "U/Dal",
+      "player": "Jared Wayne",
+      "jersey": "86",
+      "code": "W/Hou",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 60.4,
-      "madden27Rating": 73,
+      "pffGrade": null,
+      "madden27Rating": 67,
       "madden27Dev": "Normal",
-      "pffPositionRank": 96,
-      "pffPositionTotal": 143,
-      "pffPositionLabel": "WR",
-      "pffTied": false
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "SWR",
@@ -440,22 +440,6 @@
       "pffTied": null
     },
     {
-      "position": "LDE",
-      "player": "Jamree Kromah",
-      "jersey": "58",
-      "code": "W/Chi",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "LDT",
       "player": "Jordan Phillips",
       "jersey": "94",
@@ -513,7 +497,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RDE",

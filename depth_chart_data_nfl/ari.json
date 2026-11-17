@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-13T20:25:47.483101+00:00",
-  "ourladsUpdatedAt": "2026-11-13T20:25:47.483101+00:00",
+  "generatedAt": "2026-11-17T21:28:24.863810+00:00",
+  "ourladsUpdatedAt": "2026-11-17T21:28:24.863810+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.235743+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Arizona Cardinals",
@@ -120,22 +120,6 @@
       "pffTied": false
     },
     {
-      "position": "LG",
-      "player": "Hayden Conner",
-      "jersey": "58",
-      "code": "25/6",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 65.8,
-      "madden27Rating": 65,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "G",
-      "pffTied": false
-    },
-    {
       "position": "C",
       "player": "Hjalte Froholdt",
       "jersey": "72",
@@ -149,6 +133,22 @@
       "pffPositionRank": 14,
       "pffPositionTotal": 41,
       "pffPositionLabel": "C",
+      "pffTied": false
+    },
+    {
+      "position": "C",
+      "player": "Hayden Conner",
+      "jersey": "58",
+      "code": "25/6",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 65.8,
+      "madden27Rating": 65,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "G",
       "pffTied": false
     },
     {
@@ -275,6 +275,22 @@
       "madden27Rating": 69,
       "madden27Dev": "Normal",
       "pffPositionRank": 42,
+      "pffPositionTotal": 68,
+      "pffPositionLabel": "TE",
+      "pffTied": false
+    },
+    {
+      "position": "TE",
+      "player": "Hunter Long",
+      "jersey": "89",
+      "code": "T/Jax",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 56.1,
+      "madden27Rating": 66,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 60,
       "pffPositionTotal": 68,
       "pffPositionLabel": "TE",
       "pffTied": false
@@ -1156,22 +1172,6 @@
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
-      "pffPositionLabel": "TE",
-      "pffTied": false
-    },
-    {
-      "position": "TE",
-      "player": "Hunter Long",
-      "jersey": "89",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 56.1,
-      "madden27Rating": 66,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 60,
-      "pffPositionTotal": 68,
       "pffPositionLabel": "TE",
       "pffTied": false
     },

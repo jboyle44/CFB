@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-13T20:25:43.293285+00:00",
-  "ourladsUpdatedAt": "2026-11-13T20:25:43.293285+00:00",
+  "generatedAt": "2026-11-17T21:28:20.623505+00:00",
+  "ourladsUpdatedAt": "2026-11-17T21:28:20.623505+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.272249+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New Orleans Saints",
@@ -105,19 +105,19 @@
     },
     {
       "position": "LT",
-      "player": "Asim Richards",
-      "jersey": "72",
-      "code": "T/Dal",
+      "player": "Mason Murphy",
+      "jersey": "74",
+      "code": "W/Chi",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 47.1,
-      "madden27Rating": 65,
+      "pffGrade": null,
+      "madden27Rating": 63,
       "madden27Dev": "Normal",
-      "pffPositionRank": 90,
-      "pffPositionTotal": 95,
-      "pffPositionLabel": "T",
-      "pffTied": true
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LG",
@@ -136,23 +136,7 @@
       "pffTied": true
     },
     {
-      "position": "C",
-      "player": "Erik McCoy",
-      "jersey": "78",
-      "code": "19/2",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 67.9,
-      "madden27Rating": 87,
-      "madden27Dev": "Star",
-      "pffPositionRank": 16,
-      "pffPositionTotal": 41,
-      "pffPositionLabel": "C",
-      "pffTied": false
-    },
-    {
-      "position": "C",
+      "position": "LG",
       "player": "William Sherman",
       "jersey": "66",
       "code": "SF25",
@@ -168,7 +152,7 @@
       "pffTied": null
     },
     {
-      "position": "RG",
+      "position": "C",
       "player": "Cesar Ruiz",
       "jersey": "51",
       "code": "20/1",
@@ -181,6 +165,22 @@
       "pffPositionRank": 61,
       "pffPositionTotal": 87,
       "pffPositionLabel": "G",
+      "pffTied": false
+    },
+    {
+      "position": "C",
+      "player": "Erik McCoy",
+      "jersey": "78",
+      "code": "19/2",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 67.9,
+      "madden27Rating": 87,
+      "madden27Dev": "Star",
+      "pffPositionRank": 16,
+      "pffPositionTotal": 41,
+      "pffPositionLabel": "C",
       "pffTied": false
     },
     {
@@ -200,6 +200,18 @@
       "pffTied": null
     },
     {
+      "position": "RG",
+      "player": "Easton Kilty",
+      "jersey": "73",
+      "code": "CF25",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "RT",
       "player": "Taliese Fuaga",
       "jersey": "75",
@@ -217,19 +229,19 @@
     },
     {
       "position": "RT",
-      "player": "Mason Murphy",
-      "jersey": "74",
-      "code": "W/Chi",
+      "player": "Asim Richards",
+      "jersey": "72",
+      "code": "T/Dal",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 63,
+      "pffGrade": 47.1,
+      "madden27Rating": 65,
       "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "pffPositionRank": 90,
+      "pffPositionTotal": 95,
+      "pffPositionLabel": "T",
+      "pffTied": true
     },
     {
       "position": "TE",
@@ -329,6 +341,22 @@
     },
     {
       "position": "RB",
+      "player": "Travis Etienne Jr.",
+      "jersey": "3",
+      "code": "U/Jax",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 72.6,
+      "madden27Rating": 84,
+      "madden27Dev": "Star",
+      "pffPositionRank": 29,
+      "pffPositionTotal": 73,
+      "pffPositionLabel": "HB",
+      "pffTied": false
+    },
+    {
+      "position": "RB",
       "player": "Alvin Kamara",
       "jersey": "41",
       "code": "17/3",
@@ -376,7 +404,7 @@
       "pffTied": null
     },
     {
-      "position": "DE",
+      "position": "LDE",
       "player": "Vernon Broughton",
       "jersey": "91",
       "code": "25/3",
@@ -392,17 +420,33 @@
       "pffTied": false
     },
     {
-      "position": "DE",
-      "player": "Colby Wooden",
-      "jersey": "50",
-      "code": "W/Ind",
+      "position": "LDE",
+      "player": "John Ridgeway III",
+      "jersey": "95",
+      "code": "T/Was",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 49.9,
-      "madden27Rating": 70,
+      "pffGrade": 42.7,
+      "madden27Rating": 66,
       "madden27Dev": "Normal",
-      "pffPositionRank": 105,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "DI",
+      "pffTied": false
+    },
+    {
+      "position": "NT",
+      "player": "Nathan Shepherd",
+      "jersey": "93",
+      "code": "U/NYJ",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 62.3,
+      "madden27Rating": 74,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 51,
       "pffPositionTotal": 146,
       "pffPositionLabel": "DI",
       "pffTied": false
@@ -424,50 +468,18 @@
       "pffTied": false
     },
     {
-      "position": "NT",
-      "player": "Christen Miller",
-      "jersey": "52",
-      "code": "26/2",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 75,
-      "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "DT",
-      "player": "Nathan Shepherd",
-      "jersey": "93",
-      "code": "U/NYJ",
+      "position": "RDE",
+      "player": "Colby Wooden",
+      "jersey": "50",
+      "code": "W/Ind",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 62.3,
-      "madden27Rating": 74,
+      "pffGrade": 49.9,
+      "madden27Rating": 70,
       "madden27Dev": "Normal",
-      "pffPositionRank": 51,
+      "pffPositionRank": 105,
       "pffPositionTotal": 146,
-      "pffPositionLabel": "DI",
-      "pffTied": false
-    },
-    {
-      "position": "DT",
-      "player": "John Ridgeway III",
-      "jersey": "95",
-      "code": "T/Was",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 42.7,
-      "madden27Rating": 66,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
       "pffPositionLabel": "DI",
       "pffTied": false
     },
@@ -502,6 +514,22 @@
       "pffPositionTotal": 129,
       "pffPositionLabel": "ED",
       "pffTied": false
+    },
+    {
+      "position": "LOLB",
+      "player": "Tyree Wilson",
+      "jersey": "98",
+      "code": "T/LV",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 57.6,
+      "madden27Rating": 73,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 95,
+      "pffPositionTotal": 129,
+      "pffPositionLabel": "ED",
+      "pffTied": true
     },
     {
       "position": "WLB",
@@ -632,22 +660,6 @@
       "pffTied": false
     },
     {
-      "position": "ROLB",
-      "player": "Tyree Wilson",
-      "jersey": "98",
-      "code": "T/LV",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 57.6,
-      "madden27Rating": 73,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 95,
-      "pffPositionTotal": 129,
-      "pffPositionLabel": "ED",
-      "pffTied": true
-    },
-    {
       "position": "LCB",
       "player": "Kool-Aid McKinstry",
       "jersey": "1",
@@ -665,14 +677,14 @@
     },
     {
       "position": "LCB",
-      "player": "Martin Emerson Jr.",
-      "jersey": "22",
-      "code": "U/Cle",
+      "player": "Decamerion Richardson",
+      "jersey": "25",
+      "code": "W/LV",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 78,
+      "madden27Rating": 69,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -745,6 +757,22 @@
     },
     {
       "position": "RCB",
+      "player": "Martin Emerson Jr.",
+      "jersey": "22",
+      "code": "U/Cle",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 78,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "RCB",
       "player": "Quincy Riley",
       "jersey": "29",
       "code": "25/4",
@@ -758,22 +786,6 @@
       "pffPositionTotal": 122,
       "pffPositionLabel": "CB",
       "pffTied": false
-    },
-    {
-      "position": "RCB",
-      "player": "Decamerion Richardson",
-      "jersey": "25",
-      "code": "W/LV",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 69,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     },
     {
       "position": "NB",
@@ -904,6 +916,22 @@
       "pffTied": null
     },
     {
+      "position": "DT",
+      "player": "Christen Miller",
+      "jersey": "52",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": 75,
+      "madden27Dev": "Star",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
       "position": "RB",
       "player": "Ty Chandler",
       "jersey": "32",
@@ -993,7 +1021,11 @@
       "reserveStatus": "PS/IR",
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "WR",
@@ -1026,22 +1058,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "RB",
-      "player": "Travis Etienne Jr.",
-      "jersey": "3",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 72.6,
-      "madden27Rating": 84,
-      "madden27Dev": "Star",
-      "pffPositionRank": 29,
-      "pffPositionTotal": 73,
-      "pffPositionLabel": "HB",
-      "pffTied": false
     }
   ]
 }

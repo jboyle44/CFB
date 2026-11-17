@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-13T20:25:41.206275+00:00",
-  "ourladsUpdatedAt": "2026-11-13T20:25:41.206275+00:00",
+  "generatedAt": "2026-11-17T21:28:18.500621+00:00",
+  "ourladsUpdatedAt": "2026-11-17T21:28:18.500621+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.243392+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Carolina Panthers",
@@ -36,6 +36,22 @@
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
+      "pffPositionLabel": "WR",
+      "pffTied": false
+    },
+    {
+      "position": "RWR",
+      "player": "Xavier Legette",
+      "jersey": "17",
+      "code": "24/1",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 52.6,
+      "madden27Rating": 74,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 132,
+      "pffPositionTotal": 143,
       "pffPositionLabel": "WR",
       "pffTied": false
     },
@@ -536,22 +552,6 @@
       "pffTied": false
     },
     {
-      "position": "LOLB",
-      "player": "Nick Hampton",
-      "jersey": "39",
-      "code": "U/LAR",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 69,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "LILB",
       "player": "Bobby Okereke",
       "jersey": "58",
@@ -665,19 +665,31 @@
     },
     {
       "position": "LCB",
-      "player": "Chau Smith-Wade",
-      "jersey": "26",
-      "code": "24/5",
+      "player": "Marco Wilson",
+      "jersey": "35",
+      "code": "SF26",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 58.1,
-      "madden27Rating": 73,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "LCB",
+      "player": "Malcolm DeWalt IV",
+      "jersey": "36",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 64,
       "madden27Dev": "Normal",
-      "pffPositionRank": 80,
-      "pffPositionTotal": 122,
-      "pffPositionLabel": "CB",
-      "pffTied": false
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "SS",
@@ -761,19 +773,19 @@
     },
     {
       "position": "RCB",
-      "player": "Malcolm DeWalt IV",
-      "jersey": "36",
-      "code": "SF26",
+      "player": "Chau Smith-Wade",
+      "jersey": "26",
+      "code": "24/5",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 64,
+      "pffGrade": 58.1,
+      "madden27Rating": 73,
       "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "pffPositionRank": 80,
+      "pffPositionTotal": 122,
+      "pffPositionLabel": "CB",
+      "pffTied": false
     },
     {
       "position": "NB",
@@ -1041,7 +1053,11 @@
       "reserveStatus": "PS/IR",
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "OT",
@@ -1074,22 +1090,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "WR",
-      "player": "Xavier Legette",
-      "jersey": "17",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 52.6,
-      "madden27Rating": 74,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 132,
-      "pffPositionTotal": 143,
-      "pffPositionLabel": "WR",
-      "pffTied": false
     },
     {
       "position": "RB",

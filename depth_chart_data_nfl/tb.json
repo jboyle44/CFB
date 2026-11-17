@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-13T20:25:45.364219+00:00",
-  "ourladsUpdatedAt": "2026-11-13T20:25:45.364219+00:00",
+  "generatedAt": "2026-11-17T21:28:22.742578+00:00",
+  "ourladsUpdatedAt": "2026-11-17T21:28:22.742578+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.283395+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Tampa Bay Buccaneers",
@@ -342,6 +342,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "QB",
+      "player": "Easton Stick",
+      "jersey": "16",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RB",

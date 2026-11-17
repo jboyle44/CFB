@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-13T20:25:22.430948+00:00",
-  "ourladsUpdatedAt": "2026-11-13T20:25:22.430948+00:00",
+  "generatedAt": "2026-11-17T21:27:58.875100+00:00",
+  "ourladsUpdatedAt": "2026-11-17T21:27:58.875100+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.256745+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Houston Texans",
@@ -25,22 +25,6 @@
     },
     {
       "position": "LWR",
-      "player": "Kayshon Boutte",
-      "jersey": "14",
-      "code": "T/NE",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 70.9,
-      "madden27Rating": 76,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 42,
-      "pffPositionTotal": 143,
-      "pffPositionLabel": "WR",
-      "pffTied": false
-    },
-    {
-      "position": "RWR",
       "player": "Marvin Harrison Jr.",
       "jersey": "18",
       "code": "T/Arz",
@@ -54,6 +38,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "RWR",
+      "player": "Kayshon Boutte",
+      "jersey": "14",
+      "code": "T/NE",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 70.9,
+      "madden27Rating": 76,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 42,
+      "pffPositionTotal": 143,
+      "pffPositionLabel": "WR",
+      "pffTied": false
     },
     {
       "position": "RWR",
@@ -97,7 +97,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LT",
@@ -517,22 +521,6 @@
     },
     {
       "position": "RDT",
-      "player": "Kayden McDonald",
-      "jersey": "93",
-      "code": "26/2",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 75,
-      "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "RDT",
       "player": "Naquan Jones",
       "jersey": "91",
       "code": "P/SF",
@@ -542,6 +530,22 @@
       "pffGrade": null,
       "madden27Rating": null,
       "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "RDT",
+      "player": "Kayden McDonald",
+      "jersey": "93",
+      "code": "26/2",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 75,
+      "madden27Dev": "Star",
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,
@@ -580,22 +584,6 @@
       "pffTied": false
     },
     {
-      "position": "RDE",
-      "player": "Sabastian Harsh",
-      "jersey": "54",
-      "code": "CF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 65,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "WLB",
       "player": "Henry To'oTo'o",
       "jersey": "39",
@@ -613,6 +601,22 @@
     },
     {
       "position": "WLB",
+      "player": "Wade Woodaz",
+      "jersey": "30",
+      "code": "26/4",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 68,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "MLB",
       "player": "Jake Hansen",
       "jersey": "35",
       "code": "CF22",
@@ -629,35 +633,19 @@
     },
     {
       "position": "MLB",
-      "player": "Azeez Al-Shaair",
-      "jersey": "0",
-      "code": "U/Ten",
+      "player": "Jake Hummel",
+      "jersey": "33",
+      "code": "U/Bal",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 70.3,
-      "madden27Rating": 83,
-      "madden27Dev": "Star",
-      "pffPositionRank": 29,
-      "pffPositionTotal": 94,
-      "pffPositionLabel": "LB",
-      "pffTied": false
-    },
-    {
-      "position": "MLB",
-      "player": "Wade Woodaz",
-      "jersey": "30",
-      "code": "26/4",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 68,
+      "pffGrade": 69.1,
+      "madden27Rating": 63,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "pffPositionLabel": "LB",
+      "pffTied": false
     },
     {
       "position": "LCB",
@@ -893,7 +881,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "PR",
@@ -937,7 +929,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "KR",
@@ -970,6 +966,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "LB",
+      "player": "Azeez Al-Shaair",
+      "jersey": "0",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 70.3,
+      "madden27Rating": 83,
+      "madden27Dev": "Star",
+      "pffPositionRank": 29,
+      "pffPositionTotal": 94,
+      "pffPositionLabel": "LB",
+      "pffTied": false
     },
     {
       "position": "FB",
@@ -1178,22 +1190,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "LB",
-      "player": "Jake Hummel",
-      "jersey": "33",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 69.1,
-      "madden27Rating": 63,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "LB",
-      "pffTied": false
     },
     {
       "position": "CB",

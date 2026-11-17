@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-13T20:25:32.844683+00:00",
-  "ourladsUpdatedAt": "2026-11-13T20:25:32.844683+00:00",
+  "generatedAt": "2026-11-17T21:28:09.836458+00:00",
+  "ourladsUpdatedAt": "2026-11-17T21:28:09.836458+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.261446+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Kansas City Chiefs",
@@ -81,7 +81,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "SWR",
@@ -148,22 +152,6 @@
       "pffTied": false
     },
     {
-      "position": "LG",
-      "player": "Mike Caliendo",
-      "jersey": "66",
-      "code": "CF22",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 54.5,
-      "madden27Rating": 65,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 63,
-      "pffPositionTotal": 87,
-      "pffPositionLabel": "G",
-      "pffTied": true
-    },
-    {
       "position": "C",
       "player": "Creed Humphrey",
       "jersey": "52",
@@ -207,6 +195,22 @@
       "madden27Rating": 93,
       "madden27Dev": "Superstar",
       "pffPositionRank": 28,
+      "pffPositionTotal": 87,
+      "pffPositionLabel": "G",
+      "pffTied": true
+    },
+    {
+      "position": "RG",
+      "player": "Mike Caliendo",
+      "jersey": "66",
+      "code": "CF22",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 54.5,
+      "madden27Rating": 65,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 63,
       "pffPositionTotal": 87,
       "pffPositionLabel": "G",
       "pffTied": true
@@ -509,7 +513,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "DT",
@@ -881,15 +889,15 @@
     },
     {
       "position": "PR",
-      "player": "Emmett Johnson",
-      "jersey": "10",
-      "code": "26/5",
-      "isAcquired": false,
+      "player": "Josh Downs",
+      "jersey": "12",
+      "code": "T/Ind",
+      "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 71,
-      "madden27Dev": "Normal",
+      "madden27Rating": null,
+      "madden27Dev": null,
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,

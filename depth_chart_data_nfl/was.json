@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-13T20:24:54.828390+00:00",
-  "ourladsUpdatedAt": "2026-11-13T20:24:54.828390+00:00",
+  "generatedAt": "2026-11-17T21:27:30.514672+00:00",
+  "ourladsUpdatedAt": "2026-11-17T21:27:30.514672+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.286410+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Washington Commanders",
@@ -561,7 +561,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "MLB",
