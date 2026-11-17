@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-13T20:14:26.900207+00:00",
-  "ourladsUpdatedAt": "2026-11-13T20:14:26.900207+00:00",
-  "cfbdUpdatedAt": "2026-11-10T20:22:54.614633+00:00",
+  "generatedAt": "2026-11-17T21:39:05.943464+00:00",
+  "ourladsUpdatedAt": "2026-11-17T21:39:05.943464+00:00",
+  "cfbdUpdatedAt": "2026-11-17T21:39:05.943464+00:00",
   "cfb27UpdatedAt": "2026-11-04T20:35:54.845876+00:00",
   "draftRankUpdatedAt": "2026-10-06T13:16:40.060894+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
@@ -2490,6 +2490,27 @@
       "pffTied": null,
       "cfb27Rating": null,
       "cfb27Dev": null,
+      "transferLookedUp": null,
+      "recruitLookedUp": true
+    },
+    {
+      "position": "RES",
+      "player": "Redding, Jacob",
+      "jersey": "8",
+      "class": "",
+      "isTransfer": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "compositeScore": null,
+      "transferScore": null,
+      "profileUrl": null,
+      "transferRank": null,
+      "transferPosRank": null,
+      "hsNationalRank": null,
+      "hsPositionRank": null,
+      "hsStateRank": null,
+      "pffGrade": null,
+      "draftRank": null,
       "transferLookedUp": null,
       "recruitLookedUp": true
     }
