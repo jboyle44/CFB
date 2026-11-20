@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-17T21:27:26.232318+00:00",
-  "ourladsUpdatedAt": "2026-11-17T21:27:26.232318+00:00",
+  "generatedAt": "2026-11-20T20:58:26.974606+00:00",
+  "ourladsUpdatedAt": "2026-11-20T20:58:26.974606+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.273854+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Giants",
@@ -74,14 +74,18 @@
     {
       "position": "SWR",
       "player": "Xavier Gipson",
-      "jersey": "",
+      "jersey": "80",
       "code": "P/Phi",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LT",
@@ -373,19 +377,15 @@
     },
     {
       "position": "RB",
-      "player": "Gregory Desrosiers",
+      "player": "Gregory Desrosiers Jr.",
       "jersey": "30",
       "code": "P/LAC",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 66,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "FB",
@@ -726,14 +726,18 @@
     {
       "position": "FS",
       "player": "Tavierre Thomas",
-      "jersey": "",
+      "jersey": "37",
       "code": "P/Min",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RCB",
@@ -882,42 +886,46 @@
     {
       "position": "PR",
       "player": "Xavier Gipson",
-      "jersey": "",
+      "jersey": "80",
       "code": "P/Phi",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "KR",
       "player": "Xavier Gipson",
-      "jersey": "",
+      "jersey": "80",
       "code": "P/Phi",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "KR",
-      "player": "Gregory Desrosiers",
+      "player": "Gregory Desrosiers Jr.",
       "jersey": "30",
       "code": "P/LAC",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 66,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "KR",

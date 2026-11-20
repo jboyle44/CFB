@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-17T21:27:45.897422+00:00",
-  "ourladsUpdatedAt": "2026-11-17T21:27:45.897422+00:00",
+  "generatedAt": "2026-11-20T20:58:47.298707+00:00",
+  "ourladsUpdatedAt": "2026-11-20T20:58:47.298707+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.248653+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Cleveland Browns",
@@ -280,18 +280,6 @@
       "pffTied": false
     },
     {
-      "position": "TE",
-      "player": "Carsen Ryan",
-      "jersey": "48",
-      "code": "26/7",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
-    },
-    {
       "position": "QB",
       "player": "Deshaun Watson",
       "jersey": "4",
@@ -434,6 +422,18 @@
       "pffPositionTotal": 129,
       "pffPositionLabel": "ED",
       "pffTied": false
+    },
+    {
+      "position": "LDE",
+      "player": "Jamree Kromah",
+      "jersey": "61",
+      "code": "W/Mia",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LDT",
@@ -1058,22 +1058,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "DT",
-      "player": "Elijah Chatman",
-      "jersey": "62",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 46.8,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "DI",
-      "pffTied": false
     },
     {
       "position": "CB",

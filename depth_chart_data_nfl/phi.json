@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-17T21:27:28.396129+00:00",
-  "ourladsUpdatedAt": "2026-11-17T21:27:28.396129+00:00",
+  "generatedAt": "2026-11-20T20:58:29.231355+00:00",
+  "ourladsUpdatedAt": "2026-11-20T20:58:29.231355+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.277062+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Philadelphia Eagles",
@@ -120,6 +120,22 @@
       "pffTied": false
     },
     {
+      "position": "LT",
+      "player": "John Ojukwu",
+      "jersey": "67",
+      "code": "SF25",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
       "position": "LG",
       "player": "Landon Dickerson",
       "jersey": "69",
@@ -233,10 +249,10 @@
     },
     {
       "position": "RT",
-      "player": "John Ojukwu",
-      "jersey": "67",
-      "code": "SF25",
-      "isAcquired": false,
+      "player": "Ajani Cornelius",
+      "jersey": "",
+      "code": "W/Dal",
+      "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
@@ -317,7 +333,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "QB",
@@ -382,6 +402,18 @@
       "pffPositionTotal": 73,
       "pffPositionLabel": "HB",
       "pffTied": false
+    },
+    {
+      "position": "RB",
+      "player": "Jaydon Blue",
+      "jersey": "30",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LDE",

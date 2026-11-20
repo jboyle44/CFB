@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-17T21:27:34.895060+00:00",
-  "ourladsUpdatedAt": "2026-11-17T21:27:34.895060+00:00",
+  "generatedAt": "2026-11-20T20:58:35.996831+00:00",
+  "ourladsUpdatedAt": "2026-11-20T20:58:35.996831+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.267630+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Miami Dolphins",
@@ -344,6 +344,18 @@
       "pffTied": null
     },
     {
+      "position": "QB",
+      "player": "Brady Cook",
+      "jersey": "15",
+      "code": "W/NYJ",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "RB",
       "player": "Ollie Gordon II",
       "jersey": "0",
@@ -440,20 +452,16 @@
       "pffTied": null
     },
     {
-      "position": "LDT",
-      "player": "Jordan Phillips",
-      "jersey": "94",
-      "code": "25/5",
+      "position": "LDE",
+      "player": "Eric Watts",
+      "jersey": "95",
+      "code": "SF26",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 55.7,
-      "madden27Rating": 71,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 81,
-      "pffPositionTotal": 146,
-      "pffPositionLabel": "DI",
-      "pffTied": false
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LDT",
@@ -473,22 +481,6 @@
     },
     {
       "position": "RDT",
-      "player": "Zeek Biggers",
-      "jersey": "93",
-      "code": "25/7",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 44.0,
-      "madden27Rating": 65,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 125,
-      "pffPositionTotal": 146,
-      "pffPositionLabel": "DI",
-      "pffTied": false
-    },
-    {
-      "position": "RDT",
       "player": "Keith Cooper Jr.",
       "jersey": "97",
       "code": "P/Car",
@@ -502,6 +494,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "RDT",
+      "player": "Jordan Jefferson",
+      "jersey": "98",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RDE",
@@ -534,6 +538,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "ED",
       "pffTied": false
+    },
+    {
+      "position": "RDE",
+      "player": "Max Llewellyn",
+      "jersey": "57",
+      "code": "26/7",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "WLB",
@@ -950,6 +966,38 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "DT",
+      "player": "Zeek Biggers",
+      "jersey": "93",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 44.0,
+      "madden27Rating": 65,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 125,
+      "pffPositionTotal": 146,
+      "pffPositionLabel": "DI",
+      "pffTied": false
+    },
+    {
+      "position": "DT",
+      "player": "Jordan Phillips",
+      "jersey": "94",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 55.7,
+      "madden27Rating": 71,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 81,
+      "pffPositionTotal": 146,
+      "pffPositionLabel": "DI",
+      "pffTied": false
     },
     {
       "position": "DT",

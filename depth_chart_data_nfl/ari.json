@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-17T21:28:24.863810+00:00",
-  "ourladsUpdatedAt": "2026-11-17T21:28:24.863810+00:00",
+  "generatedAt": "2026-11-20T20:59:27.726347+00:00",
+  "ourladsUpdatedAt": "2026-11-20T20:59:27.726347+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.235743+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Arizona Cardinals",
@@ -232,22 +232,6 @@
       "pffTied": null
     },
     {
-      "position": "RT",
-      "player": "Albert Reese",
-      "jersey": "76",
-      "code": "P/Car",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 62,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "TE",
       "player": "Trey McBride",
       "jersey": "85",
@@ -440,6 +424,18 @@
       "pffTied": false
     },
     {
+      "position": "LDE",
+      "player": "Jared Harrison-Hunte",
+      "jersey": "98",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "NT",
       "player": "Roy Lopez",
       "jersey": "51",
@@ -553,19 +549,19 @@
     },
     {
       "position": "WLB",
-      "player": "Karson Sharar",
-      "jersey": "43",
-      "code": "26/6",
+      "player": "Cody Simon",
+      "jersey": "0",
+      "code": "25/4",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 66,
+      "pffGrade": 56.1,
+      "madden27Rating": 70,
       "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "pffPositionRank": 60,
+      "pffPositionTotal": 94,
+      "pffPositionLabel": "LB",
+      "pffTied": false
     },
     {
       "position": "MLB",
@@ -585,19 +581,19 @@
     },
     {
       "position": "MLB",
-      "player": "Cody Simon",
-      "jersey": "0",
-      "code": "25/4",
+      "player": "Karson Sharar",
+      "jersey": "43",
+      "code": "26/6",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 56.1,
-      "madden27Rating": 70,
+      "pffGrade": null,
+      "madden27Rating": 66,
       "madden27Dev": "Normal",
-      "pffPositionRank": 60,
-      "pffPositionTotal": 94,
-      "pffPositionLabel": "LB",
-      "pffTied": false
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "ROLB",
@@ -611,22 +607,6 @@
       "madden27Rating": 85,
       "madden27Dev": "Superstar",
       "pffPositionRank": 33,
-      "pffPositionTotal": 129,
-      "pffPositionLabel": "ED",
-      "pffTied": true
-    },
-    {
-      "position": "ROLB",
-      "player": "Jordan Burch",
-      "jersey": "52",
-      "code": "25/3",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 49.0,
-      "madden27Rating": 73,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 118,
       "pffPositionTotal": 129,
       "pffPositionLabel": "ED",
       "pffTied": true
@@ -713,22 +693,6 @@
     },
     {
       "position": "FS",
-      "player": "Andrew Wingard",
-      "jersey": "28",
-      "code": "U/Jax",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 58.1,
-      "madden27Rating": 77,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 80,
-      "pffPositionTotal": 107,
-      "pffPositionLabel": "S",
-      "pffTied": false
-    },
-    {
-      "position": "FS",
       "player": "Dadrion Taylor-Demerson",
       "jersey": "42",
       "code": "24/4",
@@ -742,6 +706,18 @@
       "pffPositionTotal": 107,
       "pffPositionLabel": "S",
       "pffTied": false
+    },
+    {
+      "position": "FS",
+      "player": "Wydett Williams Jr.",
+      "jersey": "31",
+      "code": "CF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RCB",
@@ -952,6 +928,22 @@
       "pffTied": null
     },
     {
+      "position": "S",
+      "player": "Andrew Wingard",
+      "jersey": "28",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 58.1,
+      "madden27Rating": 77,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 80,
+      "pffPositionTotal": 107,
+      "pffPositionLabel": "S",
+      "pffTied": false
+    },
+    {
       "position": "RB",
       "player": "Jeremiyah Love",
       "jersey": "4",
@@ -998,6 +990,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "HB",
       "pffTied": false
+    },
+    {
+      "position": "OLB",
+      "player": "Jordan Burch",
+      "jersey": "52",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 49.0,
+      "madden27Rating": 73,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 118,
+      "pffPositionTotal": 129,
+      "pffPositionLabel": "ED",
+      "pffTied": true
     },
     {
       "position": "QB",

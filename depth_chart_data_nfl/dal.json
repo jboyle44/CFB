@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-17T21:27:24.100429+00:00",
-  "ourladsUpdatedAt": "2026-11-17T21:27:24.100429+00:00",
+  "generatedAt": "2026-11-20T20:58:24.732810+00:00",
+  "ourladsUpdatedAt": "2026-11-20T20:58:24.732810+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.250218+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Dallas Cowboys",
@@ -152,22 +152,6 @@
       "pffTied": false
     },
     {
-      "position": "LG",
-      "player": "T.J. Bass",
-      "jersey": "66",
-      "code": "CF23",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 67.6,
-      "madden27Rating": 70,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 31,
-      "pffPositionTotal": 87,
-      "pffPositionLabel": "G",
-      "pffTied": false
-    },
-    {
       "position": "C",
       "player": "Cooper Beebe",
       "jersey": "56",
@@ -182,6 +166,18 @@
       "pffPositionTotal": 41,
       "pffPositionLabel": "C",
       "pffTied": false
+    },
+    {
+      "position": "C",
+      "player": "Nick Leverett",
+      "jersey": "51",
+      "code": "SF25",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RG",
@@ -201,19 +197,19 @@
     },
     {
       "position": "RG",
-      "player": "Ajani Cornelius",
-      "jersey": "65",
-      "code": "25/6",
+      "player": "T.J. Bass",
+      "jersey": "66",
+      "code": "CF23",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 68,
+      "pffGrade": 67.6,
+      "madden27Rating": 70,
       "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "pffPositionRank": 31,
+      "pffPositionTotal": 87,
+      "pffPositionLabel": "G",
+      "pffTied": false
     },
     {
       "position": "RT",
@@ -305,7 +301,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "QB",
@@ -501,6 +501,22 @@
     },
     {
       "position": "WLB",
+      "player": "DeMarvion Overshown",
+      "jersey": "0",
+      "code": "23/3",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 67.4,
+      "madden27Rating": 75,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "LB",
+      "pffTied": false
+    },
+    {
+      "position": "WLB",
       "player": "Dee Winters",
       "jersey": "53",
       "code": "T/SF",
@@ -516,7 +532,7 @@
       "pffTied": false
     },
     {
-      "position": "WLB",
+      "position": "MLB",
       "player": "Shemar James",
       "jersey": "50",
       "code": "25/5",
@@ -528,22 +544,6 @@
       "madden27Dev": "Normal",
       "pffPositionRank": 90,
       "pffPositionTotal": 94,
-      "pffPositionLabel": "LB",
-      "pffTied": false
-    },
-    {
-      "position": "MLB",
-      "player": "DeMarvion Overshown",
-      "jersey": "0",
-      "code": "23/3",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 67.4,
-      "madden27Rating": 75,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
       "pffPositionLabel": "LB",
       "pffTied": false
     },
@@ -980,22 +980,6 @@
       "pffTied": null
     },
     {
-      "position": "S",
-      "player": "Jalen Thompson",
-      "jersey": "34",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 69.1,
-      "madden27Rating": 84,
-      "madden27Dev": "Star",
-      "pffPositionRank": 33,
-      "pffPositionTotal": 107,
-      "pffPositionLabel": "S",
-      "pffTied": true
-    },
-    {
       "position": "RB",
       "player": "Malik Davis",
       "jersey": "20",
@@ -1028,7 +1012,7 @@
       "pffTied": null
     },
     {
-      "position": "DE",
+      "position": "DT",
       "player": "Kelvin Gilliam",
       "jersey": "94",
       "code": "",
@@ -1074,6 +1058,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "S",
+      "player": "Jalen Thompson",
+      "jersey": "34",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 69.1,
+      "madden27Rating": 84,
+      "madden27Dev": "Star",
+      "pffPositionRank": 33,
+      "pffPositionTotal": 107,
+      "pffPositionLabel": "S",
+      "pffTied": true
     }
   ]
 }

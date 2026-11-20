@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-17T21:28:27.050288+00:00",
-  "ourladsUpdatedAt": "2026-11-17T21:28:27.050288+00:00",
+  "generatedAt": "2026-11-20T20:59:29.993474+00:00",
+  "ourladsUpdatedAt": "2026-11-20T20:59:29.993474+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.266094+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Los Angeles Rams",
@@ -953,22 +953,6 @@
     },
     {
       "position": "WR",
-      "player": "Puka Nacua",
-      "jersey": "12",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 96.4,
-      "madden27Rating": 98,
-      "madden27Dev": "X-Factor",
-      "pffPositionRank": 1,
-      "pffPositionTotal": 143,
-      "pffPositionLabel": "WR",
-      "pffTied": false
-    },
-    {
-      "position": "WR",
       "player": "Jordan Whittington",
       "jersey": "88",
       "code": "",
@@ -1142,6 +1126,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "WR",
+      "player": "Puka Nacua",
+      "jersey": "12",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "SUS",
+      "pffGrade": 96.4,
+      "madden27Rating": 98,
+      "madden27Dev": "X-Factor",
+      "pffPositionRank": 1,
+      "pffPositionTotal": 143,
+      "pffPositionLabel": "WR",
+      "pffTied": false
     },
     {
       "position": "TE",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-17T21:28:20.623505+00:00",
-  "ourladsUpdatedAt": "2026-11-17T21:28:20.623505+00:00",
+  "generatedAt": "2026-11-20T20:59:23.304298+00:00",
+  "ourladsUpdatedAt": "2026-11-20T20:59:23.304298+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.272249+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New Orleans Saints",
@@ -209,7 +209,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RT",
@@ -693,22 +697,6 @@
     },
     {
       "position": "SS",
-      "player": "Justin Reid",
-      "jersey": "21",
-      "code": "U/KC",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 66.7,
-      "madden27Rating": 81,
-      "madden27Dev": "Star",
-      "pffPositionRank": 42,
-      "pffPositionTotal": 107,
-      "pffPositionLabel": "S",
-      "pffTied": true
-    },
-    {
-      "position": "SS",
       "player": "Jordan Howden",
       "jersey": "31",
       "code": "23/5",
@@ -884,10 +872,10 @@
       "pffTied": null
     },
     {
-      "position": "KR",
-      "player": "Barion Brown",
-      "jersey": "19",
-      "code": "26/6",
+      "position": "PR",
+      "player": "Bryce Lance",
+      "jersey": "18",
+      "code": "26/4",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
@@ -904,6 +892,22 @@
       "player": "Bryce Lance",
       "jersey": "18",
       "code": "26/4",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 70,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "KR",
+      "player": "Barion Brown",
+      "jersey": "19",
+      "code": "26/6",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,

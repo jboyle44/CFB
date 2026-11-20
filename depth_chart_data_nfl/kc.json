@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-17T21:28:09.836458+00:00",
-  "ourladsUpdatedAt": "2026-11-17T21:28:09.836458+00:00",
+  "generatedAt": "2026-11-20T20:59:11.959824+00:00",
+  "ourladsUpdatedAt": "2026-11-20T20:59:11.959824+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.261446+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Kansas City Chiefs",
@@ -296,22 +296,6 @@
       "pffTied": null
     },
     {
-      "position": "TE",
-      "player": "Jared Wiley",
-      "jersey": "89",
-      "code": "24/4",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 61.7,
-      "madden27Rating": 69,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "TE",
-      "pffTied": false
-    },
-    {
       "position": "QB",
       "player": "Patrick Mahomes",
       "jersey": "15",
@@ -488,6 +472,22 @@
       "pffTied": null
     },
     {
+      "position": "NT",
+      "player": "Bryson Eason",
+      "jersey": "94",
+      "code": "W/SF",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 65,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
       "position": "DT",
       "player": "Chris Jones",
       "jersey": "95",
@@ -505,6 +505,22 @@
     },
     {
       "position": "DT",
+      "player": "Omarr Norman-Lott",
+      "jersey": "55",
+      "code": "25/2",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 54.3,
+      "madden27Rating": 71,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "DI",
+      "pffTied": false
+    },
+    {
+      "position": "DT",
       "player": "Marcus Harris",
       "jersey": "96",
       "code": "SF25",
@@ -514,22 +530,6 @@
       "pffGrade": null,
       "madden27Rating": null,
       "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "DT",
-      "player": "Bryson Eason",
-      "jersey": "94",
-      "code": "W/SF",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 65,
-      "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,
@@ -968,6 +968,22 @@
       "pffTied": false
     },
     {
+      "position": "TE",
+      "player": "Jared Wiley",
+      "jersey": "89",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 61.7,
+      "madden27Rating": 69,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "TE",
+      "pffTied": false
+    },
+    {
       "position": "CB",
       "player": "L'Jarius Sneed",
       "jersey": "38",
@@ -1109,22 +1125,6 @@
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": "ED",
-      "pffTied": false
-    },
-    {
-      "position": "DT",
-      "player": "Omarr Norman-Lott",
-      "jersey": "55",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 54.3,
-      "madden27Rating": 71,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "DI",
       "pffTied": false
     }
   ]

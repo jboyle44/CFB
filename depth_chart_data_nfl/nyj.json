@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-17T21:27:39.378847+00:00",
-  "ourladsUpdatedAt": "2026-11-17T21:27:39.378847+00:00",
+  "generatedAt": "2026-11-20T20:58:40.476908+00:00",
+  "ourladsUpdatedAt": "2026-11-20T20:58:40.476908+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.275446+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Jets",
@@ -1016,22 +1016,6 @@
       "pffTied": false
     },
     {
-      "position": "DE",
-      "player": "David Onyemata",
-      "jersey": "93",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 78.1,
-      "madden27Rating": 77,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 8,
-      "pffPositionTotal": 146,
-      "pffPositionLabel": "DI",
-      "pffTied": false
-    },
-    {
       "position": "ILB",
       "player": "Marcelino McCrary-Ball",
       "jersey": "41",
@@ -1142,6 +1126,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "DE",
+      "player": "David Onyemata",
+      "jersey": "93",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 78.1,
+      "madden27Rating": 77,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 8,
+      "pffPositionTotal": 146,
+      "pffPositionLabel": "DI",
+      "pffTied": false
     }
   ]
 }

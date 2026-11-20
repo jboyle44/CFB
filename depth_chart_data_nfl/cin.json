@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-17T21:27:43.741706+00:00",
-  "ourladsUpdatedAt": "2026-11-17T21:27:43.741706+00:00",
+  "generatedAt": "2026-11-20T20:58:45.008653+00:00",
+  "ourladsUpdatedAt": "2026-11-20T20:58:45.008653+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.247100+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Cincinnati Bengals",
@@ -952,22 +952,6 @@
       "pffTied": null
     },
     {
-      "position": "LB",
-      "player": "Swayze Bozeman",
-      "jersey": "47",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 38.8,
-      "madden27Rating": 64,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "LB",
-      "pffTied": false
-    },
-    {
       "position": "CB",
       "player": "Ja'Sir Taylor",
       "jersey": "26",
@@ -1077,6 +1061,22 @@
       "pffPositionRank": 47,
       "pffPositionTotal": 122,
       "pffPositionLabel": "CB",
+      "pffTied": false
+    },
+    {
+      "position": "LB",
+      "player": "Swayze Bozeman",
+      "jersey": "47",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 38.8,
+      "madden27Rating": 64,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "LB",
       "pffTied": false
     }
   ]

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-17T21:27:30.514672+00:00",
-  "ourladsUpdatedAt": "2026-11-17T21:27:30.514672+00:00",
+  "generatedAt": "2026-11-20T20:58:31.507637+00:00",
+  "ourladsUpdatedAt": "2026-11-20T20:58:31.507637+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.286410+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Washington Commanders",
@@ -1016,22 +1016,6 @@
       "pffTied": false
     },
     {
-      "position": "RB",
-      "player": "Jacory Croskey-Merritt",
-      "jersey": "22",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 69.6,
-      "madden27Rating": 80,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 37,
-      "pffPositionTotal": 73,
-      "pffPositionLabel": "HB",
-      "pffTied": true
-    },
-    {
       "position": "OLB",
       "player": "Javontae Jean-Baptiste",
       "jersey": "41",
@@ -1142,6 +1126,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "RB",
+      "player": "Jacory Croskey-Merritt",
+      "jersey": "22",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 69.6,
+      "madden27Rating": 80,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 37,
+      "pffPositionTotal": 73,
+      "pffPositionLabel": "HB",
+      "pffTied": true
     }
   ]
 }

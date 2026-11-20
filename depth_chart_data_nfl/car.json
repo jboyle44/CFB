@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-17T21:28:18.500621+00:00",
-  "ourladsUpdatedAt": "2026-11-17T21:28:18.500621+00:00",
+  "generatedAt": "2026-11-20T20:59:21.035896+00:00",
+  "ourladsUpdatedAt": "2026-11-20T20:59:21.035896+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.243392+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Carolina Panthers",
@@ -673,7 +673,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LCB",
@@ -1058,6 +1062,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "ILB",
+      "player": "Claudin Cherelus",
+      "jersey": "53",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "PS/IR",
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "OT",

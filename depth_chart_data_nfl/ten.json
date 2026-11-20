@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-17T21:28:05.399991+00:00",
-  "ourladsUpdatedAt": "2026-11-17T21:28:05.399991+00:00",
+  "generatedAt": "2026-11-20T20:59:07.476031+00:00",
+  "ourladsUpdatedAt": "2026-11-20T20:59:07.476031+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.284895+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Tennessee Titans",
@@ -56,7 +56,7 @@
       "pffTied": null
     },
     {
-      "position": "RWR",
+      "position": "SWR",
       "player": "Chimere Dike",
       "jersey": "17",
       "code": "25/4",
@@ -73,19 +73,15 @@
     },
     {
       "position": "SWR",
-      "player": "Wan'Dale Robinson",
-      "jersey": "4",
-      "code": "U/NYG",
-      "isAcquired": true,
+      "player": "Xavier Restrepo",
+      "jersey": "87",
+      "code": "CF25",
+      "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 70.2,
-      "madden27Rating": 82,
-      "madden27Dev": "Star",
-      "pffPositionRank": 46,
-      "pffPositionTotal": 143,
-      "pffPositionLabel": "WR",
-      "pffTied": true
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "LT",
@@ -145,7 +141,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "C",
@@ -701,7 +701,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "FS",
@@ -809,7 +813,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "PK",
@@ -853,7 +861,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "KO",
@@ -985,22 +997,6 @@
     },
     {
       "position": "OG",
-      "player": "Fernando Carmona Jr.",
-      "jersey": "66",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 70,
-      "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "OG",
       "player": "Jackson Slater",
       "jersey": "64",
       "code": "",
@@ -1014,6 +1010,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "G",
       "pffTied": false
+    },
+    {
+      "position": "WR",
+      "player": "Wan'Dale Robinson",
+      "jersey": "4",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 70.2,
+      "madden27Rating": 82,
+      "madden27Dev": "Star",
+      "pffPositionRank": 46,
+      "pffPositionTotal": 143,
+      "pffPositionLabel": "WR",
+      "pffTied": true
     },
     {
       "position": "DE",
@@ -1090,6 +1102,22 @@
       "pffGrade": null,
       "madden27Rating": 57,
       "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "OG",
+      "player": "Fernando Carmona Jr.",
+      "jersey": "66",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": 70,
+      "madden27Dev": "Star",
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,
