@@ -112,3 +112,24 @@ for s in sorted(g.season.unique()):
 out["tier_grid"] = grid
 json.dump(out, open("cbb/results/trends.json", "w"), indent=1)
 print("tier grid:", {k: {t: (v["total"][t]["pct"], v["total"][t]["n"]) for t in v["total"]} for k, v in list(grid.items())[:3]})
+
+# ---- margin distribution for valuing line moves (pick perspective), by pick-spread bucket ----
+# A move from line L1 to L2 is worth the probability the pick's final margin lands in between
+# (games can't end tied, and some margins are more common than others).
+both = pd.concat([pd.DataFrame({"L": g.spread.values, "m": g.margin.values}),
+                  pd.DataFrame({"L": -g.spread.values, "m": -g.margin.values})], ignore_index=True)
+pmf = {}
+for b in range(-35, 36):
+    d = both[(both.L - b).abs() <= 1.5]
+    if len(d) < 300:
+        continue
+    vc = d.m.value_counts(normalize=True)
+    pmf[str(b)] = {str(k): round(float(vc.get(k, 0.0)), 5) for k in range(-b - 12, -b + 13)}
+per_pt = []
+for s in np.arange(-15.5, 15, 1.0):
+    d = both[(both.L - (s + 0.5)).abs() <= 1.5]
+    cov = lambda L: ((d.m + L) > 0).mean() + 0.5 * ((d.m + L) == 0).mean()
+    per_pt.append(cov(s + 1) - cov(s))
+out["line_value"] = {"pmf": pmf, "cover_per_point": round(float(np.mean(per_pt)), 4)}
+json.dump(out, open("cbb/results/trends.json", "w"), indent=1)
+print("line_value buckets:", len(pmf), "avg cover per point:", out["line_value"]["cover_per_point"])

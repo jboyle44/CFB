@@ -148,20 +148,28 @@ function profile(g){
  const L=lineInfo(g);
  if(L&&Math.abs(L.mv)>=0.05)rows+=`<tr><td>Picked at (${g.first_at})</td><td colspan="3" class="mono">${esc(g.pick)} ${ln(L.first)}, edge ${L.first.toFixed?g.first_edge.toFixed(2):""}</td></tr>
  <tr><td>Line movement since</td><td colspan="3" class="mono ${L.mv>0?"pos":"neg"}">${L.mv>0?"+":"\u2212"}${Math.abs(L.mv).toFixed(1)} ${L.mv>0?"in favor":"against"}</td></tr>
+ <tr><td>What the move is worth</td><td colspan="3" class="mono">${L.dp!=null?(L.dp>0?"+":"\u2212")+Math.abs(L.dp*100).toFixed(1)+"% cover chance \u2248 "+Math.abs(L.worth).toFixed(1)+" pts":"\u2014"}</td></tr>
  <tr class="total"><td>Line-adjusted edge</td><td colspan="3" class="mono">${L.adj.toFixed(2)}</td></tr>`;
  return `<details class="prof"><summary>Full profile: all 19 traits and points</summary>
  <table><thead><tr><th>Trait (season so far, blended)</th><th>${esc(g.away)}</th><th>${esc(g.home)}</th><th>Pts to pick</th></tr></thead><tbody>${rows}</tbody></table>
  <div class="note" style="margin-top:6px">Pts to pick: how many points each trait gap adds (+) or subtracts (−) from the pick's edge. They sum to the edge.</div></details>`}
 
 const lnf=v=>Math.abs(v)<0.05?"PK":(v>0?"+":"\u2212")+Math.abs(v).toFixed(1);
+// Value of a line move = chance the pick's final margin lands between the two numbers
+// (from historical games lined near that spread; no ties in basketball, so moves through 0 are worth less).
+function moveValue(f,c){const LV=D.trends.line_value;if(!LV)return null;
+ const b=String(Math.max(-35,Math.min(35,Math.round((f+c)/2))));const P=LV.pmf[b];if(!P)return null;
+ const cov=L=>{let v=0;for(const k in P){const m=+k;if(m+L>0)v+=P[k];else if(m+L===0)v+=P[k]/2}return v};
+ const dp=cov(c)-cov(f);return {dp,pts:dp/LV.cover_per_point}}
 function lineInfo(g){
  if(g.first_spread_home==null||g.spread_home==null)return null;
  const ph=g.pick===g.home, f=ph?g.first_spread_home:-g.first_spread_home, c=ph?g.spread_home:-g.spread_home;
- const mv=c-f; return {first:f,cur:c,mv,adj:g.first_edge+mv,hist:(g.line_history||[]).map(v=>ph?v:-v)}}
+ const mv=c-f, V=Math.abs(mv)>=0.05?moveValue(f,c):null, worth=V?V.pts:mv;
+ return {first:f,cur:c,mv,worth,dp:V?V.dp:null,adj:g.first_edge+worth,hist:(g.line_history||[]).map(v=>ph?v:-v)}}
 function lineBlock(g){const L=lineInfo(g);if(!L)return "";
  let t=`<div class="note" style="margin-top:6px">Picked at <b class="mono">${esc(g.pick)} ${lnf(L.first)}</b> (${g.first_at}, edge ${g.first_edge.toFixed(1)})`;
  if(L.hist.length>1)t+=` \u00b7 line history ${L.hist.map(lnf).join(" \u2192 ")}`;
- if(Math.abs(L.mv)>=0.05)t+=`<br><span class="${L.mv>0?"pos":"neg"}">Moved ${Math.abs(L.mv).toFixed(1)} ${L.mv>0?"in favor of":"against"} the pick</span> \u00b7 line-adjusted edge <b class="mono ${L.adj>=1.25?"pos":"neg"}">${L.adj.toFixed(1)}</b>${L.adj<1.25?" (below the 1.25-pt minimum)":""}`;
+ if(Math.abs(L.mv)>=0.05)t+=`<br><span class="${L.mv>0?"pos":"neg"}">Moved ${Math.abs(L.mv).toFixed(1)} ${L.mv>0?"in favor of":"against"} the pick${Math.abs(Math.abs(L.worth)-Math.abs(L.mv))>=0.2?`, worth about ${Math.abs(L.worth).toFixed(1)} pts of line${(L.first<0)!==(L.cur<0)?" (crosses zero)":""}`:""}</span> \u00b7 line-adjusted edge <b class="mono ${L.adj>=1.25?"pos":"neg"}">${L.adj.toFixed(1)}</b>${L.adj<1.25?" (below the 1.25-pt minimum)":""}`;
  else t+=` \u00b7 no net line movement`;
  return t+`</div>`}
 function vPicks(){
@@ -234,7 +242,7 @@ function vHow(){
   tbl(["Side","Bets","Win %","Units"],T.by_side.map(s=>`<tr><td>${s.side}</td><td>${s.bets.toLocaleString()}</td><td class="${pcCls(s)}">${pc(s)}</td><td class="mono ${cls(s.units)}">${sgn1(s.units)}</td></tr>`))+
  `<h2>Fine print</h2><ul class="note" style="padding-left:18px">
  <li>Tempo flag: a fast favorite (8.5+) vs a slow underdog. Underdogs covered about 52% historically; it supports dog picks and cuts against favorite picks.</li>
- <li>Line movement: the model treats the posted line as information, so its edge barely changes when the line moves (about 0.1 pt per point). Each card also shows the line the pick was first made at and a line-adjusted edge: the original edge plus or minus the points the line has moved since. If you are getting a worse number than the original, use the line-adjusted edge.</li>
+ <li>Line movement: the model treats the posted line as information, so its edge barely changes when the line moves (about 0.1 pt per point). Each card also shows the line the pick was first made at and a line-adjusted edge: the original edge plus or minus what the move is worth. Moves are valued by how often games actually finish on the margins in between, at that spread (games can't tie, so a move through zero like \u22121.5 to +1.5 is worth about 1.7 pts, not 3). If you are getting a worse number than the original, use the line-adjusted edge.</li>
  <li>Projected lines (before books post) come from the same profiles and miss the real close by about 3.4 pts on average. Treat those picks as previews.</li>
  <li>Line data: about 1,100 historical games where line sources disagreed by 4+ points (mostly home/away-flipped "consensus" lines) are excluded from training and the backtest, and live games with conflicting lines get no graded pick. An independent audit rebuilt the backtest from scratch and found no leakage; its realistic estimate is about 53.8% at 1+ pt (roughly +2.7% return per bet at \u2212110), with 2025-26 the weakest recent season.</li>
  <li>Lines before 2019 cover about 65% of games. Results assume −110; real prices and limits vary, especially on low-major games and big underdogs.</li>
