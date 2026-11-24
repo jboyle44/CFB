@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-20T20:59:34.408578+00:00",
-  "ourladsUpdatedAt": "2026-11-20T20:59:34.408578+00:00",
+  "generatedAt": "2026-11-24T22:52:15.135446+00:00",
+  "ourladsUpdatedAt": "2026-11-24T22:52:15.135446+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.281887+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Seattle Seahawks",
@@ -230,6 +230,18 @@
       "pffPositionTotal": 95,
       "pffPositionLabel": "T",
       "pffTied": false
+    },
+    {
+      "position": "RT",
+      "player": "Chase Lundt",
+      "jersey": "",
+      "code": "P/Buf",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "TE",
@@ -774,22 +786,6 @@
       "pffPositionTotal": 107,
       "pffPositionLabel": "S",
       "pffTied": false
-    },
-    {
-      "position": "NB",
-      "player": "Avery Smith",
-      "jersey": "27",
-      "code": "T/LAC",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 63,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     },
     {
       "position": "PT",

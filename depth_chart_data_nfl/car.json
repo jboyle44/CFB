@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-20T20:59:21.035896+00:00",
-  "ourladsUpdatedAt": "2026-11-20T20:59:21.035896+00:00",
+  "generatedAt": "2026-11-24T22:52:03.267271+00:00",
+  "ourladsUpdatedAt": "2026-11-24T22:52:03.267271+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.243392+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Carolina Panthers",
@@ -665,19 +665,19 @@
     },
     {
       "position": "LCB",
-      "player": "Marco Wilson",
-      "jersey": "35",
-      "code": "SF26",
-      "isAcquired": false,
+      "player": "Mike Jackson",
+      "jersey": "2",
+      "code": "T/Sea",
+      "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "pffGrade": 79.1,
+      "madden27Rating": 81,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 4,
+      "pffPositionTotal": 122,
+      "pffPositionLabel": "CB",
+      "pffTied": false
     },
     {
       "position": "LCB",
@@ -715,7 +715,7 @@
       "position": "SS",
       "player": "Isaiah Simmons",
       "jersey": "27",
-      "code": "SF25",
+      "code": "S^",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
@@ -777,19 +777,19 @@
     },
     {
       "position": "RCB",
-      "player": "Chau Smith-Wade",
-      "jersey": "26",
-      "code": "24/5",
+      "player": "Marco Wilson",
+      "jersey": "35",
+      "code": "SF26",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 58.1,
-      "madden27Rating": 73,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 80,
-      "pffPositionTotal": 122,
-      "pffPositionLabel": "CB",
-      "pffTied": false
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "NB",
@@ -806,6 +806,22 @@
       "pffPositionTotal": 107,
       "pffPositionLabel": "S",
       "pffTied": true
+    },
+    {
+      "position": "NB",
+      "player": "Chau Smith-Wade",
+      "jersey": "26",
+      "code": "24/5",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 58.1,
+      "madden27Rating": 73,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 80,
+      "pffPositionTotal": 122,
+      "pffPositionLabel": "CB",
+      "pffTied": false
     },
     {
       "position": "PT",
@@ -936,6 +952,22 @@
       "pffTied": false
     },
     {
+      "position": "S",
+      "player": "Isaiah Simmons",
+      "jersey": "27",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": 72,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
       "position": "CB",
       "player": "Akayleb Evans",
       "jersey": "29",
@@ -1000,6 +1032,22 @@
       "pffTied": true
     },
     {
+      "position": "OG",
+      "player": "Brady Christensen",
+      "jersey": "70",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": 76,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
       "position": "DT",
       "player": "Cam Jackson",
       "jersey": "99",
@@ -1048,9 +1096,9 @@
       "pffTied": null
     },
     {
-      "position": "WR",
-      "player": "Ihmir Smith-Marsette",
-      "jersey": "15",
+      "position": "ILB",
+      "player": "Claudin Cherelus",
+      "jersey": "53",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
@@ -1064,18 +1112,6 @@
       "pffTied": null
     },
     {
-      "position": "ILB",
-      "player": "Claudin Cherelus",
-      "jersey": "53",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "PS/IR",
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
-    },
-    {
       "position": "OT",
       "player": "Ikem Ekwonu",
       "jersey": "79",
@@ -1086,22 +1122,6 @@
       "pffGrade": null,
       "madden27Rating": 80,
       "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "OG",
-      "player": "Brady Christensen",
-      "jersey": "70",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": null,
-      "madden27Rating": 76,
-      "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,
@@ -1122,22 +1142,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "CB",
-      "player": "Mike Jackson",
-      "jersey": "2",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 79.1,
-      "madden27Rating": 81,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 4,
-      "pffPositionTotal": 122,
-      "pffPositionLabel": "CB",
-      "pffTied": false
     }
   ]
 }

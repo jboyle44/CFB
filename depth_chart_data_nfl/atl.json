@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-20T20:59:18.816239+00:00",
-  "ourladsUpdatedAt": "2026-11-20T20:59:18.816239+00:00",
+  "generatedAt": "2026-11-24T22:52:01.303078+00:00",
+  "ourladsUpdatedAt": "2026-11-24T22:52:01.303078+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.237524+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Atlanta Falcons",
@@ -552,22 +552,6 @@
       "pffTied": null
     },
     {
-      "position": "LILB",
-      "player": "Christian Harris",
-      "jersey": "45",
-      "code": "U/Hou",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 54.8,
-      "madden27Rating": 69,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "LB",
-      "pffTied": false
-    },
-    {
       "position": "RILB",
       "player": "Kendal Daniels",
       "jersey": "53",
@@ -742,6 +726,18 @@
       "pffPositionTotal": 107,
       "pffPositionLabel": "S",
       "pffTied": false
+    },
+    {
+      "position": "FS",
+      "player": "Jammie Robinson",
+      "jersey": "34",
+      "code": "SF25",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RCB",

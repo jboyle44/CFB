@@ -1,12 +1,28 @@
 {
-  "generatedAt": "2026-11-20T20:59:32.197803+00:00",
-  "ourladsUpdatedAt": "2026-11-20T20:59:32.197803+00:00",
+  "generatedAt": "2026-11-24T22:52:13.177886+00:00",
+  "ourladsUpdatedAt": "2026-11-24T22:52:13.177886+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.280226+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "San Francisco 49ers",
   "offenseScheme": "11 - One RB, One TE (31%)",
   "defenseScheme": "Base 4-3",
   "rows": [
+    {
+      "position": "LWR",
+      "player": "Keenan Allen",
+      "jersey": "3",
+      "code": "T/Ind",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
     {
       "position": "LWR",
       "player": "Demarcus Robinson",
@@ -22,22 +38,6 @@
       "pffPositionTotal": 143,
       "pffPositionLabel": "WR",
       "pffTied": true
-    },
-    {
-      "position": "LWR",
-      "player": "Jordan Watkins",
-      "jersey": "17",
-      "code": "25/4",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 70,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     },
     {
       "position": "RWR",
@@ -57,30 +57,14 @@
     },
     {
       "position": "RWR",
-      "player": "Keenan Allen",
-      "jersey": "3",
-      "code": "T/Ind",
-      "isAcquired": true,
+      "player": "Jordan Watkins",
+      "jersey": "17",
+      "code": "25/4",
+      "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "RWR",
-      "player": "Brandin Cooks",
-      "jersey": "84",
-      "code": "U/Buf",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 74,
+      "madden27Rating": 70,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -502,6 +486,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "RDT",
+      "player": "C.J. West",
+      "jersey": "90",
+      "code": "25/4",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 39.7,
+      "madden27Rating": 69,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 139,
+      "pffPositionTotal": 146,
+      "pffPositionLabel": "DI",
+      "pffTied": false
     },
     {
       "position": "RDT",
@@ -1192,22 +1192,6 @@
       "pffTied": null
     },
     {
-      "position": "WR",
-      "player": "Brandon Aiyuk",
-      "jersey": "11",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "EX",
-      "pffGrade": null,
-      "madden27Rating": 75,
-      "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
       "position": "CB",
       "player": "Nate Hobbs",
       "jersey": "22",
@@ -1222,22 +1206,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "DT",
-      "player": "C.J. West",
-      "jersey": "90",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 39.7,
-      "madden27Rating": 69,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 139,
-      "pffPositionTotal": 146,
-      "pffPositionLabel": "DI",
-      "pffTied": false
     }
   ]
 }

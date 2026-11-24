@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-20T20:59:03.030218+00:00",
-  "ourladsUpdatedAt": "2026-11-20T20:59:03.030218+00:00",
+  "generatedAt": "2026-11-24T22:51:47.532278+00:00",
+  "ourladsUpdatedAt": "2026-11-24T22:51:47.532278+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.258344+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Indianapolis Colts",
@@ -9,14 +9,14 @@
   "rows": [
     {
       "position": "LWR",
-      "player": "Deion Burks",
-      "jersey": "80",
-      "code": "26/7",
+      "player": "Laquon Treadwell",
+      "jersey": "13",
+      "code": "SF24",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 69,
+      "madden27Rating": 68,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -41,14 +41,14 @@
     },
     {
       "position": "RWR",
-      "player": "Laquon Treadwell",
-      "jersey": "13",
-      "code": "SF24",
+      "player": "Deion Burks",
+      "jersey": "80",
+      "code": "26/7",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 68,
+      "madden27Rating": 69,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -97,7 +97,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LT",
@@ -1044,22 +1048,6 @@
       "pffTied": null
     },
     {
-      "position": "WR",
-      "player": "Alec Pierce",
-      "jersey": "14",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 79.3,
-      "madden27Rating": 84,
-      "madden27Dev": "Star",
-      "pffPositionRank": 20,
-      "pffPositionTotal": 143,
-      "pffPositionLabel": "WR",
-      "pffTied": true
-    },
-    {
       "position": "DE",
       "player": "Micheal Clemons",
       "jersey": "72",
@@ -1074,6 +1062,22 @@
       "pffPositionTotal": 129,
       "pffPositionLabel": "ED",
       "pffTied": false
+    },
+    {
+      "position": "WR",
+      "player": "Alec Pierce",
+      "jersey": "14",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 79.3,
+      "madden27Rating": 84,
+      "madden27Dev": "Star",
+      "pffPositionRank": 20,
+      "pffPositionTotal": 143,
+      "pffPositionLabel": "WR",
+      "pffTied": true
     },
     {
       "position": "WR",

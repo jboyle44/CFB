@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-20T20:58:53.979472+00:00",
-  "ourladsUpdatedAt": "2026-11-20T20:58:53.979472+00:00",
+  "generatedAt": "2026-11-24T22:51:39.722868+00:00",
+  "ourladsUpdatedAt": "2026-11-24T22:51:39.722868+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.253354+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Detroit Lions",
@@ -134,22 +134,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "G",
       "pffTied": false
-    },
-    {
-      "position": "C",
-      "player": "Cade Mays",
-      "jersey": "64",
-      "code": "U/Car",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 62.4,
-      "madden27Rating": 74,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 23,
-      "pffPositionTotal": 41,
-      "pffPositionLabel": "C",
-      "pffTied": true
     },
     {
       "position": "C",
@@ -664,6 +648,18 @@
       "pffTied": null
     },
     {
+      "position": "LCB",
+      "player": "Nick Whiteside",
+      "jersey": "38",
+      "code": "SF25",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "SS",
       "player": "Brian Branch",
       "jersey": "32",
@@ -934,6 +930,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "C",
+      "player": "Cade Mays",
+      "jersey": "64",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 62.4,
+      "madden27Rating": 74,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 23,
+      "pffPositionTotal": 41,
+      "pffPositionLabel": "C",
+      "pffTied": true
     },
     {
       "position": "LB",

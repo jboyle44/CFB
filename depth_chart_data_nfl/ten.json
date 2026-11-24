@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-20T20:59:07.476031+00:00",
-  "ourladsUpdatedAt": "2026-11-20T20:59:07.476031+00:00",
+  "generatedAt": "2026-11-24T22:51:51.501108+00:00",
+  "ourladsUpdatedAt": "2026-11-24T22:51:51.501108+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.284895+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Tennessee Titans",
@@ -81,7 +81,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LT",
@@ -335,22 +339,6 @@
       "madden27Rating": 85,
       "madden27Dev": "Normal",
       "pffPositionRank": 50,
-      "pffPositionTotal": 73,
-      "pffPositionLabel": "HB",
-      "pffTied": true
-    },
-    {
-      "position": "RB",
-      "player": "Tyjae Spears",
-      "jersey": "2",
-      "code": "23/3",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 75.3,
-      "madden27Rating": 77,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 20,
       "pffPositionTotal": 73,
       "pffPositionLabel": "HB",
       "pffTied": true
@@ -948,6 +936,22 @@
       "pffTied": null
     },
     {
+      "position": "RB",
+      "player": "Tyjae Spears",
+      "jersey": "2",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 75.3,
+      "madden27Rating": 77,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 20,
+      "pffPositionTotal": 73,
+      "pffPositionLabel": "HB",
+      "pffTied": true
+    },
+    {
       "position": "OG",
       "player": "Peter Skoronski",
       "jersey": "77",
@@ -1114,7 +1118,7 @@
       "code": "",
       "isAcquired": false,
       "isReserve": true,
-      "reserveStatus": "IR",
+      "reserveStatus": "DFR",
       "pffGrade": null,
       "madden27Rating": 70,
       "madden27Dev": "Star",

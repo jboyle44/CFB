@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-20T20:59:05.233669+00:00",
-  "ourladsUpdatedAt": "2026-11-20T20:59:05.233669+00:00",
+  "generatedAt": "2026-11-24T22:51:49.536268+00:00",
+  "ourladsUpdatedAt": "2026-11-24T22:51:49.536268+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.259916+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Jacksonville Jaguars",
@@ -713,6 +713,22 @@
     },
     {
       "position": "SS",
+      "player": "Kaevon Merriweather",
+      "jersey": "26",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 66,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "SS",
       "player": "Jalen Huskey",
       "jersey": "22",
       "code": "26/3",
@@ -758,22 +774,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "S",
       "pffTied": false
-    },
-    {
-      "position": "FS",
-      "player": "Kaevon Merriweather",
-      "jersey": "26",
-      "code": "SF26",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 66,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     },
     {
       "position": "RCB",

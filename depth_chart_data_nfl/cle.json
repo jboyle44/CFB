@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-20T20:58:47.298707+00:00",
-  "ourladsUpdatedAt": "2026-11-20T20:58:47.298707+00:00",
+  "generatedAt": "2026-11-24T22:51:33.850991+00:00",
+  "ourladsUpdatedAt": "2026-11-24T22:51:33.850991+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.248653+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Cleveland Browns",
@@ -433,7 +433,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LDT",
@@ -996,22 +1000,6 @@
       "pffTied": false
     },
     {
-      "position": "RB",
-      "player": "Raheim Sanders",
-      "jersey": "23",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 73.6,
-      "madden27Rating": 69,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "HB",
-      "pffTied": false
-    },
-    {
       "position": "DT",
       "player": "Kalia Davis",
       "jersey": "93",
@@ -1122,6 +1110,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "RB",
+      "player": "Raheim Sanders",
+      "jersey": "23",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 73.6,
+      "madden27Rating": 69,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "HB",
+      "pffTied": false
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-20T20:58:40.476908+00:00",
-  "ourladsUpdatedAt": "2026-11-20T20:58:40.476908+00:00",
+  "generatedAt": "2026-11-24T22:51:27.951721+00:00",
+  "ourladsUpdatedAt": "2026-11-24T22:51:27.951721+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.275446+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Jets",
@@ -696,7 +696,7 @@
       "pffTied": true
     },
     {
-      "position": "SS",
+      "position": "FS",
       "player": "Malachi Moore",
       "jersey": "27",
       "code": "25/4",
@@ -707,22 +707,6 @@
       "madden27Rating": 71,
       "madden27Dev": "Normal",
       "pffPositionRank": 77,
-      "pffPositionTotal": 107,
-      "pffPositionLabel": "S",
-      "pffTied": false
-    },
-    {
-      "position": "FS",
-      "player": "Minkah Fitzpatrick",
-      "jersey": "29",
-      "code": "T/Mia",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 82.0,
-      "madden27Rating": 90,
-      "madden27Dev": "Superstar",
-      "pffPositionRank": 7,
       "pffPositionTotal": 107,
       "pffPositionLabel": "S",
       "pffTied": false
@@ -777,18 +761,18 @@
     },
     {
       "position": "NB",
-      "player": "Jarvis Brownlee Jr.",
-      "jersey": "2",
-      "code": "T/Ten",
+      "player": "Minkah Fitzpatrick",
+      "jersey": "29",
+      "code": "T/Mia",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 50.8,
-      "madden27Rating": 76,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 109,
-      "pffPositionTotal": 122,
-      "pffPositionLabel": "CB",
+      "pffGrade": 82.0,
+      "madden27Rating": 90,
+      "madden27Dev": "Superstar",
+      "pffPositionRank": 7,
+      "pffPositionTotal": 107,
+      "pffPositionLabel": "S",
       "pffTied": false
     },
     {
@@ -806,6 +790,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "NB",
+      "player": "Jarvis Brownlee Jr.",
+      "jersey": "2",
+      "code": "T/Ten",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 50.8,
+      "madden27Rating": 76,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 109,
+      "pffPositionTotal": 122,
+      "pffPositionLabel": "CB",
+      "pffTied": false
     },
     {
       "position": "PT",

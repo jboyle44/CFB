@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-20T20:58:49.511534+00:00",
-  "ourladsUpdatedAt": "2026-11-20T20:58:49.511534+00:00",
+  "generatedAt": "2026-11-24T22:51:35.802785+00:00",
+  "ourladsUpdatedAt": "2026-11-24T22:51:35.802785+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.278633+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Pittsburgh Steelers",
@@ -19,6 +19,22 @@
       "madden27Rating": 83,
       "madden27Dev": "Superstar",
       "pffPositionRank": 36,
+      "pffPositionTotal": 143,
+      "pffPositionLabel": "WR",
+      "pffTied": false
+    },
+    {
+      "position": "RWR",
+      "player": "Roman Wilson",
+      "jersey": "14",
+      "code": "24/3",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 59.8,
+      "madden27Rating": 71,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 99,
       "pffPositionTotal": 143,
       "pffPositionLabel": "WR",
       "pffTied": false
@@ -520,6 +536,18 @@
       "pffTied": true
     },
     {
+      "position": "LOLB",
+      "player": "Kj Henry",
+      "jersey": "57",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "LILB",
       "player": "Patrick Queen",
       "jersey": "6",
@@ -905,6 +933,22 @@
     },
     {
       "position": "KR",
+      "player": "Lew Nichols",
+      "jersey": "31",
+      "code": "SF25",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 63,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "KR",
       "player": "Eli Heidenreich",
       "jersey": "29",
       "code": "26/7",
@@ -1046,22 +1090,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "WR",
-      "player": "Roman Wilson",
-      "jersey": "14",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 59.8,
-      "madden27Rating": 71,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 99,
-      "pffPositionTotal": 143,
-      "pffPositionLabel": "WR",
-      "pffTied": false
     },
     {
       "position": "OG",

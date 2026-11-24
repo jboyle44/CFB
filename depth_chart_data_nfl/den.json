@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-20T20:59:09.729583+00:00",
-  "ourladsUpdatedAt": "2026-11-20T20:59:09.729583+00:00",
+  "generatedAt": "2026-11-24T22:51:53.429737+00:00",
+  "ourladsUpdatedAt": "2026-11-24T22:51:53.429737+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.251801+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Denver Broncos",
@@ -696,6 +696,22 @@
       "pffTied": false
     },
     {
+      "position": "SS",
+      "player": "Tycen Anderson",
+      "jersey": "6",
+      "code": "U/Cin",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 50.8,
+      "madden27Rating": 65,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "S",
+      "pffTied": false
+    },
+    {
       "position": "FS",
       "player": "Brandon Jones",
       "jersey": "22",
@@ -713,6 +729,18 @@
     },
     {
       "position": "FS",
+      "player": "Taylor Rapp",
+      "jersey": "30",
+      "code": "CC/Buf",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
+      "position": "FS",
       "player": "Jl Skinner",
       "jersey": "34",
       "code": "23/6",
@@ -721,22 +749,6 @@
       "reserveStatus": null,
       "pffGrade": 42.1,
       "madden27Rating": 66,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "S",
-      "pffTied": false
-    },
-    {
-      "position": "FS",
-      "player": "Tycen Anderson",
-      "jersey": "6",
-      "code": "U/Cin",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 50.8,
-      "madden27Rating": 65,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-20T20:58:26.974606+00:00",
-  "ourladsUpdatedAt": "2026-11-20T20:58:26.974606+00:00",
+  "generatedAt": "2026-11-24T22:51:16.104407+00:00",
+  "ourladsUpdatedAt": "2026-11-24T22:51:16.104407+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.273854+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Giants",
@@ -385,7 +385,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "FB",
@@ -405,6 +409,22 @@
     },
     {
       "position": "DE",
+      "player": "Shelby Harris",
+      "jersey": "93",
+      "code": "U/Cle",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 62.0,
+      "madden27Rating": 77,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 53,
+      "pffPositionTotal": 146,
+      "pffPositionLabel": "DI",
+      "pffTied": false
+    },
+    {
+      "position": "DE",
       "player": "Darius Alexander",
       "jersey": "91",
       "code": "25/3",
@@ -415,22 +435,6 @@
       "madden27Rating": 72,
       "madden27Dev": "Normal",
       "pffPositionRank": 129,
-      "pffPositionTotal": 146,
-      "pffPositionLabel": "DI",
-      "pffTied": false
-    },
-    {
-      "position": "NT",
-      "player": "Dj Reader",
-      "jersey": "98",
-      "code": "U/Det",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 68.9,
-      "madden27Rating": 84,
-      "madden27Dev": "Star",
-      "pffPositionRank": 31,
       "pffPositionTotal": 146,
       "pffPositionLabel": "DI",
       "pffTied": false
@@ -452,23 +456,7 @@
       "pffTied": null
     },
     {
-      "position": "DT",
-      "player": "Shelby Harris",
-      "jersey": "93",
-      "code": "U/Cle",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 62.0,
-      "madden27Rating": 77,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 53,
-      "pffPositionTotal": 146,
-      "pffPositionLabel": "DI",
-      "pffTied": false
-    },
-    {
-      "position": "DT",
+      "position": "NT",
       "player": "C.J. Okoye",
       "jersey": "99",
       "code": "T/Bal",
@@ -479,6 +467,22 @@
       "madden27Rating": 63,
       "madden27Dev": "Normal",
       "pffPositionRank": 102,
+      "pffPositionTotal": 146,
+      "pffPositionLabel": "DI",
+      "pffTied": false
+    },
+    {
+      "position": "DT",
+      "player": "Dj Reader",
+      "jersey": "98",
+      "code": "U/Det",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 68.9,
+      "madden27Rating": 84,
+      "madden27Dev": "Star",
+      "pffPositionRank": 31,
       "pffPositionTotal": 146,
       "pffPositionLabel": "DI",
       "pffTied": false
@@ -661,22 +665,6 @@
     },
     {
       "position": "SS",
-      "player": "Jason Pinnock",
-      "jersey": "25",
-      "code": "U/SF",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 49.2,
-      "madden27Rating": 75,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 97,
-      "pffPositionTotal": 107,
-      "pffPositionLabel": "S",
-      "pffTied": false
-    },
-    {
-      "position": "SS",
       "player": "Elijah Campbell",
       "jersey": "28",
       "code": "U/Mia",
@@ -688,6 +676,22 @@
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
+      "pffPositionLabel": "S",
+      "pffTied": false
+    },
+    {
+      "position": "SS",
+      "player": "Jason Pinnock",
+      "jersey": "25",
+      "code": "U/SF",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 49.2,
+      "madden27Rating": 75,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 97,
+      "pffPositionTotal": 107,
       "pffPositionLabel": "S",
       "pffTied": false
     },
@@ -925,7 +929,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "KR",

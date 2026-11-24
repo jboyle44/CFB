@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-20T20:58:35.996831+00:00",
-  "ourladsUpdatedAt": "2026-11-20T20:58:35.996831+00:00",
+  "generatedAt": "2026-11-24T22:51:23.999216+00:00",
+  "ourladsUpdatedAt": "2026-11-24T22:51:23.999216+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.267630+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Miami Dolphins",
@@ -353,7 +353,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RB",
@@ -461,7 +465,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LDT",
@@ -505,7 +513,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "RDE",
@@ -540,18 +552,6 @@
       "pffTied": false
     },
     {
-      "position": "RDE",
-      "player": "Max Llewellyn",
-      "jersey": "57",
-      "code": "26/7",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null
-    },
-    {
       "position": "WLB",
       "player": "Jordyn Brooks",
       "jersey": "20",
@@ -569,19 +569,19 @@
     },
     {
       "position": "WLB",
-      "player": "Shaka Heyward",
-      "jersey": "45",
-      "code": "P/Cin",
+      "player": "Willie Gay Jr.",
+      "jersey": "40",
+      "code": "U/NO",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 60,
+      "pffGrade": 66.7,
+      "madden27Rating": 72,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "pffPositionLabel": "LB",
+      "pffTied": false
     },
     {
       "position": "MLB",
@@ -616,22 +616,6 @@
       "pffTied": null
     },
     {
-      "position": "SLB",
-      "player": "Willie Gay Jr.",
-      "jersey": "40",
-      "code": "U/NO",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 66.7,
-      "madden27Rating": 72,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "LB",
-      "pffTied": false
-    },
-    {
       "position": "LCB",
       "player": "JuJu Brents",
       "jersey": "8",
@@ -646,6 +630,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "CB",
       "pffTied": false
+    },
+    {
+      "position": "LCB",
+      "player": "Darrell Baker Jr.",
+      "jersey": "22",
+      "code": "U/Ten",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": 74,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "LCB",
@@ -1058,22 +1058,6 @@
       "pffGrade": null,
       "madden27Rating": null,
       "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "CB",
-      "player": "Darrell Baker Jr.",
-      "jersey": "22",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": null,
-      "madden27Rating": 74,
-      "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,
