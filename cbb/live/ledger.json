@@ -17034,7 +17034,12 @@
      "spread_home": -6.5,
      "edge": 0.2
     }
-   ]
+   ],
+   "home_score": 71,
+   "away_score": 84,
+   "margin_vs_line": -19.5,
+   "result": "L",
+   "units": 0
   },
   "372926": {
    "gameId": 372926,
@@ -17067,7 +17072,12 @@
      "spread_home": 4.5,
      "edge": 2.6
     }
-   ]
+   ],
+   "home_score": 64,
+   "away_score": 72,
+   "margin_vs_line": -3.5,
+   "result": "L",
+   "units": -2
   },
   "372927": {
    "gameId": 372927,
@@ -17142,14 +17152,14 @@
    "away": "Louisville",
    "neutral": true,
    "pick": "Louisville",
-   "pick_line": "Louisville +3.5",
-   "spread_home": -3.5,
+   "pick_line": "Louisville +2.5",
+   "spread_home": -2.5,
    "book": "Draft Kings",
-   "edge": 0.09,
+   "edge": 0.06,
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-23T12:39:30.328773+00:00",
    "first_spread_home": -5.5,
    "first_edge": 0.14,
@@ -17165,6 +17175,11 @@
      "at": "2026-11-24T04:56:14.950108Z",
      "spread_home": -3.5,
      "edge": 0.09
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -2.5,
+     "edge": 0.06
     }
    ]
   },
@@ -17182,7 +17197,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-23T12:39:30.328773+00:00",
    "first_spread_home": -1.5,
    "first_edge": 0.75,
@@ -17203,14 +17218,14 @@
    "away": "St. John's",
    "neutral": true,
    "pick": "Oregon",
-   "pick_line": "Oregon +9.5",
-   "spread_home": 9.5,
+   "pick_line": "Oregon +10.5",
+   "spread_home": 10.5,
    "book": "Draft Kings",
-   "edge": 0.37,
+   "edge": 0.4,
    "tier": "lean",
    "tempo_flag": true,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-23T12:39:30.328773+00:00",
    "first_spread_home": 8.5,
    "first_edge": 0.35,
@@ -17226,6 +17241,11 @@
      "at": "2026-11-24T04:56:14.950108Z",
      "spread_home": 9.5,
      "edge": 0.37
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": 10.5,
+     "edge": 0.4
     }
    ]
   },
@@ -17243,7 +17263,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-23T12:39:30.328773+00:00",
    "first_spread_home": 13.5,
    "first_edge": 1.0,
@@ -17453,7 +17473,12 @@
      "spread_home": -1.5,
      "edge": 1.96
     }
-   ]
+   ],
+   "home_score": 72,
+   "away_score": 70,
+   "margin_vs_line": 0.5,
+   "result": "W",
+   "units": 0.91
   },
   "378104": {
    "gameId": 378104,
@@ -17481,7 +17506,12 @@
      "spread_home": 4.5,
      "edge": 0.08
     }
-   ]
+   ],
+   "home_score": 68,
+   "away_score": 69,
+   "margin_vs_line": -3.5,
+   "result": "L",
+   "units": 0
   },
   "378105": {
    "gameId": 378105,
@@ -17514,7 +17544,12 @@
      "spread_home": -2.5,
      "edge": 0.57
     }
-   ]
+   ],
+   "home_score": 87,
+   "away_score": 64,
+   "margin_vs_line": 20.5,
+   "result": "W",
+   "units": 0.0
   },
   "375290": {
    "gameId": 375290,
@@ -17542,7 +17577,12 @@
      "spread_home": -3.5,
      "edge": 0.21
     }
-   ]
+   ],
+   "home_score": 60,
+   "away_score": 70,
+   "margin_vs_line": 13.5,
+   "result": "W",
+   "units": 0.0
   },
   "372923": {
    "gameId": 372923,
@@ -17575,7 +17615,12 @@
      "spread_home": 2.5,
      "edge": 1.36
     }
-   ]
+   ],
+   "home_score": 68,
+   "away_score": 79,
+   "margin_vs_line": -8.5,
+   "result": "L",
+   "units": -1
   },
   "378107": {
    "gameId": 378107,
@@ -17603,7 +17648,12 @@
      "spread_home": -7.5,
      "edge": 2.66
     }
-   ]
+   ],
+   "home_score": 67,
+   "away_score": 68,
+   "margin_vs_line": -8.5,
+   "result": "L",
+   "units": -2
   },
   "375292": {
    "gameId": 375292,
@@ -17636,7 +17686,12 @@
      "spread_home": 4.5,
      "edge": 0.67
     }
-   ]
+   ],
+   "home_score": 67,
+   "away_score": 77,
+   "margin_vs_line": 5.5,
+   "result": "W",
+   "units": 0.0
   },
   "375298": {
    "gameId": 375298,
@@ -17673,14 +17728,14 @@
    "away": "Purdue",
    "neutral": true,
    "pick": "DePaul",
-   "pick_line": "DePaul +4.5",
-   "spread_home": 4.5,
+   "pick_line": "DePaul +3.5",
+   "spread_home": 3.5,
    "book": "Draft Kings",
-   "edge": 1.5,
+   "edge": 1.47,
    "tier": "play",
    "tempo_flag": false,
    "stake": 1,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T00:18:30.600178+00:00",
    "first_spread_home": 4.5,
    "first_edge": 1.5,
@@ -17691,6 +17746,11 @@
      "at": "2026-11-24T00:17:58.670244Z",
      "spread_home": 4.5,
      "edge": 1.5
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": 3.5,
+     "edge": 1.47
     }
    ]
   },
@@ -17708,7 +17768,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T00:18:30.600178+00:00",
    "first_spread_home": -4.5,
    "first_edge": 1.11,
@@ -17739,14 +17799,14 @@
    "away": "Sacred Heart",
    "neutral": false,
    "pick": "Sacred Heart",
-   "pick_line": "Sacred Heart +23.5",
-   "spread_home": -23.5,
+   "pick_line": "Sacred Heart +22.5",
+   "spread_home": -22.5,
    "book": "Draft Kings",
-   "edge": 0.69,
+   "edge": 0.67,
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T00:18:30.600178+00:00",
    "first_spread_home": -23.5,
    "first_edge": 0.69,
@@ -17757,6 +17817,11 @@
      "at": "2026-11-24T00:17:58.670244Z",
      "spread_home": -23.5,
      "edge": 0.69
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -22.5,
+     "edge": 0.67
     }
    ]
   },
@@ -17767,14 +17832,14 @@
    "away": "Southern Indiana",
    "neutral": false,
    "pick": "Southern Indiana",
-   "pick_line": "Southern Indiana +5.5",
-   "spread_home": -5.5,
+   "pick_line": "Southern Indiana +4.5",
+   "spread_home": -4.5,
    "book": "Draft Kings",
-   "edge": 0.06,
+   "edge": 0.03,
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T00:18:30.600178+00:00",
    "first_spread_home": -5.5,
    "first_edge": 0.06,
@@ -17785,6 +17850,11 @@
      "at": "2026-11-24T00:17:58.670244Z",
      "spread_home": -5.5,
      "edge": 0.06
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -4.5,
+     "edge": 0.03
     }
    ]
   },
@@ -17802,7 +17872,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T00:18:30.600178+00:00",
    "first_spread_home": -6.5,
    "first_edge": 0.47,
@@ -17828,14 +17898,14 @@
    "away": "Elon",
    "neutral": false,
    "pick": "Furman",
-   "pick_line": "Furman -8.5",
-   "spread_home": -8.5,
+   "pick_line": "Furman -6.5",
+   "spread_home": -6.5,
    "book": "Draft Kings",
-   "edge": 0.14,
+   "edge": 0.21,
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T00:18:30.600178+00:00",
    "first_spread_home": -8.5,
    "first_edge": 0.14,
@@ -17856,6 +17926,11 @@
      "at": "2026-11-24T12:38:54.872106Z",
      "spread_home": -8.5,
      "edge": 0.14
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -6.5,
+     "edge": 0.21
     }
    ]
   },
@@ -17873,7 +17948,7 @@
    "tier": "lean",
    "tempo_flag": true,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T00:18:30.600178+00:00",
    "first_spread_home": -10.5,
    "first_edge": 0.57,
@@ -17901,7 +17976,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T00:18:30.600178+00:00",
    "first_spread_home": -2.5,
    "first_edge": 0.26,
@@ -17927,14 +18002,14 @@
    "away": "Tarleton State",
    "neutral": false,
    "pick": "Weber State",
-   "pick_line": "Weber State +1.5",
-   "spread_home": 1.5,
+   "pick_line": "Weber State -1.5",
+   "spread_home": -1.5,
    "book": "Draft Kings",
-   "edge": 0.47,
+   "edge": 0.4,
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T00:18:30.600178+00:00",
    "first_spread_home": -1.5,
    "first_edge": 0.4,
@@ -17950,6 +18025,11 @@
      "at": "2026-11-24T04:56:14.950108Z",
      "spread_home": 1.5,
      "edge": 0.47
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -1.5,
+     "edge": 0.4
     }
    ]
   },
@@ -17967,7 +18047,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T00:18:30.600178+00:00",
    "first_spread_home": -8.5,
    "first_edge": 0.64,
@@ -18000,7 +18080,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T00:18:30.600178+00:00",
    "first_spread_home": 2.5,
    "first_edge": 0.73,
@@ -18021,14 +18101,14 @@
    "away": "Milwaukee",
    "neutral": false,
    "pick": "Florida",
-   "pick_line": "Florida -35.5",
-   "spread_home": -35.5,
+   "pick_line": "Florida -34.5",
+   "spread_home": -34.5,
    "book": "Draft Kings",
-   "edge": 1.97,
-   "tier": "play",
+   "edge": 2.0,
+   "tier": "strong",
    "tempo_flag": false,
-   "stake": 1,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "stake": 2,
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T00:18:30.600178+00:00",
    "first_spread_home": -38.5,
    "first_edge": 1.87,
@@ -18049,6 +18129,11 @@
      "at": "2026-11-24T12:38:54.872106Z",
      "spread_home": -35.5,
      "edge": 1.97
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -34.5,
+     "edge": 2.0
     }
    ]
   },
@@ -18059,14 +18144,14 @@
    "away": "West Georgia",
    "neutral": false,
    "pick": "West Georgia",
-   "pick_line": "West Georgia +15.5",
-   "spread_home": -15.5,
+   "pick_line": "West Georgia +14.5",
+   "spread_home": -14.5,
    "book": "Draft Kings",
-   "edge": 0.21,
+   "edge": 0.18,
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T00:18:30.600178+00:00",
    "first_spread_home": -16.5,
    "first_edge": 0.23,
@@ -18082,6 +18167,11 @@
      "at": "2026-11-24T04:56:14.950108Z",
      "spread_home": -15.5,
      "edge": 0.21
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -14.5,
+     "edge": 0.18
     }
    ]
   },
@@ -18099,7 +18189,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T00:18:30.600178+00:00",
    "first_spread_home": -2.5,
    "first_edge": 0.28,
@@ -18130,14 +18220,14 @@
    "away": "Central Michigan",
    "neutral": false,
    "pick": "Central Michigan",
-   "pick_line": "Central Michigan +21.5",
-   "spread_home": -21.5,
+   "pick_line": "Central Michigan +20.5",
+   "spread_home": -20.5,
    "book": "Draft Kings",
-   "edge": 0.18,
+   "edge": 0.15,
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T00:18:30.600178+00:00",
    "first_spread_home": -20.5,
    "first_edge": 0.15,
@@ -18153,6 +18243,11 @@
      "at": "2026-11-24T04:56:14.950108Z",
      "spread_home": -21.5,
      "edge": 0.18
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -20.5,
+     "edge": 0.15
     }
    ]
   },
@@ -18170,7 +18265,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T00:18:30.600178+00:00",
    "first_spread_home": -4.5,
    "first_edge": 1.13,
@@ -18191,14 +18286,14 @@
    "away": "Drexel",
    "neutral": false,
    "pick": "Drexel",
-   "pick_line": "Drexel +5.5",
-   "spread_home": -5.5,
+   "pick_line": "Drexel +6.5",
+   "spread_home": -6.5,
    "book": "Draft Kings",
-   "edge": 0.25,
+   "edge": 0.29,
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T00:18:30.600178+00:00",
    "first_spread_home": -5.5,
    "first_edge": 0.25,
@@ -18219,6 +18314,11 @@
      "at": "2026-11-24T12:38:54.872106Z",
      "spread_home": -5.5,
      "edge": 0.25
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -6.5,
+     "edge": 0.29
     }
    ]
   },
@@ -18236,7 +18336,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T00:18:30.600178+00:00",
    "first_spread_home": 1.5,
    "first_edge": 0.4,
@@ -18269,7 +18369,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T00:18:30.600178+00:00",
    "first_spread_home": 1.5,
    "first_edge": 0.48,
@@ -18297,7 +18397,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T00:18:30.600178+00:00",
    "first_spread_home": -19.5,
    "first_edge": 0.19,
@@ -18330,7 +18430,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T00:18:30.600178+00:00",
    "first_spread_home": 1.5,
    "first_edge": 1.04,
@@ -18351,14 +18451,14 @@
    "away": "Stanford",
    "neutral": true,
    "pick": "Stanford",
-   "pick_line": "Stanford -4.5",
-   "spread_home": 4.5,
+   "pick_line": "Stanford -3.5",
+   "spread_home": 3.5,
    "book": "Draft Kings",
-   "edge": 0.36,
+   "edge": 0.4,
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T00:18:30.600178+00:00",
    "first_spread_home": 2.5,
    "first_edge": 0.43,
@@ -18374,6 +18474,11 @@
      "at": "2026-11-24T12:38:54.872106Z",
      "spread_home": 4.5,
      "edge": 0.36
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": 3.5,
+     "edge": 0.4
     }
    ]
   },
@@ -18403,7 +18508,12 @@
      "spread_home": -8.5,
      "edge": 1.34
     }
-   ]
+   ],
+   "home_score": 81,
+   "away_score": 66,
+   "margin_vs_line": 6.5,
+   "result": "W",
+   "units": 0.91
   },
   "375291": {
    "gameId": 375291,
@@ -18436,7 +18546,12 @@
      "spread_home": 8.5,
      "edge": 0.89
     }
-   ]
+   ],
+   "home_score": 73,
+   "away_score": 87,
+   "margin_vs_line": -5.5,
+   "result": "L",
+   "units": 0
   },
   "378703": {
    "gameId": 378703,
@@ -18469,7 +18584,12 @@
      "spread_home": -1.5,
      "edge": 2.05
     }
-   ]
+   ],
+   "home_score": 63,
+   "away_score": 73,
+   "margin_vs_line": 11.5,
+   "result": "W",
+   "units": 1.82
   },
   "378108": {
    "gameId": 378108,
@@ -18497,7 +18617,12 @@
      "spread_home": 1.5,
      "edge": 0.21
     }
-   ]
+   ],
+   "home_score": 57,
+   "away_score": 50,
+   "margin_vs_line": 8.5,
+   "result": "W",
+   "units": 0.0
   },
   "375293": {
    "gameId": 375293,
@@ -18589,25 +18714,25 @@
    "home": "Wofford",
    "away": "Queens University",
    "neutral": false,
-   "pick": "Queens University",
-   "pick_line": "Queens University +1.5",
-   "spread_home": -1.5,
+   "pick": "Wofford",
+   "pick_line": "Wofford +1.5",
+   "spread_home": 1.5,
    "book": "Draft Kings",
-   "edge": 0.04,
+   "edge": 0.06,
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
-   "first_spread_home": -1.5,
-   "first_edge": 0.04,
-   "first_at": "2026-11-24T04:56:14.950108Z",
-   "first_pick_line": "Queens University +1.5",
+   "first_spread_home": 1.5,
+   "first_edge": 0.06,
+   "first_at": "2026-11-24T22:44:07.520165Z",
+   "first_pick_line": "Wofford +1.5",
    "line_history": [
     {
-     "at": "2026-11-24T04:56:14.950108Z",
-     "spread_home": -1.5,
-     "edge": 0.04
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": 1.5,
+     "edge": 0.06
     }
    ]
   },
@@ -18618,14 +18743,14 @@
    "away": "Robert Morris",
    "neutral": true,
    "pick": "Lamar",
-   "pick_line": "Lamar -3.5",
-   "spread_home": -3.5,
+   "pick_line": "Lamar -2.5",
+   "spread_home": -2.5,
    "book": "Draft Kings",
-   "edge": 0.81,
+   "edge": 0.83,
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -3.5,
    "first_edge": 0.81,
@@ -18636,6 +18761,11 @@
      "at": "2026-11-24T04:56:14.950108Z",
      "spread_home": -3.5,
      "edge": 0.81
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -2.5,
+     "edge": 0.83
     }
    ]
   },
@@ -18653,7 +18783,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -12.5,
    "first_edge": 0.68,
@@ -18681,7 +18811,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -1.5,
    "first_edge": 0.72,
@@ -18709,7 +18839,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -3.5,
    "first_edge": 0.03,
@@ -18737,7 +18867,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -13.5,
    "first_edge": 0.05,
@@ -18758,14 +18888,14 @@
    "away": "Jacksonville",
    "neutral": false,
    "pick": "Indiana",
-   "pick_line": "Indiana -28.5",
-   "spread_home": -28.5,
+   "pick_line": "Indiana -27.5",
+   "spread_home": -27.5,
    "book": "Draft Kings",
-   "edge": 0.73,
+   "edge": 0.76,
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -28.5,
    "first_edge": 0.73,
@@ -18776,6 +18906,11 @@
      "at": "2026-11-24T04:56:14.950108Z",
      "spread_home": -28.5,
      "edge": 0.73
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -27.5,
+     "edge": 0.76
     }
    ]
   },
@@ -18786,14 +18921,14 @@
    "away": "Stetson",
    "neutral": false,
    "pick": "Stetson",
-   "pick_line": "Stetson +18.5",
-   "spread_home": -18.5,
+   "pick_line": "Stetson +16.5",
+   "spread_home": -16.5,
    "book": "Draft Kings",
-   "edge": 0.61,
+   "edge": 0.55,
    "tier": "lean",
    "tempo_flag": true,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -18.5,
    "first_edge": 0.61,
@@ -18804,6 +18939,11 @@
      "at": "2026-11-24T04:56:14.950108Z",
      "spread_home": -18.5,
      "edge": 0.61
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -16.5,
+     "edge": 0.55
     }
    ]
   },
@@ -18821,7 +18961,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -5.5,
    "first_edge": 0.57,
@@ -18849,7 +18989,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -3.5,
    "first_edge": 0.05,
@@ -18877,7 +19017,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -26.5,
    "first_edge": 0.45,
@@ -18903,14 +19043,14 @@
    "away": "New Hampshire",
    "neutral": false,
    "pick": "Seton Hall",
-   "pick_line": "Seton Hall -21.5",
-   "spread_home": -21.5,
+   "pick_line": "Seton Hall -20.5",
+   "spread_home": -20.5,
    "book": "Draft Kings",
-   "edge": 0.8,
+   "edge": 0.83,
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -21.5,
    "first_edge": 0.8,
@@ -18921,6 +19061,11 @@
      "at": "2026-11-24T04:56:14.950108Z",
      "spread_home": -21.5,
      "edge": 0.8
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -20.5,
+     "edge": 0.83
     }
    ]
   },
@@ -18931,14 +19076,14 @@
    "away": "Santa Clara",
    "neutral": true,
    "pick": "Nevada",
-   "pick_line": "Nevada -1.5",
-   "spread_home": -1.5,
+   "pick_line": "Nevada +1.5",
+   "spread_home": 1.5,
    "book": "Draft Kings",
-   "edge": 2.05,
+   "edge": 2.15,
    "tier": "strong",
    "tempo_flag": false,
    "stake": 2,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -1.5,
    "first_edge": 2.05,
@@ -18949,6 +19094,11 @@
      "at": "2026-11-24T04:56:14.950108Z",
      "spread_home": -1.5,
      "edge": 2.05
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": 1.5,
+     "edge": 2.15
     }
    ]
   },
@@ -18959,14 +19109,14 @@
    "away": "Coppin State",
    "neutral": false,
    "pick": "Villanova",
-   "pick_line": "Villanova -32.5",
-   "spread_home": -32.5,
+   "pick_line": "Villanova -34.5",
+   "spread_home": -34.5,
    "book": "Draft Kings",
-   "edge": 0.75,
+   "edge": 0.69,
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -32.5,
    "first_edge": 0.75,
@@ -18977,6 +19127,11 @@
      "at": "2026-11-24T04:56:14.950108Z",
      "spread_home": -32.5,
      "edge": 0.75
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -34.5,
+     "edge": 0.69
     }
    ]
   },
@@ -18994,7 +19149,7 @@
    "tier": "lean",
    "tempo_flag": true,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -8.5,
    "first_edge": 0.9,
@@ -19015,14 +19170,14 @@
    "away": "Delaware State",
    "neutral": false,
    "pick": "Chattanooga",
-   "pick_line": "Chattanooga -15.5",
-   "spread_home": -15.5,
+   "pick_line": "Chattanooga -16.5",
+   "spread_home": -16.5,
    "book": "Draft Kings",
-   "edge": 0.81,
+   "edge": 0.79,
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -15.5,
    "first_edge": 0.81,
@@ -19033,6 +19188,11 @@
      "at": "2026-11-24T04:56:14.950108Z",
      "spread_home": -15.5,
      "edge": 0.81
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -16.5,
+     "edge": 0.79
     }
    ]
   },
@@ -19050,7 +19210,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -2.5,
    "first_edge": 1.12,
@@ -19071,14 +19231,14 @@
    "away": "Bryant",
    "neutral": false,
    "pick": "Bryant",
-   "pick_line": "Bryant +3.5",
-   "spread_home": -3.5,
+   "pick_line": "Bryant +2.5",
+   "spread_home": -2.5,
    "book": "Draft Kings",
-   "edge": 0.96,
+   "edge": 0.92,
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -4.5,
    "first_edge": 0.99,
@@ -19094,6 +19254,11 @@
      "at": "2026-11-24T12:38:54.872106Z",
      "spread_home": -3.5,
      "edge": 0.96
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -2.5,
+     "edge": 0.92
     }
    ]
   },
@@ -19111,7 +19276,7 @@
    "tier": "strong",
    "tempo_flag": false,
    "stake": 2,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -17.5,
    "first_edge": 1.97,
@@ -19144,7 +19309,7 @@
    "tier": "play",
    "tempo_flag": false,
    "stake": 1,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": 10.5,
    "first_edge": 1.31,
@@ -19172,7 +19337,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": 1.5,
    "first_edge": 0.8,
@@ -19193,14 +19358,14 @@
    "away": "Florida A&M",
    "neutral": false,
    "pick": "South Alabama",
-   "pick_line": "South Alabama -18.5",
-   "spread_home": -18.5,
+   "pick_line": "South Alabama -17.5",
+   "spread_home": -17.5,
    "book": "Draft Kings",
-   "edge": 2.43,
+   "edge": 2.46,
    "tier": "strong",
    "tempo_flag": false,
    "stake": 2,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -18.5,
    "first_edge": 2.43,
@@ -19211,6 +19376,11 @@
      "at": "2026-11-24T04:56:14.950108Z",
      "spread_home": -18.5,
      "edge": 2.43
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -17.5,
+     "edge": 2.46
     }
    ]
   },
@@ -19228,7 +19398,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -3.5,
    "first_edge": 0.79,
@@ -19256,7 +19426,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": 1.5,
    "first_edge": 0.08,
@@ -19277,14 +19447,14 @@
    "away": "Bucknell",
    "neutral": false,
    "pick": "Bucknell",
-   "pick_line": "Bucknell +10.5",
-   "spread_home": -10.5,
+   "pick_line": "Bucknell +11.5",
+   "spread_home": -11.5,
    "book": "Draft Kings",
-   "edge": 1.18,
+   "edge": 1.21,
    "tier": "lean",
    "tempo_flag": true,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -10.5,
    "first_edge": 1.18,
@@ -19295,6 +19465,11 @@
      "at": "2026-11-24T04:56:14.950108Z",
      "spread_home": -10.5,
      "edge": 1.18
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -11.5,
+     "edge": 1.21
     }
    ]
   },
@@ -19305,14 +19480,14 @@
    "away": "Lipscomb",
    "neutral": false,
    "pick": "Auburn",
-   "pick_line": "Auburn -25.5",
-   "spread_home": -25.5,
+   "pick_line": "Auburn -24.5",
+   "spread_home": -24.5,
    "book": "Draft Kings",
-   "edge": 1.81,
+   "edge": 1.84,
    "tier": "play",
    "tempo_flag": false,
    "stake": 1,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -24.5,
    "first_edge": 1.84,
@@ -19328,6 +19503,11 @@
      "at": "2026-11-24T12:38:54.872106Z",
      "spread_home": -25.5,
      "edge": 1.81
+    },
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -24.5,
+     "edge": 1.84
     }
    ]
   },
@@ -19345,7 +19525,7 @@
    "tier": "play",
    "tempo_flag": false,
    "stake": 1,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": 3.5,
    "first_edge": 1.92,
@@ -19373,7 +19553,7 @@
    "tier": "strong",
    "tempo_flag": true,
    "stake": 2,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T04:56:49.656325+00:00",
    "first_spread_home": -29.5,
    "first_edge": 3.15,
@@ -19429,7 +19609,7 @@
    "tier": "lean",
    "tempo_flag": false,
    "stake": 0,
-   "locked_at": "2026-11-24T12:38:54.872106Z",
+   "locked_at": "2026-11-24T22:44:07.520165Z",
    "recorded_at": "2026-11-24T12:39:26.117267+00:00",
    "first_spread_home": 5.5,
    "first_edge": 0.06,
@@ -19442,7 +19622,343 @@
      "edge": 0.06
     }
    ]
+  },
+  "375323": {
+   "gameId": 375323,
+   "date": "2026-11-25T05:00:00.000Z",
+   "home": "SIU Edwardsville",
+   "away": "Northern Illinois",
+   "neutral": false,
+   "pick": "SIU Edwardsville",
+   "pick_line": "SIU Edwardsville +4.5",
+   "spread_home": 4.5,
+   "book": "Draft Kings",
+   "edge": 0.15,
+   "tier": "lean",
+   "tempo_flag": false,
+   "stake": 0,
+   "locked_at": "2026-11-24T22:44:07.520165Z",
+   "recorded_at": "2026-11-24T22:44:40.477982+00:00",
+   "first_spread_home": 4.5,
+   "first_edge": 0.15,
+   "first_at": "2026-11-24T22:44:07.520165Z",
+   "first_pick_line": "SIU Edwardsville +4.5",
+   "line_history": [
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": 4.5,
+     "edge": 0.15
+    }
+   ]
+  },
+  "375334": {
+   "gameId": 375334,
+   "date": "2026-11-25T16:00:00.000Z",
+   "home": "Charlotte",
+   "away": "Northern Iowa",
+   "neutral": true,
+   "pick": "Charlotte",
+   "pick_line": "Charlotte -7.5",
+   "spread_home": -7.5,
+   "book": "Draft Kings",
+   "edge": 1.72,
+   "tier": "play",
+   "tempo_flag": false,
+   "stake": 1,
+   "locked_at": "2026-11-24T22:44:07.520165Z",
+   "recorded_at": "2026-11-24T22:44:40.477982+00:00",
+   "first_spread_home": -7.5,
+   "first_edge": 1.72,
+   "first_at": "2026-11-24T22:44:07.520165Z",
+   "first_pick_line": "Charlotte -7.5",
+   "line_history": [
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -7.5,
+     "edge": 1.72
+    }
+   ]
+  },
+  "375335": {
+   "gameId": 375335,
+   "date": "2026-11-25T17:00:00.000Z",
+   "home": "Virginia",
+   "away": "Marquette",
+   "neutral": true,
+   "pick": "Virginia",
+   "pick_line": "Virginia -5.5",
+   "spread_home": -5.5,
+   "book": "Draft Kings",
+   "edge": 0.15,
+   "tier": "lean",
+   "tempo_flag": false,
+   "stake": 0,
+   "locked_at": "2026-11-24T22:44:07.520165Z",
+   "recorded_at": "2026-11-24T22:44:40.477982+00:00",
+   "first_spread_home": -5.5,
+   "first_edge": 0.15,
+   "first_at": "2026-11-24T22:44:07.520165Z",
+   "first_pick_line": "Virginia -5.5",
+   "line_history": [
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -5.5,
+     "edge": 0.15
+    }
+   ]
+  },
+  "375340": {
+   "gameId": 375340,
+   "date": "2026-11-25T19:00:00.000Z",
+   "home": "LSU",
+   "away": "Arizona State",
+   "neutral": true,
+   "pick": "Arizona State",
+   "pick_line": "Arizona State +4.5",
+   "spread_home": -4.5,
+   "book": "Draft Kings",
+   "edge": 1.18,
+   "tier": "lean",
+   "tempo_flag": false,
+   "stake": 0,
+   "locked_at": "2026-11-24T22:44:07.520165Z",
+   "recorded_at": "2026-11-24T22:44:40.477982+00:00",
+   "first_spread_home": -4.5,
+   "first_edge": 1.18,
+   "first_at": "2026-11-24T22:44:07.520165Z",
+   "first_pick_line": "Arizona State +4.5",
+   "line_history": [
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -4.5,
+     "edge": 1.18
+    }
+   ]
+  },
+  "375341": {
+   "gameId": 375341,
+   "date": "2026-11-25T19:30:00.000Z",
+   "home": "Texas A&M",
+   "away": "Xavier",
+   "neutral": true,
+   "pick": "Xavier",
+   "pick_line": "Xavier +5.5",
+   "spread_home": -5.5,
+   "book": "Draft Kings",
+   "edge": 0.79,
+   "tier": "lean",
+   "tempo_flag": false,
+   "stake": 0,
+   "locked_at": "2026-11-24T22:44:07.520165Z",
+   "recorded_at": "2026-11-24T22:44:40.477982+00:00",
+   "first_spread_home": -5.5,
+   "first_edge": 0.79,
+   "first_at": "2026-11-24T22:44:07.520165Z",
+   "first_pick_line": "Xavier +5.5",
+   "line_history": [
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -5.5,
+     "edge": 0.79
+    }
+   ]
+  },
+  "375344": {
+   "gameId": 375344,
+   "date": "2026-11-25T21:30:00.000Z",
+   "home": "South Carolina",
+   "away": "USC",
+   "neutral": true,
+   "pick": "South Carolina",
+   "pick_line": "South Carolina +10.5",
+   "spread_home": 10.5,
+   "book": "Draft Kings",
+   "edge": 1.85,
+   "tier": "play",
+   "tempo_flag": true,
+   "stake": 1,
+   "locked_at": "2026-11-24T22:44:07.520165Z",
+   "recorded_at": "2026-11-24T22:44:40.477982+00:00",
+   "first_spread_home": 10.5,
+   "first_edge": 1.85,
+   "first_at": "2026-11-24T22:44:07.520165Z",
+   "first_pick_line": "South Carolina +10.5",
+   "line_history": [
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": 10.5,
+     "edge": 1.85
+    }
+   ]
+  },
+  "375346": {
+   "gameId": 375346,
+   "date": "2026-11-25T22:00:00.000Z",
+   "home": "Penn State",
+   "away": "Memphis",
+   "neutral": true,
+   "pick": "Penn State",
+   "pick_line": "Penn State +4.5",
+   "spread_home": 4.5,
+   "book": "Draft Kings",
+   "edge": 0.31,
+   "tier": "lean",
+   "tempo_flag": false,
+   "stake": 0,
+   "locked_at": "2026-11-24T22:44:07.520165Z",
+   "recorded_at": "2026-11-24T22:44:40.477982+00:00",
+   "first_spread_home": 4.5,
+   "first_edge": 0.31,
+   "first_at": "2026-11-24T22:44:07.520165Z",
+   "first_pick_line": "Penn State +4.5",
+   "line_history": [
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": 4.5,
+     "edge": 0.31
+    }
+   ]
+  },
+  "375313": {
+   "gameId": 375313,
+   "date": "2026-11-25T22:00:00.000Z",
+   "home": "UC Riverside",
+   "away": "Portland State",
+   "neutral": false,
+   "pick": "Portland State",
+   "pick_line": "Portland State +3.5",
+   "spread_home": -3.5,
+   "book": "Draft Kings",
+   "edge": 0.37,
+   "tier": "lean",
+   "tempo_flag": false,
+   "stake": 0,
+   "locked_at": "2026-11-24T22:44:07.520165Z",
+   "recorded_at": "2026-11-24T22:44:40.477982+00:00",
+   "first_spread_home": -3.5,
+   "first_edge": 0.37,
+   "first_at": "2026-11-24T22:44:07.520165Z",
+   "first_pick_line": "Portland State +3.5",
+   "line_history": [
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -3.5,
+     "edge": 0.37
+    }
+   ]
+  },
+  "372944": {
+   "gameId": 372944,
+   "date": "2026-11-26T00:00:00.000Z",
+   "home": "Duke",
+   "away": "UConn",
+   "neutral": true,
+   "pick": "Duke",
+   "pick_line": "Duke +2.5",
+   "spread_home": 2.5,
+   "book": "Draft Kings",
+   "edge": 0.23,
+   "tier": "lean",
+   "tempo_flag": false,
+   "stake": 0,
+   "locked_at": "2026-11-24T22:44:07.520165Z",
+   "recorded_at": "2026-11-24T22:44:40.477982+00:00",
+   "first_spread_home": 2.5,
+   "first_edge": 0.23,
+   "first_at": "2026-11-24T22:44:07.520165Z",
+   "first_pick_line": "Duke +2.5",
+   "line_history": [
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": 2.5,
+     "edge": 0.23
+    }
+   ]
+  },
+  "375349": {
+   "gameId": 375349,
+   "date": "2026-11-26T00:00:00.000Z",
+   "home": "Utah State",
+   "away": "SMU",
+   "neutral": true,
+   "pick": "SMU",
+   "pick_line": "SMU +4.5",
+   "spread_home": -4.5,
+   "book": "Draft Kings",
+   "edge": 0.22,
+   "tier": "lean",
+   "tempo_flag": false,
+   "stake": 0,
+   "locked_at": "2026-11-24T22:44:07.520165Z",
+   "recorded_at": "2026-11-24T22:44:40.477982+00:00",
+   "first_spread_home": -4.5,
+   "first_edge": 0.22,
+   "first_at": "2026-11-24T22:44:07.520165Z",
+   "first_pick_line": "SMU +4.5",
+   "line_history": [
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -4.5,
+     "edge": 0.22
+    }
+   ]
+  },
+  "372942": {
+   "gameId": 372942,
+   "date": "2026-11-26T00:00:00.000Z",
+   "home": "Wisconsin",
+   "away": "Northeastern",
+   "neutral": false,
+   "pick": "Wisconsin",
+   "pick_line": "Wisconsin -21.5",
+   "spread_home": -21.5,
+   "book": "Draft Kings",
+   "edge": 1.88,
+   "tier": "play",
+   "tempo_flag": false,
+   "stake": 1,
+   "locked_at": "2026-11-24T22:44:07.520165Z",
+   "recorded_at": "2026-11-24T22:44:40.477982+00:00",
+   "first_spread_home": -21.5,
+   "first_edge": 1.88,
+   "first_at": "2026-11-24T22:44:07.520165Z",
+   "first_pick_line": "Wisconsin -21.5",
+   "line_history": [
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -21.5,
+     "edge": 1.88
+    }
+   ]
+  },
+  "378124": {
+   "gameId": 378124,
+   "date": "2026-11-26T00:30:00.000Z",
+   "home": "Mississippi State",
+   "away": "Wake Forest",
+   "neutral": true,
+   "pick": "Wake Forest",
+   "pick_line": "Wake Forest +4.5",
+   "spread_home": -4.5,
+   "book": "Draft Kings",
+   "edge": 0.25,
+   "tier": "lean",
+   "tempo_flag": false,
+   "stake": 0,
+   "locked_at": "2026-11-24T22:44:07.520165Z",
+   "recorded_at": "2026-11-24T22:44:40.477982+00:00",
+   "first_spread_home": -4.5,
+   "first_edge": 0.25,
+   "first_at": "2026-11-24T22:44:07.520165Z",
+   "first_pick_line": "Wake Forest +4.5",
+   "line_history": [
+    {
+     "at": "2026-11-24T22:44:07.520165Z",
+     "spread_home": -4.5,
+     "edge": 0.25
+    }
+   ]
   }
  },
- "updated": "2026-11-24T12:39:26.118724+00:00"
+ "updated": "2026-11-24T22:44:40.479880+00:00"
 }
