@@ -1,678 +1,6 @@
 {
- "generated": "2026-11-25T04:12:42.265899Z",
+ "generated": "2026-11-25T04:25:28.097805Z",
  "games": [
-  {
-   "gameId": 375273,
-   "date": "2026-11-25T02:00:00.000Z",
-   "home": "Missouri",
-   "away": "Evansville",
-   "neutral": false,
-   "venue": "Mizzou Arena",
-   "spread_home": -32.5,
-   "book": "Draft Kings",
-   "proj_spread_home": -26.0,
-   "pick": "Evansville",
-   "pick_line": "Evansville +32.5",
-   "edge": 0.11,
-   "tier": "lean",
-   "stake": 0,
-   "tempo_flag": false,
-   "line_status": "posted",
-   "model": "established",
-   "games_played": [
-    6,
-    7
-   ],
-   "reasons": [
-    {
-     "text": "Evansville has seen opponents shoot better",
-     "pts": 0.84
-    },
-    {
-     "text": "Missouri has shot better so far",
-     "pts": 0.78
-    },
-    {
-     "text": "Evansville takes more 3s",
-     "pts": 0.37
-    }
-   ],
-   "traits": [
-    {
-     "key": "pace",
-     "label": "Tempo (possessions per game)",
-     "group": "Tempo",
-     "kind": "num",
-     "away": 69.5,
-     "home": 69.9,
-     "pts": 0.02
-    },
-    {
-     "key": "o_3par",
-     "label": "3-point attempt rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 47.2,
-     "home": 39.4,
-     "pts": 0.37
-    },
-    {
-     "key": "o_ftr",
-     "label": "Free-throw rate (FTA/FGA)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 32.7,
-     "home": 43.7,
-     "pts": -0.15
-    },
-    {
-     "key": "o_tov",
-     "label": "Turnover rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 18.6,
-     "home": 16.5,
-     "pts": -0.13
-    },
-    {
-     "key": "o_orb",
-     "label": "Offensive rebound %",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 29.0,
-     "home": 37.6,
-     "pts": -0.48
-    },
-    {
-     "key": "o_paint",
-     "label": "Paint share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 36.3,
-     "home": 45.3,
-     "pts": -0.44
-    },
-    {
-     "key": "o_fb",
-     "label": "Transition share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 10.9,
-     "home": 20.1,
-     "pts": -0.33
-    },
-    {
-     "key": "o_ast",
-     "label": "Assist rate (assisted FGM)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 60.7,
-     "home": 56.2,
-     "pts": 0.17
-    },
-    {
-     "key": "o_efg",
-     "label": "eFG% (shooting results)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 50.4,
-     "home": 61.6,
-     "pts": 0.78
-    },
-    {
-     "key": "d_3par",
-     "label": "Opp. 3-point attempt rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 48.3,
-     "home": 36.4,
-     "pts": -0.4
-    },
-    {
-     "key": "d_ftr",
-     "label": "Opp. free-throw rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 42.0,
-     "home": 29.4,
-     "pts": -0.1
-    },
-    {
-     "key": "d_tov",
-     "label": "Turnovers forced (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 17.6,
-     "home": 21.3,
-     "pts": -0.21
-    },
-    {
-     "key": "d_orb",
-     "label": "Opp. offensive rebound % allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 26.3,
-     "home": 27.3,
-     "pts": 0.06
-    },
-    {
-     "key": "d_paint",
-     "label": "Opp. paint share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 40.1,
-     "home": 43.0,
-     "pts": 0.23
-    },
-    {
-     "key": "d_fb",
-     "label": "Opp. transition share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 17.3,
-     "home": 13.7,
-     "pts": -0.23
-    },
-    {
-     "key": "d_ast",
-     "label": "Opp. assist rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 65.5,
-     "home": 56.0,
-     "pts": -0.35
-    },
-    {
-     "key": "d_efg",
-     "label": "Opp. eFG% allowed (shooting results)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 55.6,
-     "home": 45.0,
-     "pts": 0.84
-    },
-    {
-     "key": "d_blk",
-     "label": "Block rate (per opp. 2PA)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 10.4,
-     "home": 17.7,
-     "pts": -0.46
-    },
-    {
-     "key": "d_stl",
-     "label": "Steal rate (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 9.4,
-     "home": 13.7,
-     "pts": -0.1
-    }
-   ],
-   "terms": [
-    {
-     "label": "Underdog / favorite adjustment",
-     "pts": 0.93
-    },
-    {
-     "label": "Neutral-site adjustment",
-     "pts": 0.03
-    },
-    {
-     "label": "Baseline (home/away)",
-     "pts": 0.04
-    }
-   ]
-  },
-  {
-   "gameId": 372932,
-   "date": "2026-11-25T02:55:00.000Z",
-   "home": "Saint Louis",
-   "away": "Grand Canyon",
-   "neutral": true,
-   "venue": "Chaifetz Arena",
-   "spread_home": 1.5,
-   "book": "Draft Kings",
-   "proj_spread_home": -2.0,
-   "pick": "Grand Canyon",
-   "pick_line": "Grand Canyon -1.5",
-   "edge": 1.04,
-   "tier": "lean",
-   "stake": 0,
-   "tempo_flag": false,
-   "line_status": "posted",
-   "model": "early",
-   "games_played": [
-    4,
-    5
-   ],
-   "reasons": [
-    {
-     "text": "Saint Louis gives up more offensive boards",
-     "pts": 0.41
-    },
-    {
-     "text": "Saint Louis has shot better so far",
-     "pts": 0.36
-    },
-    {
-     "text": "Grand Canyon crashes the offensive glass harder",
-     "pts": 0.26
-    }
-   ],
-   "traits": [
-    {
-     "key": "pace",
-     "label": "Tempo (possessions per game)",
-     "group": "Tempo",
-     "kind": "num",
-     "away": 71.0,
-     "home": 72.4,
-     "pts": 0.06
-    },
-    {
-     "key": "o_3par",
-     "label": "3-point attempt rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 40.7,
-     "home": 45.1,
-     "pts": -0.23
-    },
-    {
-     "key": "o_ftr",
-     "label": "Free-throw rate (FTA/FGA)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 42.2,
-     "home": 33.6,
-     "pts": 0.14
-    },
-    {
-     "key": "o_tov",
-     "label": "Turnover rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 16.3,
-     "home": 17.2,
-     "pts": 0.06
-    },
-    {
-     "key": "o_orb",
-     "label": "Offensive rebound %",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 33.3,
-     "home": 29.4,
-     "pts": 0.26
-    },
-    {
-     "key": "o_paint",
-     "label": "Paint share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 44.5,
-     "home": 45.9,
-     "pts": -0.09
-    },
-    {
-     "key": "o_fb",
-     "label": "Transition share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 15.0,
-     "home": 20.7,
-     "pts": -0.28
-    },
-    {
-     "key": "o_ast",
-     "label": "Assist rate (assisted FGM)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 53.4,
-     "home": 59.2,
-     "pts": -0.17
-    },
-    {
-     "key": "o_efg",
-     "label": "eFG% (shooting results)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 53.7,
-     "home": 59.1,
-     "pts": 0.36
-    },
-    {
-     "key": "d_3par",
-     "label": "Opp. 3-point attempt rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 37.8,
-     "home": 41.2,
-     "pts": 0.14
-    },
-    {
-     "key": "d_ftr",
-     "label": "Opp. free-throw rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 41.6,
-     "home": 39.5,
-     "pts": -0.02
-    },
-    {
-     "key": "d_tov",
-     "label": "Turnovers forced (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 18.1,
-     "home": 16.9,
-     "pts": 0.1
-    },
-    {
-     "key": "d_orb",
-     "label": "Opp. offensive rebound % allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 24.3,
-     "home": 30.0,
-     "pts": 0.41
-    },
-    {
-     "key": "d_paint",
-     "label": "Opp. paint share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 40.9,
-     "home": 39.4,
-     "pts": -0.12
-    },
-    {
-     "key": "d_fb",
-     "label": "Opp. transition share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 12.4,
-     "home": 14.4,
-     "pts": 0.19
-    },
-    {
-     "key": "d_ast",
-     "label": "Opp. assist rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 46.3,
-     "home": 52.8,
-     "pts": 0.23
-    },
-    {
-     "key": "d_efg",
-     "label": "Opp. eFG% allowed (shooting results)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 47.2,
-     "home": 44.5,
-     "pts": 0.23
-    },
-    {
-     "key": "d_blk",
-     "label": "Block rate (per opp. 2PA)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 10.4,
-     "home": 10.6,
-     "pts": 0.01
-    },
-    {
-     "key": "d_stl",
-     "label": "Steal rate (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 10.3,
-     "home": 10.6,
-     "pts": 0.01
-    }
-   ],
-   "terms": [
-    {
-     "label": "Underdog / favorite adjustment",
-     "pts": -0.16
-    },
-    {
-     "label": "Neutral-site adjustment",
-     "pts": -0.06
-    },
-    {
-     "label": "Baseline (home/away)",
-     "pts": -0.02
-    }
-   ]
-  },
-  {
-   "gameId": 372934,
-   "date": "2026-11-25T04:18:00.000Z",
-   "home": "Oregon",
-   "away": "St. John's",
-   "neutral": true,
-   "venue": "Michelob ULTRA Arena",
-   "spread_home": 10.5,
-   "book": "Draft Kings",
-   "proj_spread_home": 10.0,
-   "pick": "Oregon",
-   "pick_line": "Oregon +10.5",
-   "edge": 0.4,
-   "tier": "lean",
-   "stake": 0,
-   "tempo_flag": true,
-   "line_status": "posted",
-   "model": "early",
-   "games_played": [
-    5,
-    4
-   ],
-   "reasons": [
-    {
-     "text": "St. John's gives up more paint points",
-     "pts": 1.01
-    },
-    {
-     "text": "Oregon has seen opponents shoot better",
-     "pts": 0.41
-    },
-    {
-     "text": "Oregon takes more 3s",
-     "pts": 0.19
-    }
-   ],
-   "traits": [
-    {
-     "key": "pace",
-     "label": "Tempo (possessions per game)",
-     "group": "Tempo",
-     "kind": "num",
-     "away": 71.6,
-     "home": 67.3,
-     "pts": 0.18
-    },
-    {
-     "key": "o_3par",
-     "label": "3-point attempt rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 36.9,
-     "home": 40.6,
-     "pts": 0.19
-    },
-    {
-     "key": "o_ftr",
-     "label": "Free-throw rate (FTA/FGA)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 37.9,
-     "home": 33.1,
-     "pts": -0.08
-    },
-    {
-     "key": "o_tov",
-     "label": "Turnover rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 14.0,
-     "home": 16.9,
-     "pts": -0.2
-    },
-    {
-     "key": "o_orb",
-     "label": "Offensive rebound %",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 34.4,
-     "home": 33.2,
-     "pts": -0.1
-    },
-    {
-     "key": "o_paint",
-     "label": "Paint share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 45.4,
-     "home": 42.7,
-     "pts": -0.13
-    },
-    {
-     "key": "o_fb",
-     "label": "Transition share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 16.8,
-     "home": 12.5,
-     "pts": -0.2
-    },
-    {
-     "key": "o_ast",
-     "label": "Assist rate (assisted FGM)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 60.2,
-     "home": 61.1,
-     "pts": 0.02
-    },
-    {
-     "key": "o_efg",
-     "label": "eFG% (shooting results)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 53.0,
-     "home": 53.4,
-     "pts": 0.0
-    },
-    {
-     "key": "d_3par",
-     "label": "Opp. 3-point attempt rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 36.2,
-     "home": 42.0,
-     "pts": -0.24
-    },
-    {
-     "key": "d_ftr",
-     "label": "Opp. free-throw rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 28.9,
-     "home": 33.5,
-     "pts": -0.06
-    },
-    {
-     "key": "d_tov",
-     "label": "Turnovers forced (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 20.8,
-     "home": 15.6,
-     "pts": -0.4
-    },
-    {
-     "key": "d_orb",
-     "label": "Opp. offensive rebound % allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 27.7,
-     "home": 30.7,
-     "pts": -0.23
-    },
-    {
-     "key": "d_paint",
-     "label": "Opp. paint share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 46.1,
-     "home": 36.7,
-     "pts": 1.01
-    },
-    {
-     "key": "d_fb",
-     "label": "Opp. transition share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 12.8,
-     "home": 14.1,
-     "pts": -0.13
-    },
-    {
-     "key": "d_ast",
-     "label": "Opp. assist rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 49.3,
-     "home": 53.9,
-     "pts": -0.16
-    },
-    {
-     "key": "d_efg",
-     "label": "Opp. eFG% allowed (shooting results)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 47.2,
-     "home": 50.6,
-     "pts": 0.41
-    },
-    {
-     "key": "d_blk",
-     "label": "Block rate (per opp. 2PA)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 11.8,
-     "home": 12.1,
-     "pts": 0.0
-    },
-    {
-     "key": "d_stl",
-     "label": "Steal rate (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 11.7,
-     "home": 9.5,
-     "pts": 0.07
-    }
-   ],
-   "terms": [
-    {
-     "label": "Underdog / favorite adjustment",
-     "pts": 0.39
-    },
-    {
-     "label": "Neutral-site adjustment",
-     "pts": 0.06
-    },
-    {
-     "label": "Baseline (home/away)",
-     "pts": 0.02
-    }
-   ]
-  },
   {
    "gameId": 372935,
    "date": "2026-11-25T04:59:00.000Z",
@@ -680,16 +8,16 @@
    "away": "Stanford",
    "neutral": true,
    "venue": "Acrisure Arena",
-   "spread_home": null,
-   "book": null,
+   "spread_home": 4.0,
+   "book": "Odds feed (8 books)",
    "proj_spread_home": 2.0,
    "pick": "Stanford",
-   "pick_line": "Stanford -2.0",
-   "edge": 0.45,
+   "pick_line": "Stanford -4.0",
+   "edge": 0.38,
    "tier": "lean",
    "stake": 0,
    "tempo_flag": false,
-   "line_status": "projected",
+   "line_status": "posted",
    "model": "established",
    "games_played": [
     6,
@@ -885,1355 +213,11 @@
    "terms": [
     {
      "label": "Underdog / favorite adjustment",
-     "pts": -0.21
-    },
-    {
-     "label": "Neutral-site adjustment",
-     "pts": -0.25
-    },
-    {
-     "label": "Baseline (home/away)",
-     "pts": 0.04
-    }
-   ]
-  },
-  {
-   "gameId": 375333,
-   "date": "2026-11-25T05:00:00.000Z",
-   "home": "Jacksonville State",
-   "away": "Pacific",
-   "neutral": true,
-   "venue": "Resorts World Event Center",
-   "spread_home": 5.5,
-   "book": "Draft Kings",
-   "proj_spread_home": 3.5,
-   "pick": "Pacific",
-   "pick_line": "Pacific -5.5",
-   "edge": 0.28,
-   "tier": "lean",
-   "stake": 0,
-   "tempo_flag": false,
-   "line_status": "posted",
-   "model": "early",
-   "games_played": [
-    4,
-    5
-   ],
-   "reasons": [
-    {
-     "text": "Jacksonville State gives up more paint points",
-     "pts": 0.53
-    },
-    {
-     "text": "Pacific scores more in the paint",
-     "pts": 0.43
-    },
-    {
-     "text": "Pacific crashes the offensive glass harder",
-     "pts": 0.39
-    }
-   ],
-   "traits": [
-    {
-     "key": "pace",
-     "label": "Tempo (possessions per game)",
-     "group": "Tempo",
-     "kind": "num",
-     "away": 65.4,
-     "home": 66.3,
-     "pts": 0.04
-    },
-    {
-     "key": "o_3par",
-     "label": "3-point attempt rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 36.6,
-     "home": 40.3,
-     "pts": -0.19
-    },
-    {
-     "key": "o_ftr",
-     "label": "Free-throw rate (FTA/FGA)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 30.6,
-     "home": 40.4,
-     "pts": -0.15
-    },
-    {
-     "key": "o_tov",
-     "label": "Turnover rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 20.6,
-     "home": 17.9,
-     "pts": -0.17
-    },
-    {
-     "key": "o_orb",
-     "label": "Offensive rebound %",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 35.2,
-     "home": 29.0,
-     "pts": 0.39
-    },
-    {
-     "key": "o_paint",
-     "label": "Paint share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 47.1,
-     "home": 39.3,
-     "pts": 0.43
-    },
-    {
-     "key": "o_fb",
-     "label": "Transition share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 10.2,
-     "home": 12.7,
-     "pts": -0.13
-    },
-    {
-     "key": "o_ast",
-     "label": "Assist rate (assisted FGM)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 56.0,
-     "home": 52.2,
-     "pts": 0.13
-    },
-    {
-     "key": "o_efg",
-     "label": "eFG% (shooting results)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 53.0,
-     "home": 50.7,
-     "pts": -0.19
-    },
-    {
-     "key": "d_3par",
-     "label": "Opp. 3-point attempt rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 44.1,
-     "home": 40.8,
-     "pts": -0.13
-    },
-    {
-     "key": "d_ftr",
-     "label": "Opp. free-throw rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 37.7,
-     "home": 37.3,
-     "pts": 0.0
-    },
-    {
-     "key": "d_tov",
-     "label": "Turnovers forced (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 16.1,
-     "home": 14.7,
-     "pts": 0.1
-    },
-    {
-     "key": "d_orb",
-     "label": "Opp. offensive rebound % allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 25.4,
-     "home": 29.4,
-     "pts": 0.3
-    },
-    {
-     "key": "d_paint",
-     "label": "Opp. paint share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 37.0,
-     "home": 41.3,
-     "pts": 0.53
-    },
-    {
-     "key": "d_fb",
-     "label": "Opp. transition share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 11.5,
-     "home": 14.6,
-     "pts": 0.29
-    },
-    {
-     "key": "d_ast",
-     "label": "Opp. assist rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 52.5,
-     "home": 49.3,
-     "pts": -0.1
-    },
-    {
-     "key": "d_efg",
-     "label": "Opp. eFG% allowed (shooting results)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 48.0,
-     "home": 50.3,
-     "pts": -0.3
-    },
-    {
-     "key": "d_blk",
-     "label": "Block rate (per opp. 2PA)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 6.8,
-     "home": 10.2,
-     "pts": -0.24
-    },
-    {
-     "key": "d_stl",
-     "label": "Steal rate (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 8.4,
-     "home": 8.8,
-     "pts": 0.01
-    }
-   ],
-   "terms": [
-    {
-     "label": "Underdog / favorite adjustment",
-     "pts": -0.26
-    },
-    {
-     "label": "Neutral-site adjustment",
-     "pts": -0.06
-    },
-    {
-     "label": "Baseline (home/away)",
-     "pts": -0.02
-    }
-   ]
-  },
-  {
-   "gameId": 375315,
-   "date": "2026-11-25T05:00:00.000Z",
-   "home": "Texas State",
-   "away": "Alcorn State",
-   "neutral": false,
-   "venue": "Strahan Arena at the University Events Center",
-   "spread_home": -23.5,
-   "book": "Draft Kings",
-   "proj_spread_home": -30.5,
-   "pick": "Texas State",
-   "pick_line": "Texas State -23.5",
-   "edge": 0.47,
-   "tier": "lean",
-   "stake": 0,
-   "tempo_flag": false,
-   "line_status": "posted",
-   "model": "established",
-   "games_played": [
-    7,
-    6
-   ],
-   "reasons": [
-    {
-     "text": "Alcorn State allows more assisted looks",
-     "pts": 0.8
-    },
-    {
-     "text": "Alcorn State gives up more offensive boards",
-     "pts": 0.45
-    },
-    {
-     "text": "Alcorn State plays faster",
-     "pts": 0.4
-    }
-   ],
-   "traits": [
-    {
-     "key": "pace",
-     "label": "Tempo (possessions per game)",
-     "group": "Tempo",
-     "kind": "num",
-     "away": 73.4,
-     "home": 66.0,
-     "pts": 0.4
-    },
-    {
-     "key": "o_3par",
-     "label": "3-point attempt rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 35.7,
-     "home": 35.2,
-     "pts": -0.02
-    },
-    {
-     "key": "o_ftr",
-     "label": "Free-throw rate (FTA/FGA)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 34.6,
-     "home": 51.8,
-     "pts": 0.23
-    },
-    {
-     "key": "o_tov",
-     "label": "Turnover rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 23.2,
-     "home": 20.5,
-     "pts": 0.16
-    },
-    {
-     "key": "o_orb",
-     "label": "Offensive rebound %",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 30.6,
-     "home": 37.1,
-     "pts": 0.36
-    },
-    {
-     "key": "o_paint",
-     "label": "Paint share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 34.8,
-     "home": 37.9,
-     "pts": 0.15
-    },
-    {
-     "key": "o_fb",
-     "label": "Transition share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 15.3,
-     "home": 15.8,
-     "pts": 0.02
-    },
-    {
-     "key": "o_ast",
-     "label": "Assist rate (assisted FGM)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 44.2,
-     "home": 53.5,
-     "pts": 0.32
-    },
-    {
-     "key": "o_efg",
-     "label": "eFG% (shooting results)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 36.4,
-     "home": 58.8,
-     "pts": -1.59
-    },
-    {
-     "key": "d_3par",
-     "label": "Opp. 3-point attempt rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 41.5,
-     "home": 36.7,
-     "pts": 0.16
-    },
-    {
-     "key": "d_ftr",
-     "label": "Opp. free-throw rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 54.1,
-     "home": 34.6,
-     "pts": 0.15
-    },
-    {
-     "key": "d_tov",
-     "label": "Turnovers forced (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 15.4,
-     "home": 20.6,
-     "pts": 0.29
-    },
-    {
-     "key": "d_orb",
-     "label": "Opp. offensive rebound % allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 41.9,
-     "home": 32.4,
-     "pts": 0.45
-    },
-    {
-     "key": "d_paint",
-     "label": "Opp. paint share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 45.8,
-     "home": 48.1,
-     "pts": -0.19
-    },
-    {
-     "key": "d_fb",
-     "label": "Opp. transition share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 20.2,
-     "home": 14.2,
-     "pts": 0.39
-    },
-    {
-     "key": "d_ast",
-     "label": "Opp. assist rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 58.6,
-     "home": 37.1,
-     "pts": 0.8
-    },
-    {
-     "key": "d_efg",
-     "label": "Opp. eFG% allowed (shooting results)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 59.9,
-     "home": 45.6,
-     "pts": -1.14
-    },
-    {
-     "key": "d_blk",
-     "label": "Block rate (per opp. 2PA)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 4.5,
-     "home": 8.0,
-     "pts": 0.21
-    },
-    {
-     "key": "d_stl",
-     "label": "Steal rate (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 9.1,
-     "home": 9.6,
-     "pts": 0.01
-    }
-   ],
-   "terms": [
-    {
-     "label": "Underdog / favorite adjustment",
-     "pts": -0.64
-    },
-    {
-     "label": "Neutral-site adjustment",
-     "pts": -0.03
-    },
-    {
-     "label": "Baseline (home/away)",
-     "pts": -0.04
-    }
-   ]
-  },
-  {
-   "gameId": 375326,
-   "date": "2026-11-25T05:00:00.000Z",
-   "home": "UNC Wilmington",
-   "away": "St. Thomas-Minnesota",
-   "neutral": false,
-   "venue": "Trask Coliseum",
-   "spread_home": -6.5,
-   "book": "Draft Kings",
-   "proj_spread_home": -3.5,
-   "pick": "UNC Wilmington",
-   "pick_line": "UNC Wilmington -6.5",
-   "edge": 0.92,
-   "tier": "lean",
-   "stake": 0,
-   "tempo_flag": false,
-   "line_status": "posted",
-   "model": "early",
-   "games_played": [
-    7,
-    4
-   ],
-   "reasons": [
-    {
-     "text": "St. Thomas-Minnesota gives up more paint points",
-     "pts": 0.79
-    },
-    {
-     "text": "UNC Wilmington crashes the offensive glass harder",
-     "pts": 0.75
-    },
-    {
-     "text": "St. Thomas-Minnesota has shot better so far",
-     "pts": 0.48
-    }
-   ],
-   "traits": [
-    {
-     "key": "pace",
-     "label": "Tempo (possessions per game)",
-     "group": "Tempo",
-     "kind": "num",
-     "away": 67.7,
-     "home": 68.3,
-     "pts": -0.03
-    },
-    {
-     "key": "o_3par",
-     "label": "3-point attempt rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 46.3,
-     "home": 39.7,
-     "pts": -0.34
-    },
-    {
-     "key": "o_ftr",
-     "label": "Free-throw rate (FTA/FGA)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 38.6,
-     "home": 44.7,
-     "pts": 0.09
-    },
-    {
-     "key": "o_tov",
-     "label": "Turnover rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 13.6,
-     "home": 15.7,
-     "pts": -0.15
-    },
-    {
-     "key": "o_orb",
-     "label": "Offensive rebound %",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 23.2,
-     "home": 36.1,
-     "pts": 0.75
-    },
-    {
-     "key": "o_paint",
-     "label": "Paint share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 45.9,
-     "home": 41.1,
-     "pts": -0.26
-    },
-    {
-     "key": "o_fb",
-     "label": "Transition share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 12.4,
-     "home": 10.7,
-     "pts": -0.07
-    },
-    {
-     "key": "o_ast",
-     "label": "Assist rate (assisted FGM)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 56.6,
-     "home": 51.7,
-     "pts": -0.16
-    },
-    {
-     "key": "o_efg",
-     "label": "eFG% (shooting results)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 58.5,
-     "home": 52.1,
-     "pts": 0.48
-    },
-    {
-     "key": "d_3par",
-     "label": "Opp. 3-point attempt rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 42.7,
-     "home": 45.4,
-     "pts": -0.11
-    },
-    {
-     "key": "d_ftr",
-     "label": "Opp. free-throw rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 31.4,
-     "home": 35.1,
-     "pts": -0.05
-    },
-    {
-     "key": "d_tov",
-     "label": "Turnovers forced (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 16.8,
-     "home": 15.0,
-     "pts": -0.14
-    },
-    {
-     "key": "d_orb",
-     "label": "Opp. offensive rebound % allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 30.4,
-     "home": 27.3,
-     "pts": 0.2
-    },
-    {
-     "key": "d_paint",
-     "label": "Opp. paint share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 45.1,
-     "home": 37.6,
-     "pts": 0.79
-    },
-    {
-     "key": "d_fb",
-     "label": "Opp. transition share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 12.6,
-     "home": 15.1,
-     "pts": -0.23
-    },
-    {
-     "key": "d_ast",
-     "label": "Opp. assist rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 55.4,
-     "home": 49.8,
-     "pts": 0.18
-    },
-    {
-     "key": "d_efg",
-     "label": "Opp. eFG% allowed (shooting results)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 50.5,
-     "home": 49.1,
-     "pts": -0.11
-    },
-    {
-     "key": "d_blk",
-     "label": "Block rate (per opp. 2PA)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 7.1,
-     "home": 7.8,
-     "pts": 0.03
-    },
-    {
-     "key": "d_stl",
-     "label": "Steal rate (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 9.8,
-     "home": 7.7,
-     "pts": 0.07
-    }
-   ],
-   "terms": [
-    {
-     "label": "Underdog / favorite adjustment",
-     "pts": -0.03
-    },
-    {
-     "label": "Neutral-site adjustment",
-     "pts": -0.01
-    },
-    {
-     "label": "Baseline (home/away)",
-     "pts": 0.02
-    }
-   ]
-  },
-  {
-   "gameId": 375327,
-   "date": "2026-11-25T05:00:00.000Z",
-   "home": "George Mason",
-   "away": "Longwood",
-   "neutral": false,
-   "venue": "EagleBank Arena",
-   "spread_home": -15.5,
-   "book": "Draft Kings",
-   "proj_spread_home": -13.5,
-   "pick": "George Mason",
-   "pick_line": "George Mason -15.5",
-   "edge": 2.03,
-   "tier": "strong",
-   "stake": 2,
-   "tempo_flag": false,
-   "line_status": "posted",
-   "model": "established",
-   "games_played": [
-    5,
-    6
-   ],
-   "reasons": [
-    {
-     "text": "Longwood gives up more paint points",
-     "pts": 0.86
-    },
-    {
-     "text": "George Mason scores more in the paint",
-     "pts": 0.54
-    },
-    {
-     "text": "George Mason forces more turnovers",
-     "pts": 0.53
-    }
-   ],
-   "traits": [
-    {
-     "key": "pace",
-     "label": "Tempo (possessions per game)",
-     "group": "Tempo",
-     "kind": "num",
-     "away": 73.0,
-     "home": 66.8,
-     "pts": 0.33
-    },
-    {
-     "key": "o_3par",
-     "label": "3-point attempt rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 53.8,
-     "home": 32.2,
-     "pts": -1.02
-    },
-    {
-     "key": "o_ftr",
-     "label": "Free-throw rate (FTA/FGA)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 36.7,
-     "home": 47.7,
-     "pts": 0.15
-    },
-    {
-     "key": "o_tov",
-     "label": "Turnover rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 18.9,
-     "home": 17.1,
-     "pts": 0.11
-    },
-    {
-     "key": "o_orb",
-     "label": "Offensive rebound %",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 28.4,
-     "home": 36.4,
-     "pts": 0.45
-    },
-    {
-     "key": "o_paint",
-     "label": "Paint share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 37.3,
-     "home": 48.5,
-     "pts": 0.54
-    },
-    {
-     "key": "o_fb",
-     "label": "Transition share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 15.3,
-     "home": 19.2,
-     "pts": 0.14
-    },
-    {
-     "key": "o_ast",
-     "label": "Assist rate (assisted FGM)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 53.1,
-     "home": 53.1,
-     "pts": -0.01
-    },
-    {
-     "key": "o_efg",
-     "label": "eFG% (shooting results)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 50.7,
-     "home": 48.7,
-     "pts": 0.17
-    },
-    {
-     "key": "d_3par",
-     "label": "Opp. 3-point attempt rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 40.8,
-     "home": 38.6,
-     "pts": 0.07
-    },
-    {
-     "key": "d_ftr",
-     "label": "Opp. free-throw rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 39.8,
-     "home": 30.1,
-     "pts": 0.07
-    },
-    {
-     "key": "d_tov",
-     "label": "Turnovers forced (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 12.9,
-     "home": 22.4,
-     "pts": 0.53
-    },
-    {
-     "key": "d_orb",
-     "label": "Opp. offensive rebound % allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 26.8,
-     "home": 19.0,
-     "pts": 0.37
-    },
-    {
-     "key": "d_paint",
-     "label": "Opp. paint share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 40.9,
-     "home": 28.8,
-     "pts": 0.86
-    },
-    {
-     "key": "d_fb",
-     "label": "Opp. transition share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 11.6,
-     "home": 11.9,
-     "pts": -0.03
-    },
-    {
-     "key": "d_ast",
-     "label": "Opp. assist rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 48.6,
-     "home": 51.8,
-     "pts": -0.13
-    },
-    {
-     "key": "d_efg",
-     "label": "Opp. eFG% allowed (shooting results)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 48.5,
-     "home": 45.3,
-     "pts": -0.22
-    },
-    {
-     "key": "d_blk",
-     "label": "Block rate (per opp. 2PA)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 9.6,
-     "home": 9.6,
-     "pts": -0.02
-    },
-    {
-     "key": "d_stl",
-     "label": "Steal rate (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 7.1,
-     "home": 11.5,
-     "pts": 0.1
-    }
-   ],
-   "terms": [
-    {
-     "label": "Underdog / favorite adjustment",
-     "pts": -0.37
-    },
-    {
-     "label": "Neutral-site adjustment",
-     "pts": -0.03
-    },
-    {
-     "label": "Baseline (home/away)",
-     "pts": -0.04
-    }
-   ]
-  },
-  {
-   "gameId": 372939,
-   "date": "2026-11-25T05:00:00.000Z",
-   "home": "Richmond",
-   "away": "Bethune-Cookman",
-   "neutral": false,
-   "venue": "Robins Center",
-   "spread_home": -12.5,
-   "book": "Draft Kings",
-   "proj_spread_home": -14.0,
-   "pick": "Bethune-Cookman",
-   "pick_line": "Bethune-Cookman +12.5",
-   "edge": 0.14,
-   "tier": "lean",
-   "stake": 0,
-   "tempo_flag": false,
-   "line_status": "posted",
-   "model": "established",
-   "games_played": [
-    5,
-    6
-   ],
-   "reasons": [
-    {
-     "text": "Bethune-Cookman has seen opponents shoot better",
-     "pts": 0.51
-    },
-    {
-     "text": "Richmond has shot better so far",
-     "pts": 0.46
-    },
-    {
-     "text": "Richmond gives up more transition",
-     "pts": 0.24
-    }
-   ],
-   "traits": [
-    {
-     "key": "pace",
-     "label": "Tempo (possessions per game)",
-     "group": "Tempo",
-     "kind": "num",
-     "away": 70.4,
-     "home": 72.0,
-     "pts": 0.09
-    },
-    {
-     "key": "o_3par",
-     "label": "3-point attempt rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 35.2,
-     "home": 35.3,
-     "pts": -0.01
-    },
-    {
-     "key": "o_ftr",
-     "label": "Free-throw rate (FTA/FGA)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 39.9,
-     "home": 28.4,
-     "pts": 0.16
-    },
-    {
-     "key": "o_tov",
-     "label": "Turnover rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 22.0,
-     "home": 18.4,
-     "pts": -0.22
-    },
-    {
-     "key": "o_orb",
-     "label": "Offensive rebound %",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 27.4,
-     "home": 27.2,
-     "pts": 0.03
-    },
-    {
-     "key": "o_paint",
-     "label": "Paint share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 39.2,
-     "home": 44.2,
-     "pts": -0.25
-    },
-    {
-     "key": "o_fb",
-     "label": "Transition share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 14.4,
-     "home": 11.0,
-     "pts": 0.12
-    },
-    {
-     "key": "o_ast",
-     "label": "Assist rate (assisted FGM)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 40.7,
-     "home": 61.7,
-     "pts": -0.73
-    },
-    {
-     "key": "o_efg",
-     "label": "eFG% (shooting results)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 48.6,
-     "home": 55.4,
-     "pts": 0.46
-    },
-    {
-     "key": "d_3par",
-     "label": "Opp. 3-point attempt rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 42.2,
-     "home": 42.6,
-     "pts": 0.02
-    },
-    {
-     "key": "d_ftr",
-     "label": "Opp. free-throw rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 48.5,
-     "home": 36.1,
-     "pts": -0.09
-    },
-    {
-     "key": "d_tov",
-     "label": "Turnovers forced (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 17.7,
-     "home": 19.6,
-     "pts": -0.1
-    },
-    {
-     "key": "d_orb",
-     "label": "Opp. offensive rebound % allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 34.9,
-     "home": 29.7,
-     "pts": -0.24
-    },
-    {
-     "key": "d_paint",
-     "label": "Opp. paint share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 43.7,
-     "home": 45.0,
-     "pts": 0.11
-    },
-    {
-     "key": "d_fb",
-     "label": "Opp. transition share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 14.0,
-     "home": 17.3,
-     "pts": 0.24
-    },
-    {
-     "key": "d_ast",
-     "label": "Opp. assist rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 60.1,
-     "home": 52.0,
-     "pts": -0.3
-    },
-    {
-     "key": "d_efg",
-     "label": "Opp. eFG% allowed (shooting results)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 58.5,
-     "home": 51.9,
-     "pts": 0.51
-    },
-    {
-     "key": "d_blk",
-     "label": "Block rate (per opp. 2PA)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 7.1,
-     "home": 6.8,
-     "pts": 0.03
-    },
-    {
-     "key": "d_stl",
-     "label": "Steal rate (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 11.0,
-     "home": 12.5,
-     "pts": -0.03
-    }
-   ],
-   "terms": [
-    {
-     "label": "Underdog / favorite adjustment",
-     "pts": 0.27
-    },
-    {
-     "label": "Neutral-site adjustment",
-     "pts": 0.03
-    },
-    {
-     "label": "Baseline (home/away)",
-     "pts": 0.04
-    }
-   ]
-  },
-  {
-   "gameId": 372943,
-   "date": "2026-11-25T05:00:00.000Z",
-   "home": "Syracuse",
-   "away": "UAlbany",
-   "neutral": false,
-   "venue": "JMA Wireless Dome",
-   "spread_home": -26.5,
-   "book": "Draft Kings",
-   "proj_spread_home": -13.0,
-   "pick": "UAlbany",
-   "pick_line": "UAlbany +26.5",
-   "edge": 1.2,
-   "tier": "lean",
-   "stake": 0,
-   "tempo_flag": true,
-   "line_status": "posted",
-   "model": "established",
-   "games_played": [
-    7,
-    6
-   ],
-   "reasons": [
-    {
-     "text": "Syracuse has shot better so far",
-     "pts": 0.53
-    },
-    {
-     "text": "UAlbany scores more in the paint",
-     "pts": 0.38
-    },
-    {
-     "text": "UAlbany crashes the offensive glass harder",
-     "pts": 0.35
-    }
-   ],
-   "traits": [
-    {
-     "key": "pace",
-     "label": "Tempo (possessions per game)",
-     "group": "Tempo",
-     "kind": "num",
-     "away": 68.1,
-     "home": 69.8,
-     "pts": 0.09
-    },
-    {
-     "key": "o_3par",
-     "label": "3-point attempt rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 33.9,
-     "home": 36.8,
-     "pts": -0.14
-    },
-    {
-     "key": "o_ftr",
-     "label": "Free-throw rate (FTA/FGA)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 35.6,
-     "home": 41.5,
-     "pts": -0.08
-    },
-    {
-     "key": "o_tov",
-     "label": "Turnover rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 18.2,
-     "home": 15.0,
-     "pts": -0.2
-    },
-    {
-     "key": "o_orb",
-     "label": "Offensive rebound %",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 36.7,
-     "home": 31.1,
-     "pts": 0.35
-    },
-    {
-     "key": "o_paint",
-     "label": "Paint share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 55.3,
-     "home": 47.1,
-     "pts": 0.38
-    },
-    {
-     "key": "o_fb",
-     "label": "Transition share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 16.0,
-     "home": 14.9,
-     "pts": 0.04
-    },
-    {
-     "key": "o_ast",
-     "label": "Assist rate (assisted FGM)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 48.2,
-     "home": 54.4,
-     "pts": -0.21
-    },
-    {
-     "key": "o_efg",
-     "label": "eFG% (shooting results)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 47.1,
-     "home": 54.8,
-     "pts": 0.53
-    },
-    {
-     "key": "d_3par",
-     "label": "Opp. 3-point attempt rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 39.9,
-     "home": 38.3,
-     "pts": -0.05
-    },
-    {
-     "key": "d_ftr",
-     "label": "Opp. free-throw rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 35.4,
-     "home": 27.6,
-     "pts": -0.06
-    },
-    {
-     "key": "d_tov",
-     "label": "Turnovers forced (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 18.9,
-     "home": 18.6,
-     "pts": 0.02
-    },
-    {
-     "key": "d_orb",
-     "label": "Opp. offensive rebound % allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 31.8,
-     "home": 25.8,
      "pts": -0.28
     },
     {
-     "key": "d_paint",
-     "label": "Opp. paint share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 44.4,
-     "home": 44.6,
-     "pts": 0.04
-    },
-    {
-     "key": "d_fb",
-     "label": "Opp. transition share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 12.5,
-     "home": 11.9,
-     "pts": -0.03
-    },
-    {
-     "key": "d_ast",
-     "label": "Opp. assist rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 51.9,
-     "home": 56.0,
-     "pts": 0.16
-    },
-    {
-     "key": "d_efg",
-     "label": "Opp. eFG% allowed (shooting results)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 52.2,
-     "home": 50.6,
-     "pts": 0.1
-    },
-    {
-     "key": "d_blk",
-     "label": "Block rate (per opp. 2PA)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 11.4,
-     "home": 15.5,
-     "pts": -0.25
-    },
-    {
-     "key": "d_stl",
-     "label": "Steal rate (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 11.9,
-     "home": 13.3,
-     "pts": -0.03
-    }
-   ],
-   "terms": [
-    {
-     "label": "Underdog / favorite adjustment",
-     "pts": 0.73
-    },
-    {
      "label": "Neutral-site adjustment",
-     "pts": 0.03
+     "pts": -0.25
     },
     {
      "label": "Baseline (home/away)",
@@ -2466,39 +450,39 @@
    ]
   },
   {
-   "gameId": 375331,
+   "gameId": 375320,
    "date": "2026-11-25T05:00:00.000Z",
-   "home": "NC State",
-   "away": "Norfolk State",
+   "home": "Northwestern State",
+   "away": "West Florida",
    "neutral": false,
-   "venue": "Lenovo Center",
-   "spread_home": -28.5,
+   "venue": "Prather Coliseum",
+   "spread_home": -1.5,
    "book": "Draft Kings",
-   "proj_spread_home": -18.5,
-   "pick": "Norfolk State",
-   "pick_line": "Norfolk State +28.5",
-   "edge": 1.64,
-   "tier": "play",
-   "stake": 1,
+   "proj_spread_home": 4.5,
+   "pick": "West Florida",
+   "pick_line": "West Florida +1.5",
+   "edge": 0.29,
+   "tier": "lean",
+   "stake": 0,
    "tempo_flag": false,
    "line_status": "posted",
    "model": "established",
    "games_played": [
     5,
-    6
+    5
    ],
    "reasons": [
     {
-     "text": "Norfolk State has seen opponents shoot better",
-     "pts": 1.16
+     "text": "West Florida takes more 3s",
+     "pts": 0.93
     },
     {
-     "text": "NC State gives up more paint points",
-     "pts": 0.71
+     "text": "West Florida moves the ball better (assist rate)",
+     "pts": 0.63
     },
     {
-     "text": "NC State has shot better so far",
-     "pts": 0.7
+     "text": "West Florida crashes the offensive glass harder",
+     "pts": 0.19
     }
    ],
    "traits": [
@@ -2507,98 +491,98 @@
      "label": "Tempo (possessions per game)",
      "group": "Tempo",
      "kind": "num",
-     "away": 66.6,
-     "home": 69.0,
-     "pts": 0.13
+     "away": 69.8,
+     "home": 68.2,
+     "pts": -0.09
     },
     {
      "key": "o_3par",
      "label": "3-point attempt rate",
      "group": "Offense",
      "kind": "pct",
-     "away": 43.1,
-     "home": 47.3,
-     "pts": -0.2
+     "away": 49.5,
+     "home": 29.8,
+     "pts": 0.93
     },
     {
      "key": "o_ftr",
      "label": "Free-throw rate (FTA/FGA)",
      "group": "Offense",
      "kind": "pct",
-     "away": 42.1,
-     "home": 34.3,
-     "pts": 0.11
+     "away": 38.3,
+     "home": 43.6,
+     "pts": -0.07
     },
     {
      "key": "o_tov",
      "label": "Turnover rate",
      "group": "Offense",
      "kind": "pct",
-     "away": 19.6,
-     "home": 17.5,
-     "pts": -0.13
+     "away": 16.9,
+     "home": 17.4,
+     "pts": 0.04
     },
     {
      "key": "o_orb",
      "label": "Offensive rebound %",
      "group": "Offense",
      "kind": "pct",
-     "away": 30.8,
-     "home": 36.2,
-     "pts": -0.29
+     "away": 28.8,
+     "home": 25.9,
+     "pts": 0.19
     },
     {
      "key": "o_paint",
      "label": "Paint share of points",
      "group": "Offense",
      "kind": "pct",
-     "away": 40.6,
-     "home": 41.1,
-     "pts": -0.03
+     "away": 30.2,
+     "home": 41.4,
+     "pts": -0.54
     },
     {
      "key": "o_fb",
      "label": "Transition share of points",
      "group": "Offense",
      "kind": "pct",
-     "away": 19.0,
-     "home": 11.9,
-     "pts": 0.26
+     "away": 13.1,
+     "home": 11.6,
+     "pts": 0.05
     },
     {
      "key": "o_ast",
      "label": "Assist rate (assisted FGM)",
      "group": "Offense",
      "kind": "pct",
-     "away": 56.4,
-     "home": 66.6,
-     "pts": -0.35
+     "away": 61.3,
+     "home": 43.7,
+     "pts": 0.63
     },
     {
      "key": "o_efg",
      "label": "eFG% (shooting results)",
      "group": "Offense",
      "kind": "pct",
-     "away": 47.7,
-     "home": 57.8,
-     "pts": 0.7
+     "away": 50.4,
+     "home": 43.3,
+     "pts": -0.54
     },
     {
      "key": "d_3par",
      "label": "Opp. 3-point attempt rate allowed",
      "group": "Defense",
      "kind": "pct",
-     "away": 51.9,
-     "home": 37.6,
-     "pts": -0.48
+     "away": 36.7,
+     "home": 40.2,
+     "pts": 0.12
     },
     {
      "key": "d_ftr",
      "label": "Opp. free-throw rate allowed",
      "group": "Defense",
      "kind": "pct",
-     "away": 38.5,
-     "home": 33.4,
+     "away": 49.5,
+     "home": 43.7,
      "pts": -0.04
     },
     {
@@ -2606,78 +590,78 @@
      "label": "Turnovers forced (per poss.)",
      "group": "Defense",
      "kind": "pct",
-     "away": 16.5,
-     "home": 17.5,
-     "pts": -0.05
+     "away": 20.0,
+     "home": 17.2,
+     "pts": 0.16
     },
     {
      "key": "d_orb",
      "label": "Opp. offensive rebound % allowed",
      "group": "Defense",
      "kind": "pct",
-     "away": 35.8,
-     "home": 30.0,
-     "pts": -0.27
+     "away": 36.0,
+     "home": 37.7,
+     "pts": 0.09
     },
     {
      "key": "d_paint",
      "label": "Opp. paint share allowed",
      "group": "Defense",
      "kind": "pct",
-     "away": 35.0,
-     "home": 44.5,
-     "pts": 0.71
+     "away": 44.8,
+     "home": 39.9,
+     "pts": -0.34
     },
     {
      "key": "d_fb",
      "label": "Opp. transition share allowed",
      "group": "Defense",
      "kind": "pct",
-     "away": 12.1,
-     "home": 12.8,
-     "pts": 0.06
+     "away": 14.3,
+     "home": 11.5,
+     "pts": -0.17
     },
     {
      "key": "d_ast",
      "label": "Opp. assist rate allowed",
      "group": "Defense",
      "kind": "pct",
-     "away": 68.6,
-     "home": 44.5,
-     "pts": -0.9
+     "away": 48.2,
+     "home": 50.5,
+     "pts": 0.1
     },
     {
      "key": "d_efg",
      "label": "Opp. eFG% allowed (shooting results)",
      "group": "Defense",
      "kind": "pct",
-     "away": 63.4,
-     "home": 48.8,
-     "pts": 1.16
+     "away": 51.3,
+     "home": 53.2,
+     "pts": -0.19
     },
     {
      "key": "d_blk",
      "label": "Block rate (per opp. 2PA)",
      "group": "Defense",
      "kind": "pct",
-     "away": 14.3,
-     "home": 9.7,
-     "pts": 0.32
+     "away": 4.9,
+     "home": 5.7,
+     "pts": -0.04
     },
     {
      "key": "d_stl",
      "label": "Steal rate (per poss.)",
      "group": "Defense",
      "kind": "pct",
-     "away": 11.9,
-     "home": 9.1,
-     "pts": 0.07
+     "away": 11.3,
+     "home": 10.7,
+     "pts": 0.02
     }
    ],
    "terms": [
     {
      "label": "Underdog / favorite adjustment",
-     "pts": 0.8
+     "pts": -0.09
     },
     {
      "label": "Neutral-site adjustment",
@@ -2914,6 +898,1574 @@
    ]
   },
   {
+   "gameId": 372943,
+   "date": "2026-11-25T05:00:00.000Z",
+   "home": "Syracuse",
+   "away": "UAlbany",
+   "neutral": false,
+   "venue": "JMA Wireless Dome",
+   "spread_home": -26.5,
+   "book": "Draft Kings",
+   "proj_spread_home": -13.0,
+   "pick": "UAlbany",
+   "pick_line": "UAlbany +26.5",
+   "edge": 1.2,
+   "tier": "lean",
+   "stake": 0,
+   "tempo_flag": true,
+   "line_status": "posted",
+   "model": "established",
+   "games_played": [
+    7,
+    6
+   ],
+   "reasons": [
+    {
+     "text": "Syracuse has shot better so far",
+     "pts": 0.53
+    },
+    {
+     "text": "UAlbany scores more in the paint",
+     "pts": 0.38
+    },
+    {
+     "text": "UAlbany crashes the offensive glass harder",
+     "pts": 0.35
+    }
+   ],
+   "traits": [
+    {
+     "key": "pace",
+     "label": "Tempo (possessions per game)",
+     "group": "Tempo",
+     "kind": "num",
+     "away": 68.1,
+     "home": 69.8,
+     "pts": 0.09
+    },
+    {
+     "key": "o_3par",
+     "label": "3-point attempt rate",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 33.9,
+     "home": 36.8,
+     "pts": -0.14
+    },
+    {
+     "key": "o_ftr",
+     "label": "Free-throw rate (FTA/FGA)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 35.6,
+     "home": 41.5,
+     "pts": -0.08
+    },
+    {
+     "key": "o_tov",
+     "label": "Turnover rate",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 18.2,
+     "home": 15.0,
+     "pts": -0.2
+    },
+    {
+     "key": "o_orb",
+     "label": "Offensive rebound %",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 36.7,
+     "home": 31.1,
+     "pts": 0.35
+    },
+    {
+     "key": "o_paint",
+     "label": "Paint share of points",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 55.3,
+     "home": 47.1,
+     "pts": 0.38
+    },
+    {
+     "key": "o_fb",
+     "label": "Transition share of points",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 16.0,
+     "home": 14.9,
+     "pts": 0.04
+    },
+    {
+     "key": "o_ast",
+     "label": "Assist rate (assisted FGM)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 48.2,
+     "home": 54.4,
+     "pts": -0.21
+    },
+    {
+     "key": "o_efg",
+     "label": "eFG% (shooting results)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 47.1,
+     "home": 54.8,
+     "pts": 0.53
+    },
+    {
+     "key": "d_3par",
+     "label": "Opp. 3-point attempt rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 39.9,
+     "home": 38.3,
+     "pts": -0.05
+    },
+    {
+     "key": "d_ftr",
+     "label": "Opp. free-throw rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 35.4,
+     "home": 27.6,
+     "pts": -0.06
+    },
+    {
+     "key": "d_tov",
+     "label": "Turnovers forced (per poss.)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 18.9,
+     "home": 18.6,
+     "pts": 0.02
+    },
+    {
+     "key": "d_orb",
+     "label": "Opp. offensive rebound % allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 31.8,
+     "home": 25.8,
+     "pts": -0.28
+    },
+    {
+     "key": "d_paint",
+     "label": "Opp. paint share allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 44.4,
+     "home": 44.6,
+     "pts": 0.04
+    },
+    {
+     "key": "d_fb",
+     "label": "Opp. transition share allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 12.5,
+     "home": 11.9,
+     "pts": -0.03
+    },
+    {
+     "key": "d_ast",
+     "label": "Opp. assist rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 51.9,
+     "home": 56.0,
+     "pts": 0.16
+    },
+    {
+     "key": "d_efg",
+     "label": "Opp. eFG% allowed (shooting results)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 52.2,
+     "home": 50.6,
+     "pts": 0.1
+    },
+    {
+     "key": "d_blk",
+     "label": "Block rate (per opp. 2PA)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 11.4,
+     "home": 15.5,
+     "pts": -0.25
+    },
+    {
+     "key": "d_stl",
+     "label": "Steal rate (per poss.)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 11.9,
+     "home": 13.3,
+     "pts": -0.03
+    }
+   ],
+   "terms": [
+    {
+     "label": "Underdog / favorite adjustment",
+     "pts": 0.73
+    },
+    {
+     "label": "Neutral-site adjustment",
+     "pts": 0.03
+    },
+    {
+     "label": "Baseline (home/away)",
+     "pts": 0.04
+    }
+   ]
+  },
+  {
+   "gameId": 375315,
+   "date": "2026-11-25T05:00:00.000Z",
+   "home": "Texas State",
+   "away": "Alcorn State",
+   "neutral": false,
+   "venue": "Strahan Arena at the University Events Center",
+   "spread_home": -23.5,
+   "book": "Draft Kings",
+   "proj_spread_home": -30.5,
+   "pick": "Texas State",
+   "pick_line": "Texas State -23.5",
+   "edge": 0.47,
+   "tier": "lean",
+   "stake": 0,
+   "tempo_flag": false,
+   "line_status": "posted",
+   "model": "established",
+   "games_played": [
+    7,
+    6
+   ],
+   "reasons": [
+    {
+     "text": "Alcorn State allows more assisted looks",
+     "pts": 0.8
+    },
+    {
+     "text": "Alcorn State gives up more offensive boards",
+     "pts": 0.45
+    },
+    {
+     "text": "Alcorn State plays faster",
+     "pts": 0.4
+    }
+   ],
+   "traits": [
+    {
+     "key": "pace",
+     "label": "Tempo (possessions per game)",
+     "group": "Tempo",
+     "kind": "num",
+     "away": 73.4,
+     "home": 66.0,
+     "pts": 0.4
+    },
+    {
+     "key": "o_3par",
+     "label": "3-point attempt rate",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 35.7,
+     "home": 35.2,
+     "pts": -0.02
+    },
+    {
+     "key": "o_ftr",
+     "label": "Free-throw rate (FTA/FGA)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 34.6,
+     "home": 51.8,
+     "pts": 0.23
+    },
+    {
+     "key": "o_tov",
+     "label": "Turnover rate",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 23.2,
+     "home": 20.5,
+     "pts": 0.16
+    },
+    {
+     "key": "o_orb",
+     "label": "Offensive rebound %",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 30.6,
+     "home": 37.1,
+     "pts": 0.36
+    },
+    {
+     "key": "o_paint",
+     "label": "Paint share of points",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 34.8,
+     "home": 37.9,
+     "pts": 0.15
+    },
+    {
+     "key": "o_fb",
+     "label": "Transition share of points",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 15.3,
+     "home": 15.8,
+     "pts": 0.02
+    },
+    {
+     "key": "o_ast",
+     "label": "Assist rate (assisted FGM)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 44.2,
+     "home": 53.5,
+     "pts": 0.32
+    },
+    {
+     "key": "o_efg",
+     "label": "eFG% (shooting results)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 36.4,
+     "home": 58.8,
+     "pts": -1.59
+    },
+    {
+     "key": "d_3par",
+     "label": "Opp. 3-point attempt rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 41.5,
+     "home": 36.7,
+     "pts": 0.16
+    },
+    {
+     "key": "d_ftr",
+     "label": "Opp. free-throw rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 54.1,
+     "home": 34.6,
+     "pts": 0.15
+    },
+    {
+     "key": "d_tov",
+     "label": "Turnovers forced (per poss.)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 15.4,
+     "home": 20.6,
+     "pts": 0.29
+    },
+    {
+     "key": "d_orb",
+     "label": "Opp. offensive rebound % allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 41.9,
+     "home": 32.4,
+     "pts": 0.45
+    },
+    {
+     "key": "d_paint",
+     "label": "Opp. paint share allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 45.8,
+     "home": 48.1,
+     "pts": -0.19
+    },
+    {
+     "key": "d_fb",
+     "label": "Opp. transition share allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 20.2,
+     "home": 14.2,
+     "pts": 0.39
+    },
+    {
+     "key": "d_ast",
+     "label": "Opp. assist rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 58.6,
+     "home": 37.1,
+     "pts": 0.8
+    },
+    {
+     "key": "d_efg",
+     "label": "Opp. eFG% allowed (shooting results)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 59.9,
+     "home": 45.6,
+     "pts": -1.14
+    },
+    {
+     "key": "d_blk",
+     "label": "Block rate (per opp. 2PA)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 4.5,
+     "home": 8.0,
+     "pts": 0.21
+    },
+    {
+     "key": "d_stl",
+     "label": "Steal rate (per poss.)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 9.1,
+     "home": 9.6,
+     "pts": 0.01
+    }
+   ],
+   "terms": [
+    {
+     "label": "Underdog / favorite adjustment",
+     "pts": -0.64
+    },
+    {
+     "label": "Neutral-site adjustment",
+     "pts": -0.03
+    },
+    {
+     "label": "Baseline (home/away)",
+     "pts": -0.04
+    }
+   ]
+  },
+  {
+   "gameId": 375327,
+   "date": "2026-11-25T05:00:00.000Z",
+   "home": "George Mason",
+   "away": "Longwood",
+   "neutral": false,
+   "venue": "EagleBank Arena",
+   "spread_home": -15.5,
+   "book": "Draft Kings",
+   "proj_spread_home": -13.5,
+   "pick": "George Mason",
+   "pick_line": "George Mason -15.5",
+   "edge": 2.03,
+   "tier": "strong",
+   "stake": 2,
+   "tempo_flag": false,
+   "line_status": "posted",
+   "model": "established",
+   "games_played": [
+    5,
+    6
+   ],
+   "reasons": [
+    {
+     "text": "Longwood gives up more paint points",
+     "pts": 0.86
+    },
+    {
+     "text": "George Mason scores more in the paint",
+     "pts": 0.54
+    },
+    {
+     "text": "George Mason forces more turnovers",
+     "pts": 0.53
+    }
+   ],
+   "traits": [
+    {
+     "key": "pace",
+     "label": "Tempo (possessions per game)",
+     "group": "Tempo",
+     "kind": "num",
+     "away": 73.0,
+     "home": 66.8,
+     "pts": 0.33
+    },
+    {
+     "key": "o_3par",
+     "label": "3-point attempt rate",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 53.8,
+     "home": 32.2,
+     "pts": -1.02
+    },
+    {
+     "key": "o_ftr",
+     "label": "Free-throw rate (FTA/FGA)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 36.7,
+     "home": 47.7,
+     "pts": 0.15
+    },
+    {
+     "key": "o_tov",
+     "label": "Turnover rate",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 18.9,
+     "home": 17.1,
+     "pts": 0.11
+    },
+    {
+     "key": "o_orb",
+     "label": "Offensive rebound %",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 28.4,
+     "home": 36.4,
+     "pts": 0.45
+    },
+    {
+     "key": "o_paint",
+     "label": "Paint share of points",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 37.3,
+     "home": 48.5,
+     "pts": 0.54
+    },
+    {
+     "key": "o_fb",
+     "label": "Transition share of points",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 15.3,
+     "home": 19.2,
+     "pts": 0.14
+    },
+    {
+     "key": "o_ast",
+     "label": "Assist rate (assisted FGM)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 53.1,
+     "home": 53.1,
+     "pts": -0.01
+    },
+    {
+     "key": "o_efg",
+     "label": "eFG% (shooting results)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 50.7,
+     "home": 48.7,
+     "pts": 0.17
+    },
+    {
+     "key": "d_3par",
+     "label": "Opp. 3-point attempt rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 40.8,
+     "home": 38.6,
+     "pts": 0.07
+    },
+    {
+     "key": "d_ftr",
+     "label": "Opp. free-throw rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 39.8,
+     "home": 30.1,
+     "pts": 0.07
+    },
+    {
+     "key": "d_tov",
+     "label": "Turnovers forced (per poss.)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 12.9,
+     "home": 22.4,
+     "pts": 0.53
+    },
+    {
+     "key": "d_orb",
+     "label": "Opp. offensive rebound % allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 26.8,
+     "home": 19.0,
+     "pts": 0.37
+    },
+    {
+     "key": "d_paint",
+     "label": "Opp. paint share allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 40.9,
+     "home": 28.8,
+     "pts": 0.86
+    },
+    {
+     "key": "d_fb",
+     "label": "Opp. transition share allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 11.6,
+     "home": 11.9,
+     "pts": -0.03
+    },
+    {
+     "key": "d_ast",
+     "label": "Opp. assist rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 48.6,
+     "home": 51.8,
+     "pts": -0.13
+    },
+    {
+     "key": "d_efg",
+     "label": "Opp. eFG% allowed (shooting results)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 48.5,
+     "home": 45.3,
+     "pts": -0.22
+    },
+    {
+     "key": "d_blk",
+     "label": "Block rate (per opp. 2PA)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 9.6,
+     "home": 9.6,
+     "pts": -0.02
+    },
+    {
+     "key": "d_stl",
+     "label": "Steal rate (per poss.)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 7.1,
+     "home": 11.5,
+     "pts": 0.1
+    }
+   ],
+   "terms": [
+    {
+     "label": "Underdog / favorite adjustment",
+     "pts": -0.37
+    },
+    {
+     "label": "Neutral-site adjustment",
+     "pts": -0.03
+    },
+    {
+     "label": "Baseline (home/away)",
+     "pts": -0.04
+    }
+   ]
+  },
+  {
+   "gameId": 372939,
+   "date": "2026-11-25T05:00:00.000Z",
+   "home": "Richmond",
+   "away": "Bethune-Cookman",
+   "neutral": false,
+   "venue": "Robins Center",
+   "spread_home": -11.5,
+   "book": "Draft Kings",
+   "proj_spread_home": -14.0,
+   "pick": "Bethune-Cookman",
+   "pick_line": "Bethune-Cookman +11.5",
+   "edge": 0.1,
+   "tier": "lean",
+   "stake": 0,
+   "tempo_flag": false,
+   "line_status": "posted",
+   "model": "established",
+   "games_played": [
+    5,
+    6
+   ],
+   "reasons": [
+    {
+     "text": "Bethune-Cookman has seen opponents shoot better",
+     "pts": 0.51
+    },
+    {
+     "text": "Richmond has shot better so far",
+     "pts": 0.46
+    },
+    {
+     "text": "Richmond gives up more transition",
+     "pts": 0.24
+    }
+   ],
+   "traits": [
+    {
+     "key": "pace",
+     "label": "Tempo (possessions per game)",
+     "group": "Tempo",
+     "kind": "num",
+     "away": 70.4,
+     "home": 72.0,
+     "pts": 0.09
+    },
+    {
+     "key": "o_3par",
+     "label": "3-point attempt rate",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 35.2,
+     "home": 35.3,
+     "pts": -0.01
+    },
+    {
+     "key": "o_ftr",
+     "label": "Free-throw rate (FTA/FGA)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 39.9,
+     "home": 28.4,
+     "pts": 0.16
+    },
+    {
+     "key": "o_tov",
+     "label": "Turnover rate",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 22.0,
+     "home": 18.4,
+     "pts": -0.22
+    },
+    {
+     "key": "o_orb",
+     "label": "Offensive rebound %",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 27.4,
+     "home": 27.2,
+     "pts": 0.03
+    },
+    {
+     "key": "o_paint",
+     "label": "Paint share of points",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 39.2,
+     "home": 44.2,
+     "pts": -0.25
+    },
+    {
+     "key": "o_fb",
+     "label": "Transition share of points",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 14.4,
+     "home": 11.0,
+     "pts": 0.12
+    },
+    {
+     "key": "o_ast",
+     "label": "Assist rate (assisted FGM)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 40.7,
+     "home": 61.7,
+     "pts": -0.73
+    },
+    {
+     "key": "o_efg",
+     "label": "eFG% (shooting results)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 48.6,
+     "home": 55.4,
+     "pts": 0.46
+    },
+    {
+     "key": "d_3par",
+     "label": "Opp. 3-point attempt rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 42.2,
+     "home": 42.6,
+     "pts": 0.02
+    },
+    {
+     "key": "d_ftr",
+     "label": "Opp. free-throw rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 48.5,
+     "home": 36.1,
+     "pts": -0.09
+    },
+    {
+     "key": "d_tov",
+     "label": "Turnovers forced (per poss.)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 17.7,
+     "home": 19.6,
+     "pts": -0.1
+    },
+    {
+     "key": "d_orb",
+     "label": "Opp. offensive rebound % allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 34.9,
+     "home": 29.7,
+     "pts": -0.24
+    },
+    {
+     "key": "d_paint",
+     "label": "Opp. paint share allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 43.7,
+     "home": 45.0,
+     "pts": 0.11
+    },
+    {
+     "key": "d_fb",
+     "label": "Opp. transition share allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 14.0,
+     "home": 17.3,
+     "pts": 0.24
+    },
+    {
+     "key": "d_ast",
+     "label": "Opp. assist rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 60.1,
+     "home": 52.0,
+     "pts": -0.3
+    },
+    {
+     "key": "d_efg",
+     "label": "Opp. eFG% allowed (shooting results)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 58.5,
+     "home": 51.9,
+     "pts": 0.51
+    },
+    {
+     "key": "d_blk",
+     "label": "Block rate (per opp. 2PA)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 7.1,
+     "home": 6.8,
+     "pts": 0.03
+    },
+    {
+     "key": "d_stl",
+     "label": "Steal rate (per poss.)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 11.0,
+     "home": 12.5,
+     "pts": -0.03
+    }
+   ],
+   "terms": [
+    {
+     "label": "Underdog / favorite adjustment",
+     "pts": 0.24
+    },
+    {
+     "label": "Neutral-site adjustment",
+     "pts": 0.03
+    },
+    {
+     "label": "Baseline (home/away)",
+     "pts": 0.04
+    }
+   ]
+  },
+  {
+   "gameId": 375333,
+   "date": "2026-11-25T05:00:00.000Z",
+   "home": "Jacksonville State",
+   "away": "Pacific",
+   "neutral": true,
+   "venue": "Resorts World Event Center",
+   "spread_home": 5.5,
+   "book": "Draft Kings",
+   "proj_spread_home": 3.5,
+   "pick": "Pacific",
+   "pick_line": "Pacific -5.5",
+   "edge": 0.28,
+   "tier": "lean",
+   "stake": 0,
+   "tempo_flag": false,
+   "line_status": "posted",
+   "model": "early",
+   "games_played": [
+    4,
+    5
+   ],
+   "reasons": [
+    {
+     "text": "Jacksonville State gives up more paint points",
+     "pts": 0.53
+    },
+    {
+     "text": "Pacific scores more in the paint",
+     "pts": 0.43
+    },
+    {
+     "text": "Pacific crashes the offensive glass harder",
+     "pts": 0.39
+    }
+   ],
+   "traits": [
+    {
+     "key": "pace",
+     "label": "Tempo (possessions per game)",
+     "group": "Tempo",
+     "kind": "num",
+     "away": 65.4,
+     "home": 66.3,
+     "pts": 0.04
+    },
+    {
+     "key": "o_3par",
+     "label": "3-point attempt rate",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 36.6,
+     "home": 40.3,
+     "pts": -0.19
+    },
+    {
+     "key": "o_ftr",
+     "label": "Free-throw rate (FTA/FGA)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 30.6,
+     "home": 40.4,
+     "pts": -0.15
+    },
+    {
+     "key": "o_tov",
+     "label": "Turnover rate",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 20.6,
+     "home": 17.9,
+     "pts": -0.17
+    },
+    {
+     "key": "o_orb",
+     "label": "Offensive rebound %",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 35.2,
+     "home": 29.0,
+     "pts": 0.39
+    },
+    {
+     "key": "o_paint",
+     "label": "Paint share of points",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 47.1,
+     "home": 39.3,
+     "pts": 0.43
+    },
+    {
+     "key": "o_fb",
+     "label": "Transition share of points",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 10.2,
+     "home": 12.7,
+     "pts": -0.13
+    },
+    {
+     "key": "o_ast",
+     "label": "Assist rate (assisted FGM)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 56.0,
+     "home": 52.2,
+     "pts": 0.13
+    },
+    {
+     "key": "o_efg",
+     "label": "eFG% (shooting results)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 53.0,
+     "home": 50.7,
+     "pts": -0.19
+    },
+    {
+     "key": "d_3par",
+     "label": "Opp. 3-point attempt rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 44.1,
+     "home": 40.8,
+     "pts": -0.13
+    },
+    {
+     "key": "d_ftr",
+     "label": "Opp. free-throw rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 37.7,
+     "home": 37.3,
+     "pts": 0.0
+    },
+    {
+     "key": "d_tov",
+     "label": "Turnovers forced (per poss.)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 16.1,
+     "home": 14.7,
+     "pts": 0.1
+    },
+    {
+     "key": "d_orb",
+     "label": "Opp. offensive rebound % allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 25.4,
+     "home": 29.4,
+     "pts": 0.3
+    },
+    {
+     "key": "d_paint",
+     "label": "Opp. paint share allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 37.0,
+     "home": 41.3,
+     "pts": 0.53
+    },
+    {
+     "key": "d_fb",
+     "label": "Opp. transition share allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 11.5,
+     "home": 14.6,
+     "pts": 0.29
+    },
+    {
+     "key": "d_ast",
+     "label": "Opp. assist rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 52.5,
+     "home": 49.3,
+     "pts": -0.1
+    },
+    {
+     "key": "d_efg",
+     "label": "Opp. eFG% allowed (shooting results)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 48.0,
+     "home": 50.3,
+     "pts": -0.3
+    },
+    {
+     "key": "d_blk",
+     "label": "Block rate (per opp. 2PA)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 6.8,
+     "home": 10.2,
+     "pts": -0.24
+    },
+    {
+     "key": "d_stl",
+     "label": "Steal rate (per poss.)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 8.4,
+     "home": 8.8,
+     "pts": 0.01
+    }
+   ],
+   "terms": [
+    {
+     "label": "Underdog / favorite adjustment",
+     "pts": -0.26
+    },
+    {
+     "label": "Neutral-site adjustment",
+     "pts": -0.06
+    },
+    {
+     "label": "Baseline (home/away)",
+     "pts": -0.02
+    }
+   ]
+  },
+  {
+   "gameId": 375331,
+   "date": "2026-11-25T05:00:00.000Z",
+   "home": "NC State",
+   "away": "Norfolk State",
+   "neutral": false,
+   "venue": "Lenovo Center",
+   "spread_home": -28.5,
+   "book": "Draft Kings",
+   "proj_spread_home": -18.5,
+   "pick": "Norfolk State",
+   "pick_line": "Norfolk State +28.5",
+   "edge": 1.64,
+   "tier": "play",
+   "stake": 1,
+   "tempo_flag": false,
+   "line_status": "posted",
+   "model": "established",
+   "games_played": [
+    5,
+    6
+   ],
+   "reasons": [
+    {
+     "text": "Norfolk State has seen opponents shoot better",
+     "pts": 1.16
+    },
+    {
+     "text": "NC State gives up more paint points",
+     "pts": 0.71
+    },
+    {
+     "text": "NC State has shot better so far",
+     "pts": 0.7
+    }
+   ],
+   "traits": [
+    {
+     "key": "pace",
+     "label": "Tempo (possessions per game)",
+     "group": "Tempo",
+     "kind": "num",
+     "away": 66.6,
+     "home": 69.0,
+     "pts": 0.13
+    },
+    {
+     "key": "o_3par",
+     "label": "3-point attempt rate",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 43.1,
+     "home": 47.3,
+     "pts": -0.2
+    },
+    {
+     "key": "o_ftr",
+     "label": "Free-throw rate (FTA/FGA)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 42.1,
+     "home": 34.3,
+     "pts": 0.11
+    },
+    {
+     "key": "o_tov",
+     "label": "Turnover rate",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 19.6,
+     "home": 17.5,
+     "pts": -0.13
+    },
+    {
+     "key": "o_orb",
+     "label": "Offensive rebound %",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 30.8,
+     "home": 36.2,
+     "pts": -0.29
+    },
+    {
+     "key": "o_paint",
+     "label": "Paint share of points",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 40.6,
+     "home": 41.1,
+     "pts": -0.03
+    },
+    {
+     "key": "o_fb",
+     "label": "Transition share of points",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 19.0,
+     "home": 11.9,
+     "pts": 0.26
+    },
+    {
+     "key": "o_ast",
+     "label": "Assist rate (assisted FGM)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 56.4,
+     "home": 66.6,
+     "pts": -0.35
+    },
+    {
+     "key": "o_efg",
+     "label": "eFG% (shooting results)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 47.7,
+     "home": 57.8,
+     "pts": 0.7
+    },
+    {
+     "key": "d_3par",
+     "label": "Opp. 3-point attempt rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 51.9,
+     "home": 37.6,
+     "pts": -0.48
+    },
+    {
+     "key": "d_ftr",
+     "label": "Opp. free-throw rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 38.5,
+     "home": 33.4,
+     "pts": -0.04
+    },
+    {
+     "key": "d_tov",
+     "label": "Turnovers forced (per poss.)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 16.5,
+     "home": 17.5,
+     "pts": -0.05
+    },
+    {
+     "key": "d_orb",
+     "label": "Opp. offensive rebound % allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 35.8,
+     "home": 30.0,
+     "pts": -0.27
+    },
+    {
+     "key": "d_paint",
+     "label": "Opp. paint share allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 35.0,
+     "home": 44.5,
+     "pts": 0.71
+    },
+    {
+     "key": "d_fb",
+     "label": "Opp. transition share allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 12.1,
+     "home": 12.8,
+     "pts": 0.06
+    },
+    {
+     "key": "d_ast",
+     "label": "Opp. assist rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 68.6,
+     "home": 44.5,
+     "pts": -0.9
+    },
+    {
+     "key": "d_efg",
+     "label": "Opp. eFG% allowed (shooting results)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 63.4,
+     "home": 48.8,
+     "pts": 1.16
+    },
+    {
+     "key": "d_blk",
+     "label": "Block rate (per opp. 2PA)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 14.3,
+     "home": 9.7,
+     "pts": 0.32
+    },
+    {
+     "key": "d_stl",
+     "label": "Steal rate (per poss.)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 11.9,
+     "home": 9.1,
+     "pts": 0.07
+    }
+   ],
+   "terms": [
+    {
+     "label": "Underdog / favorite adjustment",
+     "pts": 0.8
+    },
+    {
+     "label": "Neutral-site adjustment",
+     "pts": 0.03
+    },
+    {
+     "label": "Baseline (home/away)",
+     "pts": 0.04
+    }
+   ]
+  },
+  {
+   "gameId": 375326,
+   "date": "2026-11-25T05:00:00.000Z",
+   "home": "UNC Wilmington",
+   "away": "St. Thomas-Minnesota",
+   "neutral": false,
+   "venue": "Trask Coliseum",
+   "spread_home": -6.5,
+   "book": "Draft Kings",
+   "proj_spread_home": -3.5,
+   "pick": "UNC Wilmington",
+   "pick_line": "UNC Wilmington -6.5",
+   "edge": 0.92,
+   "tier": "lean",
+   "stake": 0,
+   "tempo_flag": false,
+   "line_status": "posted",
+   "model": "early",
+   "games_played": [
+    7,
+    4
+   ],
+   "reasons": [
+    {
+     "text": "St. Thomas-Minnesota gives up more paint points",
+     "pts": 0.79
+    },
+    {
+     "text": "UNC Wilmington crashes the offensive glass harder",
+     "pts": 0.75
+    },
+    {
+     "text": "St. Thomas-Minnesota has shot better so far",
+     "pts": 0.48
+    }
+   ],
+   "traits": [
+    {
+     "key": "pace",
+     "label": "Tempo (possessions per game)",
+     "group": "Tempo",
+     "kind": "num",
+     "away": 67.7,
+     "home": 68.3,
+     "pts": -0.03
+    },
+    {
+     "key": "o_3par",
+     "label": "3-point attempt rate",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 46.3,
+     "home": 39.7,
+     "pts": -0.34
+    },
+    {
+     "key": "o_ftr",
+     "label": "Free-throw rate (FTA/FGA)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 38.6,
+     "home": 44.7,
+     "pts": 0.09
+    },
+    {
+     "key": "o_tov",
+     "label": "Turnover rate",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 13.6,
+     "home": 15.7,
+     "pts": -0.15
+    },
+    {
+     "key": "o_orb",
+     "label": "Offensive rebound %",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 23.2,
+     "home": 36.1,
+     "pts": 0.75
+    },
+    {
+     "key": "o_paint",
+     "label": "Paint share of points",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 45.9,
+     "home": 41.1,
+     "pts": -0.26
+    },
+    {
+     "key": "o_fb",
+     "label": "Transition share of points",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 12.4,
+     "home": 10.7,
+     "pts": -0.07
+    },
+    {
+     "key": "o_ast",
+     "label": "Assist rate (assisted FGM)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 56.6,
+     "home": 51.7,
+     "pts": -0.16
+    },
+    {
+     "key": "o_efg",
+     "label": "eFG% (shooting results)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 58.5,
+     "home": 52.1,
+     "pts": 0.48
+    },
+    {
+     "key": "d_3par",
+     "label": "Opp. 3-point attempt rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 42.7,
+     "home": 45.4,
+     "pts": -0.11
+    },
+    {
+     "key": "d_ftr",
+     "label": "Opp. free-throw rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 31.4,
+     "home": 35.1,
+     "pts": -0.05
+    },
+    {
+     "key": "d_tov",
+     "label": "Turnovers forced (per poss.)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 16.8,
+     "home": 15.0,
+     "pts": -0.14
+    },
+    {
+     "key": "d_orb",
+     "label": "Opp. offensive rebound % allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 30.4,
+     "home": 27.3,
+     "pts": 0.2
+    },
+    {
+     "key": "d_paint",
+     "label": "Opp. paint share allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 45.1,
+     "home": 37.6,
+     "pts": 0.79
+    },
+    {
+     "key": "d_fb",
+     "label": "Opp. transition share allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 12.6,
+     "home": 15.1,
+     "pts": -0.23
+    },
+    {
+     "key": "d_ast",
+     "label": "Opp. assist rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 55.4,
+     "home": 49.8,
+     "pts": 0.18
+    },
+    {
+     "key": "d_efg",
+     "label": "Opp. eFG% allowed (shooting results)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 50.5,
+     "home": 49.1,
+     "pts": -0.11
+    },
+    {
+     "key": "d_blk",
+     "label": "Block rate (per opp. 2PA)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 7.1,
+     "home": 7.8,
+     "pts": 0.03
+    },
+    {
+     "key": "d_stl",
+     "label": "Steal rate (per poss.)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 9.8,
+     "home": 7.7,
+     "pts": 0.07
+    }
+   ],
+   "terms": [
+    {
+     "label": "Underdog / favorite adjustment",
+     "pts": -0.03
+    },
+    {
+     "label": "Neutral-site adjustment",
+     "pts": -0.01
+    },
+    {
+     "label": "Baseline (home/away)",
+     "pts": 0.02
+    }
+   ]
+  },
+  {
    "gameId": 372937,
    "date": "2026-11-25T05:00:00.000Z",
    "home": "UC Davis",
@@ -3144,12 +2696,12 @@
    "away": "Northern Illinois",
    "neutral": false,
    "venue": "First Community Arena",
-   "spread_home": 4.5,
+   "spread_home": 3.5,
    "book": "Draft Kings",
    "proj_spread_home": -6.0,
    "pick": "SIU Edwardsville",
-   "pick_line": "SIU Edwardsville +4.5",
-   "edge": 0.15,
+   "pick_line": "SIU Edwardsville +3.5",
+   "edge": 0.13,
    "tier": "lean",
    "stake": 0,
    "tempo_flag": false,
@@ -3349,7 +2901,7 @@
    "terms": [
     {
      "label": "Underdog / favorite adjustment",
-     "pts": 0.24
+     "pts": 0.21
     },
     {
      "label": "Neutral-site adjustment",
@@ -3358,230 +2910,6 @@
     {
      "label": "Baseline (home/away)",
      "pts": 0.02
-    }
-   ]
-  },
-  {
-   "gameId": 375320,
-   "date": "2026-11-25T05:00:00.000Z",
-   "home": "Northwestern State",
-   "away": "West Florida",
-   "neutral": false,
-   "venue": "Prather Coliseum",
-   "spread_home": -1.5,
-   "book": "Draft Kings",
-   "proj_spread_home": 4.5,
-   "pick": "West Florida",
-   "pick_line": "West Florida +1.5",
-   "edge": 0.29,
-   "tier": "lean",
-   "stake": 0,
-   "tempo_flag": false,
-   "line_status": "posted",
-   "model": "established",
-   "games_played": [
-    5,
-    5
-   ],
-   "reasons": [
-    {
-     "text": "West Florida takes more 3s",
-     "pts": 0.93
-    },
-    {
-     "text": "West Florida moves the ball better (assist rate)",
-     "pts": 0.63
-    },
-    {
-     "text": "West Florida crashes the offensive glass harder",
-     "pts": 0.19
-    }
-   ],
-   "traits": [
-    {
-     "key": "pace",
-     "label": "Tempo (possessions per game)",
-     "group": "Tempo",
-     "kind": "num",
-     "away": 69.8,
-     "home": 68.2,
-     "pts": -0.09
-    },
-    {
-     "key": "o_3par",
-     "label": "3-point attempt rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 49.5,
-     "home": 29.8,
-     "pts": 0.93
-    },
-    {
-     "key": "o_ftr",
-     "label": "Free-throw rate (FTA/FGA)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 38.3,
-     "home": 43.6,
-     "pts": -0.07
-    },
-    {
-     "key": "o_tov",
-     "label": "Turnover rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 16.9,
-     "home": 17.4,
-     "pts": 0.04
-    },
-    {
-     "key": "o_orb",
-     "label": "Offensive rebound %",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 28.8,
-     "home": 25.9,
-     "pts": 0.19
-    },
-    {
-     "key": "o_paint",
-     "label": "Paint share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 30.2,
-     "home": 41.4,
-     "pts": -0.54
-    },
-    {
-     "key": "o_fb",
-     "label": "Transition share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 13.1,
-     "home": 11.6,
-     "pts": 0.05
-    },
-    {
-     "key": "o_ast",
-     "label": "Assist rate (assisted FGM)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 61.3,
-     "home": 43.7,
-     "pts": 0.63
-    },
-    {
-     "key": "o_efg",
-     "label": "eFG% (shooting results)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 50.4,
-     "home": 43.3,
-     "pts": -0.54
-    },
-    {
-     "key": "d_3par",
-     "label": "Opp. 3-point attempt rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 36.7,
-     "home": 40.2,
-     "pts": 0.12
-    },
-    {
-     "key": "d_ftr",
-     "label": "Opp. free-throw rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 49.5,
-     "home": 43.7,
-     "pts": -0.04
-    },
-    {
-     "key": "d_tov",
-     "label": "Turnovers forced (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 20.0,
-     "home": 17.2,
-     "pts": 0.16
-    },
-    {
-     "key": "d_orb",
-     "label": "Opp. offensive rebound % allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 36.0,
-     "home": 37.7,
-     "pts": 0.09
-    },
-    {
-     "key": "d_paint",
-     "label": "Opp. paint share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 44.8,
-     "home": 39.9,
-     "pts": -0.34
-    },
-    {
-     "key": "d_fb",
-     "label": "Opp. transition share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 14.3,
-     "home": 11.5,
-     "pts": -0.17
-    },
-    {
-     "key": "d_ast",
-     "label": "Opp. assist rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 48.2,
-     "home": 50.5,
-     "pts": 0.1
-    },
-    {
-     "key": "d_efg",
-     "label": "Opp. eFG% allowed (shooting results)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 51.3,
-     "home": 53.2,
-     "pts": -0.19
-    },
-    {
-     "key": "d_blk",
-     "label": "Block rate (per opp. 2PA)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 4.9,
-     "home": 5.7,
-     "pts": -0.04
-    },
-    {
-     "key": "d_stl",
-     "label": "Steal rate (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 11.3,
-     "home": 10.7,
-     "pts": 0.02
-    }
-   ],
-   "terms": [
-    {
-     "label": "Underdog / favorite adjustment",
-     "pts": -0.09
-    },
-    {
-     "label": "Neutral-site adjustment",
-     "pts": 0.03
-    },
-    {
-     "label": "Baseline (home/away)",
-     "pts": 0.04
     }
    ]
   },
@@ -4034,230 +3362,6 @@
    ]
   },
   {
-   "gameId": 378119,
-   "date": "2026-11-25T16:00:00.000Z",
-   "home": "Ohio",
-   "away": "Rice",
-   "neutral": true,
-   "venue": "The Reef",
-   "spread_home": -4.5,
-   "book": "Draft Kings",
-   "proj_spread_home": -1.5,
-   "pick": "Ohio",
-   "pick_line": "Ohio -4.5",
-   "edge": 0.3,
-   "tier": "lean",
-   "stake": 0,
-   "tempo_flag": false,
-   "line_status": "posted",
-   "model": "early",
-   "games_played": [
-    6,
-    4
-   ],
-   "reasons": [
-    {
-     "text": "Ohio scores more in the paint",
-     "pts": 0.43
-    },
-    {
-     "text": "Rice gives up more transition",
-     "pts": 0.32
-    },
-    {
-     "text": "Rice gives up more offensive boards",
-     "pts": 0.26
-    }
-   ],
-   "traits": [
-    {
-     "key": "pace",
-     "label": "Tempo (possessions per game)",
-     "group": "Tempo",
-     "kind": "num",
-     "away": 69.5,
-     "home": 69.1,
-     "pts": 0.02
-    },
-    {
-     "key": "o_3par",
-     "label": "3-point attempt rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 41.5,
-     "home": 38.5,
-     "pts": -0.16
-    },
-    {
-     "key": "o_ftr",
-     "label": "Free-throw rate (FTA/FGA)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 37.3,
-     "home": 39.5,
-     "pts": 0.03
-    },
-    {
-     "key": "o_tov",
-     "label": "Turnover rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 18.3,
-     "home": 16.7,
-     "pts": 0.09
-    },
-    {
-     "key": "o_orb",
-     "label": "Offensive rebound %",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 35.2,
-     "home": 29.0,
-     "pts": -0.39
-    },
-    {
-     "key": "o_paint",
-     "label": "Paint share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 37.9,
-     "home": 45.2,
-     "pts": 0.43
-    },
-    {
-     "key": "o_fb",
-     "label": "Transition share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 11.3,
-     "home": 9.2,
-     "pts": -0.1
-    },
-    {
-     "key": "o_ast",
-     "label": "Assist rate (assisted FGM)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 47.9,
-     "home": 47.7,
-     "pts": -0.02
-    },
-    {
-     "key": "o_efg",
-     "label": "eFG% (shooting results)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 49.2,
-     "home": 52.3,
-     "pts": -0.19
-    },
-    {
-     "key": "d_3par",
-     "label": "Opp. 3-point attempt rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 35.4,
-     "home": 34.7,
-     "pts": 0.02
-    },
-    {
-     "key": "d_ftr",
-     "label": "Opp. free-throw rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 40.2,
-     "home": 39.6,
-     "pts": 0.0
-    },
-    {
-     "key": "d_tov",
-     "label": "Turnovers forced (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 16.4,
-     "home": 16.2,
-     "pts": -0.02
-    },
-    {
-     "key": "d_orb",
-     "label": "Opp. offensive rebound % allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 34.9,
-     "home": 30.9,
-     "pts": 0.26
-    },
-    {
-     "key": "d_paint",
-     "label": "Opp. paint share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 42.4,
-     "home": 44.6,
-     "pts": -0.29
-    },
-    {
-     "key": "d_fb",
-     "label": "Opp. transition share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 15.1,
-     "home": 11.0,
-     "pts": 0.32
-    },
-    {
-     "key": "d_ast",
-     "label": "Opp. assist rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 49.9,
-     "home": 46.8,
-     "pts": 0.1
-    },
-    {
-     "key": "d_efg",
-     "label": "Opp. eFG% allowed (shooting results)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 50.3,
-     "home": 51.9,
-     "pts": 0.23
-    },
-    {
-     "key": "d_blk",
-     "label": "Block rate (per opp. 2PA)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 11.1,
-     "home": 9.1,
-     "pts": -0.18
-    },
-    {
-     "key": "d_stl",
-     "label": "Steal rate (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 9.4,
-     "home": 7.4,
-     "pts": 0.07
-    }
-   ],
-   "terms": [
-    {
-     "label": "Underdog / favorite adjustment",
-     "pts": 0.01
-    },
-    {
-     "label": "Neutral-site adjustment",
-     "pts": 0.06
-    },
-    {
-     "label": "Baseline (home/away)",
-     "pts": 0.02
-    }
-   ]
-  },
-  {
    "gameId": 375334,
    "date": "2026-11-25T16:00:00.000Z",
    "home": "Charlotte",
@@ -4478,6 +3582,230 @@
     {
      "label": "Baseline (home/away)",
      "pts": -0.04
+    }
+   ]
+  },
+  {
+   "gameId": 378119,
+   "date": "2026-11-25T16:00:00.000Z",
+   "home": "Ohio",
+   "away": "Rice",
+   "neutral": true,
+   "venue": "The Reef",
+   "spread_home": -4.5,
+   "book": "Draft Kings",
+   "proj_spread_home": -1.5,
+   "pick": "Ohio",
+   "pick_line": "Ohio -4.5",
+   "edge": 0.3,
+   "tier": "lean",
+   "stake": 0,
+   "tempo_flag": false,
+   "line_status": "posted",
+   "model": "early",
+   "games_played": [
+    6,
+    4
+   ],
+   "reasons": [
+    {
+     "text": "Ohio scores more in the paint",
+     "pts": 0.43
+    },
+    {
+     "text": "Rice gives up more transition",
+     "pts": 0.32
+    },
+    {
+     "text": "Rice gives up more offensive boards",
+     "pts": 0.26
+    }
+   ],
+   "traits": [
+    {
+     "key": "pace",
+     "label": "Tempo (possessions per game)",
+     "group": "Tempo",
+     "kind": "num",
+     "away": 69.5,
+     "home": 69.1,
+     "pts": 0.02
+    },
+    {
+     "key": "o_3par",
+     "label": "3-point attempt rate",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 41.5,
+     "home": 38.5,
+     "pts": -0.16
+    },
+    {
+     "key": "o_ftr",
+     "label": "Free-throw rate (FTA/FGA)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 37.3,
+     "home": 39.5,
+     "pts": 0.03
+    },
+    {
+     "key": "o_tov",
+     "label": "Turnover rate",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 18.3,
+     "home": 16.7,
+     "pts": 0.09
+    },
+    {
+     "key": "o_orb",
+     "label": "Offensive rebound %",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 35.2,
+     "home": 29.0,
+     "pts": -0.39
+    },
+    {
+     "key": "o_paint",
+     "label": "Paint share of points",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 37.9,
+     "home": 45.2,
+     "pts": 0.43
+    },
+    {
+     "key": "o_fb",
+     "label": "Transition share of points",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 11.3,
+     "home": 9.2,
+     "pts": -0.1
+    },
+    {
+     "key": "o_ast",
+     "label": "Assist rate (assisted FGM)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 47.9,
+     "home": 47.7,
+     "pts": -0.02
+    },
+    {
+     "key": "o_efg",
+     "label": "eFG% (shooting results)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 49.2,
+     "home": 52.3,
+     "pts": -0.19
+    },
+    {
+     "key": "d_3par",
+     "label": "Opp. 3-point attempt rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 35.4,
+     "home": 34.7,
+     "pts": 0.02
+    },
+    {
+     "key": "d_ftr",
+     "label": "Opp. free-throw rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 40.2,
+     "home": 39.6,
+     "pts": 0.0
+    },
+    {
+     "key": "d_tov",
+     "label": "Turnovers forced (per poss.)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 16.4,
+     "home": 16.2,
+     "pts": -0.02
+    },
+    {
+     "key": "d_orb",
+     "label": "Opp. offensive rebound % allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 34.9,
+     "home": 30.9,
+     "pts": 0.26
+    },
+    {
+     "key": "d_paint",
+     "label": "Opp. paint share allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 42.4,
+     "home": 44.6,
+     "pts": -0.29
+    },
+    {
+     "key": "d_fb",
+     "label": "Opp. transition share allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 15.1,
+     "home": 11.0,
+     "pts": 0.32
+    },
+    {
+     "key": "d_ast",
+     "label": "Opp. assist rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 49.9,
+     "home": 46.8,
+     "pts": 0.1
+    },
+    {
+     "key": "d_efg",
+     "label": "Opp. eFG% allowed (shooting results)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 50.3,
+     "home": 51.9,
+     "pts": 0.23
+    },
+    {
+     "key": "d_blk",
+     "label": "Block rate (per opp. 2PA)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 11.1,
+     "home": 9.1,
+     "pts": -0.18
+    },
+    {
+     "key": "d_stl",
+     "label": "Steal rate (per poss.)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 9.4,
+     "home": 7.4,
+     "pts": 0.07
+    }
+   ],
+   "terms": [
+    {
+     "label": "Underdog / favorite adjustment",
+     "pts": 0.01
+    },
+    {
+     "label": "Neutral-site adjustment",
+     "pts": 0.06
+    },
+    {
+     "label": "Baseline (home/away)",
+     "pts": 0.02
     }
    ]
   },
@@ -5154,6 +4482,230 @@
    ]
   },
   {
+   "gameId": 375336,
+   "date": "2026-11-25T18:00:00.000Z",
+   "home": "Southern Utah",
+   "away": "Long Beach State",
+   "neutral": true,
+   "venue": "Ocean Bank Convocation Center",
+   "spread_home": 1.5,
+   "book": "Draft Kings",
+   "proj_spread_home": 3.5,
+   "pick": "Long Beach State",
+   "pick_line": "Long Beach State -1.5",
+   "edge": 0.68,
+   "tier": "lean",
+   "stake": 0,
+   "tempo_flag": false,
+   "line_status": "posted",
+   "model": "established",
+   "games_played": [
+    6,
+    5
+   ],
+   "reasons": [
+    {
+     "text": "Southern Utah gives up more paint points",
+     "pts": 0.73
+    },
+    {
+     "text": "Southern Utah gives up more offensive boards",
+     "pts": 0.52
+    },
+    {
+     "text": "Southern Utah turns it over more",
+     "pts": 0.38
+    }
+   ],
+   "traits": [
+    {
+     "key": "pace",
+     "label": "Tempo (possessions per game)",
+     "group": "Tempo",
+     "kind": "num",
+     "away": 67.7,
+     "home": 74.2,
+     "pts": 0.35
+    },
+    {
+     "key": "o_3par",
+     "label": "3-point attempt rate",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 42.5,
+     "home": 34.5,
+     "pts": 0.38
+    },
+    {
+     "key": "o_ftr",
+     "label": "Free-throw rate (FTA/FGA)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 44.5,
+     "home": 36.9,
+     "pts": 0.11
+    },
+    {
+     "key": "o_tov",
+     "label": "Turnover rate",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 19.7,
+     "home": 25.5,
+     "pts": 0.38
+    },
+    {
+     "key": "o_orb",
+     "label": "Offensive rebound %",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 20.4,
+     "home": 37.1,
+     "pts": -0.96
+    },
+    {
+     "key": "o_paint",
+     "label": "Paint share of points",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 36.0,
+     "home": 46.8,
+     "pts": -0.52
+    },
+    {
+     "key": "o_fb",
+     "label": "Transition share of points",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 11.2,
+     "home": 5.8,
+     "pts": 0.19
+    },
+    {
+     "key": "o_ast",
+     "label": "Assist rate (assisted FGM)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 55.5,
+     "home": 54.2,
+     "pts": 0.05
+    },
+    {
+     "key": "o_efg",
+     "label": "eFG% (shooting results)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 51.0,
+     "home": 47.2,
+     "pts": -0.31
+    },
+    {
+     "key": "d_3par",
+     "label": "Opp. 3-point attempt rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 39.8,
+     "home": 35.0,
+     "pts": -0.16
+    },
+    {
+     "key": "d_ftr",
+     "label": "Opp. free-throw rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 33.7,
+     "home": 37.9,
+     "pts": 0.04
+    },
+    {
+     "key": "d_tov",
+     "label": "Turnovers forced (per poss.)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 17.9,
+     "home": 17.3,
+     "pts": 0.04
+    },
+    {
+     "key": "d_orb",
+     "label": "Opp. offensive rebound % allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 32.5,
+     "home": 42.8,
+     "pts": 0.52
+    },
+    {
+     "key": "d_paint",
+     "label": "Opp. paint share allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 48.1,
+     "home": 57.8,
+     "pts": 0.73
+    },
+    {
+     "key": "d_fb",
+     "label": "Opp. transition share allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 17.7,
+     "home": 21.0,
+     "pts": 0.24
+    },
+    {
+     "key": "d_ast",
+     "label": "Opp. assist rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 50.3,
+     "home": 49.1,
+     "pts": -0.03
+    },
+    {
+     "key": "d_efg",
+     "label": "Opp. eFG% allowed (shooting results)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 59.4,
+     "home": 57.1,
+     "pts": 0.15
+    },
+    {
+     "key": "d_blk",
+     "label": "Block rate (per opp. 2PA)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 4.1,
+     "home": 6.5,
+     "pts": -0.14
+    },
+    {
+     "key": "d_stl",
+     "label": "Steal rate (per poss.)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 10.2,
+     "home": 8.8,
+     "pts": 0.03
+    }
+   ],
+   "terms": [
+    {
+     "label": "Underdog / favorite adjustment",
+     "pts": -0.19
+    },
+    {
+     "label": "Neutral-site adjustment",
+     "pts": -0.25
+    },
+    {
+     "label": "Baseline (home/away)",
+     "pts": 0.04
+    }
+   ]
+  },
+  {
    "gameId": 378121,
    "date": "2026-11-25T18:00:00.000Z",
    "home": "Stony Brook",
@@ -5598,230 +5150,6 @@
     {
      "label": "Baseline (home/away)",
      "pts": -0.02
-    }
-   ]
-  },
-  {
-   "gameId": 375336,
-   "date": "2026-11-25T18:00:00.000Z",
-   "home": "Southern Utah",
-   "away": "Long Beach State",
-   "neutral": true,
-   "venue": "Ocean Bank Convocation Center",
-   "spread_home": 1.5,
-   "book": "Draft Kings",
-   "proj_spread_home": 3.5,
-   "pick": "Long Beach State",
-   "pick_line": "Long Beach State -1.5",
-   "edge": 0.68,
-   "tier": "lean",
-   "stake": 0,
-   "tempo_flag": false,
-   "line_status": "posted",
-   "model": "established",
-   "games_played": [
-    6,
-    5
-   ],
-   "reasons": [
-    {
-     "text": "Southern Utah gives up more paint points",
-     "pts": 0.73
-    },
-    {
-     "text": "Southern Utah gives up more offensive boards",
-     "pts": 0.52
-    },
-    {
-     "text": "Southern Utah turns it over more",
-     "pts": 0.38
-    }
-   ],
-   "traits": [
-    {
-     "key": "pace",
-     "label": "Tempo (possessions per game)",
-     "group": "Tempo",
-     "kind": "num",
-     "away": 67.7,
-     "home": 74.2,
-     "pts": 0.35
-    },
-    {
-     "key": "o_3par",
-     "label": "3-point attempt rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 42.5,
-     "home": 34.5,
-     "pts": 0.38
-    },
-    {
-     "key": "o_ftr",
-     "label": "Free-throw rate (FTA/FGA)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 44.5,
-     "home": 36.9,
-     "pts": 0.11
-    },
-    {
-     "key": "o_tov",
-     "label": "Turnover rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 19.7,
-     "home": 25.5,
-     "pts": 0.38
-    },
-    {
-     "key": "o_orb",
-     "label": "Offensive rebound %",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 20.4,
-     "home": 37.1,
-     "pts": -0.96
-    },
-    {
-     "key": "o_paint",
-     "label": "Paint share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 36.0,
-     "home": 46.8,
-     "pts": -0.52
-    },
-    {
-     "key": "o_fb",
-     "label": "Transition share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 11.2,
-     "home": 5.8,
-     "pts": 0.19
-    },
-    {
-     "key": "o_ast",
-     "label": "Assist rate (assisted FGM)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 55.5,
-     "home": 54.2,
-     "pts": 0.05
-    },
-    {
-     "key": "o_efg",
-     "label": "eFG% (shooting results)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 51.0,
-     "home": 47.2,
-     "pts": -0.31
-    },
-    {
-     "key": "d_3par",
-     "label": "Opp. 3-point attempt rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 39.8,
-     "home": 35.0,
-     "pts": -0.16
-    },
-    {
-     "key": "d_ftr",
-     "label": "Opp. free-throw rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 33.7,
-     "home": 37.9,
-     "pts": 0.04
-    },
-    {
-     "key": "d_tov",
-     "label": "Turnovers forced (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 17.9,
-     "home": 17.3,
-     "pts": 0.04
-    },
-    {
-     "key": "d_orb",
-     "label": "Opp. offensive rebound % allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 32.5,
-     "home": 42.8,
-     "pts": 0.52
-    },
-    {
-     "key": "d_paint",
-     "label": "Opp. paint share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 48.1,
-     "home": 57.8,
-     "pts": 0.73
-    },
-    {
-     "key": "d_fb",
-     "label": "Opp. transition share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 17.7,
-     "home": 21.0,
-     "pts": 0.24
-    },
-    {
-     "key": "d_ast",
-     "label": "Opp. assist rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 50.3,
-     "home": 49.1,
-     "pts": -0.03
-    },
-    {
-     "key": "d_efg",
-     "label": "Opp. eFG% allowed (shooting results)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 59.4,
-     "home": 57.1,
-     "pts": 0.15
-    },
-    {
-     "key": "d_blk",
-     "label": "Block rate (per opp. 2PA)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 4.1,
-     "home": 6.5,
-     "pts": -0.14
-    },
-    {
-     "key": "d_stl",
-     "label": "Steal rate (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 10.2,
-     "home": 8.8,
-     "pts": 0.03
-    }
-   ],
-   "terms": [
-    {
-     "label": "Underdog / favorite adjustment",
-     "pts": -0.19
-    },
-    {
-     "label": "Neutral-site adjustment",
-     "pts": -0.25
-    },
-    {
-     "label": "Baseline (home/away)",
-     "pts": 0.04
     }
    ]
   },
@@ -6504,16 +5832,16 @@
    "away": "Manhattan",
    "neutral": false,
    "venue": "Joel & Diane Bloom Wellness and Events Center",
-   "spread_home": null,
-   "book": null,
+   "spread_home": -1.5,
+   "book": "Odds feed (3 books)",
    "proj_spread_home": -2.0,
    "pick": "NJIT",
-   "pick_line": "NJIT -2.0",
-   "edge": 0.12,
+   "pick_line": "NJIT -1.5",
+   "edge": 0.14,
    "tier": "lean",
    "stake": 0,
    "tempo_flag": false,
-   "line_status": "projected",
+   "line_status": "posted",
    "model": "established",
    "games_played": [
     6,
@@ -6709,7 +6037,7 @@
    "terms": [
     {
      "label": "Underdog / favorite adjustment",
-     "pts": 0.08
+     "pts": 0.09
     },
     {
      "label": "Neutral-site adjustment",
@@ -6728,12 +6056,12 @@
    "away": "Arkansas-Pine Bluff",
    "neutral": false,
    "venue": "Sanford Coyote Sports Center",
-   "spread_home": -19.5,
+   "spread_home": -21.5,
    "book": "Draft Kings",
    "proj_spread_home": -18.0,
    "pick": "South Dakota",
-   "pick_line": "South Dakota -19.5",
-   "edge": 2.72,
+   "pick_line": "South Dakota -21.5",
+   "edge": 2.66,
    "tier": "strong",
    "stake": 2,
    "tempo_flag": false,
@@ -6933,7 +6261,7 @@
    "terms": [
     {
      "label": "Underdog / favorite adjustment",
-     "pts": -0.5
+     "pts": -0.57
     },
     {
      "label": "Neutral-site adjustment",
@@ -10536,16 +9864,16 @@
    "away": "BYU",
    "neutral": true,
    "venue": "Lahaina Civic Center",
-   "spread_home": null,
-   "book": null,
+   "spread_home": 4.5,
+   "book": "Draft Kings",
    "proj_spread_home": 4.0,
    "pick": "Providence",
-   "pick_line": "Providence +4.0",
-   "edge": 1.84,
+   "pick_line": "Providence +4.5",
+   "edge": 1.86,
    "tier": "play",
    "stake": 1,
    "tempo_flag": false,
-   "line_status": "projected",
+   "line_status": "posted",
    "model": "established",
    "games_played": [
     7,
@@ -10741,7 +10069,7 @@
    "terms": [
     {
      "label": "Underdog / favorite adjustment",
-     "pts": 0.28
+     "pts": 0.29
     },
     {
      "label": "Neutral-site adjustment",
@@ -10750,6 +10078,230 @@
     {
      "label": "Baseline (home/away)",
      "pts": -0.04
+    }
+   ]
+  },
+  {
+   "gameId": 378715,
+   "date": "2026-11-25T23:00:00.000Z",
+   "home": "Charleston",
+   "away": "Kennesaw State",
+   "neutral": true,
+   "venue": "Hard Rock Hotel Riviera Maya",
+   "spread_home": null,
+   "book": null,
+   "proj_spread_home": 0.0,
+   "pick": "Kennesaw State",
+   "pick_line": "Kennesaw State -0.0",
+   "edge": 0.18,
+   "tier": "lean",
+   "stake": 0,
+   "tempo_flag": false,
+   "line_status": "projected",
+   "model": "early",
+   "games_played": [
+    5,
+    4
+   ],
+   "reasons": [
+    {
+     "text": "Charleston gives up more paint points",
+     "pts": 0.44
+    },
+    {
+     "text": "Kennesaw State crashes the offensive glass harder",
+     "pts": 0.35
+    },
+    {
+     "text": "Kennesaw State takes more 3s",
+     "pts": 0.26
+    }
+   ],
+   "traits": [
+    {
+     "key": "pace",
+     "label": "Tempo (possessions per game)",
+     "group": "Tempo",
+     "kind": "num",
+     "away": 73.4,
+     "home": 69.2,
+     "pts": -0.17
+    },
+    {
+     "key": "o_3par",
+     "label": "3-point attempt rate",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 44.7,
+     "home": 39.6,
+     "pts": 0.26
+    },
+    {
+     "key": "o_ftr",
+     "label": "Free-throw rate (FTA/FGA)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 45.8,
+     "home": 43.2,
+     "pts": 0.04
+    },
+    {
+     "key": "o_tov",
+     "label": "Turnover rate",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 18.8,
+     "home": 16.8,
+     "pts": -0.12
+    },
+    {
+     "key": "o_orb",
+     "label": "Offensive rebound %",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 35.3,
+     "home": 29.8,
+     "pts": 0.35
+    },
+    {
+     "key": "o_paint",
+     "label": "Paint share of points",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 40.4,
+     "home": 46.1,
+     "pts": -0.34
+    },
+    {
+     "key": "o_fb",
+     "label": "Transition share of points",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 11.7,
+     "home": 14.8,
+     "pts": -0.16
+    },
+    {
+     "key": "o_ast",
+     "label": "Assist rate (assisted FGM)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 50.8,
+     "home": 49.7,
+     "pts": 0.04
+    },
+    {
+     "key": "o_efg",
+     "label": "eFG% (shooting results)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 50.3,
+     "home": 51.8,
+     "pts": 0.08
+    },
+    {
+     "key": "d_3par",
+     "label": "Opp. 3-point attempt rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 36.9,
+     "home": 40.4,
+     "pts": 0.14
+    },
+    {
+     "key": "d_ftr",
+     "label": "Opp. free-throw rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 56.3,
+     "home": 28.0,
+     "pts": -0.34
+    },
+    {
+     "key": "d_tov",
+     "label": "Turnovers forced (per poss.)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 17.0,
+     "home": 16.0,
+     "pts": 0.08
+    },
+    {
+     "key": "d_orb",
+     "label": "Opp. offensive rebound % allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 29.5,
+     "home": 32.8,
+     "pts": 0.25
+    },
+    {
+     "key": "d_paint",
+     "label": "Opp. paint share allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 39.9,
+     "home": 43.4,
+     "pts": 0.44
+    },
+    {
+     "key": "d_fb",
+     "label": "Opp. transition share allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 13.8,
+     "home": 12.8,
+     "pts": -0.07
+    },
+    {
+     "key": "d_ast",
+     "label": "Opp. assist rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 47.0,
+     "home": 49.2,
+     "pts": 0.08
+    },
+    {
+     "key": "d_efg",
+     "label": "Opp. eFG% allowed (shooting results)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 47.4,
+     "home": 49.5,
+     "pts": -0.28
+    },
+    {
+     "key": "d_blk",
+     "label": "Block rate (per opp. 2PA)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 13.4,
+     "home": 12.1,
+     "pts": 0.12
+    },
+    {
+     "key": "d_stl",
+     "label": "Steal rate (per poss.)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 9.8,
+     "home": 9.0,
+     "pts": -0.03
+    }
+   ],
+   "terms": [
+    {
+     "label": "Underdog / favorite adjustment",
+     "pts": -0.13
+    },
+    {
+     "label": "Neutral-site adjustment",
+     "pts": -0.06
+    },
+    {
+     "label": "Baseline (home/away)",
+     "pts": -0.02
     }
    ]
   },
@@ -15016,16 +14568,16 @@
    "away": "Tennessee",
    "neutral": true,
    "venue": "Michelob ULTRA Arena",
-   "spread_home": null,
-   "book": null,
+   "spread_home": -1.5,
+   "book": "Odds feed (1 books)",
    "proj_spread_home": -6.5,
    "pick": "Iowa State",
-   "pick_line": "Iowa State -6.5",
-   "edge": 2.36,
+   "pick_line": "Iowa State -1.5",
+   "edge": 2.53,
    "tier": "strong",
    "stake": 2,
    "tempo_flag": false,
-   "line_status": "projected",
+   "line_status": "posted",
    "model": "established",
    "games_played": [
     6,
@@ -15221,7 +14773,7 @@
    "terms": [
     {
      "label": "Underdog / favorite adjustment",
-     "pts": -0.07
+     "pts": 0.09
     },
     {
      "label": "Neutral-site adjustment",
@@ -17922,6 +17474,230 @@
    ]
   },
   {
+   "gameId": 375365,
+   "date": "2026-11-27T19:00:00.000Z",
+   "home": "Vanderbilt",
+   "away": "Southern",
+   "neutral": false,
+   "venue": "Memorial Gymnasium (TN)",
+   "spread_home": null,
+   "book": null,
+   "proj_spread_home": -28.5,
+   "pick": "Vanderbilt",
+   "pick_line": "Vanderbilt -28.5",
+   "edge": 2.53,
+   "tier": "strong",
+   "stake": 2,
+   "tempo_flag": false,
+   "line_status": "projected",
+   "model": "established",
+   "games_played": [
+    5,
+    6
+   ],
+   "reasons": [
+    {
+     "text": "Southern allows more assisted looks",
+     "pts": 1.25
+    },
+    {
+     "text": "Vanderbilt crashes the offensive glass harder",
+     "pts": 0.94
+    },
+    {
+     "text": "Southern gives up more offensive boards",
+     "pts": 0.89
+    }
+   ],
+   "traits": [
+    {
+     "key": "pace",
+     "label": "Tempo (possessions per game)",
+     "group": "Tempo",
+     "kind": "num",
+     "away": 72.2,
+     "home": 69.3,
+     "pts": 0.15
+    },
+    {
+     "key": "o_3par",
+     "label": "3-point attempt rate",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 28.6,
+     "home": 38.2,
+     "pts": 0.45
+    },
+    {
+     "key": "o_ftr",
+     "label": "Free-throw rate (FTA/FGA)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 33.5,
+     "home": 39.9,
+     "pts": 0.08
+    },
+    {
+     "key": "o_tov",
+     "label": "Turnover rate",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 28.3,
+     "home": 16.8,
+     "pts": 0.74
+    },
+    {
+     "key": "o_orb",
+     "label": "Offensive rebound %",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 24.5,
+     "home": 40.9,
+     "pts": 0.94
+    },
+    {
+     "key": "o_paint",
+     "label": "Paint share of points",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 41.9,
+     "home": 50.6,
+     "pts": 0.42
+    },
+    {
+     "key": "o_fb",
+     "label": "Transition share of points",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 18.5,
+     "home": 17.9,
+     "pts": -0.02
+    },
+    {
+     "key": "o_ast",
+     "label": "Assist rate (assisted FGM)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 49.4,
+     "home": 51.4,
+     "pts": 0.06
+    },
+    {
+     "key": "o_efg",
+     "label": "eFG% (shooting results)",
+     "group": "Offense",
+     "kind": "pct",
+     "away": 46.6,
+     "home": 56.2,
+     "pts": -0.66
+    },
+    {
+     "key": "d_3par",
+     "label": "Opp. 3-point attempt rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 43.7,
+     "home": 39.9,
+     "pts": 0.13
+    },
+    {
+     "key": "d_ftr",
+     "label": "Opp. free-throw rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 53.3,
+     "home": 27.9,
+     "pts": 0.19
+    },
+    {
+     "key": "d_tov",
+     "label": "Turnovers forced (per poss.)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 21.9,
+     "home": 20.7,
+     "pts": -0.07
+    },
+    {
+     "key": "d_orb",
+     "label": "Opp. offensive rebound % allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 39.5,
+     "home": 21.1,
+     "pts": 0.89
+    },
+    {
+     "key": "d_paint",
+     "label": "Opp. paint share allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 39.8,
+     "home": 42.9,
+     "pts": -0.25
+    },
+    {
+     "key": "d_fb",
+     "label": "Opp. transition share allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 18.0,
+     "home": 12.1,
+     "pts": 0.39
+    },
+    {
+     "key": "d_ast",
+     "label": "Opp. assist rate allowed",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 78.2,
+     "home": 44.9,
+     "pts": 1.25
+    },
+    {
+     "key": "d_efg",
+     "label": "Opp. eFG% allowed (shooting results)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 59.1,
+     "home": 42.4,
+     "pts": -1.33
+    },
+    {
+     "key": "d_blk",
+     "label": "Block rate (per opp. 2PA)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 11.5,
+     "home": 13.5,
+     "pts": 0.11
+    },
+    {
+     "key": "d_stl",
+     "label": "Steal rate (per poss.)",
+     "group": "Defense",
+     "kind": "pct",
+     "away": 15.2,
+     "home": 12.5,
+     "pts": -0.06
+    }
+   ],
+   "terms": [
+    {
+     "label": "Underdog / favorite adjustment",
+     "pts": -0.8
+    },
+    {
+     "label": "Neutral-site adjustment",
+     "pts": -0.03
+    },
+    {
+     "label": "Baseline (home/away)",
+     "pts": -0.04
+    }
+   ]
+  },
+  {
    "gameId": 375378,
    "date": "2026-11-27T19:00:00.000Z",
    "home": "Le Moyne",
@@ -18590,230 +18366,6 @@
     {
      "label": "Baseline (home/away)",
      "pts": 0.04
-    }
-   ]
-  },
-  {
-   "gameId": 375365,
-   "date": "2026-11-27T19:00:00.000Z",
-   "home": "Vanderbilt",
-   "away": "Southern",
-   "neutral": false,
-   "venue": "Memorial Gymnasium (TN)",
-   "spread_home": null,
-   "book": null,
-   "proj_spread_home": -28.5,
-   "pick": "Vanderbilt",
-   "pick_line": "Vanderbilt -28.5",
-   "edge": 2.53,
-   "tier": "strong",
-   "stake": 2,
-   "tempo_flag": false,
-   "line_status": "projected",
-   "model": "established",
-   "games_played": [
-    5,
-    6
-   ],
-   "reasons": [
-    {
-     "text": "Southern allows more assisted looks",
-     "pts": 1.25
-    },
-    {
-     "text": "Vanderbilt crashes the offensive glass harder",
-     "pts": 0.94
-    },
-    {
-     "text": "Southern gives up more offensive boards",
-     "pts": 0.89
-    }
-   ],
-   "traits": [
-    {
-     "key": "pace",
-     "label": "Tempo (possessions per game)",
-     "group": "Tempo",
-     "kind": "num",
-     "away": 72.2,
-     "home": 69.3,
-     "pts": 0.15
-    },
-    {
-     "key": "o_3par",
-     "label": "3-point attempt rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 28.6,
-     "home": 38.2,
-     "pts": 0.45
-    },
-    {
-     "key": "o_ftr",
-     "label": "Free-throw rate (FTA/FGA)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 33.5,
-     "home": 39.9,
-     "pts": 0.08
-    },
-    {
-     "key": "o_tov",
-     "label": "Turnover rate",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 28.3,
-     "home": 16.8,
-     "pts": 0.74
-    },
-    {
-     "key": "o_orb",
-     "label": "Offensive rebound %",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 24.5,
-     "home": 40.9,
-     "pts": 0.94
-    },
-    {
-     "key": "o_paint",
-     "label": "Paint share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 41.9,
-     "home": 50.6,
-     "pts": 0.42
-    },
-    {
-     "key": "o_fb",
-     "label": "Transition share of points",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 18.5,
-     "home": 17.9,
-     "pts": -0.02
-    },
-    {
-     "key": "o_ast",
-     "label": "Assist rate (assisted FGM)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 49.4,
-     "home": 51.4,
-     "pts": 0.06
-    },
-    {
-     "key": "o_efg",
-     "label": "eFG% (shooting results)",
-     "group": "Offense",
-     "kind": "pct",
-     "away": 46.6,
-     "home": 56.2,
-     "pts": -0.66
-    },
-    {
-     "key": "d_3par",
-     "label": "Opp. 3-point attempt rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 43.7,
-     "home": 39.9,
-     "pts": 0.13
-    },
-    {
-     "key": "d_ftr",
-     "label": "Opp. free-throw rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 53.3,
-     "home": 27.9,
-     "pts": 0.19
-    },
-    {
-     "key": "d_tov",
-     "label": "Turnovers forced (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 21.9,
-     "home": 20.7,
-     "pts": -0.07
-    },
-    {
-     "key": "d_orb",
-     "label": "Opp. offensive rebound % allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 39.5,
-     "home": 21.1,
-     "pts": 0.89
-    },
-    {
-     "key": "d_paint",
-     "label": "Opp. paint share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 39.8,
-     "home": 42.9,
-     "pts": -0.25
-    },
-    {
-     "key": "d_fb",
-     "label": "Opp. transition share allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 18.0,
-     "home": 12.1,
-     "pts": 0.39
-    },
-    {
-     "key": "d_ast",
-     "label": "Opp. assist rate allowed",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 78.2,
-     "home": 44.9,
-     "pts": 1.25
-    },
-    {
-     "key": "d_efg",
-     "label": "Opp. eFG% allowed (shooting results)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 59.1,
-     "home": 42.4,
-     "pts": -1.33
-    },
-    {
-     "key": "d_blk",
-     "label": "Block rate (per opp. 2PA)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 11.5,
-     "home": 13.5,
-     "pts": 0.11
-    },
-    {
-     "key": "d_stl",
-     "label": "Steal rate (per poss.)",
-     "group": "Defense",
-     "kind": "pct",
-     "away": 15.2,
-     "home": 12.5,
-     "pts": -0.06
-    }
-   ],
-   "terms": [
-    {
-     "label": "Underdog / favorite adjustment",
-     "pts": -0.8
-    },
-    {
-     "label": "Neutral-site adjustment",
-     "pts": -0.03
-    },
-    {
-     "label": "Baseline (home/away)",
-     "pts": -0.04
     }
    ]
   },
