@@ -155,6 +155,59 @@ def main():
         if pick:
             line[g["gameId"]] = (float(book[pick]["spread"]), pick)
 
+    # fill gaps from the odds feed (the-odds-api). CBBD start times are often placeholders and
+    # dates can be off, so match on BOTH team names within +/-3 days, then take the median across books.
+    import re
+    from datetime import datetime as _dt
+    ABBR = {"st": "state", "n": "northern", "s": "southern", "e": "eastern", "w": "western", "intl": "international",
+            "csu": "cal state", "miss": "mississippi", "mn": "minnesota", "uc": "uc", "fl": "florida", "so": "southern",
+            "ga": "georgia", "tenn": "tennessee", "la": "louisiana", "ky": "kentucky", "app": "appalachian", "mt": "mount"}
+    ALIAS = {"uconn": "connecticut", "ualbany": "albany", "umass": "massachusetts", "unlv": "nevada las vegas",
+             "fiu": "florida international", "fau": "florida atlantic", "lsu": "louisiana state", "ole": "mississippi",
+             "siue": "siu edwardsville", "vcu": "virginia commonwealth", "smu": "southern methodist", "tcu": "texas christian",
+             "ucf": "central florida", "utep": "texas el paso", "utsa": "texas san antonio", "byu": "brigham young",
+             "csun": "cal state northridge", "uic": "illinois chicago", "umbc": "maryland baltimore county"}
+
+    def _tok(x):
+        x = x.lower().replace("&", "").replace("'", "").replace(".", " ").replace("-", " ").replace("(", " ").replace(")", " ")
+        out = []
+        for t in re.sub(r"[^a-z0-9 ]", " ", x).split():
+            t = ALIAS.get(t, ABBR.get(t, t))
+            out += t.split()
+        return set(out) - {"the", "of", "university"}
+
+    def _sim(cb, od):
+        c, o = _tok(cb), _tok(od)
+        return len(c & o) / len(c) if c else 0.0
+
+    sched_dt = pd.to_datetime(sched.startDate, utc=True)
+    filled, have, unmatched = 0, 0, []
+    for ev in LIVE.get("odds", []):
+        t = pd.Timestamp(ev["commence_time"])
+        near = sched[(sched_dt - t).abs() <= pd.Timedelta(days=3)]
+        best, best_sc, home_is_odds_home = None, 0.0, True
+        for _, gm in near.iterrows():
+            for flip in (False, True):
+                oh, oa = (ev["home_team"], ev["away_team"]) if not flip else (ev["away_team"], ev["home_team"])
+                sc = min(_sim(gm.homeTeam, oh), _sim(gm.awayTeam, oa))
+                if sc > best_sc:
+                    best, best_sc, home_is_odds_home = gm, sc, not flip
+        if best is None or best_sc < 0.6:
+            unmatched.append(f"{ev['away_team']} @ {ev['home_team']}")
+            continue
+        if int(best.id) in line:
+            have += 1
+            continue
+        cb_home_odds = ev["home_team"] if home_is_odds_home else ev["away_team"]
+        pts = [float(oc["point"]) for bk in ev.get("bookmakers", []) for mk in bk.get("markets", []) if mk.get("key") == "spreads"
+               for oc in mk.get("outcomes", []) if oc.get("name") == cb_home_odds and oc.get("point") is not None]
+        if not pts or max(pts) - min(pts) >= bd.LINE_DISAGREE:
+            continue
+        line[int(best.id)] = (round(float(np.median(pts)) * 2) / 2, f"Odds feed ({len(pts)} books)")
+        filled += 1
+    print(f"lines: {filled} filled from the odds feed, {have} already had a CBBD line, {len(unmatched)} unmatched"
+          + (f" ({'; '.join(unmatched[:6])})" if unmatched else ""))
+
     MB, MR = train(TRAIN_BLEND), train(TRAIN_RAW)
     # projected line for unposted games: closing spread ~ blended profiles
     gb, Xb = MB["g"], MB["X"]

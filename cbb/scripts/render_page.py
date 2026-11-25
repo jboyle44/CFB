@@ -128,7 +128,7 @@ function save(){try{localStorage.setItem("cbbf",JSON.stringify({tier:st.tier,pos
 function tabs(){document.getElementById("tabs").innerHTML=TABS.map(([k,l])=>`<button class="${k===tab?"on":""}" data-t="${k}">${l}</button>`).join("");
  document.querySelectorAll("#tabs button").forEach(b=>b.onclick=()=>{tab=b.dataset.t;try{history.replaceState(null,"","#"+tab)}catch(e){location.hash=tab}render()})}
 window.addEventListener("hashchange",()=>{const h=location.hash.slice(1);if(TABS.some(t=>t[0]===h)){tab=h;render()}});
-function pass(g){if(st.posted&&g.line_status!=="posted")return false;if(st.tier==="strong")return g.tier==="strong";return true}
+function pass(g){if(st.posted&&g.line_status!=="posted")return false;if(st.tier==="strong")return g.tier==="strong"&&g.line_status==="posted";return true}
 
 function profile(g){
  const fmt=(t,v)=>t.kind==="pct"?v.toFixed(1)+"%":v.toFixed(1);
@@ -178,13 +178,13 @@ function vPicks(){
  const rows=D.games.filter(g=>g.day===st.day&&pass(g)).sort((a,b)=>b.edge-a.edge||a.ts-b.ts);
  if(!rows.length)h+=`<div class="empty">No games match these filters on this day.</div>`;
  h+=rows.map(g=>{const sep=g.neutral?" vs ":" @ ";
-  const line=g.line_status==="posted"?`<span class="badge posted">Line posted${g.book?" · "+esc(g.book):""}</span>`:`<span class="badge">Projected line</span>`;
+  const line=g.line_status==="posted"?`<span class="badge posted">Line posted${g.book?" · "+esc(g.book):""}</span>`:`<span class="badge">Projected line (typical miss 3.6 pts; 1 in 3 off by 5+)</span>`;
   const isDog=g.pick_line.includes("+");
   const tempo=g.tempo_flag?(isDog?`<span class="badge tempo">Tempo agrees: slow dog vs fast favorite</span>`:`<span class="badge">Tempo cuts against: dog is slower</span>`):"";
   const why=g.reasons.length?`<ul class="why">`+g.reasons.map(r=>`<li>${esc(r.text)} <span class="mono pos">+${r.pts.toFixed(1)}</span></li>`).join("")+`</ul>`:"";
   return `<div class="card"><div class="top"><span>${g.time}${g.venue?" · "+esc(g.venue):""}</span><span>Games played ${g.games_played[0]}-${g.games_played[1]}</span></div>
   <div class="match">${esc(g.away)}${sep}${esc(g.home)}</div>
-  <div class="pickrow"><span class="tier ${g.tier}">${g.tier}</span><span class="badge" style="font-weight:600">${g.stake||(g.tier==="strong"?2:1)} unit${(g.stake||(g.tier==="strong"?2:1))>1?"s":""}</span><span class="pick">${esc(g.pick_line)}</span><span class="edge">edge ${g.edge.toFixed(1)} pts</span></div>
+  <div class="pickrow">${g.line_status==="posted"?`<span class="tier ${g.tier}">${g.tier}</span><span class="badge" style="font-weight:600">${g.stake||(g.tier==="strong"?2:1)} unit${(g.stake||(g.tier==="strong"?2:1))>1?"s":""}</span>`:`<span class="tier lean">preview</span><span class="badge">no line yet \u00b7 no stake</span>`}<span class="pick">${esc(g.pick_line)}</span><span class="edge">edge ${g.edge.toFixed(1)} pts</span></div>
   <div class="pickrow" style="margin-top:6px">${line}${tempo}<span class="badge">${g.model==="established"?"Established model (5+ games)":"Early-season model"}</span></div>${lineBlock(g)}${why}${profile(g)}</div>`}).join("");
  return h}
 
@@ -243,7 +243,7 @@ function vHow(){
  `<h2>Fine print</h2><ul class="note" style="padding-left:18px">
  <li>Tempo flag: a fast favorite (8.5+) vs a slow underdog. Underdogs covered about 52% historically; it supports dog picks and cuts against favorite picks.</li>
  <li>Line movement: the model treats the posted line as information, so its edge barely changes when the line moves (about 0.1 pt per point). Each card also shows the line the pick was first made at and a line-adjusted edge: the original edge plus or minus what the move is worth. Moves are valued by how often games actually finish on the margins in between, at that spread (games can't tie, so a move through zero like \u22121.5 to +1.5 is worth about 1.7 pts, not 3). If you are getting a worse number than the original, use the line-adjusted edge.</li>
- <li>Projected lines (before books post) come from the same profiles and miss the real close by about 3.4 pts on average. Treat those picks as previews.</li>
+ <li>Lines come from CollegeBasketballData first, then the odds feed (median across books) when CBBD has not posted the game yet. Games with neither show as Preview with a projected line from the team profiles and no tier or stake; this season projections miss the real line by about 3.6 pts on average and by 5+ in one game out of three.</li>
  <li>Line data: about 1,100 historical games where line sources disagreed by 4+ points (mostly home/away-flipped "consensus" lines) are excluded from training and the backtest, and live games with conflicting lines get no graded pick. An independent audit rebuilt the backtest from scratch and found no leakage; its realistic estimate is about 53.8% at 1+ pt (roughly +2.7% return per bet at \u2212110), with 2025-26 the weakest recent season.</li>
  <li>Lines before 2019 cover about 65% of games. Results assume −110; real prices and limits vary, especially on low-major games and big underdogs.</li>
  <li>Style-vs-style matchups (archetypes, shot-mix clashes) were tested and do not beat the spread. Only tempo survived.</li></ul>`;
