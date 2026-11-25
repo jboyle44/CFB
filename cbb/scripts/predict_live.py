@@ -203,15 +203,16 @@ def main():
         pts = list(by_book.values())
         if not pts or max(pts) - min(pts) >= bd.LINE_DISAGREE:
             continue
-        if "draftkings" in by_book:          # Joe bets at DraftKings: its line wins whenever it is posted
+        # Joe's process: CBBD first; if CBBD has no line, use DraftKings; then the other books' median
+        if gid in line:
+            have += 1
+        elif "draftkings" in by_book:
             dk_used += 1
             line[gid] = (by_book["draftkings"], "DraftKings")
-        elif gid in line:
-            have += 1
         else:
             line[gid] = (round(float(np.median(pts)) * 2) / 2, f"Odds feed ({len(pts)} books)")
             filled += 1
-    print(f"lines: {dk_used} DraftKings, {filled} other-book median, {have} CBBD only, {len(unmatched)} unmatched"
+    print(f"lines: {have} CBBD, {dk_used} DraftKings (CBBD missing), {filled} other-book median, {len(unmatched)} unmatched"
           + (f" ({'; '.join(unmatched[:6])})" if unmatched else ""))
 
     MB, MR = train(TRAIN_BLEND), train(TRAIN_RAW)
