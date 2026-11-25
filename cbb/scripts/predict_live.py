@@ -181,7 +181,7 @@ def main():
         return len(c & o) / len(c) if c else 0.0
 
     sched_dt = pd.to_datetime(sched.startDate, utc=True)
-    filled, have, unmatched = 0, 0, []
+    filled, have, dk_used, unmatched = 0, 0, 0, []
     for ev in LIVE.get("odds", []):
         t = pd.Timestamp(ev["commence_time"])
         near = sched[(sched_dt - t).abs() <= pd.Timedelta(days=3)]
@@ -195,17 +195,23 @@ def main():
         if best is None or best_sc < 0.6:
             unmatched.append(f"{ev['away_team']} @ {ev['home_team']}")
             continue
-        if int(best.id) in line:
-            have += 1
-            continue
+        gid = int(best.id)
         cb_home_odds = ev["home_team"] if home_is_odds_home else ev["away_team"]
-        pts = [float(oc["point"]) for bk in ev.get("bookmakers", []) for mk in bk.get("markets", []) if mk.get("key") == "spreads"
-               for oc in mk.get("outcomes", []) if oc.get("name") == cb_home_odds and oc.get("point") is not None]
+        by_book = {bk["key"]: float(oc["point"]) for bk in ev.get("bookmakers", []) for mk in bk.get("markets", [])
+                   if mk.get("key") == "spreads" for oc in mk.get("outcomes", [])
+                   if oc.get("name") == cb_home_odds and oc.get("point") is not None}
+        pts = list(by_book.values())
         if not pts or max(pts) - min(pts) >= bd.LINE_DISAGREE:
             continue
-        line[int(best.id)] = (round(float(np.median(pts)) * 2) / 2, f"Odds feed ({len(pts)} books)")
-        filled += 1
-    print(f"lines: {filled} filled from the odds feed, {have} already had a CBBD line, {len(unmatched)} unmatched"
+        if "draftkings" in by_book:          # Joe bets at DraftKings: its line wins whenever it is posted
+            dk_used += 1
+            line[gid] = (by_book["draftkings"], "DraftKings")
+        elif gid in line:
+            have += 1
+        else:
+            line[gid] = (round(float(np.median(pts)) * 2) / 2, f"Odds feed ({len(pts)} books)")
+            filled += 1
+    print(f"lines: {dk_used} DraftKings, {filled} other-book median, {have} CBBD only, {len(unmatched)} unmatched"
           + (f" ({'; '.join(unmatched[:6])})" if unmatched else ""))
 
     MB, MR = train(TRAIN_BLEND), train(TRAIN_RAW)
