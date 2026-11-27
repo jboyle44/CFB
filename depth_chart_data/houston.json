@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T22:59:14.421832+00:00",
-  "ourladsUpdatedAt": "2026-11-24T22:59:14.421832+00:00",
+  "generatedAt": "2026-11-27T21:47:07.724601+00:00",
+  "ourladsUpdatedAt": "2026-11-27T21:47:07.724601+00:00",
   "cfbdUpdatedAt": "2026-11-24T22:59:14.421832+00:00",
   "cfb27UpdatedAt": "2026-11-04T20:36:00.895306+00:00",
   "draftRankUpdatedAt": "2026-11-24T22:56:37.091961+00:00",
@@ -594,6 +594,12 @@
       "hsStateRank": null,
       "pffGrade": null,
       "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null,
       "transferLookedUp": null,
       "recruitLookedUp": true
     },
@@ -1857,6 +1863,12 @@
       "hsStateRank": null,
       "pffGrade": null,
       "draftRank": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null,
+      "cfb27Rating": null,
+      "cfb27Dev": null,
       "transferLookedUp": null,
       "recruitLookedUp": true
     }
