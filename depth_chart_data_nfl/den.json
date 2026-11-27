@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T22:51:53.429737+00:00",
-  "ourladsUpdatedAt": "2026-11-24T22:51:53.429737+00:00",
+  "generatedAt": "2026-11-27T21:52:41.796020+00:00",
+  "ourladsUpdatedAt": "2026-11-27T21:52:41.796020+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.251801+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Denver Broncos",
@@ -150,6 +150,18 @@
       "pffPositionTotal": 87,
       "pffPositionLabel": "G",
       "pffTied": false
+    },
+    {
+      "position": "LG",
+      "player": "Gavin Ortega",
+      "jersey": "68",
+      "code": "CF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "C",
@@ -377,19 +389,31 @@
     },
     {
       "position": "RB",
-      "player": "J.K. Dobbins",
-      "jersey": "27",
-      "code": "U/LAC",
+      "player": "Tyler Badie",
+      "jersey": "28",
+      "code": "P/Bal",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 76.8,
-      "madden27Rating": 81,
+      "pffGrade": null,
+      "madden27Rating": 69,
       "madden27Dev": "Normal",
-      "pffPositionRank": 19,
-      "pffPositionTotal": 73,
-      "pffPositionLabel": "HB",
-      "pffTied": false
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "RB",
+      "player": "Cody Schrader",
+      "jersey": "25",
+      "code": "W/Hou",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "FB",
@@ -484,22 +508,6 @@
       "madden27Dev": "Superstar",
       "pffPositionRank": 54,
       "pffPositionTotal": 146,
-      "pffPositionLabel": "DI",
-      "pffTied": false
-    },
-    {
-      "position": "RDE",
-      "player": "Sai'vion Jones",
-      "jersey": "95",
-      "code": "25/3",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 64.7,
-      "madden27Rating": 70,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
       "pffPositionLabel": "DI",
       "pffTied": false
     },
@@ -737,7 +745,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "FS",
@@ -948,6 +960,22 @@
       "pffTied": null
     },
     {
+      "position": "DE",
+      "player": "Sai'vion Jones",
+      "jersey": "95",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 64.7,
+      "madden27Rating": 70,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "DI",
+      "pffTied": false
+    },
+    {
       "position": "DT",
       "player": "Eyioma Uwazurike",
       "jersey": "96",
@@ -994,22 +1022,6 @@
       "pffPositionTotal": 129,
       "pffPositionLabel": "ED",
       "pffTied": true
-    },
-    {
-      "position": "RB",
-      "player": "Tyler Badie",
-      "jersey": "28",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 69,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     },
     {
       "position": "OT",
@@ -1090,6 +1102,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "RB",
+      "player": "J.K. Dobbins",
+      "jersey": "27",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "SUS",
+      "pffGrade": 76.8,
+      "madden27Rating": 81,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 19,
+      "pffPositionTotal": 73,
+      "pffPositionLabel": "HB",
+      "pffTied": false
     },
     {
       "position": "TE",

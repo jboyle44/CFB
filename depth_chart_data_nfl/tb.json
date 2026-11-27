@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T22:52:07.274491+00:00",
-  "ourladsUpdatedAt": "2026-11-24T22:52:07.274491+00:00",
+  "generatedAt": "2026-11-27T21:52:55.997090+00:00",
+  "ourladsUpdatedAt": "2026-11-27T21:52:55.997090+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.283395+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Tampa Bay Buccaneers",
@@ -952,38 +952,6 @@
       "pffTied": null
     },
     {
-      "position": "ILB",
-      "player": "Christian Rozeboom",
-      "jersey": "52",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 47.1,
-      "madden27Rating": 73,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 81,
-      "pffPositionTotal": 94,
-      "pffPositionLabel": "LB",
-      "pffTied": false
-    },
-    {
-      "position": "WR",
-      "player": "Jalen McMillan",
-      "jersey": "11",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 66.3,
-      "madden27Rating": 74,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "WR",
-      "pffTied": false
-    },
-    {
       "position": "OLB",
       "player": "Mohamed Kamara",
       "jersey": "59",
@@ -1014,6 +982,38 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "ILB",
+      "player": "Christian Rozeboom",
+      "jersey": "52",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 47.1,
+      "madden27Rating": 73,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 81,
+      "pffPositionTotal": 94,
+      "pffPositionLabel": "LB",
+      "pffTied": false
+    },
+    {
+      "position": "WR",
+      "player": "Jalen McMillan",
+      "jersey": "11",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 66.3,
+      "madden27Rating": 74,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "WR",
+      "pffTied": false
     }
   ]
 }

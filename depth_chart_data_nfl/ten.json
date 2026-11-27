@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T22:51:51.501108+00:00",
-  "ourladsUpdatedAt": "2026-11-24T22:51:51.501108+00:00",
+  "generatedAt": "2026-11-27T21:52:39.812284+00:00",
+  "ourladsUpdatedAt": "2026-11-27T21:52:39.812284+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.284895+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Tennessee Titans",
@@ -664,6 +664,18 @@
       "pffTied": false
     },
     {
+      "position": "LCB",
+      "player": "Corey Thornton",
+      "jersey": "47",
+      "code": "P/Car",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "SS",
       "player": "Tony Adams",
       "jersey": "29",
@@ -1032,22 +1044,6 @@
       "pffTied": true
     },
     {
-      "position": "DE",
-      "player": "Tanoh Kpassagnon",
-      "jersey": "58",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 51.1,
-      "madden27Rating": 71,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "ED",
-      "pffTied": false
-    },
-    {
       "position": "TE",
       "player": "Jaren Kanak",
       "jersey": "81",
@@ -1090,22 +1086,6 @@
       "pffGrade": null,
       "madden27Rating": null,
       "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "LB",
-      "player": "Milo Eifler",
-      "jersey": "45",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": null,
-      "madden27Rating": 57,
-      "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,

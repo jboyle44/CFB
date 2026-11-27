@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T22:51:18.057215+00:00",
-  "ourladsUpdatedAt": "2026-11-24T22:51:18.057215+00:00",
+  "generatedAt": "2026-11-27T21:52:05.140754+00:00",
+  "ourladsUpdatedAt": "2026-11-27T21:52:05.140754+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.277062+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Philadelphia Eagles",
@@ -265,6 +265,22 @@
     },
     {
       "position": "TE",
+      "player": "Zach Ertz",
+      "jersey": "86",
+      "code": "U/Was",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
+    },
+    {
+      "position": "TE",
       "player": "Eli Stowers",
       "jersey": "87",
       "code": "26/2",
@@ -294,22 +310,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "TE",
       "pffTied": false
-    },
-    {
-      "position": "TE",
-      "player": "Zach Ertz",
-      "jersey": "86",
-      "code": "U/Was",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": null,
-      "madden27Dev": null,
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     },
     {
       "position": "QB",
@@ -422,6 +422,18 @@
       "pffPositionTotal": 146,
       "pffPositionLabel": "DI",
       "pffTied": true
+    },
+    {
+      "position": "LDE",
+      "player": "Gabe Hall",
+      "jersey": "96",
+      "code": "CF24",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "NT",
@@ -561,7 +573,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "ROLB",

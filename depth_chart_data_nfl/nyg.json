@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T22:51:16.104407+00:00",
-  "ourladsUpdatedAt": "2026-11-24T22:51:16.104407+00:00",
+  "generatedAt": "2026-11-27T21:52:03.083267+00:00",
+  "ourladsUpdatedAt": "2026-11-27T21:52:03.083267+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.273854+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "New York Giants",
@@ -504,6 +504,18 @@
       "pffTied": false
     },
     {
+      "position": "RUSH",
+      "player": "Dawuane Smoot",
+      "jersey": "96",
+      "code": "U/Jax",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "WLB",
       "player": "Arvell Reese",
       "jersey": "52",
@@ -632,22 +644,6 @@
       "pffTied": null
     },
     {
-      "position": "LCB",
-      "player": "Paulson Adebo",
-      "jersey": "21",
-      "code": "U/NO",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 58.4,
-      "madden27Rating": 76,
-      "madden27Dev": "Star",
-      "pffPositionRank": 76,
-      "pffPositionTotal": 122,
-      "pffPositionLabel": "CB",
-      "pffTied": true
-    },
-    {
       "position": "SS",
       "player": "Jev\u00f3n Holland",
       "jersey": "8",
@@ -745,19 +741,19 @@
     },
     {
       "position": "RCB",
-      "player": "Greg Newsome II",
-      "jersey": "20",
-      "code": "U/Jax",
+      "player": "Paulson Adebo",
+      "jersey": "21",
+      "code": "U/NO",
       "isAcquired": true,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 55.4,
-      "madden27Rating": 79,
+      "pffGrade": 58.4,
+      "madden27Rating": 76,
       "madden27Dev": "Star",
-      "pffPositionRank": 90,
+      "pffPositionRank": 76,
       "pffPositionTotal": 122,
       "pffPositionLabel": "CB",
-      "pffTied": false
+      "pffTied": true
     },
     {
       "position": "RCB",
@@ -950,6 +946,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "CB",
+      "player": "Greg Newsome II",
+      "jersey": "20",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 55.4,
+      "madden27Rating": 79,
+      "madden27Dev": "Star",
+      "pffPositionRank": 90,
+      "pffPositionTotal": 122,
+      "pffPositionLabel": "CB",
+      "pffTied": false
     },
     {
       "position": "RB",

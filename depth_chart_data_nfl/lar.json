@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T22:52:11.196116+00:00",
-  "ourladsUpdatedAt": "2026-11-24T22:52:11.196116+00:00",
+  "generatedAt": "2026-11-27T21:53:00.102807+00:00",
+  "ourladsUpdatedAt": "2026-11-27T21:53:00.102807+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.266094+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Los Angeles Rams",
@@ -121,19 +121,19 @@
     },
     {
       "position": "LG",
-      "player": "Beaux Limmer",
-      "jersey": "50",
-      "code": "24/6",
+      "player": "Bill Murray",
+      "jersey": "66",
+      "code": "SF26",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": 54.2,
-      "madden27Rating": 71,
+      "pffGrade": null,
+      "madden27Rating": 65,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
-      "pffPositionLabel": "G",
-      "pffTied": false
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "C",
@@ -149,6 +149,22 @@
       "pffPositionRank": 13,
       "pffPositionTotal": 41,
       "pffPositionLabel": "C",
+      "pffTied": false
+    },
+    {
+      "position": "C",
+      "player": "Beaux Limmer",
+      "jersey": "50",
+      "code": "24/6",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 54.2,
+      "madden27Rating": 71,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "G",
       "pffTied": false
     },
     {
@@ -169,14 +185,14 @@
     },
     {
       "position": "RG",
-      "player": "Bill Murray",
-      "jersey": "66",
-      "code": "SF26",
+      "player": "Justin Dedich",
+      "jersey": "67",
+      "code": "CF24",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 65,
+      "madden27Rating": 67,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -406,6 +422,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "NT",
+      "player": "Kobie Turner",
+      "jersey": "91",
+      "code": "23/3",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 83.2,
+      "madden27Rating": 85,
+      "madden27Dev": "Star",
+      "pffPositionRank": 6,
+      "pffPositionTotal": 146,
+      "pffPositionLabel": "DI",
+      "pffTied": false
     },
     {
       "position": "NT",
@@ -1082,7 +1114,7 @@
     {
       "position": "QB",
       "player": "Matthew Caldwell",
-      "jersey": "16",
+      "jersey": "2",
       "code": "",
       "isAcquired": false,
       "isReserve": true,
@@ -1126,38 +1158,6 @@
       "pffPositionTotal": 143,
       "pffPositionLabel": "WR",
       "pffTied": false
-    },
-    {
-      "position": "DT",
-      "player": "Kobie Turner",
-      "jersey": "91",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 83.2,
-      "madden27Rating": 85,
-      "madden27Dev": "Star",
-      "pffPositionRank": 6,
-      "pffPositionTotal": 146,
-      "pffPositionLabel": "DI",
-      "pffTied": false
-    },
-    {
-      "position": "OG",
-      "player": "Justin Dedich",
-      "jersey": "67",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": null,
-      "madden27Rating": 67,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
     }
   ]
 }

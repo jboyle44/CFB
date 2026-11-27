@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T22:51:59.312206+00:00",
-  "ourladsUpdatedAt": "2026-11-24T22:51:59.312206+00:00",
+  "generatedAt": "2026-11-27T21:52:47.889964+00:00",
+  "ourladsUpdatedAt": "2026-11-27T21:52:47.889964+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.264514+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Los Angeles Chargers",
@@ -25,14 +25,14 @@
     },
     {
       "position": "LWR",
-      "player": "Theo Wease Jr.",
-      "jersey": "82",
-      "code": "SF26",
+      "player": "KeAndre Lambert-Smith",
+      "jersey": "84",
+      "code": "25/5",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
       "pffGrade": null,
-      "madden27Rating": 65,
+      "madden27Rating": 70,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
@@ -66,22 +66,6 @@
       "pffGrade": null,
       "madden27Rating": 72,
       "madden27Dev": "Star",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
-    },
-    {
-      "position": "RWR",
-      "player": "KeAndre Lambert-Smith",
-      "jersey": "84",
-      "code": "25/5",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 70,
-      "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
       "pffPositionLabel": null,
@@ -342,6 +326,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "QB",
+      "player": "Jake Browning",
+      "jersey": "13",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "RB",
@@ -760,22 +756,6 @@
       "pffTied": true
     },
     {
-      "position": "RCB",
-      "player": "Deane Leonard",
-      "jersey": "33",
-      "code": "22/7",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 69.6,
-      "madden27Rating": 67,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "CB",
-      "pffTied": false
-    },
-    {
       "position": "NB",
       "player": "Tarheeb Still",
       "jersey": "4",
@@ -806,6 +786,18 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "NB",
+      "player": "Avery Smith",
+      "jersey": "",
+      "code": "W/Sea",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "PT",
@@ -982,6 +974,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "CB",
+      "player": "Deane Leonard",
+      "jersey": "33",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": 69.6,
+      "madden27Rating": 67,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": "CB",
+      "pffTied": false
     },
     {
       "position": "CB",

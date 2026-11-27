@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T22:51:22.041729+00:00",
-  "ourladsUpdatedAt": "2026-11-24T22:51:22.041729+00:00",
+  "generatedAt": "2026-11-27T21:52:09.222006+00:00",
+  "ourladsUpdatedAt": "2026-11-27T21:52:09.222006+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.240940+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Buffalo Bills",
@@ -152,22 +152,6 @@
       "pffTied": false
     },
     {
-      "position": "LG",
-      "player": "Austin Corbett",
-      "jersey": "63",
-      "code": "U/Car",
-      "isAcquired": true,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 67.8,
-      "madden27Rating": 76,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 30,
-      "pffPositionTotal": 87,
-      "pffPositionLabel": "G",
-      "pffTied": false
-    },
-    {
       "position": "C",
       "player": "Connor McGovern",
       "jersey": "66",
@@ -211,6 +195,22 @@
       "madden27Rating": 75,
       "madden27Dev": "Star",
       "pffPositionRank": 45,
+      "pffPositionTotal": 87,
+      "pffPositionLabel": "G",
+      "pffTied": false
+    },
+    {
+      "position": "RG",
+      "player": "Austin Corbett",
+      "jersey": "63",
+      "code": "U/Car",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 67.8,
+      "madden27Rating": 76,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 30,
       "pffPositionTotal": 87,
       "pffPositionLabel": "G",
       "pffTied": false

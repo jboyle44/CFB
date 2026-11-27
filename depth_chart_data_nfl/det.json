@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T22:51:39.722868+00:00",
-  "ourladsUpdatedAt": "2026-11-24T22:51:39.722868+00:00",
+  "generatedAt": "2026-11-27T21:52:27.629345+00:00",
+  "ourladsUpdatedAt": "2026-11-27T21:52:27.629345+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.253354+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Detroit Lions",
@@ -409,19 +409,19 @@
     },
     {
       "position": "LDT",
-      "player": "Skyler Gill-Howard",
-      "jersey": "50",
-      "code": "26/6",
+      "player": "Mekhi Wingo",
+      "jersey": "94",
+      "code": "24/6",
       "isAcquired": false,
       "isReserve": false,
       "reserveStatus": null,
-      "pffGrade": null,
-      "madden27Rating": 65,
+      "pffGrade": 53.2,
+      "madden27Rating": 70,
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
-      "pffPositionLabel": null,
-      "pffTied": null
+      "pffPositionLabel": "DI",
+      "pffTied": false
     },
     {
       "position": "RDT",
@@ -454,22 +454,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "RDT",
-      "player": "Mekhi Wingo",
-      "jersey": "94",
-      "code": "24/6",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 53.2,
-      "madden27Rating": 70,
-      "madden27Dev": "Normal",
-      "pffPositionRank": null,
-      "pffPositionTotal": null,
-      "pffPositionLabel": "DI",
-      "pffTied": false
     },
     {
       "position": "RDE",
@@ -657,7 +641,11 @@
       "reserveStatus": null,
       "pffGrade": null,
       "madden27Rating": null,
-      "madden27Dev": null
+      "madden27Dev": null,
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "SS",
@@ -1042,6 +1030,22 @@
       "pffPositionTotal": 73,
       "pffPositionLabel": "HB",
       "pffTied": false
+    },
+    {
+      "position": "DT",
+      "player": "Skyler Gill-Howard",
+      "jersey": "50",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "IR",
+      "pffGrade": null,
+      "madden27Rating": 65,
+      "madden27Dev": "Normal",
+      "pffPositionRank": null,
+      "pffPositionTotal": null,
+      "pffPositionLabel": null,
+      "pffTied": null
     },
     {
       "position": "DE",

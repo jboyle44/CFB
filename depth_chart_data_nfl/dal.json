@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T22:51:14.118541+00:00",
-  "ourladsUpdatedAt": "2026-11-24T22:51:14.118541+00:00",
+  "generatedAt": "2026-11-27T21:52:01.079927+00:00",
+  "ourladsUpdatedAt": "2026-11-27T21:52:01.079927+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.250218+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Dallas Cowboys",
@@ -665,6 +665,22 @@
     },
     {
       "position": "SS",
+      "player": "Jalen Thompson",
+      "jersey": "34",
+      "code": "U/Arz",
+      "isAcquired": true,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 69.1,
+      "madden27Rating": 84,
+      "madden27Dev": "Star",
+      "pffPositionRank": 33,
+      "pffPositionTotal": 107,
+      "pffPositionLabel": "S",
+      "pffTied": true
+    },
+    {
+      "position": "SS",
       "player": "P.J. Locke",
       "jersey": "1",
       "code": "U/Den",
@@ -676,22 +692,6 @@
       "madden27Dev": "Normal",
       "pffPositionRank": null,
       "pffPositionTotal": null,
-      "pffPositionLabel": "S",
-      "pffTied": false
-    },
-    {
-      "position": "SS",
-      "player": "Markquese Bell",
-      "jersey": "14",
-      "code": "CF22",
-      "isAcquired": false,
-      "isReserve": false,
-      "reserveStatus": null,
-      "pffGrade": 46.8,
-      "madden27Rating": 72,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 99,
-      "pffPositionTotal": 107,
       "pffPositionLabel": "S",
       "pffTied": false
     },
@@ -723,6 +723,22 @@
       "madden27Rating": 78,
       "madden27Dev": "Normal",
       "pffPositionRank": 69,
+      "pffPositionTotal": 107,
+      "pffPositionLabel": "S",
+      "pffTied": false
+    },
+    {
+      "position": "FS",
+      "player": "Markquese Bell",
+      "jersey": "14",
+      "code": "CF22",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": 46.8,
+      "madden27Rating": 72,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 99,
       "pffPositionTotal": 107,
       "pffPositionLabel": "S",
       "pffTied": false
@@ -1062,22 +1078,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
-    },
-    {
-      "position": "S",
-      "player": "Jalen Thompson",
-      "jersey": "34",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "DFR",
-      "pffGrade": 69.1,
-      "madden27Rating": 84,
-      "madden27Dev": "Star",
-      "pffPositionRank": 33,
-      "pffPositionTotal": 107,
-      "pffPositionLabel": "S",
-      "pffTied": true
     }
   ]
 }

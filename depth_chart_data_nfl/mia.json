@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T22:51:23.999216+00:00",
-  "ourladsUpdatedAt": "2026-11-24T22:51:23.999216+00:00",
+  "generatedAt": "2026-11-27T21:52:11.267085+00:00",
+  "ourladsUpdatedAt": "2026-11-27T21:52:11.267085+00:00",
   "madden27UpdatedAt": "2026-11-04T20:35:31.267630+00:00",
   "pffUpdatedAt": "2026-09-03T03:39:31.345612+00:00",
   "team": "Miami Dolphins",
@@ -808,6 +808,18 @@
       "pffTied": false
     },
     {
+      "position": "PT",
+      "player": "Jack Browning",
+      "jersey": "31",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
+    },
+    {
       "position": "LS",
       "player": "Tucker Addington",
       "jersey": "46",
@@ -838,6 +850,18 @@
       "pffPositionTotal": 36,
       "pffPositionLabel": "P",
       "pffTied": false
+    },
+    {
+      "position": "H",
+      "player": "Jack Browning",
+      "jersey": "31",
+      "code": "SF26",
+      "isAcquired": false,
+      "isReserve": false,
+      "reserveStatus": null,
+      "pffGrade": null,
+      "madden27Rating": null,
+      "madden27Dev": null
     },
     {
       "position": "PR",
@@ -934,22 +958,6 @@
       "pffPositionTotal": null,
       "pffPositionLabel": "QB",
       "pffTied": false
-    },
-    {
-      "position": "LB",
-      "player": "Ronnie Harrison Jr.",
-      "jersey": "56",
-      "code": "",
-      "isAcquired": false,
-      "isReserve": true,
-      "reserveStatus": "IR",
-      "pffGrade": 62.3,
-      "madden27Rating": 71,
-      "madden27Dev": "Normal",
-      "pffPositionRank": 44,
-      "pffPositionTotal": 94,
-      "pffPositionLabel": "LB",
-      "pffTied": true
     },
     {
       "position": "LB",
@@ -1062,6 +1070,22 @@
       "pffPositionTotal": null,
       "pffPositionLabel": null,
       "pffTied": null
+    },
+    {
+      "position": "LB",
+      "player": "Ronnie Harrison Jr.",
+      "jersey": "56",
+      "code": "",
+      "isAcquired": false,
+      "isReserve": true,
+      "reserveStatus": "DFR",
+      "pffGrade": 62.3,
+      "madden27Rating": 71,
+      "madden27Dev": "Normal",
+      "pffPositionRank": 44,
+      "pffPositionTotal": 94,
+      "pffPositionLabel": "LB",
+      "pffTied": true
     }
   ]
 }
